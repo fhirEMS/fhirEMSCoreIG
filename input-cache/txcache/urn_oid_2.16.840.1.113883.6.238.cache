@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.6.238",
+  "code" : "2106-3",
+  "display" : "White"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/omb-race-category", "version": "6.1.0", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "White",
+  "code" : "2106-3",
+  "system" : "urn:oid:2.16.840.1.113883.6.238",
+  "version" : "1.3",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Analysing http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0 for validation purposes\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Parameters: disp-lang=en, generate-narrative, default-to-latest\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/731000124108\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Prepare include[0]: \"(^http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836)\"\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025: Analysing http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025 for validation purposes\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025: Prepare include[0]: \"(urn:oid:2.16.840.1.113883.6.238)(1002-5,2028-9,2054-5,2076-8,2106-3,2131-1)\"\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025: CodeSystem found: \"urn:oid:2.16.840.1.113883.6.238|1.3\"\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Prepare include[1]: \"(^http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.102)\"\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.102|20211028: Analysing http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.102|20211028 for validation purposes\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.102|20211028: Prepare include[0]: \"(http://terminology.hl7.org/CodeSystem/v3-NullFlavor)(ASKU,UNK)\"\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.102|20211028: CodeSystem found: \"http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0\"\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Validate \"[urn:oid:2.16.840.1.113883.6.238#2106-3 (\"White\")]\"\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Check \"urn:oid:2.16.840.1.113883.6.238#2106-3\"\n2ms http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0: Check included value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025: Check \"urn:oid:2.16.840.1.113883.6.238#2106-3\"\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025: CodeSystem found: urn:oid:2.16.840.1.113883.6.238|1.3 for urn:oid:2.16.840.1.113883.6.238\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025: check code in (urn:oid:2.16.840.1.113883.6.238)(1002-5,2028-9,2054-5,2076-8,2106-3,2131-1) at Coding\n2ms http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025: Code \"2106-3\" found in urn:oid:2.16.840.1.113883.6.238|1.3",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------

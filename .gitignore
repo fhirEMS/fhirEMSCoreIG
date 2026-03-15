@@ -1,0 +1,22 @@
+# IG Publisher generated output — do not commit to main (lives on gh-pages branch)
+output/
+temp/
+template/
+fsh-generated/
+translations/
+
+# IG Publisher runtime artifacts
+input-cache/publisher.jar
+input-cache/publisher.jar.md5
+input-cache/workgroups.xml
+
+# Local JDK — downloaded for local build, not source
+.jdk/
+
+# Node / SUSHI
+node_modules/
+package-lock.json
+
+# OS
+.DS_Store
+*.swp

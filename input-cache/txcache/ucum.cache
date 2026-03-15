@@ -1,0 +1,396 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mL"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "mL",
+  "code" : "mL",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://unitsofmeasure.org/vs|2.2: Validate \"[http://unitsofmeasure.org#mL (\"undefined\")]\"\n1ms http://unitsofmeasure.org/vs|2.2: Check \"http://unitsofmeasure.org#mL\"\n1ms http://unitsofmeasure.org/vs|2.2: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org|2.2\n1ms http://unitsofmeasure.org/vs|2.2: check code in (http://unitsofmeasure.org) at Coding\n1ms http://unitsofmeasure.org/vs|2.2: Code \"mL\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "/min"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "/min",
+  "code" : "/min",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://unitsofmeasure.org/vs|2.2: Validate \"[http://unitsofmeasure.org#/min (\"undefined\")]\"\n1ms http://unitsofmeasure.org/vs|2.2: Check \"http://unitsofmeasure.org#/min\"\n1ms http://unitsofmeasure.org/vs|2.2: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org|2.2\n1ms http://unitsofmeasure.org/vs|2.2: check code in (http://unitsofmeasure.org) at Coding\n1ms http://unitsofmeasure.org/vs|2.2: Code \"/min\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "cm"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "cm",
+  "code" : "cm",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://unitsofmeasure.org/vs|2.2: Validate \"[http://unitsofmeasure.org#cm (\"undefined\")]\"\n1ms http://unitsofmeasure.org/vs|2.2: Check \"http://unitsofmeasure.org#cm\"\n1ms http://unitsofmeasure.org/vs|2.2: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org|2.2\n1ms http://unitsofmeasure.org/vs|2.2: check code in (http://unitsofmeasure.org) at Coding\n1ms http://unitsofmeasure.org/vs|2.2: Code \"cm\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mm[Hg]"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "mm[Hg]",
+  "code" : "mm[Hg]",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://unitsofmeasure.org/vs|2.2: Validate \"[http://unitsofmeasure.org#mm[Hg] (\"undefined\")]\"\n1ms http://unitsofmeasure.org/vs|2.2: Check \"http://unitsofmeasure.org#mm[Hg]\"\n1ms http://unitsofmeasure.org/vs|2.2: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org|2.2\n1ms http://unitsofmeasure.org/vs|2.2: check code in (http://unitsofmeasure.org) at Coding\n1ms http://unitsofmeasure.org/vs|2.2: Code \"mm[Hg]\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mg/dL"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "mg/dL",
+  "code" : "mg/dL",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://unitsofmeasure.org/vs|2.2: Validate \"[http://unitsofmeasure.org#mg/dL (\"undefined\")]\"\n1ms http://unitsofmeasure.org/vs|2.2: Check \"http://unitsofmeasure.org#mg/dL\"\n1ms http://unitsofmeasure.org/vs|2.2: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org|2.2\n1ms http://unitsofmeasure.org/vs|2.2: check code in (http://unitsofmeasure.org) at Coding\n1ms http://unitsofmeasure.org/vs|2.2: Code \"mg/dL\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "%"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "%",
+  "code" : "%",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://unitsofmeasure.org/vs|2.2: Validate \"[http://unitsofmeasure.org#% (\"undefined\")]\"\n1ms http://unitsofmeasure.org/vs|2.2: Check \"http://unitsofmeasure.org#%\"\n1ms http://unitsofmeasure.org/vs|2.2: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org|2.2\n1ms http://unitsofmeasure.org/vs|2.2: check code in (http://unitsofmeasure.org) at Coding\n1ms http://unitsofmeasure.org/vs|2.2: Code \"%\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "/min"
+}, "url": "http://hl7.org/fhir/ValueSet/ucum-vitals-common", "version": "4.0.1", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "/min",
+  "code" : "/min",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Analysing http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/731000124108\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Prepare include[0]: \"(http://unitsofmeasure.org)(%,cm,[in_i],kg,g,[lb_av],Cel,[degF],mm[Hg],/min,kg/m2,m2)\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: CodeSystem found: \"http://unitsofmeasure.org|2.2\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Validate \"[http://unitsofmeasure.org#/min (\"undefined\")]\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Check \"http://unitsofmeasure.org#/min\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: check code in (http://unitsofmeasure.org)(%,cm,[in_i],kg,g,[lb_av],Cel,[degF],mm[Hg],/min,kg/m2,m2) at Coding\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Code \"/min\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mm[Hg]"
+}, "url": "http://hl7.org/fhir/ValueSet/ucum-vitals-common", "version": "4.0.1", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "mm[Hg]",
+  "code" : "mm[Hg]",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Analysing http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/731000124108\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Prepare include[0]: \"(http://unitsofmeasure.org)(%,cm,[in_i],kg,g,[lb_av],Cel,[degF],mm[Hg],/min,kg/m2,m2)\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: CodeSystem found: \"http://unitsofmeasure.org|2.2\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Validate \"[http://unitsofmeasure.org#mm[Hg] (\"undefined\")]\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Check \"http://unitsofmeasure.org#mm[Hg]\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: check code in (http://unitsofmeasure.org)(%,cm,[in_i],kg,g,[lb_av],Cel,[degF],mm[Hg],/min,kg/m2,m2) at Coding\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Code \"mm[Hg]\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "%"
+}, "url": "http://hl7.org/fhir/ValueSet/ucum-vitals-common", "version": "4.0.1", "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "defaultDisplayLanguage",
+    "valueCode" : "en"
+  }]
+}}####
+v: {
+  "display" : "%",
+  "code" : "%",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.2",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Analysing http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1 for validation purposes\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Parameters: disp-lang=en, generate-narrative, default-to-latest\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/731000124108\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Prepare include[0]: \"(http://unitsofmeasure.org)(%,cm,[in_i],kg,g,[lb_av],Cel,[degF],mm[Hg],/min,kg/m2,m2)\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: CodeSystem found: \"http://unitsofmeasure.org|2.2\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Validate \"[http://unitsofmeasure.org#% (\"undefined\")]\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Check \"http://unitsofmeasure.org#%\"\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: check code in (http://unitsofmeasure.org)(%,cm,[in_i],kg,g,[lb_av],Cel,[degF],mm[Hg],/min,kg/m2,m2) at Coding\n1ms http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1: Code \"%\" found in http://unitsofmeasure.org|2.2",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "%",
+        "display" : "percent"
+      },
+      {
+        "code" : "cm",
+        "display" : "centimeter"
+      },
+      {
+        "code" : "[in_i]",
+        "display" : "inch (international)"
+      },
+      {
+        "code" : "kg",
+        "display" : "kilogram"
+      },
+      {
+        "code" : "g",
+        "display" : "gram"
+      },
+      {
+        "code" : "[lb_av]",
+        "display" : "pound (US and British)"
+      },
+      {
+        "code" : "Cel",
+        "display" : "degree Celsius"
+      },
+      {
+        "code" : "[degF]",
+        "display" : "degree Fahrenheit"
+      },
+      {
+        "code" : "mm[Hg]",
+        "display" : "millimeter of mercury"
+      },
+      {
+        "code" : "/min",
+        "display" : "per minute"
+      },
+      {
+        "code" : "kg/m2",
+        "display" : "kilogram / (meter ^ 2)"
+      },
+      {
+        "code" : "m2",
+        "display" : "square meter"
+      }]
+    }]
+  }
+}}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:4733285c-4f38-440d-81a4-3d6bb47a0ca1",
+    "timestamp" : "2026-03-15T02:21:20.614Z",
+    "total" : 12,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "excludeNested",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "includeDefinition",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://unitsofmeasure.org|2.2"
+    }],
+    "contains" : [{
+      "system" : "http://unitsofmeasure.org",
+      "code" : "%",
+      "display" : "%"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "cm",
+      "display" : "cm"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "[in_i]",
+      "display" : "[in_i]"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kg",
+      "display" : "kg"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "g",
+      "display" : "g"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "[lb_av]",
+      "display" : "[lb_av]"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "Cel",
+      "display" : "Cel"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "[degF]",
+      "display" : "[degF]"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]",
+      "display" : "mm[Hg]"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "/min",
+      "display" : "/min"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kg/m2",
+      "display" : "kg/m2"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "m2",
+      "display" : "m2"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
