@@ -7,7 +7,6 @@ CodeSystem: NEMSISExam
 Id: cs-nemsis-exam
 Title: "NEMSIS Physical Exam Codes"
 Description: "Enumeration codes for the NEMSIS eExam physical examination section. Covers body region assessments and finding location qualifiers. NEMSIS 3.5.1.251001CP2."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-exam"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

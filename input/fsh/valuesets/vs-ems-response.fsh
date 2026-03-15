@@ -7,7 +7,7 @@
 // NEMSIS: eResponse.05 - Type of Response (Mandatory/National)
 ValueSet: EMSResponseTypeVS
 Id: vs-ems-response-type
-Title: "EMS Response Type"
+Title: "EMS Response Type (ValueSet)"
 Description: "NEMSIS eResponse.05 - The type of EMS response."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-type"
 * ^status = #active
@@ -34,7 +34,7 @@ Description: "NEMSIS eResponse.05 - The type of EMS response."
 // NEMSIS: eResponse.07 - Type of EMS Unit (Mandatory/National)
 ValueSet: EMSUnitTypeVS
 Id: vs-ems-unit-type
-Title: "EMS Unit Type"
+Title: "EMS Unit Type (ValueSet)"
 Description: "NEMSIS eResponse.07 - The type of EMS vehicle/unit."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-unit-type"
 * ^status = #active
@@ -180,7 +180,7 @@ Description: "NEMSIS eResponse.12 - Types of delay returning to service after tr
 // NEMSIS: eResponse.23 - Response Mode to Scene (Mandatory/National)
 ValueSet: EMSResponseModeVS
 Id: vs-ems-response-mode
-Title: "EMS Response Mode to Scene"
+Title: "EMS Response Mode to Scene (ValueSet)"
 Description: "NEMSIS eResponse.23 - The response mode (emergent vs non-emergent) used en route to the scene."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-mode"
 * ^status = #active
@@ -193,7 +193,7 @@ Description: "NEMSIS eResponse.23 - The response mode (emergent vs non-emergent)
 // NEMSIS: eResponse.24 - Additional Response Mode Descriptors (Required/National)
 ValueSet: EMSAdditionalResponseModeVS
 Id: vs-ems-additional-response-mode
-Title: "EMS Additional Response Mode Descriptors"
+Title: "EMS Additional Response Mode Descriptors (ValueSet)"
 Description: "NEMSIS eResponse.24 - Additional descriptors of response mode (lights, sirens, speed, intersection navigation)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-additional-response-mode"
 * ^status = #active

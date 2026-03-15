@@ -8,7 +8,6 @@ CodeSystem: NEMSISPertinentNegative
 Id: cs-nemsis-pertinent-negative
 Title: "NEMSIS Pertinent Negative Codes"
 Description: "NEMSIS Pertinent Negative (PN) codes indicating a clinically significant documented absence. Applied to clinical data elements where documenting a negative finding is as meaningful as documenting a positive one."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-pertinent-negative"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

@@ -34,13 +34,13 @@ Usage: #example
 
 // ── eOutcome.10 - ED Diagnosis (ICD-10-CM) ────────────────────
 // S09.90XA — Unspecified injury of head, initial encounter
-* component[edDiagnosis].code = $loinc#29548-5 "Diagnosis"
+* component[edDiagnosis].code = $loinc#29548-5 "Diagnosis Narrative"
 * component[edDiagnosis].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/sid/icd-10-cm"
 * component[edDiagnosis].valueCodeableConcept.coding[0].code = #S09.90XA
 * component[edDiagnosis].valueCodeableConcept.coding[0].display = "Unspecified injury of head, initial encounter"
 
 // ── eOutcome.11 - Hospital Admission DateTime ─────────────────
-* component[hospitalAdmitDateTime].code = $loinc#52455-3 "Hospital admission date"
+* component[hospitalAdmitDateTime].code = $loinc#52455-3 "Admission date"
 * component[hospitalAdmitDateTime].valueDateTime = "2026-03-14T17:30:00-08:00"
 
 // ── eOutcome.18 - ED Admission DateTime ──────────────────────

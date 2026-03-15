@@ -8,7 +8,6 @@ CodeSystem: NEMSISPersonnel
 Id: cs-nemsis-personnel-level
 Title: "NEMSIS Personnel Level Codes"
 Description: "NEMSIS eCrew.02 - Crew Member Level certification and licensure codes (NEMSIS 3.5.1.251001CP2)."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-personnel-level"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

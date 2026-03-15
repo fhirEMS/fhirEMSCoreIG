@@ -8,7 +8,6 @@ CodeSystem: NEMSISProcedures
 Id: cs-nemsis-procedures
 Title: "NEMSIS Procedures/Protocols Codes"
 Description: "Enumeration codes from the NEMSIS eProtocols section (eProtocols.01 - Protocols Used). NEMSIS 3.5.1.251001CP2."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-procedures"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

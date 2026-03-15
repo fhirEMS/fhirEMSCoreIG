@@ -25,8 +25,13 @@ Usage: #example
 * organization = Reference(ex-ems-organization-agency)
 
 // eCrew.03 - Crew Member Response Role → Primary Patient Caregiver-At Scene
-* code[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-codes"
+* code[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-codes"
 * code[0].coding[0].code = #2403011
 * code[0].coding[0].display = "Primary Patient Caregiver-At Scene"
 
 * active = true
+
+// pd-1: SHALL have contact information or a reference to an Endpoint
+* telecom[0].system = #phone
+* telecom[0].value = "951-555-0142"
+* telecom[0].use = #work

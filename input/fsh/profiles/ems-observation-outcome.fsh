@@ -86,7 +86,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.09. Usage: Required/National. NV: NotRecorded. ICD-10-PCS procedure code. Repeating (0..M)."
 
 // ── eOutcome.10 - ED Diagnoses ────────────────────────────────
-* component[edDiagnosis].code = $loinc#29548-5 "Diagnosis"
+* component[edDiagnosis].code = $loinc#29548-5 "Diagnosis Narrative"
   * ^short = "eOutcome.10 - ED Diagnosis (ICD-10-CM)"
 * component[edDiagnosis].value[x] only CodeableConcept
 * component[edDiagnosis].valueCodeableConcept MS
@@ -95,7 +95,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.10. Usage: Required/National. NV: NotRecorded. ICD-10-CM diagnosis code. Repeating (0..M)."
 
 // ── eOutcome.11 - Hospital Admission DateTime ─────────────────
-* component[hospitalAdmitDateTime].code = $loinc#52455-3 "Hospital admission date"
+* component[hospitalAdmitDateTime].code = $loinc#52455-3 "Admission date"
   * ^short = "eOutcome.11 - Hospital Admission Date/Time"
 * component[hospitalAdmitDateTime].value[x] only dateTime
 * component[hospitalAdmitDateTime].valueDateTime MS

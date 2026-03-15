@@ -1,6 +1,6 @@
 id: hl7.fhir.us.emscore
 canonical: http://hl7.org/fhir/us/emscore
-name: fhirEMSCore
+name: FhirEMSCore
 # IMPORTANT: This is an unofficial AI-generated research project.
 # It is NOT an HL7 product and has NOT been approved by any standards body.
 # The canonical URL is a placeholder only — it is not a registered HL7 namespace.
@@ -23,14 +23,14 @@ releaseLabel: ci-build
 # NOTE: This publisher is fictitious. This IG was not produced by HL7.
 publisher:
   name: fhirEMSCore Research Project (AI-Generated — Unofficial)
-  email: fhiremscore@example.org
+  url: https://github.com/fhirEMSCore/fhirEMSCore
 
 # Contact information
 contact:
   - name: fhirEMSCore Research Project
     telecom:
-      - system: email
-        value: fhiremscore@example.org
+      - system: url
+        value: https://github.com/fhirEMSCore/fhirEMSCore
 
 # License
 license: CC0-1.0

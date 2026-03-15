@@ -27,7 +27,7 @@ Usage: #example
 * component[examFinding][+].code.coding[0].system = "http://loinc.org"
 * component[examFinding][=].code.coding[0].code = #39106-0
 * component[examFinding][=].code.coding[0].display = "Color of Skin"
-* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-exam"
+* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-exam"
 * component[examFinding][=].valueCodeableConcept.coding[0].code = #3504009
 * component[examFinding][=].valueCodeableConcept.coding[0].display = "Pale"
 
@@ -35,7 +35,7 @@ Usage: #example
 * component[examFinding][+].code.coding[0].system = "http://snomed.info/sct"
 * component[examFinding][=].code.coding[0].code = #364153007
 * component[examFinding][=].code.coding[0].display = "Skin moisture"
-* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-exam"
+* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-exam"
 * component[examFinding][=].valueCodeableConcept.coding[0].code = #3504013
 * component[examFinding][=].valueCodeableConcept.coding[0].display = "Diaphoretic"
 
@@ -62,7 +62,7 @@ Usage: #example
 * component[examFinding][+].code.coding[0].system = "http://loinc.org"
 * component[examFinding][=].code.coding[0].code = #70842-0
 * component[examFinding][=].code.coding[0].display = "Mental status"
-* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-exam"
+* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-exam"
 * component[examFinding][=].valueCodeableConcept.coding[0].code = #3519003
 * component[examFinding][=].valueCodeableConcept.coding[0].display = "Confused"
 
@@ -70,6 +70,6 @@ Usage: #example
 * component[examFinding][+].code.coding[0].system = "http://snomed.info/sct"
 * component[examFinding][=].code.coding[0].code = #57676002
 * component[examFinding][=].code.coding[0].display = "Joint pain"
-* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-exam"
+* component[examFinding][=].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-exam"
 * component[examFinding][=].valueCodeableConcept.coding[0].code = #3520003
 * component[examFinding][=].valueCodeableConcept.coding[0].display = "Motor Response-Abnormal"

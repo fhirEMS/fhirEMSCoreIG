@@ -8,7 +8,6 @@ CodeSystem: NEMSISSituation
 Id: cs-nemsis-situation
 Title: "NEMSIS Situation Codes"
 Description: "Enumeration codes from the NEMSIS eSituation section (NEMSIS 3.5.1.251001CP2)."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-situation"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

@@ -42,7 +42,7 @@ Description: "NEMSIS Pertinent Negative codes indicating a clinically significan
 // NEMSIS: eCrew.02 - Crew Member Level (Mandatory/National)
 ValueSet: EMSCertificationLevelVS
 Id: vs-ems-certification-level
-Title: "EMS Certification Level"
+Title: "EMS Certification Level (ValueSet)"
 Description: "NEMSIS eCrew.02 - The certification/licensure level of the EMS crew member."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-certification-level"
 * ^status = #active
@@ -96,7 +96,7 @@ Description: "NEMSIS eHistory.01 - Barriers encountered during patient assessmen
 // eSituation.07 (Chief Complaint Anatomic Location). Codes are anatomic regions.
 ValueSet: EMSIncidentTypeVS
 Id: vs-ems-incident-type
-Title: "EMS Chief Complaint Anatomic Location"
+Title: "EMS Chief Complaint Anatomic Location (ValueSet)"
 Description: "NEMSIS eSituation.07 - The anatomic location of the patient's chief complaint."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-incident-type"
 * ^status = #active

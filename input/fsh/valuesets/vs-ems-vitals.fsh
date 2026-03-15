@@ -85,7 +85,7 @@ Description: "NEMSIS eVitals.05 - How the ECG was interpreted."
 // NEMSIS: eVitals.08 - Method of Blood Pressure Measurement (Recommended)
 ValueSet: EMSBPMethodVS
 Id: vs-ems-bp-method
-Title: "EMS Blood Pressure Measurement Method"
+Title: "EMS Blood Pressure Measurement Method (ValueSet)"
 Description: "NEMSIS eVitals.08 - The technique used to measure blood pressure."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-bp-method"
 * ^status = #active
@@ -155,7 +155,7 @@ Description: "NEMSIS eVitals.26 - The patient's level of responsiveness using th
 // NEMSIS: eVitals.28 - Pain Scale Type (Recommended)
 ValueSet: EMSPainScaleTypeVS
 Id: vs-ems-pain-scale-type
-Title: "EMS Pain Scale Type"
+Title: "EMS Pain Scale Type (ValueSet)"
 Description: "NEMSIS eVitals.28 - The type of pain scale used to assess the patient's pain."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-pain-scale-type"
 * ^status = #active

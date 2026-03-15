@@ -27,8 +27,8 @@ Description: """
 
 * identifier contains
     unitNumber  0..1 MS and
-    vin         0..1    and
-    callSign    0..1
+    vin         0..1 MS and
+    callSign    0..1 MS
 
 * identifier[unitNumber]
   * ^short = "dVehicle.01 - Unit/Vehicle Number"

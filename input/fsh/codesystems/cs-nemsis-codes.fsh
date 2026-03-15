@@ -12,7 +12,6 @@ CodeSystem: NEMSISCodes
 Id: cs-nemsis-codes
 Title: "NEMSIS General Codes"
 Description: "General NEMSIS enumeration codes for sections without a dedicated CodeSystem. Currently covers eHistory (eHistory.01 - Barriers to Patient Care). NEMSIS 3.5.1.251001CP2."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-codes"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

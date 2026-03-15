@@ -36,7 +36,7 @@ Parent: $us-core-observation
 // More specific codes (e.g., 112798008 Endotracheal intubation) may be used
 // by individual implementations.
 * code 1..1 MS
-* code = $snomed#182682004 "Airway management"
+* code = $snomed#182682004 "Emergency airway management"
   * ^short = "eAirway — Airway management (SNOMED 182682004)"
   * ^comment = "NEMSIS eAirway. Overarching SNOMED code for the airway management event. Specific device or procedure details in extension[airwayContext]."
 

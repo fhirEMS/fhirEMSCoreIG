@@ -18,7 +18,7 @@ Usage: #example
 * category[us-core].coding[0].code = #procedure
 
 // Code fixed to SNOMED 182682004 (Airway management) by profile
-* code = $snomed#182682004 "Airway management"
+* code = $snomed#182682004 "Emergency airway management"
 
 // eAirway.02 - Date/Time Airway Device Placement Confirmed
 * effectiveDateTime = "2026-03-14T14:32:00-08:00"

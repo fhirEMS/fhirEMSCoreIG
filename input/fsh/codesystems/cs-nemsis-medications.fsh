@@ -7,7 +7,6 @@ CodeSystem: NEMSISMedications
 Id: cs-nemsis-medications
 Title: "NEMSIS Medications and Procedures Codes"
 Description: "Enumeration codes for the NEMSIS eMedications and eProcedures sections. Covers administration routes, dosage units, complications, vascular access locations, airway techniques, clinical response, authorization types, caregiver levels, and Yes/No values shared across both sections. NEMSIS 3.5.1.251001CP2."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-medications"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

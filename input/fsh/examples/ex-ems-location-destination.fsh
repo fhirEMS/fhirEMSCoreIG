@@ -19,7 +19,7 @@ Usage: #example
 
 // eDisposition.02 - Destination Code (NPI-2 as identifier)
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[0].value = "1508855538"
+* identifier[0].value = "1508855537"
 
 // eDisposition.03–07 - Destination Address
 * address.use = #work

@@ -25,7 +25,7 @@ Usage: #example
 * birthDate = "1988-04-15"
 
 // State certification — Paramedic
-* qualification[stateLicensure].code.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-personnel-level"
+* qualification[stateLicensure].code.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-personnel-level"
 * qualification[stateLicensure].code.coding[0].code = #9925007
 * qualification[stateLicensure].code.coding[0].display = "Paramedic"
 * qualification[stateLicensure].identifier[0].system = "http://example.org/ems/cert-number"

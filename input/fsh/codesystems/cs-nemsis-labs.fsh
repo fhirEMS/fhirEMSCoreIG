@@ -7,7 +7,6 @@ CodeSystem: NEMSISLabs
 Id: cs-nemsis-labs
 Title: "NEMSIS eLabs Code System"
 Description: "Enumeration codes from the NEMSIS 3.5.1 eLabs section covering lab result types and imaging study types."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-labs"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

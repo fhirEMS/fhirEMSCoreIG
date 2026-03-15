@@ -92,6 +92,7 @@ Parent: Claim
 * diagnosis MS
   * ^comment = "ICD-10-CM diagnoses supporting medical necessity."
 * diagnosis.diagnosis[x] MS
+* diagnosis.diagnosisCodeableConcept MS
 * diagnosis.diagnosisCodeableConcept.coding.system = "http://hl7.org/fhir/sid/icd-10-cm"
 
 // ── Item (service lines) ──────────────────────────────────────
@@ -114,9 +115,9 @@ Parent: Claim
 * supportingInfo ^slicing.rules = #open
 
 * supportingInfo contains
-    physicianCertification 0..1 and
-    roundTripPurpose       0..1 and
-    stretcherPurpose       0..1
+    physicianCertification 0..1 MS and
+    roundTripPurpose       0..1 MS and
+    stretcherPurpose       0..1 MS
 
 * supportingInfo[physicianCertification].category
     = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info

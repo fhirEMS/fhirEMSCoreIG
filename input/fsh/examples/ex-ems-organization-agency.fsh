@@ -14,7 +14,7 @@ Usage: #example
 
 // Identifiers
 * identifier[npi].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[npi].value = "1234567890"
+* identifier[npi].value = "1548456411"
 
 * identifier[stateId].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[stateId].type.coding[0].code = #XX
@@ -30,9 +30,9 @@ Usage: #example
 * address.postalCode = "92501"
 
 // dAgency type
-* type[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-codes"
-* type[0].coding[0].code = #9921001
-* type[0].coding[0].display = "Government"
+* type[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-codes"
+* type[0].coding[0].code = #9912003
+* type[0].coding[0].display = "Governmental, Non-Fire"
 
 // Agency details extension (dAgency.09–12)
 * extension[agencyDetails].extension[primaryServiceType].valueCodeableConcept

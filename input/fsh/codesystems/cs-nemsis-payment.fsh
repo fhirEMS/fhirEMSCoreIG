@@ -7,7 +7,6 @@ CodeSystem: NEMSISPayment
 Id: cs-nemsis-payment
 Title: "NEMSIS ePayment Code System"
 Description: "Enumeration codes from the NEMSIS 3.5.1 ePayment section covering primary method of payment, insurance billing priority, relationship to insured, response urgency, patient transport assessment, ambulance transport reason codes, ambulance conditions indicators, CMS service level, and payer type."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-payment"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

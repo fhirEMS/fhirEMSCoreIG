@@ -7,7 +7,6 @@ CodeSystem: NEMSISArrest
 Id: cs-nemsis-arrest
 Title: "NEMSIS eArrest Code System"
 Description: "Enumeration codes from the NEMSIS 3.5.1 eArrest section covering cardiac arrest status, etiology, resuscitation attempts, CPR type, ROSC, neurological outcome, end-of-event disposition, and first-responder roles."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-arrest"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

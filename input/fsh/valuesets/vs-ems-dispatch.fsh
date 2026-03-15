@@ -35,7 +35,7 @@ Description: "NEMSIS eDispatch.05 - The acuity level assigned at time of dispatc
 // Separate CodeSystem not required; uses general NEMSIS CS or SNOMED.
 ValueSet: EMSDispatchReasonVS
 Id: vs-ems-dispatch-reason
-Title: "EMS Dispatch Reason"
+Title: "EMS Dispatch Reason (ValueSet)"
 Description: "NEMSIS eDispatch.01 - The dispatch complaint or reason for the EMS response. Extensible to allow agency-specific or SNOMED CT dispatch codes."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-dispatch-reason"
 * ^status = #active

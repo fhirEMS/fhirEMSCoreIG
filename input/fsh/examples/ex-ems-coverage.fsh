@@ -31,7 +31,7 @@ Usage: #example
 // ── Payor — ePayment.09/10 (CMS / Medicare) ──────────────────
 * payor[0].display = "Centers for Medicare & Medicaid Services"
 * payor[0].identifier.system = "http://hl7.org/fhir/sid/us-npi"
-* payor[0].identifier.value = "1234000001"
+* payor[0].identifier.value = "1234000002"
 
 // ── Billing Priority — ePayment.11 (Primary) ─────────────────
 * order = 1

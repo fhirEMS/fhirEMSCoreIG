@@ -11,7 +11,7 @@ Title: "EMS Core Server Capability Statement"
 Description: "Defines the FHIR server capabilities required to implement the fhirEMSCore Implementation Guide. An EMS PCR repository SHALL support the profiles, interactions, and search parameters specified herein."
 Usage: #definition
 
-* url = "http://hl7.org/fhir/us/emscore/CapabilityStatement/ems-core-server"
+* url = "http://hl7.org/fhir/us/emscore/CapabilityStatement/CapabilityStatement-ems-core-server"
 * name = "EMSCoreServerCapabilityStatement"
 * title = "EMS Core Server Capability Statement"
 * status = #draft

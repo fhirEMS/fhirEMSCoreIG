@@ -38,7 +38,7 @@ Description: """
 
 // ── Document Type ─────────────────────────────────────────────
 * type MS
-* type = $loinc#67796-3 "EMS patient care report - version 3"
+* type = $loinc#67796-3 "EMS patient care report"
   * ^short = "PCR document type (LOINC 67796-3)"
 
 // ── Subject ───────────────────────────────────────────────────
@@ -119,14 +119,14 @@ Description: """
 
 // ── eHistory Section ──────────────────────────────────────────
 * section[eHistory]
-  * code = $loinc#11348-0 "History of Past illness Narrative"
+  * code = $loinc#11348-0 "History of past illness Narrative"
   * title = "Patient History"
   * ^short = "NEMSIS eHistory section — medical/surgical history, medications, allergies"
   * ^comment = "Contains references to EMSCondition (medical history), EMSAllergyIntolerance, and NEMSIS barrier-to-care observations."
 
 // ── eVitals Section ───────────────────────────────────────────
 * section[eVitals]
-  * code = $loinc#8716-3 "Vital signs"
+  * code = $loinc#8716-3 "Vital signs note"
   * title = "Vital Signs"
   * ^short = "NEMSIS eVitals section — each VitalGroup becomes one entry per vital sign Observation"
   * ^comment = "Contains references to EMSObservationVitalSigns, EMSObservationBP, and EMSObservationGCS. Multiple VitalGroups → multiple entries (NDR-007)."
@@ -140,7 +140,7 @@ Description: """
 
 // ── eProcedures Section ───────────────────────────────────────
 * section[eProcedures]
-  * code = $loinc#29554-3 "Procedure note"
+  * code = $loinc#29554-3 "Procedure Narrative"
   * title = "Procedures Performed"
   * ^short = "NEMSIS eProcedures section — EMS procedures performed"
   * ^comment = "Contains references to EMSProcedure resources. Multiple ProcedureGroups → multiple entries."

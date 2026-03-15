@@ -7,7 +7,6 @@ CodeSystem: NEMSISPayerType
 Id: cs-nemsis-payer-type
 Title: "NEMSIS ePayment Payer Type Code System"
 Description: "X12 payer type codes used in NEMSIS ePayment.57 to identify the type of insurance payer."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-payer-type"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

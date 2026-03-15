@@ -45,24 +45,19 @@ Alias: $us-core-pract-role      = http://hl7.org/fhir/us/core/StructureDefinitio
 Alias: $us-core-bp              = http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure
 
 // --- NEMSIS Code Systems ---
-Alias: $nemsis-cs               = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-codes
-Alias: $nemsis-incident-type    = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-incident-type
-Alias: $nemsis-response-type    = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-response-type
-Alias: $nemsis-transport-mode   = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-transport-mode
-Alias: $nemsis-unit-type        = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-unit-type
-Alias: $nemsis-personnel-level  = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-personnel-level
-Alias: $nemsis-destination      = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-destination
-Alias: $nemsis-vitals           = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-vitals
-Alias: $nemsis-procedures       = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-procedures
-Alias: $nemsis-medications      = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-medications
-Alias: $nemsis-exam             = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-exam
-Alias: $nemsis-situation        = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-situation
-Alias: $nemsis-arrest           = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-arrest
-Alias: $nemsis-airway           = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-airway
-Alias: $nemsis-labs             = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-labs
+Alias: $nemsis-cs               = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-codes
+Alias: $nemsis-personnel-level  = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-personnel-level
+Alias: $nemsis-vitals           = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-vitals
+Alias: $nemsis-procedures       = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-procedures
+Alias: $nemsis-medications      = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-medications
+Alias: $nemsis-exam             = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-exam
+Alias: $nemsis-situation        = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-situation
+Alias: $nemsis-arrest           = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-arrest
+Alias: $nemsis-airway           = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-airway
+Alias: $nemsis-labs             = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-labs
 Alias: $nubc-discharge          = http://www.nubc.org/patient-discharge
-Alias: $nemsis-payment          = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-payment
-Alias: $nemsis-payer-type       = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-payer-type
+Alias: $nemsis-payment          = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-payment
+Alias: $nemsis-payer-type       = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-payer-type
 
 // --- Payment Extensions ---
 Alias: $ext-ems-primary-payment-method   = http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-primary-payment-method
@@ -74,10 +69,10 @@ Alias: $ext-ems-mileage-to-closest       = http://hl7.org/fhir/us/emscore/Struct
 Alias: $ext-ems-als-assessment           = http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-als-assessment
 Alias: $ext-ems-cms-service-level        = http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-cms-service-level
 Alias: $ext-ems-payer-type               = http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-payer-type
-Alias: $nemsis-nv               = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-not-values
-Alias: $nemsis-pn               = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-pertinent-negative
+Alias: $nemsis-nv               = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-not-values
+Alias: $nemsis-pn               = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-pertinent-negative
 Alias: $nemsis-patient-cs           = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-patient
-Alias: $nemsis-encounter-cs         = http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-encounter
+Alias: $nemsis-encounter-cs         = http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-encounter
 
 // --- NEMSIS Extensions ---
 Alias: $ext-ems-response-mode            = http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-response-mode

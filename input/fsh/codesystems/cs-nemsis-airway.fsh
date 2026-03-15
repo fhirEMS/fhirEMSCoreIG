@@ -7,7 +7,6 @@ CodeSystem: NEMSISAirway
 Id: cs-nemsis-airway
 Title: "NEMSIS eAirway Code System"
 Description: "Enumeration codes from the NEMSIS 3.5.1 eAirway section covering airway management indications, device types, confirmation methods, confirming personnel, complications, and reasons for failed management."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-airway"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

@@ -12,7 +12,6 @@ Description: """
   and Alternate Home Residence (ePatient.22).
   Race codes (ePatient.14) are mapped to OMB/CDC categories used in us-core-race.
 """
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-patient"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

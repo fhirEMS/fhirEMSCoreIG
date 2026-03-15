@@ -30,7 +30,7 @@ Usage: #example
 * identifier[callSign].value = "Medic 21"
 
 // dVehicle.04 - Vehicle Type → Ambulance
-* type.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-codes"
+* type.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-codes"
 * type.coding[0].code = #1404001
 * type.coding[0].display = "Ambulance"
 

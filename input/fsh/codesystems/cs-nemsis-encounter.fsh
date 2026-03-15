@@ -8,7 +8,6 @@ CodeSystem: NEMSISEncounter
 Id: cs-nemsis-encounter
 Title: "NEMSIS Encounter Codes"
 Description: "Enumeration codes from the NEMSIS eResponse, eDispatch, and eDisposition sections (NEMSIS 3.5.1.251001CP2)."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-encounter"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

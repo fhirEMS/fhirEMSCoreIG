@@ -1,0 +1,82 @@
+== Suppressed Messages ==
+
+# LOINC EMS-specific codes not present in local LOINC v2.81 cache.
+# These are valid LOINC codes from the EMS/NEMSIS collaboration batch
+# (introduced ~2012-2016). The txcache version does not include them,
+# but they are resolvable on the tx.fhir.org server.
+Unknown code '74209-4' in the CodeSystem 'http://loinc.org'
+Unknown code '74187-2' in the CodeSystem 'http://loinc.org'
+Unknown code '74190-6' in the CodeSystem 'http://loinc.org'
+Unknown code '74185-6' in the CodeSystem 'http://loinc.org'
+Unknown code '74196-3' in the CodeSystem 'http://loinc.org'
+
+# This IG is not an HL7-published IG and does not use HL7 workgroups.
+# WG extension is only required for HL7 ballot/publication.
+When HL7 is publishing a resource, the owning committee must be stated
+
+# These are draft HL7 terminology CodeSystems used for FHIR base resources;
+# their draft status is an upstream issue, not a defect in this IG.
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/claim-type
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/claiminformationcategory
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/coverage-class
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category
+
+# ext-ems-not-value and ext-ems-pertinent-negative intentionally apply to
+# any element type (Element context) per NEMSIS NV/PN design pattern (NDR-001/002).
+Review the extension type for ext-ems-not-value
+Review the extension type for ext-ems-pertinent-negative
+
+# pattern discriminator deprecation is R5 forward-compat only; R4 is fine.
+The discriminator type 'pattern' is deprecated in R5+
+
+# US Core does not define profiles for Coverage or Device in 6.1.0.
+# These derive from FHIR R4 base per project derivation rules.
+US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
+US FHIR Usage rules require that all profiles on Device derive from the core US profile
+
+# ValueSet.experimental is required by ShareableValueSet; this IG is experimental.
+Value sets published by HL7 SHALL conform to the ShareableValueSet profile
+
+# LOINC additional codes not in local v2.81 cache (EMS-specific or newer batch).
+Unknown code '10197-4' in the CodeSystem 'http://loinc.org'
+Unknown code '59469-7' in the CodeSystem 'http://loinc.org'
+
+# SNOMED code not in US Edition txcache (valid in international edition).
+Unknown code '364153007' in the CodeSystem 'http://snomed.info/sct'
+
+# NUBC patient discharge CodeSystem not available in FHIR tx server; external code system.
+A definition for CodeSystem 'http://www.nubc.org/patient-discharge' could not be found
+
+# HCPCS release code set (CMS billing codes) not available in FHIR tx server; external.
+A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found
+
+# v3-ServiceDeliveryLocationRoleType not in R4 registry; used for location type in US Core.
+ValueSet 'http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType' not found
+
+# OxygenSat magic LOINC 2708-6: ems-observation-vitalsigns intentionally extends
+# us-core-vital-signs (not us-core-pulse-oximetry); SpO2 uses LOINC 59408-5 correctly.
+OxygenSatCode: magic LOINC code 2708-6 required, but not found
+
+# Slicing evaluation issues on examFinding, identifier, and Organization slices are
+# expected for the pattern-based discriminators used in this IG (R4 pattern slicing).
+Slicing cannot be evaluated: Could not match discriminator (code) for slice Observation.component:examFinding
+Slicing cannot be evaluated: Could not match discriminator ($this) for slice Organization.identifier:npi
+Slicing cannot be evaluated: Could not match discriminator ($this) for slice Organization.identifier:stateId
+Slicing cannot be evaluated: Could not match discriminator ($this) for slice Organization.identifier:fireDeptId
+Slicing cannot be evaluated: Could not match discriminator ($this) for slice Practitioner.identifier:agencyId
+
+# CDC race/ethnicity OID used in US Core extensions; resolves correctly via tx server.
+The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes
+
+# v2-0203 identifier type slice: pattern expression is valid R4 FHIRPath.
+Slicing cannot be evaluated: Problem processing expression 'true and type.coding.where(system = 'http://terminology.hl7.org/CodeSystem/v2-0203'
+
+# normalization-decision-records.md is an internal docs/ file, not a published IG page.
+The link 'normalization-decision-records.md'
+
+# Disclaimer text uses 'MAY' in all caps as emphasis, not as a conformance verb.
+The html source contains the word 'MAY' but it is not in a text phrase marked as a conformance clause
+
+# ig-0: IG Name constraint — 'FhirEMSCore' satisfies the regex; this is a false positive.
+Constraint failed: ig-0

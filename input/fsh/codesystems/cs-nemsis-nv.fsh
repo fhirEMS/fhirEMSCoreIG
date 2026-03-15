@@ -8,7 +8,6 @@ CodeSystem: NEMSISNotValues
 Id: cs-nemsis-not-values
 Title: "NEMSIS Not Value Codes"
 Description: "NEMSIS Not Value (NV) codes used when a data element cannot be recorded. Three codes apply: NotApplicable (element does not apply to this event), NotRecorded (element applies but was not documented), NotReporting (agency is not reporting this element)."
-* ^url = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-not-values"
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false

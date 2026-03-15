@@ -27,13 +27,13 @@ Usage: #example
 * context = Reference(ex-ems-encounter)
 
 // eMedications.09/10 - Performer
-* performer[0].function.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-medications"
+* performer[0].function.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-medications"
 * performer[0].function.coding[0].code = #9905007
 * performer[0].function.coding[0].display = "Paramedic"
 * performer[0].actor = Reference(ex-ems-practitioner)
 
 // eMedications.04 - Route → Intravenous (IV)
-* dosage.route.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-medications"
+* dosage.route.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-medications"
 * dosage.route.coding[0].code = #9927023
 * dosage.route.coding[0].display = "Intravenous (IV)"
 
