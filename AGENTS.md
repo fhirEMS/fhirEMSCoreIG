@@ -449,8 +449,20 @@ java -jar input-cache/validator.jar \
 
 ## Profiles Build Status
 
-**v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-14.**
+**v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-15.**
+**IG Publisher: 409 errors, 65 warnings (all known false-positives), 1 broken link, 757,925 links validated.**
 **Totals: 23 profiles, 43 extensions, 121 ValueSets, 16 CodeSystems, 30 examples.**
+
+### Build Script
+Run the IG Publisher with:
+```bash
+/tmp/run_publisher.sh
+# Or manually:
+env PATH="$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin:$PATH" \
+  .jdk/jdk-21.0.10+7/Contents/Home/bin/java -jar input-cache/publisher.jar -ig .
+```
+Note: SUSHI at `~/.local/bin/sushi`, Jekyll at `~/.gem/ruby/2.6.0/bin/jekyll`,
+Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 
 ### Profiles
 
