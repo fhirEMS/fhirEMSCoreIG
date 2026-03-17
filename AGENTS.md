@@ -4,10 +4,10 @@ This file provides AI coding agents (Claude, Copilot, Cursor, Gemini, etc.) with
 
 ---
 ## Project Purpose
-We are creating a FHIR Implementation Guide for US Emergency Medical Services (EMS) agencies and other health care organizations. The NEMSIS (nemsis.rg) organization manages the current data standard, called NEMSIS. HL7 manages FHIR. NEMSIS is similar to FHIR US Core, containing the schemas,code systems and  value sets required for the use case. 
+We are creating a FHIR Implementation Guide for US Emergency Medical Services (EMS) agencies and other health care organizations. The NEMSIS (nemsis.rg) organization manages the current data standard, called NEMSIS. HL7 manages FHIR. NEMSIS is similar to FHIR US Core, containing the schemas,code systems and  value sets required for the use case.
 
 ## Project Requirements
-Each profile generated must be compatible with FHIR R4, US Core 6.1.0 AND the NEMSIS standard. Should they not be compatible, follow US Core 6.1.0. Profiles shall be validated against all 3 IG's. 
+Each profile generated must be compatible with FHIR R4, US Core 6.1.0 AND the NEMSIS standard. Should they not be compatible, follow US Core 6.1.0. Profiles shall be validated against all 3 IG's.
 
 ## Project Identity
 
@@ -27,7 +27,8 @@ Each profile generated must be compatible with FHIR R4, US Core 6.1.0 AND the NE
 
 ```
 fhirEMSCore/                        ← project root
-├── CLAUDE.md                        ← this file
+├── AGENTS.md                        ← this file (read by all AI agents)
+├── CLAUDE.md                        ← Claude Code entry point (@AGENTS.md)
 ├── README.md                        ← human-readable project overview
 ├── sushi-config.yaml                ← SUSHI build configuration
 ├── ig.ini                           ← IG Publisher entry point
@@ -445,14 +446,6 @@ java -jar input-cache/validator.jar \
 ./_updatePublisher.sh
 ```
 
----
-
-## Profiles Build Status
-
-**v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-15.**
-**IG Publisher: 409 errors, 65 warnings (all known false-positives), 1 broken link, 757,925 links validated.**
-**Totals: 23 profiles, 43 extensions, 121 ValueSets, 16 CodeSystems, 30 examples.**
-
 ### Build Script
 Run the IG Publisher with:
 ```bash
@@ -463,6 +456,15 @@ env PATH="$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin:$PATH" \
 ```
 Note: SUSHI at `~/.local/bin/sushi`, Jekyll at `~/.gem/ruby/2.6.0/bin/jekyll`,
 Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
+
+---
+
+## Profiles Build Status
+
+**v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-16.**
+**IG Publisher: 211 errors, 251 warnings, 0 broken links, 759,012 links validated (build 11, 2026-03-16).**
+**Error breakdown: 205 VALIDATION_HL7_WG_NEEDED (HL7 canonical URL; unfixable without HL7 ballot) + 6 IG metadata (extensions version mismatch, jira, status/workgroup; unfixable without HL7 registration). This is the practical minimum.**
+**Totals: 23 profiles, 43 extensions, 121 ValueSets, 16 CodeSystems, 31 examples (including NamingSystem).**
 
 ### Profiles
 
@@ -492,7 +494,7 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 | `ems-coverage` | `profiles/ems-coverage.fsh` | ePayment.09–22, .57–60 | Complete |
 | `ems-claim` | `profiles/ems-claim.fsh` | ePayment (billing/CMS) | Complete |
 
-### Examples (30 total)
+### Examples (31 total)
 
 | Example Id | Profile | Scenario |
 |---|---|---|
@@ -522,6 +524,7 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 | `ex-ems-device-vehicle` | EMSDevice | Medic 7 ALS unit |
 | `ex-ems-coverage` | EMSCoverage | Medicare Part B primary |
 | `ex-ems-claim` | EMSClaim | ALS Level 1 Emergency, HCPCS A0427 |
+| `ns-ems-vin` | NamingSystem | VIN identifier system definition |
 
 ### New CodeSystems (Phase 2)
 
@@ -549,51 +552,31 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 | `ext-ems-mileage-to-closest` | Claim | ePayment.48 |
 | `ext-ems-payer-type` | Coverage | ePayment.57 |
 
-### CodeSystem Inventory (14 files)
+### CodeSystem Inventory (16 files)
 | File | URL suffix | Contents |
 |---|---|---|
 | `cs-nemsis-codes.fsh` | `nemsis-codes` | Catch-all: eHistory, dAgency, eCrew, eScene, eSituation, dVehicle, PCR section codes, eOutcome.03 |
 | `cs-nemsis-arrest.fsh` | `nemsis-arrest` | eArrest codes (3001xxx–3022xxx) |
 | `cs-nemsis-airway.fsh` | `nemsis-airway` | eAirway codes (4001xxx–4009xxx) |
 | `cs-nemsis-labs.fsh` | `nemsis-labs` | eLabs codes (3403xxx, 3405xxx) |
-| `cs-nemsis-encounter.fsh` | `nemsis-encounter` | eResponse, eDispatch, eDisposition (~290 codes) |
+| `cs-nemsis-encounter.fsh` | `nemsis-encounter` | eResponse, eDispatch, eDisposition, eOutcome component codes (~295 codes) |
 | `cs-nemsis-exam.fsh` | `nemsis-exam` | eExam physical exam findings (457 codes) |
 | `cs-nemsis-medications.fsh` | `nemsis-medications` | eMedications/eProcedures (~200 codes) |
 | `cs-nemsis-nv.fsh` | `nemsis-not-values` | NV codes (3) |
 | `cs-nemsis-patient.fsh` | `nemsis-patient` | ePatient codes |
+| `cs-nemsis-payment.fsh` | `nemsis-payment` | ePayment codes |
+| `cs-nemsis-payer-type.fsh` | `nemsis-payer-type` | X12 payer type codes |
 | `cs-nemsis-personnel.fsh` | `nemsis-personnel-level` | eCrew.02 certification levels (16) |
 | `cs-nemsis-pn.fsh` | `nemsis-pertinent-negative` | PN codes (14) |
 | `cs-nemsis-procedures.fsh` | `nemsis-procedures` | eProtocols.01 protocol codes (112) |
 | `cs-nemsis-situation.fsh` | `nemsis-situation` | eSituation.07 anatomic locations (9) |
 | `cs-nemsis-vitals.fsh` | `nemsis-vitals` | eVitals enumeration codes (~110) |
 
-### Examples Inventory (23 instances across 16 files)
-All examples reference the MVA scenario from 2026-03-14.
-
-| Instance ID | Profile | File |
-|---|---|---|
-| `ex-ems-organization-agency` | EMSOrganization | `ex-ems-organization-agency.fsh` |
-| `ex-ems-practitioner` | EMSPractitioner | `ex-ems-practitioner.fsh` |
-| `ex-ems-practitionerrole` | EMSPractitionerRole | `ex-ems-practitionerrole.fsh` |
-| `ex-ems-patient` | EMSPatient | `ex-ems-patient.fsh` |
-| `ex-ems-encounter` | EMSEncounter | `ex-ems-encounter.fsh` |
-| `ex-ems-location-scene` | EMSLocationScene | `ex-ems-location-scene.fsh` |
-| `ex-ems-location-destination` | EMSLocationDestination | `ex-ems-location-destination.fsh` |
-| `ex-ems-device-vehicle` | EMSDeviceVehicle | `ex-ems-device-vehicle.fsh` |
-| `ex-ems-allergyintolerance` | EMSAllergyIntolerance | `ex-ems-allergyintolerance.fsh` |
-| `ex-ems-observation-bp` | EMSObservationBP | `ex-ems-observation-bp.fsh` |
-| `ex-ems-heart-rate`, `ex-ems-spo2`, `ex-ems-respiratory-rate` | EMSObservationVitalSigns | `ex-ems-observation-vitalsigns.fsh` |
-| `ex-ems-gcs-eye`, `ex-ems-gcs-verbal`, `ex-ems-gcs-motor`, `ex-ems-observation-gcs` | EMSObservationGCS | `ex-ems-observation-gcs.fsh` |
-| `ex-ems-exam-skin`, `ex-ems-exam-neuro` | EMSObservationExam | `ex-ems-observation-exam.fsh` |
-| `ex-ems-procedure` | EMSProcedure | `ex-ems-procedure.fsh` |
-| `ex-ems-medicationadministration` | EMSMedicationAdministration | `ex-ems-medicationadministration.fsh` |
-| `ex-ems-condition` | EMSCondition | `ex-ems-condition.fsh` |
-
-### Remaining Work (Phase 2)
-- **IG Publisher validation**: Run `java -jar input-cache/publisher.jar -ig .` for full HL7 validation
-- **ePayment profiles**: Deferred (Coverage + Claim, 59 elements, low priority)
+### Remaining Work (Phase 3+)
 - **Narrative page content**: `input/pagecontent/` stubs need real content
-- **Missing example instances**: EMSConditionArrest, EMSObservationAirway, EMSObservationLabs, EMSObservationOutcome
+- **eInjury profile**: 29 elements, maps to Condition
+- **eArrest examples**: EMSConditionArrest example instance
+- **eOther / eCustom**: Low priority
 
 ---
 
@@ -639,6 +622,10 @@ for line in lines[1:]:
 - **State-only vs National elements**: Check the `National`/`State` columns in `Combined_ElementDetails_Full.txt`. Elements marked `State` only are not required by the national standard and should be `0..1` with a comment.
 - **XSD is authoritative for structure**: When in doubt about cardinality or nesting, check the relevant `*_v3.xsd` file — it is the normative NEMSIS specification.
 - **Never add EMS-specific content to US Core profiles**: Only add constraints (tighten); never add elements that would conflict with US Core conformance.
+- **identifier slicing in profiles**: MUST use `#value` on `system` discriminator (not `$this` or `type`). Parent profile discriminator cannot be changed (causes snapshot generation failure). Remove formal slicing for identifiers without fixed system URLs.
+- **Organization uses US Core inherited `pattern:$this` slicing**: extend `identifier[NPI]` (uppercase, from US Core) without redefining the slicing header.
+- **EMS-NEMSIS LOINC 74xxx codes**: Not in local LOINC v2.81 cache — use `cs-nemsis-encounter` codes instead.
+- **ignoreWarnings.txt**: Only suppresses WARNING-level messages (not errors) via prefix matching; LF-only line endings.
 
 ---
 

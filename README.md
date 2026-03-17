@@ -1,18 +1,28 @@
 # fhirEMSCore Implementation Guide
 
 **FHIR R4 Implementation Guide for Emergency Medical Services**
-Based on **NEMSIS Version 3.5.1.251001CP2** | Aligned with **US Core 6.1.0**
+Based on **[NEMSIS Version 3.5.1.251001CP2](https://nemsis.org/technical-resources/version-3/version-3-data-dictionaries/)** | Aligned with **US Core 6.1.0**
 Status: **Draft v0.1.0** | March 2026
 
 ---
 
 ## Overview
 
-**fhirEMSCore** defines FHIR R4 profiles, extensions, value sets, and code systems for exchanging EMS Patient Care Report (PCR) data. It bridges the NEMSIS 3.5.1 XML standard with the FHIR interoperability ecosystem, enabling EMS agencies to share data with hospital EHRs, health information exchanges, and public health systems.
+**fhirEMSCore** defines FHIR R4 profiles, extensions, value sets, and code systems for exchanging EMS Patient Care Report (PCR) data. It bridges the **NEMSIS 3.5.1** XML standard with the FHIR interoperability ecosystem, enabling EMS agencies to share data with hospital EHRs, health information exchanges, and public health systems.
+
+### NEMSIS Standard
+
+This IG targets **NEMSIS Version 3.5.1.251001CP2** (October 2025 Checkpoint 2), the current national EMS data standard maintained by the [National EMS Information System (NEMSIS)](https://nemsis.org).
+
+- **NEMSIS Technical Resources**: https://nemsis.org/technical-resources/version-3/
+- **NEMSIS Sample Data**: https://nemsis.org/technical-resources/version-3/version-3-sample-data-sets/
+- **NEMSIS Data Dictionary**: https://nemsis.org/technical-resources/version-3/version-3-data-dictionaries/
+- **NEMSIS Schematron**: https://nemsis.org/technical-resources/version-3/version-3-schematron/
 
 ## Current Status
 
 **Phase 2 complete — SUSHI builds clean (0 errors, 0 warnings)**
+**IG Publisher: 211 errors (all unfixable HL7 registration requirements), 0 broken links**
 
 | Artifact Type | Count |
 |---|---|
@@ -20,7 +30,7 @@ Status: **Draft v0.1.0** | March 2026
 | Extensions | 43 |
 | Value Sets | 121 |
 | Code Systems | 16 |
-| Example Instances | 30 |
+| Example Instances | 31 |
 
 ## Profiles
 
@@ -126,8 +136,10 @@ java -jar input-cache/validator.jar \
 
 ## NEMSIS Source Files
 
-Source files are located at `/Users/chad/Documents/Files/fhirReference/NEMSIS Definitions/`.
+NEMSIS 3.5.1 XSD schemas, element definitions, and enumeration files are located in `source/nemsis/`.
 Key files: `Combined_ElementDetails_Full.txt` (657 elements), `Combined_ElementEnumerations.txt` (3,372 codes).
+
+Download the latest NEMSIS schemas and sample data from https://nemsis.org/technical-resources/version-3/
 
 ## Normalization Decisions
 
