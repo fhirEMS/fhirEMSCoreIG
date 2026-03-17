@@ -37,8 +37,8 @@ Description: """
 
 // ── Category — required by us-core-observation-clinical-result ─
 * category 1..* MS
-* category[us-core] = $obs-cat#survey "Survey"
-  * ^comment = "US Core requires category 1..*. GCS is a survey instrument; 'survey' category is appropriate."
+* category[us-core] = $obs-cat#exam "Exam"
+  * ^comment = "US Core requires category 1..*. GCS is a neurological physical examination finding; 'exam' category is used (per us-core-clinical-result-observation-category VS)."
 
 // ── eVitals.01 - Date/Time ────────────────────────────────────
 * effective[x] 1..1 MS

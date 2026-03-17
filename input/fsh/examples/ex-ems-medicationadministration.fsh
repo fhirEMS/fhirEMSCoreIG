@@ -18,7 +18,7 @@ Usage: #example
 // RxNorm 313002 — Sodium chloride 0.9% injection solution
 * medicationCodeableConcept.coding[0].system = "http://www.nlm.nih.gov/research/umls/rxnorm"
 * medicationCodeableConcept.coding[0].code = #313002
-* medicationCodeableConcept.coding[0].display = "Sodium Chloride 0.9% injectable solution"
+* medicationCodeableConcept.coding[0].display = "sodium chloride 9 MG/ML Injectable Solution"
 
 // eMedications.01 - Date/Time
 * effectiveDateTime = "2026-03-14T14:42:00-08:00"

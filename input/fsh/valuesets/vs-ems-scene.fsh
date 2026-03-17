@@ -11,6 +11,7 @@ Title: "EMS Crew Member Response Role"
 Description: "NEMSIS eCrew.03 - The role of the crew member during the EMS response."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-crew-role"
 * ^status = #active
+* ^experimental = true
 * $nemsis-cs#2403001 "Driver/Pilot-Response"
 * $nemsis-cs#2403003 "Driver/Pilot-Transport"
 * $nemsis-cs#2403005 "Other"
@@ -27,6 +28,7 @@ Title: "EMS MCI Triage Classification"
 Description: "NEMSIS eScene.08 - START/JumpSTART triage classification for MCI patient."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-mci-triage-class"
 * ^status = #active
+* ^experimental = true
 * $nemsis-cs#2708001 "Red - Immediate"
 * $nemsis-cs#2708003 "Yellow - Delayed"
 * $nemsis-cs#2708005 "Green - Minimal (Minor)"
@@ -41,6 +43,7 @@ Title: "EMS Chief Complaint Organ System"
 Description: "NEMSIS eSituation.08 - The organ system involved in the patient's chief complaint."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-situation-organ-system"
 * ^status = #active
+* ^experimental = true
 * $nemsis-cs#2808001 "Behavioral/Psychiatric"
 * $nemsis-cs#2808003 "Cardiovascular"
 * $nemsis-cs#2808005 "CNS/Neuro"
@@ -61,6 +64,7 @@ Title: "EMS Initial Patient Acuity"
 Description: "NEMSIS eSituation.13 - Patient acuity at initial EMS contact."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-initial-acuity"
 * ^status = #active
+* ^experimental = true
 * $nemsis-cs#2813001 "Critical (Red)"
 * $nemsis-cs#2813003 "Emergent (Yellow)"
 * $nemsis-cs#2813005 "Lower Acuity (Green)"
@@ -75,6 +79,7 @@ Title: "EMS Reason for Interfacility Transfer"
 Description: "NEMSIS eSituation.20 - The clinical reason for an interfacility transfer or transport."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transfer-reason"
 * ^status = #active
+* ^experimental = true
 * $nemsis-cs#2820001 "Cardiac Specialty"
 * $nemsis-cs#2820003 "Convenience Transfer (Patient Request)"
 * $nemsis-cs#2820005 "Diagnostic Testing"

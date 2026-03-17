@@ -75,7 +75,7 @@ NEMSIS allows 269 elements to carry a "Not Value" (NV) instead of data:
 - `NV.NotRecorded` → `dataAbsentReason = not-asked`
 - `NV.NotReporting` → `dataAbsentReason = unknown`
 
-See [NDR-001](normalization-decision-records.md) in the normalization decisions document.
+See NDR-001 in the normalization decisions document.
 
 ### Pertinent Negatives (PN)
 

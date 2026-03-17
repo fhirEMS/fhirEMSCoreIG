@@ -36,7 +36,7 @@ Parent: $us-core-observation
 // More specific codes (e.g., 112798008 Endotracheal intubation) may be used
 // by individual implementations.
 * code 1..1 MS
-* code = $snomed#182682004 "Emergency airway management"
+* code = $snomed#182682004 "Emergency laryngeal intubation"
   * ^short = "eAirway — Airway management (SNOMED 182682004)"
   * ^comment = "NEMSIS eAirway. Overarching SNOMED code for the airway management event. Specific device or procedure details in extension[airwayContext]."
 
@@ -75,7 +75,7 @@ Parent: $us-core-observation
 * component ^slicing.rules = #open
 * component contains tubeDepth 0..1 MS
 
-* component[tubeDepth].code = $loinc#19841-6 "Endotracheal tube position depth"
+* component[tubeDepth].code = $loinc#19841-6
   * ^short = "eAirway.05 - Tube Depth (LOINC 19841-6)"
 * component[tubeDepth].value[x] only Quantity
 * component[tubeDepth].valueQuantity.system = "http://unitsofmeasure.org"

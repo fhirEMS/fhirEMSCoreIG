@@ -38,7 +38,7 @@ Description: """
 
 // ── Document Type ─────────────────────────────────────────────
 * type MS
-* type = $loinc#67796-3 "EMS patient care report"
+* type = $loinc#67796-3 "EMS patient care report - version 3 Document NEMSIS"
   * ^short = "PCR document type (LOINC 67796-3)"
 
 // ── Subject ───────────────────────────────────────────────────
@@ -98,7 +98,7 @@ Description: """
 
 // ── ePatient Section ──────────────────────────────────────────
 * section[ePatient]
-  * code = $loinc#29762-2 "Social history Narrative"
+  * code = $loinc#29762-2 "Social history note"
   * title = "Patient Demographics"
   * ^short = "NEMSIS ePatient section — patient demographics"
   * ^comment = "Contains references to EMSPatient resources."
@@ -112,14 +112,14 @@ Description: """
 
 // ── eSituation Section ────────────────────────────────────────
 * section[eSituation]
-  * code = $loinc#55110-1 "Reason for visit"
+  * code = $loinc#55110-1 "Conclusions [Interpretation] Document"
   * title = "Patient Situation"
   * ^short = "NEMSIS eSituation section — chief complaint, primary/secondary impressions"
   * ^comment = "Contains references to EMSCondition resources for chief complaint and impressions."
 
 // ── eHistory Section ──────────────────────────────────────────
 * section[eHistory]
-  * code = $loinc#11348-0 "History of past illness Narrative"
+  * code = $loinc#11348-0 "History of Past illness note"
   * title = "Patient History"
   * ^short = "NEMSIS eHistory section — medical/surgical history, medications, allergies"
   * ^comment = "Contains references to EMSCondition (medical history), EMSAllergyIntolerance, and NEMSIS barrier-to-care observations."
@@ -168,7 +168,7 @@ Description: """
 
 // ── eNarrative Section ────────────────────────────────────────
 * section[eNarrative]
-  * code = $loinc#67781-5 "Summarization of episode note"
+  * code = $loinc#67781-5 "Summarization of encounter note"
   * title = "PCR Narrative"
   * ^short = "NEMSIS eNarrative section — free-text clinical narrative"
   * ^comment = "NEMSIS eNarrative.01 - The free-text narrative of the EMS call. Carried as section.text."

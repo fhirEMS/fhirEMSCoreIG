@@ -12,10 +12,10 @@ Usage: #example
 
 * meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-practitioner"
 
-* identifier[agencyId].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier[agencyId].type.coding[0].code = #EI
-* identifier[agencyId].system = "http://example.org/ems/personnel-id"
-* identifier[agencyId].value = "P-20145"
+* identifier[0].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[0].type.coding[0].code = #EI
+* identifier[0].system = "http://example.org/ems/personnel-id"
+* identifier[0].value = "P-20145"
 
 * name[0].family = "Ramirez"
 * name[0].given[0] = "Maria"

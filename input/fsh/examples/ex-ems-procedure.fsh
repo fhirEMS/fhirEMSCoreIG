@@ -18,7 +18,7 @@ Usage: #example
 // SNOMED 392230005 — Insertion of intravenous cannula
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #392230005
-* code.coding[0].display = "Insertion of intravenous cannula"
+* code.coding[0].display = "Catheterization of vein (procedure)"
 
 // eProcedures.01 - Date/Time Procedure Performed
 * performedDateTime = "2026-03-14T14:40:00-08:00"

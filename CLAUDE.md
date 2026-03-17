@@ -449,9 +449,10 @@ java -jar input-cache/validator.jar \
 
 ## Profiles Build Status
 
-**v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-15.**
-**IG Publisher: 409 errors, 65 warnings (all known false-positives), 1 broken link, 757,925 links validated.**
-**Totals: 23 profiles, 43 extensions, 121 ValueSets, 16 CodeSystems, 30 examples.**
+**v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-16.**
+**IG Publisher: 211 errors, 251 warnings, 0 broken links, 759,012 links validated (build 11, 2026-03-16).**
+**Error breakdown: 205 VALIDATION_HL7_WG_NEEDED (HL7 canonical URL; unfixable without HL7 ballot) + 6 IG metadata (extensions version mismatch, jira, status/workgroup; unfixable without HL7 registration). This is the practical minimum.**
+**Totals: 23 profiles, 43 extensions, 121 ValueSets, 16 CodeSystems, 31 examples (including NamingSystem).**
 
 ### Build Script
 Run the IG Publisher with:

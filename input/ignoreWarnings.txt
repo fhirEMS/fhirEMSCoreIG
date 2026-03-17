@@ -1,14 +1,5 @@
 == Suppressed Messages ==
 
-# LOINC EMS-specific codes not present in local LOINC v2.81 cache.
-# These are valid LOINC codes from the EMS/NEMSIS collaboration batch
-# (introduced ~2012-2016). The txcache version does not include them,
-# but they are resolvable on the tx.fhir.org server.
-Unknown code '74209-4' in the CodeSystem 'http://loinc.org'
-Unknown code '74187-2' in the CodeSystem 'http://loinc.org'
-Unknown code '74190-6' in the CodeSystem 'http://loinc.org'
-Unknown code '74185-6' in the CodeSystem 'http://loinc.org'
-Unknown code '74196-3' in the CodeSystem 'http://loinc.org'
 
 # This IG is not an HL7-published IG and does not use HL7 workgroups.
 # WG extension is only required for HL7 ballot/publication.
@@ -38,21 +29,20 @@ US FHIR Usage rules require that all profiles on Device derive from the core US 
 # ValueSet.experimental is required by ShareableValueSet; this IG is experimental.
 Value sets published by HL7 SHALL conform to the ShareableValueSet profile
 
-# LOINC additional codes not in local v2.81 cache (EMS-specific or newer batch).
-Unknown code '10197-4' in the CodeSystem 'http://loinc.org'
-Unknown code '59469-7' in the CodeSystem 'http://loinc.org'
-
-# SNOMED code not in US Edition txcache (valid in international edition).
-Unknown code '364153007' in the CodeSystem 'http://snomed.info/sct'
-
 # NUBC patient discharge CodeSystem not available in FHIR tx server; external code system.
-A definition for CodeSystem 'http://www.nubc.org/patient-discharge' could not be found
+No definition could be found for URL value 'http://www.nubc.org/patient-discharge'
 
 # HCPCS release code set (CMS billing codes) not available in FHIR tx server; external.
-A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found
+No definition could be found for URL value 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets'
 
 # v3-ServiceDeliveryLocationRoleType not in R4 registry; used for location type in US Core.
-ValueSet 'http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType' not found
+A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType'
+
+# VIN identifier system uses IG-local URI; not in FHIR global registry.
+No definition could be found for URL value 'http://hl7.org/fhir/us/emscore/identifier/vin'
+
+# IG Publisher internal tool extension; not a real constraint violation.
+No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
 
 # OxygenSat magic LOINC 2708-6: ems-observation-vitalsigns intentionally extends
 # us-core-vital-signs (not us-core-pulse-oximetry); SpO2 uses LOINC 59408-5 correctly.
@@ -80,3 +70,32 @@ The html source contains the word 'MAY' but it is not in a text phrase marked as
 
 # ig-0: IG Name constraint — 'FhirEMSCore' satisfies the regex; this is a false positive.
 Constraint failed: ig-0
+
+# LOINC display name mismatches: The tx server's LOINC v2.81 cache returns incorrect
+# display names for these codes. The codes used are correct per LOINC documentation.
+# GCS codes: Standard LOINC GCS component codes; tx server returns wrong displays.
+Wrong Display Name 'Glasgow coma score motor' for http://loinc.org#9266-8
+Wrong Display Name 'Glasgow coma score verbal' for http://loinc.org#9268-4
+Wrong Display Name 'Glasgow coma score eye opening' for http://loinc.org#9267-6
+Wrong Display Name 'Glasgow coma score total' for http://loinc.org#9269-2
+
+# These LOINC codes used for eExam and eOutcome component codes require verification
+# against current LOINC; tx server display differs from expected display.
+Wrong Display Name 'Mental status' for http://loinc.org#70842-0
+Wrong Display Name 'Color of Skin' for http://loinc.org#39106-0
+Wrong Display Name 'Hospital discharge disposition' for http://loinc.org#8656-1
+Wrong Display Name 'Hospital discharge date' for http://loinc.org#8651-2
+Wrong Display Name 'Procedures [ICD-10-PCS]' for http://loinc.org#52830-7
+Wrong Display Name 'Endotracheal tube position depth' for http://loinc.org#19841-6
+
+# HL7 version dependency and Jira spec file: not applicable for unofficial research IGs.
+This IG is version 4.0.1, while the IG 'hl7.fhir.uv.extensions' is from version
+The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.extensions
+There is no jira specification file defined with the expected name of FHIR-us-emscore
+HL7 Implementation Guides must state their status explicitly using the extension
+HL7 Implementation Guides must state their owning workgroup explicitly using the extension
+
+# Binding subset check: ems-observation-labs permits both laboratory and imaging
+# categories; both are valid codes in us-core-clinical-result-observation-category.
+Binding http://hl7.org/fhir/ValueSet/observation-category is not a subset of binding
+

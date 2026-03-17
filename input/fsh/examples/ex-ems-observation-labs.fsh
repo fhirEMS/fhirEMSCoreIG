@@ -19,10 +19,9 @@ Usage: #example
 * category[us-core].coding[0].code = #laboratory
 
 // eLabs.03 - Lab Result Type → Glucose
-// Using LOINC 59469-7 (glucose point-of-care) preferred over NEMSIS code
+// LOINC 41653-7: Glucose [Mass/volume] in Capillary blood by Glucometer
 * code.coding[0].system = "http://loinc.org"
-* code.coding[0].code = #59469-7
-* code.coding[0].display = "Glucose [Mass/volume] in Capillary blood by Glucometer"
+* code.coding[0].code = #41653-7
 
 // eLabs.01 - Date/Time
 * effectiveDateTime = "2026-03-14T14:38:00-08:00"

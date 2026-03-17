@@ -15,10 +15,10 @@ Usage: #example
 * status = #final
 
 * category[us-core].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
-* category[us-core].coding[0].code = #social-history
+* category[us-core].coding[0].code = #exam
 
-// Code fixed to LOINC 74209-4 (EMS patient care report) by profile
-* code = $loinc#74209-4 "EMS patient care report"
+// Code fixed to eOutcomePanel by profile
+* code = $nemsis-encounter-cs#eOutcomePanel "EMS Outcome Observation Panel"
 
 // Date outcome data was recorded
 * effectiveDateTime = "2026-03-15T08:00:00-08:00"
@@ -27,7 +27,7 @@ Usage: #example
 * encounter = Reference(ex-ems-encounter)
 
 // ── eOutcome.01 - ED Disposition → Admitted as inpatient ──────
-* component[edDisposition].code = $loinc#74187-2 "Emergency department patient disposition"
+* component[edDisposition].code = $nemsis-encounter-cs#eOutcomeEDDisposition
 * component[edDisposition].valueCodeableConcept.coding[0].system = "http://www.nubc.org/patient-discharge"
 * component[edDisposition].valueCodeableConcept.coding[0].code = #09
 * component[edDisposition].valueCodeableConcept.coding[0].display = "Admitted as an inpatient to this hospital"
@@ -44,9 +44,9 @@ Usage: #example
 * component[hospitalAdmitDateTime].valueDateTime = "2026-03-14T17:30:00-08:00"
 
 // ── eOutcome.18 - ED Admission DateTime ──────────────────────
-* component[edAdmitDateTime].code = $loinc#74185-6 "Emergency department arrival date and time"
+* component[edAdmitDateTime].code = $nemsis-encounter-cs#eOutcomeEDArrivalDateTime
 * component[edAdmitDateTime].valueDateTime = "2026-03-14T15:08:00-08:00"
 
 // ── eOutcome.21 - Injury Severity Score ──────────────────────
-* component[injurySeverityScore].code = $loinc#74196-3 "Injury Severity Score"
+* component[injurySeverityScore].code = $nemsis-encounter-cs#eOutcomeInjurySeverityScore
 * component[injurySeverityScore].valueInteger = 9

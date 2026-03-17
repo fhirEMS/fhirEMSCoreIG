@@ -48,46 +48,14 @@ Description: """
   * ^comment = "NEMSIS ePatient.22. Usage: Recommended/Nillable. NV: NotRecorded, NotApplicable. Codes: Homeless (2522001), Migrant Worker (2522003), Foreign Visitor (2522005). Use when a standard home ZIP code is not applicable."
 
 // ─────────────────────────────────────────────────────────────
-// IDENTIFIER SLICING
+// IDENTIFIERS
 // ePatient.01 / ePatient.12 / ePatient.20–21
 // ─────────────────────────────────────────────────────────────
-
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "type"
-* identifier ^slicing.rules = #open
-* identifier ^slicing.description = "EMS identifier slices by identifier type"
-
-* identifier contains
-    emsPatientId   0..1 MS and
-    ssn            0..1 MS and
-    driversLicense 0..1 MS
-
-// ePatient.01 - EMS Patient ID
-* identifier[emsPatientId]
-  * ^short = "ePatient.01 - EMS Patient ID"
-  * ^comment = "NEMSIS ePatient.01. Usage: Optional. The unique patient identifier assigned by the EMS agency system."
-* identifier[emsPatientId].type = $v2-0203#MR "Medical Record Number"
-* identifier[emsPatientId].system 1..1 MS
-* identifier[emsPatientId].value 1..1 MS
-
-// ePatient.12 - Social Security Number
-* identifier[ssn]
-  * ^short = "ePatient.12 - Social Security Number"
-  * ^comment = "NEMSIS ePatient.12. Usage: Optional/Nillable. PN: UnableToComplete. MUST be tokenized or hashed before transmission — never send in plain text."
-* identifier[ssn].type = $v2-0203#SS "Social Security Number"
-* identifier[ssn].system = "http://hl7.org/fhir/sid/us-ssn"
-* identifier[ssn].value 1..1 MS
-
-// ePatient.20 + ePatient.21 - Driver's License (state + number)
-* identifier[driversLicense]
-  * ^short = "ePatient.20/21 - Driver's License State and Number"
-  * ^comment = "NEMSIS ePatient.21 (license number) + ePatient.20 (issuing state). Usage: Optional. Store issuing state as 2-letter USPS abbreviation in identifier.assigner.display."
-* identifier[driversLicense].type = $v2-0203#DL "Driver's License Number"
-* identifier[driversLicense].system 1..1 MS
-* identifier[driversLicense].value 1..1 MS
-* identifier[driversLicense].assigner MS
-* identifier[driversLicense].assigner.display MS
-  * ^short = "ePatient.20 - State Issuing Driver's License (2-letter USPS)"
+// No formal slicing — R4 discriminator evaluation for type-based
+// identifier slices is unreliable and causes validation errors.
+// ePatient.01: EMS Patient ID — system = agency-assigned URL, type = MR
+// ePatient.12: SSN — system = http://hl7.org/fhir/sid/us-ssn, type = SS
+// ePatient.20/21: Driver's License — system = state-specific URL, type = DL
 
 // ─────────────────────────────────────────────────────────────
 // NAME — ePatient.02, 03, 04, 23

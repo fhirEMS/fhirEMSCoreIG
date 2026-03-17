@@ -120,7 +120,7 @@ Parent: Claim
     stretcherPurpose       0..1 MS
 
 * supportingInfo[physicianCertification].category
-    = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info
+    = http://terminology.hl7.org/CodeSystem/claiminformationcategory#attachment
   * ^short = "ePayment.02–07 - Physician Certification Statement"
 * supportingInfo[physicianCertification].value[x] only boolean
   * ^comment = "NEMSIS ePayment.02. Usage: Optional. Whether a physician certification statement was obtained."
@@ -132,7 +132,7 @@ Parent: Claim
   * ^comment = "NEMSIS ePayment.45. Usage: Optional. Description of the reason for round trip transport."
 
 * supportingInfo[stretcherPurpose].category
-    = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info
+    = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit
   * ^short = "ePayment.46 - Stretcher Purpose Description"
 * supportingInfo[stretcherPurpose].value[x] only string
   * ^comment = "NEMSIS ePayment.46. Usage: Optional. Description of the medical necessity for stretcher use."

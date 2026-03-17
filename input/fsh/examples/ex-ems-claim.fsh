@@ -91,6 +91,6 @@ Usage: #example
 // ── Supporting Info — Physician Certification (ePayment.02) ───
 * supportingInfo[physicianCertification].sequence = 1
 * supportingInfo[physicianCertification].category
-    = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info
+    = http://terminology.hl7.org/CodeSystem/claiminformationcategory#attachment
 * supportingInfo[physicianCertification].valueBoolean = false
   // No PCS obtained — cardiac arrest (not applicable for emergency transport)

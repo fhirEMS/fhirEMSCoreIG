@@ -11,6 +11,7 @@ Title: "EMS Transport Method"
 Description: "NEMSIS eDisposition.16 - The vehicle/mode used to transport the patient."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-method"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4216001 "Air Medical-Fixed Wing"
 * $nemsis-encounter-cs#4216003 "Air Medical-Rotor Craft"
 * $nemsis-encounter-cs#4216005 "Ground-Ambulance"
@@ -29,6 +30,7 @@ Title: "EMS Transport Mode from Scene"
 Description: "NEMSIS eDisposition.17 - Emergent vs non-emergent transport mode from scene."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-mode"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4217001 "Emergent (Immediate Response)"
 * $nemsis-encounter-cs#4217003 "Emergent Downgraded to Non-Emergent"
 * $nemsis-encounter-cs#4217005 "Non-Emergent"
@@ -42,6 +44,7 @@ Title: "EMS Additional Transport Mode Descriptors"
 Description: "NEMSIS eDisposition.18 - Additional descriptors of transport mode (lights, sirens, speed, intersection navigation)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-additional-transport-mode"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4218001 "Intersection Navigation-Against Normal Light Patterns"
 * $nemsis-encounter-cs#4218003 "Intersection Navigation-With Automated Light Changing Technology"
 * $nemsis-encounter-cs#4218005 "Intersection Navigation-With Normal Light Patterns"
@@ -61,6 +64,7 @@ Title: "EMS Patient Acuity Upon Release"
 Description: "NEMSIS eDisposition.19 - The patient's acuity triage level at the time of EMS release."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-patient-acuity"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4219001 "Critical (Red)"
 * $nemsis-encounter-cs#4219003 "Emergent (Yellow)"
 * $nemsis-encounter-cs#4219005 "Lower Acuity (Green)"
@@ -76,6 +80,7 @@ Title: "EMS Reason for Choosing Destination"
 Description: "NEMSIS eDisposition.20 - The reason the destination was chosen."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-destination-reason"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4220001 "Closest Facility"
 * $nemsis-encounter-cs#4220003 "Diversion"
 * $nemsis-encounter-cs#4220005 "Family Choice"
@@ -96,6 +101,7 @@ Title: "EMS Type of Destination"
 Description: "NEMSIS eDisposition.21 - The type of destination the patient was transported to."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-destination-type"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4221001 "Home"
 * $nemsis-encounter-cs#4221003 "Hospital-Emergency Department"
 * $nemsis-encounter-cs#4221005 "Hospital-Non-Emergency Department Bed"
@@ -125,6 +131,7 @@ Title: "EMS Hospital In-Patient Destination"
 Description: "NEMSIS eDisposition.22 - The specific in-hospital unit or bed type the patient was delivered to."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-hospital-destination"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4222001 "Hospital-Burn"
 * $nemsis-encounter-cs#4222003 "Hospital-Cath Lab"
 * $nemsis-encounter-cs#4222005 "Hospital-CCU"
@@ -161,6 +168,7 @@ Title: "EMS Hospital Capability"
 Description: "NEMSIS eDisposition.23 - Specialty capabilities of the receiving facility."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-hospital-capability"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#9908001 "Behavioral Health"
 * $nemsis-encounter-cs#9908003 "Burn Center"
 * $nemsis-encounter-cs#9908005 "Critical Access Hospital"
@@ -191,6 +199,7 @@ Title: "EMS Destination Team Pre-Arrival Alert"
 Description: "NEMSIS eDisposition.24 - Whether and what type of pre-arrival alert was given to the receiving facility."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-pre-arrival-alert"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4224001 "No"
 * $nemsis-encounter-cs#4224003 "Yes-Adult Trauma"
 * $nemsis-encounter-cs#4224005 "Yes-Cardiac Arrest"
@@ -210,6 +219,7 @@ Title: "EMS Disposition Instructions Provided"
 Description: "NEMSIS eDisposition.26 - Instructions provided to the patient at disposition."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-disposition-instructions"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4226001 "Contact 911 or see your Doctor if problem returns"
 * $nemsis-encounter-cs#4226003 "Contact 911 or see your Doctor if problem worsens"
 * $nemsis-encounter-cs#4226005 "Other Not Listed (Described in Narrative)"
@@ -227,6 +237,7 @@ Title: "EMS Unit Disposition"
 Description: "NEMSIS eDisposition.27 - Whether/how the unit made patient contact."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-unit-disposition"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4227001 "Patient Contact Made"
 * $nemsis-encounter-cs#4227003 "Cancelled on Scene"
 * $nemsis-encounter-cs#4227005 "Cancelled Prior to Arrival at Scene"
@@ -242,6 +253,7 @@ Title: "EMS Patient Evaluation/Care"
 Description: "NEMSIS eDisposition.28 - What evaluation and care was provided to the patient."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-patient-eval-care"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4228001 "Patient Evaluated and Care Provided"
 * $nemsis-encounter-cs#4228003 "Patient Evaluated and Refused Care"
 * $nemsis-encounter-cs#4228005 "Patient Evaluated, No Care Required"
@@ -256,6 +268,7 @@ Title: "EMS Crew Disposition"
 Description: "NEMSIS eDisposition.29 - What the crew did during the response."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-crew-disposition"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4229001 "Initiated and Continued Primary Care"
 * $nemsis-encounter-cs#4229003 "Initiated Primary Care and Transferred to Another EMS Crew"
 * $nemsis-encounter-cs#4229005 "Provided Care Supporting Primary EMS Crew"
@@ -272,6 +285,7 @@ Title: "EMS Transport Disposition"
 Description: "NEMSIS eDisposition.30 - Whether/how the patient was transported."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-disposition"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4230001 "Transport by This EMS Unit (This Crew Only)"
 * $nemsis-encounter-cs#4230003 "Transport by This EMS Unit, with a Member of Another Crew"
 * $nemsis-encounter-cs#4230005 "Transport by Another EMS Unit/Agency"
@@ -288,6 +302,7 @@ Title: "EMS Reason for Refusal/Release"
 Description: "NEMSIS eDisposition.31 - Reason documented when patient refused care or was released."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-reason-for-refusal"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4231001 "Against Medical Advice"
 * $nemsis-encounter-cs#4231003 "Patient/Guardian Indicates Ambulance Transport is Not Necessary"
 * $nemsis-encounter-cs#4231005 "Released Following Protocol Guidelines"
@@ -306,6 +321,7 @@ Title: "EMS Level of Care Provided per Protocol"
 Description: "NEMSIS eDisposition.32 - The level of care (BLS, ALS, Critical Care, etc.) authorized by protocol."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-level-of-care"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#4232001 "BLS - All Levels"
 * $nemsis-encounter-cs#4232003 "ALS - AEMT/Intermediate"
 * $nemsis-encounter-cs#4232005 "ALS - Paramedic"

@@ -21,7 +21,7 @@ Usage: #example
 
 // dVehicle.02 - Vehicle Identification Number (use = secondary)
 * identifier[vin].use = #secondary
-* identifier[vin].system = "http://hl7.org/fhir/sid/vin"
+* identifier[vin].system = "http://hl7.org/fhir/us/emscore/identifier/vin"
 * identifier[vin].value = "1FDFE4FS0GDA12345"
 
 // dVehicle.03 - EMS Unit Call Sign (use = usual)

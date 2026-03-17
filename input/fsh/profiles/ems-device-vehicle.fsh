@@ -41,7 +41,7 @@ Description: """
   * ^short = "dVehicle.02 - Vehicle Identification Number (VIN)"
   * ^comment = "NEMSIS dVehicle.02. Usage: Optional. 17-character vehicle identification number."
   * use = #secondary
-  * system = "http://hl7.org/fhir/sid/vin"
+  * system = "http://hl7.org/fhir/us/emscore/identifier/vin"
 
 * identifier[callSign]
   * ^short = "dVehicle.03 - EMS Unit Call Sign"

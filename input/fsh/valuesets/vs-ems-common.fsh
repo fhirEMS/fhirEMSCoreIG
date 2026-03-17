@@ -11,6 +11,7 @@ Title: "NEMSIS Not Value (NV)"
 Description: "NEMSIS Not Value codes used when a data element is Not Applicable, Not Recorded, or Not Reporting."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-not-value"
 * ^status = #active
+* ^experimental = true
 * $nemsis-nv#NV.NotApplicable   "Not Applicable"
 * $nemsis-nv#NV.NotRecorded     "Not Recorded"
 * $nemsis-nv#NV.NotReporting    "Not Reporting"
@@ -23,6 +24,7 @@ Title: "NEMSIS Pertinent Negative (PN)"
 Description: "NEMSIS Pertinent Negative codes indicating a clinically significant documented absence."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-pertinent-negative"
 * ^status = #active
+* ^experimental = true
 * $nemsis-pn#PN.Approximate              "Approximate"
 * $nemsis-pn#PN.ContraindicationNoted    "Contraindication Noted"
 * $nemsis-pn#PN.DeniedByOrder            "Denied By Order"
@@ -46,6 +48,7 @@ Title: "EMS Certification Level (ValueSet)"
 Description: "NEMSIS eCrew.02 - The certification/licensure level of the EMS crew member."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-certification-level"
 * ^status = #active
+* ^experimental = true
 * $nemsis-personnel-level#9925001 "Advanced Emergency Medical Technician (AEMT)"
 * $nemsis-personnel-level#9925002 "Emergency Medical Technician - Intermediate"
 * $nemsis-personnel-level#9925003 "Emergency Medical Responder (EMR)"
@@ -71,6 +74,7 @@ Title: "EMS Barriers to Patient Care"
 Description: "NEMSIS eHistory.01 - Barriers encountered during patient assessment or care."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-barrier-to-patient-care"
 * ^status = #active
+* ^experimental = true
 * $nemsis-cs#3101001 "Cultural, Custom, Religious"
 * $nemsis-cs#3101003 "Developmentally Impaired"
 * $nemsis-cs#3101005 "Hearing Impaired"
@@ -100,6 +104,7 @@ Title: "EMS Chief Complaint Anatomic Location (ValueSet)"
 Description: "NEMSIS eSituation.07 - The anatomic location of the patient's chief complaint."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-incident-type"
 * ^status = #active
+* ^experimental = true
 * $nemsis-situation#2807001 "Abdomen"
 * $nemsis-situation#2807003 "Back"
 * $nemsis-situation#2807005 "Chest"
@@ -118,6 +123,7 @@ Title: "EMS Protocols Used"
 Description: "NEMSIS eProtocols.01 - EMS protocol(s) followed during the response."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-protocol-used"
 * ^status = #active
+* ^experimental = true
 * $nemsis-procedures#9914001 "Airway"
 * $nemsis-procedures#9914003 "Airway-Failed"
 * $nemsis-procedures#9914005 "Airway-Obstruction/Foreign Body"

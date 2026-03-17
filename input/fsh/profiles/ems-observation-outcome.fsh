@@ -19,16 +19,16 @@ Parent: $us-core-observation
 * status MS
   * ^short = "Observation status (final | preliminary | amended)"
 
-// ── Category — social-history (outcome data) ─────────────────
+// ── Category — exam (outcome/disposition data) ───────────────
 * category 1..* MS
-* category[us-core] = $obs-cat#social-history "Social History"
-  * ^comment = "eOutcome data is outcome/disposition information collected retrospectively by the EMS agency. 'social-history' is used as the closest FHIR category for post-event follow-up data."
+* category[us-core] = $obs-cat#exam "Exam"
+  * ^comment = "eOutcome data is hospital outcome and disposition information collected by the EMS agency. 'exam' is the closest category in the US Core Clinical Result Observation Category value set."
 
-// ── Code — eOutcome panel (LOINC 74209-4) ─────────────────────
+// ── Code — eOutcome panel ──────────────────────────────────────
 * code 1..1 MS
-* code = $loinc#74209-4 "EMS patient care report"
-  * ^short = "eOutcome — EMS Outcome Panel (LOINC 74209-4)"
-  * ^comment = "LOINC 74209-4 used as a panel code for EMS outcome data. Individual outcomes are captured in Observation.component slices."
+* code = $nemsis-encounter-cs#eOutcomePanel "EMS Outcome Observation Panel"
+  * ^short = "eOutcome — EMS Outcome Panel"
+  * ^comment = "NEMSIS eOutcome panel code. Individual outcomes are captured in Observation.component slices. Originally mapped to LOINC 74209-4 (EMS-NEMSIS collaboration code, not in LOINC v2.81 cache)."
 
 // ── Effective date/time ────────────────────────────────────────
 * effective[x] MS
@@ -59,7 +59,7 @@ Parent: $us-core-observation
     injurySeverityScore     0..1          // eOutcome.21
 
 // ── eOutcome.01 - ED Disposition ─────────────────────────────
-* component[edDisposition].code = $loinc#74187-2 "Emergency department patient disposition"
+* component[edDisposition].code = $nemsis-encounter-cs#eOutcomeEDDisposition
   * ^short = "eOutcome.01 - ED Disposition"
 * component[edDisposition].value[x] only CodeableConcept
 * component[edDisposition].valueCodeableConcept MS
@@ -68,7 +68,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.01. Usage: Required/National. NV: NotRecorded. UB-04 patient discharge status codes."
 
 // ── eOutcome.02 - Hospital Discharge Disposition ──────────────
-* component[hospitalDisposition].code = $loinc#8656-1 "Hospital discharge disposition"
+* component[hospitalDisposition].code = $loinc#8656-1
   * ^short = "eOutcome.02 - Hospital Discharge Disposition"
 * component[hospitalDisposition].value[x] only CodeableConcept
 * component[hospitalDisposition].valueCodeableConcept MS
@@ -77,7 +77,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.02. Usage: Required/National. NV: NotRecorded. UB-04 patient discharge status codes."
 
 // ── eOutcome.09 - ED Procedures ──────────────────────────────
-* component[edProcedure].code = $loinc#52830-7 "Procedures [ICD-10-PCS]"
+* component[edProcedure].code = $loinc#52830-7
   * ^short = "eOutcome.09 - ED Procedure (ICD-10-PCS)"
 * component[edProcedure].value[x] only CodeableConcept
 * component[edProcedure].valueCodeableConcept MS
@@ -103,7 +103,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.11. Usage: Required/National. NV: NotRecorded."
 
 // ── eOutcome.12 - Hospital Procedures ────────────────────────
-* component[hospitalProcedure].code = $loinc#74190-6 "Hospital procedures [ICD-10-PCS]"
+* component[hospitalProcedure].code = $nemsis-encounter-cs#eOutcomeHospitalProcedure
   * ^short = "eOutcome.12 - Hospital Procedure (ICD-10-PCS)"
 * component[hospitalProcedure].value[x] only CodeableConcept
 * component[hospitalProcedure].valueCodeableConcept MS
@@ -121,7 +121,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.13. Usage: Required/National. NV: NotRecorded. ICD-10-CM diagnosis code. Repeating (0..M)."
 
 // ── eOutcome.16 - Hospital Discharge DateTime ─────────────────
-* component[hospitalDischargeDateTime].code = $loinc#8651-2 "Hospital discharge date"
+* component[hospitalDischargeDateTime].code = $loinc#8651-2
   * ^short = "eOutcome.16 - Hospital Discharge Date/Time"
 * component[hospitalDischargeDateTime].value[x] only dateTime
 * component[hospitalDischargeDateTime].valueDateTime MS
@@ -129,7 +129,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.16. Usage: Required/National. NV: NotRecorded."
 
 // ── eOutcome.18 - ED Admission DateTime ──────────────────────
-* component[edAdmitDateTime].code = $loinc#74185-6 "Emergency department arrival date and time"
+* component[edAdmitDateTime].code = $nemsis-encounter-cs#eOutcomeEDArrivalDateTime
   * ^short = "eOutcome.18 - ED Admission Date/Time"
 * component[edAdmitDateTime].value[x] only dateTime
 * component[edAdmitDateTime].valueDateTime MS
@@ -137,7 +137,7 @@ Parent: $us-core-observation
   * ^comment = "NEMSIS eOutcome.18. Usage: Required/National. NV: NotRecorded."
 
 // ── eOutcome.21 - Injury Severity Score (ISS) ────────────────
-* component[injurySeverityScore].code = $loinc#74196-3 "Injury Severity Score"
+* component[injurySeverityScore].code = $nemsis-encounter-cs#eOutcomeInjurySeverityScore
   * ^short = "eOutcome.21 - Injury Severity Score"
 * component[injurySeverityScore].value[x] only integer
 * component[injurySeverityScore].valueInteger MS

@@ -368,3 +368,13 @@ Description: "Enumeration codes from the NEMSIS eResponse, eDispatch, and eDispo
 * #4232009 "Critical Care"
 * #4232011 "Integrated Health Care"
 * #4232013 "No Care Provided"
+
+// ── eOutcome FHIR observation component discriminator codes ────
+// These codes identify observation panel and component slices in
+// the EMSObservationOutcome profile. They replace EMS-NEMSIS
+// collaboration LOINC codes (74xxx batch) not in LOINC v2.81 cache.
+* #eOutcomePanel "EMS Outcome Observation Panel"
+* #eOutcomeEDDisposition "Emergency Department Patient Disposition"
+* #eOutcomeEDArrivalDateTime "Emergency Department Arrival Date and Time"
+* #eOutcomeHospitalProcedure "Hospital Procedure (ICD-10-PCS)"
+* #eOutcomeInjurySeverityScore "Injury Severity Score (ISS)"

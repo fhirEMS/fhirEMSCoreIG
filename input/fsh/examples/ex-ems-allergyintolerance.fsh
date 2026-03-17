@@ -24,7 +24,7 @@ Usage: #example
 // eHistory.06 - Medication (RxNorm: Penicillin)
 * code.coding[0].system = "http://www.nlm.nih.gov/research/umls/rxnorm"
 * code.coding[0].code = #7980
-* code.coding[0].display = "Penicillin"
+* code.coding[0].display = "penicillin G"
 
 * patient = Reference(ex-ems-patient)
 * recorder = Reference(ex-ems-practitioner)

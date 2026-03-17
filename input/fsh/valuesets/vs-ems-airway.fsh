@@ -10,6 +10,7 @@ Title: "EMS Airway Indications VS"
 Description: "Indications for airway management intervention (eAirway.01)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-indications"
 * ^status = #active
+* ^experimental = true
 * $nemsis-airway#4001001 "Adequate Airway Reflexes/Effort, Potential for Compromise"
 * $nemsis-airway#4001003 "Airway Reflex Compromised"
 * $nemsis-airway#4001005 "Apnea or Agonal Respirations"
@@ -25,6 +26,7 @@ Title: "EMS Airway Device VS"
 Description: "Type of airway device being confirmed (eAirway.03)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-device"
 * ^status = #active
+* ^experimental = true
 * $nemsis-airway#4003001 "Cricothyrotomy Tube"
 * $nemsis-airway#4003003 "Endotracheal Tube"
 * $nemsis-airway#4003005 "Other-Invasive Airway"
@@ -41,6 +43,7 @@ Title: "EMS Airway Confirmation Method VS"
 Description: "Method used to confirm airway device placement (eAirway.04)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-confirmation-method"
 * ^status = #active
+* ^experimental = true
 * $nemsis-airway#4004001 "Auscultation"
 * $nemsis-airway#4004003 "Bulb/Syringe Aspiration"
 * $nemsis-airway#4004005 "Colorimetric ETCO2"
@@ -60,6 +63,7 @@ Title: "EMS Airway Confirming Person VS"
 Description: "Type of individual who confirmed the airway device placement (eAirway.06)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-confirming-person"
 * ^status = #active
+* ^experimental = true
 * $nemsis-airway#4006001 "Another Person on the Same Crew"
 * $nemsis-airway#4006003 "Other"
 * $nemsis-airway#4006005 "Person Performing Intubation"
@@ -73,6 +77,7 @@ Title: "EMS Airway Complications VS"
 Description: "Complications encountered during airway management (eAirway.08)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-complications"
 * ^status = #active
+* ^experimental = true
 * $nemsis-airway#4008001 "Adverse Event from Facilitating Drugs"
 * $nemsis-airway#4008003 "Bradycardia (<50)"
 * $nemsis-airway#4008005 "Cardiac Arrest"
@@ -93,6 +98,7 @@ Title: "EMS Airway Failure Reasons VS"
 Description: "Reasons for failed airway management (eAirway.09)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-failure-reasons"
 * ^status = #active
+* ^experimental = true
 * $nemsis-airway#4009001 "Difficult Patient Airway Anatomy"
 * $nemsis-airway#4009003 "ETI Attempted, but Arrived At Destination Facility Before Accomplished"
 * $nemsis-airway#4009005 "Facial or Oral Trauma"

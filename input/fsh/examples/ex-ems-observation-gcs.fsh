@@ -14,10 +14,9 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
-* category[0].coding[0].code = #survey
+* category[0].coding[0].code = #exam
 * code.coding[0].system = "http://loinc.org"
 * code.coding[0].code = #9267-6
-* code.coding[0].display = "Glasgow coma score eye opening"
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"
 * subject = Reference(ex-ems-patient)
 * encounter = Reference(ex-ems-encounter)
@@ -27,15 +26,15 @@ Usage: #example
 Instance: ex-ems-gcs-verbal
 InstanceOf: EMSObservationGCS
 Title: "Example GCS Verbal Response Sub-observation"
-Description: "GCS Verbal Response sub-observation (LOINC 9268-4). Score = 4 (Confused)."
+Description: "GCS Verbal Response sub-observation (LOINC 9270-0). Score = 4 (Confused)."
 Usage: #example
 
 * meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
-* category[0].coding[0].code = #survey
+* category[0].coding[0].code = #exam
 * code.coding[0].system = "http://loinc.org"
-* code.coding[0].code = #9268-4
+* code.coding[0].code = #9270-0
 * code.coding[0].display = "Glasgow coma score verbal"
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"
 * subject = Reference(ex-ems-patient)
@@ -46,15 +45,15 @@ Usage: #example
 Instance: ex-ems-gcs-motor
 InstanceOf: EMSObservationGCS
 Title: "Example GCS Motor Response Sub-observation"
-Description: "GCS Motor Response sub-observation (LOINC 9266-8). Score = 5 (Localizes pain)."
+Description: "GCS Motor Response sub-observation (LOINC 9268-4). Score = 5 (Localizes pain)."
 Usage: #example
 
 * meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
-* category[0].coding[0].code = #survey
+* category[0].coding[0].code = #exam
 * code.coding[0].system = "http://loinc.org"
-* code.coding[0].code = #9266-8
+* code.coding[0].code = #9268-4
 * code.coding[0].display = "Glasgow coma score motor"
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"
 * subject = Reference(ex-ems-patient)
@@ -72,13 +71,12 @@ Usage: #example
 * status = #final
 
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
-* category[0].coding[0].code = #survey
-* category[0].coding[0].display = "Survey"
+* category[0].coding[0].code = #exam
+* category[0].coding[0].display = "Exam"
 
 // LOINC 9269-2 — GCS total panel
 * code.coding[0].system = "http://loinc.org"
 * code.coding[0].code = #9269-2
-* code.coding[0].display = "Glasgow coma score total"
 
 // eVitals.01 - Date/Time
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"

@@ -65,23 +65,17 @@ Description: """
 
 // ── Assessment Findings (Components) ─────────────────────────
 // Multiple findings per body region → multiple components.
-// Each component.code identifies the assessment type;
+// Each component.code identifies the assessment type (use LOINC
+// or SNOMED CT when available; NEMSIS cs-nemsis-exam code otherwise).
 // component.valueCodeableConcept carries the NEMSIS finding code.
 * component MS
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-
-* component contains examFinding 0..* MS
-
-* component[examFinding]
   * ^short = "eExam.04–25 - Body Region Assessment Findings"
   * ^comment = "NEMSIS physical exam finding. code identifies the body region/exam type; valueCodeableConcept carries the finding from the appropriate EMSExam*VS ValueSet."
-  * code MS
-    * ^comment = "Use LOINC or SNOMED CT to identify the type of examination finding. Examples: LOINC 39106-0 (Skin condition), SNOMED 363681005 (Examination finding)."
-  * value[x] MS
-  * value[x] only CodeableConcept
-    * ^comment = "Finding from the appropriate NEMSIS eExam ValueSet (e.g., EMSExamSkinVS, EMSExamHeadVS, etc.)."
+* component.code MS
+  * ^comment = "Use LOINC or SNOMED CT to identify the type of examination finding. Examples: LOINC 39106-0 (Skin condition), SNOMED 363681005 (Examination finding)."
+* component.value[x] MS
+* component.value[x] only CodeableConcept
+  * ^comment = "Finding from the appropriate NEMSIS eExam ValueSet (e.g., EMSExamSkinVS, EMSExamHeadVS, etc.)."
 
 // ── value[x] for scalar exam observations ────────────────────
 // eExam.01 (Estimated Body Weight) uses valueQuantity;

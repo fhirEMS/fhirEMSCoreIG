@@ -42,7 +42,8 @@ Description: """
 * type MS
   * ^short = "eScene.09 - Incident Location Type"
   * ^comment = "NEMSIS eScene.09. Usage: Required/National. Nillable. NV: NotRecorded, NotApplicable. ICD-10-CM Y92 place-of-occurrence code describing where the incident happened (e.g., Y92.000 home, Y92.59 highway)."
-* type from http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType (extensible)
+// type binding inherited from base FHIR Location (v3-ServiceDeliveryLocationRoleType, extensible)
+// eScene.09 codes (ICD-10-CM Y92 or NEMSIS) are valid under the extensible binding
 
 // ── eScene.15/16 - Street Address ────────────────────────────
 * address MS

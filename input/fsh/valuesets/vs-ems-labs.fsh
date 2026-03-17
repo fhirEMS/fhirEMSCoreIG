@@ -10,6 +10,7 @@ Title: "EMS Lab Result Type VS"
 Description: "Type of lab result obtained (eLabs.03)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-lab-result-type"
 * ^status = #active
+* ^experimental = true
 * $nemsis-labs#3403001 "Alanine Transaminase"
 * $nemsis-labs#3403003 "Alcohol-Blood"
 * $nemsis-labs#3403005 "Alcohol-Breath"
@@ -95,6 +96,7 @@ Title: "EMS Imaging Study Type VS"
 Description: "Type of imaging study obtained (eLabs.05)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-imaging-study-type"
 * ^status = #active
+* ^experimental = true
 * $nemsis-labs#3405001 "Computed Tomography (CT) Scan"
 * $nemsis-labs#3405003 "Magnetic Resonance Imaging (MRI)"
 * $nemsis-labs#3405005 "Other"

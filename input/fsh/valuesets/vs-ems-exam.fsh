@@ -10,6 +10,7 @@ Title: "EMS Length Based Tape Measure (Broselow-Luten)"
 Description: "NEMSIS eExam.02 - Broselow-Luten color zone for length-based weight estimation."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-length-tape"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3502001 "Blue"
 * $nemsis-exam#3502003 "Green"
 * $nemsis-exam#3502005 "Grey"
@@ -27,6 +28,7 @@ Title: "EMS Skin Assessment"
 Description: "NEMSIS eExam.04 - Physical findings on skin assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-skin"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3504001 "Clammy"
 * $nemsis-exam#3504003 "Cold"
 * $nemsis-exam#3504005 "Cyanotic"
@@ -55,6 +57,7 @@ Title: "EMS Head Assessment"
 Description: "NEMSIS eExam.05 - Physical findings on head assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-head"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3505001 "Abrasion"
 * $nemsis-exam#3505003 "Avulsion"
 * $nemsis-exam#3505005 "Bleeding Controlled"
@@ -86,6 +89,7 @@ Title: "EMS Face Assessment"
 Description: "NEMSIS eExam.06 - Physical findings on face assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-face"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3506001 "Abrasion"
 * $nemsis-exam#3506003 "Asymmetric Smile or Droop"
 * $nemsis-exam#3506005 "Avulsion"
@@ -117,6 +121,7 @@ Title: "EMS Neck Assessment"
 Description: "NEMSIS eExam.07 - Physical findings on neck assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-neck"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3507001 "Abrasion"
 * $nemsis-exam#3507003 "Avulsion"
 * $nemsis-exam#3507005 "Bleeding Controlled"
@@ -151,6 +156,7 @@ Title: "EMS Heart Assessment"
 Description: "NEMSIS eExam.09 - Physical findings on heart/cardiac auscultation."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-heart"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3509001 "Clicks"
 * $nemsis-exam#3509003 "Heart Sounds Decreased"
 * $nemsis-exam#3509005 "Murmur-Diastolic"
@@ -170,6 +176,7 @@ Title: "EMS Abdominal Assessment Finding Location"
 Description: "NEMSIS eExam.10 - Location qualifier for abdominal assessment findings."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-abd-location"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3510001 "Generalized"
 * $nemsis-exam#3510003 "Left Lower Quadrant"
 * $nemsis-exam#3510005 "Left Upper Quadrant"
@@ -185,6 +192,7 @@ Title: "EMS Abdomen Assessment"
 Description: "NEMSIS eExam.11 - Physical findings on abdominal assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-abdomen"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3511001 "Abrasion"
 * $nemsis-exam#3511003 "Avulsion"
 * $nemsis-exam#3511005 "Bleeding Controlled"
@@ -222,6 +230,7 @@ Title: "EMS Pelvis/Genitourinary Assessment"
 Description: "NEMSIS eExam.12 - Physical findings on pelvic/genitourinary assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-pelvic-gu"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3512001 "Abrasion"
 * $nemsis-exam#3512003 "Avulsion"
 * $nemsis-exam#3512005 "Bleeding Controlled"
@@ -259,6 +268,7 @@ Title: "EMS Back and Spine Assessment Finding Location"
 Description: "NEMSIS eExam.13 - Location qualifier for back and spine assessment findings."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-back-location"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3513001 "Back-General"
 * $nemsis-exam#3513003 "Cervical-Left"
 * $nemsis-exam#3513005 "Cervical-Midline"
@@ -282,6 +292,7 @@ Title: "EMS Back and Spine Assessment"
 Description: "NEMSIS eExam.14 - Physical findings on back and spine assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-back-spine"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3514001 "Abrasion"
 * $nemsis-exam#3514003 "Avulsion"
 * $nemsis-exam#3514005 "Bleeding Controlled"
@@ -314,6 +325,7 @@ Title: "EMS Extremity Assessment Finding Location"
 Description: "NEMSIS eExam.15 - Location qualifier for extremity assessment findings."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-extremity-location"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3515001 "Ankle-Left"
 * $nemsis-exam#3515003 "Ankle-Right"
 * $nemsis-exam#3515005 "Arm-Upper-Left"
@@ -378,6 +390,7 @@ Title: "EMS Extremities Assessment"
 Description: "NEMSIS eExam.16 - Physical findings on extremities assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-extremities"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3516001 "Abrasion"
 * $nemsis-exam#3516003 "Amputation-Acute"
 * $nemsis-exam#3516005 "Amputation-Previous"
@@ -431,6 +444,7 @@ Title: "EMS Eye Assessment Finding Location"
 Description: "NEMSIS eExam.17 - Laterality qualifier for eye assessment findings."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-eye-location"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3517001 "Bilateral"
 * $nemsis-exam#3517003 "Left"
 * $nemsis-exam#3517005 "Right"
@@ -442,6 +456,7 @@ Title: "EMS Eye Assessment"
 Description: "NEMSIS eExam.18 - Physical findings on eye assessment, including pupil size and reactivity."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-eye"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3518001 "1-mm"
 * $nemsis-exam#3518003 "2-mm"
 * $nemsis-exam#3518005 "3-mm"
@@ -482,6 +497,7 @@ Title: "EMS Mental Status Assessment"
 Description: "NEMSIS eExam.19 - Mental status and cognitive assessment findings."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-mental-status"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3519001 "Combative"
 * $nemsis-exam#3519003 "Confused"
 * $nemsis-exam#3519005 "Hallucinations"
@@ -514,6 +530,7 @@ Title: "EMS Neurological Assessment"
 Description: "NEMSIS eExam.20 - Neurological assessment findings including strength, speech, coordination, and seizures."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-neurological"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3520001 "Aphagia"
 * $nemsis-exam#3520003 "Aphasia"
 * $nemsis-exam#3520005 "Cerebellar Function-Abnormal"
@@ -548,6 +565,7 @@ Title: "EMS Stroke/CVA Symptoms Resolved"
 Description: "NEMSIS eExam.21 - Whether stroke/CVA symptoms resolved prior to or during EMS care."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-stroke-resolved"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3521001 "No"
 * $nemsis-exam#3521003 "Yes-Resolved Prior to EMS Arrival"
 * $nemsis-exam#3521005 "Yes-Resolved in EMS Presence"
@@ -559,6 +577,7 @@ Title: "EMS Lung Assessment Finding Location"
 Description: "NEMSIS eExam.22 - Laterality qualifier for lung assessment findings."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-lung-location"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3522001 "Left"
 * $nemsis-exam#3522003 "Right"
 * $nemsis-exam#3522005 "Bilateral"
@@ -570,6 +589,7 @@ Title: "EMS Lung Assessment"
 Description: "NEMSIS eExam.23 - Auscultatory and respiratory findings on lung assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-lung"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3523001 "Breath Sounds-Absent"
 * $nemsis-exam#3523003 "Breath Sounds-Decreased"
 * $nemsis-exam#3523005 "Breath Sounds-Equal"
@@ -594,6 +614,7 @@ Title: "EMS Chest Assessment Finding Location"
 Description: "NEMSIS eExam.24 - Location qualifier for chest assessment findings."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-chest-location"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3524001 "Left - Anterior"
 * $nemsis-exam#3524005 "Right - Anterior"
 * $nemsis-exam#3524009 "General - Anterior"
@@ -608,6 +629,7 @@ Title: "EMS Chest Assessment"
 Description: "NEMSIS eExam.25 - Physical findings on chest assessment."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-chest"
 * ^status = #active
+* ^experimental = true
 * $nemsis-exam#3525001 "Abrasion"
 * $nemsis-exam#3525003 "Avulsion"
 * $nemsis-exam#3525005 "Accessory Muscles Used with Breathing"

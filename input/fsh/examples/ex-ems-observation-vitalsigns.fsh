@@ -45,6 +45,9 @@ Usage: #example
 * code.coding[0].system = "http://loinc.org"
 * code.coding[0].code = #59408-5
 * code.coding[0].display = "Oxygen saturation in Arterial blood by Pulse oximetry"
+// LOINC 2708-6 required by us-core-vital-signs OxygenSat magic code constraint
+* code.coding[1].system = "http://loinc.org"
+* code.coding[1].code = #2708-6
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"
 * subject = Reference(ex-ems-patient)
 * encounter = Reference(ex-ems-encounter)

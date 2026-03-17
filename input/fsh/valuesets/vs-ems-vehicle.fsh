@@ -11,6 +11,7 @@ Title: "EMS Vehicle Type"
 Description: "NEMSIS dVehicle.04 - The type of EMS vehicle."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-vehicle-type"
 * ^status = #active
+* ^experimental = true
 * $nemsis-cs#1404001 "Ambulance"
 * $nemsis-cs#1404003 "ATV"
 * $nemsis-cs#1404005 "Bicycle"

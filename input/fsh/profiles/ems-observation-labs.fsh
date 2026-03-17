@@ -21,7 +21,7 @@ Parent: $us-core-observation
 
 // ── Category — laboratory ─────────────────────────────────────
 * category 1..* MS
-* category[us-core] from http://hl7.org/fhir/ValueSet/observation-category (required)
+* category[us-core] from http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category (required)
   * ^short = "Category — 'laboratory' for lab results; 'imaging' for imaging studies"
   * ^comment = "NEMSIS eLabs.03/04 use category 'laboratory'. NEMSIS eLabs.05/06 use category 'imaging'."
 

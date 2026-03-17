@@ -11,6 +11,7 @@ Title: "EMS Response Type (ValueSet)"
 Description: "NEMSIS eResponse.05 - The type of EMS response."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-type"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2205001 "Emergency Response (Primary Response Area)"
 * $nemsis-encounter-cs#2205003 "Emergency Response (Intercept)"
 * $nemsis-encounter-cs#2205009 "Emergency Response (Mutual Aid)"
@@ -38,6 +39,7 @@ Title: "EMS Unit Type (ValueSet)"
 Description: "NEMSIS eResponse.07 - The type of EMS vehicle/unit."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-unit-type"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2207011 "Air Transport-Helicopter"
 * $nemsis-encounter-cs#2207013 "Air Transport-Fixed Wing"
 * $nemsis-encounter-cs#2207015 "Ground Transport (ALS Equipped)"
@@ -56,6 +58,7 @@ Title: "EMS Type of Dispatch Delay"
 Description: "NEMSIS eResponse.08 - Types of dispatch delay."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-dispatch-delay"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2208001 "Caller (Uncooperative)"
 * $nemsis-encounter-cs#2208003 "Diversion/Failure (of previous unit)"
 * $nemsis-encounter-cs#2208005 "High Call Volume"
@@ -77,6 +80,7 @@ Title: "EMS Type of Response Delay"
 Description: "NEMSIS eResponse.09 - Types of response delay en route to scene."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-delay"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2209001 "Crowd"
 * $nemsis-encounter-cs#2209003 "Directions/Unable to Locate"
 * $nemsis-encounter-cs#2209005 "Distance"
@@ -104,6 +108,7 @@ Title: "EMS Type of Scene Delay"
 Description: "NEMSIS eResponse.10 - Types of delay at the scene."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-scene-delay"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2210001 "Awaiting Air Unit"
 * $nemsis-encounter-cs#2210003 "Awaiting Ground Unit"
 * $nemsis-encounter-cs#2210005 "Crowd"
@@ -133,6 +138,7 @@ Title: "EMS Type of Transport Delay"
 Description: "NEMSIS eResponse.11 - Types of delay during transport."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-delay"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2211001 "Crowd"
 * $nemsis-encounter-cs#2211003 "Directions/Unable to Locate"
 * $nemsis-encounter-cs#2211005 "Distance"
@@ -158,6 +164,7 @@ Title: "EMS Type of Turn-Around Delay"
 Description: "NEMSIS eResponse.12 - Types of delay returning to service after transport."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-turn-around-delay"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2212001 "Clean-up"
 * $nemsis-encounter-cs#2212003 "Decontamination"
 * $nemsis-encounter-cs#2212005 "Distance"
@@ -184,6 +191,7 @@ Title: "EMS Response Mode to Scene (ValueSet)"
 Description: "NEMSIS eResponse.23 - The response mode (emergent vs non-emergent) used en route to the scene."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-mode"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2223001 "Emergent (Immediate Response)"
 * $nemsis-encounter-cs#2223003 "Emergent Downgraded to Non-Emergent"
 * $nemsis-encounter-cs#2223005 "Non-Emergent"
@@ -197,6 +205,7 @@ Title: "EMS Additional Response Mode Descriptors (ValueSet)"
 Description: "NEMSIS eResponse.24 - Additional descriptors of response mode (lights, sirens, speed, intersection navigation)."
 * ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-additional-response-mode"
 * ^status = #active
+* ^experimental = true
 * $nemsis-encounter-cs#2224001 "Intersection Navigation-Against Normal Light Patterns"
 * $nemsis-encounter-cs#2224003 "Intersection Navigation-With Automated Light Changing Technology"
 * $nemsis-encounter-cs#2224005 "Intersection Navigation-With Normal Light Patterns"

@@ -80,17 +80,12 @@ Description: """
   * ^comment = "NEMSIS dPersonnel.11. Usage: Recommended. Nillable. NV: NotRecorded, NotApplicable."
 
 // ── dPersonnel.21 - Agency ID ────────────────────────────────
+// Agency-assigned identifier for this personnel member (dPersonnel.21).
+// Use agency-specific system URL. No formal slice defined; open identifier.
 * identifier MS
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "$this"
-* identifier ^slicing.rules = #open
-
-* identifier contains agencyId 0..1 MS
-
-* identifier[agencyId]
   * ^short = "dPersonnel.21 - EMS Personnel's Agency ID Number"
-  * ^comment = "NEMSIS dPersonnel.21. Usage: Optional. The identifier assigned to this personnel member by their agency."
-  * system 1..1 MS
-    * ^comment = "US Core requires identifier.system 1..1 MS."
-  * value 1..1 MS
-    * ^comment = "US Core requires identifier.value 1..1 MS."
+  * ^comment = "NEMSIS dPersonnel.21. Usage: Optional. Use agency-assigned system URL. system 1..1, value 1..1 per US Core."
+* identifier.system 1..1 MS
+  * ^comment = "US Core requires identifier.system 1..1 MS."
+* identifier.value 1..1 MS
+  * ^comment = "US Core requires identifier.value 1..1 MS."

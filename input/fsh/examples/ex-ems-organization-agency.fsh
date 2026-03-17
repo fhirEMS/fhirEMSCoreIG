@@ -13,13 +13,14 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-organization"
 
 // Identifiers
-* identifier[npi].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[npi].value = "1548456411"
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[NPI].value = "1548456411"
 
-* identifier[stateId].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier[stateId].type.coding[0].code = #XX
-* identifier[stateId].system = "http://example.org/ems/state-agency-id"
-* identifier[stateId].value = "CA-4065"
+// dAgency.01 - State Agency ID (not formally sliced; open identifier)
+* identifier[+].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[=].type.coding[0].code = #XX
+* identifier[=].system = "http://example.org/ems/state-agency-id"
+* identifier[=].value = "CA-4065"
 
 // Agency name and contact
 * active = true
@@ -40,4 +41,4 @@ Usage: #example
 * extension[agencyDetails].extension[levelOfService].valueCodeableConcept
     = $nemsis-cs#9917007 "Paramedic"
 * extension[agencyDetails].extension[organizationStatus].valueCodeableConcept
-    = $nemsis-cs#1016001 "Primary"
+    = $nemsis-cs#1016003 "Non-Volunteer"

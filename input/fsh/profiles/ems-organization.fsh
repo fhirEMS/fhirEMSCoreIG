@@ -21,33 +21,18 @@ Description: """
   * ^comment = "NEMSIS dAgency.09 (Primary Service Type, Mandatory), dAgency.10 (Other Service Types, Recommended), dAgency.11 (Level of Service, Mandatory), dAgency.12 (Organization Status, Mandatory)."
 
 // ── dAgency.01 / dAgency.02 / dAgency.25 - Identifiers ───────
+// US Core Organization provides identifier slicing (pattern:$this).
+// NPI slice (dAgency.25): system = http://hl7.org/fhir/sid/us-npi
+// State agency ID (dAgency.01): use agency-assigned system URL (open identifier)
+// Fire Department ID (dAgency.26): use NFIRS/agency system URL (open identifier)
 * identifier MS
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "$this"
-* identifier ^slicing.rules = #open
 
-* identifier contains
-    npi        0..1 MS and
-    stateId    0..1 MS and
-    fireDeptId 0..1
-
-* identifier[npi]
+* identifier[NPI]
   * ^short = "dAgency.25 - National Provider Identifier (NPI)"
   * ^comment = "NEMSIS dAgency.25. Usage: Required/National. Nillable. NV: NotRecorded, NotApplicable. System: http://hl7.org/fhir/sid/us-npi."
   * system 1..1 MS
   * system = $npi
   * value 1..1 MS
-
-* identifier[stateId]
-  * ^short = "dAgency.01 - EMS Agency Unique State ID"
-  * ^comment = "NEMSIS dAgency.01. Usage: Mandatory/National. Not nillable. No NV or PN. The unique identifier assigned to the agency by the state EMS office."
-  * system 1..1 MS
-  * value 1..1 MS
-
-* identifier[fireDeptId]
-  * ^short = "dAgency.26 - Fire Department ID Number"
-  * ^comment = "NEMSIS dAgency.26. Usage: Required/National. Nillable. NV: NotRecorded, NotApplicable. The FDID assigned by NFIRS."
-  * value MS
 
 // ── dAgency.03 - EMS Agency Name ─────────────────────────────
 * name 1..1 MS

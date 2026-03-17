@@ -18,7 +18,7 @@ Usage: #example
 * category[us-core].coding[0].code = #procedure
 
 // Code fixed to SNOMED 182682004 (Airway management) by profile
-* code = $snomed#182682004 "Emergency airway management"
+* code = $snomed#182682004 "Emergency laryngeal intubation"
 
 // eAirway.02 - Date/Time Airway Device Placement Confirmed
 * effectiveDateTime = "2026-03-14T14:32:00-08:00"
@@ -30,7 +30,7 @@ Usage: #example
 * performer[0] = Reference(ex-ems-practitioner)
 
 // eAirway.05 - Tube Depth (22 cm at lip)
-* component[tubeDepth].code = $loinc#19841-6 "Endotracheal tube position depth"
+* component[tubeDepth].code = $loinc#19841-6
 * component[tubeDepth].valueQuantity.value = 22
 * component[tubeDepth].valueQuantity.unit = "cm"
 * component[tubeDepth].valueQuantity.system = "http://unitsofmeasure.org"
