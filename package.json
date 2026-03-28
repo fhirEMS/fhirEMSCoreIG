@@ -1,4 +1,11 @@
 {
+  "name": "fhir-ems-core-ig",
+  "private": true,
+  "scripts": {
+    "sushi": "npx sushi .",
+    "build:publisher": "env PATH=\"$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin:$PATH\" ./.jdk/jdk-21.0.10+7/Contents/Home/bin/java -jar input-cache/publisher.jar -ig .",
+    "build:publisher:no-sushi": "env PATH=\"$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin:$PATH\" ./.jdk/jdk-21.0.10+7/Contents/Home/bin/java -jar input-cache/publisher.jar -ig . -no-sushi"
+  },
   "dependencies": {
     "fsh-sushi": "^3.18.1"
   }
