@@ -14,13 +14,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
-      "valueString" : "This extension is based on a fragment of the code system http://hl7.org/fhir/sid/icd-9-cm"
-    }],
-    "identifier" : "urn:uuid:fa4376ac-7cc1-49d2-b1e8-eebbfa2925c1",
-    "timestamp" : "2026-03-15T02:21:17.458Z",
-    "total" : 22,
+    "identifier" : "urn:uuid:e4f35f1c-9385-4594-9edf-8aa4922fe4e8",
+    "timestamp" : "2026-07-19T21:19:06.735Z",
     "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
@@ -39,122 +34,5009 @@ e: {
       "valueInteger" : 1000
     },
     {
-      "name" : "fragment",
-      "valueUri" : "http://hl7.org/fhir/sid/icd-9-cm|2015"
-    },
-    {
       "name" : "used-codesystem",
       "valueUri" : "http://hl7.org/fhir/sid/icd-9-cm|2015"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "CLASSIFICATION OF PROCEDURES",
-      "display" : "CLASSIFICATION OF PROCEDURES"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "87-99",
-      "display" : "MISCELLANEOUS DIAGNOSTIC AND THERAPEUTIC PROCEDURES"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99",
-      "display" : "Other Nonoperative Procedures"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.0",
-      "display" : "Transfusion Of Blood And Blood Components"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.00",
-      "display" : "Perioperative autologous transfusion of whole blood or blood components"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.01",
-      "display" : "Exchange transfusion"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.02",
-      "display" : "Transfusion of previously collected autologous blood"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.03",
-      "display" : "Other transfusion of whole blood"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.04",
-      "display" : "Transfusion of packed cells"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.05",
-      "display" : "Transfusion of platelets"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.06",
-      "display" : "Transfusion of coagulation factors"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.07",
-      "display" : "Transfusion of other serum"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.08",
-      "display" : "Transfusion of blood expander"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "99.09",
-      "display" : "Transfusion of other substance"
-    },
-    {
-      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "CLASSIFICATION OF DISEASES AND INJURIES",
+      "abstract" : true,
+      "code" : "CLASSIFICATION_OF_DISEASES_AND_INJURIES",
       "display" : "CLASSIFICATION OF DISEASES AND INJURIES"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "390-459",
-      "display" : "DISEASES OF THE CIRCULATORY SYSTEM"
+      "code" : "001",
+      "display" : "Cholera"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "410-414",
-      "display" : "ISCHEMIC HEART DISEASE"
+      "code" : "001.0",
+      "display" : "Cholera due to vibrio cholerae"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "410",
-      "display" : "Acute myocardial infarction"
+      "code" : "001.1",
+      "display" : "Cholera due to vibrio cholerae el tor"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "410.9",
-      "display" : "Acute myocardial infarction of unspecified site"
+      "code" : "001.9",
+      "display" : "Cholera, unspecified"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "410.90",
-      "display" : "Acute myocardial infarction of unspecified site, episode of care unspecified"
+      "code" : "002",
+      "display" : "Typhoid and paratyphoid fevers"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "410.91",
-      "display" : "Acute myocardial infarction of unspecified site, initial episode of care"
+      "code" : "002.0",
+      "display" : "Typhoid fever"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "code" : "410.92",
-      "display" : "Acute myocardial infarction of unspecified site, subsequent episode of care"
+      "code" : "002.1",
+      "display" : "Paratyphoid fever A"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "002.2",
+      "display" : "Paratyphoid fever B"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "002.3",
+      "display" : "Paratyphoid fever C"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "002.9",
+      "display" : "Paratyphoid fever, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003",
+      "display" : "Other salmonella infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.0",
+      "display" : "Salmonella gastroenteritis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.1",
+      "display" : "Salmonella septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.2",
+      "display" : "Localized salmonella infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.20",
+      "display" : "Localized salmonella infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.21",
+      "display" : "Salmonella meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.22",
+      "display" : "Salmonella pneumonia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.23",
+      "display" : "Salmonella arthritis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.24",
+      "display" : "Salmonella osteomyelitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.29",
+      "display" : "Other localized salmonella infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.8",
+      "display" : "Other specified salmonella infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "003.9",
+      "display" : "Salmonella infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "004",
+      "display" : "Shigellosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "004.0",
+      "display" : "Shigella dysenteriae"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "004.1",
+      "display" : "Shigella flexneri"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "004.2",
+      "display" : "Shigella boydii"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "004.3",
+      "display" : "Shigella sonnei"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "004.8",
+      "display" : "Other specified shigella infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "004.9",
+      "display" : "Shigellosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005",
+      "display" : "Other food poisoning (bacterial)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.0",
+      "display" : "Staphylococcal food poisoning"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.1",
+      "display" : "Botulism food poisoning"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.2",
+      "display" : "Food poisoning due to Clostridium perfringens (C. welchii)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.3",
+      "display" : "Food poisoning due to other Clostridia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.4",
+      "display" : "Food poisoning due to Vibrio parahaemolyticus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.8",
+      "display" : "Other bacterial food poisoning"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.81",
+      "display" : "Food poisoning due to Vibrio vulnificus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.89",
+      "display" : "Other bacterial food poisoning"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "005.9",
+      "display" : "Food poisoning, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006",
+      "display" : "Amebiasis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.0",
+      "display" : "Acute amebic dysentery without mention of abscess"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.1",
+      "display" : "Chronic intestinal amebiasis without mention of abscess"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.2",
+      "display" : "Amebic nondysenteric colitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.3",
+      "display" : "Amebic liver abscess"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.4",
+      "display" : "Amebic lung abscess"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.5",
+      "display" : "Amebic brain abscess"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.6",
+      "display" : "Amebic skin ulceration"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.8",
+      "display" : "Amebic infection of other sites"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "006.9",
+      "display" : "Amebiasis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007",
+      "display" : "Other protozoal intestinal diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.0",
+      "display" : "Balantidiasis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.1",
+      "display" : "Giardiasis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.2",
+      "display" : "Coccidiosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.3",
+      "display" : "Intestinal trichomoniasis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.4",
+      "display" : "Cryptosporidiosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.5",
+      "display" : "Cyclosporiasis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.8",
+      "display" : "Other specified protozoal intestinal diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "007.9",
+      "display" : "Unspecified protozoal intestinal disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008",
+      "display" : "Intestinal infections due to other organisms"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.0",
+      "display" : "Escherichia coli [E. coli]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.00",
+      "display" : "Intestinal infection due to E. coli, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.01",
+      "display" : "Intestinal infection due to enteropathogenic E. coli"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.02",
+      "display" : "Intestinal infection due to enterotoxigenic E. coli"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.03",
+      "display" : "Intestinal infection due to enteroinvasive E. coli"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.04",
+      "display" : "Intestinal infection due to enterohemorrhagic E. coli"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.09",
+      "display" : "Intestinal infection due to other intestinal E. coli infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.1",
+      "display" : "Intestinal infection due to arizona group of paracolon bacilli"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.2",
+      "display" : "Intestinal infection due to aerobacter aerogenes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.3",
+      "display" : "Intestinal infection due to proteus (mirabilis) (morganii)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.4",
+      "display" : "Other specified bacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.41",
+      "display" : "Intestinal infection due to staphylococcus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.42",
+      "display" : "Intestinal infection due to pseudomonas"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.43",
+      "display" : "Intestinal infection due to campylobacter"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.44",
+      "display" : "Intestinal infection due to yersinia enterocolitica"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.45",
+      "display" : "Intestinal infection due to Clostridium difficile"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.46",
+      "display" : "Intestinal infection due to other anaerobes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.47",
+      "display" : "Intestinal infection due to other gram-negative bacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.49",
+      "display" : "Intestinal infection due to other organisms"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.5",
+      "display" : "Bacterial enteritis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.6",
+      "display" : "Enteritis due to specified virus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.61",
+      "display" : "Enteritis due to rotavirus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.62",
+      "display" : "Enteritis due to adenovirus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.63",
+      "display" : "Enteritis due to norwalk virus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.64",
+      "display" : "Enteritis due to other small round viruses [SRV's]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.65",
+      "display" : "Enteritis due to calicivirus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.66",
+      "display" : "Enteritis due to astrovirus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.67",
+      "display" : "Enteritis due to enterovirus nec"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.69",
+      "display" : "Enteritis due to other viral enteritis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "008.8",
+      "display" : "Intestinal infection due to other organism, not elsewhere classified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "009",
+      "display" : "Ill-defined intestinal infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "009.0",
+      "display" : "Infectious colitis, enteritis, and gastroenteritis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "009.1",
+      "display" : "Colitis, enteritis, and gastroenteritis of presumed infectious origin"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "009.2",
+      "display" : "Infectious diarrhea"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "009.3",
+      "display" : "Diarrhea of presumed infectious origin"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010",
+      "display" : "Primary tuberculous infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.0",
+      "display" : "Primary tuberculous infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.00",
+      "display" : "Primary tuberculous infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.01",
+      "display" : "Primary tuberculous infection, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.02",
+      "display" : "Primary tuberculous infection, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.03",
+      "display" : "Primary tuberculous infection, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.04",
+      "display" : "Primary tuberculous infection, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.05",
+      "display" : "Primary tuberculous infection, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.06",
+      "display" : "Primary tuberculous infection, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.1",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.10",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.11",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.12",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.13",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.14",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.15",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.16",
+      "display" : "Tuberculous pleurisy in primary progressive tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.8",
+      "display" : "Other primary progressive tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.80",
+      "display" : "Other primary progressive tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.81",
+      "display" : "Other primary progressive tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.82",
+      "display" : "Other primary progressive tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.83",
+      "display" : "Other primary progressive tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.84",
+      "display" : "Other primary progressive tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.85",
+      "display" : "Other primary progressive tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.86",
+      "display" : "Other primary progressive tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.9",
+      "display" : "Primary tuberculous infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.90",
+      "display" : "Primary tuberculous infection, unspecified, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.91",
+      "display" : "Primary tuberculous infection, unspecified, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.92",
+      "display" : "Primary tuberculous infection, unspecified, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.93",
+      "display" : "Primary tuberculous infection, unspecified, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.94",
+      "display" : "Primary tuberculous infection, unspecified, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.95",
+      "display" : "Primary tuberculous infection, unspecified, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "010.96",
+      "display" : "Primary tuberculous infection, unspecified, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011",
+      "display" : "Pulmonary tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.0",
+      "display" : "Tuberculosis of lung, infiltrative"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.00",
+      "display" : "Tuberculosis of lung, infiltrative, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.01",
+      "display" : "Tuberculosis of lung, infiltrative, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.02",
+      "display" : "Tuberculosis of lung, infiltrative, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.03",
+      "display" : "Tuberculosis of lung, infiltrative, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.04",
+      "display" : "Tuberculosis of lung, infiltrative, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.05",
+      "display" : "Tuberculosis of lung, infiltrative, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.06",
+      "display" : "Tuberculosis of lung, infiltrative, tubercle bacilli not found bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.1",
+      "display" : "Tuberculosis of lung, nodular"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.10",
+      "display" : "Tuberculosis of lung, nodular, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.11",
+      "display" : "Tuberculosis of lung, nodular, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.12",
+      "display" : "Tuberculosis of lung, nodular, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.13",
+      "display" : "Tuberculosis of lung, nodular, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.14",
+      "display" : "Tuberculosis of lung, nodular, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.15",
+      "display" : "Tuberculosis of lung, nodular, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.16",
+      "display" : "Tuberculosis of lung, nodular, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.2",
+      "display" : "Tuberculosis of lung with cavitation"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.20",
+      "display" : "Tuberculosis of lung with cavitation, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.21",
+      "display" : "Tuberculosis of lung with cavitation, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.22",
+      "display" : "Tuberculosis of lung with cavitation, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.23",
+      "display" : "Tuberculosis of lung with cavitation, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.24",
+      "display" : "Tuberculosis of lung with cavitation, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.25",
+      "display" : "Tuberculosis of lung with cavitation, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.26",
+      "display" : "Tuberculosis of lung with cavitation, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.3",
+      "display" : "Tuberculosis of bronchus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.30",
+      "display" : "Tuberculosis of bronchus, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.31",
+      "display" : "Tuberculosis of bronchus, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.32",
+      "display" : "Tuberculosis of bronchus, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.33",
+      "display" : "Tuberculosis of bronchus, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.34",
+      "display" : "Tuberculosis of bronchus, tubercle bacilli not found (in sputum) by microscopy, but found in bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.35",
+      "display" : "Tuberculosis of bronchus, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.36",
+      "display" : "Tuberculosis of bronchus, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.4",
+      "display" : "Tuberculous fibrosis of lung"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.40",
+      "display" : "Tuberculous fibrosis of lung, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.41",
+      "display" : "Tuberculous fibrosis of lung, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.42",
+      "display" : "Tuberculous fibrosis of lung, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.43",
+      "display" : "Tuberculous fibrosis of lung, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.44",
+      "display" : "Tuberculous fibrosis of lung, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.45",
+      "display" : "Tuberculous fibrosis of lung, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.46",
+      "display" : "Tuberculous fibrosis of lung, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.5",
+      "display" : "Tuberculous bronchiectasis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.50",
+      "display" : "Tuberculous bronchiectasis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.51",
+      "display" : "Tuberculous bronchiectasis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.52",
+      "display" : "Tuberculous bronchiectasis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.53",
+      "display" : "Tuberculous bronchiectasis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.54",
+      "display" : "Tuberculous bronchiectasis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.55",
+      "display" : "Tuberculous bronchiectasis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.56",
+      "display" : "Tuberculous bronchiectasis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.6",
+      "display" : "Tuberculous pneumonia [any form]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.60",
+      "display" : "Tuberculous pneumonia [any form], unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.61",
+      "display" : "Tuberculous pneumonia [any form], bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.62",
+      "display" : "Tuberculous pneumonia [any form], bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.63",
+      "display" : "Tuberculous pneumonia [any form], tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.64",
+      "display" : "Tuberculous pneumonia [any form], tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.65",
+      "display" : "Tuberculous pneumonia [any form], tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.66",
+      "display" : "Tuberculous pneumonia [any form], tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.7",
+      "display" : "Tuberculous pneumothorax"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.70",
+      "display" : "Tuberculous pneumothorax, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.71",
+      "display" : "Tuberculous pneumothorax, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.72",
+      "display" : "Tuberculous pneumothorax, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.73",
+      "display" : "Tuberculous pneumothorax, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.74",
+      "display" : "Tuberculous pneumothorax, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.75",
+      "display" : "Tuberculous pneumothorax, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.76",
+      "display" : "Tuberculous pneumothorax, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.8",
+      "display" : "Other specified pulmonary tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.80",
+      "display" : "Other specified pulmonary tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.81",
+      "display" : "Other specified pulmonary tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.82",
+      "display" : "Other specified pulmonary tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.83",
+      "display" : "Other specified pulmonary tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.84",
+      "display" : "Other specified pulmonary tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.85",
+      "display" : "Other specified pulmonary tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.86",
+      "display" : "Other specified pulmonary tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.9",
+      "display" : "Pulmonary tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.90",
+      "display" : "Pulmonary tuberculosis, unspecified, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.91",
+      "display" : "Pulmonary tuberculosis, unspecified, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.92",
+      "display" : "Pulmonary tuberculosis, unspecified, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.93",
+      "display" : "Pulmonary tuberculosis, unspecified, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.94",
+      "display" : "Pulmonary tuberculosis, unspecified, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.95",
+      "display" : "Pulmonary tuberculosis, unspecified, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "011.96",
+      "display" : "Pulmonary tuberculosis, unspecified, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012",
+      "display" : "Other respiratory tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.0",
+      "display" : "Tuberculous pleurisy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.00",
+      "display" : "Tuberculous pleurisy, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.01",
+      "display" : "Tuberculous pleurisy, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.02",
+      "display" : "Tuberculous pleurisy, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.03",
+      "display" : "Tuberculous pleurisy, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.04",
+      "display" : "Tuberculous pleurisy, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.05",
+      "display" : "Tuberculous pleurisy, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.06",
+      "display" : "Tuberculous pleurisy, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.1",
+      "display" : "Tuberculosis of intrathoracic lymph nodes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.10",
+      "display" : "Tuberculosis of intrathoracic lymph nodes, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.11",
+      "display" : "Tuberculosis of intrathoracic lymph nodes, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.12",
+      "display" : "Tuberculosis of intrathoracic lymph nodes, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.13",
+      "display" : "Tuberculosis of intrathoracic lymph nodes, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.14",
+      "display" : "Tuberculosis of intrathoracic lymph nodes, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.15",
+      "display" : "Tuberculosis of intrathoracic lymph nodes, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.16",
+      "display" : "Tuberculosis of intrathoracic lymph nodes, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.2",
+      "display" : "Isolated tracheal or bronchial tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.20",
+      "display" : "Isolated tracheal or bronchial tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.21",
+      "display" : "Isolated tracheal or bronchial tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.22",
+      "display" : "Isolated tracheal or bronchial tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.23",
+      "display" : "Isolated tracheal or bronchial tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.24",
+      "display" : "Isolated tracheal or bronchial tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.25",
+      "display" : "Isolated tracheal or bronchial tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.26",
+      "display" : "Isolated tracheal or bronchial tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.3",
+      "display" : "Tuberculous laryngitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.30",
+      "display" : "Tuberculous laryngitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.31",
+      "display" : "Tuberculous laryngitis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.32",
+      "display" : "Tuberculous laryngitis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.33",
+      "display" : "Tuberculous laryngitis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.34",
+      "display" : "Tuberculous laryngitis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.35",
+      "display" : "Tuberculous laryngitis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.36",
+      "display" : "Tuberculous laryngitis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.8",
+      "display" : "Other specified respiratory tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.80",
+      "display" : "Other specified respiratory tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.81",
+      "display" : "Other specified respiratory tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.82",
+      "display" : "Other specified respiratory tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.83",
+      "display" : "Other specified respiratory tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.84",
+      "display" : "Other specified respiratory tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.85",
+      "display" : "Other specified respiratory tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "012.86",
+      "display" : "Other specified respiratory tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013",
+      "display" : "Tuberculosis of meninges and central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.0",
+      "display" : "Tuberculous meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.00",
+      "display" : "Tuberculous meningitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.01",
+      "display" : "Tuberculous meningitis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.02",
+      "display" : "Tuberculous meningitis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.03",
+      "display" : "Tuberculous meningitis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.04",
+      "display" : "Tuberculous meningitis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.05",
+      "display" : "Tuberculous meningitis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.06",
+      "display" : "Tuberculous meningitis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.1",
+      "display" : "Tuberculoma of meninges"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.10",
+      "display" : "Tuberculoma of meninges, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.11",
+      "display" : "Tuberculoma of meninges, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.12",
+      "display" : "Tuberculoma of meninges, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.13",
+      "display" : "Tuberculoma of meninges, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.14",
+      "display" : "Tuberculoma of meninges, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.15",
+      "display" : "Tuberculoma of meninges, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.16",
+      "display" : "Tuberculoma of meninges, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.2",
+      "display" : "Tuberculoma of brain"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.20",
+      "display" : "Tuberculoma of brain, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.21",
+      "display" : "Tuberculoma of brain, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.22",
+      "display" : "Tuberculoma of brain, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.23",
+      "display" : "Tuberculoma of brain, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.24",
+      "display" : "Tuberculoma of brain, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.25",
+      "display" : "Tuberculoma of brain, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.26",
+      "display" : "Tuberculoma of brain, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.3",
+      "display" : "Tuberculous abscess of brain"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.30",
+      "display" : "Tuberculous abscess of brain, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.31",
+      "display" : "Tuberculous abscess of brain, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.32",
+      "display" : "Tuberculous abscess of brain, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.33",
+      "display" : "Tuberculous abscess of brain, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.34",
+      "display" : "Tuberculous abscess of brain, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.35",
+      "display" : "Tuberculous abscess of brain, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.36",
+      "display" : "Tuberculous abscess of brain, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.4",
+      "display" : "Tuberculoma of spinal cord"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.40",
+      "display" : "Tuberculoma of spinal cord, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.41",
+      "display" : "Tuberculoma of spinal cord, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.42",
+      "display" : "Tuberculoma of spinal cord, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.43",
+      "display" : "Tuberculoma of spinal cord, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.44",
+      "display" : "Tuberculoma of spinal cord, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.45",
+      "display" : "Tuberculoma of spinal cord, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.46",
+      "display" : "Tuberculoma of spinal cord, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.5",
+      "display" : "Tuberculous abscess of spinal cord"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.50",
+      "display" : "Tuberculous abscess of spinal cord, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.51",
+      "display" : "Tuberculous abscess of spinal cord, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.52",
+      "display" : "Tuberculous abscess of spinal cord, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.53",
+      "display" : "Tuberculous abscess of spinal cord, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.54",
+      "display" : "Tuberculous abscess of spinal cord, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.55",
+      "display" : "Tuberculous abscess of spinal cord, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.56",
+      "display" : "Tuberculous abscess of spinal cord, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.6",
+      "display" : "Tuberculous encephalitis or myelitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.60",
+      "display" : "Tuberculous encephalitis or myelitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.61",
+      "display" : "Tuberculous encephalitis or myelitis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.62",
+      "display" : "Tuberculous encephalitis or myelitis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.63",
+      "display" : "Tuberculous encephalitis or myelitis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.64",
+      "display" : "Tuberculous encephalitis or myelitis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.65",
+      "display" : "Tuberculous encephalitis or myelitis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.66",
+      "display" : "Tuberculous encephalitis or myelitis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.8",
+      "display" : "Other specified tuberculosis of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.80",
+      "display" : "Other specified tuberculosis of central nervous system, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.81",
+      "display" : "Other specified tuberculosis of central nervous system, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.82",
+      "display" : "Other specified tuberculosis of central nervous system, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.83",
+      "display" : "Other specified tuberculosis of central nervous system, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.84",
+      "display" : "Other specified tuberculosis of central nervous system, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.85",
+      "display" : "Other specified tuberculosis of central nervous system, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.86",
+      "display" : "Other specified tuberculosis of central nervous system, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.9",
+      "display" : "Unspecified tuberculosis of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.90",
+      "display" : "Unspecified tuberculosis of central nervous system, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.91",
+      "display" : "Unspecified tuberculosis of central nervous system, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.92",
+      "display" : "Unspecified tuberculosis of central nervous system, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.93",
+      "display" : "Unspecified tuberculosis of central nervous system, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.94",
+      "display" : "Unspecified tuberculosis of central nervous system, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.95",
+      "display" : "Unspecified tuberculosis of central nervous system, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "013.96",
+      "display" : "Unspecified tuberculosis of central nervous system, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014",
+      "display" : "Tuberculosis of intestines, peritoneum, and mesenteric glands"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.0",
+      "display" : "Tuberculous peritonitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.00",
+      "display" : "Tuberculous peritonitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.01",
+      "display" : "Tuberculous peritonitis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.02",
+      "display" : "Tuberculous peritonitis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.03",
+      "display" : "Tuberculous peritonitis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.04",
+      "display" : "Tuberculous peritonitis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.05",
+      "display" : "Tuberculous peritonitis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.06",
+      "display" : "Tuberculous peritonitis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.8",
+      "display" : "Other"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.80",
+      "display" : "Other tuberculosis of intestines, peritoneum, and mesenteric glands, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.81",
+      "display" : "Other tuberculosis of intestines, peritoneum, and mesenteric glands, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.82",
+      "display" : "Other tuberculosis of intestines, peritoneum, and mesenteric glands, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.83",
+      "display" : "Other tuberculosis of intestines, peritoneum, and mesenteric glands, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.84",
+      "display" : "Other tuberculosis of intestines, peritoneum, and mesenteric glands, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.85",
+      "display" : "Other tuberculosis of intestines, peritoneum, and mesenteric glands, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "014.86",
+      "display" : "Other tuberculosis of intestines, peritoneum, and mesenteric glands, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015",
+      "display" : "Tuberculosis of bones and joints"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.0",
+      "display" : "Vertebral column"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.00",
+      "display" : "Tuberculosis of vertebral column, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.01",
+      "display" : "Tuberculosis of vertebral column, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.02",
+      "display" : "Tuberculosis of vertebral column, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.03",
+      "display" : "Tuberculosis of vertebral column, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.04",
+      "display" : "Tuberculosis of vertebral column, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.05",
+      "display" : "Tuberculosis of vertebral column, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.06",
+      "display" : "Tuberculosis of vertebral column, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.1",
+      "display" : "Hip"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.10",
+      "display" : "Tuberculosis of hip, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.11",
+      "display" : "Tuberculosis of hip, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.12",
+      "display" : "Tuberculosis of hip, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.13",
+      "display" : "Tuberculosis of hip, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.14",
+      "display" : "Tuberculosis of hip, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.15",
+      "display" : "Tuberculosis of hip, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.16",
+      "display" : "Tuberculosis of hip, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.2",
+      "display" : "Knee"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.20",
+      "display" : "Tuberculosis of knee, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.21",
+      "display" : "Tuberculosis of knee, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.22",
+      "display" : "Tuberculosis of knee, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.23",
+      "display" : "Tuberculosis of knee, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.24",
+      "display" : "Tuberculosis of knee, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.25",
+      "display" : "Tuberculosis of knee, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.26",
+      "display" : "Tuberculosis of knee, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.5",
+      "display" : "Limb bones"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.50",
+      "display" : "Tuberculosis of limb bones, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.51",
+      "display" : "Tuberculosis of limb bones, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.52",
+      "display" : "Tuberculosis of limb bones, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.53",
+      "display" : "Tuberculosis of limb bones, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.54",
+      "display" : "Tuberculosis of limb bones, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.55",
+      "display" : "Tuberculosis of limb bones, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.56",
+      "display" : "Tuberculosis of limb bones, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.6",
+      "display" : "Mastoid"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.60",
+      "display" : "Tuberculosis of mastoid, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.61",
+      "display" : "Tuberculosis of mastoid, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.62",
+      "display" : "Tuberculosis of mastoid, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.63",
+      "display" : "Tuberculosis of mastoid, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.64",
+      "display" : "Tuberculosis of mastoid, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.65",
+      "display" : "Tuberculosis of mastoid, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.66",
+      "display" : "Tuberculosis of mastoid, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.7",
+      "display" : "Other specified bone"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.70",
+      "display" : "Tuberculosis of other specified bone, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.71",
+      "display" : "Tuberculosis of other specified bone, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.72",
+      "display" : "Tuberculosis of other specified bone, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.73",
+      "display" : "Tuberculosis of other specified bone, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.74",
+      "display" : "Tuberculosis of other specified bone, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.75",
+      "display" : "Tuberculosis of other specified bone, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.76",
+      "display" : "Tuberculosis of other specified bone, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.8",
+      "display" : "Other specified joint"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.80",
+      "display" : "Tuberculosis of other specified joint, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.81",
+      "display" : "Tuberculosis of other specified joint, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.82",
+      "display" : "Tuberculosis of other specified joint, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.83",
+      "display" : "Tuberculosis of other specified joint, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.84",
+      "display" : "Tuberculosis of other specified joint, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.85",
+      "display" : "Tuberculosis of other specified joint, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.86",
+      "display" : "Tuberculosis of other specified joint, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.9",
+      "display" : "Tuberculosis of unspecified bones and joints"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.90",
+      "display" : "Tuberculosis of unspecified bones and joints, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.91",
+      "display" : "Tuberculosis of unspecified bones and joints, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.92",
+      "display" : "Tuberculosis of unspecified bones and joints, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.93",
+      "display" : "Tuberculosis of unspecified bones and joints, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.94",
+      "display" : "Tuberculosis of unspecified bones and joints, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.95",
+      "display" : "Tuberculosis of unspecified bones and joints, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "015.96",
+      "display" : "Tuberculosis of unspecified bones and joints, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016",
+      "display" : "Tuberculosis of genitourinary system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.0",
+      "display" : "Kidney"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.00",
+      "display" : "Tuberculosis of kidney, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.01",
+      "display" : "Tuberculosis of kidney, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.02",
+      "display" : "Tuberculosis of kidney, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.03",
+      "display" : "Tuberculosis of kidney, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.04",
+      "display" : "Tuberculosis of kidney, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.05",
+      "display" : "Tuberculosis of kidney, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.06",
+      "display" : "Tuberculosis of kidney, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.1",
+      "display" : "Bladder"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.10",
+      "display" : "Tuberculosis of bladder, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.11",
+      "display" : "Tuberculosis of bladder, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.12",
+      "display" : "Tuberculosis of bladder, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.13",
+      "display" : "Tuberculosis of bladder, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.14",
+      "display" : "Tuberculosis of bladder, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.15",
+      "display" : "Tuberculosis of bladder, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.16",
+      "display" : "Tuberculosis of bladder, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.2",
+      "display" : "Ureter"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.20",
+      "display" : "Tuberculosis of ureter, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.21",
+      "display" : "Tuberculosis of ureter, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.22",
+      "display" : "Tuberculosis of ureter, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.23",
+      "display" : "Tuberculosis of ureter, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.24",
+      "display" : "Tuberculosis of ureter, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.25",
+      "display" : "Tuberculosis of ureter, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.26",
+      "display" : "Tuberculosis of ureter, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.3",
+      "display" : "Other urinary organs"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.30",
+      "display" : "Tuberculosis of other urinary organs, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.31",
+      "display" : "Tuberculosis of other urinary organs, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.32",
+      "display" : "Tuberculosis of other urinary organs, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.33",
+      "display" : "Tuberculosis of other urinary organs, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.34",
+      "display" : "Tuberculosis of other urinary organs, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.35",
+      "display" : "Tuberculosis of other urinary organs, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.36",
+      "display" : "Tuberculosis of other urinary organs, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.4",
+      "display" : "Epididymis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.40",
+      "display" : "Tuberculosis of epididymis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.41",
+      "display" : "Tuberculosis of epididymis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.42",
+      "display" : "Tuberculosis of epididymis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.43",
+      "display" : "Tuberculosis of epididymis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.44",
+      "display" : "Tuberculosis of epididymis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.45",
+      "display" : "Tuberculosis of epididymis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.46",
+      "display" : "Tuberculosis of epididymis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.5",
+      "display" : "Other male genital organs"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.50",
+      "display" : "Tuberculosis of other male genital organs, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.51",
+      "display" : "Tuberculosis of other male genital organs, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.52",
+      "display" : "Tuberculosis of other male genital organs, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.53",
+      "display" : "Tuberculosis of other male genital organs, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.54",
+      "display" : "Tuberculosis of other male genital organs, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.55",
+      "display" : "Tuberculosis of other male genital organs, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.56",
+      "display" : "Tuberculosis of other male genital organs, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.6",
+      "display" : "Tuberculous oophoritis and salpingitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.60",
+      "display" : "Tuberculous oophoritis and salpingitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.61",
+      "display" : "Tuberculous oophoritis and salpingitis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.62",
+      "display" : "Tuberculous oophoritis and salpingitis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.63",
+      "display" : "Tuberculous oophoritis and salpingitis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.64",
+      "display" : "Tuberculous oophoritis and salpingitis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.65",
+      "display" : "Tuberculous oophoritis and salpingitis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.66",
+      "display" : "Tuberculous oophoritis and salpingitis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.7",
+      "display" : "Other female genital organs"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.70",
+      "display" : "Tuberculosis of other female genital organs, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.71",
+      "display" : "Tuberculosis of other female genital organs, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.72",
+      "display" : "Tuberculosis of other female genital organs, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.73",
+      "display" : "Tuberculosis of other female genital organs, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.74",
+      "display" : "Tuberculosis of other female genital organs, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.75",
+      "display" : "Tuberculosis of other female genital organs, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.76",
+      "display" : "Tuberculosis of other female genital organs, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.9",
+      "display" : "Genitourinary tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.90",
+      "display" : "Genitourinary tuberculosis, unspecified, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.91",
+      "display" : "Genitourinary tuberculosis, unspecified, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.92",
+      "display" : "Genitourinary tuberculosis, unspecified, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.93",
+      "display" : "Genitourinary tuberculosis, unspecified, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.94",
+      "display" : "Genitourinary tuberculosis, unspecified, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.95",
+      "display" : "Genitourinary tuberculosis, unspecified, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "016.96",
+      "display" : "Genitourinary tuberculosis, unspecified, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017",
+      "display" : "Tuberculosis of other organs"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.0",
+      "display" : "Skin and subcutaneous cellular tissue"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.00",
+      "display" : "Tuberculosis of skin and subcutaneous cellular tissue, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.01",
+      "display" : "Tuberculosis of skin and subcutaneous cellular tissue, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.02",
+      "display" : "Tuberculosis of skin and subcutaneous cellular tissue, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.03",
+      "display" : "Tuberculosis of skin and subcutaneous cellular tissue, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.04",
+      "display" : "Tuberculosis of skin and subcutaneous cellular tissue, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.05",
+      "display" : "Tuberculosis of skin and subcutaneous cellular tissue, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.06",
+      "display" : "Tuberculosis of skin and subcutaneous cellular tissue, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.1",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.10",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.11",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.12",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.13",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.14",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.15",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.16",
+      "display" : "Erythema nodosum with hypersensitivity reaction in tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.2",
+      "display" : "Peripheral lymph nodes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.20",
+      "display" : "Tuberculosis of peripheral lymph nodes, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.21",
+      "display" : "Tuberculosis of peripheral lymph nodes, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.22",
+      "display" : "Tuberculosis of peripheral lymph nodes, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.23",
+      "display" : "Tuberculosis of peripheral lymph nodes, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.24",
+      "display" : "Tuberculosis of peripheral lymph nodes, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.25",
+      "display" : "Tuberculosis of peripheral lymph nodes, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.26",
+      "display" : "Tuberculosis of peripheral lymph nodes, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.3",
+      "display" : "Eye"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.30",
+      "display" : "Tuberculosis of eye, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.31",
+      "display" : "Tuberculosis of eye, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.32",
+      "display" : "Tuberculosis of eye, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.33",
+      "display" : "Tuberculosis of eye, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.34",
+      "display" : "Tuberculosis of eye, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.35",
+      "display" : "Tuberculosis of eye, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.36",
+      "display" : "Tuberculosis of eye, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.4",
+      "display" : "Ear"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.40",
+      "display" : "Tuberculosis of ear, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.41",
+      "display" : "Tuberculosis of ear, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.42",
+      "display" : "Tuberculosis of ear, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.43",
+      "display" : "Tuberculosis of ear, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.44",
+      "display" : "Tuberculosis of ear, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.45",
+      "display" : "Tuberculosis of ear, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.46",
+      "display" : "Tuberculosis of ear, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.5",
+      "display" : "Thyroid gland"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.50",
+      "display" : "Tuberculosis of thyroid gland, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.51",
+      "display" : "Tuberculosis of thyroid gland, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.52",
+      "display" : "Tuberculosis of thyroid gland, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.53",
+      "display" : "Tuberculosis of thyroid gland, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.54",
+      "display" : "Tuberculosis of thyroid gland, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.55",
+      "display" : "Tuberculosis of thyroid gland, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.56",
+      "display" : "Tuberculosis of thyroid gland, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.6",
+      "display" : "Adrenal glands"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.60",
+      "display" : "Tuberculosis of adrenal glands, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.61",
+      "display" : "Tuberculosis of adrenal glands, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.62",
+      "display" : "Tuberculosis of adrenal glands, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.63",
+      "display" : "Tuberculosis of adrenal glands, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.64",
+      "display" : "Tuberculosis of adrenal glands, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.65",
+      "display" : "Tuberculosis of adrenal glands, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.66",
+      "display" : "Tuberculosis of adrenal glands, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.7",
+      "display" : "Spleen"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.70",
+      "display" : "Tuberculosis of spleen, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.71",
+      "display" : "Tuberculosis of spleen, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.72",
+      "display" : "Tuberculosis of spleen, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.73",
+      "display" : "Tuberculosis of spleen, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.74",
+      "display" : "Tuberculosis of spleen, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.75",
+      "display" : "Tuberculosis of spleen, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.76",
+      "display" : "Tuberculosis of spleen, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.8",
+      "display" : "Esophagus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.80",
+      "display" : "Tuberculosis of esophagus, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.81",
+      "display" : "Tuberculosis of esophagus, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.82",
+      "display" : "Tuberculosis of esophagus, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.83",
+      "display" : "Tuberculosis of esophagus, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.84",
+      "display" : "Tuberculosis of esophagus, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.85",
+      "display" : "Tuberculosis of esophagus, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.86",
+      "display" : "Tuberculosis of esophagus, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.9",
+      "display" : "Other specified organs"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.90",
+      "display" : "Tuberculosis of other specified organs, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.91",
+      "display" : "Tuberculosis of other specified organs, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.92",
+      "display" : "Tuberculosis of other specified organs, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.93",
+      "display" : "Tuberculosis of other specified organs, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.94",
+      "display" : "Tuberculosis of other specified organs, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.95",
+      "display" : "Tuberculosis of other specified organs, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "017.96",
+      "display" : "Tuberculosis of other specified organs, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018",
+      "display" : "Miliary tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.0",
+      "display" : "Acute miliary tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.00",
+      "display" : "Acute miliary tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.01",
+      "display" : "Acute miliary tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.02",
+      "display" : "Acute miliary tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.03",
+      "display" : "Acute miliary tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.04",
+      "display" : "Acute miliary tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.05",
+      "display" : "Acute miliary tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.06",
+      "display" : "Acute miliary tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.8",
+      "display" : "Other specified miliary tuberculosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.80",
+      "display" : "Other specified miliary tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.81",
+      "display" : "Other specified miliary tuberculosis, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.82",
+      "display" : "Other specified miliary tuberculosis, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.83",
+      "display" : "Other specified miliary tuberculosis, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.84",
+      "display" : "Other specified miliary tuberculosis, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.85",
+      "display" : "Other specified miliary tuberculosis, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.86",
+      "display" : "Other specified miliary tuberculosis, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.9",
+      "display" : "Miliary tuberculosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.90",
+      "display" : "Miliary tuberculosis, unspecified, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.91",
+      "display" : "Miliary tuberculosis, unspecified, bacteriological or histological examination not done"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.92",
+      "display" : "Miliary tuberculosis, unspecified, bacteriological or histological examination unknown (at present)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.93",
+      "display" : "Miliary tuberculosis, unspecified, tubercle bacilli found (in sputum) by microscopy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.94",
+      "display" : "Miliary tuberculosis, unspecified, tubercle bacilli not found (in sputum) by microscopy, but found by bacterial culture"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.95",
+      "display" : "Miliary tuberculosis, unspecified, tubercle bacilli not found by bacteriological examination, but tuberculosis confirmed histologically"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "018.96",
+      "display" : "Miliary tuberculosis, unspecified, tubercle bacilli not found by bacteriological or histological examination, but tuberculosis confirmed by other methods [inoculation of animals]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020",
+      "display" : "Plague"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.0",
+      "display" : "Bubonic plague"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.1",
+      "display" : "Cellulocutaneous plague"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.2",
+      "display" : "Septicemic plague"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.3",
+      "display" : "Primary pneumonic plague"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.4",
+      "display" : "Secondary pneumonic plague"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.5",
+      "display" : "Pneumonic plague, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.8",
+      "display" : "Other specified types of plague"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "020.9",
+      "display" : "Plague, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "021",
+      "display" : "Tularemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "021.0",
+      "display" : "Ulceroglandular tularemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "021.1",
+      "display" : "Enteric tularemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "021.2",
+      "display" : "Pulmonary tularemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "021.3",
+      "display" : "Oculoglandular tularemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "021.8",
+      "display" : "Other specified tularemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "021.9",
+      "display" : "Unspecified tularemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "022",
+      "display" : "Anthrax"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "022.0",
+      "display" : "Cutaneous anthrax"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "022.1",
+      "display" : "Pulmonary anthrax"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "022.2",
+      "display" : "Gastrointestinal anthrax"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "022.3",
+      "display" : "Anthrax septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "022.8",
+      "display" : "Other specified manifestations of anthrax"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "022.9",
+      "display" : "Anthrax, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "023",
+      "display" : "Brucellosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "023.0",
+      "display" : "Brucella melitensis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "023.1",
+      "display" : "Brucella abortus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "023.2",
+      "display" : "Brucella suis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "023.3",
+      "display" : "Brucella canis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "023.8",
+      "display" : "Other brucellosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "023.9",
+      "display" : "Brucellosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "024",
+      "display" : "Glanders"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "025",
+      "display" : "Melioidosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "026",
+      "display" : "Rat-bite fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "026.0",
+      "display" : "Spirillary fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "026.1",
+      "display" : "Streptobacillary fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "026.9",
+      "display" : "Unspecified rat-bite fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "027",
+      "display" : "Other zoonotic bacterial diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "027.0",
+      "display" : "Listeriosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "027.1",
+      "display" : "Erysipelothrix infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "027.2",
+      "display" : "Pasteurellosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "027.8",
+      "display" : "Other specified zoonotic bacterial diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "027.9",
+      "display" : "Unspecified zoonotic bacterial disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "030",
+      "display" : "Leprosy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "030.0",
+      "display" : "Lepromatous leprosy [type L]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "030.1",
+      "display" : "Tuberculoid leprosy [type T]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "030.2",
+      "display" : "Indeterminate leprosy [group I]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "030.3",
+      "display" : "Borderline leprosy [group B]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "030.8",
+      "display" : "Other specified leprosy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "030.9",
+      "display" : "Leprosy, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "031",
+      "display" : "Diseases due to other mycobacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "031.0",
+      "display" : "Pulmonary diseases due to other mycobacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "031.1",
+      "display" : "Cutaneous diseases due to other mycobacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "031.2",
+      "display" : "Disseminated due to other mycobacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "031.8",
+      "display" : "Other specified mycobacterial diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "031.9",
+      "display" : "Unspecified diseases due to mycobacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032",
+      "display" : "Diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.0",
+      "display" : "Faucial diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.1",
+      "display" : "Nasopharyngeal diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.2",
+      "display" : "Anterior nasal diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.3",
+      "display" : "Laryngeal diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.8",
+      "display" : "Other specified diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.81",
+      "display" : "Conjunctival diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.82",
+      "display" : "Diphtheritic myocarditis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.83",
+      "display" : "Diphtheritic peritonitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.84",
+      "display" : "Diphtheritic cystitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.85",
+      "display" : "Cutaneous diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.89",
+      "display" : "Other specified diphtheria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "032.9",
+      "display" : "Diphtheria, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "033",
+      "display" : "Whooping cough"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "033.0",
+      "display" : "Whooping cough due to bordetella pertussis [B. pertussis]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "033.1",
+      "display" : "Whooping cough due to bordetella parapertussis [B. parapertussis]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "033.8",
+      "display" : "Whooping cough due to other specified organism"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "033.9",
+      "display" : "Whooping cough, unspecified organism"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "034",
+      "display" : "Streptococcal sore throat and scarlet fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "034.0",
+      "display" : "Streptococcal sore throat"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "034.1",
+      "display" : "Scarlet fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "035",
+      "display" : "Erysipelas"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036",
+      "display" : "Meningococcal infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.0",
+      "display" : "Meningococcal meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.1",
+      "display" : "Meningococcal encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.2",
+      "display" : "Meningococcemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.3",
+      "display" : "Waterhouse-Friderichsen syndrome, meningococcal"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.4",
+      "display" : "Meningococcal carditis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.40",
+      "display" : "Meningococcal carditis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.41",
+      "display" : "Meningococcal pericarditis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.42",
+      "display" : "Meningococcal endocarditis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.43",
+      "display" : "Meningococcal myocarditis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.8",
+      "display" : "Other specified meningococcal infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.81",
+      "display" : "Meningococcal optic neuritis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.82",
+      "display" : "Meningococcal arthropathy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.89",
+      "display" : "Other specified meningococcal infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "036.9",
+      "display" : "Meningococcal infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "037",
+      "display" : "Tetanus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038",
+      "display" : "Septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.0",
+      "display" : "Streptococcal septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.1",
+      "display" : "Staphylococcal septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.10",
+      "display" : "Staphylococcal septicemia, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.11",
+      "display" : "Methicillin susceptible Staphylococcus aureus septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.12",
+      "display" : "Methicillin resistant Staphylococcus aureus septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.19",
+      "display" : "Other staphylococcal septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.2",
+      "display" : "Pneumococcal septicemia [Streptococcus pneumoniae septicemia]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.3",
+      "display" : "Septicemia due to anaerobes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.4",
+      "display" : "Septicemia due to other gram-negative organisms"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.40",
+      "display" : "Septicemia due to gram-negative organism, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.41",
+      "display" : "Septicemia due to hemophilus influenzae [H. influenzae]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.42",
+      "display" : "Septicemia due to escherichia coli [E. coli]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.43",
+      "display" : "Septicemia due to pseudomonas"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.44",
+      "display" : "Septicemia due to serratia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.49",
+      "display" : "Other septicemia due to gram-negative organisms"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.8",
+      "display" : "Other specified septicemias"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "038.9",
+      "display" : "Unspecified septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039",
+      "display" : "Actinomycotic infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039.0",
+      "display" : "Cutaneous actinomycotic infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039.1",
+      "display" : "Pulmonary actinomycotic infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039.2",
+      "display" : "Abdominal actinomycotic infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039.3",
+      "display" : "Cervicofacial actinomycotic infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039.4",
+      "display" : "Madura foot"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039.8",
+      "display" : "Actinomycotic infection of other specified sites"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "039.9",
+      "display" : "Actinomycotic infection of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040",
+      "display" : "Other bacterial diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.0",
+      "display" : "Gas gangrene"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.1",
+      "display" : "Rhinoscleroma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.2",
+      "display" : "Whipple's disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.3",
+      "display" : "Necrobacillosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.4",
+      "display" : "Other specified botulism"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.41",
+      "display" : "Infant botulism"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.42",
+      "display" : "Wound botulism"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.8",
+      "display" : "Other specified bacterial diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.81",
+      "display" : "Tropical pyomyositis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.82",
+      "display" : "Toxic shock syndrome"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "040.89",
+      "display" : "Other specified bacterial diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041",
+      "display" : "Bacterial infection in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.0",
+      "display" : "Streptococcus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.00",
+      "display" : "Streptococcus infection in conditions classified elsewhere and of unspecified site, streptococcus, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.01",
+      "display" : "Streptococcus infection in conditions classified elsewhere and of unspecified site, streptococcus, group A"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.02",
+      "display" : "Streptococcus infection in conditions classified elsewhere and of unspecified site, streptococcus, group B"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.03",
+      "display" : "Streptococcus infection in conditions classified elsewhere and of unspecified site, streptococcus, group C"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.04",
+      "display" : "Streptococcus infection in conditions classified elsewhere and of unspecified site, streptococcus, group D [Enterococcus]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.05",
+      "display" : "Streptococcus infection in conditions classified elsewhere and of unspecified site, streptococcus, group G"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.09",
+      "display" : "Streptococcus infection in conditions classified elsewhere and of unspecified site, other streptococcus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.1",
+      "display" : "Staphylococcus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.10",
+      "display" : "Staphylococcus infection in conditions classified elsewhere and of unspecified site, staphylococcus, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.11",
+      "display" : "Methicillin susceptible Staphylococcus aureus in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.12",
+      "display" : "Methicillin resistant Staphylococcus aureus in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.19",
+      "display" : "Staphylococcus infection in conditions classified elsewhere and of unspecified site, other staphylococcus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.2",
+      "display" : "Pneumococcus infection in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.3",
+      "display" : "Friedländer's bacillus infection in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.4",
+      "display" : "Escherichia coli [E.coli]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.41",
+      "display" : "Shiga toxin-producing Escherichia coli [E. coli] (STEC) O157"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.42",
+      "display" : "Other specified Shiga toxin-producing Escherichia coli [E. coli] (STEC)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.43",
+      "display" : "Shiga toxin-producing Escherichia coli [E. coli] (STEC), unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.49",
+      "display" : "Other and unspecified Escherichia coli [E. coli]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.5",
+      "display" : "Hemophilus influenzae [H. influenzae] infection in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.6",
+      "display" : "Proteus (mirabilis) (morganii) infection in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.7",
+      "display" : "Pseudomonas infection in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.8",
+      "display" : "Other specified bacterial infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.81",
+      "display" : "Other specified bacterial infections in conditions classified elsewhere and of unspecified site, mycoplasma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.82",
+      "display" : "Bacteroides fragilis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.83",
+      "display" : "Other specified bacterial infections in conditions classified elsewhere and of unspecified site, Clostridium perfringens"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.84",
+      "display" : "Other specified bacterial infections in conditions classified elsewhere and of unspecified site, other anaerobes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.85",
+      "display" : "Other specified bacterial infections in conditions classified elsewhere and of unspecified site, other gram-negative organisms"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.86",
+      "display" : "Helicobacter pylori [H. pylori]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.89",
+      "display" : "Other specified bacterial infections in conditions classified elsewhere and of unspecified site, other specified bacteria"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "041.9",
+      "display" : "Bacterial infection, unspecified, in conditions classified elsewhere and of unspecified site"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "042",
+      "display" : "Human immunodeficiency virus [HIV] disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045",
+      "display" : "Acute poliomyelitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.0",
+      "display" : "Acute paralytic poliomyelitis specified as bulbar"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.00",
+      "display" : "Acute paralytic poliomyelitis specified as bulbar, poliovirus, unspecified type"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.01",
+      "display" : "Acute paralytic poliomyelitis specified as bulbar, poliovirus type I"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.02",
+      "display" : "Acute paralytic poliomyelitis specified as bulbar, poliovirus type II"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.03",
+      "display" : "Acute paralytic poliomyelitis specified as bulbar, poliovirus type III"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.1",
+      "display" : "Acute poliomyelitis with other paralysis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.10",
+      "display" : "Acute poliomyelitis with other paralysis, poliovirus, unspecified type"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.11",
+      "display" : "Acute poliomyelitis with other paralysis, poliovirus type I"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.12",
+      "display" : "Acute poliomyelitis with other paralysis, poliovirus type II"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.13",
+      "display" : "Acute poliomyelitis with other paralysis, poliovirus type III"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.2",
+      "display" : "Acute nonparalytic poliomyelitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.20",
+      "display" : "Acute nonparalytic poliomyelitis, poliovirus, unspecified type"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.21",
+      "display" : "Acute nonparalytic poliomyelitis, poliovirus type I"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.22",
+      "display" : "Acute nonparalytic poliomyelitis, poliovirus type II"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.23",
+      "display" : "Acute nonparalytic poliomyelitis, poliovirus type III"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.9",
+      "display" : "Acute poliomyelitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.90",
+      "display" : "Acute poliomyelitis, unspecified, poliovirus, unspecified type"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.91",
+      "display" : "Acute poliomyelitis, unspecified, poliovirus type I"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.92",
+      "display" : "Acute poliomyelitis, unspecified, poliovirus type II"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "045.93",
+      "display" : "Acute poliomyelitis, unspecified, poliovirus type III"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046",
+      "display" : "Slow virus infections and prion diseases of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.0",
+      "display" : "Kuru"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.1",
+      "display" : "Jakob-Creutzfeldt disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.11",
+      "display" : "Variant Creutzfeldt-Jakob disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.19",
+      "display" : "Other and unspecified Creutzfeldt-Jakob disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.2",
+      "display" : "Subacute sclerosing panencephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.3",
+      "display" : "Progressive multifocal leukoencephalopathy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.7",
+      "display" : "Other specified prion diseases of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.71",
+      "display" : "Gerstmann-Sträussler-Scheinker syndrome"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.72",
+      "display" : "Fatal familial insomnia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.79",
+      "display" : "Other and unspecified prion disease of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.8",
+      "display" : "Other specified slow virus infection of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "046.9",
+      "display" : "Unspecified slow virus infection of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "047",
+      "display" : "Meningitis due to enterovirus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "047.0",
+      "display" : "Meningitis due to coxsackie virus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "047.1",
+      "display" : "Meningitis due to echo virus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "047.8",
+      "display" : "Other specified viral meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "047.9",
+      "display" : "Unspecified viral meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "048",
+      "display" : "Other enterovirus diseases of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "049",
+      "display" : "Other non-arthropod-borne viral diseases of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "049.0",
+      "display" : "Lymphocytic choriomeningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "049.1",
+      "display" : "Meningitis due to adenovirus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "049.8",
+      "display" : "Other specified non-arthropod-borne viral diseases of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "049.9",
+      "display" : "Unspecified non-arthropod-borne viral diseases of central nervous system"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "050",
+      "display" : "Smallpox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "050.0",
+      "display" : "Variola major"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "050.1",
+      "display" : "Alastrim"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "050.2",
+      "display" : "Modified smallpox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "050.9",
+      "display" : "Smallpox, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "051",
+      "display" : "Cowpox and paravaccinia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "051.0",
+      "display" : "Cowpox and vaccinia not from vaccination"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "051.01",
+      "display" : "Cowpox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "051.02",
+      "display" : "Vaccinia not from vaccination"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "051.1",
+      "display" : "Pseudocowpox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "051.2",
+      "display" : "Contagious pustular dermatitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "051.9",
+      "display" : "Paravaccinia, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "052",
+      "display" : "Chickenpox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "052.0",
+      "display" : "Postvaricella encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "052.1",
+      "display" : "Varicella (hemorrhagic) pneumonitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "052.2",
+      "display" : "Postvaricella myelitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "052.7",
+      "display" : "Chickenpox with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "052.8",
+      "display" : "Chickenpox with unspecified complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "052.9",
+      "display" : "Varicella without mention of complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053",
+      "display" : "Herpes zoster"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.0",
+      "display" : "Herpes zoster with meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.1",
+      "display" : "With other nervous system complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.10",
+      "display" : "Herpes zoster with unspecified nervous system complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.11",
+      "display" : "Geniculate herpes zoster"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.12",
+      "display" : "Postherpetic trigeminal neuralgia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.13",
+      "display" : "Postherpetic polyneuropathy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.14",
+      "display" : "Herpes zoster myelitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.19",
+      "display" : "Herpes zoster with other nervous system complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.2",
+      "display" : "With ophthalmic complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.20",
+      "display" : "Herpes zoster dermatitis of eyelid"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.21",
+      "display" : "Herpes zoster keratoconjunctivitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.22",
+      "display" : "Herpes zoster iridocyclitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.29",
+      "display" : "Herpes zoster with other ophthalmic complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.7",
+      "display" : "With other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.71",
+      "display" : "Otitis externa due to herpes zoster"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.79",
+      "display" : "Herpes zoster with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.8",
+      "display" : "Herpes zoster with unspecified complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "053.9",
+      "display" : "Herpes zoster without mention of complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054",
+      "display" : "Herpes simplex"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.0",
+      "display" : "Eczema herpeticum"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.1",
+      "display" : "Genital herpes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.10",
+      "display" : "Genital herpes, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.11",
+      "display" : "Herpetic vulvovaginitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.12",
+      "display" : "Herpetic ulceration of vulva"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.13",
+      "display" : "Herpetic infection of penis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.19",
+      "display" : "Other genital herpes"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.2",
+      "display" : "Herpetic gingivostomatitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.3",
+      "display" : "Herpetic meningoencephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.4",
+      "display" : "With ophthalmic complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.40",
+      "display" : "Herpes simplex with unspecified ophthalmic complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.41",
+      "display" : "Herpes simplex dermatitis of eyelid"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.42",
+      "display" : "Dendritic keratitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.43",
+      "display" : "Herpes simplex disciform keratitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.44",
+      "display" : "Herpes simplex iridocyclitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.49",
+      "display" : "Herpes simplex with other ophthalmic complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.5",
+      "display" : "Herpetic septicemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.6",
+      "display" : "Herpetic whitlow"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.7",
+      "display" : "With other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.71",
+      "display" : "Visceral herpes simplex"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.72",
+      "display" : "Herpes simplex meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.73",
+      "display" : "Herpes simplex otitis externa"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.74",
+      "display" : "Herpes simplex myelitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.79",
+      "display" : "Herpes simplex with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.8",
+      "display" : "Herpes simplex with unspecified complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "054.9",
+      "display" : "Herpes simplex without mention of complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055",
+      "display" : "Measles"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.0",
+      "display" : "Postmeasles encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.1",
+      "display" : "Postmeasles pneumonia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.2",
+      "display" : "Postmeasles otitis media"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.7",
+      "display" : "With other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.71",
+      "display" : "Measles keratoconjunctivitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.79",
+      "display" : "Measles with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.8",
+      "display" : "Measles with unspecified complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "055.9",
+      "display" : "Measles without mention of complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056",
+      "display" : "Rubella"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.0",
+      "display" : "With neurological complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.00",
+      "display" : "Rubella with unspecified neurological complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.01",
+      "display" : "Encephalomyelitis due to rubella"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.09",
+      "display" : "Rubella with other neurological complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.7",
+      "display" : "With other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.71",
+      "display" : "Arthritis due to rubella"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.79",
+      "display" : "Rubella with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.8",
+      "display" : "Rubella with unspecified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "056.9",
+      "display" : "Rubella without mention of complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "057",
+      "display" : "Other viral exanthemata"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "057.0",
+      "display" : "Erythema infectiosum (fifth disease)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "057.8",
+      "display" : "Other specified viral exanthemata"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "057.9",
+      "display" : "Viral exanthem, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058",
+      "display" : "Other human herpesvirus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.1",
+      "display" : "Roseola infantum"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.10",
+      "display" : "Roseola infantum, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.11",
+      "display" : "Roseola infantum due to human herpesvirus 6"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.12",
+      "display" : "Roseola infantum due to human herpesvirus 7"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.2",
+      "display" : "Other human herpesvirus encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.21",
+      "display" : "Human herpesvirus 6 encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.29",
+      "display" : "Other human herpesvirus encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.8",
+      "display" : "Other human herpesvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.81",
+      "display" : "Human herpesvirus 6 infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.82",
+      "display" : "Human herpesvirus 7 infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "058.89",
+      "display" : "Other human herpesvirus infection"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059",
+      "display" : "Other poxvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.0",
+      "display" : "Other orthopoxvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.00",
+      "display" : "Orthopoxvirus infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.01",
+      "display" : "Monkeypox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.09",
+      "display" : "Other orthopoxvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.1",
+      "display" : "Other parapoxvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.10",
+      "display" : "Parapoxvirus infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.11",
+      "display" : "Bovine stomatitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.12",
+      "display" : "Sealpox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.19",
+      "display" : "Other parapoxvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.2",
+      "display" : "Yatapoxvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.20",
+      "display" : "Yatapoxvirus infection, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.21",
+      "display" : "Tanapox"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.22",
+      "display" : "Yaba monkey tumor virus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.8",
+      "display" : "Other poxvirus infections"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "059.9",
+      "display" : "Poxvirus infections, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "060",
+      "display" : "Yellow fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "060.0",
+      "display" : "Sylvatic yellow fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "060.1",
+      "display" : "Urban yellow fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "060.9",
+      "display" : "Yellow fever, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "061",
+      "display" : "Dengue"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062",
+      "display" : "Mosquito-borne viral encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.0",
+      "display" : "Japanese encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.1",
+      "display" : "Western equine encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.2",
+      "display" : "Eastern equine encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.3",
+      "display" : "St. Louis encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.4",
+      "display" : "Australian encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.5",
+      "display" : "California virus encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.8",
+      "display" : "Other specified mosquito-borne viral encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "062.9",
+      "display" : "Mosquito-borne viral encephalitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "063",
+      "display" : "Tick-borne viral encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "063.0",
+      "display" : "Russian spring-summer [taiga] encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "063.1",
+      "display" : "Louping ill"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "063.2",
+      "display" : "Central european encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "063.8",
+      "display" : "Other specified tick-borne viral encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "063.9",
+      "display" : "Tick-borne viral encephalitis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "064",
+      "display" : "Viral encephalitis transmitted by other and unspecified arthropods"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065",
+      "display" : "Arthropod-borne hemorrhagic fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065.0",
+      "display" : "Crimean hemorrhagic fever [CHF Congo virus]"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065.1",
+      "display" : "Omsk hemorrhagic fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065.2",
+      "display" : "Kyasanur forest disease"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065.3",
+      "display" : "Other tick-borne hemorrhagic fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065.4",
+      "display" : "Mosquito-borne hemorrhagic fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065.8",
+      "display" : "Other specified arthropod-borne hemorrhagic fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "065.9",
+      "display" : "Arthropod-borne hemorrhagic fever, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066",
+      "display" : "Other arthropod-borne viral diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.0",
+      "display" : "Phlebotomus fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.1",
+      "display" : "Tick-borne fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.2",
+      "display" : "Venezuelan equine fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.3",
+      "display" : "Other mosquito-borne fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.4",
+      "display" : "West Nile fever"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.40",
+      "display" : "West Nile Fever, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.41",
+      "display" : "West Nile Fever with encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.42",
+      "display" : "West Nile Fever with other neurologic manifestation"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.49",
+      "display" : "West Nile Fever with other complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.8",
+      "display" : "Other specified arthropod-borne viral diseases"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "066.9",
+      "display" : "Arthropod-borne viral disease, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070",
+      "display" : "Viral hepatitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.0",
+      "display" : "Viral hepatitis A with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.1",
+      "display" : "Viral hepatitis A without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.2",
+      "display" : "Viral hepatitis B with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.20",
+      "display" : "Viral hepatitis B with hepatic coma, acute or unspecified, without mention of hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.21",
+      "display" : "Viral hepatitis B with hepatic coma, acute or unspecified, with hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.22",
+      "display" : "Chronic viral hepatitis B with hepatic coma without hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.23",
+      "display" : "Chronic viral hepatitis B with hepatic coma with hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.3",
+      "display" : "Viral hepatitis B without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.30",
+      "display" : "Viral hepatitis B without mention of hepatic coma, acute or unspecified, without mention of hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.31",
+      "display" : "Viral hepatitis B without mention of hepatic coma, acute or unspecified, with hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.32",
+      "display" : "Chronic viral hepatitis B without mention of hepatic coma without mention of hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.33",
+      "display" : "Chronic viral hepatitis B without mention of hepatic coma with hepatitis delta"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.4",
+      "display" : "Other specified viral hepatitis with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.41",
+      "display" : "Acute hepatitis C with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.42",
+      "display" : "Hepatitis delta without mention of active hepatitis B disease with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.43",
+      "display" : "Hepatitis E with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.44",
+      "display" : "Chronic hepatitis C with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.49",
+      "display" : "Other specified viral hepatitis with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.5",
+      "display" : "Other specified viral hepatitis without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.51",
+      "display" : "Acute hepatitis C without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.52",
+      "display" : "Hepatitis delta without mention of active hepatitis B disease or hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.53",
+      "display" : "Hepatitis E without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.54",
+      "display" : "Chronic hepatitis C without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.59",
+      "display" : "Other specified viral hepatitis without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.6",
+      "display" : "Unspecified viral hepatitis with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.7",
+      "display" : "Unspecified viral hepatitis C"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.70",
+      "display" : "Unspecified viral hepatitis C without hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.71",
+      "display" : "Unspecified viral hepatitis C with hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "070.9",
+      "display" : "Unspecified viral hepatitis without mention of hepatic coma"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "071",
+      "display" : "Rabies"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072",
+      "display" : "Mumps"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.0",
+      "display" : "Mumps orchitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.1",
+      "display" : "Mumps meningitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.2",
+      "display" : "Mumps encephalitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.3",
+      "display" : "Mumps pancreatitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.7",
+      "display" : "Mumps with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.71",
+      "display" : "Mumps hepatitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.72",
+      "display" : "Mumps polyneuropathy"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.79",
+      "display" : "Other mumps with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.8",
+      "display" : "Mumps with unspecified complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "072.9",
+      "display" : "Mumps without mention of complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "073",
+      "display" : "Ornithosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "073.0",
+      "display" : "Ornithosis with pneumonia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "073.7",
+      "display" : "Ornithosis with other specified complications"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "073.8",
+      "display" : "Ornithosis with unspecified complication"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "073.9",
+      "display" : "Ornithosis, unspecified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "074",
+      "display" : "Specific diseases due to Coxsackie virus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "074.0",
+      "display" : "Herpangina"
     }]
   }
 },

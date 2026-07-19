@@ -466,10 +466,10 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 
 ## Profiles Build Status
 
-**v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-16.**
-**IG Publisher: 211 errors, 251 warnings, 0 broken links, 759,012 links validated (build 11, 2026-03-16).**
-**Error breakdown: 205 VALIDATION_HL7_WG_NEEDED (HL7 canonical URL; unfixable without HL7 ballot) + 6 IG metadata (extensions version mismatch, jira, status/workgroup; unfixable without HL7 registration). This is the practical minimum.**
-**Totals: 24 profiles, 45 extensions, 129 ValueSets, 17 CodeSystems, 32 examples (including NamingSystem). eInjury profile added 2026-07-19 (SUSHI clean; not yet re-run through IG Publisher).**
+**v0.1.0 Phase 3 — 0 SUSHI errors, 0 warnings; IG Publisher 2.2.11: 0 errors, 400 warnings, 0 broken links as of 2026-07-19.**
+**The former 211-error "practical minimum" was eliminated by replacing the unregistered HL7 canonical/package-id with the project-owned namespace (see Project Identity), switching ig.ini to fhir.base.template, fixing the uv.extensions dependsOn URI, adding the hl7.fhir.uv.tools.r4 dependency, and correcting the NUBC discharge system URL.**
+**Warning breakdown: ~202 experimental-ValueSet-in-non-experimental-profile + misc (extension examples, OIDs, version pinning) — candidates for Phase 3 cleanup.**
+**Totals: 24 profiles, 45 extensions, 129 ValueSets, 17 CodeSystems, 32 examples (including NamingSystem). eInjury profile added 2026-07-19.**
 
 ### Profiles
 
@@ -583,7 +583,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 ### Remaining Work (Phase 3+)
 - **Narrative page content**: `input/pagecontent/` stubs need real content
 - **eOther / eCustom**: Low priority
-- **IG Publisher re-run**: verify eInjury additions keep the 211-error practical minimum
+- **Warning cleanup**: ~202 warnings from `^experimental = true` ValueSets bound in non-experimental profiles; either flip the VS flags or mark structures experimental
 
 ---
 
@@ -633,6 +633,7 @@ for line in lines[1:]:
 - **Organization uses US Core inherited `pattern:$this` slicing**: extend `identifier[NPI]` (uppercase, from US Core) without redefining the slicing header.
 - **EMS-NEMSIS LOINC 74xxx codes**: Not in local LOINC v2.81 cache — use `cs-nemsis-encounter` codes instead.
 - **ignoreWarnings.txt**: Only suppresses WARNING-level messages (not errors) via prefix matching; LF-only line endings.
+- **tx.fhir.org "cache not known" errors**: If the publisher reports hundreds of `Error from https://tx.fhir.org/r4: The cache '…' is not known to this server`, the committed `input-cache/txcache` holds an expired server-side cache session — delete `input-cache/txcache/` and rerun (it regenerates).
 
 ---
 

@@ -5,7 +5,7 @@
     "code" : "I46.9",
     "display" : "Cardiac arrest, cause unspecified"
   }]
-}, "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "system-version",
@@ -13,46 +13,16 @@
   },
   {
     "name" : "defaultDisplayLanguage",
-    "valueCode" : "en"
+    "valueCode" : "en-US"
   }]
 }}####
 v: {
   "display" : "Cardiac arrest, cause unspecified",
   "code" : "I46.9",
   "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-  "version" : "2024",
+  "version" : "2026-04-01",
   "server" : "https://tx.fhir.org/r4",
-  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Validate \"[http://hl7.org/fhir/sid/icd-10-cm#I46.9 (\"Cardiac arrest, cause unspecified\")]\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Check \"http://hl7.org/fhir/sid/icd-10-cm#I46.9\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: CodeSystem found: http://hl7.org/fhir/sid/icd-10-cm|2024 for http://hl7.org/fhir/sid/icd-10-cm|2024\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: check code in (http://hl7.org/fhir/sid/icd-10-cm) at CodeableConcept.coding[0]\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Code \"I46.9\" found in http://hl7.org/fhir/sid/icd-10-cm|2024",
-  "issues" : {
-  "resourceType" : "OperationOutcome"
-}
-
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-    "code" : "Y92.411",
-    "display" : "Interstate highway as the place of occurrence of the external cause"
-  }]
-}, "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "system-version",
-    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
-  },
-  {
-    "name" : "defaultDisplayLanguage",
-    "valueCode" : "en"
-  }]
-}}####
-v: {
-  "display" : "Interstate highway as place",
-  "code" : "Y92.411",
-  "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-  "version" : "2024",
-  "server" : "https://tx.fhir.org/r4",
-  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Validate \"[http://hl7.org/fhir/sid/icd-10-cm#Y92.411 (\"Interstate highway as the place of occurrence of the external cause\")]\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Check \"http://hl7.org/fhir/sid/icd-10-cm#Y92.411\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: CodeSystem found: http://hl7.org/fhir/sid/icd-10-cm|2024 for http://hl7.org/fhir/sid/icd-10-cm|2024\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: check code in (http://hl7.org/fhir/sid/icd-10-cm) at CodeableConcept.coding[0]\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Code \"Y92.411\" found in http://hl7.org/fhir/sid/icd-10-cm|2024",
+  "diagnostics" : "0ms tx-op\n0ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Validate \"[http://hl7.org/fhir/sid/icd-10-cm#I46.9 (\"Cardiac arrest, cause unspecified\")]\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Check \"http://hl7.org/fhir/sid/icd-10-cm#I46.9\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: CodeSystem found: http://hl7.org/fhir/sid/icd-10-cm|2026-04-01 for http://hl7.org/fhir/sid/icd-10-cm|2026-04-01\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: check code in (http://hl7.org/fhir/sid/icd-10-cm) at CodeableConcept.coding[0]\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Code \"I46.9\" found in http://hl7.org/fhir/sid/icd-10-cm|2026-04-01",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -65,7 +35,7 @@ v: {
     "code" : "S09.90XA",
     "display" : "Unspecified injury of head, initial encounter"
   }]
-}, "langs":"en", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
   "resourceType" : "Parameters",
   "parameter" : [{
     "name" : "system-version",
@@ -73,16 +43,16 @@ v: {
   },
   {
     "name" : "defaultDisplayLanguage",
-    "valueCode" : "en"
+    "valueCode" : "en-US"
   }]
 }}####
 v: {
   "display" : "Unspecified injury of head, initial encounter",
   "code" : "S09.90XA",
   "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-  "version" : "2024",
+  "version" : "2026-04-01",
   "server" : "https://tx.fhir.org/r4",
-  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Validate \"[http://hl7.org/fhir/sid/icd-10-cm#S09.90XA (\"Unspecified injury of head, initial encounter\")]\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Check \"http://hl7.org/fhir/sid/icd-10-cm#S09.90XA\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: CodeSystem found: http://hl7.org/fhir/sid/icd-10-cm|2024 for http://hl7.org/fhir/sid/icd-10-cm|2024\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: check code in (http://hl7.org/fhir/sid/icd-10-cm) at CodeableConcept.coding[0]\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2024: Code \"S09.90XA\" found in http://hl7.org/fhir/sid/icd-10-cm|2024",
+  "diagnostics" : "0ms tx-op\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Validate \"[http://hl7.org/fhir/sid/icd-10-cm#S09.90XA (\"Unspecified injury of head, initial encounter\")]\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Check \"http://hl7.org/fhir/sid/icd-10-cm#S09.90XA\"\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: CodeSystem found: http://hl7.org/fhir/sid/icd-10-cm|2026-04-01 for http://hl7.org/fhir/sid/icd-10-cm|2026-04-01\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: check code in (http://hl7.org/fhir/sid/icd-10-cm) at CodeableConcept.coding[0]\n1ms http://hl7.org/fhir/sid/icd-10-cm/vs|2026-04-01: Code \"S09.90XA\" found in http://hl7.org/fhir/sid/icd-10-cm|2026-04-01",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -104,8 +74,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:3c342308-8310-4171-9a2b-a305e05ed3de",
-    "timestamp" : "2026-03-15T02:21:16.895Z",
+    "identifier" : "urn:uuid:9b88a5d7-5201-4a1f-986f-10838313898f",
+    "timestamp" : "2026-07-19T21:19:06.104Z",
     "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
@@ -125,7 +95,7 @@ e: {
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2026-04-01"
     }],
     "contains" : [{
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
@@ -139,6 +109,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A00",
       "display" : "Cholera"
     },
@@ -159,11 +130,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A01",
       "display" : "Typhoid and paratyphoid fevers"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A01.0",
       "display" : "Typhoid fever"
     },
@@ -224,6 +197,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A02",
       "display" : "Other salmonella infections"
     },
@@ -239,6 +213,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A02.2",
       "display" : "Localized salmonella infections"
     },
@@ -289,6 +264,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A03",
       "display" : "Shigellosis"
     },
@@ -324,6 +300,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A04",
       "display" : "Other bacterial intestinal infections"
     },
@@ -364,6 +341,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A04.7",
       "display" : "Enterocolitis due to Clostridium difficile"
     },
@@ -389,6 +367,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A05",
       "display" : "Other bacterial foodborne intoxications, not elsewhere classified"
     },
@@ -434,6 +413,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A06",
       "display" : "Amebiasis"
     },
@@ -479,6 +459,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A06.8",
       "display" : "Amebic infection of other sites"
     },
@@ -504,6 +485,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A07",
       "display" : "Other protozoal intestinal diseases"
     },
@@ -544,6 +526,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A08",
       "display" : "Viral and other specified intestinal infections"
     },
@@ -554,6 +537,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A08.1",
       "display" : "Acute gastroenteropathy due to Norwalk agent and other small round viruses"
     },
@@ -574,6 +558,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A08.3",
       "display" : "Other viral enteritis"
     },
@@ -614,6 +599,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A15",
       "display" : "Respiratory tuberculosis"
     },
@@ -654,6 +640,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A17",
       "display" : "Tuberculosis of nervous system"
     },
@@ -669,6 +656,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A17.8",
       "display" : "Other tuberculosis of nervous system"
     },
@@ -699,11 +687,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A18",
       "display" : "Tuberculosis of other organs"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A18.0",
       "display" : "Tuberculosis of bones and joints"
     },
@@ -729,6 +719,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A18.1",
       "display" : "Tuberculosis of genitourinary system"
     },
@@ -784,6 +775,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A18.3",
       "display" : "Tuberculosis of intestines, peritoneum and mesenteric glands"
     },
@@ -809,6 +801,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A18.5",
       "display" : "Tuberculosis of eye"
     },
@@ -854,6 +847,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A18.8",
       "display" : "Tuberculosis of other specified organs"
     },
@@ -889,6 +883,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A19",
       "display" : "Miliary tuberculosis"
     },
@@ -924,6 +919,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A20",
       "display" : "Plague"
     },
@@ -964,6 +960,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A21",
       "display" : "Tularemia"
     },
@@ -1004,6 +1001,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A22",
       "display" : "Anthrax"
     },
@@ -1039,6 +1037,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A23",
       "display" : "Brucellosis"
     },
@@ -1074,6 +1073,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A24",
       "display" : "Glanders and melioidosis"
     },
@@ -1104,6 +1104,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A25",
       "display" : "Rat-bite fevers"
     },
@@ -1124,6 +1125,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A26",
       "display" : "Erysipeloid"
     },
@@ -1149,6 +1151,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A27",
       "display" : "Leptospirosis"
     },
@@ -1159,6 +1162,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A27.8",
       "display" : "Other forms of leptospirosis"
     },
@@ -1179,6 +1183,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A28",
       "display" : "Other zoonotic bacterial diseases, not elsewhere classified"
     },
@@ -1214,6 +1219,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A30",
       "display" : "Leprosy [Hansen's disease]"
     },
@@ -1259,6 +1265,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A31",
       "display" : "Infection due to other mycobacteria"
     },
@@ -1289,6 +1296,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A32",
       "display" : "Listeriosis"
     },
@@ -1299,6 +1307,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A32.1",
       "display" : "Listerial meningitis and meningoencephalitis"
     },
@@ -1319,6 +1328,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A32.8",
       "display" : "Other forms of listeriosis"
     },
@@ -1359,6 +1369,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A36",
       "display" : "Diphtheria"
     },
@@ -1384,6 +1395,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A36.8",
       "display" : "Other diphtheria"
     },
@@ -1429,11 +1441,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A37",
       "display" : "Whooping cough"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A37.0",
       "display" : "Whooping cough due to Bordetella pertussis"
     },
@@ -1449,6 +1463,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A37.1",
       "display" : "Whooping cough due to Bordetella parapertussis"
     },
@@ -1464,6 +1479,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A37.8",
       "display" : "Whooping cough due to other Bordetella species"
     },
@@ -1479,6 +1495,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A37.9",
       "display" : "Whooping cough, unspecified species"
     },
@@ -1494,6 +1511,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A38",
       "display" : "Scarlet fever"
     },
@@ -1519,6 +1537,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A39",
       "display" : "Meningococcal infection"
     },
@@ -1549,6 +1568,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A39.5",
       "display" : "Meningococcal heart disease"
     },
@@ -1574,6 +1594,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A39.8",
       "display" : "Other meningococcal infections"
     },
@@ -1609,6 +1630,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A40",
       "display" : "Streptococcal sepsis"
     },
@@ -1639,11 +1661,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A41",
       "display" : "Other sepsis"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A41.0",
       "display" : "Sepsis due to Staphylococcus aureus"
     },
@@ -1679,6 +1703,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A41.5",
       "display" : "Sepsis due to other Gram-negative organisms"
     },
@@ -1714,6 +1739,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A41.8",
       "display" : "Other specified sepsis"
     },
@@ -1734,6 +1760,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A42",
       "display" : "Actinomycosis"
     },
@@ -1759,6 +1786,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A42.8",
       "display" : "Other forms of actinomycosis"
     },
@@ -1784,6 +1812,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A43",
       "display" : "Nocardiosis"
     },
@@ -1809,6 +1838,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A44",
       "display" : "Bartonellosis"
     },
@@ -1839,6 +1869,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A48",
       "display" : "Other bacterial diseases, not elsewhere classified"
     },
@@ -1869,6 +1900,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A48.5",
       "display" : "Other specified botulism"
     },
@@ -1889,11 +1921,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A49",
       "display" : "Bacterial infection of unspecified site"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A49.0",
       "display" : "Staphylococcal infection, unspecified site"
     },
@@ -1939,11 +1973,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A50",
       "display" : "Congenital syphilis"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A50.0",
       "display" : "Early congenital syphilis, symptomatic"
     },
@@ -2004,6 +2040,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A50.3",
       "display" : "Late congenital syphilitic oculopathy"
     },
@@ -2029,6 +2066,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A50.4",
       "display" : "Late congenital neurosyphilis [juvenile neurosyphilis]"
     },
@@ -2069,6 +2107,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A50.5",
       "display" : "Other late congenital syphilis, symptomatic"
     },
@@ -2129,6 +2168,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A51",
       "display" : "Early syphilis"
     },
@@ -2149,6 +2189,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A51.3",
       "display" : "Secondary syphilis of skin and mucous membranes"
     },
@@ -2169,6 +2210,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A51.4",
       "display" : "Other secondary syphilis"
     },
@@ -2219,11 +2261,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A52",
       "display" : "Late syphilis"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A52.0",
       "display" : "Cardiovascular and cerebrovascular syphilis"
     },
@@ -2269,6 +2313,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A52.1",
       "display" : "Symptomatic neurosyphilis"
     },
@@ -2329,6 +2374,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A52.7",
       "display" : "Other symptomatic late syphilis"
     },
@@ -2389,6 +2435,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A53",
       "display" : "Other and unspecified syphilis"
     },
@@ -2404,11 +2451,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A54",
       "display" : "Gonococcal infection"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A54.0",
       "display" : "Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess"
     },
@@ -2444,6 +2493,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A54.2",
       "display" : "Gonococcal pelviperitonitis and other gonococcal genitourinary infection"
     },
@@ -2474,6 +2524,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A54.3",
       "display" : "Gonococcal infection of eye"
     },
@@ -2504,6 +2555,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A54.4",
       "display" : "Gonococcal infection of musculoskeletal system"
     },
@@ -2544,6 +2596,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A54.8",
       "display" : "Other gonococcal infections"
     },
@@ -2594,11 +2647,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A56",
       "display" : "Other sexually transmitted chlamydial diseases"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A56.0",
       "display" : "Chlamydial infection of lower genitourinary tract"
     },
@@ -2624,6 +2679,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A56.1",
       "display" : "Chlamydial infection of pelviperitoneum and other genitourinary organs"
     },
@@ -2669,11 +2725,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A59",
       "display" : "Trichomoniasis"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A59.0",
       "display" : "Urogenital trichomoniasis"
     },
@@ -2714,11 +2772,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A60",
       "display" : "Anogenital herpesviral [herpes simplex] infections"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A60.0",
       "display" : "Herpesviral infection of genitalia and urogenital tract"
     },
@@ -2764,6 +2824,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A63",
       "display" : "Other predominantly sexually transmitted diseases, not elsewhere classified"
     },
@@ -2794,6 +2855,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A66",
       "display" : "Yaws"
     },
@@ -2849,6 +2911,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A67",
       "display" : "Pinta [carate]"
     },
@@ -2879,6 +2942,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A68",
       "display" : "Relapsing fevers"
     },
@@ -2899,6 +2963,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A69",
       "display" : "Other spirochetal infections"
     },
@@ -2914,6 +2979,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A69.2",
       "display" : "Lyme disease"
     },
@@ -2964,6 +3030,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A71",
       "display" : "Trachoma"
     },
@@ -2984,6 +3051,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A74",
       "display" : "Other diseases caused by chlamydiae"
     },
@@ -2994,6 +3062,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A74.8",
       "display" : "Other chlamydial diseases"
     },
@@ -3019,6 +3088,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A75",
       "display" : "Typhus fever"
     },
@@ -3049,6 +3119,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A77",
       "display" : "Spotted fever [tick-borne rickettsioses]"
     },
@@ -3074,6 +3145,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A77.4",
       "display" : "Ehrlichiosis"
     },
@@ -3085,7 +3157,7 @@ e: {
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
       "code" : "A77.41",
-      "display" : "Ehrlichiosis chafeensis [E. chafeensis]"
+      "display" : "Ehrlichiosis chaffeensis [E. chaffeensis]"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
@@ -3109,6 +3181,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A79",
       "display" : "Other rickettsioses"
     },
@@ -3124,6 +3197,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A79.8",
       "display" : "Other specified rickettsioses"
     },
@@ -3154,6 +3228,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A80",
       "display" : "Acute poliomyelitis"
     },
@@ -3174,6 +3249,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A80.3",
       "display" : "Acute paralytic poliomyelitis, other and unspecified"
     },
@@ -3199,11 +3275,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A81",
       "display" : "Atypical virus infections of central nervous system"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A81.0",
       "display" : "Creutzfeldt-Jakob disease"
     },
@@ -3234,6 +3312,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A81.8",
       "display" : "Other atypical virus infections of central nervous system"
     },
@@ -3264,6 +3343,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A82",
       "display" : "Rabies"
     },
@@ -3284,6 +3364,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A83",
       "display" : "Mosquito-borne viral encephalitis"
     },
@@ -3334,6 +3415,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A84",
       "display" : "Tick-borne viral encephalitis"
     },
@@ -3349,6 +3431,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A84.8",
       "display" : "Other tick-borne viral encephalitis"
     },
@@ -3369,6 +3452,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A85",
       "display" : "Other viral encephalitis, not elsewhere classified"
     },
@@ -3399,6 +3483,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A87",
       "display" : "Viral meningitis"
     },
@@ -3429,6 +3514,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A88",
       "display" : "Other viral infections of central nervous system, not elsewhere classified"
     },
@@ -3469,6 +3555,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A92",
       "display" : "Other mosquito-borne viral fevers"
     },
@@ -3489,6 +3576,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A92.3",
       "display" : "West Nile virus infection"
     },
@@ -3534,6 +3622,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A93",
       "display" : "Other arthropod-borne viral fevers, not elsewhere classified"
     },
@@ -3564,6 +3653,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A95",
       "display" : "Yellow fever"
     },
@@ -3584,6 +3674,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A96",
       "display" : "Arenaviral hemorrhagic fever"
     },
@@ -3614,6 +3705,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "A98",
       "display" : "Other viral hemorrhagic fevers, not elsewhere classified"
     },
@@ -3664,6 +3756,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B00",
       "display" : "Herpesviral [herpes simplex] infections"
     },
@@ -3694,6 +3787,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B00.5",
       "display" : "Herpesviral ocular disease"
     },
@@ -3729,6 +3823,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B00.8",
       "display" : "Other forms of herpesviral infections"
     },
@@ -3754,6 +3849,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B01",
       "display" : "Varicella [chickenpox]"
     },
@@ -3764,6 +3860,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B01.1",
       "display" : "Varicella encephalitis, myelitis and encephalomyelitis"
     },
@@ -3784,6 +3881,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B01.8",
       "display" : "Varicella with other complications"
     },
@@ -3804,6 +3902,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B02",
       "display" : "Zoster [herpes zoster]"
     },
@@ -3819,6 +3918,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B02.2",
       "display" : "Zoster with other nervous system involvement"
     },
@@ -3849,6 +3949,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B02.3",
       "display" : "Zoster ocular disease"
     },
@@ -3909,6 +4010,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B05",
       "display" : "Measles"
     },
@@ -3939,6 +4041,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B05.8",
       "display" : "Measles with other complications"
     },
@@ -3959,11 +4062,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B06",
       "display" : "Rubella [German measles]"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B06.0",
       "display" : "Rubella with neurological complications"
     },
@@ -3989,6 +4094,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B06.8",
       "display" : "Rubella with other complications"
     },
@@ -4014,6 +4120,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B07",
       "display" : "Viral warts"
     },
@@ -4034,16 +4141,19 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B08",
       "display" : "Other viral infections characterized by skin and mucous membrane lesions, not elsewhere classified"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B08.0",
       "display" : "Other orthopoxvirus infections"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B08.01",
       "display" : "Cowpox and vaccinia not from vaccine"
     },
@@ -4084,6 +4194,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B08.2",
       "display" : "Exanthema subitum [sixth disease]"
     },
@@ -4119,6 +4230,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B08.6",
       "display" : "Parapoxvirus infections"
     },
@@ -4144,6 +4256,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B08.7",
       "display" : "Yatapoxvirus infections"
     },
@@ -4184,11 +4297,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B10",
       "display" : "Other human herpesviruses"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B10.0",
       "display" : "Other human herpesvirus encephalitis"
     },
@@ -4204,6 +4319,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B10.8",
       "display" : "Other human herpesvirus infection"
     },
@@ -4229,6 +4345,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B15",
       "display" : "Acute hepatitis A"
     },
@@ -4244,6 +4361,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B16",
       "display" : "Acute hepatitis B"
     },
@@ -4269,6 +4387,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B17",
       "display" : "Other acute viral hepatitis"
     },
@@ -4279,6 +4398,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B17.1",
       "display" : "Acute hepatitis C"
     },
@@ -4309,6 +4429,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B18",
       "display" : "Chronic viral hepatitis"
     },
@@ -4339,6 +4460,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B19",
       "display" : "Unspecified viral hepatitis"
     },
@@ -4349,6 +4471,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B19.1",
       "display" : "Unspecified viral hepatitis B"
     },
@@ -4364,6 +4487,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B19.2",
       "display" : "Unspecified viral hepatitis C"
     },
@@ -4399,6 +4523,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B25",
       "display" : "Cytomegaloviral disease"
     },
@@ -4429,6 +4554,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B26",
       "display" : "Mumps"
     },
@@ -4454,6 +4580,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B26.8",
       "display" : "Mumps with other complications"
     },
@@ -4494,11 +4621,13 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B27",
       "display" : "Infectious mononucleosis"
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B27.0",
       "display" : "Gammaherpesviral mononucleosis"
     },
@@ -4524,6 +4653,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B27.1",
       "display" : "Cytomegaloviral mononucleosis"
     },
@@ -4549,6 +4679,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B27.8",
       "display" : "Other infectious mononucleosis"
     },
@@ -4574,6 +4705,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B27.9",
       "display" : "Infectious mononucleosis, unspecified"
     },
@@ -4599,6 +4731,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B30",
       "display" : "Viral conjunctivitis"
     },
@@ -4634,6 +4767,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B33",
       "display" : "Other viral diseases, not elsewhere classified"
     },
@@ -4649,6 +4783,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B33.2",
       "display" : "Viral carditis"
     },
@@ -4694,6 +4829,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B34",
       "display" : "Viral infection of unspecified site"
     },
@@ -4739,6 +4875,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B35",
       "display" : "Dermatophytosis"
     },
@@ -4789,6 +4926,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B36",
       "display" : "Other superficial mycoses"
     },
@@ -4824,6 +4962,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B37",
       "display" : "Candidiasis"
     },
@@ -4844,6 +4983,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B37.3",
       "display" : "Candidiasis of vulva and vagina"
     },
@@ -4859,6 +4999,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B37.4",
       "display" : "Candidiasis of other urogenital sites"
     },
@@ -4894,6 +5035,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B37.8",
       "display" : "Candidiasis of other sites"
     },
@@ -4929,6 +5071,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B38",
       "display" : "Coccidioidomycosis"
     },
@@ -4964,6 +5107,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B38.8",
       "display" : "Other forms of coccidioidomycosis"
     },
@@ -4984,6 +5128,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B39",
       "display" : "Histoplasmosis"
     },
@@ -5024,6 +5169,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B40",
       "display" : "Blastomycosis"
     },
@@ -5054,6 +5200,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B40.8",
       "display" : "Other forms of blastomycosis"
     },
@@ -5074,6 +5221,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B41",
       "display" : "Paracoccidioidomycosis"
     },
@@ -5099,6 +5247,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B42",
       "display" : "Sporotrichosis"
     },
@@ -5119,6 +5268,7 @@ e: {
     },
     {
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "abstract" : true,
       "code" : "B42.8",
       "display" : "Other forms of sporotrichosis"
     },
@@ -5130,73 +5280,5 @@ e: {
   }
 },
   "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-    "code" : "I46.9",
-    "display" : "Cardiac arrest, cause unspecified"
-  }]
-}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "system-version",
-    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
-  },
-  {
-    "name" : "defaultDisplayLanguage",
-    "valueCode" : "en-US"
-  }]
-}}####
-v: {
-  "severity" : "error",
-  "error" : "java.net.SocketTimeoutException: timeout",
-  "class" : "SERVER_ERROR",
-  "issues" : {
-  "resourceType" : "OperationOutcome",
-  "issue" : [{
-    "severity" : "error",
-    "code" : "exception",
-    "details" : {
-      "text" : "java.net.SocketTimeoutException: timeout"
-    }
-  }]
-}
-
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-    "code" : "S09.90XA",
-    "display" : "Unspecified injury of head, initial encounter"
-  }]
-}, "langs":"en-US", "useServer":"true", "useClient":"false", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
-  "resourceType" : "Parameters",
-  "parameter" : [{
-    "name" : "system-version",
-    "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
-  },
-  {
-    "name" : "defaultDisplayLanguage",
-    "valueCode" : "en-US"
-  }]
-}}####
-v: {
-  "severity" : "error",
-  "error" : "java.net.SocketTimeoutException: timeout",
-  "class" : "SERVER_ERROR",
-  "issues" : {
-  "resourceType" : "OperationOutcome",
-  "issue" : [{
-    "severity" : "error",
-    "code" : "exception",
-    "details" : {
-      "text" : "java.net.SocketTimeoutException: timeout"
-    }
-  }]
-}
-
 }
 -------------------------------------------------------------------------------------

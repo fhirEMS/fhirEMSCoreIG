@@ -1,13 +1,6 @@
 {
   "http://unstats.un.org/unsd/methods/m49/m49.htm" : null,
-  "https://www.usps.com/" : {
-    "server" : "http://tx.fhir.org/r4",
-    "filename" : "cs-e34549d4-aea2-4e3e-9c08-888f1785d47f.json"
-  },
+  "https://www.usps.com/" : null,
   "urn:ietf:bcp:13" : null,
-  "http://www.nubc.org/patient-discharge" : null,
-  "https://nahdo.org/sopt" : {
-    "server" : "https://tx-nordics.fhir.org/fhir/r4",
-    "filename" : "cs-629b4e64-9b55-4d1a-8b3b-67aa4e8c9398.json"
-  }
+  "http://snomed.info/sct|http://snomed.info/sct/731000124108" : null
 }

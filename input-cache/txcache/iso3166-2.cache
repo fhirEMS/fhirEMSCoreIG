@@ -14,8 +14,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:e561bffe-c9b4-4572-bc25-d607763c219a",
-    "timestamp" : "2026-03-15T02:21:51.098Z",
+    "identifier" : "urn:uuid:53cde138-bac0-48d9-a291-af5a088a1e7d",
+    "timestamp" : "2026-07-19T21:19:31.691Z",
     "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
@@ -32,10 +32,6 @@ e: {
     {
       "name" : "count",
       "valueInteger" : 1000
-    },
-    {
-      "name" : "warning-draft",
-      "valueUri" : "urn:iso:std:iso:3166:-2|2021"
     },
     {
       "name" : "used-codesystem",
