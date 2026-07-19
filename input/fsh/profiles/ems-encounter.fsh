@@ -30,7 +30,9 @@ Description: """
     EMSDispositionCodes named dispositionCodes 0..1 MS and
     EMSTransportDetails named transportDetails 0..1 MS and
     EMSDestinationDetails named destinationDetails 0..1 MS and
-    EMSProtocolUsed named protocolUsed        0..* MS
+    EMSProtocolUsed named protocolUsed        0..* MS and
+    EMSOtherContext named otherContext        0..1 and
+    EMSCrewSafety named crewSafety            0..*
 
 * extension[responseType]
   * ^short = "eResponse.05 - Type of Service Requested"

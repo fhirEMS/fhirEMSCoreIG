@@ -78,6 +78,15 @@ This scenario exercises the majority of fhirEMSCore profiles and demonstrates ho
 |---|---|---|
 | `ex-ems-allergyintolerance` | EMSAllergyIntolerance | Penicillin allergy (RxNorm 7980), documented onset unknown; mild rash reaction |
 
+### Documentation, Signatures, and Custom Elements
+
+| Example Id | Profile | Description |
+|---|---|---|
+| `ex-ems-documentreference` | EMSDocumentReference | 12-lead ECG PDF attachment; LOINC 11524-6 + NEMSIS 4509009 |
+| `ex-ems-provenance` | EMSProvenance | Transfer-of-care signature by primary care provider; signed, PNG graphic |
+| `ex-ems-questionnaire` | EMSQuestionnaire | Agency custom element: ambulance decontaminated after transport |
+| `ex-ems-questionnaireresponse` | EMSQuestionnaireResponse | Answer: Yes, with PCR correlation ID |
+
 ### Agency and Crew
 
 | Example Id | Profile | Description |

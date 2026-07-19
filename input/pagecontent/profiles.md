@@ -67,12 +67,14 @@ These profiles represent the fundamental resources in an EMS Patient Care Report
 | EMSCoverage | ems-coverage | Coverage (R4 base) | ePayment.09–22, .57–60 | ⚠ | No US Core parent; CMS billing rules not encoded as invariants |
 | EMSClaim | ems-claim | Claim (R4 base) | ePayment (billing) | ⚠ | No US Core parent; Medicare ambulance claim rules not validated |
 
-### Not Yet Profiled
+### Documentation and Custom Element Profiles
 
-| NEMSIS Section | Elements | Target Profile | Status | Planned |
-|---|---|---|---|---|
-| eOther | 22 | ems-observation-other | 🚧 Not started | v0.2.0 |
-| eCustom elements | 9 | ems-questionnaire | 🚧 Not started | v0.2.0 |
+| Profile | Id | Parent | NEMSIS Section | Status | Notes |
+|---|---|---|---|---|---|
+| EMSDocumentReference | ems-documentreference | us-core-documentreference | eOther.09–.11, .22 | ✅ | External attachments; NEMSIS doc type extension |
+| EMSProvenance | ems-provenance | us-core-provenance | eOther.12–.21 | ✅ | PCR signatures with NEMSIS signer/reason/status metadata |
+| EMSQuestionnaire | ems-questionnaire | Questionnaire (R4 base) | eCustomConfiguration | ✅ | Custom element definitions (NDR-010) |
+| EMSQuestionnaireResponse | ems-questionnaireresponse | QuestionnaireResponse (R4 base) | eCustomResults | ✅ | Custom element results (NDR-010) |
 
 ---
 
@@ -147,7 +149,7 @@ A complete EMS PCR in fhirEMSCore follows this resource creation sequence:
 | eDisposition | 31 | EMSEncounter (extensions) | Full |
 | eOutcome | 15 | EMSObservationOutcome | Full |
 | ePayment | 59 | EMSCoverage + EMSClaim | Full |
-| eOther | 22 | — | Not started |
+| eOther | 22 | EMSDocumentReference + EMSProvenance + EMSEncounter (extensions) | Full |
 | eDevice | 12 | EMSDevice | Partial |
 | eProtocols | 2 | EMSEncounter (extension) | Full |
 | eNarrative | 1 | EMSComposition.section | Full |

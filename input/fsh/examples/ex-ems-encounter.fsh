@@ -147,3 +147,17 @@ Usage: #example
 // eDisposition.30 - Transport Disposition (legacy standalone extension)
 * extension[EMSTransportReason].valueCodeableConcept
     = $nemsis-encounter-cs#4230001 "Transport by This EMS Unit (This Crew Only)"
+
+// eOther.01/.02/.08 - Other Context
+* extension[otherContext].extension[reviewRequested].valueBoolean = true
+* extension[otherContext].extension[registryCandidate][0].valueCodeableConcept
+    = $nemsis-other#4502017 "Trauma"
+* extension[otherContext].extension[crewCompletingReport].valueString = "P-1234"
+
+// eOther.03-.06 - Crew Safety (per crew member)
+* extension[crewSafety][0].extension[crewMemberId].valueString = "P-1234"
+* extension[crewSafety][0].extension[ppeUsed][0].valueCodeableConcept
+    = $nemsis-other#4503003 "Gloves"
+* extension[crewSafety][0].extension[ppeUsed][1].valueCodeableConcept
+    = $nemsis-other#4503001 "Eye Protection"
+* extension[crewSafety][0].extension[workRelatedExposure].valueBoolean = false

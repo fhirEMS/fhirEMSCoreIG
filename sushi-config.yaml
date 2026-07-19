@@ -162,6 +162,15 @@ groups:
       - StructureDefinition/ems-practitionerrole
       - StructureDefinition/ems-device-vehicle
 
+  DocumentationResources:
+    name: "Documentation and Custom Element Profiles"
+    description: "Profiles for PCR attachments, signatures, and agency custom elements (eOther, eCustom)"
+    resources:
+      - StructureDefinition/ems-documentreference
+      - StructureDefinition/ems-provenance
+      - StructureDefinition/ems-questionnaire
+      - StructureDefinition/ems-questionnaireresponse
+
   PaymentResources:
     name: "EMS Payment and Billing Profiles"
     description: "Profiles for EMS billing, insurance, and CMS claims (ePayment section)"
