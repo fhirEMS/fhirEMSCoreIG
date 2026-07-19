@@ -10,7 +10,7 @@ The complete fhirEMSCore NPM package, for use with FHIR tooling, validators, and
 
 | Artifact | Description |
 |---|---|
-| `hl7.fhir.us.emscore-0.1.0.tgz` | Full IG NPM package (FHIR JSON resources) |
+| `fhirems.emscore-0.1.0.tgz` | Full IG NPM package (FHIR JSON resources) |
 | `full-ig.zip` | Complete IG including HTML, narrative, and all artifacts |
 | `definitions.json.zip` | All StructureDefinitions, ValueSets, and CodeSystems in JSON |
 | `definitions.xml.zip` | All StructureDefinitions, ValueSets, and CodeSystems in XML |
@@ -118,5 +118,5 @@ wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/vali
 java -jar validator_cli.jar [resource.json] \
   -version 4.0.1 \
   -ig hl7.fhir.us.core#6.1.0 \
-  -ig hl7.fhir.us.emscore#0.1.0
+  -ig fhirems.emscore#0.1.0
 ```

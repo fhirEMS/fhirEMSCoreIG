@@ -10,7 +10,7 @@ Title: "Example EMS Composition — PCR Document"
 Description: "Example PCR composition demonstrating the EMSComposition profile. Assembles all resources from the MVA cardiac arrest scenario into a complete EMS Patient Care Report document."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-composition"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition"
 
 // ── Document metadata ─────────────────────────────────────────
 // eRecord.01 - Patient Care Report Number

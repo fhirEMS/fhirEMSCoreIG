@@ -10,7 +10,7 @@ Title: "Example EMS Claim — ALS Level 1 Emergency"
 Description: "Example ambulance claim demonstrating the EMSClaim profile. ALS Level 1 Emergency service billed to Medicare Part B for cardiac arrest transport."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-claim"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim"
 
 // ── Status, use, priority ─────────────────────────────────────
 * status = #active

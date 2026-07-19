@@ -8,7 +8,7 @@ ValueSet: EMSMechanismOfInjuryVS
 Id: vs-ems-mechanism-of-injury
 Title: "EMS Mechanism of Injury VS"
 Description: "The mechanism of the event which caused the injury (eInjury.02)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-mechanism-of-injury"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-mechanism-of-injury"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2902001 "Blunt"
@@ -21,7 +21,7 @@ ValueSet: EMSTraumaTriageHighRiskVS
 Id: vs-ems-trauma-triage-high-risk
 Title: "EMS Trauma Triage High Risk VS"
 Description: "Trauma triage criteria indicating high risk for serious injury — CDC Field Triage Guideline red criteria (injury patterns and physiologic instability) (eInjury.03)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-trauma-triage-high-risk"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-high-risk"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2903001 "Amputation proximal to wrist or ankle"
@@ -51,7 +51,7 @@ ValueSet: EMSTraumaTriageModerateRiskVS
 Id: vs-ems-trauma-triage-moderate-risk
 Title: "EMS Trauma Triage Moderate Risk VS"
 Description: "Trauma triage criteria indicating moderate risk for serious injury — CDC Field Triage Guideline yellow criteria (mechanism of injury and EMS judgment) (eInjury.04)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-trauma-triage-moderate-risk"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-moderate-risk"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2904001 "Pedestrian/bicycle rider thrown, run over, or with significant impact"
@@ -80,7 +80,7 @@ ValueSet: EMSSeatRowLocationVS
 Id: vs-ems-seat-row-location
 Title: "EMS Seat Row Location VS"
 Description: "The seat row location of the patient in the vehicle at the time of the crash (eInjury.06)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-seat-row-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-seat-row-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2906001 "Front Seat-Left Side (or motorcycle driver)"
@@ -104,7 +104,7 @@ ValueSet: EMSSafetyEquipmentVS
 Id: vs-ems-safety-equipment
 Title: "EMS Occupant Safety Equipment VS"
 Description: "Occupant safety equipment in use by the patient at the time of the injury (eInjury.07)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-safety-equipment"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-safety-equipment"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2907001 "Child Booster Seat"
@@ -127,7 +127,7 @@ ValueSet: EMSAirbagDeploymentVS
 Id: vs-ems-airbag-deployment
 Title: "EMS Airbag Deployment VS"
 Description: "Airbag deployment status observed at the crash (eInjury.08)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airbag-deployment"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airbag-deployment"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2908001 "Airbag Deployed Front"
@@ -141,7 +141,7 @@ ValueSet: EMSOSHAPPEVS
 Id: vs-ems-osha-ppe
 Title: "EMS OSHA Personal Protective Equipment VS"
 Description: "OSHA-defined personal protective equipment in use by the patient at the time of a work-related injury (eInjury.10)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-osha-ppe"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-osha-ppe"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2910001 "Eye and Face Protection"
@@ -157,7 +157,7 @@ ValueSet: EMSACNSeatLocationVS
 Id: vs-ems-acn-seat-location
 Title: "EMS ACN Vehicle Seat Location VS"
 Description: "Automated Collision Notification (ACN) vehicle seat location of the patient (eInjury.26)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-acn-seat-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acn-seat-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-injury#2926001 "Driver Front Seat"

@@ -9,7 +9,7 @@ ValueSet: EMSEMDPerformedVS
 Id: vs-ems-emd-performed
 Title: "EMS EMD Performed"
 Description: "NEMSIS eDispatch.02 - Whether Emergency Medical Dispatch pre-arrival instructions were provided."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-emd-performed"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-emd-performed"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2302001 "No"
@@ -23,7 +23,7 @@ ValueSet: EMSDispatchPriorityVS
 Id: vs-ems-dispatch-priority
 Title: "EMS Dispatch Priority (Patient Acuity)"
 Description: "NEMSIS eDispatch.05 - The acuity level assigned at time of dispatch."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-dispatch-priority"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-priority"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2305001 "Critical"
@@ -39,7 +39,7 @@ ValueSet: EMSDispatchReasonVS
 Id: vs-ems-dispatch-reason
 Title: "EMS Dispatch Reason (ValueSet)"
 Description: "NEMSIS eDispatch.01 - The dispatch complaint or reason for the EMS response. Extensible to allow agency-specific or SNOMED CT dispatch codes."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-dispatch-reason"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-reason"
 * ^status = #active
 * ^experimental = true
 * include codes from system $snomed where concept is-a #404684003

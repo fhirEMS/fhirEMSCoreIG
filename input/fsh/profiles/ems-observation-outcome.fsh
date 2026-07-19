@@ -10,7 +10,7 @@ Title: "EMS Outcome Observation"
 Description: "Documents hospital and ED outcome data collected by the EMS agency. Covers NEMSIS eOutcome.01 (ED Disposition), eOutcome.02 (Hospital Disposition), eOutcome.09/12 (ED/Hospital Procedures using ICD-10-PCS), eOutcome.10/13 (ED/Hospital Diagnoses using ICD-10-CM), eOutcome.11 (Hospital Admission DateTime), eOutcome.16 (Hospital Discharge DateTime), eOutcome.18 (ED Admission DateTime), and eOutcome.21 (Injury Severity Score). Each significant eOutcome data point is captured as an Observation component."
 Parent: $us-core-observation
 
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-outcome"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

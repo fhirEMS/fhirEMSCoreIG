@@ -13,8 +13,8 @@ Each profile generated must be compatible with FHIR R4, US Core 6.1.0 AND the NE
 
 | Field | Value |
 |---|---|
-| IG ID | `hl7.fhir.us.emscore` |
-| Canonical | `http://hl7.org/fhir/us/emscore` |
+| IG ID | `fhirems.emscore` |
+| Canonical | `https://fhirems.github.io/fhirEMSCoreIG` |
 | FHIR Version | R4 (4.0.1) |
 | US Core Version | 6.1.0 |
 | NEMSIS Version | 3.5.1.251001CP2 |
@@ -455,13 +455,12 @@ java -jar input-cache/validator.jar \
 ### Build Script
 Run the IG Publisher with:
 ```bash
-/tmp/run_publisher.sh
-# Or manually:
 env PATH="$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin:$PATH" \
-  .jdk/jdk-21.0.10+7/Contents/Home/bin/java -jar input-cache/publisher.jar -ig .
+  java -jar input-cache/publisher.jar -ig .
 ```
 Note: SUSHI at `~/.local/bin/sushi`, Jekyll at `~/.gem/ruby/2.6.0/bin/jekyll`,
-Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
+system Java (Homebrew OpenJDK 17). If `input-cache/publisher.jar` is missing,
+copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/input-cache/publisher.jar`.
 
 ---
 

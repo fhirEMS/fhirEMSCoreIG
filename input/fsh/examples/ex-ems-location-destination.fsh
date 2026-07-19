@@ -10,7 +10,7 @@ Title: "Example EMS Destination — Level I Trauma Center"
 Description: "Example destination location demonstrating the EMSLocationDestination profile. Riverside University Health System Medical Center, a Level I Trauma Center."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-location-destination"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-destination"
 
 * status = #active
 

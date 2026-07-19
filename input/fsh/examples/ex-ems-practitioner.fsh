@@ -10,7 +10,7 @@ Title: "Example EMS Practitioner — Paramedic"
 Description: "Example EMS crew member demonstrating the EMSPractitioner profile. Represents a licensed Paramedic with state certification."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-practitioner"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitioner"
 
 * identifier[0].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[0].type.coding[0].code = #EI
@@ -25,7 +25,7 @@ Usage: #example
 * birthDate = "1988-04-15"
 
 // State certification — Paramedic
-* qualification[stateLicensure].code.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-personnel-level"
+* qualification[stateLicensure].code.coding[0].system = "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level"
 * qualification[stateLicensure].code.coding[0].code = #9925007
 * qualification[stateLicensure].code.coding[0].display = "Paramedic"
 * qualification[stateLicensure].identifier[0].system = "http://example.org/ems/cert-number"

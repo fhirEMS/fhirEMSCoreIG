@@ -11,7 +11,7 @@ Title: "Example EMS Injury Condition"
 Description: "Example injury Condition demonstrating the EMSConditionInjury profile. 35-year-old male driver in a motor vehicle accident: blunt mechanism, restrained with front airbag deployment, significant vehicle intrusion requiring extrication, motor GCS 4, with ACN telematics data from the vehicle."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-condition-injury"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-injury"
 
 // eInjury.01 - Cause of Injury (ICD-10-CM external cause)
 * code.coding[0] = $icd10cm#V89.2XXA "Person injured in unspecified motor-vehicle accident, traffic, initial encounter"

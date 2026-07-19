@@ -10,7 +10,7 @@ Title: "Example EMS Blood Pressure Observation"
 Description: "Example blood pressure observation demonstrating the EMSObservationBP profile. First vital set taken at the scene of an MVA."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-bp"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp"
 
 * status = #final
 

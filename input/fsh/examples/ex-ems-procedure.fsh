@@ -10,7 +10,7 @@ Title: "Example EMS Procedure — IV Access"
 Description: "Example procedure demonstrating the EMSProcedure profile. Peripheral IV access established on an MVA patient."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-procedure"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure"
 
 * status = #completed
 
@@ -27,7 +27,7 @@ Usage: #example
 * encounter = Reference(ex-ems-encounter)
 
 // eProcedures.09/10 - Performer
-* performer[0].function.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-medications"
+* performer[0].function.coding[0].system = "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"
 * performer[0].function.coding[0].code = #9905007
 * performer[0].function.coding[0].display = "Paramedic"
 * performer[0].actor = Reference(ex-ems-practitioner)
@@ -38,12 +38,12 @@ Usage: #example
 * outcome.coding[0].display = "Successful"
 
 // eProcedures.07 - Complication → None
-* complication[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-medications"
+* complication[0].coding[0].system = "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"
 * complication[0].coding[0].code = #3907033
 * complication[0].coding[0].display = "None"
 
 // eProcedures.13 - Vascular Access Location → Antecubital-Left
-* bodySite[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-medications"
+* bodySite[0].coding[0].system = "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"
 * bodySite[0].coding[0].code = #3913001
 * bodySite[0].coding[0].display = "Antecubital-Left"
 

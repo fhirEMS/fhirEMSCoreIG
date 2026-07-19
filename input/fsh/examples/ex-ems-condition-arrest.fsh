@@ -10,7 +10,7 @@ Title: "Example EMS Cardiac Arrest Condition"
 Description: "Example cardiac arrest Condition demonstrating the EMSConditionArrest profile. Patient found in cardiac arrest prior to EMS arrival; VF arrest; CPR and defibrillation performed; ROSC achieved prior to ED arrival."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-condition-arrest"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-arrest"
 
 // Fixed SNOMED code — Cardiac arrest (NDR-009)
 * code = $snomed#410429000 "Cardiac arrest"

@@ -10,7 +10,7 @@ Title: "Example EMS Airway Management — Endotracheal Intubation"
 Description: "Example airway management observation demonstrating the EMSObservationAirway profile. Endotracheal intubation performed on cardiac arrest patient. Confirmed by waveform ETCO2 and auscultation."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-airway"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway"
 
 * status = #final
 

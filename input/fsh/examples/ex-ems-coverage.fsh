@@ -10,7 +10,7 @@ Title: "Example EMS Coverage — Medicare Part B"
 Description: "Example insurance coverage demonstrating the EMSCoverage profile. Represents a patient with Medicare Part B as primary insurance."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-coverage"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-coverage"
 
 // ── Status ────────────────────────────────────────────────────
 * status = #active

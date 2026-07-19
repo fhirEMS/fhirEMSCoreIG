@@ -10,7 +10,7 @@ Title: "Example EMS Condition — Closed Head Injury"
 Description: "Example condition demonstrating the EMSCondition profile. Primary impression of closed head injury documented during an MVA response."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-condition"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"
 
 // Clinical and verification status
 * clinicalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/condition-clinical"

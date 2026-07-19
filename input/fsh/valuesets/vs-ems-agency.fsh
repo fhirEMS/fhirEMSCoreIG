@@ -10,7 +10,7 @@ ValueSet: EMSAgencyServiceTypeVS
 Id: vs-ems-agency-service-type
 Title: "EMS Agency Service Type"
 Description: "NEMSIS dAgency.09/10 - The type(s) of EMS service provided by the agency."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-agency-service-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#9920001 "911 Response (Scene) with Transport Capability"
@@ -29,7 +29,7 @@ ValueSet: EMSAgencyLevelOfServiceVS
 Id: vs-ems-agency-level-of-service
 Title: "EMS Agency Level of Service"
 Description: "NEMSIS dAgency.11 - The highest level of care the EMS agency is licensed/certified to provide."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-agency-level-of-service"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-level-of-service"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#9917001 "Advanced Emergency Medical Technician (AEMT)"
@@ -51,7 +51,7 @@ ValueSet: EMSAgencyOrgStatusVS
 Id: vs-ems-agency-org-status
 Title: "EMS Agency Organization Status"
 Description: "NEMSIS dAgency.12 - Whether the EMS agency is staffed by volunteers, paid personnel, or both."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-agency-org-status"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-status"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#1016001 "Mixed"
@@ -64,7 +64,7 @@ ValueSet: EMSAgencyOrgTypeVS
 Id: vs-ems-agency-org-type
 Title: "EMS Agency Organizational Type"
 Description: "NEMSIS dAgency.13 - The organizational type of the EMS agency."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-agency-org-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#9912001 "Fire Department"

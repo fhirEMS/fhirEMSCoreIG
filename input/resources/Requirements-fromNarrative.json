@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
-  "url" : "http://hl7.org/fhir/us/emscore/Requirements/fromNarrative",
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/Requirements/fromNarrative",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",

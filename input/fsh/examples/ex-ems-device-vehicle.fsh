@@ -10,7 +10,7 @@ Title: "Example EMS Device — ALS Ambulance"
 Description: "Example vehicle device demonstrating the EMSDeviceVehicle profile. Riverside County EMS Unit 4321, a Type I ALS-equipped ground ambulance."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-device-vehicle"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-device-vehicle"
 
 // dVehicle.01 - EMS Unit Number (use = official)
 * identifier[unitNumber].use = #official
@@ -21,7 +21,7 @@ Usage: #example
 
 // dVehicle.02 - Vehicle Identification Number (use = secondary)
 * identifier[vin].use = #secondary
-* identifier[vin].system = "http://hl7.org/fhir/us/emscore/identifier/vin"
+* identifier[vin].system = "https://fhirems.github.io/fhirEMSCoreIG/identifier/vin"
 * identifier[vin].value = "1FDFE4FS0GDA12345"
 
 // dVehicle.03 - EMS Unit Call Sign (use = usual)
@@ -30,7 +30,7 @@ Usage: #example
 * identifier[callSign].value = "Medic 21"
 
 // dVehicle.04 - Vehicle Type → Ambulance
-* type.coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-codes"
+* type.coding[0].system = "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"
 * type.coding[0].code = #1404001
 * type.coding[0].display = "Ambulance"
 

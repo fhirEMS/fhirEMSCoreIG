@@ -10,7 +10,7 @@ Title: "EMS Ambulance Claim"
 Description: "Represents a CMS ambulance claim generated from an EMS response. Derived from FHIR R4 Claim base resource (no US Core profile exists). Maps to NEMSIS ePayment billing elements: primary method of payment (ePayment.01), CMS service level (ePayment.50), response urgency (ePayment.40), transport assessment (ePayment.41), ambulance transport reason (ePayment.44), ambulance conditions indicators (ePayment.47), physician certification statement data (ePayment.02–07), mileage (ePayment.48), and supply items (ePayment.55/56)."
 Parent: Claim
 
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-claim"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

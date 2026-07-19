@@ -10,7 +10,7 @@ Title: "Example EMS AllergyIntolerance — Penicillin"
 Description: "Example allergy demonstrating the EMSAllergyIntolerance profile. Documented penicillin allergy (eHistory.06 medication allergy) reported during MVA response."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-allergyintolerance"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-allergyintolerance"
 
 * clinicalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
 * clinicalStatus.coding[0].code = #active

@@ -8,7 +8,7 @@ ValueSet: EMSExamLengthTapeMeasureVS
 Id: vs-ems-exam-length-tape
 Title: "EMS Length Based Tape Measure (Broselow-Luten)"
 Description: "NEMSIS eExam.02 - Broselow-Luten color zone for length-based weight estimation."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-length-tape"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-length-tape"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3502001 "Blue"
@@ -26,7 +26,7 @@ ValueSet: EMSExamSkinVS
 Id: vs-ems-exam-skin
 Title: "EMS Skin Assessment"
 Description: "NEMSIS eExam.04 - Physical findings on skin assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-skin"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-skin"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3504001 "Clammy"
@@ -55,7 +55,7 @@ ValueSet: EMSExamHeadVS
 Id: vs-ems-exam-head
 Title: "EMS Head Assessment"
 Description: "NEMSIS eExam.05 - Physical findings on head assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-head"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-head"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3505001 "Abrasion"
@@ -87,7 +87,7 @@ ValueSet: EMSExamFaceVS
 Id: vs-ems-exam-face
 Title: "EMS Face Assessment"
 Description: "NEMSIS eExam.06 - Physical findings on face assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-face"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-face"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3506001 "Abrasion"
@@ -119,7 +119,7 @@ ValueSet: EMSExamNeckVS
 Id: vs-ems-exam-neck
 Title: "EMS Neck Assessment"
 Description: "NEMSIS eExam.07 - Physical findings on neck assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-neck"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-neck"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3507001 "Abrasion"
@@ -154,7 +154,7 @@ ValueSet: EMSExamHeartVS
 Id: vs-ems-exam-heart
 Title: "EMS Heart Assessment"
 Description: "NEMSIS eExam.09 - Physical findings on heart/cardiac auscultation."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-heart"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-heart"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3509001 "Clicks"
@@ -174,7 +174,7 @@ ValueSet: EMSExamAbdominalFindingLocationVS
 Id: vs-ems-exam-abd-location
 Title: "EMS Abdominal Assessment Finding Location"
 Description: "NEMSIS eExam.10 - Location qualifier for abdominal assessment findings."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-abd-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-abd-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3510001 "Generalized"
@@ -190,7 +190,7 @@ ValueSet: EMSExamAbdomenVS
 Id: vs-ems-exam-abdomen
 Title: "EMS Abdomen Assessment"
 Description: "NEMSIS eExam.11 - Physical findings on abdominal assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-abdomen"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-abdomen"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3511001 "Abrasion"
@@ -228,7 +228,7 @@ ValueSet: EMSExamPelvicGUVS
 Id: vs-ems-exam-pelvic-gu
 Title: "EMS Pelvis/Genitourinary Assessment"
 Description: "NEMSIS eExam.12 - Physical findings on pelvic/genitourinary assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-pelvic-gu"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-pelvic-gu"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3512001 "Abrasion"
@@ -266,7 +266,7 @@ ValueSet: EMSExamBackSpineLocationVS
 Id: vs-ems-exam-back-location
 Title: "EMS Back and Spine Assessment Finding Location"
 Description: "NEMSIS eExam.13 - Location qualifier for back and spine assessment findings."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-back-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3513001 "Back-General"
@@ -290,7 +290,7 @@ ValueSet: EMSExamBackSpineVS
 Id: vs-ems-exam-back-spine
 Title: "EMS Back and Spine Assessment"
 Description: "NEMSIS eExam.14 - Physical findings on back and spine assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-back-spine"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-spine"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3514001 "Abrasion"
@@ -323,7 +323,7 @@ ValueSet: EMSExamExtremityLocationVS
 Id: vs-ems-exam-extremity-location
 Title: "EMS Extremity Assessment Finding Location"
 Description: "NEMSIS eExam.15 - Location qualifier for extremity assessment findings."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-extremity-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremity-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3515001 "Ankle-Left"
@@ -388,7 +388,7 @@ ValueSet: EMSExamExtremitiesVS
 Id: vs-ems-exam-extremities
 Title: "EMS Extremities Assessment"
 Description: "NEMSIS eExam.16 - Physical findings on extremities assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-extremities"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremities"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3516001 "Abrasion"
@@ -442,7 +442,7 @@ ValueSet: EMSExamEyeLocationVS
 Id: vs-ems-exam-eye-location
 Title: "EMS Eye Assessment Finding Location"
 Description: "NEMSIS eExam.17 - Laterality qualifier for eye assessment findings."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-eye-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3517001 "Bilateral"
@@ -454,7 +454,7 @@ ValueSet: EMSExamEyeVS
 Id: vs-ems-exam-eye
 Title: "EMS Eye Assessment"
 Description: "NEMSIS eExam.18 - Physical findings on eye assessment, including pupil size and reactivity."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-eye"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3518001 "1-mm"
@@ -495,7 +495,7 @@ ValueSet: EMSExamMentalStatusVS
 Id: vs-ems-exam-mental-status
 Title: "EMS Mental Status Assessment"
 Description: "NEMSIS eExam.19 - Mental status and cognitive assessment findings."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-mental-status"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-mental-status"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3519001 "Combative"
@@ -528,7 +528,7 @@ ValueSet: EMSExamNeurologicalVS
 Id: vs-ems-exam-neurological
 Title: "EMS Neurological Assessment"
 Description: "NEMSIS eExam.20 - Neurological assessment findings including strength, speech, coordination, and seizures."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-neurological"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-neurological"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3520001 "Aphagia"
@@ -563,7 +563,7 @@ ValueSet: EMSExamStrokeSymptomsResolvedVS
 Id: vs-ems-exam-stroke-resolved
 Title: "EMS Stroke/CVA Symptoms Resolved"
 Description: "NEMSIS eExam.21 - Whether stroke/CVA symptoms resolved prior to or during EMS care."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-stroke-resolved"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-stroke-resolved"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3521001 "No"
@@ -575,7 +575,7 @@ ValueSet: EMSExamLungLocationVS
 Id: vs-ems-exam-lung-location
 Title: "EMS Lung Assessment Finding Location"
 Description: "NEMSIS eExam.22 - Laterality qualifier for lung assessment findings."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-lung-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-lung-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3522001 "Left"
@@ -587,7 +587,7 @@ ValueSet: EMSExamLungVS
 Id: vs-ems-exam-lung
 Title: "EMS Lung Assessment"
 Description: "NEMSIS eExam.23 - Auscultatory and respiratory findings on lung assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-lung"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-lung"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3523001 "Breath Sounds-Absent"
@@ -612,7 +612,7 @@ ValueSet: EMSExamChestLocationVS
 Id: vs-ems-exam-chest-location
 Title: "EMS Chest Assessment Finding Location"
 Description: "NEMSIS eExam.24 - Location qualifier for chest assessment findings."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-chest-location"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-chest-location"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3524001 "Left - Anterior"
@@ -627,7 +627,7 @@ ValueSet: EMSExamChestVS
 Id: vs-ems-exam-chest
 Title: "EMS Chest Assessment"
 Description: "NEMSIS eExam.25 - Physical findings on chest assessment."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-exam-chest"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-chest"
 * ^status = #active
 * ^experimental = true
 * $nemsis-exam#3525001 "Abrasion"

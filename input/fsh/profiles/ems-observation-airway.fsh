@@ -10,7 +10,7 @@ Title: "EMS Airway Management Observation"
 Description: "Documents an airway management event during an EMS response. NEMSIS eAirway covers advanced airway device placement, confirmation, complications, and failure reasons. eAirway.01–11 are captured primarily through ext-ems-airway-context. The observation code identifies the airway procedure type (SNOMED). The crew member (eAirway.07) is captured via performer."
 Parent: $us-core-observation
 
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-airway"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

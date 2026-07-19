@@ -10,7 +10,7 @@ Title: "EMS Injury Condition"
 Description: "Documents an injury and its circumstances during an EMS response event. Condition.code carries the cause of injury (eInjury.01, ICD-10-CM external cause codes). Mechanism of injury, CDC trauma triage criteria, vehicle collision details, safety equipment, and fall height are captured in the ext-ems-injury-context extension; Automated Collision Notification (ACN) telematics data in ext-ems-acn-incident."
 Parent: $us-core-condition
 
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-condition-injury"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-injury"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

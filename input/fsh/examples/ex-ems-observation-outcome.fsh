@@ -10,7 +10,7 @@ Title: "Example EMS Outcome — ED and Hospital Disposition"
 Description: "Example outcome observation demonstrating the EMSObservationOutcome profile. Patient admitted as inpatient from ED following MVA with head injury."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-outcome"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome"
 
 * status = #final
 
@@ -28,7 +28,7 @@ Usage: #example
 
 // ── eOutcome.01 - ED Disposition → Admitted as inpatient ──────
 * component[edDisposition].code = $nemsis-encounter-cs#eOutcomeEDDisposition
-* component[edDisposition].valueCodeableConcept.coding[0].system = "http://www.nubc.org/patient-discharge"
+* component[edDisposition].valueCodeableConcept.coding[0].system = "https://www.nubc.org/CodeSystem/PatDischargeStatus"
 * component[edDisposition].valueCodeableConcept.coding[0].code = #09
 * component[edDisposition].valueCodeableConcept.coding[0].display = "Admitted as an inpatient to this hospital"
 

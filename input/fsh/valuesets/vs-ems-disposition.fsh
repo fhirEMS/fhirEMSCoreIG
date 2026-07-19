@@ -9,7 +9,7 @@ ValueSet: EMSTransportMethodVS
 Id: vs-ems-transport-method
 Title: "EMS Transport Method"
 Description: "NEMSIS eDisposition.16 - The vehicle/mode used to transport the patient."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-method"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-method"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4216001 "Air Medical-Fixed Wing"
@@ -28,7 +28,7 @@ ValueSet: EMSTransportModeVS
 Id: vs-ems-transport-mode
 Title: "EMS Transport Mode from Scene"
 Description: "NEMSIS eDisposition.17 - Emergent vs non-emergent transport mode from scene."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-mode"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-mode"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4217001 "Emergent (Immediate Response)"
@@ -42,7 +42,7 @@ ValueSet: EMSAdditionalTransportModeVS
 Id: vs-ems-additional-transport-mode
 Title: "EMS Additional Transport Mode Descriptors"
 Description: "NEMSIS eDisposition.18 - Additional descriptors of transport mode (lights, sirens, speed, intersection navigation)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-additional-transport-mode"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-additional-transport-mode"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4218001 "Intersection Navigation-Against Normal Light Patterns"
@@ -62,7 +62,7 @@ ValueSet: EMSPatientAcuityVS
 Id: vs-ems-patient-acuity
 Title: "EMS Patient Acuity Upon Release"
 Description: "NEMSIS eDisposition.19 - The patient's acuity triage level at the time of EMS release."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-patient-acuity"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-acuity"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4219001 "Critical (Red)"
@@ -78,7 +78,7 @@ ValueSet: EMSDestinationReasonVS
 Id: vs-ems-destination-reason
 Title: "EMS Reason for Choosing Destination"
 Description: "NEMSIS eDisposition.20 - The reason the destination was chosen."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-destination-reason"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-destination-reason"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4220001 "Closest Facility"
@@ -99,7 +99,7 @@ ValueSet: EMSDestinationTypeVS
 Id: vs-ems-destination-type
 Title: "EMS Type of Destination"
 Description: "NEMSIS eDisposition.21 - The type of destination the patient was transported to."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-destination-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-destination-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4221001 "Home"
@@ -129,7 +129,7 @@ ValueSet: EMSHospitalDestinationVS
 Id: vs-ems-hospital-destination
 Title: "EMS Hospital In-Patient Destination"
 Description: "NEMSIS eDisposition.22 - The specific in-hospital unit or bed type the patient was delivered to."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-hospital-destination"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-destination"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4222001 "Hospital-Burn"
@@ -166,7 +166,7 @@ ValueSet: EMSHospitalCapabilityVS
 Id: vs-ems-hospital-capability
 Title: "EMS Hospital Capability"
 Description: "NEMSIS eDisposition.23 - Specialty capabilities of the receiving facility."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-hospital-capability"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-capability"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#9908001 "Behavioral Health"
@@ -197,7 +197,7 @@ ValueSet: EMSPreArrivalAlertVS
 Id: vs-ems-pre-arrival-alert
 Title: "EMS Destination Team Pre-Arrival Alert"
 Description: "NEMSIS eDisposition.24 - Whether and what type of pre-arrival alert was given to the receiving facility."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-pre-arrival-alert"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pre-arrival-alert"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4224001 "No"
@@ -217,7 +217,7 @@ ValueSet: EMSDispositionInstructionsVS
 Id: vs-ems-disposition-instructions
 Title: "EMS Disposition Instructions Provided"
 Description: "NEMSIS eDisposition.26 - Instructions provided to the patient at disposition."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-disposition-instructions"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-disposition-instructions"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4226001 "Contact 911 or see your Doctor if problem returns"
@@ -235,7 +235,7 @@ ValueSet: EMSUnitDispositionVS
 Id: vs-ems-unit-disposition
 Title: "EMS Unit Disposition"
 Description: "NEMSIS eDisposition.27 - Whether/how the unit made patient contact."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-unit-disposition"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-disposition"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4227001 "Patient Contact Made"
@@ -251,7 +251,7 @@ ValueSet: EMSPatientEvalCareVS
 Id: vs-ems-patient-eval-care
 Title: "EMS Patient Evaluation/Care"
 Description: "NEMSIS eDisposition.28 - What evaluation and care was provided to the patient."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-patient-eval-care"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-eval-care"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4228001 "Patient Evaluated and Care Provided"
@@ -266,7 +266,7 @@ ValueSet: EMSCrewDispositionVS
 Id: vs-ems-crew-disposition
 Title: "EMS Crew Disposition"
 Description: "NEMSIS eDisposition.29 - What the crew did during the response."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-crew-disposition"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-disposition"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4229001 "Initiated and Continued Primary Care"
@@ -283,7 +283,7 @@ ValueSet: EMSTransportDispositionVS
 Id: vs-ems-transport-disposition
 Title: "EMS Transport Disposition"
 Description: "NEMSIS eDisposition.30 - Whether/how the patient was transported."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-disposition"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-disposition"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4230001 "Transport by This EMS Unit (This Crew Only)"
@@ -300,7 +300,7 @@ ValueSet: EMSReasonForRefusalVS
 Id: vs-ems-reason-for-refusal
 Title: "EMS Reason for Refusal/Release"
 Description: "NEMSIS eDisposition.31 - Reason documented when patient refused care or was released."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-reason-for-refusal"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-reason-for-refusal"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4231001 "Against Medical Advice"
@@ -319,7 +319,7 @@ ValueSet: EMSLevelOfCareVS
 Id: vs-ems-level-of-care
 Title: "EMS Level of Care Provided per Protocol"
 Description: "NEMSIS eDisposition.32 - The level of care (BLS, ALS, Critical Care, etc.) authorized by protocol."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-level-of-care"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-level-of-care"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#4232001 "BLS - All Levels"

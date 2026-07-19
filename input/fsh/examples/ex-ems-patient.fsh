@@ -10,7 +10,7 @@ Title: "Example EMS Patient — MVA Victim"
 Description: "Example patient demonstrating the EMSPatient profile. 45-year-old male involved in a motor vehicle accident."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-patient"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"
 
 // US Core Patient requires at least one identifier
 * identifier[0].system = "http://example.org/ems/patients"

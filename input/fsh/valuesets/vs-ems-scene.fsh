@@ -9,7 +9,7 @@ ValueSet: EMSCrewRoleVS
 Id: vs-ems-crew-role
 Title: "EMS Crew Member Response Role"
 Description: "NEMSIS eCrew.03 - The role of the crew member during the EMS response."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-crew-role"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-role"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#2403001 "Driver/Pilot-Response"
@@ -26,7 +26,7 @@ ValueSet: EMSMCITriageClassVS
 Id: vs-ems-mci-triage-class
 Title: "EMS MCI Triage Classification"
 Description: "NEMSIS eScene.08 - START/JumpSTART triage classification for MCI patient."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-mci-triage-class"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-mci-triage-class"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#2708001 "Red - Immediate"
@@ -41,7 +41,7 @@ ValueSet: EMSSituationOrganSystemVS
 Id: vs-ems-situation-organ-system
 Title: "EMS Chief Complaint Organ System"
 Description: "NEMSIS eSituation.08 - The organ system involved in the patient's chief complaint."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-situation-organ-system"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-situation-organ-system"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#2808001 "Behavioral/Psychiatric"
@@ -62,7 +62,7 @@ ValueSet: EMSInitialAcuityVS
 Id: vs-ems-initial-acuity
 Title: "EMS Initial Patient Acuity"
 Description: "NEMSIS eSituation.13 - Patient acuity at initial EMS contact."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-initial-acuity"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-initial-acuity"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#2813001 "Critical (Red)"
@@ -77,7 +77,7 @@ ValueSet: EMSTransferReasonVS
 Id: vs-ems-transfer-reason
 Title: "EMS Reason for Interfacility Transfer"
 Description: "NEMSIS eSituation.20 - The clinical reason for an interfacility transfer or transport."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transfer-reason"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transfer-reason"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#2820001 "Cardiac Specialty"

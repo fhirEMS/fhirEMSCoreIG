@@ -8,7 +8,7 @@ Extension: EMSPrimaryPaymentMethod
 Id: ext-ems-primary-payment-method
 Title: "EMS Primary Payment Method"
 Description: "NEMSIS ePayment.01. Primary method of payment for the EMS response."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-primary-payment-method"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-primary-payment-method"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only CodeableConcept
@@ -19,7 +19,7 @@ Extension: EMSResponseUrgency
 Id: ext-ems-response-urgency
 Title: "EMS Response Urgency"
 Description: "NEMSIS ePayment.40. Whether the EMS response was immediate or non-immediate."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-response-urgency"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-urgency"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only CodeableConcept
@@ -30,7 +30,7 @@ Extension: EMSTransportAssessment
 Id: ext-ems-transport-assessment
 Title: "EMS Patient Transport Assessment"
 Description: "NEMSIS ePayment.41. Physical assessment of the patient justifying ambulance transport. Repeating."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-transport-assessment"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only CodeableConcept
@@ -41,7 +41,7 @@ Extension: EMSAmbulanceTransportReason
 Id: ext-ems-ambulance-transport-reason
 Title: "EMS Ambulance Transport Reason"
 Description: "NEMSIS ePayment.44. CMS ambulance transport reason code (A–E)."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-ambulance-transport-reason"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-transport-reason"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only CodeableConcept
@@ -52,7 +52,7 @@ Extension: EMSAmbulanceConditions
 Id: ext-ems-ambulance-conditions
 Title: "EMS Ambulance Conditions Indicator"
 Description: "NEMSIS ePayment.47. CMS conditions indicators justifying ambulance necessity. Repeating."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-ambulance-conditions"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only CodeableConcept
@@ -63,7 +63,7 @@ Extension: EMSMileageToClosest
 Id: ext-ems-mileage-to-closest
 Title: "EMS Mileage to Closest Hospital"
 Description: "NEMSIS ePayment.48. Distance in miles to the closest appropriate hospital facility."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-mileage-to-closest"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-mileage-to-closest"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only Quantity
@@ -75,7 +75,7 @@ Extension: EMSALSAssessment
 Id: ext-ems-als-assessment
 Title: "EMS ALS Assessment Performed and Warranted"
 Description: "NEMSIS ePayment.49. Whether an ALS assessment was performed and warranted."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-als-assessment"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-als-assessment"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only boolean
@@ -85,7 +85,7 @@ Extension: EMSCMSServiceLevel
 Id: ext-ems-cms-service-level
 Title: "EMS CMS Service Level"
 Description: "NEMSIS ePayment.50. The CMS ambulance service level determining the base rate for billing."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-cms-service-level"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-cms-service-level"
 * ^context[+].type = #element
 * ^context[=].expression = "Claim"
 * value[x] only CodeableConcept
@@ -96,7 +96,7 @@ Extension: EMSPayerType
 Id: ext-ems-payer-type
 Title: "EMS Payer Type"
 Description: "NEMSIS ePayment.57. X12 payer type code for the insurance company."
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ext-ems-payer-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-payer-type"
 * ^context[+].type = #element
 * ^context[=].expression = "Coverage"
 * value[x] only CodeableConcept

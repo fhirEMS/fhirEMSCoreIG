@@ -10,7 +10,7 @@ Title: "Example EMS Scene Location — MVA on I-15"
 Description: "Example scene location demonstrating the EMSLocationScene profile. Motor vehicle accident on Interstate 15 northbound near Murrieta, California."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-location-scene"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"
 
 * status = #active
 * name = "Interstate 15 NB mm 58.4"

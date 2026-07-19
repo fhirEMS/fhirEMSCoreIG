@@ -8,7 +8,7 @@ ValueSet: EMSPaymentMethodVS
 Id: vs-ems-payment-method
 Title: "EMS Primary Payment Method VS"
 Description: "Primary method of payment for the EMS response (ePayment.01)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-payment-method"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payment-method"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#2601001 "Insurance"
@@ -29,7 +29,7 @@ ValueSet: EMSInsuranceBillingPriorityVS
 Id: vs-ems-insurance-billing-priority
 Title: "EMS Insurance Billing Priority VS"
 Description: "Insurance company billing priority (ePayment.11)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-insurance-billing-priority"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insurance-billing-priority"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#2611001 "Other"
@@ -51,7 +51,7 @@ ValueSet: EMSInsuredRelationshipVS
 Id: vs-ems-insured-relationship
 Title: "EMS Insured Relationship VS"
 Description: "Patient's relationship to the insured (ePayment.22)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-insured-relationship"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insured-relationship"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#2622001 "Self"
@@ -69,7 +69,7 @@ ValueSet: EMSResponseUrgencyVS
 Id: vs-ems-response-urgency
 Title: "EMS Response Urgency VS"
 Description: "Urgency of the EMS response for billing purposes (ePayment.40)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-urgency"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-urgency"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#2640001 "Immediate"
@@ -80,7 +80,7 @@ ValueSet: EMSPatientTransportAssessmentVS
 Id: vs-ems-patient-transport-assessment
 Title: "EMS Patient Transport Assessment VS"
 Description: "Patient's physical condition that necessitated ambulance transport (ePayment.41)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-patient-transport-assessment"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-transport-assessment"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#2641001 "Unable to sit without assistance"
@@ -92,7 +92,7 @@ ValueSet: EMSAmbulanceTransportReasonVS
 Id: vs-ems-ambulance-transport-reason
 Title: "EMS Ambulance Transport Reason VS"
 Description: "CMS ambulance transport reason code (ePayment.44)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-ambulance-transport-reason"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-transport-reason"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#A "Patient was transported to the nearest facility for care of symptoms, complaints, or both"
@@ -106,7 +106,7 @@ ValueSet: EMSAmbulanceConditionsVS
 Id: vs-ems-ambulance-conditions
 Title: "EMS Ambulance Conditions Indicator VS"
 Description: "CMS ambulance conditions indicators justifying medical necessity (ePayment.47)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-ambulance-conditions"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-conditions"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#01 "Patient was admitted to a hospital"
@@ -123,7 +123,7 @@ ValueSet: EMSCMSServiceLevelVS
 Id: vs-ems-cms-service-level
 Title: "EMS CMS Service Level VS"
 Description: "CMS ambulance service level for billing (ePayment.50)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-cms-service-level"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cms-service-level"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payment#2650001 "ALS, Level 1"
@@ -141,7 +141,7 @@ ValueSet: EMSPayerTypeVS
 Id: vs-ems-payer-type
 Title: "EMS Payer Type VS"
 Description: "X12 payer type codes for the insurance company (ePayment.57)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-payer-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payer-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-payer-type#11 "Other Non-Federal Programs"

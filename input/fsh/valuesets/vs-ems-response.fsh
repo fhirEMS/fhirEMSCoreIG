@@ -9,7 +9,7 @@ ValueSet: EMSResponseTypeVS
 Id: vs-ems-response-type
 Title: "EMS Response Type (ValueSet)"
 Description: "NEMSIS eResponse.05 - The type of EMS response."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2205001 "Emergency Response (Primary Response Area)"
@@ -37,7 +37,7 @@ ValueSet: EMSUnitTypeVS
 Id: vs-ems-unit-type
 Title: "EMS Unit Type (ValueSet)"
 Description: "NEMSIS eResponse.07 - The type of EMS vehicle/unit."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-unit-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2207011 "Air Transport-Helicopter"
@@ -56,7 +56,7 @@ ValueSet: EMSDispatchDelayVS
 Id: vs-ems-dispatch-delay
 Title: "EMS Type of Dispatch Delay"
 Description: "NEMSIS eResponse.08 - Types of dispatch delay."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-dispatch-delay"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-delay"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2208001 "Caller (Uncooperative)"
@@ -78,7 +78,7 @@ ValueSet: EMSResponseDelayVS
 Id: vs-ems-response-delay
 Title: "EMS Type of Response Delay"
 Description: "NEMSIS eResponse.09 - Types of response delay en route to scene."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-delay"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-delay"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2209001 "Crowd"
@@ -106,7 +106,7 @@ ValueSet: EMSSceneDelayVS
 Id: vs-ems-scene-delay
 Title: "EMS Type of Scene Delay"
 Description: "NEMSIS eResponse.10 - Types of delay at the scene."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-scene-delay"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-scene-delay"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2210001 "Awaiting Air Unit"
@@ -136,7 +136,7 @@ ValueSet: EMSTransportDelayVS
 Id: vs-ems-transport-delay
 Title: "EMS Type of Transport Delay"
 Description: "NEMSIS eResponse.11 - Types of delay during transport."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-transport-delay"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-delay"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2211001 "Crowd"
@@ -162,7 +162,7 @@ ValueSet: EMSTurnAroundDelayVS
 Id: vs-ems-turn-around-delay
 Title: "EMS Type of Turn-Around Delay"
 Description: "NEMSIS eResponse.12 - Types of delay returning to service after transport."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-turn-around-delay"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-turn-around-delay"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2212001 "Clean-up"
@@ -189,7 +189,7 @@ ValueSet: EMSResponseModeVS
 Id: vs-ems-response-mode
 Title: "EMS Response Mode to Scene (ValueSet)"
 Description: "NEMSIS eResponse.23 - The response mode (emergent vs non-emergent) used en route to the scene."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-response-mode"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-mode"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2223001 "Emergent (Immediate Response)"
@@ -203,7 +203,7 @@ ValueSet: EMSAdditionalResponseModeVS
 Id: vs-ems-additional-response-mode
 Title: "EMS Additional Response Mode Descriptors (ValueSet)"
 Description: "NEMSIS eResponse.24 - Additional descriptors of response mode (lights, sirens, speed, intersection navigation)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-additional-response-mode"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-additional-response-mode"
 * ^status = #active
 * ^experimental = true
 * $nemsis-encounter-cs#2224001 "Intersection Navigation-Against Normal Light Patterns"

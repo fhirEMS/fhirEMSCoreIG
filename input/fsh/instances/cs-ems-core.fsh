@@ -11,7 +11,7 @@ Title: "EMS Core Server Capability Statement"
 Description: "Defines the FHIR server capabilities required to implement the fhirEMSCore Implementation Guide. An EMS PCR repository SHALL support the profiles, interactions, and search parameters specified herein."
 Usage: #definition
 
-* url = "http://hl7.org/fhir/us/emscore/CapabilityStatement/CapabilityStatement-ems-core-server"
+* url = "https://fhirems.github.io/fhirEMSCoreIG/CapabilityStatement/CapabilityStatement-ems-core-server"
 * name = "EMSCoreServerCapabilityStatement"
 * title = "EMS Core Server Capability Statement"
 * status = #draft
@@ -24,7 +24,7 @@ Usage: #definition
 * format[+] = #json
 * format[+] = #xml
 
-* implementationGuide[+] = "http://hl7.org/fhir/us/emscore/ImplementationGuide/hl7.fhir.us.emscore"
+* implementationGuide[+] = "https://fhirems.github.io/fhirEMSCoreIG/ImplementationGuide/fhirems.emscore"
 * implementationGuide[+] = "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"
 
 // ── REST Server ───────────────────────────────────────────────
@@ -33,7 +33,7 @@ Usage: #definition
 
 // ── Composition (PCR) ─────────────────────────────────────────
 * rest[=].resource[+].type = #Composition
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-composition"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -45,7 +45,7 @@ Usage: #definition
 
 // ── Patient ───────────────────────────────────────────────────
 * rest[=].resource[+].type = #Patient
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-patient"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -59,7 +59,7 @@ Usage: #definition
 
 // ── Encounter ─────────────────────────────────────────────────
 * rest[=].resource[+].type = #Encounter
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-encounter"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -73,8 +73,8 @@ Usage: #definition
 
 // ── Condition ─────────────────────────────────────────────────
 * rest[=].resource[+].type = #Condition
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-condition"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-condition-arrest"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-arrest"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -86,13 +86,13 @@ Usage: #definition
 
 // ── Observation ───────────────────────────────────────────────
 * rest[=].resource[+].type = #Observation
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-vitalsigns"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-bp"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-exam"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-airway"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-labs"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-outcome"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-exam"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-labs"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -110,7 +110,7 @@ Usage: #definition
 
 // ── Procedure ─────────────────────────────────────────────────
 * rest[=].resource[+].type = #Procedure
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-procedure"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -122,7 +122,7 @@ Usage: #definition
 
 // ── MedicationAdministration ──────────────────────────────────
 * rest[=].resource[+].type = #MedicationAdministration
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-medicationadministration"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -134,7 +134,7 @@ Usage: #definition
 
 // ── AllergyIntolerance ────────────────────────────────────────
 * rest[=].resource[+].type = #AllergyIntolerance
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-allergyintolerance"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-allergyintolerance"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -144,8 +144,8 @@ Usage: #definition
 
 // ── Location ──────────────────────────────────────────────────
 * rest[=].resource[+].type = #Location
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-location-scene"
-* rest[=].resource[=].supportedProfile[+] = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-location-destination"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"
+* rest[=].resource[=].supportedProfile[+] = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-destination"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -155,7 +155,7 @@ Usage: #definition
 
 // ── Organization ──────────────────────────────────────────────
 * rest[=].resource[+].type = #Organization
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-organization"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-organization"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -165,7 +165,7 @@ Usage: #definition
 
 // ── Practitioner ─────────────────────────────────────────────
 * rest[=].resource[+].type = #Practitioner
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-practitioner"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitioner"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -177,7 +177,7 @@ Usage: #definition
 
 // ── PractitionerRole ──────────────────────────────────────────
 * rest[=].resource[+].type = #PractitionerRole
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-practitionerrole"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -187,7 +187,7 @@ Usage: #definition
 
 // ── Device ────────────────────────────────────────────────────
 * rest[=].resource[+].type = #Device
-* rest[=].resource[=].supportedProfile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-device-vehicle"
+* rest[=].resource[=].supportedProfile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-device-vehicle"
 * rest[=].resource[=].interaction[+].code = #read
 * rest[=].resource[=].interaction[+].code = #create
 * rest[=].resource[=].interaction[+].code = #update

@@ -209,7 +209,7 @@ No `CapabilityStatement` has been defined for this IG. A production IG requires 
 
 ### ⚠ Terminology Servers
 
-NEMSIS-defined code systems in this IG use the canonical URL pattern `http://hl7.org/fhir/us/emscore/CodeSystem/nemsis-*`. These are **not registered** with any public terminology server. FHIR validators and terminology operations will not be able to resolve them without a local terminology server configured to serve these code systems.
+NEMSIS-defined code systems in this IG use the canonical URL pattern `https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-*`. These are **not registered** with any public terminology server. FHIR validators and terminology operations will not be able to resolve them without a local terminology server configured to serve these code systems.
 
 ### ⚠ Value Set Expansion
 

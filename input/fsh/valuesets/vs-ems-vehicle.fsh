@@ -9,7 +9,7 @@ ValueSet: EMSVehicleTypeVS
 Id: vs-ems-vehicle-type
 Title: "EMS Vehicle Type"
 Description: "NEMSIS dVehicle.04 - The type of EMS vehicle."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-vehicle-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vehicle-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#1404001 "Ambulance"

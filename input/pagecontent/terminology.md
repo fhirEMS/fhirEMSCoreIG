@@ -16,7 +16,7 @@ fhirEMSCore uses standard code systems wherever the NEMSIS data allows, and defi
 4. **ICD-10-CM** (`http://hl7.org/fhir/sid/icd-10-cm`) — diagnoses for claims
 5. **CPT** (`http://www.ama-assn.org/go/cpt`) — procedures (when SNOMED not available)
 6. **UCUM** (`http://unitsofmeasure.org`) — units of measure (always)
-7. **NUBC UB-04** (`http://www.nubc.org/patient-discharge`) — patient discharge disposition
+7. **NUBC UB-04** (`https://www.nubc.org/CodeSystem/PatDischargeStatus`) — patient discharge disposition
 8. **NEMSIS CodeSystems** (`cs-nemsis-*`) — EMS-specific coded elements with no standard equivalent
 
 ---

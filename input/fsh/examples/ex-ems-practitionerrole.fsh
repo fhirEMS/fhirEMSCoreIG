@@ -10,7 +10,7 @@ Title: "Example EMS PractitionerRole — Paramedic Crew Member"
 Description: "Example PractitionerRole demonstrating the EMSPractitionerRole profile. Paramedic Maria Ramirez serving as Primary Patient Caregiver on MVA response."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-practitionerrole"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole"
 
 // eCrew.01 - Crew Member ID
 * identifier[0].system = "http://example.org/ems/crew"
@@ -25,7 +25,7 @@ Usage: #example
 * organization = Reference(ex-ems-organization-agency)
 
 // eCrew.03 - Crew Member Response Role → Primary Patient Caregiver-At Scene
-* code[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-codes"
+* code[0].coding[0].system = "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"
 * code[0].coding[0].code = #2403011
 * code[0].coding[0].display = "Primary Patient Caregiver-At Scene"
 

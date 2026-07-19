@@ -10,7 +10,7 @@ Title: "Example EMS Lab — Blood Glucose"
 Description: "Example lab observation demonstrating the EMSObservationLabs profile. Point-of-care blood glucose obtained at the scene during MVA response."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-labs"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-labs"
 
 * status = #final
 

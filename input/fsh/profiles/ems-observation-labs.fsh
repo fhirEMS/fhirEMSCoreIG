@@ -10,7 +10,7 @@ Title: "EMS Lab and Imaging Observation"
 Description: "Documents lab results and imaging study results obtained during an EMS response. Covers NEMSIS eLabs.01–08. All eLabs elements are Optional. Lab results (eLabs.03/04) are represented as individual Observations; imaging study results (eLabs.05/06) are represented similarly with appropriate LOINC codes."
 Parent: $us-core-observation
 
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-labs"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-labs"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

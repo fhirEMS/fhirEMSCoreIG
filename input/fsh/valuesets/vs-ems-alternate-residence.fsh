@@ -7,7 +7,7 @@ ValueSet: EMSAlternateResidenceVS
 Id: vs-ems-alternate-residence
 Title: "EMS Alternate Home Residence"
 Description: "NEMSIS ePatient.22 - Codes describing a patient's alternate home residence situation when a standard home address is not applicable."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-alternate-residence"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-alternate-residence"
 * ^status = #active
 * ^experimental = false
 

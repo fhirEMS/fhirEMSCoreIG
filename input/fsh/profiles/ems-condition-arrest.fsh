@@ -10,7 +10,7 @@ Title: "EMS Cardiac Arrest Condition"
 Description: "Documents the presence (or absence) of cardiac arrest during an EMS response event. Follows NDR-009: the arrest status, etiology, resuscitation data, ROSC, and outcome are captured in the ext-ems-arrest-context extension. The FHIR Condition.code uses SNOMED CT 410429000 (Cardiac arrest)."
 Parent: $us-core-condition
 
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-condition-arrest"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-arrest"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

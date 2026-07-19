@@ -10,7 +10,7 @@ Title: "EMS Coverage (Insurance)"
 Description: "Represents insurance coverage information collected during an EMS response. Derived from FHIR R4 Coverage base resource (no US Core profile exists). Maps to NEMSIS ePayment insurance elements (ePayment.09–22, .57–60): insurance company identity, address, billing priority, policy and group IDs, insured person demographics, and payer type."
 Parent: Coverage
 
-* ^url = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-coverage"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-coverage"
 * ^version = "0.1.0"
 * ^status = #active
 * ^experimental = false

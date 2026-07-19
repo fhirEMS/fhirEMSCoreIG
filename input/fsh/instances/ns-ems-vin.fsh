@@ -16,5 +16,5 @@ Usage: #definition
 * publisher = "fhirEMSCore"
 * description = "Identifier system for the Vehicle Identification Number (VIN) as used in EMS vehicle (dVehicle.02) records within the fhirEMSCore Implementation Guide."
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "http://hl7.org/fhir/us/emscore/identifier/vin"
+* uniqueId[0].value = "https://fhirems.github.io/fhirEMSCoreIG/identifier/vin"
 * uniqueId[0].preferred = true

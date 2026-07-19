@@ -11,7 +11,7 @@ Title: "Example GCS Eye Opening Sub-observation"
 Description: "GCS Eye Opening sub-observation (LOINC 9267-6). Score = 4 (Spontaneous)."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs"
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[0].coding[0].code = #exam
@@ -29,7 +29,7 @@ Title: "Example GCS Verbal Response Sub-observation"
 Description: "GCS Verbal Response sub-observation (LOINC 9270-0). Score = 4 (Confused)."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs"
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[0].coding[0].code = #exam
@@ -48,7 +48,7 @@ Title: "Example GCS Motor Response Sub-observation"
 Description: "GCS Motor Response sub-observation (LOINC 9268-4). Score = 5 (Localizes pain)."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs"
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[0].coding[0].code = #exam
@@ -67,7 +67,7 @@ Title: "Example EMS GCS Panel Observation"
 Description: "Example GCS total panel observation demonstrating the EMSObservationGCS profile. GCS 13 (E4V4M5) on MVA patient."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-gcs"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs"
 * status = #final
 
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"

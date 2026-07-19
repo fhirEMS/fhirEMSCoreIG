@@ -30,7 +30,7 @@ US FHIR Usage rules require that all profiles on Device derive from the core US 
 Value sets published by HL7 SHALL conform to the ShareableValueSet profile
 
 # NUBC patient discharge CodeSystem not available in FHIR tx server; external code system.
-No definition could be found for URL value 'http://www.nubc.org/patient-discharge'
+No definition could be found for URL value 'https://www.nubc.org/CodeSystem/PatDischargeStatus'
 
 # HCPCS release code set (CMS billing codes) not available in FHIR tx server; external.
 No definition could be found for URL value 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets'
@@ -39,7 +39,7 @@ No definition could be found for URL value 'https://www.cms.gov/Medicare/Coding/
 A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType'
 
 # VIN identifier system uses IG-local URI; not in FHIR global registry.
-No definition could be found for URL value 'http://hl7.org/fhir/us/emscore/identifier/vin'
+No definition could be found for URL value 'https://fhirems.github.io/fhirEMSCoreIG/identifier/vin'
 
 # IG Publisher internal tool extension; not a real constraint violation.
 No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'

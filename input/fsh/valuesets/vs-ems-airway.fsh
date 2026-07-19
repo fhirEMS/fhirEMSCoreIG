@@ -8,7 +8,7 @@ ValueSet: EMSAirwayIndicationsVS
 Id: vs-ems-airway-indications
 Title: "EMS Airway Indications VS"
 Description: "Indications for airway management intervention (eAirway.01)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-indications"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-indications"
 * ^status = #active
 * ^experimental = true
 * $nemsis-airway#4001001 "Adequate Airway Reflexes/Effort, Potential for Compromise"
@@ -24,7 +24,7 @@ ValueSet: EMSAirwayDeviceVS
 Id: vs-ems-airway-device
 Title: "EMS Airway Device VS"
 Description: "Type of airway device being confirmed (eAirway.03)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-device"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-device"
 * ^status = #active
 * ^experimental = true
 * $nemsis-airway#4003001 "Cricothyrotomy Tube"
@@ -41,7 +41,7 @@ ValueSet: EMSAirwayConfirmationMethodVS
 Id: vs-ems-airway-confirmation-method
 Title: "EMS Airway Confirmation Method VS"
 Description: "Method used to confirm airway device placement (eAirway.04)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-confirmation-method"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-confirmation-method"
 * ^status = #active
 * ^experimental = true
 * $nemsis-airway#4004001 "Auscultation"
@@ -61,7 +61,7 @@ ValueSet: EMSAirwayConfirmingPersonVS
 Id: vs-ems-airway-confirming-person
 Title: "EMS Airway Confirming Person VS"
 Description: "Type of individual who confirmed the airway device placement (eAirway.06)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-confirming-person"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-confirming-person"
 * ^status = #active
 * ^experimental = true
 * $nemsis-airway#4006001 "Another Person on the Same Crew"
@@ -75,7 +75,7 @@ ValueSet: EMSAirwayComplicationsVS
 Id: vs-ems-airway-complications
 Title: "EMS Airway Complications VS"
 Description: "Complications encountered during airway management (eAirway.08)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-complications"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-complications"
 * ^status = #active
 * ^experimental = true
 * $nemsis-airway#4008001 "Adverse Event from Facilitating Drugs"
@@ -96,7 +96,7 @@ ValueSet: EMSAirwayFailureReasonsVS
 Id: vs-ems-airway-failure-reasons
 Title: "EMS Airway Failure Reasons VS"
 Description: "Reasons for failed airway management (eAirway.09)."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-airway-failure-reasons"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-failure-reasons"
 * ^status = #active
 * ^experimental = true
 * $nemsis-airway#4009001 "Difficult Patient Airway Anatomy"

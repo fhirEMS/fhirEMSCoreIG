@@ -9,7 +9,7 @@ ValueSet: EMSNotValueVS
 Id: vs-ems-not-value
 Title: "NEMSIS Not Value (NV)"
 Description: "NEMSIS Not Value codes used when a data element is Not Applicable, Not Recorded, or Not Reporting."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-not-value"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-not-value"
 * ^status = #active
 * ^experimental = true
 * $nemsis-nv#NV.NotApplicable   "Not Applicable"
@@ -22,7 +22,7 @@ ValueSet: EMSPertinentNegativeVS
 Id: vs-ems-pertinent-negative
 Title: "NEMSIS Pertinent Negative (PN)"
 Description: "NEMSIS Pertinent Negative codes indicating a clinically significant documented absence."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-pertinent-negative"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pertinent-negative"
 * ^status = #active
 * ^experimental = true
 * $nemsis-pn#PN.Approximate              "Approximate"
@@ -46,7 +46,7 @@ ValueSet: EMSCertificationLevelVS
 Id: vs-ems-certification-level
 Title: "EMS Certification Level (ValueSet)"
 Description: "NEMSIS eCrew.02 - The certification/licensure level of the EMS crew member."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-certification-level"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-certification-level"
 * ^status = #active
 * ^experimental = true
 * $nemsis-personnel-level#9925001 "Advanced Emergency Medical Technician (AEMT)"
@@ -72,7 +72,7 @@ ValueSet: EMSBarrierToPatientCareVS
 Id: vs-ems-barrier-to-patient-care
 Title: "EMS Barriers to Patient Care"
 Description: "NEMSIS eHistory.01 - Barriers encountered during patient assessment or care."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-barrier-to-patient-care"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-barrier-to-patient-care"
 * ^status = #active
 * ^experimental = true
 * $nemsis-cs#3101001 "Cultural, Custom, Religious"
@@ -102,7 +102,7 @@ ValueSet: EMSIncidentTypeVS
 Id: vs-ems-incident-type
 Title: "EMS Chief Complaint Anatomic Location (ValueSet)"
 Description: "NEMSIS eSituation.07 - The anatomic location of the patient's chief complaint."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-incident-type"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-incident-type"
 * ^status = #active
 * ^experimental = true
 * $nemsis-situation#2807001 "Abdomen"
@@ -121,7 +121,7 @@ ValueSet: EMSProtocolUsedVS
 Id: vs-ems-protocol-used
 Title: "EMS Protocols Used"
 Description: "NEMSIS eProtocols.01 - EMS protocol(s) followed during the response."
-* ^url = "http://hl7.org/fhir/us/emscore/ValueSet/vs-ems-protocol-used"
+* ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-protocol-used"
 * ^status = #active
 * ^experimental = true
 * $nemsis-procedures#9914001 "Airway"

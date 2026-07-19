@@ -10,7 +10,7 @@ Title: "Example EMS Organization — Riverside County EMS"
 Description: "Example EMS agency organization demonstrating the EMSOrganization profile. Represents a county EMS agency with NPI, state agency ID, and service configuration."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-organization"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-organization"
 
 // Identifiers
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -31,7 +31,7 @@ Usage: #example
 * address.postalCode = "92501"
 
 // dAgency type
-* type[0].coding[0].system = "http://hl7.org/fhir/us/emscore/CodeSystem/cs-nemsis-codes"
+* type[0].coding[0].system = "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"
 * type[0].coding[0].code = #9912003
 * type[0].coding[0].display = "Governmental, Non-Fire"
 

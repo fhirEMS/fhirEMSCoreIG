@@ -10,7 +10,7 @@ Title: "Example EMS Encounter — MVA 911 Response"
 Description: "Example EMS encounter demonstrating the EMSEncounter profile. 911 response to a motor vehicle accident with ALS transport to a Level I trauma center."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-encounter"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter"
 
 // Identifiers
 * identifier[incidentNumber].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"

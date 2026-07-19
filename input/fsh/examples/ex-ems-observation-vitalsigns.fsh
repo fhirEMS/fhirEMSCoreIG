@@ -11,7 +11,7 @@ Title: "Example EMS Vital Sign — Heart Rate"
 Description: "Heart rate observation (LOINC 8867-4). 110 bpm at scene — tachycardic MVA patient."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-vitalsigns"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
 * status = #final
 * category[VSCat].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[VSCat].coding[0].code = #vital-signs
@@ -38,7 +38,7 @@ Title: "Example EMS Vital Sign — SpO2"
 Description: "Pulse oximetry observation (LOINC 59408-5). 94% on room air at scene."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-vitalsigns"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
 * status = #final
 * category[VSCat].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[VSCat].coding[0].code = #vital-signs
@@ -66,7 +66,7 @@ Title: "Example EMS Vital Sign — Respiratory Rate"
 Description: "Respiratory rate observation (LOINC 9279-1). 22 breaths/min — slightly tachypneic."
 Usage: #example
 
-* meta.profile = "http://hl7.org/fhir/us/emscore/StructureDefinition/ems-observation-vitalsigns"
+* meta.profile = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
 * status = #final
 * category[VSCat].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[VSCat].coding[0].code = #vital-signs
