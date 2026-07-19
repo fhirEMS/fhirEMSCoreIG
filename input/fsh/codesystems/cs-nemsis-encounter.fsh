@@ -11,6 +11,8 @@ Description: "Enumeration codes from the NEMSIS eResponse, eDispatch, and eDispo
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.1.4"
 * ^caseSensitive = true
 * ^content = #complete
 

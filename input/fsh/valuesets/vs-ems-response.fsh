@@ -12,6 +12,8 @@ Description: "NEMSIS eResponse.05 - The type of EMS response."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.107"
 * $nemsis-encounter-cs#2205001 "Emergency Response (Primary Response Area)"
 * $nemsis-encounter-cs#2205003 "Emergency Response (Intercept)"
 * $nemsis-encounter-cs#2205009 "Emergency Response (Mutual Aid)"
@@ -40,6 +42,8 @@ Description: "NEMSIS eResponse.07 - The type of EMS vehicle/unit."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.127"
 * $nemsis-encounter-cs#2207011 "Air Transport-Helicopter"
 * $nemsis-encounter-cs#2207013 "Air Transport-Fixed Wing"
 * $nemsis-encounter-cs#2207015 "Ground Transport (ALS Equipped)"
@@ -59,6 +63,8 @@ Description: "NEMSIS eResponse.08 - Types of dispatch delay."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-delay"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.42"
 * $nemsis-encounter-cs#2208001 "Caller (Uncooperative)"
 * $nemsis-encounter-cs#2208003 "Diversion/Failure (of previous unit)"
 * $nemsis-encounter-cs#2208005 "High Call Volume"
@@ -81,6 +87,8 @@ Description: "NEMSIS eResponse.09 - Types of response delay en route to scene."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-delay"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.105"
 * $nemsis-encounter-cs#2209001 "Crowd"
 * $nemsis-encounter-cs#2209003 "Directions/Unable to Locate"
 * $nemsis-encounter-cs#2209005 "Distance"
@@ -109,6 +117,8 @@ Description: "NEMSIS eResponse.10 - Types of delay at the scene."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-scene-delay"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.112"
 * $nemsis-encounter-cs#2210001 "Awaiting Air Unit"
 * $nemsis-encounter-cs#2210003 "Awaiting Ground Unit"
 * $nemsis-encounter-cs#2210005 "Crowd"
@@ -139,6 +149,8 @@ Description: "NEMSIS eResponse.11 - Types of delay during transport."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-delay"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.119"
 * $nemsis-encounter-cs#2211001 "Crowd"
 * $nemsis-encounter-cs#2211003 "Directions/Unable to Locate"
 * $nemsis-encounter-cs#2211005 "Distance"
@@ -165,6 +177,8 @@ Description: "NEMSIS eResponse.12 - Types of delay returning to service after tr
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-turn-around-delay"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.125"
 * $nemsis-encounter-cs#2212001 "Clean-up"
 * $nemsis-encounter-cs#2212003 "Decontamination"
 * $nemsis-encounter-cs#2212005 "Distance"
@@ -192,6 +206,8 @@ Description: "NEMSIS eResponse.23 - The response mode (emergent vs non-emergent)
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-mode"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.106"
 * $nemsis-encounter-cs#2223001 "Emergent (Immediate Response)"
 * $nemsis-encounter-cs#2223003 "Emergent Downgraded to Non-Emergent"
 * $nemsis-encounter-cs#2223005 "Non-Emergent"
@@ -206,6 +222,8 @@ Description: "NEMSIS eResponse.24 - Additional descriptors of response mode (lig
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-additional-response-mode"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.2"
 * $nemsis-encounter-cs#2224001 "Intersection Navigation-Against Normal Light Patterns"
 * $nemsis-encounter-cs#2224003 "Intersection Navigation-With Automated Light Changing Technology"
 * $nemsis-encounter-cs#2224005 "Intersection Navigation-With Normal Light Patterns"

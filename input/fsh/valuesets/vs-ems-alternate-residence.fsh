@@ -10,6 +10,8 @@ Description: "NEMSIS ePatient.22 - Codes describing a patient's alternate home r
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-alternate-residence"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.18"
 
 * $nemsis-patient-cs#2522001 "Homeless"
 * $nemsis-patient-cs#2522003 "Migrant Worker"

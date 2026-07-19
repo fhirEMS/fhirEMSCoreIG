@@ -12,6 +12,8 @@ Description: "NEMSIS eDispatch.02 - Whether Emergency Medical Dispatch pre-arriv
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-emd-performed"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.48"
 * $nemsis-encounter-cs#2302001 "No"
 * $nemsis-encounter-cs#2302003 "Yes, With Pre-Arrival Instructions"
 * $nemsis-encounter-cs#2302005 "Yes, Without Pre-Arrival Instructions"
@@ -26,6 +28,8 @@ Description: "NEMSIS eDispatch.05 - The acuity level assigned at time of dispatc
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-priority"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.43"
 * $nemsis-encounter-cs#2305001 "Critical"
 * $nemsis-encounter-cs#2305003 "Emergent"
 * $nemsis-encounter-cs#2305005 "Lower Acuity"
@@ -42,4 +46,6 @@ Description: "NEMSIS eDispatch.01 - The dispatch complaint or reason for the EMS
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-reason"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.44"
 * include codes from system $snomed where concept is-a #404684003

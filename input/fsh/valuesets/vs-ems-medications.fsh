@@ -13,6 +13,8 @@ Description: "NEMSIS eMedications.10 / eProcedures.10 - Level/role of the health
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-caregiver-level"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.31"
 * $nemsis-medications#9905001 "Advanced Emergency Medical Technician (AEMT)"
 * $nemsis-medications#9905002 "Emergency Medical Technician - Intermediate"
 * $nemsis-medications#9905003 "Emergency Medical Responder (EMR)"
@@ -44,6 +46,8 @@ Description: "NEMSIS eMedications.07 / eProcedures.08 - Patient response to medi
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-clinical-response"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.33"
 * $nemsis-medications#9916001 "Improved"
 * $nemsis-medications#9916003 "Unchanged"
 * $nemsis-medications#9916005 "Worse"
@@ -57,6 +61,8 @@ Description: "NEMSIS eMedications.11 / eProcedures.11 - How the medication admin
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-authorization-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.25"
 * $nemsis-medications#9918001 "On-Line (Remote Verbal Order)"
 * $nemsis-medications#9918003 "On-Scene"
 * $nemsis-medications#9918005 "Protocol (Standing Order)"
@@ -71,6 +77,8 @@ Description: "NEMSIS eMedications.04 - The route by which the medication was adm
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-route"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.87"
 * $nemsis-medications#9927001 "Blow-By"
 * $nemsis-medications#9927003 "Buccal"
 * $nemsis-medications#9927005 "Endotracheal Tube (ET)"
@@ -119,6 +127,8 @@ Description: "NEMSIS eMedications.06 - Units of measurement for medication dosag
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-dosage-units"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.86"
 * $nemsis-medications#3706001 "Grams (gms)"
 * $nemsis-medications#3706003 "Inches (in)"
 * $nemsis-medications#3706005 "International Units (IU)"
@@ -156,6 +166,8 @@ Description: "NEMSIS eMedications.08 - Adverse reactions or complications occurr
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-complication"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.85"
 * $nemsis-medications#3708001 "Altered Mental Status"
 * $nemsis-medications#3708003 "Apnea"
 * $nemsis-medications#3708005 "Bleeding"
@@ -188,6 +200,8 @@ Description: "NEMSIS eProcedures.07 - Adverse events or complications occurring 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-procedure-complication"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.99"
 * $nemsis-medications#3907001 "Altered Mental Status"
 * $nemsis-medications#3907003 "Apnea"
 * $nemsis-medications#3907005 "Bleeding"
@@ -222,6 +236,8 @@ Description: "NEMSIS eProcedures.13 - Anatomical site of vascular access (IV/IO 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vascular-access-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.128"
 * $nemsis-medications#3913001 "Antecubital-Left"
 * $nemsis-medications#3913003 "Antecubital-Right"
 * $nemsis-medications#3913005 "External Jugular-Left"
@@ -273,6 +289,8 @@ Description: "NEMSIS eProcedures.14 - Technique used for airway device placement
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-technique"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.17"
 * $nemsis-medications#3914001 "Blind Digital Technique"
 * $nemsis-medications#3914003 "Cross Finger Technique"
 * $nemsis-medications#3914005 "Direct Laryngoscopy"

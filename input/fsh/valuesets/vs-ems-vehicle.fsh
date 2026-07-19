@@ -12,6 +12,8 @@ Description: "NEMSIS dVehicle.04 - The type of EMS vehicle."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vehicle-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.129"
 * $nemsis-cs#1404001 "Ambulance"
 * $nemsis-cs#1404003 "ATV"
 * $nemsis-cs#1404005 "Bicycle"

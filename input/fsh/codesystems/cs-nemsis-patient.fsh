@@ -16,6 +16,8 @@ Description: """
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.1.17"
 
 // ── ePatient.25 - Sex ────────────────────────────────────────
 * #9919001 "Female"

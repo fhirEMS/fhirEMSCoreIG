@@ -11,6 +11,8 @@ Description: "NEMSIS Not Value (NV) codes used when a data element cannot be rec
 * ^version = "3.5.1.251001CP2"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.1.9"
 * ^caseSensitive = true
 * ^content = #complete
 

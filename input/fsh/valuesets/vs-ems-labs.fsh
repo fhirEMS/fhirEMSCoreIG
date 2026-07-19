@@ -11,6 +11,8 @@ Description: "Type of lab result obtained (eLabs.03)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-lab-result-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.81"
 * $nemsis-labs#3403001 "Alanine Transaminase"
 * $nemsis-labs#3403003 "Alcohol-Blood"
 * $nemsis-labs#3403005 "Alcohol-Breath"
@@ -97,6 +99,8 @@ Description: "Type of imaging study obtained (eLabs.05)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-imaging-study-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.76"
 * $nemsis-labs#3405001 "Computed Tomography (CT) Scan"
 * $nemsis-labs#3405003 "Magnetic Resonance Imaging (MRI)"
 * $nemsis-labs#3405005 "Other"

@@ -11,6 +11,8 @@ Description: "The mechanism of the event which caused the injury (eInjury.02)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-mechanism-of-injury"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.84"
 * $nemsis-injury#2902001 "Blunt"
 * $nemsis-injury#2902003 "Burn"
 * $nemsis-injury#2902005 "Other"
@@ -24,6 +26,8 @@ Description: "Trauma triage criteria indicating high risk for serious injury —
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-high-risk"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.123"
 * $nemsis-injury#2903001 "Amputation proximal to wrist or ankle"
 * $nemsis-injury#2903003 "Crushed, degloved, mangled, or pulseless extremity"
 * $nemsis-injury#2903005 "Chest wall instability, deformity, or suspected flail chest"
@@ -54,6 +58,8 @@ Description: "Trauma triage criteria indicating moderate risk for serious injury
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-moderate-risk"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.124"
 * $nemsis-injury#2904001 "Pedestrian/bicycle rider thrown, run over, or with significant impact"
 * $nemsis-injury#2904003 "Fall Adults: > 20 ft. (one story is equal to 10 ft.) (DEPRECATED)"
 * $nemsis-injury#2904005 "Fall Children: > 10 ft. or 2-3 times the height of the child (DEPRECATED)"
@@ -83,6 +89,8 @@ Description: "The seat row location of the patient in the vehicle at the time of
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-seat-row-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.113"
 * $nemsis-injury#2906001 "Front Seat-Left Side (or motorcycle driver)"
 * $nemsis-injury#2906003 "Front Seat-Middle"
 * $nemsis-injury#2906005 "Front Seat-Right Side"
@@ -107,6 +115,8 @@ Description: "Occupant safety equipment in use by the patient at the time of the
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-safety-equipment"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.111"
 * $nemsis-injury#2907001 "Child Booster Seat"
 * $nemsis-injury#2907003 "Eye Protection"
 * $nemsis-injury#2907005 "Helmet Worn"
@@ -130,6 +140,8 @@ Description: "Airbag deployment status observed at the crash (eInjury.08)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airbag-deployment"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.10"
 * $nemsis-injury#2908001 "Airbag Deployed Front"
 * $nemsis-injury#2908003 "Airbag Deployed Side"
 * $nemsis-injury#2908005 "Airbag Deployed Other (knee, air belt, etc.)"
@@ -144,6 +156,8 @@ Description: "OSHA-defined personal protective equipment in use by the patient a
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-osha-ppe"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.90"
 * $nemsis-injury#2910001 "Eye and Face Protection"
 * $nemsis-injury#2910003 "Foot Protection"
 * $nemsis-injury#2910005 "Head Protection"
@@ -160,6 +174,8 @@ Description: "Automated Collision Notification (ACN) vehicle seat location of th
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acn-seat-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.1"
 * $nemsis-injury#2926001 "Driver Front Seat"
 * $nemsis-injury#2926003 "Front Row Middle Seat"
 * $nemsis-injury#2926005 "Passenger Front Seat"

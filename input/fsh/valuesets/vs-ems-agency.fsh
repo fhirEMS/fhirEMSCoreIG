@@ -13,6 +13,8 @@ Description: "NEMSIS dAgency.09/10 - The type(s) of EMS service provided by the 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.9"
 * $nemsis-cs#9920001 "911 Response (Scene) with Transport Capability"
 * $nemsis-cs#9920003 "911 Response (Scene) without Transport Capability"
 * $nemsis-cs#9920005 "Air Medical"
@@ -32,6 +34,8 @@ Description: "NEMSIS dAgency.11 - The highest level of care the EMS agency is li
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-level-of-service"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.6"
 * $nemsis-cs#9917001 "Advanced Emergency Medical Technician (AEMT)"
 * $nemsis-cs#9917002 "Emergency Medical Technician - Intermediate"
 * $nemsis-cs#9917003 "Emergency Medical Responder (EMR)"
@@ -54,6 +58,8 @@ Description: "NEMSIS dAgency.12 - Whether the EMS agency is staffed by volunteer
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-status"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.7"
 * $nemsis-cs#1016001 "Mixed"
 * $nemsis-cs#1016003 "Non-Volunteer"
 * $nemsis-cs#1016005 "Volunteer"
@@ -67,6 +73,8 @@ Description: "NEMSIS dAgency.13 - The organizational type of the EMS agency."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.8"
 * $nemsis-cs#9912001 "Fire Department"
 * $nemsis-cs#9912003 "Governmental, Non-Fire"
 * $nemsis-cs#9912005 "Hospital"

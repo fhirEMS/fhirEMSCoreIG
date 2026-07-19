@@ -11,6 +11,8 @@ Description: "Indications for airway management intervention (eAirway.01)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-indications"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.16"
 * $nemsis-airway#4001001 "Adequate Airway Reflexes/Effort, Potential for Compromise"
 * $nemsis-airway#4001003 "Airway Reflex Compromised"
 * $nemsis-airway#4001005 "Apnea or Agonal Respirations"
@@ -27,6 +29,8 @@ Description: "Type of airway device being confirmed (eAirway.03)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-device"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.14"
 * $nemsis-airway#4003001 "Cricothyrotomy Tube"
 * $nemsis-airway#4003003 "Endotracheal Tube"
 * $nemsis-airway#4003005 "Other-Invasive Airway"
@@ -44,6 +48,8 @@ Description: "Method used to confirm airway device placement (eAirway.04)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-confirmation-method"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.12"
 * $nemsis-airway#4004001 "Auscultation"
 * $nemsis-airway#4004003 "Bulb/Syringe Aspiration"
 * $nemsis-airway#4004005 "Colorimetric ETCO2"
@@ -64,6 +70,8 @@ Description: "Type of individual who confirmed the airway device placement (eAir
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-confirming-person"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.13"
 * $nemsis-airway#4006001 "Another Person on the Same Crew"
 * $nemsis-airway#4006003 "Other"
 * $nemsis-airway#4006005 "Person Performing Intubation"
@@ -78,6 +86,8 @@ Description: "Complications encountered during airway management (eAirway.08)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-complications"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.11"
 * $nemsis-airway#4008001 "Adverse Event from Facilitating Drugs"
 * $nemsis-airway#4008003 "Bradycardia (<50)"
 * $nemsis-airway#4008005 "Cardiac Arrest"
@@ -99,6 +109,8 @@ Description: "Reasons for failed airway management (eAirway.09)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-failure-reasons"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.15"
 * $nemsis-airway#4009001 "Difficult Patient Airway Anatomy"
 * $nemsis-airway#4009003 "ETI Attempted, but Arrived At Destination Facility Before Accomplished"
 * $nemsis-airway#4009005 "Facial or Oral Trauma"

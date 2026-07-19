@@ -21,6 +21,19 @@ fhirEMSCore uses standard code systems wherever the NEMSIS data allows, and defi
 
 ---
 
+## OID Identifiers
+
+Every CodeSystem and ValueSet in this guide carries an OID identifier under the project's
+self-assigned ISO UUID-arc root `2.25.219926138944530828037824748808947630693`
+(sub-arc `.1.n` for CodeSystems, `.2.n` for ValueSets). These OIDs support OID-based
+terminology infrastructure (e.g., CDA, IHE profiles) and travel with the resources when
+loaded onto a terminology server.
+
+Note that NEMSIS itself holds the registered OID arc `2.16.840.1.113883.17.3` (with
+per-element code system OIDs under `.5`, e.g. `.5.71` for EMS condition codes, as cited by
+LOINC). Those OIDs identify NEMSIS's own constructs from the HL7 CDA EMS Run Report IG and
+are not reused here, since this guide groups NEMSIS codes by section rather than per element.
+
 ## NEMSIS Code Systems
 
 Each NEMSIS section with coded elements has a corresponding FHIR CodeSystem resource.

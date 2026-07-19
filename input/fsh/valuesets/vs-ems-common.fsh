@@ -12,6 +12,8 @@ Description: "NEMSIS Not Value codes used when a data element is Not Applicable,
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-not-value"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.89"
 * $nemsis-nv#NV.NotApplicable   "Not Applicable"
 * $nemsis-nv#NV.NotRecorded     "Not Recorded"
 * $nemsis-nv#NV.NotReporting    "Not Reporting"
@@ -25,6 +27,8 @@ Description: "NEMSIS Pertinent Negative codes indicating a clinically significan
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pertinent-negative"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.97"
 * $nemsis-pn#PN.Approximate              "Approximate"
 * $nemsis-pn#PN.ContraindicationNoted    "Contraindication Noted"
 * $nemsis-pn#PN.DeniedByOrder            "Denied By Order"
@@ -49,6 +53,8 @@ Description: "NEMSIS eCrew.02 - The certification/licensure level of the EMS cre
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-certification-level"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.32"
 * $nemsis-personnel-level#9925001 "Advanced Emergency Medical Technician (AEMT)"
 * $nemsis-personnel-level#9925002 "Emergency Medical Technician - Intermediate"
 * $nemsis-personnel-level#9925003 "Emergency Medical Responder (EMR)"
@@ -75,6 +81,8 @@ Description: "NEMSIS eHistory.01 - Barriers encountered during patient assessmen
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-barrier-to-patient-care"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.27"
 * $nemsis-cs#3101001 "Cultural, Custom, Religious"
 * $nemsis-cs#3101003 "Developmentally Impaired"
 * $nemsis-cs#3101005 "Hearing Impaired"
@@ -105,6 +113,8 @@ Description: "NEMSIS eSituation.07 - The anatomic location of the patient's chie
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-incident-type"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.77"
 * $nemsis-situation#2807001 "Abdomen"
 * $nemsis-situation#2807003 "Back"
 * $nemsis-situation#2807005 "Chest"
@@ -124,6 +134,8 @@ Description: "NEMSIS eProtocols.01 - EMS protocol(s) followed during the respons
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-protocol-used"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.100"
 * $nemsis-procedures#9914001 "Airway"
 * $nemsis-procedures#9914003 "Airway-Failed"
 * $nemsis-procedures#9914005 "Airway-Obstruction/Foreign Body"

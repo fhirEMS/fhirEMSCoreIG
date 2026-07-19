@@ -11,6 +11,8 @@ Description: "NEMSIS eExam.02 - Broselow-Luten color zone for length-based weigh
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-length-tape"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.62"
 * $nemsis-exam#3502001 "Blue"
 * $nemsis-exam#3502003 "Green"
 * $nemsis-exam#3502005 "Grey"
@@ -29,6 +31,8 @@ Description: "NEMSIS eExam.04 - Physical findings on skin assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-skin"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.69"
 * $nemsis-exam#3504001 "Clammy"
 * $nemsis-exam#3504003 "Cold"
 * $nemsis-exam#3504005 "Cyanotic"
@@ -58,6 +62,8 @@ Description: "NEMSIS eExam.05 - Physical findings on head assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-head"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.60"
 * $nemsis-exam#3505001 "Abrasion"
 * $nemsis-exam#3505003 "Avulsion"
 * $nemsis-exam#3505005 "Bleeding Controlled"
@@ -90,6 +96,8 @@ Description: "NEMSIS eExam.06 - Physical findings on face assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-face"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.59"
 * $nemsis-exam#3506001 "Abrasion"
 * $nemsis-exam#3506003 "Asymmetric Smile or Droop"
 * $nemsis-exam#3506005 "Avulsion"
@@ -122,6 +130,8 @@ Description: "NEMSIS eExam.07 - Physical findings on neck assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-neck"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.66"
 * $nemsis-exam#3507001 "Abrasion"
 * $nemsis-exam#3507003 "Avulsion"
 * $nemsis-exam#3507005 "Bleeding Controlled"
@@ -157,6 +167,8 @@ Description: "NEMSIS eExam.09 - Physical findings on heart/cardiac auscultation.
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-heart"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.61"
 * $nemsis-exam#3509001 "Clicks"
 * $nemsis-exam#3509003 "Heart Sounds Decreased"
 * $nemsis-exam#3509005 "Murmur-Diastolic"
@@ -177,6 +189,8 @@ Description: "NEMSIS eExam.10 - Location qualifier for abdominal assessment find
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-abd-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.49"
 * $nemsis-exam#3510001 "Generalized"
 * $nemsis-exam#3510003 "Left Lower Quadrant"
 * $nemsis-exam#3510005 "Left Upper Quadrant"
@@ -193,6 +207,8 @@ Description: "NEMSIS eExam.11 - Physical findings on abdominal assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-abdomen"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.50"
 * $nemsis-exam#3511001 "Abrasion"
 * $nemsis-exam#3511003 "Avulsion"
 * $nemsis-exam#3511005 "Bleeding Controlled"
@@ -231,6 +247,8 @@ Description: "NEMSIS eExam.12 - Physical findings on pelvic/genitourinary assess
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-pelvic-gu"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.68"
 * $nemsis-exam#3512001 "Abrasion"
 * $nemsis-exam#3512003 "Avulsion"
 * $nemsis-exam#3512005 "Bleeding Controlled"
@@ -269,6 +287,8 @@ Description: "NEMSIS eExam.13 - Location qualifier for back and spine assessment
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.51"
 * $nemsis-exam#3513001 "Back-General"
 * $nemsis-exam#3513003 "Cervical-Left"
 * $nemsis-exam#3513005 "Cervical-Midline"
@@ -293,6 +313,8 @@ Description: "NEMSIS eExam.14 - Physical findings on back and spine assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-spine"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.52"
 * $nemsis-exam#3514001 "Abrasion"
 * $nemsis-exam#3514003 "Avulsion"
 * $nemsis-exam#3514005 "Bleeding Controlled"
@@ -326,6 +348,8 @@ Description: "NEMSIS eExam.15 - Location qualifier for extremity assessment find
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremity-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.56"
 * $nemsis-exam#3515001 "Ankle-Left"
 * $nemsis-exam#3515003 "Ankle-Right"
 * $nemsis-exam#3515005 "Arm-Upper-Left"
@@ -391,6 +415,8 @@ Description: "NEMSIS eExam.16 - Physical findings on extremities assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremities"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.55"
 * $nemsis-exam#3516001 "Abrasion"
 * $nemsis-exam#3516003 "Amputation-Acute"
 * $nemsis-exam#3516005 "Amputation-Previous"
@@ -445,6 +471,8 @@ Description: "NEMSIS eExam.17 - Laterality qualifier for eye assessment findings
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.58"
 * $nemsis-exam#3517001 "Bilateral"
 * $nemsis-exam#3517003 "Left"
 * $nemsis-exam#3517005 "Right"
@@ -457,6 +485,8 @@ Description: "NEMSIS eExam.18 - Physical findings on eye assessment, including p
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.57"
 * $nemsis-exam#3518001 "1-mm"
 * $nemsis-exam#3518003 "2-mm"
 * $nemsis-exam#3518005 "3-mm"
@@ -498,6 +528,8 @@ Description: "NEMSIS eExam.19 - Mental status and cognitive assessment findings.
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-mental-status"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.65"
 * $nemsis-exam#3519001 "Combative"
 * $nemsis-exam#3519003 "Confused"
 * $nemsis-exam#3519005 "Hallucinations"
@@ -531,6 +563,8 @@ Description: "NEMSIS eExam.20 - Neurological assessment findings including stren
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-neurological"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.67"
 * $nemsis-exam#3520001 "Aphagia"
 * $nemsis-exam#3520003 "Aphasia"
 * $nemsis-exam#3520005 "Cerebellar Function-Abnormal"
@@ -566,6 +600,8 @@ Description: "NEMSIS eExam.21 - Whether stroke/CVA symptoms resolved prior to or
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-stroke-resolved"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.70"
 * $nemsis-exam#3521001 "No"
 * $nemsis-exam#3521003 "Yes-Resolved Prior to EMS Arrival"
 * $nemsis-exam#3521005 "Yes-Resolved in EMS Presence"
@@ -578,6 +614,8 @@ Description: "NEMSIS eExam.22 - Laterality qualifier for lung assessment finding
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-lung-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.64"
 * $nemsis-exam#3522001 "Left"
 * $nemsis-exam#3522003 "Right"
 * $nemsis-exam#3522005 "Bilateral"
@@ -590,6 +628,8 @@ Description: "NEMSIS eExam.23 - Auscultatory and respiratory findings on lung as
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-lung"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.63"
 * $nemsis-exam#3523001 "Breath Sounds-Absent"
 * $nemsis-exam#3523003 "Breath Sounds-Decreased"
 * $nemsis-exam#3523005 "Breath Sounds-Equal"
@@ -615,6 +655,8 @@ Description: "NEMSIS eExam.24 - Location qualifier for chest assessment findings
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-chest-location"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.54"
 * $nemsis-exam#3524001 "Left - Anterior"
 * $nemsis-exam#3524005 "Right - Anterior"
 * $nemsis-exam#3524009 "General - Anterior"
@@ -630,6 +672,8 @@ Description: "NEMSIS eExam.25 - Physical findings on chest assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-chest"
 * ^status = #active
 * ^experimental = false
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.25.219926138944530828037824748808947630693.2.53"
 * $nemsis-exam#3525001 "Abrasion"
 * $nemsis-exam#3525003 "Avulsion"
 * $nemsis-exam#3525005 "Accessory Muscles Used with Breathing"

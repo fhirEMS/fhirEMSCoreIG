@@ -319,6 +319,32 @@ NEMSIS uses repeating XML groups for multiple sets of vitals, medications, proce
 
 ---
 
+## OID Registry
+
+Every CodeSystem and ValueSet carries an OID identifier under the project's self-assigned
+ISO UUID-arc root (no registration required; globally unique per ISO 2.25 rules):
+
+```
+Root: 2.25.219926138944530828037824748808947630693   (from UUID a5743bd0-caef-4920-9058-52509b340265)
+├── .1.<n>  CodeSystems  (17 assigned, alphabetical by Id; next: .1.18)
+└── .2.<n>  ValueSets    (129 assigned, alphabetical by Id; next: .2.130)
+```
+
+Rules:
+- New CodeSystems/ValueSets MUST take the next sequential number in their arc and add
+  `* ^identifier.system = "urn:ietf:rfc:3986"` + `* ^identifier.value = "urn:oid:<root>.<arc>.<n>"`
+  immediately after the `^experimental` line. Update the "next" counters above.
+- Never renumber existing assignments.
+- NEMSIS's own registered OID arc is `2.16.840.1.113883.17.3` (.5 = per-element code systems
+  from the 2013 CDA EMS Run Report IG, e.g. .5.71 EMS condition code; .10 = CDA templates;
+  .11 = value sets). Do NOT assign under it — it belongs to NEMSIS. Cross-referencing a NEMSIS
+  .5.x OID as an additional identifier is permitted only where an artifact matches a NEMSIS
+  element list 1:1.
+- If the project later registers an HL7 OID root (~$250, hl7.org/oid), swap the root and
+  renumber in one commit before any external system depends on these OIDs.
+
+---
+
 ## Terminology Strategy
 
 ### Standard code systems to prefer (in order)
@@ -468,7 +494,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 
 **v0.1.0 Phase 3 — FULLY CLEAN BUILD as of 2026-07-19: SUSHI 0/0; IG Publisher 2.2.11: 0 errors, 0 warnings, 0 broken links.**
 **The former 211-error "practical minimum" was eliminated by replacing the unregistered HL7 canonical/package-id with the project-owned namespace (see Project Identity), switching ig.ini to fhir.base.template, fixing the uv.extensions dependsOn URI, adding the hl7.fhir.uv.tools.r4 dependency, and correcting the NUBC discharge system URL.**
-**The 400 warnings were cleared by: flipping all ValueSets to experimental=false (202), adding example coverage for all 22 previously-unexampled extensions, pin-canonicals: pin-multiples (13), performers on 4 example Observations, including expansion-params.xhtml in terminology.md, and justified ignoreWarnings suppressions (146 OID — no registered OID root; licensed HCPCS/NUBC systems; US Core CLIA/NAIC slice inheritance; NV/PN Element context per NDR-001/002; pinned dependency versions).**
+**The 400 warnings were cleared by: flipping all ValueSets to experimental=false (202), adding example coverage for all 22 previously-unexampled extensions, pin-canonicals: pin-multiples (13), performers on 4 example Observations, including expansion-params.xhtml in terminology.md, real OID assignment (146 — see OID Registry below), and justified ignoreWarnings suppressions (licensed HCPCS/NUBC systems; US Core CLIA/NAIC slice inheritance; NV/PN Element context per NDR-001/002; pinned dependency versions).**
 **Totals: 24 profiles, 45 extensions, 129 ValueSets, 17 CodeSystems, 35 examples (including NamingSystem). eInjury profile added 2026-07-19.**
 
 ### Profiles
