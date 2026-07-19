@@ -358,8 +358,8 @@ ISO UUID-arc root (no registration required; globally unique per ISO 2.25 rules)
 
 ```
 Root: 2.25.219926138944530828037824748808947630693   (from UUID a5743bd0-caef-4920-9058-52509b340265)
-├── .1.<n>  CodeSystems  (17 assigned, alphabetical by Id; next: .1.18)
-└── .2.<n>  ValueSets    (129 assigned, alphabetical by Id; next: .2.130)
+├── .1.<n>  CodeSystems  (18 assigned; .1.1–.1.17 alphabetical, .1.18 cs-nemsis-history; next: .1.19)
+└── .2.<n>  ValueSets    (136 assigned; .2.1–.2.129 alphabetical, .2.130–.2.136 vs-ems-history.fsh; next: .2.137)
 ```
 
 Rules:
@@ -489,6 +489,11 @@ Extensions are grouped by section in `input/fsh/extensions/`. When adding new ex
 | `ext-ems-injury-context` | Condition | eInjury.02–.10 (9 sub-extensions) |
 | `ext-ems-acn-incident` | Condition | eInjury.11–.29 ACN telematics (19 sub-extensions) |
 
+### ems-extensions-history.fsh
+| Extension ID | Context | NEMSIS Source |
+|---|---|---|
+| `ext-ems-history-context` | Condition | eHistory.02–.05, .09–.11, .16–.19 (9 sub-extensions) |
+
 ---
 
 ## Build Commands
@@ -527,7 +532,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 **v0.1.0 Phase 3 — FULLY CLEAN BUILD as of 2026-07-19: SUSHI 0/0; IG Publisher 2.2.11: 0 errors, 0 warnings, 0 broken links.**
 **The former 211-error "practical minimum" was eliminated by replacing the unregistered HL7 canonical/package-id with the project-owned namespace (see Project Identity), switching ig.ini to fhir.base.template, fixing the uv.extensions dependsOn URI, adding the hl7.fhir.uv.tools.r4 dependency, and correcting the NUBC discharge system URL.**
 **The 400 warnings were cleared by: flipping all ValueSets to experimental=false (202), adding example coverage for all 22 previously-unexampled extensions, pin-canonicals: pin-multiples (13), performers on 4 example Observations, including expansion-params.xhtml in terminology.md, real OID assignment (146 — see OID Registry below), and justified ignoreWarnings suppressions (licensed HCPCS/NUBC systems; US Core CLIA/NAIC slice inheritance; NV/PN Element context per NDR-001/002; pinned dependency versions).**
-**Totals: 24 profiles, 45 extensions, 129 ValueSets, 17 CodeSystems, 35 examples (including NamingSystem). eInjury profile added 2026-07-19.**
+**Totals: 26 profiles, 46 extensions, 136 ValueSets, 18 CodeSystems, 37 examples (including NamingSystem). eInjury + eHistory (problems/home meds) profiles added 2026-07-19.**
 
 ### Profiles
 
@@ -541,6 +546,8 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `ems-condition` | `profiles/ems-condition.fsh` | eSituation/eHistory | Complete |
 | `ems-condition-arrest` | `profiles/ems-condition-arrest.fsh` | eArrest (NDR-009) | Complete |
 | `ems-condition-injury` | `profiles/ems-condition-injury.fsh` | eInjury | Complete |
+| `ems-condition-problems` | `profiles/ems-condition-problems.fsh` | eHistory.08 + context | Complete |
+| `ems-medicationstatement` | `profiles/ems-medicationstatement.fsh` | eHistory.12–.15, .20 | Complete |
 | `ems-observation-vitalsigns` | `profiles/ems-observation-vitalsigns.fsh` | eVitals (parent) | Complete |
 | `ems-observation-bp` | `profiles/ems-observation-bp.fsh` | eVitals.06/07 | Complete |
 | `ems-observation-gcs` | `profiles/ems-observation-gcs.fsh` | eVitals.19–23 | Complete |
@@ -570,6 +577,8 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `ex-ems-condition` | EMSCondition | Closed head injury (MVA) |
 | `ex-ems-condition-arrest` | EMSConditionArrest | VF cardiac arrest, bystander CPR, ROSC |
 | `ex-ems-condition-injury` | EMSConditionInjury | MVA driver, blunt trauma, ACN telematics |
+| `ex-ems-condition-problems` | EMSConditionProblems | Hypertension history (I10), eHistory context |
+| `ex-ems-medicationstatement` | EMSMedicationStatement | Lisinopril 10 mg oral daily (home med) |
 | `ex-ems-observation-bp` | EMSObservationBloodPressure | BP 92/60 mmHg |
 | `ex-ems-heart-rate` | EMSObservationVitalSigns | HR 110 bpm |
 | `ex-ems-spo2` | EMSObservationVitalSigns | SpO2 94% |
@@ -628,6 +637,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `cs-nemsis-airway.fsh` | `nemsis-airway` | eAirway codes (4001xxx–4009xxx) |
 | `cs-nemsis-labs.fsh` | `nemsis-labs` | eLabs codes (3403xxx, 3405xxx) |
 | `cs-nemsis-injury.fsh` | `nemsis-injury` | eInjury codes (2902xxx–2926xxx): mechanism, trauma triage, safety equipment, ACN |
+| `cs-nemsis-history.fsh` | `cs-nemsis-history` | eHistory codes (3105/3109/9910/3114/3117/3118/3120): advance directives, history source, immunization, home-med units/frequency, alcohol/drug, pregnancy |
 | `cs-nemsis-encounter.fsh` | `nemsis-encounter` | eResponse, eDispatch, eDisposition, eOutcome component codes (~295 codes) |
 | `cs-nemsis-exam.fsh` | `nemsis-exam` | eExam physical exam findings (457 codes) |
 | `cs-nemsis-medications.fsh` | `nemsis-medications` | eMedications/eProcedures (~200 codes) |
@@ -642,8 +652,9 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `cs-nemsis-vitals.fsh` | `nemsis-vitals` | eVitals enumeration codes (~110) |
 
 ### Remaining Work (Phase 3+)
-- **Narrative page content**: `input/pagecontent/` stubs need real content
-- **eOther / eCustom**: Low priority
+- **eOther / eCustom**: last unprofiled EMS sections (signatures/attachments; Questionnaire per NDR-010). Low priority
+- **fhirEngine live load test**: run the documented install-ig sequence and verify $validate-code
+- (Narrative pagecontent is no longer a stub — all 16 pages have real content as of 2026-07-19)
 
 ---
 

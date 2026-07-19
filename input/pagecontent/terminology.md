@@ -52,6 +52,7 @@ Each NEMSIS section with coded elements has a corresponding FHIR CodeSystem reso
 | `cs-nemsis-airway` | `.../CodeSystem/nemsis-airway` | eAirway | ~50 |
 | `cs-nemsis-labs` | `.../CodeSystem/nemsis-labs` | eLabs | ~90 |
 | `cs-nemsis-injury` | `.../CodeSystem/cs-nemsis-injury` | eInjury | ~105 |
+| `cs-nemsis-history` | `.../CodeSystem/cs-nemsis-history` | eHistory | ~93 |
 | `cs-nemsis-payment` | `.../CodeSystem/nemsis-payment` | ePayment | ~60 |
 | `cs-nemsis-not-values` | `.../CodeSystem/nemsis-not-values` | All NV elements | 3 |
 | `cs-nemsis-pertinent-negative` | `.../CodeSystem/nemsis-pertinent-negative` | All PN elements | ~6 |

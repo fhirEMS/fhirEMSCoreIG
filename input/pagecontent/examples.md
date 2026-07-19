@@ -35,6 +35,8 @@ This scenario exercises the majority of fhirEMSCore profiles and demonstrates ho
 | `ex-ems-condition` | EMSCondition | Primary impression: chest pain (SNOMED 29857009), encounter-diagnosis category |
 | `ex-ems-condition-arrest` | EMSConditionArrest | Cardiac arrest (SNOMED 410429000); full EMSArrestContext extension: VF etiology, bystander CPR, ROSC prior to ED |
 | `ex-ems-condition-injury` | EMSConditionInjury | MVA driver injury (ICD-10-CM V89.2XXA); blunt mechanism, trauma triage criteria, restrained with airbag deployment, ACN telematics (delta-V 42 mph, PDOF 12) |
+| `ex-ems-condition-problems` | EMSConditionProblems | Hypertension history (ICD-10-CM I10); advance directives, history source, immunization, alcohol/drug indicators via EMSHistoryContext |
+| `ex-ems-medicationstatement` | EMSMedicationStatement | Lisinopril 10 mg oral daily (RxNorm 314076); NEMSIS route and frequency codes |
 
 ### Vital Signs
 

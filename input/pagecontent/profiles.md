@@ -45,6 +45,8 @@ These profiles represent the fundamental resources in an EMS Patient Care Report
 | EMSObservationOutcome | ems-observation-outcome | us-core-observation-clinical-result | eOutcome | ✅ | ED/hospital outcome panel |
 | EMSConditionArrest | ems-condition-arrest | us-core-condition-encounter-diagnosis | eArrest | ✅ | Cardiac arrest with full eArrest context extension |
 | EMSConditionInjury | ems-condition-injury | us-core-condition-encounter-diagnosis | eInjury | ✅ | Injury cause (ICD-10-CM), trauma triage criteria, collision and ACN telematics extensions |
+| EMSConditionProblems | ems-condition-problems | us-core-condition-problems-health-concerns | eHistory.08 + context | ✅ | Past medical history (ICD-10-CM) with eHistory context extension |
+| EMSMedicationStatement | ems-medicationstatement | MedicationStatement (R4 base) | eHistory.12–.15, .20 | ✅ | Home medications: RxNorm, dose, route, frequency |
 | EMSProcedure | ems-procedure | us-core-procedure | eProcedures | ✅ | SNOMED-coded EMS procedures |
 | EMSMedicationAdministration | ems-medicationadministration | MedicationAdministration (R4 base) | eMedications | ⚠ | No US Core parent — base R4 only; RxNorm coded |
 | EMSAllergyIntolerance | ems-allergyintolerance | us-core-allergyintolerance | eHistory.06 | ✅ | Medication and environmental allergies |
@@ -70,8 +72,6 @@ These profiles represent the fundamental resources in an EMS Patient Care Report
 | NEMSIS Section | Elements | Target Profile | Status | Planned |
 |---|---|---|---|---|
 | eOther | 22 | ems-observation-other | 🚧 Not started | v0.2.0 |
-| eHistory (past medical problems) | ~10 | ems-condition-problems | 🚧 Not started | v0.2.0 |
-| eHistory (home medications) | ~5 | ems-medicationstatement | 🚧 Not started | v0.2.0 |
 | eCustom elements | 9 | ems-questionnaire | 🚧 Not started | v0.2.0 |
 
 ---
@@ -135,7 +135,7 @@ A complete EMS PCR in fhirEMSCore follows this resource creation sequence:
 | ePatient | 25 | EMSPatient | Full |
 | eScene | 25 | EMSLocationScene | Full |
 | eSituation | 20 | EMSCondition + EMSEncounter | Full |
-| eHistory | 20 | EMSCondition + EMSAllergyIntolerance | Partial (medications future) |
+| eHistory | 20 | EMSConditionProblems + EMSMedicationStatement + EMSAllergyIntolerance | Full |
 | eVitals | 34 | EMSObservationVitalSigns / BP / GCS | Full |
 | eLabs | 8 | EMSObservationLabs | Full |
 | eExam | 24 | EMSObservationExam | Full |

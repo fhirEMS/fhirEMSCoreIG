@@ -147,8 +147,10 @@ groups:
       - StructureDefinition/ems-observation-outcome
       - StructureDefinition/ems-condition-arrest
       - StructureDefinition/ems-condition-injury
+      - StructureDefinition/ems-condition-problems
       - StructureDefinition/ems-procedure
       - StructureDefinition/ems-medicationadministration
+      - StructureDefinition/ems-medicationstatement
       - StructureDefinition/ems-allergyintolerance
 
   AgencyResources:
