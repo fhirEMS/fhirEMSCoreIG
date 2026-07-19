@@ -11,7 +11,7 @@ Description: "Documents an airway management event during an EMS response. NEMSI
 Parent: $us-core-observation
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

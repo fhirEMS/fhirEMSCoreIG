@@ -11,7 +11,7 @@ Description: "Documents an injury and its circumstances during an EMS response e
 Parent: $us-core-condition
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-injury"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

@@ -11,7 +11,7 @@ Description: "Records a signature event on the EMS Patient Care Report (eOther.1
 Parent: $us-core-provenance
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-provenance"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

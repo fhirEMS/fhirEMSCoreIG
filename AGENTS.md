@@ -18,7 +18,7 @@ Each profile generated must be compatible with FHIR R4, US Core 6.1.0 AND the NE
 | FHIR Version | R4 (4.0.1) |
 | US Core Version | 6.1.0 |
 | NEMSIS Version | 3.5.1.251001CP2 |
-| IG Version | 0.1.0 (Draft) |
+| IG Version | 0.2.0 (Draft) |
 | Language | FHIR Shorthand (FSH) / SUSHI |
 
 ---
@@ -358,8 +358,8 @@ ISO UUID-arc root (no registration required; globally unique per ISO 2.25 rules)
 
 ```
 Root: 2.25.219926138944530828037824748808947630693   (from UUID a5743bd0-caef-4920-9058-52509b340265)
-├── .1.<n>  CodeSystems  (19 assigned; .1.1–.1.17 alphabetical, .1.18 history, .1.19 other; next: .1.20)
-└── .2.<n>  ValueSets    (145 assigned; .2.1–.2.129 alphabetical, .2.130–.2.136 history, .2.137–.2.145 other; next: .2.146)
+├── .1.<n>  CodeSystems  (20 assigned; .1.1–.1.17 alphabetical, .1.18 history, .1.19 other, .1.20 demographics; next: .1.21)
+└── .2.<n>  ValueSets    (153 assigned; .2.1–.2.129 alphabetical, then history .130–.136, other .137–.145, demographics .146–.153; next: .2.154)
 ```
 
 Rules:
@@ -507,6 +507,13 @@ Extensions are grouped by section in `input/fsh/extensions/`. When adding new ex
 |---|---|---|
 | `ext-ems-custom-target` | QuestionnaireResponse.item | eCustomResults.03 |
 
+### ems-extensions-demographics.fsh
+| Extension ID | Context | NEMSIS Source |
+|---|---|---|
+| `ext-ems-medical-director` | Organization | dContact.13–.16 (4 sub-extensions) |
+| `ext-ems-agency-configuration` | Organization (repeating per state) | dConfiguration.01, .06–.17 (nested procedure/medication cert levels) |
+| `ext-ems-usng` | Location | dLocation.05 |
+
 ---
 
 ## Build Commands
@@ -545,7 +552,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 **v0.1.0 Phase 3 — FULLY CLEAN BUILD as of 2026-07-19: SUSHI 0/0; IG Publisher 2.2.11: 0 errors, 0 warnings, 0 broken links.**
 **The former 211-error "practical minimum" was eliminated by replacing the unregistered HL7 canonical/package-id with the project-owned namespace (see Project Identity), switching ig.ini to fhir.base.template, fixing the uv.extensions dependsOn URI, adding the hl7.fhir.uv.tools.r4 dependency, and correcting the NUBC discharge system URL.**
 **The 400 warnings were cleared by: flipping all ValueSets to experimental=false (202), adding example coverage for all 22 previously-unexampled extensions, pin-canonicals: pin-multiples (13), performers on 4 example Observations, including expansion-params.xhtml in terminology.md, real OID assignment (146 — see OID Registry below), and justified ignoreWarnings suppressions (licensed HCPCS/NUBC systems; US Core CLIA/NAIC slice inheritance; NV/PN Element context per NDR-001/002; pinned dependency versions).**
-**Totals: 30 profiles, 51 extensions, 145 ValueSets, 19 CodeSystems, 41 examples (including NamingSystem). eInjury, eHistory, eOther, and eCustom completed 2026-07-19 — ALL NEMSIS EMS dataset sections are now profiled.**
+**v0.2.0. Totals: 31 profiles, 54 extensions, 153 ValueSets, 20 CodeSystems, 42 examples (including NamingSystem). ALL NEMSIS EMS sections + DEM depth (dContact/dConfiguration/dLocation) profiled as of 2026-07-19.**
 
 ### Profiles
 
@@ -565,6 +572,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `ems-provenance` | `profiles/ems-provenance.fsh` | eOther.12–.21 | Complete |
 | `ems-questionnaire` | `profiles/ems-questionnaire.fsh` | eCustomConfiguration | Complete |
 | `ems-questionnaireresponse` | `profiles/ems-questionnaireresponse.fsh` | eCustomResults | Complete |
+| `ems-location-agency` | `profiles/ems-location-agency.fsh` | dLocation | Complete |
 | `ems-observation-vitalsigns` | `profiles/ems-observation-vitalsigns.fsh` | eVitals (parent) | Complete |
 | `ems-observation-bp` | `profiles/ems-observation-bp.fsh` | eVitals.06/07 | Complete |
 | `ems-observation-gcs` | `profiles/ems-observation-gcs.fsh` | eVitals.19–23 | Complete |
@@ -600,6 +608,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `ex-ems-provenance` | EMSProvenance | Transfer-of-care signature, signed |
 | `ex-ems-questionnaire` | EMSQuestionnaire | Agency custom element (decon) |
 | `ex-ems-questionnaireresponse` | EMSQuestionnaireResponse | Custom element answer with correlation |
+| `ex-ems-location-agency` | EMSLocationAgency | Fire Station 7, GPS + USNG |
 | `ex-ems-observation-bp` | EMSObservationBloodPressure | BP 92/60 mmHg |
 | `ex-ems-heart-rate` | EMSObservationVitalSigns | HR 110 bpm |
 | `ex-ems-spo2` | EMSObservationVitalSigns | SpO2 94% |
@@ -660,6 +669,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `cs-nemsis-injury.fsh` | `nemsis-injury` | eInjury codes (2902xxx–2926xxx): mechanism, trauma triage, safety equipment, ACN |
 | `cs-nemsis-history.fsh` | `cs-nemsis-history` | eHistory codes (3105/3109/9910/3114/3117/3118/3120): advance directives, history source, immunization, home-med units/frequency, alcohol/drug, pregnancy |
 | `cs-nemsis-other.fsh` | `cs-nemsis-other` | eOther codes (4502–4515): registry, crew PPE, work exposure, disaster, document type, signatures |
+| `cs-nemsis-demographics.fsh` | `cs-nemsis-demographics` | DEM codes (1101–1301): contact type, medical director, specialty/monitoring capability, location type |
 | `cs-nemsis-encounter.fsh` | `nemsis-encounter` | eResponse, eDispatch, eDisposition, eOutcome component codes (~295 codes) |
 | `cs-nemsis-exam.fsh` | `nemsis-exam` | eExam physical exam findings (457 codes) |
 | `cs-nemsis-medications.fsh` | `nemsis-medications` | eMedications/eProcedures (~200 codes) |
@@ -673,10 +683,10 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `cs-nemsis-situation.fsh` | `nemsis-situation` | eSituation.07 anatomic locations (9) |
 | `cs-nemsis-vitals.fsh` | `nemsis-vitals` | eVitals enumeration codes (~110) |
 
-### Remaining Work (Phase 3+)
-- **fhirEngine live load test**: run the documented install-ig sequence and verify $validate-code
-- **DEM dataset depth**: dConfiguration/dContact/dLocation elements are only partially mapped (agency/personnel/vehicle/facility covered)
-- **v0.2.0 release prep**: version bump, changes.md, gh-pages publish of the built IG
+### Remaining Work (v0.3.0+)
+- fhirEngine load test DONE (2026-07-19): 4 packages via stock install-ig, 6/6 $validate-code
+- v0.2.0 released 2026-07-19 (version bump, changelog, gh-pages publish)
+- Future: State dataset (47 elements), dConfiguration.02–.05 (state cert level definitions), clinical/NEMSIS domain expert review, HL7/NEMSIS engagement for formal standardization
 
 ---
 

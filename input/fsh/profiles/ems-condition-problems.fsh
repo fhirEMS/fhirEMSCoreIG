@@ -11,7 +11,7 @@ Description: "Documents the patient's pre-existing medical/surgical history (eHi
 Parent: $us-core-condition-ph
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-problems"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

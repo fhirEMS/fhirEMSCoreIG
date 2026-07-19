@@ -1,5 +1,27 @@
 # Change Log
 
+## Version 0.2.0 (2026-07-19)
+
+**Complete NEMSIS dataset coverage and infrastructure hardening.**
+
+### Added
+- **eInjury**: `EMSConditionInjury` profile with injury-context and ACN telematics extensions, `cs-nemsis-injury`, 8 ValueSets
+- **eHistory (completion)**: `EMSConditionProblems` (past medical history) and `EMSMedicationStatement` (home medications) profiles, `cs-nemsis-history`, 7 ValueSets
+- **eOther**: `EMSDocumentReference` (attachments) and `EMSProvenance` (PCR signatures) profiles, crew-safety and other-context Encounter extensions, `cs-nemsis-other`, 9 ValueSets
+- **eCustom**: `EMSQuestionnaire` / `EMSQuestionnaireResponse` profiles (NDR-010)
+- **DEM depth**: `EMSLocationAgency` (dLocation stations), agency contacts + medical-director and agency-configuration extensions on `EMSOrganization` (dContact/dConfiguration), `cs-nemsis-demographics`, 8 ValueSets
+- OID identifiers on every CodeSystem and ValueSet under the project's self-assigned ISO 2.25 UUID root
+- Example coverage for every extension; ECG, pain score, and stroke scale examples
+
+### Changed
+- Canonical migrated from the unregistered HL7 namespace to `https://fhirems.github.io/fhirEMSCoreIG`; package id `fhirems.emscore`
+- All ValueSets marked non-experimental; NUBC discharge system corrected to its registered canonical
+- Build is fully clean: SUSHI 0/0 and IG Publisher 0 errors / 0 warnings / 0 broken links
+
+### Verified
+- Loaded onto the fhirEngine terminology server via its stock IG installer; $validate-code round-trips confirmed
+
+
 <div class="dragon" markdown="1">
 
 This IG is an **unofficial AI-generated research project**. It is not an HL7 product. Version numbers and release labels are illustrative only. See [IP Statements](ip-statements.html).

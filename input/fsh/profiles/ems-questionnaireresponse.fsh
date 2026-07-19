@@ -11,7 +11,7 @@ Description: "Carries collected values for agency- or state-specific custom data
 Parent: QuestionnaireResponse
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-questionnaireresponse"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

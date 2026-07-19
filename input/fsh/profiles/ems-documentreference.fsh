@@ -11,7 +11,7 @@ Description: "An external electronic document or file attachment associated with
 Parent: $us-core-docref
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-documentreference"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

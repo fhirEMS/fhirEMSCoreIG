@@ -14,7 +14,7 @@ description: >
   other standards body. The canonical URL is the project's GitHub Pages namespace
   and does not represent a registered HL7 namespace.
 status: draft
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 4.0.1
 copyrightYear: 2026+
 releaseLabel: ci-build
@@ -132,6 +132,7 @@ groups:
     resources:
       - StructureDefinition/ems-location-scene
       - StructureDefinition/ems-location-destination
+      - StructureDefinition/ems-location-agency
       - StructureDefinition/ems-condition
 
   ClinicalResources:

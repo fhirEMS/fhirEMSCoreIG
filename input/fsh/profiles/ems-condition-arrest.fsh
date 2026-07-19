@@ -11,7 +11,7 @@ Description: "Documents the presence (or absence) of cardiac arrest during an EM
 Parent: $us-core-condition
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-arrest"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

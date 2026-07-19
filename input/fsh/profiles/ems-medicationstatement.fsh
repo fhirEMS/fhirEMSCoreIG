@@ -11,7 +11,7 @@ Description: "Documents a medication the patient reports currently taking (eHist
 Parent: MedicationStatement
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationstatement"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

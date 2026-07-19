@@ -11,7 +11,7 @@ Description: "Defines agency- or state-specific custom data elements (NEMSIS eCu
 Parent: Questionnaire
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-questionnaire"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 

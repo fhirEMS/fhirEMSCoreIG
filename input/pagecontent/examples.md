@@ -95,6 +95,7 @@ This scenario exercises the majority of fhirEMSCore profiles and demonstrates ho
 | `ex-ems-practitioner` | EMSPractitioner | Paramedic John Smith, NPI, CA EMS certificate |
 | `ex-ems-practitionerrole` | EMSPractitionerRole | Paramedic (SNOMED 9925007) role, cert level: Paramedic |
 | `ex-ems-device-vehicle` | EMSDevice | Medic 7 vehicle; unit number (official), VIN (secondary), call sign (usual) |
+| `ex-ems-location-agency` | EMSLocationAgency | Fire Station 7, Murrieta CA; GPS + USNG, station number |
 
 ### Outcome
 
@@ -160,4 +161,4 @@ All example instances are included in the `fsh-generated/resources/` directory a
 
 ## Validation Status
 
-All examples in this IG have been compiled with SUSHI 3.18.x with zero errors. Full IG Publisher validation against FHIR R4 and US Core 6.1.0 is planned for the next release cycle.
+All examples compile with SUSHI (0 errors, 0 warnings) and validate through the full IG Publisher pipeline against FHIR R4, US Core 6.1.0, and the profiles in this guide (0 errors, 0 warnings, 0 broken links).

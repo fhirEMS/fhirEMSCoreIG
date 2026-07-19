@@ -30,6 +30,7 @@ These profiles represent the fundamental resources in an EMS Patient Care Report
 |---|---|---|---|---|---|
 | EMSLocationScene | ems-location-scene | us-core-location | eScene | ✅ | GPS, address, MCI context |
 | EMSLocationDestination | ems-location-destination | us-core-location | eDisposition | ✅ | Receiving facility |
+| EMSLocationAgency | ems-location-agency | us-core-location | dLocation | ✅ | Agency stations/bases with GPS and USNG |
 | EMSCondition | ems-condition | us-core-condition-encounter-diagnosis | eSituation | ✅ | Encounter diagnoses only — eHistory conditions need separate profile |
 
 ### Clinical Assessment Profiles
@@ -55,7 +56,7 @@ These profiles represent the fundamental resources in an EMS Patient Care Report
 
 | Profile | Id | Parent | NEMSIS Section | Status | Notes |
 |---|---|---|---|---|---|
-| EMSOrganization | ems-organization | us-core-organization | dAgency | ✅ | Agency ID, NPI, service type |
+| EMSOrganization | ems-organization | us-core-organization | dAgency / dContact / dConfiguration | ✅ | Agency ID, NPI, service type, contacts, medical director, state configuration |
 | EMSPractitioner | ems-practitioner | us-core-practitioner | dPersonnel | ✅ | EMS crew member with state licensure |
 | EMSPractitionerRole | ems-practitionerrole | us-core-practitionerrole | eCrew / dPersonnel | ✅ | Response role and certification level |
 | EMSDevice | ems-device-vehicle | Device (R4 base) | dVehicle | ⚠ | No US Core parent; vehicle/unit identification only; dVehicle full coverage unverified |

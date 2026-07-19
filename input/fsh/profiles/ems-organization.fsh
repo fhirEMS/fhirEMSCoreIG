@@ -16,9 +16,17 @@ Description: """
 """
 
 // ── Agency Details Extension ─────────────────────────────────
-* extension contains EMSAgencyDetails named agencyDetails 0..1 MS
+* extension contains
+    EMSAgencyDetails named agencyDetails 0..1 MS and
+    EMSMedicalDirector named medicalDirector 0..1 MS and
+    EMSAgencyConfiguration named agencyConfiguration 0..*
+* extension[agencyDetails]
   * ^short = "dAgency.09–12 - Service type, level of service, org status"
   * ^comment = "NEMSIS dAgency.09 (Primary Service Type, Mandatory), dAgency.10 (Other Service Types, Recommended), dAgency.11 (Level of Service, Mandatory), dAgency.12 (Organization Status, Mandatory)."
+* extension[medicalDirector]
+  * ^short = "dContact.13–.16 - Agency medical director credentials"
+* extension[agencyConfiguration]
+  * ^short = "dConfiguration - State-configured capabilities (one repetition per state)"
 
 // ── dAgency.01 / dAgency.02 / dAgency.25 - Identifiers ───────
 // US Core Organization provides identifier slicing (pattern:$this).
@@ -63,3 +71,18 @@ Description: """
 * active 1..1 MS
   * ^short = "Agency active status (derived from dAgency.12 Organization Status)"
   * ^comment = "Set to true for active agencies. Detailed volunteer/non-volunteer status captured in extension[agencyDetails].organizationStatus."
+
+// ── dContact.01–.12 - Agency Contacts ────────────────────────
+* contact MS
+  * ^short = "dContact - Agency contact persons"
+  * ^comment = "One contact repetition per dContact ContactGroup."
+* contact.purpose MS
+* contact.purpose from EMSAgencyContactTypeVS (extensible)
+  * ^short = "dContact.01 - Agency Contact Type"
+* contact.name MS
+  * ^short = "dContact.02/.03/.04 - Agency Contact Name"
+* contact.address MS
+  * ^short = "dContact.05–.09 - Agency Contact Address"
+  * ^comment = "City (dContact.06, GNIS→name per NDR-003), state (dContact.07, ANSI→USPS per NDR-004)."
+* contact.telecom MS
+  * ^short = "dContact.10/.11/.12 - Phone, Email, Web Address"

@@ -11,7 +11,7 @@ Description: "Documents hospital and ED outcome data collected by the EMS agency
 Parent: $us-core-observation
 
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome"
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^experimental = false
 
