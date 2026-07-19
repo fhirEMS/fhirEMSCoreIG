@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample NEMSIS v3.5.1 EMSDataSet — matches the IG's MVA example scenario.
+     Abbreviated: national-required elements for the sections the transforms cover. -->
+<EMSDataSet xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Header>
+    <DemographicGroup>
+      <dAgency.01>RIV-007</dAgency.01>
+      <dAgency.02>1043219999</dAgency.02>
+      <dAgency.04>06</dAgency.04>
+    </DemographicGroup>
+    <PatientCareReport>
+      <eRecord>
+        <eRecord.01>a7f3c2d1-4b5e-4c6f-8a9b-0c1d2e3f4a5b</eRecord.01>
+        <eRecord.SoftwareApplicationGroup>
+          <eRecord.02>fhirEMS Sample</eRecord.02>
+          <eRecord.03>SamplePCR</eRecord.03>
+          <eRecord.04>0.2.0</eRecord.04>
+        </eRecord.SoftwareApplicationGroup>
+      </eRecord>
+      <eResponse>
+        <eResponse.AgencyGroup>
+          <eResponse.01>RIV-007</eResponse.01>
+          <eResponse.02>Riverside County Fire Department EMS</eResponse.02>
+        </eResponse.AgencyGroup>
+        <eResponse.05>2205001</eResponse.05>
+        <eResponse.07>2207015</eResponse.07>
+        <eResponse.13>A-7</eResponse.13>
+        <eResponse.14>Medic 7</eResponse.14>
+        <eResponse.23>2223001</eResponse.23>
+        <eResponse.24>2224015</eResponse.24>
+      </eResponse>
+      <eDispatch>
+        <eDispatch.01>2301053</eDispatch.01>
+        <eDispatch.02>2302003</eDispatch.02>
+      </eDispatch>
+      <eTimes>
+        <eTimes.01>2026-03-14T14:20:00-08:00</eTimes.01>
+        <eTimes.03>2026-03-14T14:22:00-08:00</eTimes.03>
+        <eTimes.05>2026-03-14T14:24:00-08:00</eTimes.05>
+        <eTimes.06>2026-03-14T14:31:00-08:00</eTimes.06>
+        <eTimes.07>2026-03-14T14:33:00-08:00</eTimes.07>
+        <eTimes.09>2026-03-14T14:52:00-08:00</eTimes.09>
+        <eTimes.11>2026-03-14T15:05:00-08:00</eTimes.11>
+        <eTimes.12>2026-03-14T15:08:00-08:00</eTimes.12>
+        <eTimes.13>2026-03-14T15:25:00-08:00</eTimes.13>
+      </eTimes>
+      <ePatient>
+        <ePatient.PatientNameGroup>
+          <ePatient.02>Johnson</ePatient.02>
+          <ePatient.03>Robert</ePatient.03>
+        </ePatient.PatientNameGroup>
+        <ePatient.05>1425 Oak Grove Rd</ePatient.05>
+        <ePatient.06>Moreno Valley</ePatient.06>
+        <ePatient.07>06</ePatient.07>
+        <ePatient.08>92553</ePatient.08>
+        <ePatient.13>9906003</ePatient.13>
+        <ePatient.17>1979-03-22</ePatient.17>
+      </ePatient>
+      <eScene>
+        <eScene.01 xsi:nil="true" NV="7701003"/>
+        <eScene.06>2708001</eScene.06>
+        <eScene.15>I-15 SB Mile Marker 62</eScene.15>
+        <eScene.17>Murrieta</eScene.17>
+        <eScene.18>06</eScene.18>
+        <eScene.19>92563</eScene.19>
+      </eScene>
+      <eSituation>
+        <eSituation.01>2026-03-14T14:02:00-08:00</eSituation.01>
+        <eSituation.02>9922005</eSituation.02>
+        <eSituation.09>S09.90XA</eSituation.09>
+        <eSituation.11>S09.90XA</eSituation.11>
+        <eSituation.13>2813001</eSituation.13>
+      </eSituation>
+      <eVitals>
+        <eVitals.VitalGroup CorrelationID="VG-1">
+          <eVitals.01>2026-03-14T14:36:00-08:00</eVitals.01>
+          <eVitals.02>9923001</eVitals.02>
+          <eVitals.06>92</eVitals.06>
+          <eVitals.07>60</eVitals.07>
+          <eVitals.10>110</eVitals.10>
+          <eVitals.12>94</eVitals.12>
+          <eVitals.14>22</eVitals.14>
+        </eVitals.VitalGroup>
+      </eVitals>
+      <eProcedures>
+        <eProcedures.ProcedureGroup CorrelationID="PG-1">
+          <eProcedures.01>2026-03-14T14:40:00-08:00</eProcedures.01>
+          <eProcedures.02>9923001</eProcedures.02>
+          <eProcedures.03>392230005</eProcedures.03>
+          <eProcedures.05>1</eProcedures.05>
+          <eProcedures.06>9923003</eProcedures.06>
+        </eProcedures.ProcedureGroup>
+      </eProcedures>
+      <eMedications>
+        <eMedications.MedicationGroup CorrelationID="MG-1">
+          <eMedications.01>2026-03-14T14:45:00-08:00</eMedications.01>
+          <eMedications.02>9923001</eMedications.02>
+          <eMedications.03>313002</eMedications.03>
+          <eMedications.04>9927023</eMedications.04>
+          <eMedications.DosageGroup>
+            <eMedications.05>500</eMedications.05>
+            <eMedications.06>3706037</eMedications.06>
+          </eMedications.DosageGroup>
+          <eMedications.10>9916005</eMedications.10>
+        </eMedications.MedicationGroup>
+      </eMedications>
+      <eDisposition>
+        <eDisposition.DestinationGroup>
+          <eDisposition.01>RUHS Medical Center</eDisposition.01>
+          <eDisposition.02>1447340506</eDisposition.02>
+          <eDisposition.05>Moreno Valley</eDisposition.05>
+          <eDisposition.06>06</eDisposition.06>
+          <eDisposition.07>92555</eDisposition.07>
+        </eDisposition.DestinationGroup>
+        <eDisposition.IncidentDispositionGroup>
+          <eDisposition.27>4227001</eDisposition.27>
+          <eDisposition.28>4228001</eDisposition.28>
+          <eDisposition.29>4229001</eDisposition.29>
+          <eDisposition.30>4230001</eDisposition.30>
+        </eDisposition.IncidentDispositionGroup>
+        <eDisposition.16>4216005</eDisposition.16>
+        <eDisposition.17>4217001</eDisposition.17>
+        <eDisposition.21>4221003</eDisposition.21>
+        <eDisposition.24>4224003</eDisposition.24>
+      </eDisposition>
+    </PatientCareReport>
+  </Header>
+</EMSDataSet>

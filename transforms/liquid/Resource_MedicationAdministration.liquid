@@ -1,0 +1,25 @@
+{% comment -%} One eMedications.MedicationGroup -> EMSMedicationAdministration
+(ems-medicationadministration, NDR-008). eMedications.03 is RxNorm
+pass-through; route (.04) uses the 9927xxx codes in cs-nemsis-medications;
+dose (.05/.06) becomes dosage.dose with the NEMSIS 3706xxx unit code carried
+as unit text. {%- endcomment -%}
+{% assign IGCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem' -%}
+{% assign dg = med['eMedications.DosageGroup'][0] -%}
+{
+  "resourceType": "MedicationAdministration",
+  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration"] },
+  "status": "completed",
+  "medicationCodeableConcept": { "coding": [ { "system": "http://www.nlm.nih.gov/research/umls/rxnorm", "code": "{{ med['eMedications.03'].value }}" } ] },
+  "subject": { "reference": "urn:uuid:{{ patientId }}" },
+  "context": { "reference": "urn:uuid:{{ encounterId }}" },
+  {% if med['eMedications.01'].value %}"effectiveDateTime": "{{ med['eMedications.01'].value }}",{% endif %}
+  "dosage": {
+    {% if med['eMedications.04'].value -%}
+    "route": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-medications", "code": "{{ med['eMedications.04'].value }}" } ] },
+    {% endif -%}
+    {% if dg['eMedications.05'].value -%}
+    "dose": { "value": {{ dg['eMedications.05'].value }}{% if dg['eMedications.06'].value %}, "unit": "{{ dg['eMedications.06'].value }}", "system": "{{ IGCS }}/cs-nemsis-medications", "code": "{{ dg['eMedications.06'].value }}"{% endif %} },
+    {% endif -%}
+    "text": "See NEMSIS eMedications dosage group"
+  }
+}

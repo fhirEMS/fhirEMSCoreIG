@@ -1,0 +1,95 @@
+{% comment -%} eResponse/eDispatch/eTimes/eDisposition -> EMSEncounter
+(ems-encounter). Period: eTimes.03 (unit notified) -> eTimes.12 (destination
+transfer of care) per NDR-005; all other timestamps in ext-ems-times. NEMSIS
+codes pass through to the IG's cs-nemsis-* systems. {%- endcomment -%}
+{% assign r = pcr.eResponse -%}
+{% assign t = pcr.eTimes -%}
+{% assign d = pcr.eDisposition -%}
+{% assign IGCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem' -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{
+  "resourceType": "Encounter",
+  "meta": { "profile": ["{{ IGX }}/ems-encounter"] },
+  "identifier": [
+    { "system": "urn:oid:2.25.219926138944530828037824748808947630693", "value": "{{ pcr.eRecord['eRecord.01'].value }}" }
+  ],
+  "status": "finished",
+  "class": { "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode", "code": "EMER", "display": "emergency" },
+  "type": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "409971007", "display": "Emergency medical services" } ] } ],
+  "subject": { "reference": "urn:uuid:{{ patientId }}" },
+  {% if t['eTimes.03'].value or t['eTimes.12'].value -%}
+  "period": {
+    {% if t['eTimes.03'].value %}"start": "{{ t['eTimes.03'].value }}",{% endif %}
+    {% if t['eTimes.12'].value %}"end": "{{ t['eTimes.12'].value }}",{% endif %}
+  },
+  {% endif -%}
+  "extension": [
+    {% if r['eResponse.05'].value -%}
+    { "url": "{{ IGX }}/ext-ems-response-type",
+      "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ r['eResponse.05'].value }}" } ] } },
+    {% endif -%}
+    {% if r['eResponse.07'].value -%}
+    { "url": "{{ IGX }}/ext-ems-unit-type",
+      "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ r['eResponse.07'].value }}" } ] } },
+    {% endif -%}
+    {% if r['eResponse.23'].value -%}
+    { "url": "{{ IGX }}/ext-ems-response-mode",
+      "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ r['eResponse.23'].value }}" } ] } },
+    {% endif -%}
+    {% for arm in r['eResponse.24'] -%}
+    {% if arm.value -%}
+    { "url": "{{ IGX }}/ext-ems-additional-response-mode",
+      "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ arm.value }}" } ] } },
+    {% endif -%}
+    {% endfor -%}
+    {% if r['eResponse.13'].value or r['eResponse.14'].value -%}
+    { "url": "{{ IGX }}/ext-ems-unit",
+      "extension": [
+        {% if r['eResponse.13'].value %}{ "url": "unitNumber", "valueString": "{{ r['eResponse.13'].value }}" },{% endif %}
+        {% if r['eResponse.14'].value %}{ "url": "callSign", "valueString": "{{ r['eResponse.14'].value }}" },{% endif %}
+      ] },
+    {% endif -%}
+    {% if pcr.eDispatch['eDispatch.02'].value -%}
+    { "url": "{{ IGX }}/ext-ems-dispatch-info",
+      "extension": [
+        { "url": "emdPerformed", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ pcr.eDispatch['eDispatch.02'].value }}" } ] } },
+      ] },
+    {% endif -%}
+    { "url": "{{ IGX }}/ext-ems-times",
+      "extension": [
+        {% if t['eTimes.01'].value %}{ "url": "psapCallTime", "valueDateTime": "{{ t['eTimes.01'].value }}" },{% endif %}
+        {% if t['eTimes.03'].value %}{ "url": "unitNotified", "valueDateTime": "{{ t['eTimes.03'].value }}" },{% endif %}
+        {% if t['eTimes.05'].value %}{ "url": "unitEnRoute", "valueDateTime": "{{ t['eTimes.05'].value }}" },{% endif %}
+        {% if t['eTimes.06'].value %}{ "url": "unitArrivedScene", "valueDateTime": "{{ t['eTimes.06'].value }}" },{% endif %}
+        {% if t['eTimes.07'].value %}{ "url": "arrivalAtPatient", "valueDateTime": "{{ t['eTimes.07'].value }}" },{% endif %}
+        {% if t['eTimes.09'].value %}{ "url": "unitLeftScene", "valueDateTime": "{{ t['eTimes.09'].value }}" },{% endif %}
+        {% if t['eTimes.11'].value %}{ "url": "patientArrivedDestination", "valueDateTime": "{{ t['eTimes.11'].value }}" },{% endif %}
+        {% if t['eTimes.12'].value %}{ "url": "destinationPatientTransferOfCare", "valueDateTime": "{{ t['eTimes.12'].value }}" },{% endif %}
+        {% if t['eTimes.13'].value %}{ "url": "unitBackInService", "valueDateTime": "{{ t['eTimes.13'].value }}" },{% endif %}
+      ] },
+    {% assign idg = d['eDisposition.IncidentDispositionGroup'][0] -%}
+    {% if idg -%}
+    { "url": "{{ IGX }}/ext-ems-disposition-codes",
+      "extension": [
+        {% if idg['eDisposition.27'].value %}{ "url": "unitDisposition", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ idg['eDisposition.27'].value }}" } ] } },{% endif %}
+        {% if idg['eDisposition.28'].value %}{ "url": "patientEvaluationCare", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ idg['eDisposition.28'].value }}" } ] } },{% endif %}
+        {% if idg['eDisposition.29'].value %}{ "url": "crewDisposition", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ idg['eDisposition.29'].value }}" } ] } },{% endif %}
+        {% if idg['eDisposition.30'].value %}{ "url": "transportDisposition", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ idg['eDisposition.30'].value }}" } ] } },{% endif %}
+      ] },
+    {% endif -%}
+    {% if d['eDisposition.16'].value or d['eDisposition.17'].value -%}
+    { "url": "{{ IGX }}/ext-ems-transport-details",
+      "extension": [
+        {% if d['eDisposition.16'].value %}{ "url": "transportMethod", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ d['eDisposition.16'].value }}" } ] } },{% endif %}
+        {% if d['eDisposition.17'].value %}{ "url": "transportMode", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ d['eDisposition.17'].value }}" } ] } },{% endif %}
+      ] },
+    {% endif -%}
+    {% if d['eDisposition.21'].value or d['eDisposition.24'].value -%}
+    { "url": "{{ IGX }}/ext-ems-destination-details",
+      "extension": [
+        {% if d['eDisposition.21'].value %}{ "url": "typeOfDestination", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ d['eDisposition.21'].value }}" } ] } },{% endif %}
+        {% if d['eDisposition.24'].value %}{ "url": "preArrivalAlert", "valueCodeableConcept": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-encounter", "code": "{{ d['eDisposition.24'].value }}" } ] } },{% endif %}
+      ] },
+    {% endif -%}
+  ]
+}

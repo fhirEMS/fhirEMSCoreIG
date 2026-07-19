@@ -1,0 +1,61 @@
+{% comment -%}
+Root template: NEMSIS EMSDataSet (canonical JSON, see transforms/tools) -> FHIR
+transaction Bundle of fhirEMSCore (fhirems.emscore) resources.
+Input variable: msg  (the canonical JSON document)
+Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
+{%- endcomment -%}
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {% for header in msg.EMSDataSet.Header -%}
+    {% for pcr in header.PatientCareReport -%}
+    {% assign base = pcr.eRecord['eRecord.01'].value -%}
+    {% capture patientId %}{{ base | append: '-patient' | generate_uuid }}{% endcapture -%}
+    {% capture encounterId %}{{ base | append: '-encounter' | generate_uuid }}{% endcapture -%}
+    {% capture sceneId %}{{ base | append: '-scene' | generate_uuid }}{% endcapture -%}
+    {
+      "fullUrl": "urn:uuid:{{ patientId }}",
+      "resource": {% include 'Resource_Patient' pcr: pcr %},
+      "request": { "method": "POST", "url": "Patient" }
+    },
+    {
+      "fullUrl": "urn:uuid:{{ encounterId }}",
+      "resource": {% include 'Resource_Encounter' pcr: pcr, patientId: patientId %},
+      "request": { "method": "POST", "url": "Encounter" }
+    },
+    {% if pcr.eScene -%}
+    {
+      "fullUrl": "urn:uuid:{{ sceneId }}",
+      "resource": {% include 'Resource_LocationScene' pcr: pcr %},
+      "request": { "method": "POST", "url": "Location" }
+    },
+    {% endif -%}
+    {% if pcr.eSituation['eSituation.11'].value -%}
+    {
+      "fullUrl": "urn:uuid:{{ base | append: '-condition' | generate_uuid }}",
+      "resource": {% include 'Resource_Condition' pcr: pcr, patientId: patientId, encounterId: encounterId %},
+      "request": { "method": "POST", "url": "Condition" }
+    },
+    {% endif -%}
+    {% for vg in pcr.eVitals['eVitals.VitalGroup'] -%}
+    {% include 'Resource_ObservationVitals' vg: vg, base: base, vgIndex: forloop.index, patientId: patientId, encounterId: encounterId -%}
+    {% endfor -%}
+    {% for prc in pcr.eProcedures['eProcedures.ProcedureGroup'] -%}
+    {
+      "fullUrl": "urn:uuid:{{ base | append: '-procedure-' | append: forloop.index | generate_uuid }}",
+      "resource": {% include 'Resource_Procedure' prc: prc, patientId: patientId, encounterId: encounterId %},
+      "request": { "method": "POST", "url": "Procedure" }
+    },
+    {% endfor -%}
+    {% for med in pcr.eMedications['eMedications.MedicationGroup'] -%}
+    {
+      "fullUrl": "urn:uuid:{{ base | append: '-medication-' | append: forloop.index | generate_uuid }}",
+      "resource": {% include 'Resource_MedicationAdministration' med: med, patientId: patientId, encounterId: encounterId %},
+      "request": { "method": "POST", "url": "MedicationAdministration" }
+    },
+    {% endfor -%}
+    {% endfor -%}
+    {% endfor -%}
+  ]
+}

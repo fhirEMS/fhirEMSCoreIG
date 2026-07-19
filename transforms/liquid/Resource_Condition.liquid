@@ -1,0 +1,14 @@
+{% comment -%} eSituation.11 (Provider's Primary Impression, ICD-10-CM) ->
+EMSCondition (ems-condition, encounter-diagnosis). {%- endcomment -%}
+{
+  "resourceType": "Condition",
+  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"] },
+  "clinicalStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" } ] },
+  "verificationStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "provisional" } ] },
+  "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "encounter-diagnosis", "display": "Encounter Diagnosis" } ] } ],
+  "code": { "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10-cm", "code": "{{ pcr.eSituation['eSituation.11'].value }}" } ] },
+  "subject": { "reference": "urn:uuid:{{ patientId }}" },
+  "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+  {% if pcr.eSituation['eSituation.01'].value %}"onsetDateTime": "{{ pcr.eSituation['eSituation.01'].value }}",{% endif %}
+  "recordedDate": "{{ pcr.eSituation['eSituation.01'].value | default: pcr.eTimes['eTimes.07'].value }}"
+}

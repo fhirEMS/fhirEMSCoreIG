@@ -1,0 +1,22 @@
+{% comment -%} One eProcedures.ProcedureGroup -> EMSProcedure (ems-procedure).
+eProcedures.03 is already SNOMED CT (direct pass-through). eProcedures.02
+(performed prior to this unit's care) and .05/.06 map into the
+ext-ems-procedure-context extension. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{
+  "resourceType": "Procedure",
+  "meta": { "profile": ["{{ IGX }}/ems-procedure"] },
+  "status": "completed",
+  "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "{{ prc['eProcedures.03'].value }}" } ] },
+  "subject": { "reference": "urn:uuid:{{ patientId }}" },
+  "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+  {% if prc['eProcedures.01'].value %}"performedDateTime": "{{ prc['eProcedures.01'].value }}",{% endif %}
+  "extension": [
+    { "url": "{{ IGX }}/ext-ems-procedure-context",
+      "extension": [
+        {% if prc['eProcedures.02'].value %}{ "url": "performedPrior", "valueCodeableConcept": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v2-0136", "code": "{% if prc['eProcedures.02'].value == '9923003' %}Y{% else %}N{% endif %}" } ] } },{% endif %}
+        {% if prc['eProcedures.05'].value %}{ "url": "attempts", "valuePositiveInt": {{ prc['eProcedures.05'].value }} },{% endif %}
+        {% if prc['eProcedures.06'].value %}{ "url": "successful", "valueCodeableConcept": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v2-0136", "code": "{% if prc['eProcedures.06'].value == '9923003' %}Y{% else %}N{% endif %}" } ] } },{% endif %}
+      ] }
+  ]
+}

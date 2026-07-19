@@ -1,0 +1,20 @@
+{% comment -%} eScene -> EMSLocationScene (ems-location-scene). NDR-003/004
+notes apply to city/state code conversion. eScene.01 nil with NV is skipped
+(NDR-001: omit the element). {%- endcomment -%}
+{% assign s = pcr.eScene -%}
+{
+  "resourceType": "Location",
+  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"] },
+  "status": "active",
+  "name": "{{ s['eScene.15'].value | default: 'EMS Scene' }}",
+  {% if s['eScene.15'].value or s['eScene.17'].value -%}
+  "address": {
+    {% if s['eScene.15'].value %}"line": ["{{ s['eScene.15'].value }}"],{% endif %}
+    {% if s['eScene.17'].value %}"city": "{{ s['eScene.17'].value }}",{% endif %}
+    {% if s['eScene.18'].value %}"state": "{{ s['eScene.18'].value }}",{% endif %}
+    {% if s['eScene.19'].value %}"postalCode": "{{ s['eScene.19'].value }}",{% endif %}
+    "country": "US"
+  },
+  {% endif -%}
+  "mode": "instance"
+}

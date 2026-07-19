@@ -1,0 +1,54 @@
+{% comment -%} One eVitals.VitalGroup -> Observation resources (NDR-007):
+BP panel (eVitals.06/.07 -> ems-observation-bp, LOINC 85354-9 with 8480-6 /
+8462-4 components) and simple vitals (HR .10, SpO2 .12, RR .14 ->
+ems-observation-vitalsigns). Each entry renders complete with its own
+fullUrl/request; emitted inside the Bundle entry array. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% assign when = vg['eVitals.01'].value -%}
+{% if vg['eVitals.06'].value -%}
+{
+  "fullUrl": "urn:uuid:{{ base | append: '-vg' | append: vgIndex | append: '-bp' | generate_uuid }}",
+  "resource": {
+    "resourceType": "Observation",
+    "meta": { "profile": ["{{ IGX }}/ems-observation-bp"] },
+    "status": "final",
+    "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs" } ] } ],
+    "code": { "coding": [ { "system": "http://loinc.org", "code": "85354-9", "display": "Blood pressure panel with all children optional" } ] },
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+    {% if when %}"effectiveDateTime": "{{ when }}",{% endif %}
+    "component": [
+      { "code": { "coding": [ { "system": "http://loinc.org", "code": "8480-6", "display": "Systolic blood pressure" } ] },
+        "valueQuantity": { "value": {{ vg['eVitals.06'].value }}, "unit": "mmHg", "system": "http://unitsofmeasure.org", "code": "mm[Hg]" } },
+      {% if vg['eVitals.07'].value -%}
+      { "code": { "coding": [ { "system": "http://loinc.org", "code": "8462-4", "display": "Diastolic blood pressure" } ] },
+        "valueQuantity": { "value": {{ vg['eVitals.07'].value }}, "unit": "mmHg", "system": "http://unitsofmeasure.org", "code": "mm[Hg]" } },
+      {% endif -%}
+    ]
+  },
+  "request": { "method": "POST", "url": "Observation" }
+},
+{% endif -%}
+{% comment %} simple numeric vitals: element -> LOINC/UCUM {% endcomment -%}
+{% assign simpleVitals = 'eVitals.10|8867-4|Heart rate|/min|/min;eVitals.12|59408-5|Oxygen saturation in Arterial blood by Pulse oximetry|%|%;eVitals.14|9279-1|Respiratory rate|/min|/min' | split: ';' -%}
+{% for sv in simpleVitals -%}
+{% assign parts = sv | split: '|' -%}
+{% assign el = vg[parts[0]] -%}
+{% if el.value -%}
+{
+  "fullUrl": "urn:uuid:{{ base | append: '-vg' | append: vgIndex | append: '-' | append: parts[0] | generate_uuid }}",
+  "resource": {
+    "resourceType": "Observation",
+    "meta": { "profile": ["{{ IGX }}/ems-observation-vitalsigns"] },
+    "status": "final",
+    "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs" } ] } ],
+    "code": { "coding": [ { "system": "http://loinc.org", "code": "{{ parts[1] }}", "display": "{{ parts[2] }}" } ] },
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+    {% if when %}"effectiveDateTime": "{{ when }}",{% endif %}
+    "valueQuantity": { "value": {{ el.value }}, "unit": "{{ parts[3] }}", "system": "http://unitsofmeasure.org", "code": "{{ parts[4] }}" }
+  },
+  "request": { "method": "POST", "url": "Observation" }
+},
+{% endif -%}
+{% endfor -%}

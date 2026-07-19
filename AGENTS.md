@@ -319,6 +319,20 @@ NEMSIS uses repeating XML groups for multiple sets of vitals, medications, proce
 
 ---
 
+## Transformation Scripts (transforms/)
+
+`transforms/` holds NEMSIS-XML→FHIR conversion pipelines: a canonical
+XML→JSON preprocessor (`tools/nemsis-xml-to-json.py`), Microsoft FHIR
+Converter Liquid templates (`liquid/`, root `NemsisBundle.liquid`), and
+Google Whistle maps (`whistle/nemsis_ems.wstl`). Test with
+`python3 transforms/tools/test-liquid-render.py` (12 structural checks
+against `package/`; requires `pip install python-liquid`). Liquid pipeline is
+render-verified; Whistle maps are authored but not engine-executed. Coverage:
+core PCR path (Patient/Encounter/Scene/Condition/Vitals/Procedure/MedAdmin);
+extend per transforms/README.md.
+
+---
+
 ## Distributable Package
 
 The compiled FHIR npm package is checked in at `package/` (unpacked, from

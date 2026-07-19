@@ -1,0 +1,727 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d",
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.25.219926138944530828037824748808947630693",
+            "value": "a7f3c2d1-4b5e-4c6f-8a9b-0c1d2e3f4a5b-patient"
+          }
+        ],
+        "name": [
+          {}
+        ],
+        "gender": "male",
+        "birthDate": "1979-03-22",
+        "address": [
+          {
+            "line": [
+              "1425 Oak Grove Rd"
+            ],
+            "city": "Moreno Valley",
+            "state": "06",
+            "postalCode": "92553",
+            "country": "US"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041",
+      "resource": {
+        "resourceType": "Encounter",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.25.219926138944530828037824748808947630693",
+            "value": "a7f3c2d1-4b5e-4c6f-8a9b-0c1d2e3f4a5b"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EMER",
+          "display": "emergency"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "409971007",
+                "display": "Emergency medical services"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "period": {
+          "start": "2026-03-14T14:22:00-08:00",
+          "end": "2026-03-14T15:08:00-08:00"
+        },
+        "extension": [
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                  "code": "2205001"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                  "code": "2207015"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-mode",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                  "code": "2223001"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-additional-response-mode",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                  "code": "2224015"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit",
+            "extension": [
+              {
+                "url": "unitNumber",
+                "valueString": "A-7"
+              },
+              {
+                "url": "callSign",
+                "valueString": "Medic 7"
+              }
+            ]
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-info",
+            "extension": [
+              {
+                "url": "emdPerformed",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "2302003"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-times",
+            "extension": [
+              {
+                "url": "psapCallTime",
+                "valueDateTime": "2026-03-14T14:20:00-08:00"
+              },
+              {
+                "url": "unitNotified",
+                "valueDateTime": "2026-03-14T14:22:00-08:00"
+              },
+              {
+                "url": "unitEnRoute",
+                "valueDateTime": "2026-03-14T14:24:00-08:00"
+              },
+              {
+                "url": "unitArrivedScene",
+                "valueDateTime": "2026-03-14T14:31:00-08:00"
+              },
+              {
+                "url": "arrivalAtPatient",
+                "valueDateTime": "2026-03-14T14:33:00-08:00"
+              },
+              {
+                "url": "unitLeftScene",
+                "valueDateTime": "2026-03-14T14:52:00-08:00"
+              },
+              {
+                "url": "patientArrivedDestination",
+                "valueDateTime": "2026-03-14T15:05:00-08:00"
+              },
+              {
+                "url": "destinationPatientTransferOfCare",
+                "valueDateTime": "2026-03-14T15:08:00-08:00"
+              },
+              {
+                "url": "unitBackInService",
+                "valueDateTime": "2026-03-14T15:25:00-08:00"
+              }
+            ]
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-disposition-codes",
+            "extension": [
+              {
+                "url": "unitDisposition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4227001"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "patientEvaluationCare",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4228001"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "crewDisposition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4229001"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "transportDisposition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4230001"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-details",
+            "extension": [
+              {
+                "url": "transportMethod",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4216005"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "transportMode",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4217001"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-destination-details",
+            "extension": [
+              {
+                "url": "typeOfDestination",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4221003"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "preArrivalAlert",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                      "code": "4224003"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f7c2187c-cfed-55ac-b211-7923b88c0a65",
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"
+          ]
+        },
+        "status": "active",
+        "name": "I-15 SB Mile Marker 62",
+        "address": {
+          "line": [
+            "I-15 SB Mile Marker 62"
+          ],
+          "city": "Murrieta",
+          "state": "06",
+          "postalCode": "92563",
+          "country": "US"
+        },
+        "mode": "instance"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Location"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc3da3f5-9c29-5c88-a0be-5fb5f7b300de",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "provisional"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "S09.90XA"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "encounter": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "onsetDateTime": "2026-03-14T14:02:00-08:00",
+        "recordedDate": "2026-03-14T14:02:00-08:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5dd2a1fa-8e40-57e6-bcab-2f124aed966e",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "encounter": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "effectiveDateTime": "2026-03-14T14:36:00-08:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 92,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 60,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:552a1015-cee0-5c7f-9b43-49a052d2039d",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "encounter": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "effectiveDateTime": "2026-03-14T14:36:00-08:00",
+        "valueQuantity": {
+          "value": 110,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0c9b07e0-ceee-5df5-a501-473569ba112d",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59408-5",
+              "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "encounter": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "effectiveDateTime": "2026-03-14T14:36:00-08:00",
+        "valueQuantity": {
+          "value": 94,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8d7075d9-e055-56bb-b655-8624784d5ea2",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "encounter": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "effectiveDateTime": "2026-03-14T14:36:00-08:00",
+        "valueQuantity": {
+          "value": 22,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8d3c8e43-1bb7-50d4-86c5-7368a91652c4",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure"
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "392230005"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "encounter": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "performedDateTime": "2026-03-14T14:40:00-08:00",
+        "extension": [
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-procedure-context",
+            "extension": [
+              {
+                "url": "performedPrior",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                      "code": "N"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "attempts",
+                "valuePositiveInt": 1
+              },
+              {
+                "url": "successful",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                      "code": "Y"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:95e01497-613e-59fc-a05f-64da7ab2a85c",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration"
+          ]
+        },
+        "status": "completed",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "313002"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "context": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "effectiveDateTime": "2026-03-14T14:45:00-08:00",
+        "dosage": {
+          "route": {
+            "coding": [
+              {
+                "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications",
+                "code": "9927023"
+              }
+            ]
+          },
+          "dose": {
+            "value": 500,
+            "unit": "3706037",
+            "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications",
+            "code": "3706037"
+          },
+          "text": "See NEMSIS eMedications dosage group"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationAdministration"
+      }
+    }
+  ]
+}

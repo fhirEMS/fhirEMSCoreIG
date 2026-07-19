@@ -1,0 +1,280 @@
+// ============================================================
+// Whistle map: NEMSIS v3.5.1 EMSDataSet (canonical JSON) ->
+// fhirEMSCore (fhirems.emscore) FHIR R4 transaction Bundle.
+//
+// Input: canonical JSON produced by transforms/tools/nemsis-xml-to-json.py
+//   (leaves are {value, ...attrs}; *Group / Header / PatientCareReport are
+//   arrays; nil elements have value == null with an NV attribute — NDR-001:
+//   omit them from output).
+//
+// Engine: Google healthcare-data-harmonization (Whistle 1 mapping language).
+// Run:  wstl_runner --input_file=sample-pcr.json \
+//           --mapping_file=nemsis_ems.wstl --output_dir=out/
+// Builtins used: $StrCat, $Hash, $ListLen — core Whistle builtins.
+// ============================================================
+
+// ── entry point ──────────────────────────────────────────────
+// root.EMSDataSet.Header[].PatientCareReport[] -> one Bundle per PCR list
+out Bundle: EMSDataSet_Bundle(root.EMSDataSet);
+
+def EMSDataSet_Bundle(ds) {
+  resourceType: "Bundle";
+  type: "transaction";
+  entry: PCR_Entries(ds.Header[0].PatientCareReport[]);
+}
+
+def PCR_Entries(pcr) {
+  var base: pcr.eRecord.'eRecord.01'.value;
+  var patientRef: $StrCat("urn:uuid:", $Hash($StrCat(base, "-patient")));
+  var encounterRef: $StrCat("urn:uuid:", $Hash($StrCat(base, "-encounter")));
+
+  [0].fullUrl: patientRef;
+  [0].resource: EPatient_Patient(pcr, base);
+  [0].request: PostRequest("Patient");
+
+  [1].fullUrl: encounterRef;
+  [1].resource: EResponse_Encounter(pcr, base, patientRef);
+  [1].request: PostRequest("Encounter");
+
+  [2].fullUrl (if pcr.eScene?): $StrCat("urn:uuid:", $Hash($StrCat(base, "-scene")));
+  [2].resource (if pcr.eScene?): EScene_Location(pcr.eScene);
+  [2].request (if pcr.eScene?): PostRequest("Location");
+
+  [3].fullUrl (if pcr.eSituation.'eSituation.11'.value?): $StrCat("urn:uuid:", $Hash($StrCat(base, "-condition")));
+  [3].resource (if pcr.eSituation.'eSituation.11'.value?): ESituation_Condition(pcr, patientRef, encounterRef);
+  [3].request (if pcr.eSituation.'eSituation.11'.value?): PostRequest("Condition");
+}
+
+def PostRequest(resType) {
+  method: "POST";
+  url: resType;
+}
+
+// ── shared coding helpers ────────────────────────────────────
+def IGSystem(csId) $StrCat("https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/", csId);
+def IGProfile(sdId) $StrCat("https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/", sdId);
+def IGExt(sdId) IGProfile(sdId);
+
+def CC(system, code) {
+  coding[0].system: system;
+  coding[0].code: code;
+}
+def NemsisCC(csId, leaf) CC(IGSystem(csId), leaf.value);
+def LoincQuantity(value, unit, ucum) {
+  value: $ParseFloat(value);
+  unit: unit;
+  system: "http://unitsofmeasure.org";
+  code: ucum;
+}
+
+// ── ePatient -> EMSPatient ───────────────────────────────────
+def EPatient_Patient(pcr, base) {
+  var p: pcr.ePatient;
+  resourceType: "Patient";
+  meta.profile[0]: IGProfile("ems-patient");
+  identifier[0].system: "urn:oid:2.25.219926138944530828037824748808947630693";
+  identifier[0].value: $StrCat(base, "-patient");
+  name[0].family: p.'ePatient.PatientNameGroup'.'ePatient.02'.value;
+  name[0].given[0]: p.'ePatient.PatientNameGroup'.'ePatient.03'.value;
+  gender: NemsisGender(p.'ePatient.13'.value);
+  birthDate: p.'ePatient.17'.value;
+  address[0].line[0]: p.'ePatient.05'.value;
+  address[0].city: p.'ePatient.06'.value;
+  // NDR-004: ePatient.07 is an ANSI state code; convert to USPS upstream.
+  address[0].state: p.'ePatient.07'.value;
+  address[0].postalCode: p.'ePatient.08'.value;
+  address[0].country (if p.'ePatient.05'.value?): "US";
+  active: true;
+}
+
+def NemsisGender(code) {
+  if (code = "9906001") { $this: "female"; }
+  if (code = "9906003") { $this: "male"; }
+  if (code = "9906021" or code = "9906023" or code = "9906025") { $this: "other"; }
+  if (code = "9906007" or code = "9906009") { $this: "unknown"; }
+}
+
+// ── eResponse/eTimes/eDisposition -> EMSEncounter ────────────
+def EResponse_Encounter(pcr, base, patientRef) {
+  var r: pcr.eResponse;
+  var t: pcr.eTimes;
+  var d: pcr.eDisposition;
+  resourceType: "Encounter";
+  meta.profile[0]: IGProfile("ems-encounter");
+  identifier[0].system: "urn:oid:2.25.219926138944530828037824748808947630693";
+  identifier[0].value: base;
+  status: "finished";
+  class.system: "http://terminology.hl7.org/CodeSystem/v3-ActCode";
+  class.code: "EMER";
+  type[0]: CC("http://snomed.info/sct", "409971007");
+  subject.reference: patientRef;
+  // NDR-005: period is eTimes.03 -> eTimes.12; everything else in ext-ems-times.
+  period.start: t.'eTimes.03'.value;
+  period.end: t.'eTimes.12'.value;
+
+  extension[]: SimpleCCExt(IGExt("ext-ems-response-type"), "cs-nemsis-encounter", r.'eResponse.05');
+  extension[]: SimpleCCExt(IGExt("ext-ems-unit-type"), "cs-nemsis-encounter", r.'eResponse.07');
+  extension[]: SimpleCCExt(IGExt("ext-ems-response-mode"), "cs-nemsis-encounter", r.'eResponse.23');
+  extension[]: SimpleCCExt(IGExt("ext-ems-additional-response-mode"), "cs-nemsis-encounter", r.'eResponse.24'[]);
+  extension[]: UnitExt(r);
+  extension[]: TimesExt(t);
+  extension[]: DispositionCodesExt(d.'eDisposition.IncidentDispositionGroup'[0]);
+  extension[]: TransportDetailsExt(d);
+}
+
+def SimpleCCExt(url, csId, leaf) {
+  if (leaf.value?) {
+    url: url;
+    valueCodeableConcept: NemsisCC(csId, leaf);
+  }
+}
+
+def UnitExt(r) {
+  if (r.'eResponse.13'.value? or r.'eResponse.14'.value?) {
+    url: IGExt("ext-ems-unit");
+    extension[0].url: "unitNumber";
+    extension[0].valueString: r.'eResponse.13'.value;
+    extension[1].url: "callSign";
+    extension[1].valueString: r.'eResponse.14'.value;
+  }
+}
+
+def TimeSubExt(name, leaf) {
+  if (leaf.value?) {
+    url: name;
+    valueDateTime: leaf.value;
+  }
+}
+
+def TimesExt(t) {
+  url: IGExt("ext-ems-times");
+  extension[]: TimeSubExt("psapCallTime", t.'eTimes.01');
+  extension[]: TimeSubExt("unitNotified", t.'eTimes.03');
+  extension[]: TimeSubExt("unitEnRoute", t.'eTimes.05');
+  extension[]: TimeSubExt("unitArrivedScene", t.'eTimes.06');
+  extension[]: TimeSubExt("arrivalAtPatient", t.'eTimes.07');
+  extension[]: TimeSubExt("unitLeftScene", t.'eTimes.09');
+  extension[]: TimeSubExt("patientArrivedDestination", t.'eTimes.11');
+  extension[]: TimeSubExt("destinationPatientTransferOfCare", t.'eTimes.12');
+  extension[]: TimeSubExt("unitBackInService", t.'eTimes.13');
+}
+
+def SubCCExt(name, csId, leaf) {
+  if (leaf.value?) {
+    url: name;
+    valueCodeableConcept: NemsisCC(csId, leaf);
+  }
+}
+
+def DispositionCodesExt(idg) {
+  if (idg?) {
+    url: IGExt("ext-ems-disposition-codes");
+    extension[]: SubCCExt("unitDisposition", "cs-nemsis-encounter", idg.'eDisposition.27');
+    extension[]: SubCCExt("patientEvaluationCare", "cs-nemsis-encounter", idg.'eDisposition.28');
+    extension[]: SubCCExt("crewDisposition", "cs-nemsis-encounter", idg.'eDisposition.29');
+    extension[]: SubCCExt("transportDisposition", "cs-nemsis-encounter", idg.'eDisposition.30');
+  }
+}
+
+def TransportDetailsExt(d) {
+  if (d.'eDisposition.16'.value? or d.'eDisposition.17'.value?) {
+    url: IGExt("ext-ems-transport-details");
+    extension[]: SubCCExt("transportMethod", "cs-nemsis-encounter", d.'eDisposition.16');
+    extension[]: SubCCExt("transportMode", "cs-nemsis-encounter", d.'eDisposition.17');
+  }
+}
+
+// ── eScene -> EMSLocationScene ───────────────────────────────
+def EScene_Location(s) {
+  resourceType: "Location";
+  meta.profile[0]: IGProfile("ems-location-scene");
+  status: "active";
+  name: s.'eScene.15'.value;
+  address.line[0]: s.'eScene.15'.value;
+  address.city: s.'eScene.17'.value;    // NDR-003: GNIS code -> name upstream
+  address.state: s.'eScene.18'.value;   // NDR-004: ANSI -> USPS upstream
+  address.postalCode: s.'eScene.19'.value;
+  mode: "instance";
+}
+
+// ── eSituation -> EMSCondition ───────────────────────────────
+def ESituation_Condition(pcr, patientRef, encounterRef) {
+  resourceType: "Condition";
+  meta.profile[0]: IGProfile("ems-condition");
+  clinicalStatus: CC("http://terminology.hl7.org/CodeSystem/condition-clinical", "active");
+  verificationStatus: CC("http://terminology.hl7.org/CodeSystem/condition-ver-status", "provisional");
+  category[0]: CC("http://terminology.hl7.org/CodeSystem/condition-category", "encounter-diagnosis");
+  code: CC("http://hl7.org/fhir/sid/icd-10-cm", pcr.eSituation.'eSituation.11'.value);
+  subject.reference: patientRef;
+  encounter.reference: encounterRef;
+  onsetDateTime: pcr.eSituation.'eSituation.01'.value;
+  recordedDate: pcr.eSituation.'eSituation.01'.value;
+}
+
+// ── eVitals.VitalGroup -> Observations (NDR-007) ─────────────
+// Wire into PCR_Entries with additional entries per group as needed:
+//   entry[]: VitalGroup_BP(vg, base, patientRef, encounterRef);
+//   entry[]: VitalGroup_Simple(vg, "eVitals.10", "8867-4", "/min", ...);
+def VitalGroup_BP(vg, base, patientRef, encounterRef) {
+  if (vg.'eVitals.06'.value?) {
+    fullUrl: $StrCat("urn:uuid:", $Hash($StrCat(base, "-bp-", vg.'eVitals.01'.value)));
+    resource.resourceType: "Observation";
+    resource.meta.profile[0]: IGProfile("ems-observation-bp");
+    resource.status: "final";
+    resource.category[0]: CC("http://terminology.hl7.org/CodeSystem/observation-category", "vital-signs");
+    resource.code: CC("http://loinc.org", "85354-9");
+    resource.subject.reference: patientRef;
+    resource.encounter.reference: encounterRef;
+    resource.effectiveDateTime: vg.'eVitals.01'.value;
+    resource.component[0].code: CC("http://loinc.org", "8480-6");
+    resource.component[0].valueQuantity: LoincQuantity(vg.'eVitals.06'.value, "mmHg", "mm[Hg]");
+    resource.component[1].code (if vg.'eVitals.07'.value?): CC("http://loinc.org", "8462-4");
+    resource.component[1].valueQuantity (if vg.'eVitals.07'.value?): LoincQuantity(vg.'eVitals.07'.value, "mmHg", "mm[Hg]");
+    request: PostRequest("Observation");
+  }
+}
+
+def VitalGroup_Simple(vg, element, loinc, ucum, base, patientRef, encounterRef) {
+  var leaf: vg[element];
+  if (leaf.value?) {
+    fullUrl: $StrCat("urn:uuid:", $Hash($StrCat(base, "-", element, "-", vg.'eVitals.01'.value)));
+    resource.resourceType: "Observation";
+    resource.meta.profile[0]: IGProfile("ems-observation-vitalsigns");
+    resource.status: "final";
+    resource.category[0]: CC("http://terminology.hl7.org/CodeSystem/observation-category", "vital-signs");
+    resource.code: CC("http://loinc.org", loinc);
+    resource.subject.reference: patientRef;
+    resource.encounter.reference: encounterRef;
+    resource.effectiveDateTime: vg.'eVitals.01'.value;
+    resource.valueQuantity: LoincQuantity(leaf.value, ucum, ucum);
+    request: PostRequest("Observation");
+  }
+}
+
+// ── eProcedures.ProcedureGroup -> EMSProcedure ───────────────
+def ProcedureGroup_Procedure(prc, patientRef, encounterRef) {
+  resourceType: "Procedure";
+  meta.profile[0]: IGProfile("ems-procedure");
+  status: "completed";
+  code: CC("http://snomed.info/sct", prc.'eProcedures.03'.value);  // SNOMED pass-through
+  subject.reference: patientRef;
+  encounter.reference: encounterRef;
+  performedDateTime: prc.'eProcedures.01'.value;
+}
+
+// ── eMedications.MedicationGroup -> EMSMedicationAdministration ──
+def MedicationGroup_MedAdmin(med, patientRef, encounterRef) {
+  var dg: med.'eMedications.DosageGroup'[0];
+  resourceType: "MedicationAdministration";
+  meta.profile[0]: IGProfile("ems-medicationadministration");
+  status: "completed";
+  medicationCodeableConcept: CC("http://www.nlm.nih.gov/research/umls/rxnorm", med.'eMedications.03'.value);  // RxNorm pass-through (NDR-008)
+  subject.reference: patientRef;
+  context.reference: encounterRef;
+  effectiveDateTime: med.'eMedications.01'.value;
+  dosage.route: NemsisCC("cs-nemsis-medications", med.'eMedications.04');
+  dosage.dose.value: $ParseFloat(dg.'eMedications.05'.value);
+  dosage.dose.unit: dg.'eMedications.06'.value;
+  dosage.dose.system: IGSystem("cs-nemsis-medications");
+  dosage.dose.code: dg.'eMedications.06'.value;
+}

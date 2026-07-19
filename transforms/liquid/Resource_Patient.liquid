@@ -1,0 +1,39 @@
+{% comment -%} ePatient -> EMSPatient (ems-patient). NDR-004 note: ePatient.07
+carries an ANSI state code; production pipelines should convert to the 2-letter
+USPS abbreviation before or after conversion. NEMSIS gender codes (9906xxx)
+map to FHIR administrative gender. {%- endcomment -%}
+{% assign p = pcr.ePatient -%}
+{% assign nameGroup = p['ePatient.PatientNameGroup'] -%}
+{
+  "resourceType": "Patient",
+  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"] },
+  "identifier": [
+    {
+      "system": "urn:oid:2.25.219926138944530828037824748808947630693",
+      "value": "{{ pcr.eRecord['eRecord.01'].value }}-patient"
+    }
+  ],
+  {% if nameGroup -%}
+  "name": [
+    {
+      {% if nameGroup['ePatient.02'].value %}"family": "{{ nameGroup['ePatient.02'].value }}",{% endif %}
+      {% if nameGroup['ePatient.03'].value %}"given": ["{{ nameGroup['ePatient.03'].value }}"],{% endif %}
+    }
+  ],
+  {% endif -%}
+  {% assign g = p['ePatient.13'].value -%}
+  {% if g == '9906001' %}"gender": "female",{% elsif g == '9906003' %}"gender": "male",{% elsif g == '9906021' or g == '9906023' or g == '9906025' %}"gender": "other",{% elsif g %}"gender": "unknown",{% endif %}
+  {% if p['ePatient.17'].value %}"birthDate": "{{ p['ePatient.17'].value }}",{% endif %}
+  {% if p['ePatient.05'].value or p['ePatient.06'].value -%}
+  "address": [
+    {
+      {% if p['ePatient.05'].value %}"line": ["{{ p['ePatient.05'].value }}"],{% endif %}
+      {% if p['ePatient.06'].value %}"city": "{{ p['ePatient.06'].value }}",{% endif %}
+      {% if p['ePatient.07'].value %}"state": "{{ p['ePatient.07'].value }}",{% endif %}
+      {% if p['ePatient.08'].value %}"postalCode": "{{ p['ePatient.08'].value }}",{% endif %}
+      "country": "US"
+    }
+  ],
+  {% endif -%}
+  "active": true
+}

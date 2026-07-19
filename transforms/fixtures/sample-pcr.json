@@ -1,0 +1,311 @@
+{
+  "EMSDataSet": {
+    "Header": [
+      {
+        "DemographicGroup": [
+          {
+            "dAgency.01": {
+              "value": "RIV-007"
+            },
+            "dAgency.02": {
+              "value": "1043219999"
+            },
+            "dAgency.04": {
+              "value": "06"
+            }
+          }
+        ],
+        "PatientCareReport": [
+          {
+            "eRecord": {
+              "eRecord.01": {
+                "value": "a7f3c2d1-4b5e-4c6f-8a9b-0c1d2e3f4a5b"
+              },
+              "eRecord.SoftwareApplicationGroup": [
+                {
+                  "eRecord.02": {
+                    "value": "fhirEMS Sample"
+                  },
+                  "eRecord.03": {
+                    "value": "SamplePCR"
+                  },
+                  "eRecord.04": {
+                    "value": "0.2.0"
+                  }
+                }
+              ]
+            },
+            "eResponse": {
+              "eResponse.AgencyGroup": [
+                {
+                  "eResponse.01": {
+                    "value": "RIV-007"
+                  },
+                  "eResponse.02": {
+                    "value": "Riverside County Fire Department EMS"
+                  }
+                }
+              ],
+              "eResponse.05": {
+                "value": "2205001"
+              },
+              "eResponse.07": {
+                "value": "2207015"
+              },
+              "eResponse.13": {
+                "value": "A-7"
+              },
+              "eResponse.14": {
+                "value": "Medic 7"
+              },
+              "eResponse.23": {
+                "value": "2223001"
+              },
+              "eResponse.24": [
+                {
+                  "value": "2224015"
+                }
+              ]
+            },
+            "eDispatch": {
+              "eDispatch.01": {
+                "value": "2301053"
+              },
+              "eDispatch.02": {
+                "value": "2302003"
+              }
+            },
+            "eTimes": {
+              "eTimes.01": {
+                "value": "2026-03-14T14:20:00-08:00"
+              },
+              "eTimes.03": {
+                "value": "2026-03-14T14:22:00-08:00"
+              },
+              "eTimes.05": {
+                "value": "2026-03-14T14:24:00-08:00"
+              },
+              "eTimes.06": {
+                "value": "2026-03-14T14:31:00-08:00"
+              },
+              "eTimes.07": {
+                "value": "2026-03-14T14:33:00-08:00"
+              },
+              "eTimes.09": {
+                "value": "2026-03-14T14:52:00-08:00"
+              },
+              "eTimes.11": {
+                "value": "2026-03-14T15:05:00-08:00"
+              },
+              "eTimes.12": {
+                "value": "2026-03-14T15:08:00-08:00"
+              },
+              "eTimes.13": {
+                "value": "2026-03-14T15:25:00-08:00"
+              }
+            },
+            "ePatient": {
+              "ePatient.PatientNameGroup": [
+                {
+                  "ePatient.02": {
+                    "value": "Johnson"
+                  },
+                  "ePatient.03": {
+                    "value": "Robert"
+                  }
+                }
+              ],
+              "ePatient.05": {
+                "value": "1425 Oak Grove Rd"
+              },
+              "ePatient.06": {
+                "value": "Moreno Valley"
+              },
+              "ePatient.07": {
+                "value": "06"
+              },
+              "ePatient.08": {
+                "value": "92553"
+              },
+              "ePatient.13": {
+                "value": "9906003"
+              },
+              "ePatient.17": {
+                "value": "1979-03-22"
+              }
+            },
+            "eScene": {
+              "eScene.01": {
+                "value": null,
+                "NV": "7701003"
+              },
+              "eScene.06": {
+                "value": "2708001"
+              },
+              "eScene.15": {
+                "value": "I-15 SB Mile Marker 62"
+              },
+              "eScene.17": {
+                "value": "Murrieta"
+              },
+              "eScene.18": {
+                "value": "06"
+              },
+              "eScene.19": {
+                "value": "92563"
+              }
+            },
+            "eSituation": {
+              "eSituation.01": {
+                "value": "2026-03-14T14:02:00-08:00"
+              },
+              "eSituation.02": {
+                "value": "9922005"
+              },
+              "eSituation.09": {
+                "value": "S09.90XA"
+              },
+              "eSituation.11": {
+                "value": "S09.90XA"
+              },
+              "eSituation.13": {
+                "value": "2813001"
+              }
+            },
+            "eVitals": {
+              "eVitals.VitalGroup": [
+                {
+                  "@CorrelationID": "VG-1",
+                  "eVitals.01": {
+                    "value": "2026-03-14T14:36:00-08:00"
+                  },
+                  "eVitals.02": {
+                    "value": "9923001"
+                  },
+                  "eVitals.06": {
+                    "value": "92"
+                  },
+                  "eVitals.07": {
+                    "value": "60"
+                  },
+                  "eVitals.10": {
+                    "value": "110"
+                  },
+                  "eVitals.12": {
+                    "value": "94"
+                  },
+                  "eVitals.14": {
+                    "value": "22"
+                  }
+                }
+              ]
+            },
+            "eProcedures": {
+              "eProcedures.ProcedureGroup": [
+                {
+                  "@CorrelationID": "PG-1",
+                  "eProcedures.01": {
+                    "value": "2026-03-14T14:40:00-08:00"
+                  },
+                  "eProcedures.02": {
+                    "value": "9923001"
+                  },
+                  "eProcedures.03": {
+                    "value": "392230005"
+                  },
+                  "eProcedures.05": {
+                    "value": "1"
+                  },
+                  "eProcedures.06": {
+                    "value": "9923003"
+                  }
+                }
+              ]
+            },
+            "eMedications": {
+              "eMedications.MedicationGroup": [
+                {
+                  "@CorrelationID": "MG-1",
+                  "eMedications.01": {
+                    "value": "2026-03-14T14:45:00-08:00"
+                  },
+                  "eMedications.02": {
+                    "value": "9923001"
+                  },
+                  "eMedications.03": {
+                    "value": "313002"
+                  },
+                  "eMedications.04": {
+                    "value": "9927023"
+                  },
+                  "eMedications.DosageGroup": [
+                    {
+                      "eMedications.05": {
+                        "value": "500"
+                      },
+                      "eMedications.06": {
+                        "value": "3706037"
+                      }
+                    }
+                  ],
+                  "eMedications.10": {
+                    "value": "9916005"
+                  }
+                }
+              ]
+            },
+            "eDisposition": {
+              "eDisposition.DestinationGroup": [
+                {
+                  "eDisposition.01": {
+                    "value": "RUHS Medical Center"
+                  },
+                  "eDisposition.02": {
+                    "value": "1447340506"
+                  },
+                  "eDisposition.05": {
+                    "value": "Moreno Valley"
+                  },
+                  "eDisposition.06": {
+                    "value": "06"
+                  },
+                  "eDisposition.07": {
+                    "value": "92555"
+                  }
+                }
+              ],
+              "eDisposition.IncidentDispositionGroup": [
+                {
+                  "eDisposition.27": {
+                    "value": "4227001"
+                  },
+                  "eDisposition.28": {
+                    "value": "4228001"
+                  },
+                  "eDisposition.29": {
+                    "value": "4229001"
+                  },
+                  "eDisposition.30": {
+                    "value": "4230001"
+                  }
+                }
+              ],
+              "eDisposition.16": {
+                "value": "4216005"
+              },
+              "eDisposition.17": {
+                "value": "4217001"
+              },
+              "eDisposition.21": {
+                "value": "4221003"
+              },
+              "eDisposition.24": {
+                "value": "4224003"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
