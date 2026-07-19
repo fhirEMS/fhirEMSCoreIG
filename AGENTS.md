@@ -319,6 +319,38 @@ NEMSIS uses repeating XML groups for multiple sets of vitals, medications, proce
 
 ---
 
+## Loading onto fhirEngine (terminology server)
+
+fhirEngine (github.com/FHIRmedicConsulting/fhirEngine) installs FHIR IG packages natively via
+`fhirengine-terminology install-ig <packageDir> [packageId]` — no custom load scripts needed.
+It reads an **unpacked** package directory (flat `package/*.json`), not a .tgz. The IG Publisher
+installs every build to `~/.fhir/packages/fhirems.emscore#dev/package`, which is the natural
+load path. Dependencies are NOT auto-resolved — install each package explicitly:
+
+```bash
+cd fhirEngine/packages/server
+npx tsx scripts/fhirengine-terminology.ts install-ig ~/.fhir/packages/hl7.terminology.r4#5.5.0/package hl7.terminology.r4
+npx tsx scripts/fhirengine-terminology.ts install-ig ~/.fhir/packages/hl7.fhir.uv.extensions.r4#1.0.0/package hl7.fhir.uv.extensions.r4
+npx tsx scripts/fhirengine-terminology.ts install-ig ~/.fhir/packages/hl7.fhir.us.core#6.1.0/package hl7.fhir.us.core
+npx tsx scripts/fhirengine-terminology.ts install-ig ~/.fhir/packages/fhirems.emscore#dev/package fhirems.emscore
+```
+
+Notes:
+- 128 of 129 ValueSets enumerate explicit concepts → fhirEngine pre-materializes complete
+  expansions. The exception is `vs-ems-dispatch-reason` (intensional SNOMED is-a 404684003
+  filter): stored as a partial expansion; `$validate-code` misses degrade to `unknown`, never
+  `invalid`. fhirEngine does not yet expand intensional SNOMED filters even with SNOMED RF2
+  loaded (hierarchy tables on their roadmap), so this stays partial for now.
+- Licensed systems used in bindings/examples (SNOMED, LOINC, RxNorm) are operator-loaded via
+  their `load-terminology <loinc|snomed|rxnorm> <dir>` from release files — their mechanism,
+  not ours.
+- `NamingSystem/ns-ems-vin` is skipped by their loader (conformance set is SD/CS/VS/CM) — harmless.
+- `--pull-vsac` is unnecessary (this IG binds no VSAC value sets).
+- To enforce this IG's profiles on ingest: `FHIRENGINE_VALIDATION_PROFILES=fhirems.emscore`.
+- Stale `~/.fhir/packages/hl7.fhir.us.emscore#dev` (pre-canonical-rename) should not be loaded.
+
+---
+
 ## OID Registry
 
 Every CodeSystem and ValueSet carries an OID identifier under the project's self-assigned
