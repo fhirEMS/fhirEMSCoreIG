@@ -202,3 +202,11 @@ See [Normalization Decision Record NDR-002](background.html) for full rationale.
 | eVitals.27 | Pain Score | 72514-3 | Pain severity 0-10 |
 | eVitals.28 | Weight | 29463-7 | Body weight |
 | eVitals.16 | ETCO2 | 19889-5 | Carbon dioxide |
+
+---
+
+## Value Set Expansion Parameters
+
+The following parameters are used when expanding the value sets in this guide:
+
+{% include expansion-params.xhtml %}

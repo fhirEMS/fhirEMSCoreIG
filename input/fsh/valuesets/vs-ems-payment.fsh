@@ -10,7 +10,7 @@ Title: "EMS Primary Payment Method VS"
 Description: "Primary method of payment for the EMS response (ePayment.01)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payment-method"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#2601001 "Insurance"
 * $nemsis-payment#2601003 "Medicaid"
 * $nemsis-payment#2601005 "Medicare"
@@ -31,7 +31,7 @@ Title: "EMS Insurance Billing Priority VS"
 Description: "Insurance company billing priority (ePayment.11)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insurance-billing-priority"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#2611001 "Other"
 * $nemsis-payment#2611003 "Primary"
 * $nemsis-payment#2611005 "Secondary"
@@ -53,7 +53,7 @@ Title: "EMS Insured Relationship VS"
 Description: "Patient's relationship to the insured (ePayment.22)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insured-relationship"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#2622001 "Self"
 * $nemsis-payment#2622003 "Spouse"
 * $nemsis-payment#2622005 "Child/Dependent"
@@ -71,7 +71,7 @@ Title: "EMS Response Urgency VS"
 Description: "Urgency of the EMS response for billing purposes (ePayment.40)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-urgency"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#2640001 "Immediate"
 * $nemsis-payment#2640003 "Non-Immediate"
 
@@ -82,7 +82,7 @@ Title: "EMS Patient Transport Assessment VS"
 Description: "Patient's physical condition that necessitated ambulance transport (ePayment.41)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-transport-assessment"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#2641001 "Unable to sit without assistance"
 * $nemsis-payment#2641003 "Unable to stand without assistance"
 * $nemsis-payment#2641005 "Unable to walk without assistance"
@@ -94,7 +94,7 @@ Title: "EMS Ambulance Transport Reason VS"
 Description: "CMS ambulance transport reason code (ePayment.44)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-transport-reason"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#A "Patient was transported to the nearest facility for care of symptoms, complaints, or both"
 * $nemsis-payment#B "Patient was transported for the benefit of a preferred physician"
 * $nemsis-payment#C "Patient was transported for the nearness of family members"
@@ -108,7 +108,7 @@ Title: "EMS Ambulance Conditions Indicator VS"
 Description: "CMS ambulance conditions indicators justifying medical necessity (ePayment.47)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-conditions"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#01 "Patient was admitted to a hospital"
 * $nemsis-payment#04 "Patient was moved by stretcher"
 * $nemsis-payment#05 "Patient was unconscious or in shock"
@@ -125,7 +125,7 @@ Title: "EMS CMS Service Level VS"
 Description: "CMS ambulance service level for billing (ePayment.50)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cms-service-level"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payment#2650001 "ALS, Level 1"
 * $nemsis-payment#2650003 "ALS, Level 1 Emergency"
 * $nemsis-payment#2650005 "ALS, Level 2"
@@ -143,7 +143,7 @@ Title: "EMS Payer Type VS"
 Description: "X12 payer type codes for the insurance company (ePayment.57)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payer-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-payer-type#11 "Other Non-Federal Programs"
 * $nemsis-payer-type#12 "Preferred Provider Organization (PPO)"
 * $nemsis-payer-type#13 "Point of Service (POS)"

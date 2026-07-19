@@ -12,7 +12,7 @@ Title: "EMS Agency Service Type"
 Description: "NEMSIS dAgency.09/10 - The type(s) of EMS service provided by the agency."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-cs#9920001 "911 Response (Scene) with Transport Capability"
 * $nemsis-cs#9920003 "911 Response (Scene) without Transport Capability"
 * $nemsis-cs#9920005 "Air Medical"
@@ -31,7 +31,7 @@ Title: "EMS Agency Level of Service"
 Description: "NEMSIS dAgency.11 - The highest level of care the EMS agency is licensed/certified to provide."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-level-of-service"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-cs#9917001 "Advanced Emergency Medical Technician (AEMT)"
 * $nemsis-cs#9917002 "Emergency Medical Technician - Intermediate"
 * $nemsis-cs#9917003 "Emergency Medical Responder (EMR)"
@@ -53,7 +53,7 @@ Title: "EMS Agency Organization Status"
 Description: "NEMSIS dAgency.12 - Whether the EMS agency is staffed by volunteers, paid personnel, or both."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-status"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-cs#1016001 "Mixed"
 * $nemsis-cs#1016003 "Non-Volunteer"
 * $nemsis-cs#1016005 "Volunteer"
@@ -66,7 +66,7 @@ Title: "EMS Agency Organizational Type"
 Description: "NEMSIS dAgency.13 - The organizational type of the EMS agency."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-cs#9912001 "Fire Department"
 * $nemsis-cs#9912003 "Governmental, Non-Fire"
 * $nemsis-cs#9912005 "Hospital"

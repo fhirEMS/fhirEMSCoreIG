@@ -10,7 +10,7 @@ Title: "EMS Cardiac Arrest VS"
 Description: "Whether the patient was in cardiac arrest and when (eArrest.01)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cardiac-arrest"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3001001 "No"
 * $nemsis-arrest#3001003 "Yes, Prior to Any EMS Arrival (includes Transport EMS & Medical First Responders)"
 * $nemsis-arrest#3001005 "Yes, After Any EMS Arrival (includes Transport EMS & Medical First Responders)"
@@ -22,7 +22,7 @@ Title: "EMS Arrest Etiology VS"
 Description: "Etiology of the cardiac arrest event (eArrest.02)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-etiology"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3002001 "Cardiac (Presumed)"
 * $nemsis-arrest#3002003 "Drowning/Submersion"
 * $nemsis-arrest#3002005 "Drug Overdose"
@@ -39,7 +39,7 @@ Title: "EMS Resuscitation Attempted VS"
 Description: "Type of resuscitation attempted by the EMS unit (eArrest.03)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-resuscitation-attempted"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3003001 "Attempted Defibrillation"
 * $nemsis-arrest#3003003 "Attempted Ventilation"
 * $nemsis-arrest#3003005 "Initiated Chest Compressions"
@@ -54,7 +54,7 @@ Title: "EMS Arrest Witnessed VS"
 Description: "Who witnessed the cardiac arrest (eArrest.04)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-witnessed"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3004001 "Not Witnessed"
 * $nemsis-arrest#3004003 "Witnessed by Family Member"
 * $nemsis-arrest#3004005 "Witnessed by Healthcare Provider"
@@ -67,7 +67,7 @@ Title: "EMS AED Use VS"
 Description: "Whether an AED was used prior to EMS arrival (eArrest.07)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-aed-use"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3007001 "No"
 * $nemsis-arrest#3007003 "Yes, Applied without Defibrillation"
 * $nemsis-arrest#3007005 "Yes, With Defibrillation"
@@ -79,7 +79,7 @@ Title: "EMS CPR Type VS"
 Description: "Type of CPR care provided prior to EMS arrival (eArrest.09)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cpr-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3009001 "Compressions-Manual"
 * $nemsis-arrest#3009003 "Compressions-External Band Type Device"
 * $nemsis-arrest#3009005 "Compressions-External Plunger Type Device"
@@ -101,7 +101,7 @@ Title: "EMS First Monitored Rhythm VS"
 Description: "First monitored cardiac rhythm by this EMS unit (eArrest.11). Subset for initial arrest rhythms. For full rhythm list including post-ROSC, see EMSCardiacRhythmVS."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-first-rhythm"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3011001 "Asystole"
 * $nemsis-arrest#3011005 "PEA"
 * $nemsis-arrest#3011007 "Unknown AED Non-Shockable Rhythm"
@@ -116,7 +116,7 @@ Title: "EMS ROSC VS"
 Description: "Whether and when return of spontaneous circulation occurred (eArrest.12)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-rosc"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3012001 "No"
 * $nemsis-arrest#3012003 "Yes, At Arrival at the ED"
 * $nemsis-arrest#3012005 "Yes, Prior to Arrival at the ED"
@@ -129,7 +129,7 @@ Title: "EMS Neurological Outcome VS"
 Description: "Cerebral performance category (CPC) at hospital discharge (eArrest.13)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-neurological-outcome"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3013001 "CPC 1 Good Cerebral Performance"
 * $nemsis-arrest#3013003 "CPC 2 Moderate Cerebral Disability"
 * $nemsis-arrest#3013005 "CPC 3 Severe Cerebral Disability"
@@ -142,7 +142,7 @@ Title: "EMS Reason CPR Discontinued VS"
 Description: "Reason CPR or resuscitation was discontinued (eArrest.16)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cpr-discontinued-reason"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3016001 "DNR"
 * $nemsis-arrest#3016003 "Medical Control Order"
 * $nemsis-arrest#3016005 "Obvious Signs of Death"
@@ -157,7 +157,7 @@ Title: "EMS End of Cardiac Arrest Event VS"
 Description: "Disposition of the patient at the end of the EMS cardiac arrest event (eArrest.18)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-end-event"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-arrest#3018001 "Expired in ED"
 * $nemsis-arrest#3018003 "Expired in the Field"
 * $nemsis-arrest#3018005 "Ongoing Resuscitation in ED"
@@ -172,7 +172,7 @@ Title: "EMS Arrest First Responder VS"
 Description: "Who first performed CPR, applied the AED, or defibrillated the patient (eArrest.20/21/22)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-first-responder"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 // eArrest.20 — Who First Initiated CPR
 * $nemsis-arrest#3020001 "Bystander"
 * $nemsis-arrest#3020003 "Family Member"

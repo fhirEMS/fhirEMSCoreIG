@@ -11,7 +11,7 @@ Title: "EMS Cardiac Rhythm"
 Description: "NEMSIS eVitals.03 - Cardiac rhythm or ECG interpretation."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cardiac-rhythm"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#9901001 "Agonal/Idioventricular"
 * $nemsis-vitals#9901003 "Asystole"
 * $nemsis-vitals#9901005 "Artifact"
@@ -59,7 +59,7 @@ Title: "EMS ECG Type"
 Description: "NEMSIS eVitals.04 - The number of leads used for ECG acquisition."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ecg-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3304000 "2 Lead ECG (pads or paddles)"
 * $nemsis-vitals#3304001 "3 Lead"
 * $nemsis-vitals#3304003 "4 Lead"
@@ -78,7 +78,7 @@ Title: "EMS ECG Interpretation Method"
 Description: "NEMSIS eVitals.05 - How the ECG was interpreted."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ecg-method"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3305001 "Computer Interpretation"
 * $nemsis-vitals#3305003 "Manual Interpretation"
 * $nemsis-vitals#3305005 "Transmission with No Interpretation"
@@ -92,7 +92,7 @@ Title: "EMS Blood Pressure Measurement Method (ValueSet)"
 Description: "NEMSIS eVitals.08 - The technique used to measure blood pressure."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-bp-method"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3308001 "Arterial Line"
 * $nemsis-vitals#3308003 "Doppler"
 * $nemsis-vitals#3308005 "Cuff-Automated"
@@ -108,7 +108,7 @@ Title: "EMS Pulse Rhythm"
 Description: "NEMSIS eVitals.13 - The regularity of the patient's pulse."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pulse-rhythm"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3313001 "Irregularly Irregular"
 * $nemsis-vitals#3313003 "Regular"
 * $nemsis-vitals#3313005 "Regularly Irregular"
@@ -121,7 +121,7 @@ Title: "EMS Respiratory Effort"
 Description: "NEMSIS eVitals.15 - The quality of the patient's respiratory effort."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-respiratory-effort"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3315001 "Apneic"
 * $nemsis-vitals#3315003 "Labored"
 * $nemsis-vitals#3315005 "Mechanically Assisted (BVM, CPAP, etc.)"
@@ -138,7 +138,7 @@ Title: "EMS GCS Qualifier"
 Description: "NEMSIS eVitals.22 - Qualifiers documenting conditions that affect GCS scoring validity."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-gcs-qualifier"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3322001 "Eye Obstruction Prevents Eye Assessment"
 * $nemsis-vitals#3322003 "Initial GCS has legitimate values without interventions"
 * $nemsis-vitals#3322005 "Patient Chemically Paralyzed"
@@ -153,7 +153,7 @@ Title: "EMS AVPU Level of Responsiveness"
 Description: "NEMSIS eVitals.26 - The patient's level of responsiveness using the AVPU scale."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-avpu"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3326001 "Alert"
 * $nemsis-vitals#3326003 "Verbal"
 * $nemsis-vitals#3326005 "Painful"
@@ -167,7 +167,7 @@ Title: "EMS Pain Scale Type (ValueSet)"
 Description: "NEMSIS eVitals.28 - The type of pain scale used to assess the patient's pain."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pain-scale-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3328001 "FLACC (Face, Legs, Activity, Cry, Consolability)"
 * $nemsis-vitals#3328003 "Numeric (0-10)"
 * $nemsis-vitals#3328005 "Other"
@@ -181,7 +181,7 @@ Title: "EMS Stroke Scale Result"
 Description: "NEMSIS eVitals.29 - The result of the prehospital stroke scale assessment."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-result"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3329001 "Negative"
 * $nemsis-vitals#3329003 "Non-Conclusive"
 * $nemsis-vitals#3329005 "Positive"
@@ -194,7 +194,7 @@ Title: "EMS Stroke Scale Type"
 Description: "NEMSIS eVitals.30 - The prehospital stroke screening tool used."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3330001 "Cincinnati Prehospital Stroke Scale (CPSS)"
 * $nemsis-vitals#3330004 "Los Angeles Prehospital Stroke Screen (LAPSS)"
 * $nemsis-vitals#3330005 "Massachusetts Stroke Scale (MSS)"
@@ -219,7 +219,7 @@ Title: "EMS Reperfusion Checklist"
 Description: "NEMSIS eVitals.31 - Contraindication status for thrombolytic therapy per the reperfusion checklist."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-reperfusion-checklist"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-vitals#3331001 "Definite Contraindications to Thrombolytic Use"
 * $nemsis-vitals#3331003 "No Contraindications to Thrombolytic Use"
 * $nemsis-vitals#3331005 "Possible Contraindications to Thrombolytic Use"

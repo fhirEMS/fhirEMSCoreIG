@@ -49,3 +49,24 @@ Usage: #example
 * contact[0].relationship[0].coding[0].code = #N
 * contact[0].telecom[0].system = #phone
 * contact[0].telecom[0].value = "951-555-0147"
+
+// ePatient.11 - Home Census Tract
+* extension[censusTract].valueString = "06065042518"
+
+// ePatient.15/.16 - Estimated Age (demonstration; use only when DOB unknown)
+* extension[estimatedAge].extension[value].valueDecimal = 47
+* extension[estimatedAge].extension[unit].valueCodeableConcept
+    = $nemsis-patient-cs#2516009 "Years"
+
+// ePatient.22 - Alternate Home Residence (demonstration value)
+* extension[alternateResidence].valueCodeableConcept
+    = $nemsis-patient-cs#2522001 "Homeless"
+
+// eHistory.01 - Barriers to Patient Care → None Noted
+* extension[EMSPatientBarrier].valueCodeableConcept
+    = $nemsis-cs#3101009 "None Noted"
+
+// NDR-001 demo: NEMSIS NV on an element without dataAbsentReason
+// (marital status not recorded → NV.NotRecorded)
+* maritalStatus.extension[EMSNotValue].valueCodeableConcept
+    = $nemsis-nv#NV.NotRecorded "Not Recorded"

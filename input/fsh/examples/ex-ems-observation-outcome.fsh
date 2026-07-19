@@ -25,6 +25,7 @@ Usage: #example
 
 * subject = Reference(ex-ems-patient)
 * encounter = Reference(ex-ems-encounter)
+* performer[0] = Reference(ex-ems-practitioner)
 
 // ── eOutcome.01 - ED Disposition → Admitted as inpatient ──────
 * component[edDisposition].code = $nemsis-encounter-cs#eOutcomeEDDisposition

@@ -11,7 +11,7 @@ Title: "EMS Discharge Disposition VS"
 Description: "UB-04 patient discharge status codes used for ED disposition (eOutcome.01) and hospital disposition (eOutcome.02)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nubc-discharge#01 "Discharged to home or self care (routine discharge)"
 * $nubc-discharge#02 "Discharged/transferred to another short term general hospital for inpatient care"
 * $nubc-discharge#03 "Discharged/transferred to a skilled nursing facility (SNF)"
@@ -41,7 +41,7 @@ Title: "EMS External Report Type VS"
 Description: "Type of external report associated with the EMS event (eOutcome.03)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-external-report-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-cs#4303001 "Disaster Tag"
 * $nemsis-cs#4303003 "Fire Incident Report"
 * $nemsis-cs#4303005 "Hospital-Receiving"

@@ -10,7 +10,7 @@ Title: "EMS Mechanism of Injury VS"
 Description: "The mechanism of the event which caused the injury (eInjury.02)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-mechanism-of-injury"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2902001 "Blunt"
 * $nemsis-injury#2902003 "Burn"
 * $nemsis-injury#2902005 "Other"
@@ -23,7 +23,7 @@ Title: "EMS Trauma Triage High Risk VS"
 Description: "Trauma triage criteria indicating high risk for serious injury — CDC Field Triage Guideline red criteria (injury patterns and physiologic instability) (eInjury.03)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-high-risk"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2903001 "Amputation proximal to wrist or ankle"
 * $nemsis-injury#2903003 "Crushed, degloved, mangled, or pulseless extremity"
 * $nemsis-injury#2903005 "Chest wall instability, deformity, or suspected flail chest"
@@ -53,7 +53,7 @@ Title: "EMS Trauma Triage Moderate Risk VS"
 Description: "Trauma triage criteria indicating moderate risk for serious injury — CDC Field Triage Guideline yellow criteria (mechanism of injury and EMS judgment) (eInjury.04)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-moderate-risk"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2904001 "Pedestrian/bicycle rider thrown, run over, or with significant impact"
 * $nemsis-injury#2904003 "Fall Adults: > 20 ft. (one story is equal to 10 ft.) (DEPRECATED)"
 * $nemsis-injury#2904005 "Fall Children: > 10 ft. or 2-3 times the height of the child (DEPRECATED)"
@@ -82,7 +82,7 @@ Title: "EMS Seat Row Location VS"
 Description: "The seat row location of the patient in the vehicle at the time of the crash (eInjury.06)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-seat-row-location"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2906001 "Front Seat-Left Side (or motorcycle driver)"
 * $nemsis-injury#2906003 "Front Seat-Middle"
 * $nemsis-injury#2906005 "Front Seat-Right Side"
@@ -106,7 +106,7 @@ Title: "EMS Occupant Safety Equipment VS"
 Description: "Occupant safety equipment in use by the patient at the time of the injury (eInjury.07)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-safety-equipment"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2907001 "Child Booster Seat"
 * $nemsis-injury#2907003 "Eye Protection"
 * $nemsis-injury#2907005 "Helmet Worn"
@@ -129,7 +129,7 @@ Title: "EMS Airbag Deployment VS"
 Description: "Airbag deployment status observed at the crash (eInjury.08)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airbag-deployment"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2908001 "Airbag Deployed Front"
 * $nemsis-injury#2908003 "Airbag Deployed Side"
 * $nemsis-injury#2908005 "Airbag Deployed Other (knee, air belt, etc.)"
@@ -143,7 +143,7 @@ Title: "EMS OSHA Personal Protective Equipment VS"
 Description: "OSHA-defined personal protective equipment in use by the patient at the time of a work-related injury (eInjury.10)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-osha-ppe"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2910001 "Eye and Face Protection"
 * $nemsis-injury#2910003 "Foot Protection"
 * $nemsis-injury#2910005 "Head Protection"
@@ -159,7 +159,7 @@ Title: "EMS ACN Vehicle Seat Location VS"
 Description: "Automated Collision Notification (ACN) vehicle seat location of the patient (eInjury.26)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acn-seat-location"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-injury#2926001 "Driver Front Seat"
 * $nemsis-injury#2926003 "Front Row Middle Seat"
 * $nemsis-injury#2926005 "Passenger Front Seat"

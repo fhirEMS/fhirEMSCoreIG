@@ -58,6 +58,9 @@ This scenario exercises the majority of fhirEMSCore profiles and demonstrates ho
 | Example Id | Profile | Description |
 |---|---|---|
 | `ex-ems-observation-airway` | EMSObservationAirway | Endotracheal intubation (SNOMED 182682004); confirmed by waveform ETCO2 + auscultation; tube depth 22 cm; EMSAirwayContext populated |
+| `ex-ems-ecg-rhythm` | Observation (R4 base) | Sinus tachycardia (eVitals.03); 12-lead, computer interpretation via EMSECGContext |
+| `ex-ems-pain-score` | Observation (R4 base) | Pain 7/10 (LOINC 72514-3); numeric scale via EMSPainScaleType |
+| `ex-ems-stroke-scale` | Observation (R4 base) | CPSS negative (eVitals.29); EMSStrokeScaleContext + NDR-002 pertinent negative |
 | `ex-ems-observation-labs` | EMSObservationLabs | Point-of-care blood glucose 142 mg/dL (LOINC 59469-7) |
 
 ### Procedures and Medications

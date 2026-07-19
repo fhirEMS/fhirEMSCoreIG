@@ -12,7 +12,7 @@ Title: "EMS Caregiver Level"
 Description: "NEMSIS eMedications.10 / eProcedures.10 - Level/role of the healthcare professional who administered the medication or performed the procedure."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-caregiver-level"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#9905001 "Advanced Emergency Medical Technician (AEMT)"
 * $nemsis-medications#9905002 "Emergency Medical Technician - Intermediate"
 * $nemsis-medications#9905003 "Emergency Medical Responder (EMR)"
@@ -43,7 +43,7 @@ Title: "EMS Clinical Response to Treatment"
 Description: "NEMSIS eMedications.07 / eProcedures.08 - Patient response to medication administration or procedure performance."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-clinical-response"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#9916001 "Improved"
 * $nemsis-medications#9916003 "Unchanged"
 * $nemsis-medications#9916005 "Worse"
@@ -56,7 +56,7 @@ Title: "EMS Treatment Authorization Type"
 Description: "NEMSIS eMedications.11 / eProcedures.11 - How the medication administration or procedure was authorized."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-authorization-type"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#9918001 "On-Line (Remote Verbal Order)"
 * $nemsis-medications#9918003 "On-Scene"
 * $nemsis-medications#9918005 "Protocol (Standing Order)"
@@ -70,7 +70,7 @@ Title: "EMS Medication Administered Route"
 Description: "NEMSIS eMedications.04 - The route by which the medication was administered."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-route"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#9927001 "Blow-By"
 * $nemsis-medications#9927003 "Buccal"
 * $nemsis-medications#9927005 "Endotracheal Tube (ET)"
@@ -118,7 +118,7 @@ Title: "EMS Medication Dosage Units"
 Description: "NEMSIS eMedications.06 - Units of measurement for medication dosage."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-dosage-units"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#3706001 "Grams (gms)"
 * $nemsis-medications#3706003 "Inches (in)"
 * $nemsis-medications#3706005 "International Units (IU)"
@@ -155,7 +155,7 @@ Title: "EMS Medication Complication"
 Description: "NEMSIS eMedications.08 - Adverse reactions or complications occurring with medication administration."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-complication"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#3708001 "Altered Mental Status"
 * $nemsis-medications#3708003 "Apnea"
 * $nemsis-medications#3708005 "Bleeding"
@@ -187,7 +187,7 @@ Title: "EMS Procedure Complication"
 Description: "NEMSIS eProcedures.07 - Adverse events or complications occurring with procedure performance."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-procedure-complication"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#3907001 "Altered Mental Status"
 * $nemsis-medications#3907003 "Apnea"
 * $nemsis-medications#3907005 "Bleeding"
@@ -221,7 +221,7 @@ Title: "EMS Vascular Access Location"
 Description: "NEMSIS eProcedures.13 - Anatomical site of vascular access (IV/IO line)."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vascular-access-location"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#3913001 "Antecubital-Left"
 * $nemsis-medications#3913003 "Antecubital-Right"
 * $nemsis-medications#3913005 "External Jugular-Left"
@@ -272,7 +272,7 @@ Title: "EMS Airway Placement Technique"
 Description: "NEMSIS eProcedures.14 - Technique used for airway device placement."
 * ^url = "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-technique"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * $nemsis-medications#3914001 "Blind Digital Technique"
 * $nemsis-medications#3914003 "Cross Finger Technique"
 * $nemsis-medications#3914005 "Direct Laryngoscopy"

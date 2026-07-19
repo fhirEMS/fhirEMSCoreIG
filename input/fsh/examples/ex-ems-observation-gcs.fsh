@@ -20,6 +20,7 @@ Usage: #example
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"
 * subject = Reference(ex-ems-patient)
 * encounter = Reference(ex-ems-encounter)
+* performer[0] = Reference(ex-ems-practitioner)
 * valueInteger = 4
 
 // ── GCS Verbal Sub-observation ────────────────────────────────
@@ -39,6 +40,7 @@ Usage: #example
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"
 * subject = Reference(ex-ems-patient)
 * encounter = Reference(ex-ems-encounter)
+* performer[0] = Reference(ex-ems-practitioner)
 * valueInteger = 4
 
 // ── GCS Motor Sub-observation ─────────────────────────────────
@@ -58,6 +60,7 @@ Usage: #example
 * effectiveDateTime = "2026-03-14T14:37:00-08:00"
 * subject = Reference(ex-ems-patient)
 * encounter = Reference(ex-ems-encounter)
+* performer[0] = Reference(ex-ems-practitioner)
 * valueInteger = 5
 
 // ── GCS Total Panel ───────────────────────────────────────────

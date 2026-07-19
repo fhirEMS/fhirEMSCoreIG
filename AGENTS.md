@@ -466,10 +466,10 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 
 ## Profiles Build Status
 
-**v0.1.0 Phase 3 — 0 SUSHI errors, 0 warnings; IG Publisher 2.2.11: 0 errors, 400 warnings, 0 broken links as of 2026-07-19.**
+**v0.1.0 Phase 3 — FULLY CLEAN BUILD as of 2026-07-19: SUSHI 0/0; IG Publisher 2.2.11: 0 errors, 0 warnings, 0 broken links.**
 **The former 211-error "practical minimum" was eliminated by replacing the unregistered HL7 canonical/package-id with the project-owned namespace (see Project Identity), switching ig.ini to fhir.base.template, fixing the uv.extensions dependsOn URI, adding the hl7.fhir.uv.tools.r4 dependency, and correcting the NUBC discharge system URL.**
-**Warning breakdown: ~202 experimental-ValueSet-in-non-experimental-profile + misc (extension examples, OIDs, version pinning) — candidates for Phase 3 cleanup.**
-**Totals: 24 profiles, 45 extensions, 129 ValueSets, 17 CodeSystems, 32 examples (including NamingSystem). eInjury profile added 2026-07-19.**
+**The 400 warnings were cleared by: flipping all ValueSets to experimental=false (202), adding example coverage for all 22 previously-unexampled extensions, pin-canonicals: pin-multiples (13), performers on 4 example Observations, including expansion-params.xhtml in terminology.md, and justified ignoreWarnings suppressions (146 OID — no registered OID root; licensed HCPCS/NUBC systems; US Core CLIA/NAIC slice inheritance; NV/PN Element context per NDR-001/002; pinned dependency versions).**
+**Totals: 24 profiles, 45 extensions, 129 ValueSets, 17 CodeSystems, 35 examples (including NamingSystem). eInjury profile added 2026-07-19.**
 
 ### Profiles
 
@@ -520,6 +520,9 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `ex-ems-exam-skin` | EMSObservationExam | Pale, diaphoretic |
 | `ex-ems-exam-neuro` | EMSObservationExam | Confused, abnormal motor |
 | `ex-ems-observation-airway` | EMSObservationAirway | ETT, waveform ETCO2 confirmed, 22cm |
+| `ex-ems-ecg-rhythm` | Observation (R4 base) | Sinus tach, 12-lead, ECG context extension |
+| `ex-ems-pain-score` | Observation (R4 base) | Pain 7/10 numeric, pain-scale-type extension |
+| `ex-ems-stroke-scale` | Observation (R4 base) | CPSS negative, stroke context + PN pattern |
 | `ex-ems-observation-labs` | EMSObservationLabs | POC glucose 142 mg/dL |
 | `ex-ems-observation-outcome` | EMSObservationOutcome | ED admit, ICD-10 S09.90XA, ISS=9 |
 | `ex-ems-procedure` | EMSProcedure | IV access |
@@ -583,7 +586,6 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 ### Remaining Work (Phase 3+)
 - **Narrative page content**: `input/pagecontent/` stubs need real content
 - **eOther / eCustom**: Low priority
-- **Warning cleanup**: ~202 warnings from `^experimental = true` ValueSets bound in non-experimental profiles; either flip the VS flags or mark structures experimental
 
 ---
 
