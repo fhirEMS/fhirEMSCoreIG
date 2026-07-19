@@ -319,19 +319,20 @@ NEMSIS uses repeating XML groups for multiple sets of vitals, medications, proce
 
 ---
 
-## Transformation Scripts (transforms/)
+## Transformation Scripts (transformationScripts/)
 
-`transforms/` holds the NEMSIS-XML→FHIR conversion pipeline. PRIMARY PATH:
-Microsoft FHIR Converter Liquid templates (`liquid/`, root
+`transformationScripts/` holds the NEMSIS-XML→FHIR conversion pipeline, one
+folder per engine. PRIMARY PATH: Microsoft FHIR Converter Liquid templates
+(`microsoft-fhir-converter/`, root
 `NemsisBundle.liquid`) — verified 2026-07-19 on the real converter (DotLiquid)
-AND the CI harness (`python3 transforms/tools/test-liquid-render.py`, 16
+AND the CI harness (`python3 transformationScripts/tools/test-liquid-render.py`, 16
 checks incl. content; needs `pip install python-liquid`). Whistle maps are
 REFERENCE ONLY (v1 unsupported upstream, v2 unpackaged). pyromanic
 (fhirEMS/pyromanic) is dbignite→FHIR, not NEMSIS — possible future TS host.
 DotLiquid gotchas encoded in the templates: no dynamic bracket keys; `*Group`
 arrays need `| first`; every resource MUST have `resource.id` or the
 converter post-processor merges same-type entries. Coverage: core PCR path;
-extend per transforms/README.md.
+extend per transformationScripts/README.md. Whistle maps: `google-whistle/`.
 
 ---
 

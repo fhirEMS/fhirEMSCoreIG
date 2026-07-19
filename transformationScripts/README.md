@@ -6,8 +6,8 @@ XML into FHIR R4 transaction Bundles conforming to this IG
 
 | Engine | Directory | Status |
 |---|---|---|
-| **Microsoft FHIR Converter (Liquid)** | `liquid/` | **PRIMARY, engine-verified**: executed on the real converter (built from microsoft/FHIR-Converter, DotLiquid) and under the CI harness — 16/16 checks |
-| Google Whistle | `whistle/` | **Reference only — not a supported path.** Whistle 1 (this dialect) is unsupported legacy upstream; Whistle 2 is a build-from-source Java engine with no packaged release. Kept as executable-style mapping documentation |
+| **Microsoft FHIR Converter (Liquid)** | `microsoft-fhir-converter/` | **PRIMARY, engine-verified**: executed on the real converter (built from microsoft/FHIR-Converter, DotLiquid) and under the CI harness — 16/16 checks |
+| Google Whistle | `google-whistle/` | **Reference only — not a supported path.** Whistle 1 (this dialect) is unsupported legacy upstream; Whistle 2 is a build-from-source Java engine with no packaged release. Kept as executable-style mapping documentation |
 
 ### Engine verdict (researched 2026-07-19)
 
@@ -45,7 +45,7 @@ Both engines consume JSON, so NEMSIS XML is first normalized by
   elements are **always arrays**;
 - tag names keep their NEMSIS dotted form (`"eVitals.06"`).
 
-## Microsoft FHIR Converter (liquid/)
+## Microsoft FHIR Converter (microsoft-fhir-converter/)
 
 Templates target the [microsoft/FHIR-Converter](https://github.com/microsoft/FHIR-Converter)
 JSON processor as a custom template collection. Root template:
@@ -63,12 +63,12 @@ dotnet build src/Microsoft.Health.Fhir.Liquid.Converter.Tool -c Release
 python3 tools/nemsis-xml-to-json.py my-pcr.xml > my-pcr.json
 DOTNET_ROLL_FORWARD=LatestMajor dotnet \
   src/Microsoft.Health.Fhir.Liquid.Converter.Tool/bin/Release/net8.0/Microsoft.Health.Fhir.Liquid.Converter.Tool.dll \
-  convert -d <this repo>/transforms/liquid -r NemsisBundle -n my-pcr.json -f out.json
+  convert -d <this repo>/transformationScripts/microsoft-fhir-converter -r NemsisBundle -n my-pcr.json -f out.json
 # out.json = { "Status": "OK", "FhirResource": { ...the Bundle... } }
 ```
 
 Notes:
-- `liquid/metadata.json` (`{"type": "json"}`) selects the converter's JSON
+- `microsoft-fhir-converter/metadata.json` (`{"type": "json"}`) selects the converter's JSON
   processor — required.
 - Uses the converter's `generate_uuid` filter (seeded, deterministic) for
   Bundle `fullUrl`s/ids and its trailing-comma post-processing. The CI
@@ -80,9 +80,9 @@ Notes:
 - Azure Health Data Services `$convert-data` accepts the same collection
   pushed as an OCI image (see the converter's TemplateManagement docs).
 
-## Google Whistle (whistle/) — reference only
+## Google Whistle (google-whistle/) — reference only
 
-`whistle/nemsis_ems.wstl` mirrors the Liquid mappings in Whistle 1 syntax.
+`google-whistle/nemsis_ems.wstl` mirrors the Liquid mappings in Whistle 1 syntax.
 Per the engine verdict above it is **not a supported conversion path**; it is
 kept as precise, executable-style documentation of the mapping logic (useful
 if a maintained Whistle engine re-emerges or for porting to another mapper).

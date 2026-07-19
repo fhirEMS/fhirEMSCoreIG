@@ -1,12 +1,12 @@
 // ============================================================
 // STATUS: REFERENCE ONLY (2026-07-19). Whistle 1 is unsupported
 // legacy upstream and Whistle 2 has no packaged engine release —
-// the supported conversion path for this IG is transforms/liquid/.
+// the supported conversion path is transformationScripts/microsoft-fhir-converter/.
 // ============================================================
 // Whistle map: NEMSIS v3.5.1 EMSDataSet (canonical JSON) ->
 // fhirEMSCore (fhirems.emscore) FHIR R4 transaction Bundle.
 //
-// Input: canonical JSON produced by transforms/tools/nemsis-xml-to-json.py
+// Input: canonical JSON produced by transformationScripts/tools/nemsis-xml-to-json.py
 //   (leaves are {value, ...attrs}; *Group / Header / PatientCareReport are
 //   arrays; nil elements have value == null with an NV attribute — NDR-001:
 //   omit them from output).

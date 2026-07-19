@@ -3,12 +3,12 @@
 the output is a well-formed fhirEMSCore bundle.
 
 Mimics the Microsoft FHIR Converter runtime closely enough for CI:
-- {% include %} resolved from transforms/liquid/
+- {% include %} resolved from transformationScripts/microsoft-fhir-converter/
 - a deterministic generate_uuid filter (uuid5, matching the converter's
   seeded-GUID behavior in spirit)
 - post-render trailing-comma cleanup (the converter does the same)
 
-Usage: python3 transforms/tools/test-liquid-render.py [--out bundle.json]
+Usage: python3 transformationScripts/tools/test-liquid-render.py [--out bundle.json]
 """
 import json
 import pathlib
@@ -19,8 +19,8 @@ import uuid
 from liquid import CachingFileSystemLoader, Environment
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-LIQUID_DIR = ROOT / "transforms" / "liquid"
-FIXTURE = ROOT / "transforms" / "fixtures" / "sample-pcr.json"
+LIQUID_DIR = ROOT / "transformationScripts" / "microsoft-fhir-converter"
+FIXTURE = ROOT / "transformationScripts" / "fixtures" / "sample-pcr.json"
 PACKAGE = ROOT / "package"
 
 env = Environment(loader=CachingFileSystemLoader(str(LIQUID_DIR), ext=".liquid"))
