@@ -44,6 +44,7 @@ These profiles represent the fundamental resources in an EMS Patient Care Report
 | EMSObservationLabs | ems-observation-labs | us-core-observation-clinical-result | eLabs | ✅ | Point-of-care labs and imaging |
 | EMSObservationOutcome | ems-observation-outcome | us-core-observation-clinical-result | eOutcome | ✅ | ED/hospital outcome panel |
 | EMSConditionArrest | ems-condition-arrest | us-core-condition-encounter-diagnosis | eArrest | ✅ | Cardiac arrest with full eArrest context extension |
+| EMSConditionInjury | ems-condition-injury | us-core-condition-encounter-diagnosis | eInjury | ✅ | Injury cause (ICD-10-CM), trauma triage criteria, collision and ACN telematics extensions |
 | EMSProcedure | ems-procedure | us-core-procedure | eProcedures | ✅ | SNOMED-coded EMS procedures |
 | EMSMedicationAdministration | ems-medicationadministration | MedicationAdministration (R4 base) | eMedications | ⚠ | No US Core parent — base R4 only; RxNorm coded |
 | EMSAllergyIntolerance | ems-allergyintolerance | us-core-allergyintolerance | eHistory.06 | ✅ | Medication and environmental allergies |
@@ -68,7 +69,6 @@ These profiles represent the fundamental resources in an EMS Patient Care Report
 
 | NEMSIS Section | Elements | Target Profile | Status | Planned |
 |---|---|---|---|---|
-| eInjury | 29 | ems-condition-injury | 🚧 Not started | v0.2.0 |
 | eOther | 22 | ems-observation-other | 🚧 Not started | v0.2.0 |
 | eHistory (past medical problems) | ~10 | ems-condition-problems | 🚧 Not started | v0.2.0 |
 | eHistory (home medications) | ~5 | ems-medicationstatement | 🚧 Not started | v0.2.0 |
@@ -143,7 +143,7 @@ A complete EMS PCR in fhirEMSCore follows this resource creation sequence:
 | eMedications | 13 | EMSMedicationAdministration | Full |
 | eAirway | 11 | EMSObservationAirway | Full |
 | eArrest | 19 | EMSConditionArrest | Full |
-| eInjury | 29 | — | Not started |
+| eInjury | 29 | EMSConditionInjury | Full |
 | eDisposition | 31 | EMSEncounter (extensions) | Full |
 | eOutcome | 15 | EMSObservationOutcome | Full |
 | ePayment | 59 | EMSCoverage + EMSClaim | Full |

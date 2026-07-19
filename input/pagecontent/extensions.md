@@ -134,6 +134,31 @@ Sub-extension details:
 | `airwayFailureReason` | eAirway.09 | CodeableConcept |
 | `crewMember` | eAirway.10 | Reference(Practitioner) |
 
+### Injury Extensions
+
+Two complex extensions applied to **EMSConditionInjury**.
+
+| Extension Id | Short Name | NEMSIS Elements | Sub-extensions |
+|---|---|---|---|
+| `ext-ems-injury-context` | Injury Context | eInjury.02–.10 | 9 sub-extensions |
+| `ext-ems-acn-incident` | ACN Incident | eInjury.11–.29 | 19 sub-extensions |
+
+Injury context sub-extension details:
+
+| Sub-extension | NEMSIS Element | Type |
+|---|---|---|
+| `mechanismOfInjury` | eInjury.02 | CodeableConcept (0..*) |
+| `traumaTriageHighRisk` | eInjury.03 | CodeableConcept (0..*) |
+| `traumaTriageModerateRisk` | eInjury.04 | CodeableConcept (0..*) |
+| `vehicleImpactArea` | eInjury.05 | integer (1–12 clock) |
+| `patientVehicleLocation` | eInjury.06 | CodeableConcept |
+| `safetyEquipment` | eInjury.07 | CodeableConcept (0..*) |
+| `airbagDeployment` | eInjury.08 | CodeableConcept (0..*) |
+| `heightOfFall` | eInjury.09 | Quantity ([ft_i]) |
+| `oshaPPE` | eInjury.10 | CodeableConcept (0..*) |
+
+ACN incident sub-extensions carry Automated Collision Notification telematics: company, incident id, callback phone, date/time, GPS location, vehicle body type/manufacturer/make/model/year, multiple impacts, delta velocity, high probability of injury, PDOF, rollover, seat location, seat occupied, seatbelt use, and airbag deployed (eInjury.11–.29).
+
 ### Agency and Personnel Extensions
 
 | Extension Id | Short Name | NEMSIS Elements | Context |

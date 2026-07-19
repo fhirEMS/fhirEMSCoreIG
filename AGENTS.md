@@ -425,6 +425,12 @@ Extensions are grouped by section in `input/fsh/extensions/`. When adding new ex
 | `ext-ems-medication-context` | MedicationAdministration | eMedications.02/07/08/11/13 (complex) |
 | `ext-ems-procedure-context` | Procedure | eProcedures.02/05/08/11/14/15 (complex) |
 
+### ems-extensions-injury.fsh
+| Extension ID | Context | NEMSIS Source |
+|---|---|---|
+| `ext-ems-injury-context` | Condition | eInjury.02–.10 (9 sub-extensions) |
+| `ext-ems-acn-incident` | Condition | eInjury.11–.29 ACN telematics (19 sub-extensions) |
+
 ---
 
 ## Build Commands
@@ -464,7 +470,7 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 **v0.1.0 Phase 2 COMPLETE — 0 SUSHI errors, 0 warnings as of 2026-03-16.**
 **IG Publisher: 211 errors, 251 warnings, 0 broken links, 759,012 links validated (build 11, 2026-03-16).**
 **Error breakdown: 205 VALIDATION_HL7_WG_NEEDED (HL7 canonical URL; unfixable without HL7 ballot) + 6 IG metadata (extensions version mismatch, jira, status/workgroup; unfixable without HL7 registration). This is the practical minimum.**
-**Totals: 23 profiles, 43 extensions, 121 ValueSets, 16 CodeSystems, 31 examples (including NamingSystem).**
+**Totals: 24 profiles, 45 extensions, 129 ValueSets, 17 CodeSystems, 32 examples (including NamingSystem). eInjury profile added 2026-07-19 (SUSHI clean; not yet re-run through IG Publisher).**
 
 ### Profiles
 
@@ -477,6 +483,7 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 | `ems-location-destination` | `profiles/ems-location-destination.fsh` | eDisposition | Complete |
 | `ems-condition` | `profiles/ems-condition.fsh` | eSituation/eHistory | Complete |
 | `ems-condition-arrest` | `profiles/ems-condition-arrest.fsh` | eArrest (NDR-009) | Complete |
+| `ems-condition-injury` | `profiles/ems-condition-injury.fsh` | eInjury | Complete |
 | `ems-observation-vitalsigns` | `profiles/ems-observation-vitalsigns.fsh` | eVitals (parent) | Complete |
 | `ems-observation-bp` | `profiles/ems-observation-bp.fsh` | eVitals.06/07 | Complete |
 | `ems-observation-gcs` | `profiles/ems-observation-gcs.fsh` | eVitals.19–23 | Complete |
@@ -505,6 +512,7 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 | `ex-ems-location-destination` | EMSLocationDestination | RUHS Medical Center, Level I Trauma |
 | `ex-ems-condition` | EMSCondition | Closed head injury (MVA) |
 | `ex-ems-condition-arrest` | EMSConditionArrest | VF cardiac arrest, bystander CPR, ROSC |
+| `ex-ems-condition-injury` | EMSConditionInjury | MVA driver, blunt trauma, ACN telematics |
 | `ex-ems-observation-bp` | EMSObservationBloodPressure | BP 92/60 mmHg |
 | `ex-ems-heart-rate` | EMSObservationVitalSigns | HR 110 bpm |
 | `ex-ems-spo2` | EMSObservationVitalSigns | SpO2 94% |
@@ -559,6 +567,7 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 | `cs-nemsis-arrest.fsh` | `nemsis-arrest` | eArrest codes (3001xxx–3022xxx) |
 | `cs-nemsis-airway.fsh` | `nemsis-airway` | eAirway codes (4001xxx–4009xxx) |
 | `cs-nemsis-labs.fsh` | `nemsis-labs` | eLabs codes (3403xxx, 3405xxx) |
+| `cs-nemsis-injury.fsh` | `nemsis-injury` | eInjury codes (2902xxx–2926xxx): mechanism, trauma triage, safety equipment, ACN |
 | `cs-nemsis-encounter.fsh` | `nemsis-encounter` | eResponse, eDispatch, eDisposition, eOutcome component codes (~295 codes) |
 | `cs-nemsis-exam.fsh` | `nemsis-exam` | eExam physical exam findings (457 codes) |
 | `cs-nemsis-medications.fsh` | `nemsis-medications` | eMedications/eProcedures (~200 codes) |
@@ -574,9 +583,8 @@ Java at `.jdk/jdk-21.0.10+7/Contents/Home/bin/java`.
 
 ### Remaining Work (Phase 3+)
 - **Narrative page content**: `input/pagecontent/` stubs need real content
-- **eInjury profile**: 29 elements, maps to Condition
-- **eArrest examples**: EMSConditionArrest example instance
 - **eOther / eCustom**: Low priority
+- **IG Publisher re-run**: verify eInjury additions keep the 211-error practical minimum
 
 ---
 
