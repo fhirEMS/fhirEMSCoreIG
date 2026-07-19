@@ -1,4 +1,8 @@
 // ============================================================
+// STATUS: REFERENCE ONLY (2026-07-19). Whistle 1 is unsupported
+// legacy upstream and Whistle 2 has no packaged engine release —
+// the supported conversion path for this IG is transforms/liquid/.
+// ============================================================
 // Whistle map: NEMSIS v3.5.1 EMSDataSet (canonical JSON) ->
 // fhirEMSCore (fhirems.emscore) FHIR R4 transaction Bundle.
 //

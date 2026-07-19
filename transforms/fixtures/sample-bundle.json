@@ -6,6 +6,7 @@
       "fullUrl": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d",
       "resource": {
         "resourceType": "Patient",
+        "id": "56037a85-2c61-594b-8cfa-217f27ef800d",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"
@@ -18,7 +19,12 @@
           }
         ],
         "name": [
-          {}
+          {
+            "family": "Johnson",
+            "given": [
+              "Robert"
+            ]
+          }
         ],
         "gender": "male",
         "birthDate": "1979-03-22",
@@ -44,6 +50,7 @@
       "fullUrl": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041",
       "resource": {
         "resourceType": "Encounter",
+        "id": "27f1d2d1-a213-5f09-a072-e9db43c3f041",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter"
@@ -308,6 +315,7 @@
       "fullUrl": "urn:uuid:f7c2187c-cfed-55ac-b211-7923b88c0a65",
       "resource": {
         "resourceType": "Location",
+        "id": "f7c2187c-cfed-55ac-b211-7923b88c0a65",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"
@@ -335,6 +343,7 @@
       "fullUrl": "urn:uuid:fc3da3f5-9c29-5c88-a0be-5fb5f7b300de",
       "resource": {
         "resourceType": "Condition",
+        "id": "fc3da3f5-9c29-5c88-a0be-5fb5f7b300de",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"
@@ -393,6 +402,7 @@
       "fullUrl": "urn:uuid:5dd2a1fa-8e40-57e6-bcab-2f124aed966e",
       "resource": {
         "resourceType": "Observation",
+        "id": "5dd2a1fa-8e40-57e6-bcab-2f124aed966e",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp"
@@ -468,9 +478,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:552a1015-cee0-5c7f-9b43-49a052d2039d",
+      "fullUrl": "urn:uuid:ea38153e-1b90-5409-8ee0-2aa568c21f56",
       "resource": {
         "resourceType": "Observation",
+        "id": "ea38153e-1b90-5409-8ee0-2aa568c21f56",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
@@ -516,9 +527,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:0c9b07e0-ceee-5df5-a501-473569ba112d",
+      "fullUrl": "urn:uuid:d0f56a6d-23d8-57cf-8f4b-4229b317ed7e",
       "resource": {
         "resourceType": "Observation",
+        "id": "d0f56a6d-23d8-57cf-8f4b-4229b317ed7e",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
@@ -564,9 +576,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:8d7075d9-e055-56bb-b655-8624784d5ea2",
+      "fullUrl": "urn:uuid:35f214b0-7e08-50fb-bf4e-59884941cc65",
       "resource": {
         "resourceType": "Observation",
+        "id": "35f214b0-7e08-50fb-bf4e-59884941cc65",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
@@ -615,6 +628,7 @@
       "fullUrl": "urn:uuid:8d3c8e43-1bb7-50d4-86c5-7368a91652c4",
       "resource": {
         "resourceType": "Procedure",
+        "id": "8d3c8e43-1bb7-50d4-86c5-7368a91652c4",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure"
@@ -679,6 +693,7 @@
       "fullUrl": "urn:uuid:95e01497-613e-59fc-a05f-64da7ab2a85c",
       "resource": {
         "resourceType": "MedicationAdministration",
+        "id": "95e01497-613e-59fc-a05f-64da7ab2a85c",
         "meta": {
           "profile": [
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration"

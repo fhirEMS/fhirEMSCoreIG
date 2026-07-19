@@ -4,9 +4,10 @@ pass-through; route (.04) uses the 9927xxx codes in cs-nemsis-medications;
 dose (.05/.06) becomes dosage.dose with the NEMSIS 3706xxx unit code carried
 as unit text. {%- endcomment -%}
 {% assign IGCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem' -%}
-{% assign dg = med['eMedications.DosageGroup'][0] -%}
+{% assign dg = med['eMedications.DosageGroup'] | first -%}
 {
   "resourceType": "MedicationAdministration",
+  "id": "{{ resId }}",
   "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration"] },
   "status": "completed",
   "medicationCodeableConcept": { "coding": [ { "system": "http://www.nlm.nih.gov/research/umls/rxnorm", "code": "{{ med['eMedications.03'].value }}" } ] },

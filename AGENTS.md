@@ -321,14 +321,16 @@ NEMSIS uses repeating XML groups for multiple sets of vitals, medications, proce
 
 ## Transformation Scripts (transforms/)
 
-`transforms/` holds NEMSIS-XML→FHIR conversion pipelines: a canonical
-XML→JSON preprocessor (`tools/nemsis-xml-to-json.py`), Microsoft FHIR
-Converter Liquid templates (`liquid/`, root `NemsisBundle.liquid`), and
-Google Whistle maps (`whistle/nemsis_ems.wstl`). Test with
-`python3 transforms/tools/test-liquid-render.py` (12 structural checks
-against `package/`; requires `pip install python-liquid`). Liquid pipeline is
-render-verified; Whistle maps are authored but not engine-executed. Coverage:
-core PCR path (Patient/Encounter/Scene/Condition/Vitals/Procedure/MedAdmin);
+`transforms/` holds the NEMSIS-XML→FHIR conversion pipeline. PRIMARY PATH:
+Microsoft FHIR Converter Liquid templates (`liquid/`, root
+`NemsisBundle.liquid`) — verified 2026-07-19 on the real converter (DotLiquid)
+AND the CI harness (`python3 transforms/tools/test-liquid-render.py`, 16
+checks incl. content; needs `pip install python-liquid`). Whistle maps are
+REFERENCE ONLY (v1 unsupported upstream, v2 unpackaged). pyromanic
+(fhirEMS/pyromanic) is dbignite→FHIR, not NEMSIS — possible future TS host.
+DotLiquid gotchas encoded in the templates: no dynamic bracket keys; `*Group`
+arrays need `| first`; every resource MUST have `resource.id` or the
+converter post-processor merges same-type entries. Coverage: core PCR path;
 extend per transforms/README.md.
 
 ---

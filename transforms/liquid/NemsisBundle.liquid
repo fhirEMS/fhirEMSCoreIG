@@ -16,25 +16,26 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
     {% capture sceneId %}{{ base | append: '-scene' | generate_uuid }}{% endcapture -%}
     {
       "fullUrl": "urn:uuid:{{ patientId }}",
-      "resource": {% include 'Resource_Patient' pcr: pcr %},
+      "resource": {% include 'Resource_Patient' pcr: pcr, patientId: patientId %},
       "request": { "method": "POST", "url": "Patient" }
     },
     {
       "fullUrl": "urn:uuid:{{ encounterId }}",
-      "resource": {% include 'Resource_Encounter' pcr: pcr, patientId: patientId %},
+      "resource": {% include 'Resource_Encounter' pcr: pcr, patientId: patientId, encounterId: encounterId %},
       "request": { "method": "POST", "url": "Encounter" }
     },
     {% if pcr.eScene -%}
     {
       "fullUrl": "urn:uuid:{{ sceneId }}",
-      "resource": {% include 'Resource_LocationScene' pcr: pcr %},
+      "resource": {% include 'Resource_LocationScene' pcr: pcr, resId: sceneId %},
       "request": { "method": "POST", "url": "Location" }
     },
     {% endif -%}
     {% if pcr.eSituation['eSituation.11'].value -%}
+    {% capture conditionId %}{{ base | append: '-condition' | generate_uuid }}{% endcapture -%}
     {
-      "fullUrl": "urn:uuid:{{ base | append: '-condition' | generate_uuid }}",
-      "resource": {% include 'Resource_Condition' pcr: pcr, patientId: patientId, encounterId: encounterId %},
+      "fullUrl": "urn:uuid:{{ conditionId }}",
+      "resource": {% include 'Resource_Condition' pcr: pcr, patientId: patientId, encounterId: encounterId, resId: conditionId %},
       "request": { "method": "POST", "url": "Condition" }
     },
     {% endif -%}
@@ -42,16 +43,18 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
     {% include 'Resource_ObservationVitals' vg: vg, base: base, vgIndex: forloop.index, patientId: patientId, encounterId: encounterId -%}
     {% endfor -%}
     {% for prc in pcr.eProcedures['eProcedures.ProcedureGroup'] -%}
+    {% capture procId %}{{ base | append: '-procedure-' | append: forloop.index | generate_uuid }}{% endcapture -%}
     {
-      "fullUrl": "urn:uuid:{{ base | append: '-procedure-' | append: forloop.index | generate_uuid }}",
-      "resource": {% include 'Resource_Procedure' prc: prc, patientId: patientId, encounterId: encounterId %},
+      "fullUrl": "urn:uuid:{{ procId }}",
+      "resource": {% include 'Resource_Procedure' prc: prc, patientId: patientId, encounterId: encounterId, resId: procId %},
       "request": { "method": "POST", "url": "Procedure" }
     },
     {% endfor -%}
     {% for med in pcr.eMedications['eMedications.MedicationGroup'] -%}
+    {% capture medId %}{{ base | append: '-medication-' | append: forloop.index | generate_uuid }}{% endcapture -%}
     {
-      "fullUrl": "urn:uuid:{{ base | append: '-medication-' | append: forloop.index | generate_uuid }}",
-      "resource": {% include 'Resource_MedicationAdministration' med: med, patientId: patientId, encounterId: encounterId %},
+      "fullUrl": "urn:uuid:{{ medId }}",
+      "resource": {% include 'Resource_MedicationAdministration' med: med, patientId: patientId, encounterId: encounterId, resId: medId %},
       "request": { "method": "POST", "url": "MedicationAdministration" }
     },
     {% endfor -%}

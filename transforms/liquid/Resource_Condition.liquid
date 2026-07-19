@@ -2,6 +2,7 @@
 EMSCondition (ems-condition, encounter-diagnosis). {%- endcomment -%}
 {
   "resourceType": "Condition",
+  "id": "{{ resId }}",
   "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"] },
   "clinicalStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" } ] },
   "verificationStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "provisional" } ] },

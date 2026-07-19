@@ -5,6 +5,7 @@ ext-ems-procedure-context extension. {%- endcomment -%}
 {% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
 {
   "resourceType": "Procedure",
+  "id": "{{ resId }}",
   "meta": { "profile": ["{{ IGX }}/ems-procedure"] },
   "status": "completed",
   "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "{{ prc['eProcedures.03'].value }}" } ] },

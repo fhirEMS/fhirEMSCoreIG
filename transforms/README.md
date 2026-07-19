@@ -6,8 +6,27 @@ XML into FHIR R4 transaction Bundles conforming to this IG
 
 | Engine | Directory | Status |
 |---|---|---|
-| Microsoft FHIR Converter (Liquid) | `liquid/` | Rendered + structurally verified against the fixture (12/12 checks) |
-| Google Whistle (healthcare-data-harmonization) | `whistle/` | Authored to mirror the Liquid mappings; not yet executed against a Whistle engine |
+| **Microsoft FHIR Converter (Liquid)** | `liquid/` | **PRIMARY, engine-verified**: executed on the real converter (built from microsoft/FHIR-Converter, DotLiquid) and under the CI harness — 16/16 checks |
+| Google Whistle | `whistle/` | **Reference only — not a supported path.** Whistle 1 (this dialect) is unsupported legacy upstream; Whistle 2 is a build-from-source Java engine with no packaged release. Kept as executable-style mapping documentation |
+
+### Engine verdict (researched 2026-07-19)
+
+- **Microsoft FHIR Converter**: actively maintained, supports custom Liquid
+  template collections over JSON input — fits NEMSIS (after the XML→JSON
+  canonicalization) and this IG. Three DotLiquid realities the templates now
+  honor: no dynamic bracket keys (vitals are unrolled per element), `*Group`
+  arrays must be indexed (`| first`), and the post-processor **merges bundle
+  entries of the same resourceType that lack `resource.id`** — every resource
+  therefore carries a deterministic id.
+- **Google Whistle**: the mapping language fits, but the engine path does not —
+  v1 is explicitly unsupported, v2 requires building the Java engine from
+  source, and Google's managed harmonization offering is private-preview.
+  Not a solid production path today.
+- **pyromanic** (github.com/fhirEMS/pyromanic): TypeScript dbignite-tables →
+  FHIR Bundle converter core (~480 LOC, 8/11 tests passing) — a different
+  input format (Databricks FHIR tables), not NEMSIS-aware. Viable future
+  host for a TS-native NEMSIS converter (port the canonicalizer + template
+  logic), but not needed while the Liquid path is verified.
 
 ## Pipeline
 
@@ -32,38 +51,41 @@ Templates target the [microsoft/FHIR-Converter](https://github.com/microsoft/FHI
 JSON processor as a custom template collection. Root template:
 `NemsisBundle.liquid` (input variable `msg`).
 
+Verified runbook (macOS/arm64, dotnet SDK 8+):
+
 ```bash
+git clone --depth 1 https://github.com/microsoft/FHIR-Converter
+cd FHIR-Converter
+# the repo pins a Microsoft-internal NuGet feed; use nuget.org instead:
+printf '<configuration><packageSources><clear/><add key="nuget.org" value="https://api.nuget.org/v3/index.json"/></packageSources></configuration>' > NuGet.config
+dotnet build src/Microsoft.Health.Fhir.Liquid.Converter.Tool -c Release
+
 python3 tools/nemsis-xml-to-json.py my-pcr.xml > my-pcr.json
-# Converter CLI (or Azure Health Data Services $convert-data with a custom
-# template collection pushed as an OCI image):
-Microsoft.Health.Fhir.Liquid.Converter.Tool convert \
-  -d transforms/liquid -r NemsisBundle -n my-pcr.json -f out/bundle.json
+DOTNET_ROLL_FORWARD=LatestMajor dotnet \
+  src/Microsoft.Health.Fhir.Liquid.Converter.Tool/bin/Release/net8.0/Microsoft.Health.Fhir.Liquid.Converter.Tool.dll \
+  convert -d <this repo>/transforms/liquid -r NemsisBundle -n my-pcr.json -f out.json
+# out.json = { "Status": "OK", "FhirResource": { ...the Bundle... } }
 ```
 
 Notes:
+- `liquid/metadata.json` (`{"type": "json"}`) selects the converter's JSON
+  processor — required.
 - Uses the converter's `generate_uuid` filter (seeded, deterministic) for
-  Bundle `fullUrl`s and its trailing-comma post-processing. The CI harness
-  (`tools/test-liquid-render.py`) shims both, so templates also render under
-  plain `python-liquid`.
+  Bundle `fullUrl`s/ids and its trailing-comma post-processing. The CI
+  harness (`tools/test-liquid-render.py`) shims both, so templates also
+  render under plain `python-liquid`.
 - One resource `entry` per NEMSIS repeating group (VitalGroup,
-  ProcedureGroup, MedicationGroup) per NDR-007.
+  ProcedureGroup, MedicationGroup) per NDR-007; every resource carries a
+  deterministic `id` (the converter merges id-less same-type entries).
+- Azure Health Data Services `$convert-data` accepts the same collection
+  pushed as an OCI image (see the converter's TemplateManagement docs).
 
-## Google Whistle (whistle/)
+## Google Whistle (whistle/) — reference only
 
-`whistle/nemsis_ems.wstl` mirrors the same mappings in the Whistle 1 mapping
-language for the [healthcare-data-harmonization](https://github.com/GoogleCloudPlatform/healthcare-data-harmonization)
-engine:
-
-```bash
-wstl_runner --input_file=fixtures/sample-pcr.json \
-  --mapping_file=whistle/nemsis_ems.wstl --output_dir=out/
-```
-
-`VitalGroup_*`, `ProcedureGroup_Procedure`, and `MedicationGroup_MedAdmin`
-projectors are wired for per-group fan-out; builtin availability
-(`$Hash`, `$ParseFloat`) varies slightly by engine build — the maps are
-authored against the documented Whistle 1 builtins but have not been executed
-against a live engine yet.
+`whistle/nemsis_ems.wstl` mirrors the Liquid mappings in Whistle 1 syntax.
+Per the engine verdict above it is **not a supported conversion path**; it is
+kept as precise, executable-style documentation of the mapping logic (useful
+if a maintained Whistle engine re-emerges or for porting to another mapper).
 
 ## Mapping coverage (v1)
 
@@ -90,7 +112,7 @@ GNIS city codes → names (NDR-003) and ANSI state codes → USPS abbreviations
 
 ```bash
 python3 tools/nemsis-xml-to-json.py fixtures/sample-pcr.xml > fixtures/sample-pcr.json
-python3 tools/test-liquid-render.py          # 12 structural checks
+python3 tools/test-liquid-render.py          # 16 checks (structure + content)
 ```
 
 The fixture (`fixtures/sample-pcr.xml`) is an abbreviated PCR matching the
@@ -98,4 +120,5 @@ IG's MVA example scenario. The harness asserts: transaction shape, expected
 resource counts, all internal references resolve, every `meta.profile` exists
 in `package/`, every IG coding resolves against the package CodeSystems, and
 NDR-001 nil-element omission. `fixtures/sample-bundle.json` is the rendered
-output kept in-repo for reference.
+output kept in-repo for reference. The identical templates were also executed
+on the real Microsoft converter (see runbook) with matching output.

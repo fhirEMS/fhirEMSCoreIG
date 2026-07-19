@@ -9,6 +9,7 @@ codes pass through to the IG's cs-nemsis-* systems. {%- endcomment -%}
 {% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
 {
   "resourceType": "Encounter",
+  "id": "{{ encounterId }}",
   "meta": { "profile": ["{{ IGX }}/ems-encounter"] },
   "identifier": [
     { "system": "urn:oid:2.25.219926138944530828037824748808947630693", "value": "{{ pcr.eRecord['eRecord.01'].value }}" }
@@ -67,7 +68,7 @@ codes pass through to the IG's cs-nemsis-* systems. {%- endcomment -%}
         {% if t['eTimes.12'].value %}{ "url": "destinationPatientTransferOfCare", "valueDateTime": "{{ t['eTimes.12'].value }}" },{% endif %}
         {% if t['eTimes.13'].value %}{ "url": "unitBackInService", "valueDateTime": "{{ t['eTimes.13'].value }}" },{% endif %}
       ] },
-    {% assign idg = d['eDisposition.IncidentDispositionGroup'][0] -%}
+    {% assign idg = d['eDisposition.IncidentDispositionGroup'] | first -%}
     {% if idg -%}
     { "url": "{{ IGX }}/ext-ems-disposition-codes",
       "extension": [

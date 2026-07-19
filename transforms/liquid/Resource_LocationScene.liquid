@@ -4,6 +4,7 @@ notes apply to city/state code conversion. eScene.01 nil with NV is skipped
 {% assign s = pcr.eScene -%}
 {
   "resourceType": "Location",
+  "id": "{{ resId }}",
   "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"] },
   "status": "active",
   "name": "{{ s['eScene.15'].value | default: 'EMS Scene' }}",

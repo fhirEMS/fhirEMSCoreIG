@@ -100,12 +100,23 @@ def main():
     # NDR-001: nil+NV eScene.01 must NOT appear anywhere
     check("7701003" not in json.dumps(bundle), "nil/NV element omitted (NDR-001)")
 
+    # content assertions (catch group-array indexing regressions)
+    pat = by_type["Patient"][0]["resource"]
+    check(pat.get("name") == [{"family": "Johnson", "given": ["Robert"]}] and pat.get("gender") == "male",
+          "patient name/gender content correct")
+    obs_codes = sorted(e["resource"]["code"]["coding"][0]["code"] for e in by_type.get("Observation", []))
+    check(obs_codes == ["59408-5", "85354-9", "8867-4", "9279-1"], f"observation LOINC codes {obs_codes}")
+    med = by_type["MedicationAdministration"][0]["resource"]
+    check(med["dosage"]["dose"]["value"] == 500, "medication dose value 500")
+    check(all("id" in e["resource"] for e in entries),
+          "every resource has an id (required: MS post-processor merges id-less same-type entries)")
+
     if "--out" in sys.argv:
         out = pathlib.Path(sys.argv[sys.argv.index("--out") + 1])
         out.write_text(json.dumps(bundle, indent=2))
         print("wrote", out)
 
-    total = 12
+    total = 16
     print(f"{total - len(failures)}/{total} checks passed")
     sys.exit(1 if failures else 0)
 

@@ -3,9 +3,10 @@ carries an ANSI state code; production pipelines should convert to the 2-letter
 USPS abbreviation before or after conversion. NEMSIS gender codes (9906xxx)
 map to FHIR administrative gender. {%- endcomment -%}
 {% assign p = pcr.ePatient -%}
-{% assign nameGroup = p['ePatient.PatientNameGroup'] -%}
+{% assign nameGroup = p['ePatient.PatientNameGroup'] | first -%}
 {
   "resourceType": "Patient",
+  "id": "{{ patientId }}",
   "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"] },
   "identifier": [
     {
