@@ -319,6 +319,19 @@ NEMSIS uses repeating XML groups for multiple sets of vitals, medications, proce
 
 ---
 
+## Distributable Package
+
+The compiled FHIR npm package is checked in at `package/` (unpacked, from
+`output/package.tgz`). Regenerate after any build with:
+```bash
+rm -rf package && mkdir package && tar -xzf output/package.tgz -C package --strip-components=1
+```
+This is the directory to hand to `fhirengine-terminology install-ig` (verified
+2026-07-19: v0.2.0 loads with 31 profiles / 54 extensions / 20 CS / 153 VS /
+2,052 expansion rows; 13/13 $validate-code checks pass).
+
+---
+
 ## Loading onto fhirEngine (terminology server)
 
 fhirEngine (github.com/FHIRmedicConsulting/fhirEngine) installs FHIR IG packages natively via

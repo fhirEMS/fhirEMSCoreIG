@@ -1,0 +1,2110 @@
+{
+  "index-version" : 2,
+  "files" : [{
+    "filename" : "ImplementationGuide-fhirems.emscore.json",
+    "resourceType" : "ImplementationGuide",
+    "id" : "fhirems.emscore",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ImplementationGuide/fhirems.emscore",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "CapabilityStatement-CapabilityStatement-ems-core-server.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "CapabilityStatement-ems-core-server",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CapabilityStatement/CapabilityStatement-ems-core-server",
+    "version" : "0.2.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-airway.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-airway",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-arrest.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-arrest",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-codes.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-codes",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-demographics.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-demographics",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-encounter.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-encounter",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-exam.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-exam",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-history.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-history",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-injury.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-injury",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-labs.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-labs",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-labs",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-medications.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-medications",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-not-values.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-not-values",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-not-values",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-other.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-other",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-payer-type.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-payer-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-payment.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-payment",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-personnel-level.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-personnel-level",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-pertinent-negative.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-pertinent-negative",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-procedures.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-procedures",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-situation.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-situation",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-cs-nemsis-vitals.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-nemsis-vitals",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-nemsis-patient.json",
+    "resourceType" : "CodeSystem",
+    "id" : "nemsis-patient",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
+    "filename" : "NamingSystem-ns-ems-vin.json",
+    "resourceType" : "NamingSystem",
+    "id" : "ns-ems-vin",
+    "kind" : "identifier"
+  },
+  {
+    "filename" : "StructureDefinition-ems-allergyintolerance.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-allergyintolerance",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-allergyintolerance",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "AllergyIntolerance",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-claim.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-claim",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Claim",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-composition.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-composition",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Composition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-condition-arrest.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-condition-arrest",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-arrest",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Condition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-condition-injury.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-condition-injury",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-injury",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Condition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-condition-problems.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-condition-problems",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-problems",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Condition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-condition.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-condition",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Condition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-coverage.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-coverage",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-coverage",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Coverage",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-device-vehicle.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-device-vehicle",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-device-vehicle",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Device",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-documentreference.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-documentreference",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-documentreference",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "DocumentReference",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-encounter.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-encounter",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Encounter",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-location-agency.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-location-agency",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-agency",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Location",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-location-destination.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-location-destination",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-destination",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Location",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-location-scene.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-location-scene",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Location",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-medicationadministration.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-medicationadministration",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "MedicationAdministration",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-medicationstatement.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-medicationstatement",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationstatement",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "MedicationStatement",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-observation-airway.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-observation-airway",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-observation-bp.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-observation-bp",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-observation-exam.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-observation-exam",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-exam",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-observation-gcs.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-observation-gcs",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-observation-labs.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-observation-labs",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-labs",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-observation-outcome.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-observation-outcome",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-observation-vitalsigns.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-observation-vitalsigns",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-organization.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-organization",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-organization",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Organization",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-patient.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-patient",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Patient",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-practitioner.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-practitioner",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitioner",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Practitioner",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-practitionerrole.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-practitionerrole",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "PractitionerRole",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-procedure.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-procedure",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-provenance.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-provenance",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-provenance",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Provenance",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-questionnaire.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-questionnaire",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-questionnaire",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "Questionnaire",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ems-questionnaireresponse.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ems-questionnaireresponse",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-questionnaireresponse",
+    "version" : "0.2.0",
+    "kind" : "resource",
+    "type" : "QuestionnaireResponse",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-acn-incident.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-acn-incident",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-acn-incident",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-additional-response-mode.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-additional-response-mode",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-additional-response-mode",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-agency-configuration.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-agency-configuration",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-configuration",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-agency-details.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-agency-details",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-details",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-airway-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-airway-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-airway-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-als-assessment.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-als-assessment",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-als-assessment",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-alternate-residence.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-alternate-residence",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-alternate-residence",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-ambulance-conditions.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-ambulance-conditions",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-ambulance-transport-reason.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-ambulance-transport-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-transport-reason",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-arrest-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-arrest-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-arrest-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-bp-method.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-bp-method",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-bp-method",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-census-tract.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-census-tract",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-census-tract",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-certification-level.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-certification-level",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-certification-level",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-cms-service-level.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-cms-service-level",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-cms-service-level",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-crew-safety.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-crew-safety",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-crew-safety",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-custom-target.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-custom-target",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-custom-target",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-destination-details.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-destination-details",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-destination-details",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-dispatch-info.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-dispatch-info",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-info",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-dispatch-reason.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-dispatch-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-reason",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-disposition-codes.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-disposition-codes",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-disposition-codes",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-document-type.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-document-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-document-type",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-ecg-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-ecg-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ecg-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-history-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-history-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-history-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-incident-type.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-incident-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-incident-type",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-injury-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-injury-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-injury-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-medical-director.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-medical-director",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-medical-director",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-medication-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-medication-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-medication-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-mileage-to-closest.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-mileage-to-closest",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-mileage-to-closest",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-not-value.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-not-value",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-not-value",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-other-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-other-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-other-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-pain-scale-type.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-pain-scale-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-pain-scale-type",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-patient-age.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-patient-age",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-age",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-patient-barrier.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-patient-barrier",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-barrier",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-payer-type.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-payer-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-payer-type",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-pertinent-negative.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-pertinent-negative",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-pertinent-negative",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-primary-payment-method.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-primary-payment-method",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-primary-payment-method",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-procedure-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-procedure-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-procedure-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-protocol-used.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-protocol-used",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-protocol-used",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-response-delays.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-response-delays",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-delays",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-response-mode.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-response-mode",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-mode",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-response-type.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-response-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-type",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-response-urgency.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-response-urgency",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-urgency",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-scene-details.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-scene-details",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-details",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-scene-gps.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-scene-gps",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-gps",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-signature-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-signature-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-signature-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-stroke-scale-context.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-stroke-scale-context",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-stroke-scale-context",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-times.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-times",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-times",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-transport-assessment.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-transport-assessment",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-transport-details.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-transport-details",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-details",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-transport-reason.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-transport-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-reason",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-unit-type.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-unit-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit-type",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-unit.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-unit",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-usng.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-usng",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-usng",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ext-ems-vital-obtained-prior.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-vital-obtained-prior",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-vital-obtained-prior",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-acn-seat-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-acn-seat-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acn-seat-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-additional-response-mode.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-additional-response-mode",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-additional-response-mode",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-additional-transport-mode.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-additional-transport-mode",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-additional-transport-mode",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-advance-directives.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-advance-directives",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-advance-directives",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-aed-use.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-aed-use",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-aed-use",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-age-units.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-age-units",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-age-units",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-agency-contact-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-agency-contact-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-contact-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-agency-level-of-service.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-agency-level-of-service",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-level-of-service",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-agency-location-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-agency-location-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-location-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-agency-org-status.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-agency-org-status",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-status",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-agency-org-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-agency-org-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-org-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-agency-service-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-agency-service-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airbag-deployment.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airbag-deployment",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airbag-deployment",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airway-complications.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airway-complications",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-complications",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airway-confirmation-method.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airway-confirmation-method",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-confirmation-method",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airway-confirming-person.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airway-confirming-person",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-confirming-person",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airway-device.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airway-device",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-device",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airway-failure-reasons.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airway-failure-reasons",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-failure-reasons",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airway-indications.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airway-indications",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-indications",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-airway-technique.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-airway-technique",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-technique",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-alcohol-drug-use.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-alcohol-drug-use",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-alcohol-drug-use",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-alternate-residence.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-alternate-residence",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-alternate-residence",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-ambulance-conditions.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-ambulance-conditions",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-conditions",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-ambulance-transport-reason.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-ambulance-transport-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-transport-reason",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-arrest-end-event.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-arrest-end-event",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-end-event",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-arrest-etiology.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-arrest-etiology",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-etiology",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-arrest-first-responder.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-arrest-first-responder",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-first-responder",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-arrest-witnessed.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-arrest-witnessed",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-witnessed",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-authorization-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-authorization-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-authorization-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-avpu.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-avpu",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-avpu",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-barrier-to-patient-care.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-barrier-to-patient-care",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-barrier-to-patient-care",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-bp-method.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-bp-method",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-bp-method",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-cardiac-arrest.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-cardiac-arrest",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cardiac-arrest",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-cardiac-rhythm.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-cardiac-rhythm",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cardiac-rhythm",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-caregiver-level.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-caregiver-level",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-caregiver-level",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-certification-level.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-certification-level",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-certification-level",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-clinical-response.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-clinical-response",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-clinical-response",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-cms-service-level.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-cms-service-level",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cms-service-level",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-cpr-discontinued-reason.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-cpr-discontinued-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cpr-discontinued-reason",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-cpr-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-cpr-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cpr-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-crew-disposition.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-crew-disposition",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-disposition",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-crew-ppe.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-crew-ppe",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-ppe",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-crew-role.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-crew-role",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-role",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-destination-reason.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-destination-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-destination-reason",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-destination-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-destination-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-destination-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-director-compensation.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-director-compensation",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-director-compensation",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-disaster-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-disaster-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-disaster-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-discharge-disposition.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-discharge-disposition",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-dispatch-delay.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-dispatch-delay",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-delay",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-dispatch-priority.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-dispatch-priority",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-priority",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-dispatch-reason.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-dispatch-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-reason",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-disposition-instructions.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-disposition-instructions",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-disposition-instructions",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-ecg-method.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-ecg-method",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ecg-method",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-ecg-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-ecg-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ecg-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-emd-performed.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-emd-performed",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-emd-performed",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-emd-provided.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-emd-provided",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-emd-provided",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-abd-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-abd-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-abd-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-abdomen.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-abdomen",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-abdomen",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-back-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-back-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-back-spine.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-back-spine",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-spine",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-chest-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-chest-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-chest-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-chest.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-chest",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-chest",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-extremities.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-extremities",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremities",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-extremity-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-extremity-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremity-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-eye-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-eye-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-eye.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-eye",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-face.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-face",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-face",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-head.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-head",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-head",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-heart.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-heart",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-heart",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-length-tape.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-length-tape",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-length-tape",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-lung-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-lung-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-lung-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-lung.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-lung",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-lung",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-mental-status.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-mental-status",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-mental-status",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-neck.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-neck",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-neck",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-neurological.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-neurological",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-neurological",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-pelvic-gu.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-pelvic-gu",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-pelvic-gu",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-skin.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-skin",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-skin",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-exam-stroke-resolved.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-exam-stroke-resolved",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-stroke-resolved",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-external-document-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-external-document-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-external-document-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-external-report-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-external-report-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-external-report-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-first-rhythm.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-first-rhythm",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-first-rhythm",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-gcs-qualifier.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-gcs-qualifier",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-gcs-qualifier",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-history-med-dosage-units.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-history-med-dosage-units",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-history-med-dosage-units",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-history-obtained-from.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-history-obtained-from",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-history-obtained-from",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-hospital-capability.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-hospital-capability",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-capability",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-hospital-destination.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-hospital-destination",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-destination",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-imaging-study-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-imaging-study-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-imaging-study-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-immunization-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-immunization-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-immunization-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-incident-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-incident-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-incident-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-initial-acuity.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-initial-acuity",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-initial-acuity",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-insurance-billing-priority.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-insurance-billing-priority",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insurance-billing-priority",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-insured-relationship.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-insured-relationship",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insured-relationship",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-lab-result-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-lab-result-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-lab-result-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-level-of-care.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-level-of-care",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-level-of-care",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-mci-triage-class.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-mci-triage-class",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-mci-triage-class",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-mechanism-of-injury.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-mechanism-of-injury",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-mechanism-of-injury",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-med-frequency.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-med-frequency",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-med-frequency",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-medical-director-board-cert.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-medical-director-board-cert",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medical-director-board-cert",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-medical-director-degree.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-medical-director-degree",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medical-director-degree",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-medication-complication.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-medication-complication",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-complication",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-medication-dosage-units.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-medication-dosage-units",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-dosage-units",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-medication-route.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-medication-route",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-route",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-monitoring-capability.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-monitoring-capability",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-monitoring-capability",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-neurological-outcome.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-neurological-outcome",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-neurological-outcome",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-not-value.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-not-value",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-not-value",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-osha-ppe.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-osha-ppe",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-osha-ppe",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-pain-scale-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-pain-scale-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pain-scale-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-patient-acuity.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-patient-acuity",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-acuity",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-patient-eval-care.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-patient-eval-care",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-eval-care",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-patient-representative.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-patient-representative",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-representative",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-patient-transport-assessment.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-patient-transport-assessment",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-transport-assessment",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-payer-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-payer-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payer-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-payment-method.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-payment-method",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payment-method",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-pertinent-negative.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-pertinent-negative",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pertinent-negative",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-pre-arrival-alert.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-pre-arrival-alert",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pre-arrival-alert",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-pregnancy.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-pregnancy",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pregnancy",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-procedure-complication.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-procedure-complication",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-procedure-complication",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-protocol-used.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-protocol-used",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-protocol-used",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-pulse-rhythm.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-pulse-rhythm",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pulse-rhythm",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-reason-for-refusal.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-reason-for-refusal",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-reason-for-refusal",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-registry-candidate.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-registry-candidate",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-registry-candidate",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-reperfusion-checklist.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-reperfusion-checklist",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-reperfusion-checklist",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-respiratory-effort.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-respiratory-effort",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-respiratory-effort",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-response-delay.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-response-delay",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-delay",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-response-mode.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-response-mode",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-mode",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-response-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-response-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-response-urgency.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-response-urgency",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-urgency",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-resuscitation-attempted.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-resuscitation-attempted",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-resuscitation-attempted",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-rosc.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-rosc",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-rosc",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-safety-equipment.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-safety-equipment",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-safety-equipment",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-scene-delay.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-scene-delay",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-scene-delay",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-seat-row-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-seat-row-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-seat-row-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-sex.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-sex",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-sex",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-signature-reason.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-signature-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signature-reason",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-signature-status.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-signature-status",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signature-status",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-signer-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-signer-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signer-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-situation-organ-system.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-situation-organ-system",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-situation-organ-system",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-specialty-service-capability.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-specialty-service-capability",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-specialty-service-capability",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-stroke-scale-result.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-stroke-scale-result",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-result",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-stroke-scale-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-stroke-scale-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-transfer-reason.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-transfer-reason",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transfer-reason",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-transport-delay.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-transport-delay",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-delay",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-transport-disposition.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-transport-disposition",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-disposition",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-transport-method.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-transport-method",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-method",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-transport-mode.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-transport-mode",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-mode",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-trauma-triage-high-risk.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-trauma-triage-high-risk",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-high-risk",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-trauma-triage-moderate-risk.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-trauma-triage-moderate-risk",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-moderate-risk",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-turn-around-delay.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-turn-around-delay",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-turn-around-delay",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-unit-disposition.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-unit-disposition",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-disposition",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-unit-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-unit-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-vascular-access-location.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-vascular-access-location",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vascular-access-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-vehicle-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-vehicle-type",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vehicle-type",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-work-injury-exposure.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-work-injury-exposure",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-work-injury-exposure",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "Basic-fromNarrative.json",
+    "resourceType" : "Basic",
+    "id" : "fromNarrative"
+  }]
+}
