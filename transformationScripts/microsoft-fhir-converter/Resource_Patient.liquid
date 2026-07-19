@@ -23,16 +23,18 @@ map to FHIR administrative gender. {%- endcomment -%}
   ],
   {% endif -%}
   {% assign g = p['ePatient.13'].value -%}
-  {% if g == '9906001' %}"gender": "female",{% elsif g == '9906003' %}"gender": "male",{% elsif g == '9906021' or g == '9906023' or g == '9906025' %}"gender": "other",{% elsif g %}"gender": "unknown",{% endif %}
+  {% comment %} US Core requires gender 1..1: NV/nil or unmapped codes -> unknown {% endcomment -%}
+  {% if g == '9906001' %}"gender": "female",{% elsif g == '9906003' %}"gender": "male",{% elsif g == '9906007' or g == '9906009' or g == '9906011' %}"gender": "other",{% else %}"gender": "unknown",{% endif %}
   {% if p['ePatient.17'].value %}"birthDate": "{{ p['ePatient.17'].value }}",{% endif %}
   {% if p['ePatient.05'].value or p['ePatient.06'].value -%}
   "address": [
     {
       {% if p['ePatient.05'].value %}"line": ["{{ p['ePatient.05'].value }}"],{% endif %}
       {% if p['ePatient.06'].value %}"city": "{{ p['ePatient.06'].value }}",{% endif %}
-      {% if p['ePatient.07'].value %}"state": "{{ p['ePatient.07'].value }}",{% endif %}
-      {% if p['ePatient.08'].value %}"postalCode": "{{ p['ePatient.08'].value }}",{% endif %}
-      "country": "US"
+      {% if p['ePatient.07'].value %}"district": "{{ p['ePatient.07'].value }}",{% endif %}
+      {% if p['ePatient.08'].value %}"state": "{{ p['ePatient.08'].value }}",{% endif %}
+      {% if p['ePatient.09'].value %}"postalCode": "{{ p['ePatient.09'].value }}",{% endif %}
+      "country": "{{ p['ePatient.10'].value | default: 'US' }}"
     }
   ],
   {% endif -%}

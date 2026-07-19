@@ -51,8 +51,10 @@
         </ePatient.PatientNameGroup>
         <ePatient.05>1425 Oak Grove Rd</ePatient.05>
         <ePatient.06>Moreno Valley</ePatient.06>
-        <ePatient.07>06</ePatient.07>
-        <ePatient.08>92553</ePatient.08>
+        <ePatient.07>06065</ePatient.07>
+        <ePatient.08>CA</ePatient.08>
+        <ePatient.09>92553</ePatient.09>
+        <ePatient.10>US</ePatient.10>
         <ePatient.13>9906003</ePatient.13>
         <ePatient.17>1979-03-22</ePatient.17>
       </ePatient>

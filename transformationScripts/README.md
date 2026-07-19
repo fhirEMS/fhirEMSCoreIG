@@ -113,7 +113,23 @@ GNIS city codes → names (NDR-003) and ANSI state codes → USPS abbreviations
 ```bash
 python3 tools/nemsis-xml-to-json.py fixtures/sample-pcr.xml > fixtures/sample-pcr.json
 python3 tools/test-liquid-render.py          # 16 checks (structure + content)
+
+# batch-test against real NEMSIS EMSDataSet XMLs (optionally comparing
+# against the real Microsoft converter):
+python3 tools/test-real-samples.py <pcr1.xml> <pcr2.xml> \
+  [--converter-dll /path/to/Microsoft.Health.Fhir.Liquid.Converter.Tool.dll]
 ```
+
+**Real-data verification (2026-07-19):** all five NEMSIS 3.5.0 published
+sample PCRs (Overdose, Suicide, MVC, eBike, CPMIH — 1–4 vital groups, up to
+4 medication and 3 procedure groups each, heavy xsi:nil/NV usage) pass the
+batch suite, with the real Microsoft converter producing identical resource
+counts to the python-liquid harness on every file. Real-data findings fixed:
+the canonicalizer's FORCE_ARRAY list is now generated from the NEMSIS XSDs
+(all 200 maxOccurs="unbounded" elements, not a hand-curated subset);
+ePatient.07/.08/.09 were remapped to their true semantics
+(county/state/ZIP); and Patient.gender falls back to "unknown" when
+ePatient.13 is NV'd or unmapped (US Core requires gender 1..1).
 
 The fixture (`fixtures/sample-pcr.xml`) is an abbreviated PCR matching the
 IG's MVA example scenario. The harness asserts: transaction shape, expected

@@ -83,19 +83,20 @@ def EPatient_Patient(pcr, base) {
   gender: NemsisGender(p.'ePatient.13'.value);
   birthDate: p.'ePatient.17'.value;
   address[0].line[0]: p.'ePatient.05'.value;
-  address[0].city: p.'ePatient.06'.value;
-  // NDR-004: ePatient.07 is an ANSI state code; convert to USPS upstream.
-  address[0].state: p.'ePatient.07'.value;
-  address[0].postalCode: p.'ePatient.08'.value;
-  address[0].country (if p.'ePatient.05'.value?): "US";
+  address[0].city: p.'ePatient.06'.value;      // NDR-003: GNIS code -> name upstream
+  address[0].district: p.'ePatient.07'.value;  // Home County (ANSI/FIPS)
+  // NDR-004: ePatient.08 is an ANSI state code; convert to USPS upstream.
+  address[0].state: p.'ePatient.08'.value;
+  address[0].postalCode: p.'ePatient.09'.value;
+  address[0].country: p.'ePatient.10'.value;
   active: true;
 }
 
 def NemsisGender(code) {
   if (code = "9906001") { $this: "female"; }
   if (code = "9906003") { $this: "male"; }
-  if (code = "9906021" or code = "9906023" or code = "9906025") { $this: "other"; }
-  if (code = "9906007" or code = "9906009") { $this: "unknown"; }
+  if (code = "9906007" or code = "9906009" or code = "9906011") { $this: "other"; }
+  // US Core requires gender 1..1: NV/nil or unmapped -> "unknown" (apply at call site)
 }
 
 // ── eResponse/eTimes/eDisposition -> EMSEncounter ────────────

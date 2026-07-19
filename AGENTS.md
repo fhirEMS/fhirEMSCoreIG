@@ -332,7 +332,10 @@ REFERENCE ONLY (v1 unsupported upstream, v2 unpackaged). pyromanic
 DotLiquid gotchas encoded in the templates: no dynamic bracket keys; `*Group`
 arrays need `| first`; every resource MUST have `resource.id` or the
 converter post-processor merges same-type entries. Coverage: core PCR path;
-extend per transformationScripts/README.md. Whistle maps: `google-whistle/`.
+extend per transformationScripts/README.md. Verified against the five real
+NEMSIS 3.5.0 sample PCRs in
+/Users/chad/Documents/Files/fhirReference/fhirEMSCore/nemsisDeidentifer/samples/
+(batch suite: tools/test-real-samples.py, real-converter comparison included). Whistle maps: `google-whistle/`.
 
 ---
 

@@ -122,10 +122,16 @@
                 "value": "Moreno Valley"
               },
               "ePatient.07": {
-                "value": "06"
+                "value": "06065"
               },
               "ePatient.08": {
+                "value": "CA"
+              },
+              "ePatient.09": {
                 "value": "92553"
+              },
+              "ePatient.10": {
+                "value": "US"
               },
               "ePatient.13": {
                 "value": "9906003"
