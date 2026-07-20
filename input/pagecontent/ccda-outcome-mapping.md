@@ -1,3 +1,14 @@
+<div class="stu-note" markdown="1">
+**Disclaimer — draft, machine-verified only.** This mapping and its reference
+Liquid implementation have been verified automatically against a single
+synthetic Discharge Summary fixture (real Microsoft FHIR Converter run, 18
+structural checks, HL7-validator slice conformance). They have **not** been
+reviewed by clinical, NEMSIS, HL7, or C-CDA domain experts, have not been
+tested against real-world C-CDA variability (section template variants, null
+flavors, translation nesting), and terminology-server code validation has not
+been run. Not for production or clinical use.
+</div>
+
 This page defines the normative mapping from a **standard C-CDA document**
 (CCD or Discharge Summary, USCDI v3 content) to **NEMSIS eOutcome**, and from
 eOutcome to its FHIR representation in this IG — the

@@ -16,6 +16,14 @@
     "kind" : "requirements"
   },
   {
+    "filename" : "CodeSystem-cs-ems-acquisition-lane.json",
+    "resourceType" : "CodeSystem",
+    "id" : "cs-ems-acquisition-lane",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-ems-acquisition-lane",
+    "version" : "0.2.0",
+    "content" : "complete"
+  },
+  {
     "filename" : "CodeSystem-cs-nemsis-airway.json",
     "resourceType" : "CodeSystem",
     "id" : "cs-nemsis-airway",
@@ -180,6 +188,15 @@
     "resourceType" : "NamingSystem",
     "id" : "ns-ems-vin",
     "kind" : "identifier"
+  },
+  {
+    "filename" : "OperationDefinition-ems-outcome-plan.json",
+    "resourceType" : "OperationDefinition",
+    "id" : "ems-outcome-plan",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/OperationDefinition/ems-outcome-plan",
+    "version" : "0.2.0",
+    "kind" : "operation",
+    "type" : "false"
   },
   {
     "filename" : "StructureDefinition-ems-allergyintolerance.json",
@@ -792,6 +809,16 @@
     "derivation" : "constraint"
   },
   {
+    "filename" : "StructureDefinition-ext-ems-outcome-source.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ext-ems-outcome-source",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-outcome-source",
+    "version" : "0.2.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
     "filename" : "StructureDefinition-ext-ems-pain-scale-type.json",
     "resourceType" : "StructureDefinition",
     "id" : "ext-ems-pain-scale-type",
@@ -1036,6 +1063,13 @@
     "resourceType" : "ValueSet",
     "id" : "vs-ems-acn-seat-location",
     "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acn-seat-location",
+    "version" : "0.2.0"
+  },
+  {
+    "filename" : "ValueSet-vs-ems-acquisition-lane.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-ems-acquisition-lane",
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acquisition-lane",
     "version" : "0.2.0"
   },
   {

@@ -1,5 +1,9 @@
 # ccda-to-eoutcome — Standard C-CDA → NEMSIS eOutcome → FHIR
 
+> **Disclaimer:** draft, machine-verified only — see `../DISCLAIMER.md`
+> (section "ccda-to-eoutcome collection") for exactly what has and has NOT
+> been verified. No expert review; not for production or clinical use.
+
 Liquid template collection for the [Microsoft FHIR Converter](https://github.com/microsoft/FHIR-Converter)
 `ccda` processor (`metadata.json: { "type": "ccda" }`). Maps a standard C-CDA
 CCD / Discharge Summary (USCDI v3 content) to a single
