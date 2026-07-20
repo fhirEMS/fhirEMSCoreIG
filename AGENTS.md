@@ -717,6 +717,7 @@ copy it from `/Users/chad/Documents/Files/fhirReference/fhirEMSCore/fhirEMSIG/in
 | `cs-nemsis-vitals.fsh` | `nemsis-vitals` | eVitals enumeration codes (~110) |
 
 ### Remaining Work (v0.3.0+)
+- **eOutcome FHIR acquisition (PLANNED)**: see `docs/planning/eoutcome-fhir-query-plan.md` — measure-driven recursive ePCR evaluation → minimum-necessary outcome queries over 3 lanes (HIE/SAFR, CMS-0057-F Provider Access API eff. 2027-01-01, registries), with Provider-vs-QA access postures (TREAT vs HOPERAT), Part 2/DS4P handling, $match, BALP audit. Phases P1–P5 defined.
 - fhirEngine load test DONE (2026-07-19): 4 packages via stock install-ig, 6/6 $validate-code
 - v0.2.0 released 2026-07-19 (version bump, changelog, gh-pages publish)
 - Future: State dataset (47 elements), dConfiguration.02–.05 (state cert level definitions), clinical/NEMSIS domain expert review, HL7/NEMSIS engagement for formal standardization
