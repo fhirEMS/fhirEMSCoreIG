@@ -768,6 +768,8 @@ for line in lines[1:]:
 - **identifier slicing in profiles**: MUST use `#value` on `system` discriminator (not `$this` or `type`). Parent profile discriminator cannot be changed (causes snapshot generation failure). Remove formal slicing for identifiers without fixed system URLs.
 - **Organization uses US Core inherited `pattern:$this` slicing**: extend `identifier[NPI]` (uppercase, from US Core) without redefining the slicing header.
 - **EMS-NEMSIS LOINC 74xxx codes**: Not in local LOINC v2.81 cache — use `cs-nemsis-encounter` codes instead.
+- **Complex-extension sub-cardinalities are 0.. (2026-07-19)**: real NEMSIS data proved that Required-but-nillable elements arrive NV'd, so no sub-extension may have FHIR min=1 (NDR-001: nillable → omit). MS conveys the expectation. Do not reintroduce 1..1 sub-extensions.
+- **Inferno-verified (2026-07-19)**: converted real PCRs served from fhirEngine pass Inferno US Core v6.1.0 FHIR API (81/8/415, zero profile-validation failures; fails = TLS env, eCrew mapping gap, DAR-code probe) and validate 72/74 clean against the IG's own profiles via the HL7 validator with package.tgz loaded (2 flags = US-edition SNOMED vs International).
 - **ignoreWarnings.txt**: Only suppresses WARNING-level messages (not errors) via prefix matching; LF-only line endings.
 - **tx.fhir.org "cache not known" errors**: If the publisher reports hundreds of `Error from https://tx.fhir.org/r4: The cache '…' is not known to this server`, the committed `input-cache/txcache` holds an expired server-side cache session — delete `input-cache/txcache/` and rerun (it regenerates).
 

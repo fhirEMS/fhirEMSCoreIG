@@ -5,7 +5,7 @@ notes apply to city/state code conversion. eScene.01 nil with NV is skipped
 {
   "resourceType": "Location",
   "id": "{{ resId }}",
-  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"] },
+  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"] },
   "status": "active",
   "name": "{{ s['eScene.15'].value | default: 'EMS Scene' }}",
   {% if s['eScene.15'].value or s['eScene.17'].value -%}

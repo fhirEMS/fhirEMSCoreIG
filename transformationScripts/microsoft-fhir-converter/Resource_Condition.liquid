@@ -3,7 +3,7 @@ EMSCondition (ems-condition, encounter-diagnosis). {%- endcomment -%}
 {
   "resourceType": "Condition",
   "id": "{{ resId }}",
-  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"] },
+  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"] },
   "clinicalStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" } ] },
   "verificationStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "provisional" } ] },
   "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "encounter-diagnosis", "display": "Encounter Diagnosis" } ] } ],

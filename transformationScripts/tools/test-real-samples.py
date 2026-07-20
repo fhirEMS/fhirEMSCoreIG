@@ -73,7 +73,7 @@ def check_bundle(bundle, label, failures):
     unresolved = [r for r in refs if r not in full_urls]
     check(not unresolved, f"unresolved references: {unresolved[:3]}")
     profiles = {p for e in entries for p in e["resource"].get("meta", {}).get("profile", [])}
-    missing = sorted(p for p in profiles if p not in SD_URLS)
+    missing = sorted(p for p in profiles if p not in SD_URLS and not p.startswith("http://hl7.org/fhir/us/core/"))
     check(not missing, f"unknown profiles: {missing}")
     bad_codes = []
     for m in re.finditer(r'\{\s*"system"\s*:\s*"([^"]+)"\s*,\s*"code"\s*:\s*"([^"]+)"', blob):

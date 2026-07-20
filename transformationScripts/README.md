@@ -104,6 +104,28 @@ eExam, eLabs, eAirway, eOutcome, ePayment, eOther/eCustom, Composition
 assembly, and DEM demographics. Most NEMSIS codes pass through unchanged to
 the IG's `cs-nemsis-*` systems, so new sections are largely mechanical.
 
+## Conformance verification (2026-07-19)
+
+The five real sample PCRs, converted and loaded onto a local fhirEngine
+server, were tested two ways:
+
+1. **Inferno US Core v6.1.0 test kit** (FHIR API group, headless): **81 pass /
+   8 fail / 415 skip**. Every profile-conformance validation passes; the only
+   failures are localhost TLS (environmental), the eCrew→Practitioner mapping
+   gap (below), and the DataAbsentReason-CodeSystem probe (the DAR *extension*
+   test passes). Skips are resource types EMS data does not produce.
+2. **HL7 Java validator with this IG loaded** (Inferno validator service +
+   `package.tgz`, validating each resource against its `ems-*` profile):
+   **72 of 74 resources clean**; the 2 flags are US-edition SNOMED codes
+   checked against the International edition (validator configuration).
+
+Converted resources are dual-stamped: `meta.profile` carries the `ems-*`
+profile and its US Core parent.
+
+**Known mapping gaps:** eCrew → Practitioner/PractitionerRole (Inferno
+2.43.07), and eProcedures.06 (successful) has no IG sub-extension —
+eProcedures.08 (response) is mapped instead.
+
 **Upstream data conversions still required** (documented in the IG's NDRs):
 GNIS city codes → names (NDR-003) and ANSI state codes → USPS abbreviations
 (NDR-004). The transforms pass these values through as-is.

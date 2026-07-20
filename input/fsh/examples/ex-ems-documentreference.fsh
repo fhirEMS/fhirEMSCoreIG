@@ -27,6 +27,7 @@ Usage: #example
 * context.encounter[0] = Reference(ex-ems-encounter)
 * date = "2026-03-14T14:45:00-08:00"
 * author[0] = Reference(ex-ems-practitioner)
+* custodian = Reference(ex-ems-organization-agency)
 
 // eOther.10/.11/.22 - attachment
 * content[0].attachment.contentType = #application/pdf

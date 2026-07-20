@@ -20,6 +20,7 @@
 
 ### Verified
 - Loaded onto the fhirEngine terminology server via its stock IG installer; $validate-code round-trips confirmed
+- Real NEMSIS sample PCRs, converted via the Liquid pipeline and served from fhirEngine, pass the Inferno US Core v6.1.0 FHIR API tests with zero profile-validation failures, and validate against this IG's own profiles via the HL7 validator (post-release fix: complex-extension sub-element minimums relaxed to 0 — NEMSIS nillable elements arrive NV'd in real data)
 
 
 <div class="dragon" markdown="1">

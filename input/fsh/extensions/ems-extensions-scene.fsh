@@ -19,9 +19,9 @@ Description: """
 """
 Context: Location
 * extension contains
-    firstUnitOnScene    1..1 MS and
-    numberOfPatients    1..1 MS and
-    massCasualtyIncident 1..1 MS and
+    firstUnitOnScene    0..1 MS and
+    numberOfPatients    0..1 MS and
+    massCasualtyIncident 0..1 MS and
     mciTriageClass      0..* MS and
     facilityName        0..1
 
@@ -68,10 +68,10 @@ Description: """
 """
 Context: Organization
 * extension contains
-    primaryServiceType  1..1 MS and
+    primaryServiceType  0..1 MS and
     otherServiceType    0..* MS and
-    levelOfService      1..1 MS and
-    organizationStatus  1..1 MS
+    levelOfService      0..1 MS and
+    organizationStatus  0..1 MS
 
 * extension[primaryServiceType]
   * ^short = "dAgency.09 - Primary Type of Service"

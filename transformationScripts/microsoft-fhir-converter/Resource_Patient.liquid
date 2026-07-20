@@ -7,7 +7,7 @@ map to FHIR administrative gender. {%- endcomment -%}
 {
   "resourceType": "Patient",
   "id": "{{ patientId }}",
-  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"] },
+  "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"] },
   "identifier": [
     {
       "system": "urn:oid:2.25.219926138944530828037824748808947630693",

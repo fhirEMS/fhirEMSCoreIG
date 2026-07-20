@@ -79,8 +79,8 @@ Title: "EMS Vehicle Unit Identification"
 Description: "NEMSIS eResponse.13 (EMS Vehicle/Unit Number) and eResponse.14 (EMS Unit Call Sign). Both Mandatory/National."
 Context: Encounter
 * extension contains
-    unitNumber 1..1 MS and
-    callSign   1..1 MS
+    unitNumber 0..1 MS and
+    callSign   0..1 MS
 
 * extension[unitNumber]
   * ^short = "eResponse.13 - EMS Vehicle (Unit) Number"
@@ -101,7 +101,7 @@ Title: "EMS Dispatch Information"
 Description: "Captures NEMSIS eDispatch supplementary fields: EMD performed (eDispatch.02, Required/National), EMD determinant code (eDispatch.03), dispatch center (eDispatch.04), dispatch priority (eDispatch.05), and CAD record ID (eDispatch.06)."
 Context: Encounter
 * extension contains
-    emdPerformed          1..1 MS and
+    emdPerformed          0..1 MS and
     emdDeterminant        0..1 and
     dispatchCenterNameOrId 0..1 and
     dispatchPriority      0..1 MS and
@@ -146,12 +146,12 @@ Description: """
 """
 Context: Encounter
 * extension contains
-    unitDisposition       1..1 MS and
-    patientEvaluationCare 1..1 MS and
-    crewDisposition       1..1 MS and
-    transportDisposition  1..1 MS and
-    levelOfCareProvided   1..1 MS and
-    patientAcuity         1..1 MS and
+    unitDisposition       0..1 MS and
+    patientEvaluationCare 0..1 MS and
+    crewDisposition       0..1 MS and
+    transportDisposition  0..1 MS and
+    levelOfCareProvided   0..1 MS and
+    patientAcuity         0..1 MS and
     reasonForRefusal      0..*
 
 * extension[unitDisposition]
@@ -205,8 +205,8 @@ Title: "EMS Transport Details"
 Description: "NEMSIS transport method and mode elements: eDisposition.16 (EMS Transport Method), eDisposition.17 (Transport Mode from Scene), and eDisposition.18 (Additional Transport Mode Descriptors). All Required/National."
 Context: Encounter
 * extension contains
-    transportMethod        1..1 MS and
-    transportMode          1..1 MS and
+    transportMethod        0..1 MS and
+    transportMode          0..1 MS and
     additionalTransportMode 0..* MS
 
 * extension[transportMethod]
@@ -237,10 +237,10 @@ Description: "Groups NEMSIS destination-selection and pre-arrival alert elements
 Context: Encounter
 * extension contains
     reasonForChoosingDestination 0..* MS and
-    typeOfDestination            1..1 MS and
-    hospitalInPatientDestination 1..1 MS and
+    typeOfDestination            0..1 MS and
+    hospitalInPatientDestination 0..1 MS and
     hospitalCapability           0..* MS and
-    preArrivalAlert              1..1 MS and
+    preArrivalAlert              0..1 MS and
     preArrivalAlertDateTime      0..1 MS and
     numberOfPatients             0..1 MS and
     dispositionInstructions      0..*

@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'cardiacArrest']) &gt;= 1">extension with URL = 'cardiacArrest': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'cardiacArrest']) &lt;= 1">extension with URL = 'cardiacArrest': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'etiology']) &lt;= 1">extension with URL = 'etiology': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'aedUsePrior']) &lt;= 1">extension with URL = 'aedUsePrior': maximum cardinality of 'extension' is 1</sch:assert>

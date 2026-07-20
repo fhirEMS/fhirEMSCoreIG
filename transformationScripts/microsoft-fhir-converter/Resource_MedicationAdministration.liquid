@@ -9,18 +9,23 @@ as unit text. {%- endcomment -%}
   "resourceType": "MedicationAdministration",
   "id": "{{ resId }}",
   "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration"] },
-  "status": "completed",
-  "medicationCodeableConcept": { "coding": [ { "system": "http://www.nlm.nih.gov/research/umls/rxnorm", "code": "{{ med['eMedications.03'].value }}" } ] },
+  {% comment %} eMedications.03 CodeType attr: 9924003=RxNorm, 9924005=SNOMED {% endcomment -%}
+  {% assign medsys = 'http://www.nlm.nih.gov/research/umls/rxnorm' -%}
+  {% if med['eMedications.03'].CodeType == '9924005' %}{% assign medsys = 'http://snomed.info/sct' %}{% endif -%}
+  "medicationCodeableConcept": { "coding": [ { "system": "{{ medsys }}", "code": "{{ med['eMedications.03'].value }}" } ] },
   "subject": { "reference": "urn:uuid:{{ patientId }}" },
   "context": { "reference": "urn:uuid:{{ encounterId }}" },
-  {% if med['eMedications.01'].value %}"effectiveDateTime": "{{ med['eMedications.01'].value }}",{% endif %}
+  {% if med['eMedications.01'].value %}"effectiveDateTime": "{{ med['eMedications.01'].value }}",{% else %}"_effectiveDateTime": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason", "valueCode": "unknown" } ] },{% endif %}
+  {% comment %} FHIR mad-1: dosage requires dose or rate — omit dosage entirely
+  when the NEMSIS DosageGroup carries no dose value {% endcomment -%}
+  {% if dg['eMedications.05'].value -%}
   "dosage": {
     {% if med['eMedications.04'].value -%}
     "route": { "coding": [ { "system": "{{ IGCS }}/cs-nemsis-medications", "code": "{{ med['eMedications.04'].value }}" } ] },
     {% endif -%}
-    {% if dg['eMedications.05'].value -%}
     "dose": { "value": {{ dg['eMedications.05'].value }}{% if dg['eMedications.06'].value %}, "unit": "{{ dg['eMedications.06'].value }}", "system": "{{ IGCS }}/cs-nemsis-medications", "code": "{{ dg['eMedications.06'].value }}"{% endif %} },
-    {% endif -%}
     "text": "See NEMSIS eMedications dosage group"
-  }
+  },
+  {% endif -%}
+  "status": "completed"
 }

@@ -12,9 +12,9 @@ Title: "EMS Medication Administration Context"
 Description: "Contextual data for NEMSIS eMedications not directly representable in FHIR MedicationAdministration: prior EMS care indicator, clinical response, complication(s), and authorization type."
 Context: MedicationAdministration
 * extension contains
-    priorEMSCare   1..1 MS and
-    response       1..1 MS and
-    complication   1..* MS and
+    priorEMSCare   0..1 MS and
+    response       0..1 MS and
+    complication   0..* MS and
     authorization  0..1    and
     byAnotherUnit  0..1
 
@@ -57,7 +57,7 @@ Title: "EMS Cardiac Arrest Context"
 Description: "Contextual data for NEMSIS eArrest not directly representable in FHIR Condition: witnessed-by, resuscitation actions, AED use, CPR type, therapeutic hypothermia, ROSC, neurological outcome, end-of-event, and first-responder roles."
 Context: Condition
 * extension contains
-    cardiacArrest        1..1 MS and   // eArrest.01
+    cardiacArrest        0..1 MS and   // eArrest.01
     etiology             0..1 MS and   // eArrest.02
     resuscitationBy      0..* MS and   // eArrest.03
     witnessedBy          0..* MS and   // eArrest.04
@@ -261,9 +261,9 @@ Title: "EMS Procedure Context"
 Description: "Contextual data for NEMSIS eProcedures not directly representable in FHIR Procedure: prior EMS care indicator, number of attempts, clinical response, authorization type, airway technique(s), and performed-by-another-unit indicator."
 Context: Procedure
 * extension contains
-    priorEMSCare      1..1 MS and
-    numberOfAttempts  1..1 MS and
-    response          1..1 MS and
+    priorEMSCare      0..1 MS and
+    numberOfAttempts  0..1 MS and
+    response          0..1 MS and
     authorization     0..1    and
     airwayTechnique   0..* MS and
     byAnotherUnit     0..1

@@ -68,7 +68,7 @@ Context: Organization
 * extension[procedure]
   * ^short = "dConfiguration.06/.07 - EMS Agency Procedures with permitted certification levels"
   * ^comment = "NEMSIS dConfiguration.07 (SNOMED procedure code) with dConfiguration.06 (permitted certification levels). Repeat per procedure."
-  * extension contains code 1..1 MS and permittedLevel 0..*
+  * extension contains code 0..1 MS and permittedLevel 0..*
   * extension[code]
     * ^short = "dConfiguration.07 - Procedure (SNOMED CT)"
     * value[x] only CodeableConcept
@@ -81,7 +81,7 @@ Context: Organization
 * extension[medication]
   * ^short = "dConfiguration.08/.09 - EMS Agency Medications with permitted certification levels"
   * ^comment = "NEMSIS dConfiguration.09 (RxNorm medication code) with dConfiguration.08 (permitted certification levels). Repeat per medication."
-  * extension contains code 1..1 MS and permittedLevel 0..*
+  * extension contains code 0..1 MS and permittedLevel 0..*
   * extension[code]
     * ^short = "dConfiguration.09 - Medication (RxNorm)"
     * value[x] only CodeableConcept

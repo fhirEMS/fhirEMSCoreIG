@@ -79,7 +79,7 @@ def main():
     for f in PACKAGE.glob("StructureDefinition-*.json"):
         sd_urls.add(json.loads(f.read_text())["url"])
     profiles = {p for e in entries for p in e["resource"].get("meta", {}).get("profile", [])}
-    missing = sorted(p for p in profiles if p not in sd_urls)
+    missing = sorted(p for p in profiles if p not in sd_urls and not p.startswith("http://hl7.org/fhir/us/core/"))
     check(not missing, f"all {len(profiles)} meta.profile URLs exist in package/ {missing or ''}")
 
     # every IG code system referenced exists in the package; NEMSIS codes exist in their CS

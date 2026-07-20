@@ -22,8 +22,8 @@ Title: "EMS ECG Context"
 Description: "NEMSIS eVitals.04 (ECG Type) and eVitals.05 (Method of ECG Interpretation). Both Required/National. Nillable. NV: NotRecorded, NotApplicable."
 Context: Observation
 * extension contains
-    ecgType   1..1 MS and
-    ecgMethod 1..1 MS
+    ecgType   0..1 MS and
+    ecgMethod 0..1 MS
 
 * extension[ecgType]
   * ^short = "eVitals.04 - ECG Type"
@@ -56,7 +56,7 @@ Title: "EMS Stroke Scale Context"
 Description: "NEMSIS eVitals.30 (Stroke Scale Type, Required/National) and eVitals.34 (Stroke Scale Score, Recommended). Used alongside the stroke scale result Observation."
 Context: Observation
 * extension contains
-    scaleType  1..1 MS and
+    scaleType  0..1 MS and
     scaleScore 0..1 MS
 
 * extension[scaleType]

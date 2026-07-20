@@ -14,6 +14,20 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
     {% capture patientId %}{{ base | append: '-patient' | generate_uuid }}{% endcapture -%}
     {% capture encounterId %}{{ base | append: '-encounter' | generate_uuid }}{% endcapture -%}
     {% capture sceneId %}{{ base | append: '-scene' | generate_uuid }}{% endcapture -%}
+    {% capture orgId %}{{ base | append: '-agency' | generate_uuid }}{% endcapture -%}
+    {% assign ag = pcr.eResponse['eResponse.AgencyGroup'] | first -%}
+    {
+      "fullUrl": "urn:uuid:{{ orgId }}",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "{{ orgId }}",
+        "meta": { "profile": ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-organization", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"] },
+        "identifier": [ { "system": "urn:oid:2.25.219926138944530828037824748808947630693", "value": "{{ ag['eResponse.01'].value | default: base }}" } ],
+        "active": true,
+        "name": "{{ ag['eResponse.02'].value | default: 'EMS Agency' }}"
+      },
+      "request": { "method": "POST", "url": "Organization" }
+    },
     {
       "fullUrl": "urn:uuid:{{ patientId }}",
       "resource": {% include 'Resource_Patient' pcr: pcr, patientId: patientId %},
@@ -21,7 +35,7 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
     },
     {
       "fullUrl": "urn:uuid:{{ encounterId }}",
-      "resource": {% include 'Resource_Encounter' pcr: pcr, patientId: patientId, encounterId: encounterId %},
+      "resource": {% include 'Resource_Encounter' pcr: pcr, patientId: patientId, encounterId: encounterId, orgId: orgId %},
       "request": { "method": "POST", "url": "Encounter" }
     },
     {% if pcr.eScene -%}
@@ -40,23 +54,28 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
     },
     {% endif -%}
     {% for vg in pcr.eVitals['eVitals.VitalGroup'] -%}
-    {% include 'Resource_ObservationVitals' vg: vg, base: base, vgIndex: forloop.index, patientId: patientId, encounterId: encounterId -%}
+    {% assign fallbackWhen = pcr.eTimes['eTimes.07'].value | default: pcr.eTimes['eTimes.06'].value | default: pcr.eTimes['eTimes.03'].value -%}
+    {% include 'Resource_ObservationVitals' vg: vg, base: base, vgIndex: forloop.index, patientId: patientId, encounterId: encounterId, fallbackWhen: fallbackWhen -%}
     {% endfor -%}
     {% for prc in pcr.eProcedures['eProcedures.ProcedureGroup'] -%}
+    {% if prc['eProcedures.03'].value -%}
     {% capture procId %}{{ base | append: '-procedure-' | append: forloop.index | generate_uuid }}{% endcapture -%}
     {
       "fullUrl": "urn:uuid:{{ procId }}",
       "resource": {% include 'Resource_Procedure' prc: prc, patientId: patientId, encounterId: encounterId, resId: procId %},
       "request": { "method": "POST", "url": "Procedure" }
     },
+    {% endif -%}
     {% endfor -%}
     {% for med in pcr.eMedications['eMedications.MedicationGroup'] -%}
+    {% if med['eMedications.03'].value -%}
     {% capture medId %}{{ base | append: '-medication-' | append: forloop.index | generate_uuid }}{% endcapture -%}
     {
       "fullUrl": "urn:uuid:{{ medId }}",
       "resource": {% include 'Resource_MedicationAdministration' med: med, patientId: patientId, encounterId: encounterId, resId: medId %},
       "request": { "method": "POST", "url": "MedicationAdministration" }
     },
+    {% endif -%}
     {% endfor -%}
     {% endfor -%}
     {% endfor -%}

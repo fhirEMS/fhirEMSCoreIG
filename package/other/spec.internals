@@ -5,7 +5,7 @@
   "tool-build" : "3",
   "webUrl" : "https://fhirems.github.io/fhirEMSCoreIG",
   "date" : "2026-07-19",
-  "date-time" : "20260719065938-0400",
+  "date-time" : "20260719084543-0400",
   "paths" : {
     "https://fhirems.github.io/fhirEMSCoreIG/ImplementationGuide/fhirems.emscore|0.2.0" : "index.html",
     "https://fhirems.github.io/fhirEMSCoreIG/ImplementationGuide/fhirems.emscore" : "index.html",

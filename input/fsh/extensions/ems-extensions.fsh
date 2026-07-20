@@ -204,8 +204,8 @@ Description: """
 """
 Context: Patient
 * extension contains
-    value 1..1 MS and
-    unit  1..1 MS
+    value 0..1 MS and
+    unit  0..1 MS
 
 * extension[value]
   * ^short = "ePatient.15 - Age value"

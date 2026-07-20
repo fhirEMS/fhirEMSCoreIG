@@ -6,18 +6,18 @@ ext-ems-procedure-context extension. {%- endcomment -%}
 {
   "resourceType": "Procedure",
   "id": "{{ resId }}",
-  "meta": { "profile": ["{{ IGX }}/ems-procedure"] },
+  "meta": { "profile": ["{{ IGX }}/ems-procedure", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"] },
   "status": "completed",
   "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "{{ prc['eProcedures.03'].value }}" } ] },
   "subject": { "reference": "urn:uuid:{{ patientId }}" },
   "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
-  {% if prc['eProcedures.01'].value %}"performedDateTime": "{{ prc['eProcedures.01'].value }}",{% endif %}
+  {% if prc['eProcedures.01'].value %}"performedDateTime": "{{ prc['eProcedures.01'].value }}",{% else %}"_performedDateTime": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason", "valueCode": "unknown" } ] },{% endif %}
   "extension": [
     { "url": "{{ IGX }}/ext-ems-procedure-context",
       "extension": [
-        {% if prc['eProcedures.02'].value %}{ "url": "performedPrior", "valueCodeableConcept": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v2-0136", "code": "{% if prc['eProcedures.02'].value == '9923003' %}Y{% else %}N{% endif %}" } ] } },{% endif %}
-        {% if prc['eProcedures.05'].value %}{ "url": "attempts", "valuePositiveInt": {{ prc['eProcedures.05'].value }} },{% endif %}
-        {% if prc['eProcedures.06'].value %}{ "url": "successful", "valueCodeableConcept": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v2-0136", "code": "{% if prc['eProcedures.06'].value == '9923003' %}Y{% else %}N{% endif %}" } ] } },{% endif %}
+        {% if prc['eProcedures.02'].value %}{ "url": "priorEMSCare", "valueCodeableConcept": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v2-0136", "code": "{% if prc['eProcedures.02'].value == '9923003' %}Y{% else %}N{% endif %}" } ] } },{% endif %}
+        {% if prc['eProcedures.05'].value %}{ "url": "numberOfAttempts", "valueInteger": {{ prc['eProcedures.05'].value }} },{% endif %}
+        {% if prc['eProcedures.08'].value %}{ "url": "response", "valueCodeableConcept": { "coding": [ { "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications", "code": "{{ prc['eProcedures.08'].value }}" } ] } },{% endif %}
       ] }
   ]
 }
