@@ -15,6 +15,11 @@ Parent: $us-core-observation
 * ^status = #active
 * ^experimental = false
 
+// ── Acquisition source (externally-sourced outcome data) ─────
+* extension contains EMSOutcomeSource named acquisitionSource 0..1 MS
+* extension[acquisitionSource]
+  * ^short = "How this outcome data was acquired (lane, source, retrieval time)"
+
 // ── Status ────────────────────────────────────────────────────
 * status MS
   * ^short = "Observation status (final | preliminary | amended)"

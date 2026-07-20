@@ -143,3 +143,34 @@ Context: Provenance
   * ^short = "eOther.20/.21 - Signature Last/First Name"
   * ^comment = "NEMSIS eOther.20 (Last) and eOther.21 (First). Usage: Optional. Name of the person who signed, as a HumanName."
   * value[x] only HumanName
+
+// ── Extension: EMS Outcome Acquisition Source ────────────────
+// Provenance-at-the-profile-level for externally-acquired
+// eOutcome data: which lane, from what document/source, when.
+Extension: EMSOutcomeSource
+Id: ext-ems-outcome-source
+Title: "EMS Outcome Acquisition Source"
+Description: "Identifies how an externally-sourced outcome Observation was acquired: the acquisition lane (FHIR endpoint, C-CDA document, payer API, registry), the source document or system identifier, the source organization, and the retrieval time. Complements (does not replace) a full Provenance resource."
+Context: Observation
+* extension contains
+    lane               1..1 MS and
+    sourceDocumentId   0..1 MS and
+    sourceOrganization 0..1 and
+    retrievedDateTime  0..1 MS
+
+* extension[lane]
+  * ^short = "Acquisition lane"
+  * value[x] only CodeableConcept
+  * valueCodeableConcept from EMSAcquisitionLaneVS (required)
+
+* extension[sourceDocumentId]
+  * ^short = "Source document/system identifier (e.g., the C-CDA document id or query id)"
+  * value[x] only Identifier
+
+* extension[sourceOrganization]
+  * ^short = "Organization the data was acquired from"
+  * value[x] only Reference or string
+
+* extension[retrievedDateTime]
+  * ^short = "When the data was retrieved"
+  * value[x] only dateTime

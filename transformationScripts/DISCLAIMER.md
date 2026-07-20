@@ -50,6 +50,30 @@ failures).
 6. **The Whistle maps** (`google-whistle/`) do not include the expanded
    sections and remain reference-only.
 
+## ccda-to-eoutcome collection (added 2026-07-19)
+
+Verified: renders on the **real Microsoft FHIR Converter `ccda` processor**
+against the synthetic fixture CCD (`eOutcomeQueries/fixtures/
+mvc-discharge-ccd.xml`) with 17 automated checks
+(`tools/test_ccda_to_eoutcome.py`): all nine eOutcome components, correct
+code systems, no fabricated components, acquisition-source extension, and
+IG-namespace code resolution against the built package.
+
+Additionally verified: the emitted Observation was run through the HL7 Java
+validator (validator_cli, FHIR 4.0.1) against the built IG package with the
+`ems-observation-outcome` profile asserted — all component/category slices
+match and no structural errors (`-tx n/a` mode; one spurious
+SocketTimeoutException from the validator's LOINC display lookup is
+environmental, not content).
+
+NOT verified: (a) real-world C-CDA variability — the fixture is one clean
+synthetic Discharge Summary; production CCDs vary widely in section
+templates, null flavors, translation nesting, and repeated-element shapes;
+(b) terminology-server code validation (NUBC / ICD-10-CM/PCS codes are
+passed through, display texts unchecked); (c) this collection has **no**
+minimum-necessary filter — it must run behind the plan-driven ingestion
+filter (see its README).
+
 ## Recommended before relying on the expanded output
 
 Run the expanded bundles through the HL7 validator with the IG loaded

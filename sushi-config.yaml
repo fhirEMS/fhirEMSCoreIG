@@ -74,6 +74,8 @@ pages:
     title: Terminology
   mapping.md:
     title: NEMSIS-to-FHIR Mapping
+  ccda-outcome-mapping.md:
+    title: C-CDA to eOutcome Mapping
   differential.md:
     title: NEMSIS vs US Core Differential
   must-support.md:

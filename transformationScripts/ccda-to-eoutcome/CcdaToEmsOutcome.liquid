@@ -1,0 +1,109 @@
+{% comment -%}
+Standard C-CDA (CCD / Discharge Summary, USCDI v3) -> NEMSIS eOutcome as an
+EMSObservationOutcome FHIR resource. Standalone, UNFILTERED mapping — the
+plan-driven minimum-necessary variant lives in eOutcomeQueries/. Runs on the
+Microsoft FHIR Converter's native `ccda` processor (metadata.json). Namespaced
+C-CDA elements surface with underscores (sdtc:dischargeDispositionCode ->
+sdtc_dischargeDispositionCode); attributes are direct properties.
+Mapping (normative table: IG page "C-CDA to eOutcome Mapping"):
+  encompassingEncounter IMP  -> eOutcome.02/.11/.16 (NUBC dispo, admit, discharge)
+  encompassingEncounter EMER -> eOutcome.01/.18
+  Encounters section (46240-8) EMER/IMP entries -> same, when not in header
+  Hospital Discharge Dx (11535-2) ICD-10-CM -> eOutcome.13
+  ED Dx (18630-4) ICD-10-CM -> eOutcome.10
+  Procedures (47519-4) ICD-10-PCS -> eOutcome.12 (discharge summary context)
+{%- endcomment -%}
+{% assign cd = msg.ClinicalDocument -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% assign NCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter' -%}
+{% assign LANE = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-ems-acquisition-lane' -%}
+{% assign NUBC = 'https://www.nubc.org/CodeSystem/PatDischargeStatus' -%}
+{% capture obsId %}{{ cd.effectiveTime.value | default: 'ccd' | append: '-ems-eoutcome' | generate_uuid }}{% endcapture -%}
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:{{ obsId }}",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "{{ obsId }}",
+        "meta": { "profile": ["{{ IGX }}/ems-observation-outcome"] },
+        "extension": [
+          { "url": "{{ IGX }}/ext-ems-outcome-source",
+            "extension": [
+              { "url": "lane", "valueCodeableConcept": { "coding": [ { "system": "{{ LANE }}", "code": "ccd-document" } ] } },
+              {% if cd.id.root %}{ "url": "sourceDocumentId", "valueIdentifier": { "system": "urn:ietf:rfc:3986", "value": "urn:oid:{{ cd.id.root }}" } },{% endif %}
+              { "url": "retrievedDateTime", "valueDateTime": "{{ 'now' | date: 'yyyy-MM-ddTHH:mm:sszzz' }}" }
+            ] }
+        ],
+        "status": "final",
+        "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "exam", "display": "Exam" } ] } ],
+        "code": { "coding": [ { "system": "{{ NCS }}", "code": "eOutcomePanel", "display": "EMS Outcome Observation Panel" } ] },
+        "effectiveDateTime": "{{ cd.effectiveTime.value | format_as_date_time }}",
+        "subject": { "display": "{{ cd.recordTarget.patientRole.patient.name.given._ }} {{ cd.recordTarget.patientRole.patient.name.family._ }}" },
+        "component": [
+          {% assign ee = cd.componentOf.encompassingEncounter -%}
+          {% if ee -%}
+          {% assign eeDisp = ee.sdtc_dischargeDispositionCode -%}
+          {% if ee.code.code == 'IMP' -%}
+          {% if eeDisp.code %}{ "code": { "coding": [ { "system": "http://loinc.org", "code": "8656-1" } ] }, "valueCodeableConcept": { "coding": [ { "system": "{{ NUBC }}", "code": "{{ eeDisp.code }}" } ] } },{% endif %}
+          {% if ee.effectiveTime.low.value %}{ "code": { "coding": [ { "system": "http://loinc.org", "code": "52455-3", "display": "Admission date" } ] }, "valueDateTime": "{{ ee.effectiveTime.low.value | format_as_date_time }}" },{% endif %}
+          {% if ee.effectiveTime.high.value %}{ "code": { "coding": [ { "system": "http://loinc.org", "code": "8651-2" } ] }, "valueDateTime": "{{ ee.effectiveTime.high.value | format_as_date_time }}" },{% endif %}
+          {% endif -%}
+          {% if ee.code.code == 'EMER' -%}
+          {% if eeDisp.code %}{ "code": { "coding": [ { "system": "{{ NCS }}", "code": "eOutcomeEDDisposition" } ] }, "valueCodeableConcept": { "coding": [ { "system": "{{ NUBC }}", "code": "{{ eeDisp.code }}" } ] } },{% endif %}
+          {% if ee.effectiveTime.low.value %}{ "code": { "coding": [ { "system": "{{ NCS }}", "code": "eOutcomeEDArrivalDateTime" } ] }, "valueDateTime": "{{ ee.effectiveTime.low.value | format_as_date_time }}" },{% endif %}
+          {% endif -%}
+          {% endif -%}
+          {% assign comps = cd.component.structuredBody.component | to_array -%}
+          {% for c in comps -%}
+          {% assign sec = c.section -%}
+          {% if sec.code.code == '46240-8' -%}
+          {% assign encs = sec.entry | to_array -%}
+          {% for en in encs -%}
+          {% assign e = en.encounter -%}
+          {% assign eDisp = e.sdtc_dischargeDispositionCode -%}
+          {% if e.code.code == 'EMER' -%}
+          {% if eDisp.code %}{ "code": { "coding": [ { "system": "{{ NCS }}", "code": "eOutcomeEDDisposition" } ] }, "valueCodeableConcept": { "coding": [ { "system": "{{ NUBC }}", "code": "{{ eDisp.code }}" } ] } },{% endif %}
+          {% if e.effectiveTime.low.value %}{ "code": { "coding": [ { "system": "{{ NCS }}", "code": "eOutcomeEDArrivalDateTime" } ] }, "valueDateTime": "{{ e.effectiveTime.low.value | format_as_date_time }}" },{% endif %}
+          {% endif -%}
+          {% endfor -%}
+          {% endif -%}
+          {% if sec.code.code == '11535-2' -%}
+          {% assign acts = sec.entry | to_array -%}
+          {% for a in acts -%}
+          {% assign rels = a.act.entryRelationship | to_array -%}
+          {% for rel in rels -%}
+          {% if rel.observation.value.codeSystem == '2.16.840.1.113883.6.90' and rel.observation.value.code -%}
+          { "code": { "coding": [ { "system": "http://loinc.org", "code": "29308-4", "display": "Diagnosis" } ] }, "valueCodeableConcept": { "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10-cm", "code": "{{ rel.observation.value.code }}" } ] } },
+          {% endif -%}
+          {% endfor -%}
+          {% endfor -%}
+          {% endif -%}
+          {% if sec.code.code == '18630-4' -%}
+          {% assign acts = sec.entry | to_array -%}
+          {% for a in acts -%}
+          {% assign rels = a.act.entryRelationship | to_array -%}
+          {% for rel in rels -%}
+          {% if rel.observation.value.codeSystem == '2.16.840.1.113883.6.90' and rel.observation.value.code -%}
+          { "code": { "coding": [ { "system": "http://loinc.org", "code": "29548-5", "display": "Diagnosis Narrative" } ] }, "valueCodeableConcept": { "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10-cm", "code": "{{ rel.observation.value.code }}" } ] } },
+          {% endif -%}
+          {% endfor -%}
+          {% endfor -%}
+          {% endif -%}
+          {% if sec.code.code == '47519-4' -%}
+          {% assign prs = sec.entry | to_array -%}
+          {% for pe in prs -%}
+          {% assign pr = pe.procedure -%}
+          {% if pr.code.codeSystem == '2.16.840.1.113883.6.4' and pr.code.code -%}
+          { "code": { "coding": [ { "system": "{{ NCS }}", "code": "eOutcomeHospitalProcedure" } ] }, "valueCodeableConcept": { "coding": [ { "system": "http://www.cms.gov/Medicare/Coding/ICD10", "code": "{{ pr.code.code }}" } ] } },
+          {% endif -%}
+          {% endfor -%}
+          {% endif -%}
+          {% endfor -%}
+        ]
+      }
+    }
+  ]
+}

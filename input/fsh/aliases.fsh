@@ -60,6 +60,7 @@ Alias: $nemsis-injury           = https://fhirems.github.io/fhirEMSCoreIG/CodeSy
 Alias: $nemsis-history          = https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history
 Alias: $nemsis-other            = https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other
 Alias: $nemsis-dem              = https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics
+Alias: $ems-acq-lane            = https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-ems-acquisition-lane
 Alias: $nubc-discharge          = https://www.nubc.org/CodeSystem/PatDischargeStatus
 Alias: $nemsis-payment          = https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment
 Alias: $nemsis-payer-type       = https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type

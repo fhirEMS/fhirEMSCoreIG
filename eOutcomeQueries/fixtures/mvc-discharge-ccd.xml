@@ -4,6 +4,7 @@
      for parity. Abbreviated: structure and coded content only. -->
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
   <templateId root="2.16.840.1.113883.10.20.22.1.8"/><!-- Discharge Summary -->
+  <id root="2.16.840.1.113883.19.5.99999.1" extension="DSUM-20241014-001"/>
   <code code="18842-5" codeSystem="2.16.840.1.113883.6.1" displayName="Discharge summary"/>
   <title>Hospital Discharge Summary</title>
   <effectiveTime value="20241014213000-0400"/>

@@ -391,8 +391,8 @@ ISO UUID-arc root (no registration required; globally unique per ISO 2.25 rules)
 
 ```
 Root: 2.25.219926138944530828037824748808947630693   (from UUID a5743bd0-caef-4920-9058-52509b340265)
-├── .1.<n>  CodeSystems  (20 assigned; .1.1–.1.17 alphabetical, .1.18 history, .1.19 other, .1.20 demographics; next: .1.21)
-└── .2.<n>  ValueSets    (153 assigned; .2.1–.2.129 alphabetical, then history .130–.136, other .137–.145, demographics .146–.153; next: .2.154)
+├── .1.<n>  CodeSystems  (21 assigned; .1.1–.1.17 alphabetical, .1.18 history, .1.19 other, .1.20 demographics, .1.21 acquisition-lane; next: .1.22)
+└── .2.<n>  ValueSets    (154 assigned; .2.1–.2.129 alphabetical, then history .130–.136, other .137–.145, demographics .146–.153, acquisition-lane .154; next: .2.155)
 ```
 
 Rules:
