@@ -79,6 +79,23 @@ these tests. Silver lining: the ghost duplicates triggered the executor's
 single-certain-match policy exactly as designed — ambiguous match, lane ended,
 nothing fabricated.
 
+## CCD lane (Lane A2) — document sources vs US Core endpoints
+
+`engine/ccd_outcome_extract.py` adapts the same acquisition plan to sources
+that exchange **USCDI v3 C-CDA documents** instead of US Core 6.1.0 FHIR
+endpoints (HIE / TEFCA document QHINs / Direct). Verified against a synthetic
+MVC discharge summary (`fixtures/mvc-discharge-ccd.xml`, mirroring the
+FHIR-lane seeded scenario): `python3 eOutcomeQueries/test_ccd_lane.py` — ALL
+PASS, value parity with the FHIR lane.
+
+| | FHIR US Core 6.1.0 lane | C-CDA CCD lane |
+|---|---|---|
+| Retrieval | scoped queries (Encounter/Condition/Procedure) | whole document |
+| Minimum necessary | at request time (derived scopes) | at **ingestion** (extract planned elements, discard + account for the rest) |
+| Dispositions | Encounter.hospitalization.dischargeDisposition | encompassingEncounter / encounter-entry `sdtc:dischargeDispositionCode` (NUBC) |
+| Dx / procedures | Condition / Procedure resources | Discharge-Dx section (ICD-10-CM), Procedures section (ICD-10-PCS) |
+| Preference | **preferred** when available | fallback; weaker minimization — disclose in DUAs |
+
 ## Next phases
 
 Payer-lane C4BB EOB mapping (P4), CQL measure representations (P5), and

@@ -71,6 +71,22 @@ within **one business day**, with payer-maintained **attribution** and patient
   uniformly treated as "in-network providers" for attribution across payer
   implementations — engage 2–3 payers early; fallback is Lane A/C.
 
+### Lane A2 — Document exchange (USCDI v3 C-CDA CCD)
+Many hospitals cannot serve granular US Core queries but CAN produce USCDI v3
+C-CDA documents (CCD / discharge summary) via HIE document exchange, TEFCA
+document QHINs, or Direct. Same USCDI v3 data classes, different syntax:
+- **Extraction**: encompassingEncounter `sdtc:dischargeDispositionCode` (NUBC)
+  + effectiveTime → dispositions/times; Discharge Diagnosis section
+  (ICD-10-CM) → .10/.13; Procedures section (ICD-10-PCS) → .09/.12.
+- **Privacy difference vs FHIR lane (important)**: a document lane delivers the
+  ENTIRE CCD — minimum necessary cannot be enforced at request time via scoped
+  queries. It is enforced at **ingestion**: only plan-required elements are
+  extracted; everything else is discarded unpersisted and the discard is
+  recorded for audit. This is inherently weaker than query-time minimization —
+  prefer the FHIR lane when both exist, and say so in DUAs.
+- **Retrieval security**: same trust fabric (IHE XCA/XCPD via QHIN, or FHIR
+  `DocumentReference`/`$docref` where offered); posture rules (§3.5) unchanged.
+
 ### Lane C — Registry / state linkage (existing rails)
 CARES, state trauma/stroke registries, state EMS office hospital-linkage
 programs. Source for .03/.04/.05 and usually the only source of **ISS (.21)**.

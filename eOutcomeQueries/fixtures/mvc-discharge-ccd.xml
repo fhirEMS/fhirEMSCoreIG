@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetic USCDI v3 C-CDA discharge summary for the MVC sample scenario —
+     mirrors the FHIR-lane seeded hospital data so the CCD lane can be tested
+     for parity. Abbreviated: structure and coded content only. -->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <templateId root="2.16.840.1.113883.10.20.22.1.8"/><!-- Discharge Summary -->
+  <code code="18842-5" codeSystem="2.16.840.1.113883.6.1" displayName="Discharge summary"/>
+  <title>Hospital Discharge Summary</title>
+  <effectiveTime value="20241014213000-0400"/>
+  <recordTarget>
+    <patientRole>
+      <patient>
+        <name><given>Harry</given><family>Schmeler</family></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19560119"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <componentOf>
+    <encompassingEncounter>
+      <code code="IMP" codeSystem="2.16.840.1.113883.5.4" displayName="inpatient encounter"/>
+      <effectiveTime>
+        <low value="20241011213000-0400"/>
+        <high value="20241014213000-0400"/>
+      </effectiveTime>
+      <sdtc:dischargeDispositionCode code="03" codeSystem="2.16.840.1.113883.12.112" displayName="Discharged/transferred to SNF"/>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="Encounters"/>
+          <title>Encounters</title>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <code code="EMER" codeSystem="2.16.840.1.113883.5.4" displayName="emergency"/>
+              <effectiveTime>
+                <low value="20241011160000-0400"/>
+                <high value="20241011213000-0400"/>
+              </effectiveTime>
+              <sdtc:dischargeDispositionCode code="09" codeSystem="2.16.840.1.113883.12.112" displayName="Admitted as inpatient"/>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.24"/>
+          <code code="11535-2" codeSystem="2.16.840.1.113883.6.1" displayName="Hospital discharge Dx"/>
+          <title>Discharge Diagnosis</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="282291009" codeSystem="2.16.840.1.113883.6.96"/>
+                  <value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         code="S06.0X1A" codeSystem="2.16.840.1.113883.6.90"
+                         displayName="Concussion with LOC of 30 minutes or less, initial encounter"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="282291009" codeSystem="2.16.840.1.113883.6.96"/>
+                  <value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         code="S22.42XA" codeSystem="2.16.840.1.113883.6.90"
+                         displayName="Multiple fractures of ribs, initial encounter"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="282291009" codeSystem="2.16.840.1.113883.6.96"/>
+                  <value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         code="J94.2" codeSystem="2.16.840.1.113883.6.90"
+                         displayName="Hemothorax"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.883.10.20.22.2.7.1"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" displayName="History of Procedures"/>
+          <title>Procedures</title>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <code code="0W9930Z" codeSystem="2.16.840.1.113883.6.4"
+                    displayName="Drainage of Right Pleural Cavity, Percutaneous Approach"/>
+              <effectiveTime value="20241012100000-0400"/>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <!-- Social history with sensitive content the plan does NOT need —
+               present to prove ingestion-time discard -->
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social history"/>
+          <title>Social History</title>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
