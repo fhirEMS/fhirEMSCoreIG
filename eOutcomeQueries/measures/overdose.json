@@ -1,0 +1,54 @@
+{
+  "id": "ems-overdose-outcome",
+  "title": "Substance use / overdose \u2014 outcome linkage",
+  "lineage": "Overdose surveillance / naloxone effectiveness",
+  "posture_default": "HOPERAT",
+  "triggers": {
+    "any": [
+      {
+        "element": "eSituation.11",
+        "prefix": [
+          "F1",
+          "T39",
+          "T40",
+          "T42",
+          "T43",
+          "T50"
+        ],
+        "note": "SUD/poisoning primary impression (F10-F19, T-poisoning)"
+      },
+      {
+        "element": "eSituation.12",
+        "prefix": [
+          "F1",
+          "T39",
+          "T40",
+          "T42",
+          "T43",
+          "T50"
+        ],
+        "note": "SUD/poisoning secondary impression"
+      },
+      {
+        "element": "eMedications.03",
+        "in": [
+          "7242"
+        ],
+        "note": "naloxone administered (RxNorm 7242)"
+      }
+    ]
+  },
+  "outcome_requirements": [
+    "eOutcome.01",
+    "eOutcome.10",
+    "eOutcome.02"
+  ],
+  "sensitivity": {
+    "part2": true,
+    "ds4p_labels": [
+      "42CFRPart2",
+      "R"
+    ],
+    "note": "SUD-related: segment inbound data; no re-disclosure; flag at plan compile per plan \u00a75.4"
+  }
+}

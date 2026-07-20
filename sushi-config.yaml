@@ -58,6 +58,8 @@ pages:
     title: Background
   guidance.md:
     title: Implementation Guidance
+  outcome-acquisition.md:
+    title: Outcome Acquisition
   security.md:
     title: Security and Privacy
   nemsis-overview.md:

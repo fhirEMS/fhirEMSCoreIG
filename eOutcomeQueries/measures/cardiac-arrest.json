@@ -1,0 +1,13 @@
+{
+  "id": "ems-cardiac-arrest-outcome",
+  "title": "Cardiac arrest — survival linkage (CARES)",
+  "lineage": "CARES / NEMSQA arrest family",
+  "posture_default": "HOPERAT",
+  "triggers": {
+    "any": [
+      {"element": "eArrest.01", "in": ["3001003", "3001005"], "note": "cardiac arrest occurred"}
+    ]
+  },
+  "outcome_requirements": ["eOutcome.01", "eOutcome.02", "eOutcome.16", "eOutcome.03", "eOutcome.04", "eOutcome.05"],
+  "sensitivity": {}
+}

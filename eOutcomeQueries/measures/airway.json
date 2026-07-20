@@ -1,0 +1,14 @@
+{
+  "id": "ems-airway-outcome",
+  "title": "Advanced airway — complication linkage",
+  "lineage": "NEMSQA Airway family",
+  "posture_default": "HOPERAT",
+  "triggers": {
+    "any": [
+      {"element": "eAirway.01", "present": true, "note": "airway management documented"},
+      {"element": "eProcedures.03", "in": ["112798008", "232674004", "424979004", "429705000", "182682004"], "note": "intubation / supraglottic airway SNOMED"}
+    ]
+  },
+  "outcome_requirements": ["eOutcome.01", "eOutcome.10", "eOutcome.13"],
+  "sensitivity": {}
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "pcrId": "2025-EMS-5-CPMIH_v350",
+    "transportDate": "2024-10-14",
+    "posture": {
+      "code": "TREAT",
+      "display": "treatment",
+      "evidence": "eResponse.05=2205031 (Mobile Integrated Health Care Encounter)"
+    },
+    "applicableMeasures": [],
+    "requiredElements": [],
+    "sensitivity": {},
+    "requiredScopes": [],
+    "queries": [],
+    "note": "no outcome-linkage measures apply; NO external queries"
+  }
+]

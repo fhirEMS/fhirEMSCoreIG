@@ -1,0 +1,16 @@
+{
+  "id": "ems-stroke-outcome",
+  "title": "Stroke — outcome linkage",
+  "lineage": "NEMSQA Stroke-01 family",
+  "posture_default": "HOPERAT",
+  "triggers": {
+    "any": [
+      {"element": "eSituation.11", "prefix": ["I60", "I61", "I62", "I63", "G45"], "note": "stroke/TIA primary impression"},
+      {"element": "eSituation.12", "prefix": ["I60", "I61", "I62", "I63", "G45"], "note": "stroke/TIA secondary impression"},
+      {"element": "eVitals.29", "in": ["3329005"], "note": "positive stroke scale"},
+      {"element": "eDisposition.24", "in": ["4224015"], "note": "stroke pre-arrival alert"}
+    ]
+  },
+  "outcome_requirements": ["eOutcome.01", "eOutcome.02", "eOutcome.10", "eOutcome.13", "eOutcome.18", "eOutcome.11"],
+  "sensitivity": {}
+}

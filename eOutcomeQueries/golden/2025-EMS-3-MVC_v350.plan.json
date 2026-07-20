@@ -1,0 +1,119 @@
+[
+  {
+    "pcrId": "2025-EMS-3-MVC_v350",
+    "transportDate": "2024-10-11",
+    "posture": {
+      "code": "HOPERAT",
+      "display": "healthcare operations (QAPI)",
+      "evidence": null
+    },
+    "applicableMeasures": [
+      {
+        "measure": "ems-trauma-outcome",
+        "title": "Trauma \u2014 outcome linkage",
+        "triggered_by": [
+          "cause of injury reported",
+          "high-risk trauma triage criteria",
+          "moderate-risk trauma triage criteria",
+          "trauma team pre-arrival alert",
+          "injury primary impression"
+        ],
+        "outcome_requirements": [
+          "eOutcome.01",
+          "eOutcome.02",
+          "eOutcome.10",
+          "eOutcome.13",
+          "eOutcome.09",
+          "eOutcome.12",
+          "eOutcome.11",
+          "eOutcome.16",
+          "eOutcome.18",
+          "eOutcome.21"
+        ],
+        "sensitivity": {}
+      }
+    ],
+    "requiredElements": [
+      "eOutcome.01",
+      "eOutcome.02",
+      "eOutcome.09",
+      "eOutcome.10",
+      "eOutcome.11",
+      "eOutcome.12",
+      "eOutcome.13",
+      "eOutcome.16",
+      "eOutcome.18",
+      "eOutcome.21"
+    ],
+    "sensitivity": {},
+    "requiredScopes": [
+      "system/Condition.rs?category=encounter-diagnosis",
+      "system/Encounter.rs",
+      "system/Procedure.rs",
+      "Patient/$match (onlyCertainMatches)"
+    ],
+    "queries": [
+      {
+        "element": "eOutcome.01",
+        "what": "ED disposition (hospitalization.dischargeDisposition)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Encounter?patient={pid}&class=EMER&date=ge{d0}&date=le{d2}"
+      },
+      {
+        "element": "eOutcome.02",
+        "what": "Hospital disposition (hospitalization.dischargeDisposition)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Encounter?patient={pid}&class=IMP&date=ge{d0}"
+      },
+      {
+        "element": "eOutcome.09",
+        "what": "ED procedures (+ eOutcome.19 performed time)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Procedure?encounter={ed-enc}"
+      },
+      {
+        "element": "eOutcome.10",
+        "what": "ED diagnoses (ICD-10-CM)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Condition?encounter={ed-enc}&category=encounter-diagnosis"
+      },
+      {
+        "element": "eOutcome.11",
+        "what": "Hospital admission time (Encounter.period.start)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Encounter?patient={pid}&class=IMP&date=ge{d0}"
+      },
+      {
+        "element": "eOutcome.12",
+        "what": "Hospital procedures (+ eOutcome.20 performed time)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Procedure?encounter={ip-enc}"
+      },
+      {
+        "element": "eOutcome.13",
+        "what": "Hospital diagnoses (ICD-10-CM)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Condition?encounter={ip-enc}&category=encounter-diagnosis"
+      },
+      {
+        "element": "eOutcome.16",
+        "what": "Hospital discharge time (Encounter.period.end)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Encounter?patient={pid}&class=IMP&date=ge{d0}"
+      },
+      {
+        "element": "eOutcome.18",
+        "what": "ED admission time (Encounter.period.start)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Encounter?patient={pid}&class=EMER&date=ge{d0}&date=le{d2}"
+      },
+      {
+        "element": "eOutcome.21",
+        "what": "Injury Severity Score \u2014 registry lane (Lane C)",
+        "lane": "C-registry",
+        "query": "[registry lane] trauma registry ISS"
+      }
+    ],
+    "note": "minimum necessary: only elements required by applicable measures are queried"
+  }
+]

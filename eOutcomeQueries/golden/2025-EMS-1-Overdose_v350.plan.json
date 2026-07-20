@@ -1,0 +1,73 @@
+[
+  {
+    "pcrId": "2025-EMS-1-Overdose_v350",
+    "transportDate": "2024-10-07",
+    "posture": {
+      "code": "HOPERAT",
+      "display": "healthcare operations (QAPI)",
+      "evidence": null
+    },
+    "applicableMeasures": [
+      {
+        "measure": "ems-overdose-outcome",
+        "title": "Substance use / overdose \u2014 outcome linkage",
+        "triggered_by": [
+          "SUD/poisoning primary impression (F10-F19, T-poisoning)",
+          "SUD/poisoning secondary impression"
+        ],
+        "outcome_requirements": [
+          "eOutcome.01",
+          "eOutcome.10",
+          "eOutcome.02"
+        ],
+        "sensitivity": {
+          "part2": true,
+          "ds4p_labels": [
+            "42CFRPart2",
+            "R"
+          ],
+          "note": "SUD-related: segment inbound data; no re-disclosure; flag at plan compile per plan \u00a75.4"
+        }
+      }
+    ],
+    "requiredElements": [
+      "eOutcome.01",
+      "eOutcome.02",
+      "eOutcome.10"
+    ],
+    "sensitivity": {
+      "part2": true,
+      "ds4p_labels": [
+        "42CFRPart2",
+        "R"
+      ],
+      "note": "SUD-related: segment inbound data; no re-disclosure; flag at plan compile per plan \u00a75.4"
+    },
+    "requiredScopes": [
+      "system/Condition.rs?category=encounter-diagnosis",
+      "system/Encounter.rs",
+      "Patient/$match (onlyCertainMatches)"
+    ],
+    "queries": [
+      {
+        "element": "eOutcome.01",
+        "what": "ED disposition (hospitalization.dischargeDisposition)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Encounter?patient={pid}&class=EMER&date=ge{d0}&date=le{d2}"
+      },
+      {
+        "element": "eOutcome.02",
+        "what": "Hospital disposition (hospitalization.dischargeDisposition)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Encounter?patient={pid}&class=IMP&date=ge{d0}"
+      },
+      {
+        "element": "eOutcome.10",
+        "what": "ED diagnoses (ICD-10-CM)",
+        "lane": "A-hie-or-B-payer",
+        "query": "Condition?encounter={ed-enc}&category=encounter-diagnosis"
+      }
+    ],
+    "note": "minimum necessary: only elements required by applicable measures are queried"
+  }
+]

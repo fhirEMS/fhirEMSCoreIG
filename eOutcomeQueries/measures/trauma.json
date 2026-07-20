@@ -1,0 +1,17 @@
+{
+  "id": "ems-trauma-outcome",
+  "title": "Trauma — outcome linkage",
+  "lineage": "NEMSQA Trauma family",
+  "posture_default": "HOPERAT",
+  "triggers": {
+    "any": [
+      {"element": "eInjury.01", "present": true, "note": "cause of injury reported"},
+      {"element": "eInjury.03", "present": true, "note": "high-risk trauma triage criteria"},
+      {"element": "eInjury.04", "present": true, "note": "moderate-risk trauma triage criteria"},
+      {"element": "eDisposition.24", "in": ["4224003", "4224011", "4224017"], "note": "trauma team pre-arrival alert"},
+      {"element": "eSituation.11", "prefix": ["S", "T0", "T1", "T2", "T3"], "note": "injury primary impression"}
+    ]
+  },
+  "outcome_requirements": ["eOutcome.01", "eOutcome.02", "eOutcome.10", "eOutcome.13", "eOutcome.09", "eOutcome.12", "eOutcome.11", "eOutcome.16", "eOutcome.18", "eOutcome.21"],
+  "sensitivity": {}
+}
