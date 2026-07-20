@@ -109,11 +109,14 @@ the IG's `cs-nemsis-*` systems, so new sections are largely mechanical.
 The five real sample PCRs, converted and loaded onto a local fhirEngine
 server, were tested two ways:
 
-1. **Inferno US Core v6.1.0 test kit** (FHIR API group, headless): **81 pass /
-   8 fail / 415 skip**. Every profile-conformance validation passes; the only
-   failures are localhost TLS (environmental), the eCrew→Practitioner mapping
-   gap (below), and the DataAbsentReason-CodeSystem probe (the DAR *extension*
-   test passes). Skips are resource types EMS data does not produce.
+1. **Inferno US Core v6.1.0 test kit** (FHIR API group, headless): **87 pass /
+   6 fail / 411 skip**. Every profile-conformance validation passes — including
+   the full Practitioner group via the eCrew mapping. The only distinct failing
+   tests are localhost TLS (environmental) and the DataAbsentReason-CodeSystem
+   probe (the DAR *extension* test passes). Skips are resource types EMS data
+   does not produce; the PractitionerRole group skips because prior tests
+   collect Practitioner (not PractitionerRole) references from
+   Encounter.participant.
 2. **HL7 Java validator with this IG loaded** (Inferno validator service +
    `package.tgz`, validating each resource against its `ems-*` profile):
    **72 of 74 resources clean**; the 2 flags are US-edition SNOMED codes
@@ -122,9 +125,11 @@ server, were tested two ways:
 Converted resources are dual-stamped: `meta.profile` carries the `ems-*`
 profile and its US Core parent.
 
-**Known mapping gaps:** eCrew → Practitioner/PractitionerRole (Inferno
-2.43.07), and eProcedures.06 (successful) has no IG sub-extension —
-eProcedures.08 (response) is mapped instead.
+**Known mapping gaps:** eProcedures.06 (successful) has no IG sub-extension —
+eProcedures.08 (response) is mapped instead. eCrew maps to Practitioner +
+PractitionerRole (identifier from eCrew.01; certification level eCrew.02;
+response roles eCrew.03; name.family and telecom.value use data-absent-reason
+'masked' since the PCR carries no crew names/contacts).
 
 **Upstream data conversions still required** (documented in the IG's NDRs):
 GNIS city codes → names (NDR-003) and ANSI state codes → USPS abbreviations

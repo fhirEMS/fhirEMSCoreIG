@@ -53,6 +53,9 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
       "request": { "method": "POST", "url": "Condition" }
     },
     {% endif -%}
+    {% for crew in pcr.eCrew['eCrew.CrewGroup'] -%}
+    {% include 'Resource_Crew' crew: crew, base: base, crewIndex: forloop.index, orgId: orgId -%}
+    {% endfor -%}
     {% for vg in pcr.eVitals['eVitals.VitalGroup'] -%}
     {% assign fallbackWhen = pcr.eTimes['eTimes.07'].value | default: pcr.eTimes['eTimes.06'].value | default: pcr.eTimes['eTimes.03'].value -%}
     {% include 'Resource_ObservationVitals' vg: vg, base: base, vgIndex: forloop.index, patientId: patientId, encounterId: encounterId, fallbackWhen: fallbackWhen -%}

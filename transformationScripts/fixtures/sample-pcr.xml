@@ -33,6 +33,14 @@
         <eDispatch.01>2301053</eDispatch.01>
         <eDispatch.02>2302003</eDispatch.02>
       </eDispatch>
+      <eCrew>
+        <eCrew.CrewGroup>
+          <eCrew.01>P-1234</eCrew.01>
+          <eCrew.02>9925007</eCrew.02>
+          <eCrew.03>2403009</eCrew.03>
+          <eCrew.03>2403011</eCrew.03>
+        </eCrew.CrewGroup>
+      </eCrew>
       <eTimes>
         <eTimes.01>2026-03-14T14:20:00-08:00</eTimes.01>
         <eTimes.03>2026-03-14T14:22:00-08:00</eTimes.03>

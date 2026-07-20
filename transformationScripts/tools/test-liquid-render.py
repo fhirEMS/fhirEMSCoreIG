@@ -68,6 +68,7 @@ def main():
     check(counts.get("Observation") == 4, "4 Observations (BP panel + HR + SpO2 + RR)")
     check(counts.get("Procedure") == 1, "1 Procedure")
     check(counts.get("MedicationAdministration") == 1, "1 MedicationAdministration")
+    check(counts.get("Practitioner") == 1 and counts.get("PractitionerRole") == 1, "1 Practitioner + 1 PractitionerRole (eCrew)")
 
     # every internal reference resolves to a fullUrl in the bundle
     full_urls = {e["fullUrl"] for e in entries}
@@ -116,7 +117,7 @@ def main():
         out.write_text(json.dumps(bundle, indent=2))
         print("wrote", out)
 
-    total = 16
+    total = 17
     print(f"{total - len(failures)}/{total} checks passed")
     sys.exit(1 if failures else 0)
 

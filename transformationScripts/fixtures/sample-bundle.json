@@ -3,13 +3,39 @@
   "type": "transaction",
   "entry": [
     {
+      "fullUrl": "urn:uuid:341bd163-6b49-5901-a044-cec69155ce69",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "341bd163-6b49-5901-a044-cec69155ce69",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-organization",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.25.219926138944530828037824748808947630693",
+            "value": "RIV-007"
+          }
+        ],
+        "active": true,
+        "name": "Riverside County Fire Department EMS"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
       "fullUrl": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d",
       "resource": {
         "resourceType": "Patient",
         "id": "56037a85-2c61-594b-8cfa-217f27ef800d",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           ]
         },
         "identifier": [
@@ -54,7 +80,8 @@
         "id": "27f1d2d1-a213-5f09-a072-e9db43c3f041",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
           ]
         },
         "identifier": [
@@ -83,6 +110,26 @@
         "subject": {
           "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
         },
+        "serviceProvider": {
+          "reference": "urn:uuid:341bd163-6b49-5901-a044-cec69155ce69"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "PART"
+                  }
+                ]
+              }
+            ],
+            "individual": {
+              "reference": "urn:uuid:9ff196dd-fc38-5742-9bfe-65d0b739a3f7"
+            }
+          }
+        ],
         "period": {
           "start": "2026-03-14T14:22:00-08:00",
           "end": "2026-03-14T15:08:00-08:00"
@@ -319,7 +366,8 @@
         "id": "f7c2187c-cfed-55ac-b211-7923b88c0a65",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
           ]
         },
         "status": "active",
@@ -347,7 +395,8 @@
         "id": "fc3da3f5-9c29-5c88-a0be-5fb5f7b300de",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
           ]
         },
         "clinicalStatus": {
@@ -400,13 +449,116 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:9ff196dd-fc38-5742-9bfe-65d0b739a3f7",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "9ff196dd-fc38-5742-9bfe-65d0b739a3f7",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitioner",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.25.219926138944530828037824748808947630693",
+            "value": "P-1234"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "text": "EMS Crew Member P-1234",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "masked"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:838fed23-f47e-525b-8cdb-9aa99dc0ddac",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "838fed23-f47e-525b-8cdb-9aa99dc0ddac",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-certification-level",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level",
+                  "code": "9925007"
+                }
+              ]
+            }
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "urn:uuid:9ff196dd-fc38-5742-9bfe-65d0b739a3f7"
+        },
+        "organization": {
+          "reference": "urn:uuid:341bd163-6b49-5901-a044-cec69155ce69"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+                "code": "2403009"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+                "code": "2403011"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "masked"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      }
+    },
+    {
       "fullUrl": "urn:uuid:5dd2a1fa-8e40-57e6-bcab-2f124aed966e",
       "resource": {
         "resourceType": "Observation",
         "id": "5dd2a1fa-8e40-57e6-bcab-2f124aed966e",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"
           ]
         },
         "status": "final",
@@ -415,7 +567,8 @@
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
+                "code": "vital-signs",
+                "display": "Vital Signs"
               }
             ]
           }
@@ -485,7 +638,8 @@
         "id": "ea38153e-1b90-5409-8ee0-2aa568c21f56",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate"
           ]
         },
         "status": "final",
@@ -494,7 +648,8 @@
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
+                "code": "vital-signs",
+                "display": "Vital Signs"
               }
             ]
           }
@@ -534,7 +689,8 @@
         "id": "d0f56a6d-23d8-57cf-8f4b-4229b317ed7e",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry"
           ]
         },
         "status": "final",
@@ -543,7 +699,8 @@
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
+                "code": "vital-signs",
+                "display": "Vital Signs"
               }
             ]
           }
@@ -554,6 +711,11 @@
               "system": "http://loinc.org",
               "code": "59408-5",
               "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "2708-6",
+              "display": "Oxygen saturation in Arterial blood"
             }
           ]
         },
@@ -583,7 +745,8 @@
         "id": "35f214b0-7e08-50fb-bf4e-59884941cc65",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate"
           ]
         },
         "status": "final",
@@ -592,7 +755,8 @@
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
+                "code": "vital-signs",
+                "display": "Vital Signs"
               }
             ]
           }
@@ -632,7 +796,8 @@
         "id": "8d3c8e43-1bb7-50d4-86c5-7368a91652c4",
         "meta": {
           "profile": [
-            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure"
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
           ]
         },
         "status": "completed",
@@ -656,7 +821,7 @@
             "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-procedure-context",
             "extension": [
               {
-                "url": "performedPrior",
+                "url": "priorEMSCare",
                 "valueCodeableConcept": {
                   "coding": [
                     {
@@ -667,19 +832,8 @@
                 }
               },
               {
-                "url": "attempts",
-                "valuePositiveInt": 1
-              },
-              {
-                "url": "successful",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
-                      "code": "Y"
-                    }
-                  ]
-                }
+                "url": "numberOfAttempts",
+                "valueInteger": 1
               }
             ]
           }
@@ -700,7 +854,6 @@
             "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration"
           ]
         },
-        "status": "completed",
         "medicationCodeableConcept": {
           "coding": [
             {
@@ -732,7 +885,8 @@
             "code": "3706037"
           },
           "text": "See NEMSIS eMedications dosage group"
-        }
+        },
+        "status": "completed"
       },
       "request": {
         "method": "POST",

@@ -1,0 +1,61 @@
+{% comment -%} One eCrew.CrewGroup -> EMSPractitioner + EMSPractitionerRole.
+eCrew.01 (crew member ID) -> Practitioner.identifier; the PCR carries no
+crew names or contact info, so name.family and telecom use the
+data-absent-reason pattern (satisfies US Core name.family 1..1 and pcp-1).
+eCrew.02 (level) -> ext-ems-certification-level; eCrew.03 (response roles,
+repeating) -> PractitionerRole.code. Skipped entirely when eCrew.01 is NV'd.
+Deterministic ids let Resource_Encounter recompute the same references. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% if crew['eCrew.01'].value -%}
+{% capture crewPractId %}{{ base | append: '-crew-' | append: crewIndex | append: '-practitioner' | generate_uuid }}{% endcapture -%}
+{% capture crewRoleId %}{{ base | append: '-crew-' | append: crewIndex | append: '-role' | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ crewPractId }}",
+  "resource": {
+    "resourceType": "Practitioner",
+    "id": "{{ crewPractId }}",
+    "meta": { "profile": ["{{ IGX }}/ems-practitioner", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"] },
+    "identifier": [ { "system": "urn:oid:2.25.219926138944530828037824748808947630693", "value": "{{ crew['eCrew.01'].value }}" } ],
+    "active": true,
+    "name": [
+      {
+        "text": "EMS Crew Member {{ crew['eCrew.01'].value }}",
+        "_family": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason", "valueCode": "masked" } ] }
+      }
+    ]
+  },
+  "request": { "method": "POST", "url": "Practitioner" }
+},
+{% assign roles = crew['eCrew.03'] -%}
+{% if roles and roles.size > 0 -%}
+{
+  "fullUrl": "urn:uuid:{{ crewRoleId }}",
+  "resource": {
+    "resourceType": "PractitionerRole",
+    "id": "{{ crewRoleId }}",
+    "meta": { "profile": ["{{ IGX }}/ems-practitionerrole", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"] },
+    {% if crew['eCrew.02'].value -%}
+    "extension": [
+      { "url": "{{ IGX }}/ext-ems-certification-level",
+        "valueCodeableConcept": { "coding": [ { "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level", "code": "{{ crew['eCrew.02'].value }}" } ] } }
+    ],
+    {% endif -%}
+    "active": true,
+    "practitioner": { "reference": "urn:uuid:{{ crewPractId }}" },
+    "organization": { "reference": "urn:uuid:{{ orgId }}" },
+    "code": [
+      {% for role in roles -%}
+      {% if role.value -%}
+      { "coding": [ { "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes", "code": "{{ role.value }}" } ] },
+      {% endif -%}
+      {% endfor -%}
+    ],
+    "telecom": [
+      { "system": "phone",
+        "_value": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason", "valueCode": "masked" } ] } }
+    ]
+  },
+  "request": { "method": "POST", "url": "PractitionerRole" }
+},
+{% endif -%}
+{% endif -%}
