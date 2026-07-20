@@ -1,0 +1,43 @@
+{% comment -%} eInjury -> EMSConditionInjury: one Condition per eInjury.01
+cause of injury (ICD-10-CM). The injury context extension rides on the FIRST
+cause's Condition (per profile guidance). NV'd causes skipped (NDR-001).
+Self-contained bundle entries. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% assign ICS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury' -%}
+{% assign inj = pcr.eInjury -%}
+{% for cause in inj['eInjury.01'] -%}
+{% if cause.value -%}
+{% capture injuryId %}{{ base | append: '-injury-' | append: forloop.index | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ injuryId }}",
+  "resource": {
+    "resourceType": "Condition",
+    "id": "{{ injuryId }}",
+    "meta": { "profile": ["{{ IGX }}/ems-condition-injury", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"] },
+    "clinicalStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" } ] },
+    "verificationStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed" } ] },
+    "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "encounter-diagnosis", "display": "Encounter Diagnosis" } ] } ],
+    "code": { "coding": [ { "system": "http://hl7.org/fhir/sid/icd-10-cm", "code": "{{ cause.value }}" } ] },
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+    {% if forloop.first -%}
+    "extension": [
+      { "url": "{{ IGX }}/ext-ems-injury-context",
+        "extension": [
+          {% for x in inj['eInjury.02'] %}{% if x.value %}{ "url": "mechanismOfInjury", "valueCodeableConcept": { "coding": [ { "system": "{{ ICS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% for x in inj['eInjury.03'] %}{% if x.value %}{ "url": "traumaTriageHighRisk", "valueCodeableConcept": { "coding": [ { "system": "{{ ICS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% for x in inj['eInjury.04'] %}{% if x.value %}{ "url": "traumaTriageModerateRisk", "valueCodeableConcept": { "coding": [ { "system": "{{ ICS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% if inj['eInjury.05'].value %}{ "url": "vehicleImpactArea", "valueInteger": {{ inj['eInjury.05'].value }} },{% endif %}
+          {% if inj['eInjury.06'].value %}{ "url": "patientVehicleLocation", "valueCodeableConcept": { "coding": [ { "system": "{{ ICS }}", "code": "{{ inj['eInjury.06'].value }}" } ] } },{% endif %}
+          {% for x in inj['eInjury.07'] %}{% if x.value %}{ "url": "safetyEquipment", "valueCodeableConcept": { "coding": [ { "system": "{{ ICS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% for x in inj['eInjury.08'] %}{% if x.value %}{ "url": "airbagDeployment", "valueCodeableConcept": { "coding": [ { "system": "{{ ICS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% if inj['eInjury.09'].value %}{ "url": "heightOfFall", "valueQuantity": { "value": {{ inj['eInjury.09'].value }}, "unit": "ft", "system": "http://unitsofmeasure.org", "code": "[ft_i]" } },{% endif %}
+        ] }
+    ],
+    {% endif -%}
+    "recordedDate": "{{ pcr.eTimes['eTimes.07'].value | default: pcr.eTimes['eTimes.03'].value }}"
+  },
+  "request": { "method": "POST", "url": "Condition" }
+},
+{% endif -%}
+{% endfor -%}

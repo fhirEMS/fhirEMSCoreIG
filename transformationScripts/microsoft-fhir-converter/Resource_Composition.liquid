@@ -1,0 +1,48 @@
+{% comment -%} eRecord + assembled resources -> EMSComposition (the ePCR
+document header). Mandatory sections (eResponse/eTimes/ePatient/eScene/
+eSituation/eDisposition) always emitted; optional sections only when their
+resources exist. Section entries reference the bundle's urn:uuid fullUrls
+(same deterministic seeds as the resource templates). Rendered FIRST in the
+bundle so the document is discoverable. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% assign NCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes' -%}
+{% capture compId %}{{ base | append: '-composition' | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ compId }}",
+  "resource": {
+    "resourceType": "Composition",
+    "id": "{{ compId }}",
+    "meta": { "profile": ["{{ IGX }}/ems-composition"] },
+    "identifier": { "system": "urn:oid:2.25.219926138944530828037824748808947630693", "value": "{{ base }}" },
+    "status": "final",
+    "type": { "coding": [ { "system": "http://loinc.org", "code": "67796-3", "display": "EMS patient care report - version 3 Document NEMSIS" } ] },
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+    "date": "{{ pcr.eTimes['eTimes.12'].value | default: pcr.eTimes['eTimes.03'].value }}",
+    "author": [ { "reference": "urn:uuid:{{ orgId }}" } ],
+    "title": "EMS Patient Care Report",
+    "section": [
+      { "code": { "coding": [ { "system": "{{ NCS }}", "code": "section-eResponse", "display": "EMS Response" } ] },
+        "title": "EMS Response",
+        "entry": [ { "reference": "urn:uuid:{{ encounterId }}" } ] },
+      { "code": { "coding": [ { "system": "{{ NCS }}", "code": "section-eTimes", "display": "EMS Times" } ] },
+        "title": "EMS Times",
+        "entry": [ { "reference": "urn:uuid:{{ encounterId }}" } ] },
+      { "code": { "coding": [ { "system": "http://loinc.org", "code": "29762-2", "display": "Social history note" } ] },
+        "title": "Patient Demographics",
+        "entry": [ { "reference": "urn:uuid:{{ patientId }}" } ] },
+      { "code": { "coding": [ { "system": "{{ NCS }}", "code": "section-eScene", "display": "EMS Scene" } ] },
+        "title": "Scene Information",
+        {% if pcr.eScene %}"entry": [ { "reference": "urn:uuid:{{ sceneId }}" } ],{% endif %}
+        "text": { "status": "generated", "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Scene information</div>" } },
+      { "code": { "coding": [ { "system": "http://loinc.org", "code": "55110-1", "display": "Conclusions [Interpretation] Document" } ] },
+        "title": "Situation / Impressions",
+        {% if pcr.eSituation['eSituation.11'].value %}"entry": [ { "reference": "urn:uuid:{{ conditionId }}" } ],{% endif %}
+        "text": { "status": "generated", "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Provider impressions</div>" } },
+      { "code": { "coding": [ { "system": "http://loinc.org", "code": "18776-5", "display": "Plan of care note" } ] },
+        "title": "Disposition",
+        "entry": [ { "reference": "urn:uuid:{{ encounterId }}" } ] },
+    ]
+  },
+  "request": { "method": "POST", "url": "Composition" }
+},

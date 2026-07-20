@@ -1,0 +1,26 @@
+{% comment -%} One eLabs.LabGroup -> EMSObservationLabs observations, one per
+LabResultGroup (.03 result type -> code, .04 numeric/string result -> value).
+Group timestamp eLabs.01 -> effective. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% assign LCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-labs' -%}
+{% for rg in lg['eLabs.LabResultGroup'] -%}
+{% if rg['eLabs.03'].value or rg['eLabs.04'].value -%}
+{% capture labId %}{{ base | append: '-lab-' | append: lgIndex | append: '-' | append: forloop.index | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ labId }}",
+  "resource": {
+    "resourceType": "Observation",
+    "id": "{{ labId }}",
+    "meta": { "profile": ["{{ IGX }}/ems-observation-labs"] },
+    "status": "final",
+    "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "laboratory", "display": "Laboratory" } ] } ],
+    {% if rg['eLabs.03'].value %}"code": { "coding": [ { "system": "{{ LCS }}", "code": "{{ rg['eLabs.03'].value }}" } ] },{% else %}"code": { "text": "Laboratory result (NEMSIS eLabs)" },{% endif %}
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+    {% if lg['eLabs.01'].value %}"effectiveDateTime": "{{ lg['eLabs.01'].value }}",{% else %}"_effectiveDateTime": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason", "valueCode": "unknown" } ] },{% endif %}
+    {% if rg['eLabs.04'].value %}"valueString": "{{ rg['eLabs.04'].value }}"{% else %}"dataAbsentReason": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason", "code": "unknown" } ] }{% endif %}
+  },
+  "request": { "method": "POST", "url": "Observation" }
+},
+{% endif -%}
+{% endfor -%}

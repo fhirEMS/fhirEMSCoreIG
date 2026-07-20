@@ -1,0 +1,45 @@
+{% comment -%} One body-region exam -> EMSObservationExam. Called once per
+region from NemsisBundle with literal params (DotLiquid: no dynamic keys):
+  findings     - array of {value} leaves (the region's assessment codes)
+  regionLabel  - human label ("Skin Assessment")
+  regionSlug   - id-safe slug ("skin")
+  loincCode    - region exam LOINC code or '' (falls back to text-only code)
+  locationLeaf - optional {value} leaf for the finding-location element
+Findings become components (cs-nemsis-exam codes); location becomes bodySite. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% assign XCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam' -%}
+{% assign hasFinding = false -%}
+{% for f in findings %}{% if f.value %}{% assign hasFinding = true %}{% endif %}{% endfor -%}
+{% if hasFinding -%}
+{% capture examId %}{{ base | append: '-exam-' | append: agIndex | append: '-' | append: regionSlug | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ examId }}",
+  "resource": {
+    "resourceType": "Observation",
+    "id": "{{ examId }}",
+    "meta": { "profile": ["{{ IGX }}/ems-observation-exam"] },
+    "status": "final",
+    "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "exam", "display": "Exam" } ] } ],
+    {% if loincCode != '' -%}
+    "code": { "coding": [ { "system": "http://loinc.org", "code": "{{ loincCode }}" } ], "text": "{{ regionLabel }}" },
+    {% else -%}
+    "code": { "text": "{{ regionLabel }} (NEMSIS eExam)" },
+    {% endif -%}
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+    {% if examWhen %}"effectiveDateTime": "{{ examWhen }}",{% else %}"_effectiveDateTime": { "extension": [ { "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason", "valueCode": "unknown" } ] },{% endif %}
+    {% if locationLeaf.value -%}
+    "bodySite": { "coding": [ { "system": "{{ XCS }}", "code": "{{ locationLeaf.value }}" } ] },
+    {% endif -%}
+    "component": [
+      {% for f in findings -%}
+      {% if f.value -%}
+      { "code": { "text": "{{ regionLabel }} finding" },
+        "valueCodeableConcept": { "coding": [ { "system": "{{ XCS }}", "code": "{{ f.value }}" } ] } },
+      {% endif -%}
+      {% endfor -%}
+    ]
+  },
+  "request": { "method": "POST", "url": "Observation" }
+},
+{% endif -%}

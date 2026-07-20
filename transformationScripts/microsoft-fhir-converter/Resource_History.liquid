@@ -1,0 +1,115 @@
+{% comment -%} eHistory -> AllergyIntolerance (.06 medication / .07
+environmental+food), EMSConditionProblems (.08 medical/surgical history),
+EMSMedicationStatement (CurrentMedsGroup: .12 med, .13/.14 dose, .15 route,
+.20 frequency). CodeType attr on .06/.08: 9924001=ICD-10-CM, 9924003=RxNorm,
+9924005=SNOMED. NV'd entries skipped (NDR-001). Self-contained entries. {%- endcomment -%}
+{% assign IGX = 'https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition' -%}
+{% assign MEDCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications' -%}
+{% assign HCS = 'https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history' -%}
+{% assign h = pcr.eHistory -%}
+{% for al in h['eHistory.06'] -%}
+{% if al.value -%}
+{% capture aid %}{{ base | append: '-allergy-med-' | append: forloop.index | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ aid }}",
+  "resource": {
+    "resourceType": "AllergyIntolerance",
+    "id": "{{ aid }}",
+    "meta": { "profile": ["{{ IGX }}/ems-allergyintolerance", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"] },
+    "clinicalStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical", "code": "active" } ] },
+    "verificationStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification", "code": "unconfirmed" } ] },
+    "category": ["medication"],
+    {% assign asys = 'http://www.nlm.nih.gov/research/umls/rxnorm' -%}
+    {% if al.CodeType == '9924001' %}{% assign asys = 'http://hl7.org/fhir/sid/icd-10-cm' %}{% endif -%}
+    {% if al.CodeType == '9924005' %}{% assign asys = 'http://snomed.info/sct' %}{% endif -%}
+    "code": { "coding": [ { "system": "{{ asys }}", "code": "{{ al.value }}" } ] },
+    "patient": { "reference": "urn:uuid:{{ patientId }}" }
+  },
+  "request": { "method": "POST", "url": "AllergyIntolerance" }
+},
+{% endif -%}
+{% endfor -%}
+{% for al in h['eHistory.07'] -%}
+{% if al.value -%}
+{% capture aid %}{{ base | append: '-allergy-env-' | append: forloop.index | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ aid }}",
+  "resource": {
+    "resourceType": "AllergyIntolerance",
+    "id": "{{ aid }}",
+    "meta": { "profile": ["{{ IGX }}/ems-allergyintolerance", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"] },
+    "clinicalStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical", "code": "active" } ] },
+    "verificationStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification", "code": "unconfirmed" } ] },
+    "code": { "coding": [ { "system": "http://snomed.info/sct", "code": "{{ al.value }}" } ] },
+    "patient": { "reference": "urn:uuid:{{ patientId }}" }
+  },
+  "request": { "method": "POST", "url": "AllergyIntolerance" }
+},
+{% endif -%}
+{% endfor -%}
+{% for dx in h['eHistory.08'] -%}
+{% if dx.value -%}
+{% capture hid %}{{ base | append: '-history-' | append: forloop.index | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ hid }}",
+  "resource": {
+    "resourceType": "Condition",
+    "id": "{{ hid }}",
+    "meta": { "profile": ["{{ IGX }}/ems-condition-problems", "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"] },
+    "clinicalStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" } ] },
+    "verificationStatus": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "unconfirmed" } ] },
+    "category": [ { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "problem-list-item", "display": "Problem List Item" } ] } ],
+    {% assign hsys = 'http://hl7.org/fhir/sid/icd-10-cm' -%}
+    {% if dx.CodeType == '9924005' %}{% assign hsys = 'http://snomed.info/sct' %}{% endif -%}
+    "code": { "coding": [ { "system": "{{ hsys }}", "code": "{{ dx.value }}" } ] },
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "encounter": { "reference": "urn:uuid:{{ encounterId }}" },
+    {% if forloop.first -%}
+    "extension": [
+      { "url": "{{ IGX }}/ext-ems-history-context",
+        "extension": [
+          {% for x in h['eHistory.05'] %}{% if x.value %}{ "url": "advanceDirectives", "valueCodeableConcept": { "coding": [ { "system": "{{ HCS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% for x in h['eHistory.09'] %}{% if x.value %}{ "url": "historyObtainedFrom", "valueCodeableConcept": { "coding": [ { "system": "{{ HCS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% for x in h['eHistory.17'] %}{% if x.value %}{ "url": "alcoholDrugUse", "valueCodeableConcept": { "coding": [ { "system": "{{ HCS }}", "code": "{{ x.value }}" } ] } },{% endif %}{% endfor %}
+          {% if h['eHistory.18'].value %}{ "url": "pregnancy", "valueCodeableConcept": { "coding": [ { "system": "{{ HCS }}", "code": "{{ h['eHistory.18'].value }}" } ] } },{% endif %}
+          {% if h['eHistory.19'].value %}{ "url": "lastOralIntake", "valueDateTime": "{{ h['eHistory.19'].value }}" },{% endif %}
+        ] }
+    ],
+    {% endif -%}
+    "recordedDate": "{{ pcr.eTimes['eTimes.07'].value | default: pcr.eTimes['eTimes.03'].value }}"
+  },
+  "request": { "method": "POST", "url": "Condition" }
+},
+{% endif -%}
+{% endfor -%}
+{% for mg in h['eHistory.CurrentMedsGroup'] -%}
+{% if mg['eHistory.12'].value -%}
+{% capture mid %}{{ base | append: '-homemed-' | append: forloop.index | generate_uuid }}{% endcapture -%}
+{
+  "fullUrl": "urn:uuid:{{ mid }}",
+  "resource": {
+    "resourceType": "MedicationStatement",
+    "id": "{{ mid }}",
+    "meta": { "profile": ["{{ IGX }}/ems-medicationstatement"] },
+    "status": "active",
+    {% assign msys = 'http://www.nlm.nih.gov/research/umls/rxnorm' -%}
+    {% if mg['eHistory.12'].CodeType == '9924005' %}{% assign msys = 'http://snomed.info/sct' %}{% endif -%}
+    "medicationCodeableConcept": { "coding": [ { "system": "{{ msys }}", "code": "{{ mg['eHistory.12'].value }}" } ] },
+    "subject": { "reference": "urn:uuid:{{ patientId }}" },
+    "context": { "reference": "urn:uuid:{{ encounterId }}" },
+    {% if mg['eHistory.13'].value or mg['eHistory.15'].value or mg['eHistory.20'].value -%}
+    "dosage": [
+      {
+        {% if mg['eHistory.15'].value %}"route": { "coding": [ { "system": "{{ MEDCS }}", "code": "{{ mg['eHistory.15'].value }}" } ] },{% endif %}
+        {% if mg['eHistory.20'].value %}"timing": { "code": { "coding": [ { "system": "{{ HCS }}", "code": "{{ mg['eHistory.20'].value }}" } ] } },{% endif %}
+        {% if mg['eHistory.13'].value %}"doseAndRate": [ { "doseQuantity": { "value": {{ mg['eHistory.13'].value }}{% if mg['eHistory.14'].value %}, "unit": "{{ mg['eHistory.14'].value }}", "system": "{{ HCS }}", "code": "{{ mg['eHistory.14'].value }}"{% endif %} } } ],{% endif %}
+        "text": "home medication"
+      }
+    ],
+    {% endif -%}
+    "dateAsserted": "{{ pcr.eTimes['eTimes.07'].value | default: pcr.eTimes['eTimes.03'].value }}"
+  },
+  "request": { "method": "POST", "url": "MedicationStatement" }
+},
+{% endif -%}
+{% endfor -%}

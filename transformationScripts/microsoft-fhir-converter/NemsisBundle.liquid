@@ -15,6 +15,8 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
     {% capture encounterId %}{{ base | append: '-encounter' | generate_uuid }}{% endcapture -%}
     {% capture sceneId %}{{ base | append: '-scene' | generate_uuid }}{% endcapture -%}
     {% capture orgId %}{{ base | append: '-agency' | generate_uuid }}{% endcapture -%}
+    {% capture conditionId %}{{ base | append: '-condition' | generate_uuid }}{% endcapture -%}
+    {% include 'Resource_Composition' pcr: pcr, base: base, patientId: patientId, encounterId: encounterId, sceneId: sceneId, orgId: orgId, conditionId: conditionId -%}
     {% assign ag = pcr.eResponse['eResponse.AgencyGroup'] | first -%}
     {
       "fullUrl": "urn:uuid:{{ orgId }}",
@@ -46,7 +48,6 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
     },
     {% endif -%}
     {% if pcr.eSituation['eSituation.11'].value -%}
-    {% capture conditionId %}{{ base | append: '-condition' | generate_uuid }}{% endcapture -%}
     {
       "fullUrl": "urn:uuid:{{ conditionId }}",
       "resource": {% include 'Resource_Condition' pcr: pcr, patientId: patientId, encounterId: encounterId, resId: conditionId %},
@@ -79,6 +80,29 @@ Deterministic ids are derived from eRecord.01 via the generate_uuid filter.
       "request": { "method": "POST", "url": "MedicationAdministration" }
     },
     {% endif -%}
+    {% endfor -%}
+    {% include 'Resource_ConditionArrest' pcr: pcr, base: base, patientId: patientId, encounterId: encounterId -%}
+    {% include 'Resource_ConditionInjury' pcr: pcr, base: base, patientId: patientId, encounterId: encounterId -%}
+    {% include 'Resource_History' pcr: pcr, base: base, patientId: patientId, encounterId: encounterId -%}
+    {% for ag in pcr.eExam['eExam.AssessmentGroup'] -%}
+    {% assign examWhen = ag['eExam.03'].value -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.04'], regionLabel: 'Skin Assessment', regionSlug: 'skin', loincCode: '8709-8', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.05'], regionLabel: 'Head Assessment', regionSlug: 'head', loincCode: '11396-1', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.06'], regionLabel: 'Face Assessment', regionSlug: 'face', loincCode: '', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.07'], regionLabel: 'Neck Assessment', regionSlug: 'neck', loincCode: '', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.09'], regionLabel: 'Heart Assessment', regionSlug: 'heart', loincCode: '', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.11'], regionLabel: 'Abdomen Assessment', regionSlug: 'abdomen', loincCode: '', locationLeaf: ag['eExam.10'], base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.12'], regionLabel: 'Pelvis/Genitourinary Assessment', regionSlug: 'pelvis', loincCode: '', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.14'], regionLabel: 'Back and Spine Assessment', regionSlug: 'back', loincCode: '', locationLeaf: ag['eExam.13'], base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.16'], regionLabel: 'Extremities Assessment', regionSlug: 'extremities', loincCode: '', locationLeaf: ag['eExam.15'], base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.18'], regionLabel: 'Eye Assessment', regionSlug: 'eye', loincCode: '', locationLeaf: ag['eExam.17'], base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.19'], regionLabel: 'Mental Status Assessment', regionSlug: 'mental', loincCode: '', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.20'], regionLabel: 'Neurological Assessment', regionSlug: 'neuro', loincCode: '10197-4', locationLeaf: nil, base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.23'], regionLabel: 'Lung Assessment', regionSlug: 'lung', loincCode: '29546-5', locationLeaf: ag['eExam.22'], base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% include 'Resource_ObservationExamRegion' findings: ag['eExam.25'], regionLabel: 'Chest Assessment', regionSlug: 'chest', loincCode: '', locationLeaf: ag['eExam.24'], base: base, patientId: patientId, encounterId: encounterId, examWhen: examWhen, agIndex: forloop.index -%}
+    {% endfor -%}
+    {% for lg in pcr.eLabs['eLabs.LabGroup'] -%}
+    {% include 'Resource_ObservationLabs' lg: lg, lgIndex: forloop.index, base: base, patientId: patientId, encounterId: encounterId -%}
     {% endfor -%}
     {% endfor -%}
     {% endfor -%}

@@ -3,6 +3,161 @@
   "type": "transaction",
   "entry": [
     {
+      "fullUrl": "urn:uuid:bbde7955-5a3b-5843-882e-b43366e63a50",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "bbde7955-5a3b-5843-882e-b43366e63a50",
+        "meta": {
+          "profile": [
+            "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition"
+          ]
+        },
+        "identifier": {
+          "system": "urn:oid:2.25.219926138944530828037824748808947630693",
+          "value": "a7f3c2d1-4b5e-4c6f-8a9b-0c1d2e3f4a5b"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "67796-3",
+              "display": "EMS patient care report - version 3 Document NEMSIS"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+        },
+        "encounter": {
+          "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+        },
+        "date": "2026-03-14T15:08:00-08:00",
+        "author": [
+          {
+            "reference": "urn:uuid:341bd163-6b49-5901-a044-cec69155ce69"
+          }
+        ],
+        "title": "EMS Patient Care Report",
+        "section": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+                  "code": "section-eResponse",
+                  "display": "EMS Response"
+                }
+              ]
+            },
+            "title": "EMS Response",
+            "entry": [
+              {
+                "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+                  "code": "section-eTimes",
+                  "display": "EMS Times"
+                }
+              ]
+            },
+            "title": "EMS Times",
+            "entry": [
+              {
+                "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29762-2",
+                  "display": "Social history note"
+                }
+              ]
+            },
+            "title": "Patient Demographics",
+            "entry": [
+              {
+                "reference": "urn:uuid:56037a85-2c61-594b-8cfa-217f27ef800d"
+              }
+            ]
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+                  "code": "section-eScene",
+                  "display": "EMS Scene"
+                }
+              ]
+            },
+            "title": "Scene Information",
+            "entry": [
+              {
+                "reference": "urn:uuid:f7c2187c-cfed-55ac-b211-7923b88c0a65"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Scene information</div>"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "55110-1",
+                  "display": "Conclusions [Interpretation] Document"
+                }
+              ]
+            },
+            "title": "Situation / Impressions",
+            "entry": [
+              {
+                "reference": "urn:uuid:fc3da3f5-9c29-5c88-a0be-5fb5f7b300de"
+              }
+            ],
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Provider impressions</div>"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "18776-5",
+                  "display": "Plan of care note"
+                }
+              ]
+            },
+            "title": "Disposition",
+            "entry": [
+              {
+                "reference": "urn:uuid:27f1d2d1-a213-5f09-a072-e9db43c3f041"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Composition"
+      }
+    },
+    {
       "fullUrl": "urn:uuid:341bd163-6b49-5901-a044-cec69155ce69",
       "resource": {
         "resourceType": "Organization",
@@ -536,12 +691,15 @@
         ],
         "telecom": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                "valueCode": "masked"
-              }
-            ]
+            "system": "phone",
+            "_value": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "masked"
+                }
+              ]
+            }
           }
         ]
       },
@@ -834,6 +992,17 @@
               {
                 "url": "numberOfAttempts",
                 "valueInteger": 1
+              },
+              {
+                "url": "successful",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                      "code": "Y"
+                    }
+                  ]
+                }
               }
             ]
           }

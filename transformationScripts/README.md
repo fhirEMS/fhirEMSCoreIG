@@ -99,10 +99,14 @@ if a maintained Whistle engine re-emerges or for porting to another mapper).
 | eProcedures.ProcedureGroup | Procedure (ems-procedure) | SNOMED pass-through; context extension |
 | eMedications.MedicationGroup | MedicationAdministration (ems-medicationadministration) | RxNorm pass-through; route/dose |
 
-Not yet mapped (extend using the same patterns): eArrest, eInjury, eHistory,
-eExam, eLabs, eAirway, eOutcome, ePayment, eOther/eCustom, Composition
-assembly, and DEM demographics. Most NEMSIS codes pass through unchanged to
-the IG's `cs-nemsis-*` systems, so new sections are largely mechanical.
+Coverage expansion (2026-07-19, engine-verified rendering — see
+**DISCLAIMER.md** for exact verification status): Composition assembly,
+eArrest→ConditionArrest, eInjury→ConditionInjury (one per cause),
+eHistory→AllergyIntolerance/ConditionProblems/MedicationStatement (CodeType
+attr drives RxNorm/SNOMED/ICD-10 system selection), eExam per-region
+Observations (AssessmentGroup-aware), eLabs Observations, eCrew→Practitioner/
+PractitionerRole. Still unmapped: eAirway detail, eOutcome (inbound — see
+eOutcomeQueries/), ePayment, eOther/eCustom, DEM demographics.
 
 ## Conformance verification (2026-07-19)
 
