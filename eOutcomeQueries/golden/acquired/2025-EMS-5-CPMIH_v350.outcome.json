@@ -1,0 +1,120 @@
+{
+  "plan": {
+    "pcrId": "2025-EMS-5-CPMIH_v350",
+    "posture": {
+      "code": "TREAT",
+      "display": "treatment",
+      "evidence": "eResponse.05=2205031 (Mobile Integrated Health Care Encounter)"
+    },
+    "requiredElements": [],
+    "sensitivity": {}
+  },
+  "match": null,
+  "linkage": null,
+  "registryLaneDeferred": [],
+  "nemsisOutcome": {},
+  "queriesMade": [],
+  "observation": {
+    "resourceType": "Observation",
+    "id": "outcome-2025-EMS-5-CPMIH_v350",
+    "meta": {
+      "profile": [
+        "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome"
+      ]
+    },
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "exam"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+          "code": "eOutcomePanel",
+          "display": "EMS Outcome Observation Panel"
+        }
+      ]
+    },
+    "subject": {
+      "display": "PCR patient"
+    },
+    "component": []
+  },
+  "provenance": {
+    "resourceType": "Provenance",
+    "target": [
+      {
+        "reference": "Observation/outcome-2025-EMS-5-CPMIH_v350"
+      }
+    ],
+    "recorded": "2026-07-19T00:00:00Z",
+    "activity": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code": "TREAT"
+        }
+      ]
+    },
+    "agent": [
+      {
+        "who": {
+          "display": "EMS Outcome Requester"
+        },
+        "onBehalfOf": {
+          "display": "EMS Agency"
+        }
+      }
+    ],
+    "entity": [],
+    "extension": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-acquisition-posture-evidence",
+        "valueString": "eResponse.05=2205031 (Mobile Integrated Health Care Encounter)"
+      }
+    ]
+  },
+  "auditEvent": {
+    "resourceType": "AuditEvent",
+    "type": {
+      "system": "http://dicom.nema.org/resources/ontology/DCM",
+      "code": "110112",
+      "display": "Query"
+    },
+    "action": "E",
+    "recorded": "2026-07-19T00:00:00Z",
+    "purposeOfEvent": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+            "code": "TREAT"
+          }
+        ]
+      }
+    ],
+    "outcome": "0",
+    "agent": [
+      {
+        "who": {
+          "display": "EMS Outcome Requester"
+        },
+        "requestor": true
+      }
+    ],
+    "source": {
+      "observer": {
+        "display": "eOutcomeQueries executor"
+      }
+    },
+    "entity": []
+  },
+  "note": "no fetchable elements (no measures or registry-lane only); no queries made"
+}

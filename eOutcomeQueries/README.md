@@ -45,10 +45,31 @@ Measure triggers are data-tuned: the overdose measure covers the full F10–F19
 SUD block + T-poisoning ranges (the real sample presents as F19, not T40), and
 naloxone is RxNorm 7242 only.
 
-## Not yet here (next phases)
+## P3 — plan execution (DONE, sandbox-verified)
 
-Query *execution* (P3: $match → queries → eOutcome write-back with Provenance
-+ AuditEvent, against fhirEngine as the sandbox hospital), payer-lane C4BB
-mapping (P4), and CQL measure representations (P5). The IG ships the
-`$ems-outcome-plan` OperationDefinition and guidance; this folder is the
-reference engine.
+`engine/ems_outcome_acquire.py` executes plans against a hospital-side FHIR
+endpoint; `tools/seed_hospital.py` seeds Synthea-style synthetic hospital data
+matching the sample PCR patients (demographics lifted from the PCRs so
+matching is genuinely tested); `test_acquire_e2e.py` runs the loop with
+fhirEngine as the hospital. Verified behavior (ALL PASS):
+
+- **Matching**: tries `Patient/$match` (onlyCertainMatches), falls back to
+  demographic search requiring exactly one hit; zero/ambiguous ends the lane.
+- **ED→inpatient linkage**: `Encounter?part-of` first, then 72h temporal
+  adjacency — the method used is recorded in Provenance (eBike scenario has no
+  `partOf` and links via adjacency).
+- **Minimum necessary enforced at execution**: only planned elements are
+  queried; acquired ⊆ planned asserted; nothing fabricated when the inpatient
+  encounter doesn't exist (Overdose ED-only case).
+- **Privacy artifacts**: Part 2 plans yield DS4P labels (`42CFRPart2`, `R`) on
+  the outcome Observation; Provenance carries the acquisition posture +
+  evidence + linkage method; AuditEvent.purposeOfEvent always equals the plan
+  posture; registry-lane elements (ISS) are explicitly deferred, not faked.
+- Outputs land as `golden/acquired/<pcrId>.outcome.json`: NEMSIS eOutcome
+  element values + EMSObservationOutcome instance + Provenance + AuditEvent.
+
+## Next phases
+
+Payer-lane C4BB EOB mapping (P4), CQL measure representations (P5), and
+production hardening (retry/re-query schedule T+24h…T+90d, real SMART BS/UDAP
+client wiring — fhirEngine has the substrate).

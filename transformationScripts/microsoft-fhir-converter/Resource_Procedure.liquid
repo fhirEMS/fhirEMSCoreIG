@@ -17,6 +17,7 @@ ext-ems-procedure-context extension. {%- endcomment -%}
       "extension": [
         {% if prc['eProcedures.02'].value %}{ "url": "priorEMSCare", "valueCodeableConcept": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v2-0136", "code": "{% if prc['eProcedures.02'].value == '9923003' %}Y{% else %}N{% endif %}" } ] } },{% endif %}
         {% if prc['eProcedures.05'].value %}{ "url": "numberOfAttempts", "valueInteger": {{ prc['eProcedures.05'].value }} },{% endif %}
+        {% if prc['eProcedures.06'].value %}{ "url": "successful", "valueCodeableConcept": { "coding": [ { "system": "http://terminology.hl7.org/CodeSystem/v2-0136", "code": "{% if prc['eProcedures.06'].value == '9923003' %}Y{% else %}N{% endif %}" } ] } },{% endif %}
         {% if prc['eProcedures.08'].value %}{ "url": "response", "valueCodeableConcept": { "coding": [ { "system": "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications", "code": "{{ prc['eProcedures.08'].value }}" } ] } },{% endif %}
       ] }
   ]

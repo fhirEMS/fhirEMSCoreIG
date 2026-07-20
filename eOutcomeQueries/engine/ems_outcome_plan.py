@@ -66,8 +66,9 @@ ELEMENT_QUERIES = {
 }
 
 
-def load_measures():
-    return [json.loads(p.read_text()) for p in sorted(MEASURES_DIR.glob("*.json"))]
+def load_measures(measures_dir=None):
+    d = pathlib.Path(measures_dir) if measures_dir else MEASURES_DIR
+    return [json.loads(p.read_text()) for p in sorted(d.glob("*.json"))]
 
 
 def walk_facts(node, path, facts):
@@ -96,7 +97,7 @@ def trigger_hits(trig, facts):
     return False
 
 
-def evaluate_pcr(pcr):
+def evaluate_pcr(pcr, measures_dir=None):
     facts = {}
     walk_facts(pcr, ["PatientCareReport"], facts)
 
@@ -109,7 +110,7 @@ def evaluate_pcr(pcr):
             break
 
     applicable = []
-    for m in load_measures():
+    for m in load_measures(measures_dir):
         hits = [t["note"] for t in m["triggers"]["any"] if trigger_hits(t, facts)]
         if hits:
             applicable.append({"measure": m["id"], "title": m["title"],
@@ -153,10 +154,13 @@ def main():
         doc = {"EMSDataSet": canon.convert(canon.ET.parse(src).getroot())}
     else:
         doc = json.loads(src.read_text())
+    mdir = None
+    if "--measures" in sys.argv:
+        mdir = sys.argv[sys.argv.index("--measures") + 1]
     plans = []
     for header in doc["EMSDataSet"].get("Header", []):
         for pcr in header.get("PatientCareReport", []):
-            plans.append(evaluate_pcr(pcr))
+            plans.append(evaluate_pcr(pcr, mdir))
     indent = 2 if "--pretty" in sys.argv else None
     print(json.dumps(plans, indent=indent))
 

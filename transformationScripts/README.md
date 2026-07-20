@@ -125,8 +125,9 @@ server, were tested two ways:
 Converted resources are dual-stamped: `meta.profile` carries the `ems-*`
 profile and its US Core parent.
 
-**Known mapping gaps:** eProcedures.06 (successful) has no IG sub-extension —
-eProcedures.08 (response) is mapped instead. eCrew maps to Practitioner +
+**Known mapping gaps (resolved 2026-07-19):** eProcedures.06 now maps to the
+`successful` sub-extension (added to ext-ems-procedure-context) alongside
+eProcedures.08 → `response`. eCrew maps to Practitioner +
 PractitionerRole (identifier from eCrew.01; certification level eCrew.02;
 response roles eCrew.03; name.family and telecom.value use data-absent-reason
 'masked' since the PCR carries no crew names/contacts).

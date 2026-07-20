@@ -263,6 +263,7 @@ Context: Procedure
 * extension contains
     priorEMSCare      0..1 MS and
     numberOfAttempts  0..1 MS and
+    successful        0..1 MS and
     response          0..1 MS and
     authorization     0..1    and
     airwayTechnique   0..* MS and
@@ -278,6 +279,12 @@ Context: Procedure
   * ^short = "eProcedures.05 - Number of Procedure Attempts"
   * ^comment = "NEMSIS eProcedures.05. Usage: Required/National. Nillable. NV: NotRecorded, NotApplicable. Integer count of attempts."
   * value[x] only integer
+
+* extension[successful]
+  * ^short = "eProcedures.06 - Procedure Successful"
+  * ^comment = "NEMSIS eProcedures.06. Usage: Required/National. Nillable. NV: NotRecorded, NotApplicable. YesNoValues mapped to v2-0136 Y/N."
+  * value[x] only CodeableConcept
+  * valueCodeableConcept from http://hl7.org/fhir/ValueSet/yesnodontknow (extensible)
 
 * extension[response]
   * ^short = "eProcedures.08 - Response to Procedure"
