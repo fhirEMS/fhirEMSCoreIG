@@ -68,6 +68,17 @@ fhirEngine as the hospital. Verified behavior (ALL PASS):
 - Outputs land as `golden/acquired/<pcrId>.outcome.json`: NEMSIS eOutcome
   element values + EMSObservationOutcome instance + Provenance + AuditEvent.
 
+## Sandbox ops gotcha (found by re-verification)
+
+When fhirEngine's `FHIRENGINE_DELTA_BASE` is a **relative** path, the sidecar
+resolves it against **its own** working directory — the server and sidecar can
+silently write to different (nested) stores, and wiping the wrong one leaves
+ghost data that resurfaces on the next write. **Always pass an absolute
+`FHIRENGINE_DELTA_BASE`** (and the same absolute `--base` to the sidecar) for
+these tests. Silver lining: the ghost duplicates triggered the executor's
+single-certain-match policy exactly as designed — ambiguous match, lane ended,
+nothing fabricated.
+
 ## Next phases
 
 Payer-lane C4BB EOB mapping (P4), CQL measure representations (P5), and

@@ -22,7 +22,7 @@
   },
   "match": {
     "method": "demographic-search-single-certain",
-    "patient": "019f7d33-345a-76b4-ab46-c9b957060159"
+    "patient": "019f7d42-cd58-7aff-b25e-37c75579c066"
   },
   "linkage": "temporal-adjacency-72h",
   "registryLaneDeferred": [
@@ -50,13 +50,13 @@
   "queriesMade": [
     "http://127.0.0.1:3301/Patient/$match",
     "http://127.0.0.1:3301/Patient?family=Schultz&given=Barney&birthdate=2012-06-02",
-    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-345a-76b4-ab46-c9b957060159&class=EMER&date=ge2024-10-13",
-    "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2",
-    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-345a-76b4-ab46-c9b957060159&class=IMP&date=ge2024-10-13",
-    "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2&category=encounter-diagnosis",
-    "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2",
-    "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-345a-7627-9522-64ac817085d5&category=encounter-diagnosis",
-    "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d33-345a-7627-9522-64ac817085d5"
+    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-cd58-7aff-b25e-37c75579c066&class=EMER&date=ge2024-10-13",
+    "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152",
+    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-cd58-7aff-b25e-37c75579c066&class=IMP&date=ge2024-10-13",
+    "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152&category=encounter-diagnosis",
+    "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152",
+    "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-cd58-73d3-8033-5ee58611c0b0&category=encounter-diagnosis",
+    "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d42-cd58-73d3-8033-5ee58611c0b0"
   ],
   "observation": {
     "resourceType": "Observation",
@@ -257,43 +257,43 @@
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-345a-76b4-ab46-c9b957060159&class=EMER&date=ge2024-10-13"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-cd58-7aff-b25e-37c75579c066&class=EMER&date=ge2024-10-13"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2"
+          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-345a-76b4-ab46-c9b957060159&class=IMP&date=ge2024-10-13"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-cd58-7aff-b25e-37c75579c066&class=IMP&date=ge2024-10-13"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2&category=encounter-diagnosis"
+          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152&category=encounter-diagnosis"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2"
+          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-345a-7627-9522-64ac817085d5&category=encounter-diagnosis"
+          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-cd58-73d3-8033-5ee58611c0b0&category=encounter-diagnosis"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d33-345a-7627-9522-64ac817085d5"
+          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d42-cd58-73d3-8033-5ee58611c0b0"
         }
       }
     ],
@@ -354,37 +354,37 @@
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-345a-76b4-ab46-c9b957060159&class=EMER&date=ge2024-10-13"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-cd58-7aff-b25e-37c75579c066&class=EMER&date=ge2024-10-13"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2"
+          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-345a-76b4-ab46-c9b957060159&class=IMP&date=ge2024-10-13"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-cd58-7aff-b25e-37c75579c066&class=IMP&date=ge2024-10-13"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2&category=encounter-diagnosis"
+          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152&category=encounter-diagnosis"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d33-345a-7610-93e2-b7f104cb18b2"
+          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d42-cd58-75f2-ba46-334a6313c152"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-345a-7627-9522-64ac817085d5&category=encounter-diagnosis"
+          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-cd58-73d3-8033-5ee58611c0b0&category=encounter-diagnosis"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d33-345a-7627-9522-64ac817085d5"
+          "display": "http://127.0.0.1:3301/Procedure?encounter=Encounter/019f7d42-cd58-73d3-8033-5ee58611c0b0"
         }
       }
     ]

@@ -22,7 +22,7 @@
   },
   "match": {
     "method": "demographic-search-single-certain",
-    "patient": "019f7d33-31e2-7a1d-b9b3-1f890a2ed9ca"
+    "patient": "019f7d42-ca67-7c32-b3d9-9fd9ef7370ad"
   },
   "linkage": null,
   "registryLaneDeferred": [],
@@ -36,10 +36,10 @@
   "queriesMade": [
     "http://127.0.0.1:3301/Patient/$match",
     "http://127.0.0.1:3301/Patient?family=Howell&given=Maria&birthdate=1979-04-08",
-    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-31e2-7a1d-b9b3-1f890a2ed9ca&class=EMER&date=ge2024-10-07",
-    "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d33-31e2-7e13-9aed-31f37947b12a",
-    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-31e2-7a1d-b9b3-1f890a2ed9ca&class=IMP&date=ge2024-10-07",
-    "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-31e2-7e13-9aed-31f37947b12a&category=encounter-diagnosis"
+    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-ca67-7c32-b3d9-9fd9ef7370ad&class=EMER&date=ge2024-10-07",
+    "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d42-ca68-7a48-8c7d-716d4e19f0ca",
+    "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-ca67-7c32-b3d9-9fd9ef7370ad&class=IMP&date=ge2024-10-07",
+    "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-ca68-7a48-8c7d-716d4e19f0ca&category=encounter-diagnosis"
   ],
   "observation": {
     "resourceType": "Observation",
@@ -181,25 +181,25 @@
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-31e2-7a1d-b9b3-1f890a2ed9ca&class=EMER&date=ge2024-10-07"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-ca67-7c32-b3d9-9fd9ef7370ad&class=EMER&date=ge2024-10-07"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d33-31e2-7e13-9aed-31f37947b12a"
+          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d42-ca68-7a48-8c7d-716d4e19f0ca"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-31e2-7a1d-b9b3-1f890a2ed9ca&class=IMP&date=ge2024-10-07"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-ca67-7c32-b3d9-9fd9ef7370ad&class=IMP&date=ge2024-10-07"
         }
       },
       {
         "role": "source",
         "what": {
-          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-31e2-7e13-9aed-31f37947b12a&category=encounter-diagnosis"
+          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-ca68-7a48-8c7d-716d4e19f0ca&category=encounter-diagnosis"
         }
       }
     ],
@@ -256,22 +256,22 @@
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-31e2-7a1d-b9b3-1f890a2ed9ca&class=EMER&date=ge2024-10-07"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-ca67-7c32-b3d9-9fd9ef7370ad&class=EMER&date=ge2024-10-07"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d33-31e2-7e13-9aed-31f37947b12a"
+          "display": "http://127.0.0.1:3301/Encounter?part-of=Encounter/019f7d42-ca68-7a48-8c7d-716d4e19f0ca"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d33-31e2-7a1d-b9b3-1f890a2ed9ca&class=IMP&date=ge2024-10-07"
+          "display": "http://127.0.0.1:3301/Encounter?patient=Patient/019f7d42-ca67-7c32-b3d9-9fd9ef7370ad&class=IMP&date=ge2024-10-07"
         }
       },
       {
         "what": {
-          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d33-31e2-7e13-9aed-31f37947b12a&category=encounter-diagnosis"
+          "display": "http://127.0.0.1:3301/Condition?encounter=Encounter/019f7d42-ca68-7a48-8c7d-716d4e19f0ca&category=encounter-diagnosis"
         }
       }
     ]
