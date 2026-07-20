@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-encounter"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter ex-ems-encounter</b></p><a name="ex-ems-encounter"> </a><a name="hcex-ems-encounter"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-encounter.html">EMS Encounter</a></p></div><p><b>EMS Response Type</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2205001}">Emergency Response (Primary Response Area)</span></p><p><b>EMS Unit Type</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2207015}">Ground Transport (ALS Equipped)</span></p><p><b>EMS Response Mode to Scene</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2223001}">Emergent (Immediate Response)</span></p><p><b>EMS Additional Response Mode Descriptors</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2224015}">Lights and Sirens</span></p><blockquote><p><b>EMS Response Delays</b></p><ul><li>sceneDelay: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2210011}">Extrication</span></li></ul></blockquote><blockquote><p><b>EMS Vehicle Unit Identification</b></p><ul><li>unitNumber: A-7</li><li>callSign: Medic 7</li></ul></blockquote><p><b>EMS Dispatch Reason</b>: <span title="Codes:{http://snomed.info/sct 418399005}">Motor vehicle accident</span></p><blockquote><p><b>EMS Dispatch Information</b></p><ul><li>emdPerformed: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2302003}">Yes, With Pre-Arrival Instructions</span></li><li>emdDeterminant: 29D02p</li><li>dispatchCenterNameOrId: Riverside County Emergency Communications Center</li><li>dispatchPriority: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2305001}">Critical</span></li><li>cadRecordId: CAD-2026-0314-008842</li></ul></blockquote><blockquote><p><b>EMS Response Times</b></p><ul><li>psapCallTime: 2026-03-14 14:20:00-0800</li><li>dispatchNotified: 2026-03-14 14:21:00-0800</li><li>unitNotified: 2026-03-14 14:22:00-0800</li><li>unitEnRoute: 2026-03-14 14:24:00-0800</li><li>unitArrivedScene: 2026-03-14 14:31:00-0800</li><li>arrivalAtPatient: 2026-03-14 14:33:00-0800</li><li>unitLeftScene: 2026-03-14 14:52:00-0800</li><li>patientArrivedDestination: 2026-03-14 15:05:00-0800</li><li>destinationPatientTransferOfCare: 2026-03-14 15:08:00-0800</li><li>unitBackInService: 2026-03-14 15:25:00-0800</li><li>unitBackAtBase: 2026-03-14 15:40:00-0800</li></ul></blockquote><blockquote><p><b>EMS Disposition Codes</b></p><ul><li>unitDisposition: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4227001}">Patient Contact Made</span></li><li>patientEvaluationCare: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4228001}">Patient Evaluated and Care Provided</span></li><li>crewDisposition: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4229001}">Initiated and Continued Primary Care</span></li><li>transportDisposition: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4230001}">Transport by This EMS Unit (This Crew Only)</span></li><li>levelOfCareProvided: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4232005}">ALS - Paramedic</span></li><li>patientAcuity: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4219001}">Critical (Red)</span></li></ul></blockquote><blockquote><p><b>EMS Transport Details</b></p><ul><li>transportMethod: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4216005}">Ground-Ambulance</span></li><li>transportMode: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4217001}">Emergent (Immediate Response)</span></li><li>additionalTransportMode: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4218011}">Lights and Sirens</span></li></ul></blockquote><blockquote><p><b>EMS Destination Details</b></p><ul><li>reasonForChoosingDestination: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4220021}">Regional Specialty Center</span></li><li>typeOfDestination: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4221003}">Hospital-Emergency Department</span></li><li>hospitalInPatientDestination: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4222013}">Hospital-ICU</span></li><li>hospitalCapability: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 9908021}">Trauma Center Level 1</span></li><li>preArrivalAlert: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4224003}">Yes-Adult Trauma</span></li><li>preArrivalAlertDateTime: 2026-03-14 14:50:00-0800</li><li>numberOfPatients: 1</li></ul></blockquote><p><b>EMS Protocol Used</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures 9914101}">Injury-Head</span></p><p><b>EMS Chief Complaint Anatomic Location</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation 2807015}">Head</span></p><p><b>EMS Transport Disposition (Legacy)</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4230001}">Transport by This EMS Unit (This Crew Only)</span></p><blockquote><p><b>EMS Other Context</b></p><ul><li>reviewRequested: true</li><li>registryCandidate: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other 4502017}">Trauma</span></li><li>crewCompletingReport: P-1234</li></ul></blockquote><blockquote><p><b>EMS Crew Safety</b></p><ul><li>crewMemberId: P-1234</li><li>ppeUsed: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other 4503003}">Gloves</span></li><li>ppeUsed: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other 4503001}">Eye Protection</span></li><li>workRelatedExposure: false</li></ul></blockquote><p><b>identifier</b>: Visit number/2026-03-14-0042, Resource identifier/2026-031400042-1</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">ActCode: EMER</a> (emergency)</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 409971007}">Emergency medical services</span></p><p><b>subject</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}">Participation</span></td><td><a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></td></tr></table><p><b>period</b>: 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</p><p><b>serviceProvider</b>: <a href="Organization-ex-ems-organization-agency.html">Organization Riverside County EMS Agency</a></p></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+        <code value="2205001"/>
+        <display value="Emergency Response (Primary Response Area)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+        <code value="2207015"/>
+        <display value="Ground Transport (ALS Equipped)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-mode">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+        <code value="2223001"/>
+        <display value="Emergent (Immediate Response)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-additional-response-mode">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+        <code value="2224015"/>
+        <display value="Lights and Sirens"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-delays">
+    <extension url="sceneDelay">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="2210011"/>
+          <display value="Extrication"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit">
+    <extension url="unitNumber">
+      <valueString value="A-7"/>
+    </extension>
+    <extension url="callSign">
+      <valueString value="Medic 7"/>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-reason">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="418399005"/>
+        <display value="Motor vehicle accident"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-info">
+    <extension url="emdPerformed">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="2302003"/>
+          <display value="Yes, With Pre-Arrival Instructions"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="emdDeterminant">
+      <valueString value="29D02p"/>
+    </extension>
+    <extension url="dispatchCenterNameOrId">
+      <valueString value="Riverside County Emergency Communications Center"/>
+    </extension>
+    <extension url="dispatchPriority">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="2305001"/>
+          <display value="Critical"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="cadRecordId">
+      <valueString value="CAD-2026-0314-008842"/>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-times">
+    <extension url="psapCallTime">
+      <valueDateTime value="2026-03-14T14:20:00-08:00"/>
+    </extension>
+    <extension url="dispatchNotified">
+      <valueDateTime value="2026-03-14T14:21:00-08:00"/>
+    </extension>
+    <extension url="unitNotified">
+      <valueDateTime value="2026-03-14T14:22:00-08:00"/>
+    </extension>
+    <extension url="unitEnRoute">
+      <valueDateTime value="2026-03-14T14:24:00-08:00"/>
+    </extension>
+    <extension url="unitArrivedScene">
+      <valueDateTime value="2026-03-14T14:31:00-08:00"/>
+    </extension>
+    <extension url="arrivalAtPatient">
+      <valueDateTime value="2026-03-14T14:33:00-08:00"/>
+    </extension>
+    <extension url="unitLeftScene">
+      <valueDateTime value="2026-03-14T14:52:00-08:00"/>
+    </extension>
+    <extension url="patientArrivedDestination">
+      <valueDateTime value="2026-03-14T15:05:00-08:00"/>
+    </extension>
+    <extension url="destinationPatientTransferOfCare">
+      <valueDateTime value="2026-03-14T15:08:00-08:00"/>
+    </extension>
+    <extension url="unitBackInService">
+      <valueDateTime value="2026-03-14T15:25:00-08:00"/>
+    </extension>
+    <extension url="unitBackAtBase">
+      <valueDateTime value="2026-03-14T15:40:00-08:00"/>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-disposition-codes">
+    <extension url="unitDisposition">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4227001"/>
+          <display value="Patient Contact Made"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="patientEvaluationCare">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4228001"/>
+          <display value="Patient Evaluated and Care Provided"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="crewDisposition">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4229001"/>
+          <display value="Initiated and Continued Primary Care"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="transportDisposition">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4230001"/>
+          <display value="Transport by This EMS Unit (This Crew Only)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="levelOfCareProvided">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4232005"/>
+          <display value="ALS - Paramedic"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="patientAcuity">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4219001"/>
+          <display value="Critical (Red)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-details">
+    <extension url="transportMethod">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4216005"/>
+          <display value="Ground-Ambulance"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="transportMode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4217001"/>
+          <display value="Emergent (Immediate Response)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="additionalTransportMode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4218011"/>
+          <display value="Lights and Sirens"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-destination-details">
+    <extension url="reasonForChoosingDestination">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4220021"/>
+          <display value="Regional Specialty Center"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="typeOfDestination">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4221003"/>
+          <display value="Hospital-Emergency Department"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="hospitalInPatientDestination">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4222013"/>
+          <display value="Hospital-ICU"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="hospitalCapability">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="9908021"/>
+          <display value="Trauma Center Level 1"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="preArrivalAlert">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+          <code value="4224003"/>
+          <display value="Yes-Adult Trauma"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="preArrivalAlertDateTime">
+      <valueDateTime value="2026-03-14T14:50:00-08:00"/>
+    </extension>
+    <extension url="numberOfPatients">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-protocol-used">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures"/>
+        <code value="9914101"/>
+        <display value="Injury-Head"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-incident-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation"/>
+        <code value="2807015"/>
+        <display value="Head"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-reason">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+        <code value="4230001"/>
+        <display value="Transport by This EMS Unit (This Crew Only)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-other-context">
+    <extension url="reviewRequested">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="registryCandidate">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+          <code value="4502017"/>
+          <display value="Trauma"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="crewCompletingReport">
+      <valueString value="P-1234"/>
+    </extension>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-crew-safety">
+    <extension url="crewMemberId">
+      <valueString value="P-1234"/>
+    </extension>
+    <extension url="ppeUsed">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+          <code value="4503003"/>
+          <display value="Gloves"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="ppeUsed">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+          <code value="4503001"/>
+          <display value="Eye Protection"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="workRelatedExposure">
+      <valueBoolean value="false"/>
+    </extension>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="VN"/>
+        <display value="Visit number"/>
+      </coding>
+    </type>
+    <system value="http://example.org/ems/incidents"/>
+    <value value="2026-03-14-0042"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="RI"/>
+        <display value="Resource identifier"/>
+      </coding>
+    </type>
+    <system value="http://example.org/ems/responses"/>
+    <value value="2026-031400042-1"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="EMER"/>
+    <display value="emergency"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="409971007"/>
+      <display value="Emergency medical services"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ex-ems-patient"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PART"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/ex-ems-practitioner"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2026-03-14T14:22:00-08:00"/>
+    <end value="2026-03-14T15:08:00-08:00"/>
+  </period>
+  <serviceProvider>
+    <reference value="Organization/ex-ems-organization-agency"/>
+  </serviceProvider>
+</Encounter>

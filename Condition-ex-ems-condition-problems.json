@@ -1,0 +1,110 @@
+{
+  "resourceType" : "Condition",
+  "id" : "ex-ems-condition-problems",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-problems"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ex-ems-condition-problems</b></p><a name=\"ex-ems-condition-problems\"> </a><a name=\"hcex-ems-condition-problems\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-condition-problems.html\">EMS Condition — Past Medical History</a></p></div><blockquote><p><b>EMS History Context</b></p><ul><li>advanceDirectives: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 3105005}\">None</span></li><li>practitionerName: Sarah Chen </li><li>historyObtainedFrom: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 3109007}\">Patient</span></li><li>immunizationType: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 9910043}\">Tetanus</span></li><li>immunizationYear: 2020</li><li>emergencyInformationForm: false</li><li>alcoholDrugUse: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 3117013}\">Physical Exam Indicates Suspected Alcohol or Drug Use</span></li><li>lastOralIntake: 2026-03-14 12:30:00-0800</li></ul></blockquote><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status unconfirmed}\">Unconfirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm I10}\">Hypertension</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>recordedDate</b>: 2026-03-14 14:40:00-0800</p><p><b>recorder</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "advanceDirectives",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+          "code" : "3105005",
+          "display" : "None"
+        }]
+      }
+    },
+    {
+      "url" : "practitionerName",
+      "valueHumanName" : {
+        "family" : "Chen",
+        "given" : ["Sarah"]
+      }
+    },
+    {
+      "url" : "historyObtainedFrom",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+          "code" : "3109007",
+          "display" : "Patient"
+        }]
+      }
+    },
+    {
+      "url" : "immunizationType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+          "code" : "9910043",
+          "display" : "Tetanus"
+        }]
+      }
+    },
+    {
+      "url" : "immunizationYear",
+      "valueDate" : "2020"
+    },
+    {
+      "url" : "emergencyInformationForm",
+      "valueBoolean" : false
+    },
+    {
+      "url" : "alcoholDrugUse",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+          "code" : "3117013",
+          "display" : "Physical Exam Indicates Suspected Alcohol or Drug Use"
+        }]
+      }
+    },
+    {
+      "url" : "lastOralIntake",
+      "valueDateTime" : "2026-03-14T12:30:00-08:00"
+    }],
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-history-context"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "unconfirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item",
+      "display" : "Problem List Item"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "code" : "I10",
+      "display" : "Essential (primary) hypertension"
+    }],
+    "text" : "Hypertension"
+  },
+  "subject" : {
+    "reference" : "Patient/ex-ems-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ex-ems-encounter"
+  },
+  "recordedDate" : "2026-03-14T14:40:00-08:00",
+  "recorder" : {
+    "reference" : "Practitioner/ex-ems-practitioner"
+  }
+}

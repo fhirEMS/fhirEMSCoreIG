@@ -1,0 +1,191 @@
+{
+  "resourceType" : "Composition",
+  "id" : "ex-ems-composition",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition ex-ems-composition</b></p><a name=\"ex-ems-composition\"> </a><a name=\"hcex-ems-composition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-composition.html\">EMS Patient Care Report (PCR)</a></p></div><p><b>identifier</b>: <code>http://example.org/ems/pcr</code>/PCR-2026-03-14-0042</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 67796-3}\">EMS patient care report - version 3 Document NEMSIS</span></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>date</b>: 2026-03-14 18:45:00-0800</p><p><b>author</b>: </p><ul><li><a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></li><li><a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></li></ul><p><b>title</b>: EMS Patient Care Report</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td>2026-03-14 19:30:00-0800</td><td><a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></p></div>"
+  },
+  "identifier" : {
+    "system" : "http://example.org/ems/pcr",
+    "value" : "PCR-2026-03-14-0042"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "67796-3",
+      "display" : "EMS patient care report - version 3 Document NEMSIS"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ex-ems-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ex-ems-encounter"
+  },
+  "date" : "2026-03-14T18:45:00-08:00",
+  "author" : [{
+    "reference" : "Practitioner/ex-ems-practitioner"
+  },
+  {
+    "reference" : "Organization/ex-ems-organization-agency"
+  }],
+  "title" : "EMS Patient Care Report",
+  "attester" : [{
+    "mode" : "legal",
+    "time" : "2026-03-14T19:30:00-08:00",
+    "party" : {
+      "reference" : "Practitioner/ex-ems-practitioner"
+    }
+  }],
+  "custodian" : {
+    "reference" : "Organization/ex-ems-organization-agency"
+  },
+  "section" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+        "code" : "section-eResponse",
+        "display" : "EMS Response"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Encounter/ex-ems-encounter"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+        "code" : "section-eTimes",
+        "display" : "EMS Times"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Encounter/ex-ems-encounter"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29762-2",
+        "display" : "Social history note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Patient/ex-ems-patient"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+        "code" : "section-eScene",
+        "display" : "EMS Scene"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Location/ex-ems-location-scene"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "55110-1",
+        "display" : "Conclusions [Interpretation] Document"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/ex-ems-condition"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "18776-5",
+        "display" : "Plan of care note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Location/ex-ems-location-destination"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8716-3",
+        "display" : "Vital signs note"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/ex-ems-observation-bp"
+    },
+    {
+      "reference" : "Observation/ex-ems-heart-rate"
+    },
+    {
+      "reference" : "Observation/ex-ems-spo2"
+    },
+    {
+      "reference" : "Observation/ex-ems-respiratory-rate"
+    },
+    {
+      "reference" : "Observation/ex-ems-observation-gcs"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29554-3",
+        "display" : "Procedure Narrative"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Procedure/ex-ems-procedure"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29549-3",
+        "display" : "Medication administered Narrative"
+      }]
+    },
+    "entry" : [{
+      "reference" : "MedicationAdministration/ex-ems-medicationadministration"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+        "code" : "section-eAirway",
+        "display" : "EMS Airway Management"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/ex-ems-observation-airway"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+        "code" : "section-eArrest",
+        "display" : "EMS Cardiac Arrest"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Condition/ex-ems-condition-arrest"
+    }]
+  }]
+}

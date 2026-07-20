@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Implementation Guidance - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Implementation Guidance</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Implementation Guidance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a>        <ul>
+          <li><a href="#use-case-1--ems-to-emergency-department-handoff" id="markdown-toc-use-case-1--ems-to-emergency-department-handoff">Use Case 1 — EMS to Emergency Department Handoff</a></li>
+          <li><a href="#use-case-2--ems-to-state-registry-submission" id="markdown-toc-use-case-2--ems-to-state-registry-submission">Use Case 2 — EMS to State Registry Submission</a></li>
+          <li><a href="#use-case-3--ems-to-hie--tefca" id="markdown-toc-use-case-3--ems-to-hie--tefca">Use Case 3 — EMS to HIE / TEFCA</a></li>
+          <li><a href="#use-case-4--analytics-and-quality-reporting" id="markdown-toc-use-case-4--analytics-and-quality-reporting">Use Case 4 — Analytics and Quality Reporting</a></li>
+        </ul>
+      </li>
+      <li><a href="#bundle-construction" id="markdown-toc-bundle-construction">Bundle Construction</a>        <ul>
+          <li><a href="#pcr-document-bundle" id="markdown-toc-pcr-document-bundle">PCR Document Bundle</a></li>
+          <li><a href="#multiple-vital-sign-sets-ndr-007" id="markdown-toc-multiple-vital-sign-sets-ndr-007">Multiple Vital Sign Sets (NDR-007)</a></li>
+        </ul>
+      </li>
+      <li><a href="#nemsis-to-fhir-conversion-patterns" id="markdown-toc-nemsis-to-fhir-conversion-patterns">NEMSIS-to-FHIR Conversion Patterns</a>        <ul>
+          <li><a href="#not-values-nv--ndr-001" id="markdown-toc-not-values-nv--ndr-001">Not Values (NV) — NDR-001</a></li>
+          <li><a href="#pertinent-negatives-pn--ndr-002" id="markdown-toc-pertinent-negatives-pn--ndr-002">Pertinent Negatives (PN) — NDR-002</a></li>
+          <li><a href="#state-and-county-codes" id="markdown-toc-state-and-county-codes">State and County Codes</a></li>
+          <li><a href="#timestamps-etimes--ndr-005" id="markdown-toc-timestamps-etimes--ndr-005">Timestamps (eTimes) — NDR-005</a></li>
+          <li><a href="#glasgow-coma-scale-gcs--panel-pattern" id="markdown-toc-glasgow-coma-scale-gcs--panel-pattern">Glasgow Coma Scale (GCS) — Panel Pattern</a></li>
+        </ul>
+      </li>
+      <li><a href="#known-limitations-and-incomplete-items" id="markdown-toc-known-limitations-and-incomplete-items">Known Limitations and Incomplete Items</a>        <ul>
+          <li><a href="#-ig-publisher-validation-not-run" id="markdown-toc--ig-publisher-validation-not-run">❌ IG Publisher Validation Not Run</a></li>
+          <li><a href="#-einjury-section--not-profiled-29-elements" id="markdown-toc--einjury-section--not-profiled-29-elements">🚧 eInjury Section — Not Profiled (29 elements)</a></li>
+          <li><a href="#-eother-section--not-profiled-22-elements" id="markdown-toc--eother-section--not-profiled-22-elements">🚧 eOther Section — Not Profiled (22 elements)</a></li>
+          <li><a href="#-ehistory-past-medical-history--no-condition-profile" id="markdown-toc--ehistory-past-medical-history--no-condition-profile">🚧 eHistory Past Medical History — No Condition Profile</a></li>
+          <li><a href="#-ehistory-medications--not-profiled" id="markdown-toc--ehistory-medications--not-profiled">🚧 eHistory Medications — Not Profiled</a></li>
+          <li><a href="#-capabilitystatement--not-defined" id="markdown-toc--capabilitystatement--not-defined">⚠ CapabilityStatement — Not Defined</a></li>
+          <li><a href="#-terminology-servers" id="markdown-toc--terminology-servers">⚠ Terminology Servers</a></li>
+          <li><a href="#-value-set-expansion" id="markdown-toc--value-set-expansion">⚠ Value Set Expansion</a></li>
+          <li><a href="#-example-instances" id="markdown-toc--example-instances">⚠ Example Instances</a></li>
+          <li><a href="#-epayment-section--partial-coverage" id="markdown-toc--epayment-section--partial-coverage">⚠ ePayment Section — Partial Coverage</a></li>
+        </ul>
+      </li>
+      <li><a href="#patient-matching" id="markdown-toc-patient-matching">Patient Matching</a></li>
+      <li><a href="#version-interoperability" id="markdown-toc-version-interoperability">Version Interoperability</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="implementation-guidance">Implementation Guidance</h1>
+
+<div class="dragon">
+
+  <p>This page describes implementation guidance for a <strong>research IG only</strong>. This content has not been validated against production EMS systems. Significant implementation decisions may need to be revisited based on real-world feedback.</p>
+
+</div>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>This page provides guidance for implementers building systems that produce or consume fhirEMSCore-conformant FHIR resources. It covers the primary use cases, bundle construction, NEMSIS-to-FHIR conversion patterns, and known limitations.</p>
+
+<hr />
+
+<h2 id="use-cases">Use Cases</h2>
+
+<h3 id="use-case-1--ems-to-emergency-department-handoff">Use Case 1 — EMS to Emergency Department Handoff</h3>
+
+<p>An EMS agency completes a PCR at the time of patient transfer. The ePCR software converts the PCR to a FHIR Bundle and sends it to the receiving ED's FHIR endpoint.</p>
+
+<p><strong>Resources involved:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">EMSComposition</code> (document bundle root)</li>
+  <li><code class="language-plaintext highlighter-rouge">EMSEncounter</code> (response details, timestamps)</li>
+  <li><code class="language-plaintext highlighter-rouge">EMSPatient</code> (demographics)</li>
+  <li><code class="language-plaintext highlighter-rouge">EMSObservationVitalSigns</code>, <code class="language-plaintext highlighter-rouge">EMSObservationBP</code>, <code class="language-plaintext highlighter-rouge">EMSObservationGCS</code> (vitals)</li>
+  <li><code class="language-plaintext highlighter-rouge">EMSCondition</code> (provider impression)</li>
+  <li><code class="language-plaintext highlighter-rouge">EMSProcedure</code> (interventions)</li>
+  <li><code class="language-plaintext highlighter-rouge">EMSMedicationAdministration</code> (medications given)</li>
+</ul>
+
+<p><strong>Pattern:</strong> FHIR Document Bundle (type <code class="language-plaintext highlighter-rouge">document</code>) with <code class="language-plaintext highlighter-rouge">EMSComposition</code> as the first entry.</p>
+
+<h3 id="use-case-2--ems-to-state-registry-submission">Use Case 2 — EMS to State Registry Submission</h3>
+
+<p>An agency submits completed PCRs to the state EMS data registry for NEMSIS reporting.</p>
+
+<p><strong>Pattern:</strong> FHIR Transaction Bundle containing all PCR resources. The state registry uses the <code class="language-plaintext highlighter-rouge">EMSComposition</code> to link resources to a single response event.</p>
+
+<h3 id="use-case-3--ems-to-hie--tefca">Use Case 3 — EMS to HIE / TEFCA</h3>
+
+<p>EMS data submitted to a Health Information Exchange for integration with the patient's longitudinal health record.</p>
+
+<p><strong>Pattern:</strong> Individual resources posted via FHIR REST API with <code class="language-plaintext highlighter-rouge">Patient</code> matching against MPI. <code class="language-plaintext highlighter-rouge">EMSEncounter</code> referenced from downstream ED and hospital encounters.</p>
+
+<h3 id="use-case-4--analytics-and-quality-reporting">Use Case 4 — Analytics and Quality Reporting</h3>
+
+<p>Aggregated, de-identified EMS PCR data used for quality measure calculation, cardiac arrest registry, or population health analytics.</p>
+
+<p><strong>Pattern:</strong> FHIR Bulk Data Export ($export) from an EMS data repository. De-identification applied per HIPAA Safe Harbor before export.</p>
+
+<hr />
+
+<h2 id="bundle-construction">Bundle Construction</h2>
+
+<h3 id="pcr-document-bundle">PCR Document Bundle</h3>
+
+<p>A complete EMS PCR is represented as a FHIR <strong>Document Bundle</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Bundle (type: document)
+├── entry[0]: EMSComposition (required — must be first)
+├── entry[1]: EMSPatient
+├── entry[2]: EMSEncounter
+├── entry[3]: EMSLocationScene
+├── entry[4]: EMSLocationDestination (if transported)
+├── entry[5..N]: EMSObservation* (one per vital sign per VitalGroup)
+├── entry[N+1..]: EMSCondition (provider impressions)
+├── entry[N+2..]: EMSProcedure (one per procedure)
+├── entry[N+3..]: EMSMedicationAdministration (one per medication)
+├── entry[N+4]: EMSConditionArrest (if arrest present)
+├── entry[N+5]: EMSObservationAirway (if airway managed)
+├── entry[N+6]: EMSAllergyIntolerance (if known allergies)
+├── entry[N+7]: EMSOrganization (agency)
+├── entry[N+8..]: EMSPractitioner (crew members)
+├── entry[N+9..]: EMSPractitionerRole (crew roles)
+├── entry[N+10]: EMSDevice (vehicle, if applicable)
+├── entry[N+11]: EMSCoverage (if billing)
+└── entry[N+12]: EMSClaim (if billing)
+</code></pre></div></div>
+
+<h3 id="multiple-vital-sign-sets-ndr-007">Multiple Vital Sign Sets (NDR-007)</h3>
+
+<p>NEMSIS groups vitals in <code class="language-plaintext highlighter-rouge">VitalGroup</code> elements (one group per assessment time). Each group produces <strong>one <code class="language-plaintext highlighter-rouge">Observation</code> per data element</strong>, all sharing the same <code class="language-plaintext highlighter-rouge">effectiveDateTime</code> and <code class="language-plaintext highlighter-rouge">encounter</code> reference:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VitalGroup (eTimes.01 = 2026-03-14T14:32:00-07:00)
+├── EMSObservationVitalSigns (HR = 98 bpm, effectiveDateTime = 14:32)
+├── EMSObservationBP (SBP=142/DBP=88, effectiveDateTime = 14:32)
+├── EMSObservationVitalSigns (SpO2 = 94%, effectiveDateTime = 14:32)
+├── EMSObservationVitalSigns (RR = 20, effectiveDateTime = 14:32)
+└── EMSObservationGCS (panel, effectiveDateTime = 14:32)
+    ├── hasMember → EMSObservationGCS (Eye=3, 9267-6)
+    ├── hasMember → EMSObservationGCS (Verbal=4, 9268-4)
+    └── hasMember → EMSObservationGCS (Motor=5, 9266-8)
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="nemsis-to-fhir-conversion-patterns">NEMSIS-to-FHIR Conversion Patterns</h2>
+
+<h3 id="not-values-nv--ndr-001">Not Values (NV) — NDR-001</h3>
+
+<p>NEMSIS <code class="language-plaintext highlighter-rouge">xsi:nil="true"</code> with an NV attribute:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS NV Code</th>
+      <th>FHIR Representation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotRecorded</code></td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason = #not-asked</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotApplicable</code></td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason = #not-applicable</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotReporting</code></td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason = #unknown</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> is not available on the element (e.g., a complex extension sub-field), use <code class="language-plaintext highlighter-rouge">ext-ems-not-value</code> extension carrying the NV code.</p>
+
+<p><strong>Nillable elements:</strong> Simply omit the element from the FHIR resource when the value is nil (no null/empty string).</p>
+
+<h3 id="pertinent-negatives-pn--ndr-002">Pertinent Negatives (PN) — NDR-002</h3>
+
+<p>NEMSIS PN codes document clinically significant absence of a finding:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS PN Code</th>
+      <th>Meaning</th>
+      <th>FHIR Representation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.ExamFindingNotPresent</code></td>
+      <td>Finding actively assessed and absent</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> on the element</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.Refused</code></td>
+      <td>Patient refused assessment</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> on the element</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.UnableToComplete</code></td>
+      <td>Could not perform assessment</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> on the element</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.DeniesSymptom</code></td>
+      <td>Patient denies the symptom</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> on Condition</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.Unresponsive</code></td>
+      <td>Patient unresponsive</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> on the element</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="state-and-county-codes">State and County Codes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Type</th>
+      <th>FHIR Mapping</th>
+      <th>Conversion Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ANSIStateCode</code> (2-digit numeric)</td>
+      <td><code class="language-plaintext highlighter-rouge">address.state</code></td>
+      <td>Convert to 2-letter USPS abbreviation per NDR-004</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ANSICountyCode</code> (5-digit FIPS)</td>
+      <td><code class="language-plaintext highlighter-rouge">address.district</code></td>
+      <td>Store as 5-digit FIPS string (e.g., "04013")</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CityGnisCode</code> (GNIS numeric)</td>
+      <td><code class="language-plaintext highlighter-rouge">address.city</code></td>
+      <td>Look up plain text city name from GNIS database per NDR-003</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="timestamps-etimes--ndr-005">Timestamps (eTimes) — NDR-005</h3>
+
+<p>NEMSIS eTimes contains 19 discrete timestamps. Only two map directly to standard FHIR Encounter fields:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eTimes.03 (Unit Notified by Dispatch)</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.period.start</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.12 (Patient Transfer of Care)</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.period.end</code></td>
+    </tr>
+    <tr>
+      <td>All other eTimes elements</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times</code> complex extension sub-elements</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="glasgow-coma-scale-gcs--panel-pattern">Glasgow Coma Scale (GCS) — Panel Pattern</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EMSObservationGCS (code: LOINC 9269-2 — Total GCS)
+  hasMember[0] → EMSObservationGCS (code: LOINC 9267-6 — Eye, valueInteger: 3)
+  hasMember[1] → EMSObservationGCS (code: LOINC 9268-4 — Verbal, valueInteger: 4)
+  hasMember[2] → EMSObservationGCS (code: LOINC 9266-8 — Motor, valueInteger: 5)
+  component[gcsQualifier] → CodeableConcept from EMSGCSQualifierVS
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="known-limitations-and-incomplete-items">Known Limitations and Incomplete Items</h2>
+
+<div class="stu-note">
+
+  <p>The following sections are incomplete or have known issues. Implementers must not use these areas without additional validation work.</p>
+
+</div>
+
+<h3 id="-ig-publisher-validation-not-run">❌ IG Publisher Validation Not Run</h3>
+
+<p>SUSHI compilation passes (0 errors, 0 warnings) but <strong>IG Publisher full validation has not been executed</strong>. Known categories of additional errors that IG Publisher may report:</p>
+
+<ul>
+  <li>Unresolvable value set URLs (NEMSIS value sets not registered in terminology.hl7.org)</li>
+  <li>Missing FHIRPath invariant definitions</li>
+  <li>Snapshot generation warnings on complex extension slicing</li>
+  <li>Broken internal cross-references in narrative pages</li>
+</ul>
+
+<h3 id="-einjury-section--not-profiled-29-elements">🚧 eInjury Section — Not Profiled (29 elements)</h3>
+
+<p>NEMSIS eInjury covers trauma-specific data including injury cause, mechanism, intent, body region, and safety device use. No FHIR profile has been created. Planned mapping:</p>
+
+<ul>
+  <li>Injury cause/mechanism → <code class="language-plaintext highlighter-rouge">Condition</code> with ICD-10-CM external cause codes (S/T/V/W/X/Y chapters)</li>
+  <li>Body region → <code class="language-plaintext highlighter-rouge">Condition.bodySite</code> with SNOMED CT</li>
+  <li>Safety device use → Extension on <code class="language-plaintext highlighter-rouge">Condition</code> or <code class="language-plaintext highlighter-rouge">Encounter</code></li>
+</ul>
+
+<p><strong>Workaround:</strong> Use base FHIR R4 <code class="language-plaintext highlighter-rouge">Condition</code> resource for eInjury data until <code class="language-plaintext highlighter-rouge">ems-condition-injury</code> is defined in v0.2.0.</p>
+
+<h3 id="-eother-section--not-profiled-22-elements">🚧 eOther Section — Not Profiled (22 elements)</h3>
+
+<p>NEMSIS eOther covers cardiac rhythm (ECG), stroke assessment, reperfusion checklist, and other assessments not fitting other sections. Partial coverage exists via <code class="language-plaintext highlighter-rouge">EMSObservationVitalSigns</code> (which includes AVPU, pain, cardiac rhythm, stroke scale), but no dedicated eOther profile exists.</p>
+
+<p><strong>Workaround:</strong> Use <code class="language-plaintext highlighter-rouge">EMSObservationVitalSigns</code> or base <code class="language-plaintext highlighter-rouge">Observation</code> for eOther elements pending v0.2.0.</p>
+
+<h3 id="-ehistory-past-medical-history--no-condition-profile">🚧 eHistory Past Medical History — No Condition Profile</h3>
+
+<p><code class="language-plaintext highlighter-rouge">EMSCondition</code> (derived from <code class="language-plaintext highlighter-rouge">us-core-condition-encounter-diagnosis</code>) is constrained to encounter diagnoses only. A separate profile derived from <code class="language-plaintext highlighter-rouge">us-core-condition-problems-health-concerns</code> is needed for eHistory.08 (Past Medical History) and eHistory.09 (Medical History Obtained From).</p>
+
+<p><strong>Workaround:</strong> Use <code class="language-plaintext highlighter-rouge">us-core-condition-problems-health-concerns</code> directly for past medical history until a dedicated profile is defined.</p>
+
+<h3 id="-ehistory-medications--not-profiled">🚧 eHistory Medications — Not Profiled</h3>
+
+<p>NEMSIS eHistory.01–05 covers prior medication use (home medications). No <code class="language-plaintext highlighter-rouge">MedicationStatement</code> profile has been defined. The base FHIR R4 <code class="language-plaintext highlighter-rouge">MedicationStatement</code> resource (no US Core parent profile) would be the appropriate target.</p>
+
+<p><strong>Workaround:</strong> Use base FHIR R4 <code class="language-plaintext highlighter-rouge">MedicationStatement</code> pending v0.2.0.</p>
+
+<h3 id="-capabilitystatement--not-defined">⚠ CapabilityStatement — Not Defined</h3>
+
+<p>No <code class="language-plaintext highlighter-rouge">CapabilityStatement</code> has been defined for this IG. A production IG requires at minimum:</p>
+<ul>
+  <li>EMS Sender CapabilityStatement (ePCR system posting PCR bundles)</li>
+  <li>EMS Receiver CapabilityStatement (receiving system accepting PCR data)</li>
+  <li>Query Consumer CapabilityStatement (HIE/analytics querying EMS data)</li>
+</ul>
+
+<h3 id="-terminology-servers">⚠ Terminology Servers</h3>
+
+<p>NEMSIS-defined code systems in this IG use the canonical URL pattern <code class="language-plaintext highlighter-rouge">https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-*</code>. These are <strong>not registered</strong> with any public terminology server. FHIR validators and terminology operations will not be able to resolve them without a local terminology server configured to serve these code systems.</p>
+
+<h3 id="-value-set-expansion">⚠ Value Set Expansion</h3>
+
+<p>Many value sets in this IG include all enumeration codes from NEMSIS 3.5.1 source files. These value sets have not been:</p>
+<ul>
+  <li>Validated against the normative NEMSIS XSD schemas</li>
+  <li>Cross-checked against NEMSIS version 3.5.1 errata</li>
+  <li>Reviewed by NEMSIS TAC or domain experts</li>
+</ul>
+
+<h3 id="-example-instances">⚠ Example Instances</h3>
+
+<p>The 30 example instances represent a synthetic MVA/cardiac arrest scenario. They:</p>
+<ul>
+  <li>Have not been clinically reviewed</li>
+  <li>May not represent valid real-world EMS documentation patterns</li>
+  <li>Should not be used to infer clinical decision rules or training data</li>
+</ul>
+
+<h3 id="-epayment-section--partial-coverage">⚠ ePayment Section — Partial Coverage</h3>
+
+<p>The ePayment section (59 elements) is the largest in NEMSIS and covers CMS ambulance billing. The <code class="language-plaintext highlighter-rouge">ems-claim</code> and <code class="language-plaintext highlighter-rouge">ems-coverage</code> profiles provide a structural foundation but:</p>
+<ul>
+  <li>CMS ambulance claim adjudication rules are not encoded as invariants</li>
+  <li>Medicare/Medicaid-specific billing requirements are not validated</li>
+  <li>HCPCS ambulance codes (A0425–A0999) are referenced but not constrained</li>
+  <li>The profiles have not been reviewed against CMS Claims Processing Manual Chapter 15</li>
+</ul>
+
+<hr />
+
+<h2 id="patient-matching">Patient Matching</h2>
+
+<p>When submitting EMS PCR data to an HIE or hospital system, patient matching is critical. Recommended strategy:</p>
+
+<ol>
+  <li><strong>First:</strong> Attempt NPI/MRN match if the patient is known to the receiving system</li>
+  <li><strong>Second:</strong> Use <code class="language-plaintext highlighter-rouge">Patient.identifier[ssn]</code> (tokenized) for matching — never plain-text SSN</li>
+  <li><strong>Third:</strong> Use demographic matching (name + DOB + address) via MPI</li>
+  <li><strong>Fourth:</strong> If no match found, create a new patient record and flag for manual review</li>
+</ol>
+
+<p>NEMSIS ePatient.01 (EMS Patient ID) should be preserved as <code class="language-plaintext highlighter-rouge">Patient.identifier[emsPatientId]</code> to allow reverse lookup from the EMS system.</p>
+
+<hr />
+
+<h2 id="version-interoperability">Version Interoperability</h2>
+
+<p>This IG targets FHIR R4 (4.0.1). It has not been adapted for FHIR R4B or FHIR R5. Key differences that would affect migration:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>R4</th>
+      <th>R5 Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.medication[x]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">CodeableConcept</code> or <code class="language-plaintext highlighter-rouge">Reference</code></td>
+      <td>R5 uses <code class="language-plaintext highlighter-rouge">CodeableReference</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.value[x]</code> typing</td>
+      <td>Standard R4 types</td>
+      <td>R5 adds <code class="language-plaintext highlighter-rouge">Attachment</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Claim</code> resource</td>
+      <td>R4 structure</td>
+      <td>R5 has breaking changes to financial resources</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Coverage</code> resource</td>
+      <td>R4 structure</td>
+      <td>R5 restructured</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

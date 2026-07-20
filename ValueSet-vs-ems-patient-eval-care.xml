@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-patient-eval-care"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-patient-eval-care</b></p><a name="vs-ems-patient-eval-care"> </a><a name="hcvs-ems-patient-eval-care"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4228001">4228001</a></td><td>Patient Evaluated and Care Provided</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4228003">4228003</a></td><td>Patient Evaluated and Refused Care</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4228005">4228005</a></td><td>Patient Evaluated, No Care Required</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4228007">4228007</a></td><td>Patient Refused Evaluation/Care</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4228009">4228009</a></td><td>Patient Support Services Provided</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-eval-care"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.93"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSPatientEvalCareVS"/>
+  <title value="EMS Patient Evaluation/Care"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eDisposition.28 - What evaluation and care was provided to the patient."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="4228001"/>
+        <display value="Patient Evaluated and Care Provided"/>
+      </concept>
+      <concept>
+        <code value="4228003"/>
+        <display value="Patient Evaluated and Refused Care"/>
+      </concept>
+      <concept>
+        <code value="4228005"/>
+        <display value="Patient Evaluated, No Care Required"/>
+      </concept>
+      <concept>
+        <code value="4228007"/>
+        <display value="Patient Refused Evaluation/Care"/>
+      </concept>
+      <concept>
+        <code value="4228009"/>
+        <display value="Patient Support Services Provided"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

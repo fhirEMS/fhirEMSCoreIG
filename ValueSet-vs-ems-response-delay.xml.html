@@ -1,0 +1,386 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EMS Type of Response Delay - XML Representation - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.230"}
+    h3,h4,h5,h6{--heading-prefix:"17.230"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMS Type of Response Delay</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-vs-ems-response-delay.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-response-delay.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-response-delay.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EMS Type of Response Delay - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-vs-ems-response-delay.xml" no-download="true">Raw xml</a> | <a href="ValueSet-vs-ems-response-delay.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;vs-ems-response-delay&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet vs-ems-response-delay&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;vs-ems-response-delay&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcvs-ems-response-delay&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html&quot;&gt;&lt;code&gt;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification&quot;&gt; version &amp;#x1F4E6;0.2.0&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209001&quot;&gt;2209001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Crowd&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209003&quot;&gt;2209003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Directions/Unable to Locate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209005&quot;&gt;2209005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Distance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209007&quot;&gt;2209007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diversion (Different Incident)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209009&quot;&gt;2209009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HazMat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209011&quot;&gt;2209011&lt;/a&gt;&lt;/td&gt;&lt;td&gt;None/No Delay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209013&quot;&gt;2209013&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209015&quot;&gt;2209015&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rendezvous Transport Unavailable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209017&quot;&gt;2209017&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Route Obstruction (e.g., Train)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209019&quot;&gt;2209019&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Scene Safety (Not Secure for EMS)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209021&quot;&gt;2209021&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Staff Delay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209023&quot;&gt;2209023&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Traffic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209025&quot;&gt;2209025&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vehicle Crash Involving this Unit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209027&quot;&gt;2209027&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vehicle Failure of this Unit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209029&quot;&gt;2209029&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Weather&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209031&quot;&gt;2209031&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mechanical Issue-Unit, Equipment, etc.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209033&quot;&gt;2209033&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Flight Planning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209035&quot;&gt;2209035&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Out of Service Area Response&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-delay&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:ietf:rfc:3986&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>
+           <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:oid:2.25.219926138944530828037824748808947630693.2.105&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.identifier">identifier</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.2.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EMSResponseDelayVS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EMS Type of Response Delay&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-07-19T20:45:43-04:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhirEMSCore Research Project (AI-Generated — Unofficial)&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhirEMSCore Research Project (AI-Generated — Unofficial)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://github.com/fhirEMS/fhirEMSCoreIG&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhirEMSCore Research Project&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://github.com/fhirEMS/fhirEMSCoreIG&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;NEMSIS eResponse.09 - Types of response delay en route to scene.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;US&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;United States of America&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Crowd&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Directions/Unable to Locate&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209005&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Distance&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diversion (Different Incident)&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HazMat&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209011&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;None/No Delay&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209013&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Other&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209015&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rendezvous Transport Unavailable&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209017&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Route Obstruction (e.g., Train)&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209019&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Scene Safety (Not Secure for EMS)&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209021&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Staff Delay&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209023&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Traffic&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209025&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vehicle Crash Involving this Unit&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209027&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vehicle Failure of this Unit&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209029&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Weather&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209031&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mechanical Issue-Unit, Equipment, etc.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209033&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Flight Planning&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;2209035&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Out of Service Area Response&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

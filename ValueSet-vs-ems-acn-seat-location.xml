@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-acn-seat-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-acn-seat-location</b></p><a name="vs-ems-acn-seat-location"> </a><a name="hcvs-ems-acn-seat-location"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-injury.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926001">2926001</a></td><td>Driver Front Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926003">2926003</a></td><td>Front Row Middle Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926005">2926005</a></td><td>Passenger Front Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926007">2926007</a></td><td>Second Row Left Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926009">2926009</a></td><td>Second Row Middle Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926011">2926011</a></td><td>Second Row Right Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926013">2926013</a></td><td>Third Row Left Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926015">2926015</a></td><td>Third Row Middle Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926017">2926017</a></td><td>Third Row Right Seat</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acn-seat-location"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.1"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSACNSeatLocationVS"/>
+  <title value="EMS ACN Vehicle Seat Location VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Automated Collision Notification (ACN) vehicle seat location of the patient (eInjury.26)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury"/>
+      <concept>
+        <code value="2926001"/>
+        <display value="Driver Front Seat"/>
+      </concept>
+      <concept>
+        <code value="2926003"/>
+        <display value="Front Row Middle Seat"/>
+      </concept>
+      <concept>
+        <code value="2926005"/>
+        <display value="Passenger Front Seat"/>
+      </concept>
+      <concept>
+        <code value="2926007"/>
+        <display value="Second Row Left Seat"/>
+      </concept>
+      <concept>
+        <code value="2926009"/>
+        <display value="Second Row Middle Seat"/>
+      </concept>
+      <concept>
+        <code value="2926011"/>
+        <display value="Second Row Right Seat"/>
+      </concept>
+      <concept>
+        <code value="2926013"/>
+        <display value="Third Row Left Seat"/>
+      </concept>
+      <concept>
+        <code value="2926015"/>
+        <display value="Third Row Middle Seat"/>
+      </concept>
+      <concept>
+        <code value="2926017"/>
+        <display value="Third Row Right Seat"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

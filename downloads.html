@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Downloads - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Downloads</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Downloads</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="downloads">Downloads</h1>
+
+<p>This page provides access to the downloadable artifacts for fhirEMSCore v0.1.0.</p>
+
+<hr />
+
+<h2 id="implementation-guide-package">Implementation Guide Package</h2>
+
+<p>The complete fhirEMSCore NPM package, for use with FHIR tooling, validators, and SUSHI-based IGs that depend on fhirEMSCore.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artifact</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhirems.emscore-0.1.0.tgz</code></td>
+      <td>Full IG NPM package (FHIR JSON resources)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">full-ig.zip</code></td>
+      <td>Complete IG including HTML, narrative, and all artifacts</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitions.json.zip</code></td>
+      <td>All StructureDefinitions, ValueSets, and CodeSystems in JSON</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">definitions.xml.zip</code></td>
+      <td>All StructureDefinitions, ValueSets, and CodeSystems in XML</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">examples.json.zip</code></td>
+      <td>All example instances in JSON</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">examples.xml.zip</code></td>
+      <td>All example instances in XML</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="individual-artifact-downloads">Individual Artifact Downloads</h2>
+
+<p>After IG Publisher generation, individual artifacts are available at the following URL patterns:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[IG base URL]/StructureDefinition-[id].json
+[IG base URL]/ValueSet-[id].json
+[IG base URL]/CodeSystem-[id].json
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="profiles">Profiles</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Id</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMS Composition</td>
+      <td>ems-composition</td>
+      <td>StructureDefinition-ems-composition.json</td>
+    </tr>
+    <tr>
+      <td>EMS Patient</td>
+      <td>ems-patient</td>
+      <td>StructureDefinition-ems-patient.json</td>
+    </tr>
+    <tr>
+      <td>EMS Encounter</td>
+      <td>ems-encounter</td>
+      <td>StructureDefinition-ems-encounter.json</td>
+    </tr>
+    <tr>
+      <td>EMS Location (Scene)</td>
+      <td>ems-location-scene</td>
+      <td>StructureDefinition-ems-location-scene.json</td>
+    </tr>
+    <tr>
+      <td>EMS Location (Destination)</td>
+      <td>ems-location-destination</td>
+      <td>StructureDefinition-ems-location-destination.json</td>
+    </tr>
+    <tr>
+      <td>EMS Condition</td>
+      <td>ems-condition</td>
+      <td>StructureDefinition-ems-condition.json</td>
+    </tr>
+    <tr>
+      <td>EMS Condition (Arrest)</td>
+      <td>ems-condition-arrest</td>
+      <td>StructureDefinition-ems-condition-arrest.json</td>
+    </tr>
+    <tr>
+      <td>EMS Observation (Vital Signs)</td>
+      <td>ems-observation-vitalsigns</td>
+      <td>StructureDefinition-ems-observation-vitalsigns.json</td>
+    </tr>
+    <tr>
+      <td>EMS Observation (Blood Pressure)</td>
+      <td>ems-observation-bp</td>
+      <td>StructureDefinition-ems-observation-bp.json</td>
+    </tr>
+    <tr>
+      <td>EMS Observation (GCS)</td>
+      <td>ems-observation-gcs</td>
+      <td>StructureDefinition-ems-observation-gcs.json</td>
+    </tr>
+    <tr>
+      <td>EMS Observation (Exam)</td>
+      <td>ems-observation-exam</td>
+      <td>StructureDefinition-ems-observation-exam.json</td>
+    </tr>
+    <tr>
+      <td>EMS Observation (Airway)</td>
+      <td>ems-observation-airway</td>
+      <td>StructureDefinition-ems-observation-airway.json</td>
+    </tr>
+    <tr>
+      <td>EMS Observation (Labs)</td>
+      <td>ems-observation-labs</td>
+      <td>StructureDefinition-ems-observation-labs.json</td>
+    </tr>
+    <tr>
+      <td>EMS Observation (Outcome)</td>
+      <td>ems-observation-outcome</td>
+      <td>StructureDefinition-ems-observation-outcome.json</td>
+    </tr>
+    <tr>
+      <td>EMS Procedure</td>
+      <td>ems-procedure</td>
+      <td>StructureDefinition-ems-procedure.json</td>
+    </tr>
+    <tr>
+      <td>EMS Medication Administration</td>
+      <td>ems-medicationadministration</td>
+      <td>StructureDefinition-ems-medicationadministration.json</td>
+    </tr>
+    <tr>
+      <td>EMS AllergyIntolerance</td>
+      <td>ems-allergyintolerance</td>
+      <td>StructureDefinition-ems-allergyintolerance.json</td>
+    </tr>
+    <tr>
+      <td>EMS Organization</td>
+      <td>ems-organization</td>
+      <td>StructureDefinition-ems-organization.json</td>
+    </tr>
+    <tr>
+      <td>EMS Practitioner</td>
+      <td>ems-practitioner</td>
+      <td>StructureDefinition-ems-practitioner.json</td>
+    </tr>
+    <tr>
+      <td>EMS PractitionerRole</td>
+      <td>ems-practitionerrole</td>
+      <td>StructureDefinition-ems-practitionerrole.json</td>
+    </tr>
+    <tr>
+      <td>EMS Device (Vehicle)</td>
+      <td>ems-device-vehicle</td>
+      <td>StructureDefinition-ems-device-vehicle.json</td>
+    </tr>
+    <tr>
+      <td>EMS Coverage</td>
+      <td>ems-coverage</td>
+      <td>StructureDefinition-ems-coverage.json</td>
+    </tr>
+    <tr>
+      <td>EMS Claim</td>
+      <td>ems-claim</td>
+      <td>StructureDefinition-ems-claim.json</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="extensions">Extensions</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension</th>
+      <th>Id</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMS Times</td>
+      <td>ext-ems-times</td>
+      <td>StructureDefinition-ext-ems-times.json</td>
+    </tr>
+    <tr>
+      <td>EMS Response Mode</td>
+      <td>ext-ems-response-mode</td>
+      <td>StructureDefinition-ext-ems-response-mode.json</td>
+    </tr>
+    <tr>
+      <td>EMS Dispatch Info</td>
+      <td>ext-ems-dispatch-info</td>
+      <td>StructureDefinition-ext-ems-dispatch-info.json</td>
+    </tr>
+    <tr>
+      <td>EMS Arrest Context</td>
+      <td>ext-ems-arrest-context</td>
+      <td>StructureDefinition-ext-ems-arrest-context.json</td>
+    </tr>
+    <tr>
+      <td>EMS Airway Context</td>
+      <td>ext-ems-airway-context</td>
+      <td>StructureDefinition-ext-ems-airway-context.json</td>
+    </tr>
+    <tr>
+      <td>EMS Not Value</td>
+      <td>ext-ems-not-value</td>
+      <td>StructureDefinition-ext-ems-not-value.json</td>
+    </tr>
+    <tr>
+      <td>EMS Pertinent Negative</td>
+      <td>ext-ems-pertinent-negative</td>
+      <td>StructureDefinition-ext-ems-pertinent-negative.json</td>
+    </tr>
+    <tr>
+      <td><em>(See Extensions page for complete list)</em></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="source-files">Source Files</h2>
+
+<p>The FSH source files for this IG are available in the project repository.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Directory</th>
+      <th>Contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input/fsh/profiles/</code></td>
+      <td>All profile FSH files</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input/fsh/extensions/</code></td>
+      <td>All extension FSH files</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input/fsh/valuesets/</code></td>
+      <td>All value set FSH files</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input/fsh/codesystems/</code></td>
+      <td>All code system FSH files</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input/fsh/examples/</code></td>
+      <td>All example instance FSH files</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input/fsh/instances/</code></td>
+      <td>CapabilityStatement and other instances</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code></td>
+      <td>Canonical URL aliases</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="nemsis-reference-files">NEMSIS Reference Files</h2>
+
+<p>For reference, the NEMSIS 3.5.1.251001CP2 specification files used to build this IG include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">EMSDataSet_v3.xsd</code> — Master EMS PCR schema</li>
+  <li><code class="language-plaintext highlighter-rouge">ePayment_v3.xsd</code> — Payment section schema</li>
+  <li><code class="language-plaintext highlighter-rouge">commonTypes_v3.xsd</code> — Shared data types</li>
+  <li><code class="language-plaintext highlighter-rouge">Combined_ElementDetails_Full.txt</code> — All 657 element definitions</li>
+  <li><code class="language-plaintext highlighter-rouge">Combined_ElementEnumerations.txt</code> — All 3,372 enumeration codes</li>
+</ul>
+
+<p>These files are maintained by <a href="https://nemsis.org">NEMSIS Technology Assistance Center (TAC)</a> at the University of Utah.</p>
+
+<hr />
+
+<h2 id="validator">Validator</h2>
+
+<p>To validate resources against fhirEMSCore profiles, download the FHIR Validator:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Download the HL7 FHIR Validator</span>
+wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+
+<span class="c"># Validate a resource</span>
+java <span class="nt">-jar</span> validator_cli.jar <span class="o">[</span>resource.json] <span class="se">\</span>
+  <span class="nt">-version</span> 4.0.1 <span class="se">\</span>
+  <span class="nt">-ig</span> hl7.fhir.us.core#6.1.0 <span class="se">\</span>
+  <span class="nt">-ig</span> fhirems.emscore#0.1.0
+</code></pre></div></div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,1873 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-nemsis-exam",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-exam</b></p><a name=\"cs-nemsis-exam\"> </a><a name=\"hccs-nemsis-exam\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">3502001<a name=\"cs-nemsis-exam-3502001\"> </a></td><td>Blue</td></tr><tr><td style=\"white-space:nowrap\">3502003<a name=\"cs-nemsis-exam-3502003\"> </a></td><td>Green</td></tr><tr><td style=\"white-space:nowrap\">3502005<a name=\"cs-nemsis-exam-3502005\"> </a></td><td>Grey</td></tr><tr><td style=\"white-space:nowrap\">3502007<a name=\"cs-nemsis-exam-3502007\"> </a></td><td>Orange</td></tr><tr><td style=\"white-space:nowrap\">3502009<a name=\"cs-nemsis-exam-3502009\"> </a></td><td>Pink</td></tr><tr><td style=\"white-space:nowrap\">3502011<a name=\"cs-nemsis-exam-3502011\"> </a></td><td>Purple</td></tr><tr><td style=\"white-space:nowrap\">3502013<a name=\"cs-nemsis-exam-3502013\"> </a></td><td>Red</td></tr><tr><td style=\"white-space:nowrap\">3502015<a name=\"cs-nemsis-exam-3502015\"> </a></td><td>White</td></tr><tr><td style=\"white-space:nowrap\">3502017<a name=\"cs-nemsis-exam-3502017\"> </a></td><td>Yellow</td></tr><tr><td style=\"white-space:nowrap\">3504001<a name=\"cs-nemsis-exam-3504001\"> </a></td><td>Clammy</td></tr><tr><td style=\"white-space:nowrap\">3504003<a name=\"cs-nemsis-exam-3504003\"> </a></td><td>Cold</td></tr><tr><td style=\"white-space:nowrap\">3504005<a name=\"cs-nemsis-exam-3504005\"> </a></td><td>Cyanotic</td></tr><tr><td style=\"white-space:nowrap\">3504007<a name=\"cs-nemsis-exam-3504007\"> </a></td><td>Diaphoretic</td></tr><tr><td style=\"white-space:nowrap\">3504009<a name=\"cs-nemsis-exam-3504009\"> </a></td><td>Dry</td></tr><tr><td style=\"white-space:nowrap\">3504011<a name=\"cs-nemsis-exam-3504011\"> </a></td><td>Flushed</td></tr><tr><td style=\"white-space:nowrap\">3504013<a name=\"cs-nemsis-exam-3504013\"> </a></td><td>Hot</td></tr><tr><td style=\"white-space:nowrap\">3504015<a name=\"cs-nemsis-exam-3504015\"> </a></td><td>Jaundiced</td></tr><tr><td style=\"white-space:nowrap\">3504017<a name=\"cs-nemsis-exam-3504017\"> </a></td><td>Lividity</td></tr><tr><td style=\"white-space:nowrap\">3504019<a name=\"cs-nemsis-exam-3504019\"> </a></td><td>Mottled</td></tr><tr><td style=\"white-space:nowrap\">3504021<a name=\"cs-nemsis-exam-3504021\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3504023<a name=\"cs-nemsis-exam-3504023\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3504025<a name=\"cs-nemsis-exam-3504025\"> </a></td><td>Pale</td></tr><tr><td style=\"white-space:nowrap\">3504027<a name=\"cs-nemsis-exam-3504027\"> </a></td><td>Poor Turgor</td></tr><tr><td style=\"white-space:nowrap\">3504029<a name=\"cs-nemsis-exam-3504029\"> </a></td><td>Red (Erythematous)</td></tr><tr><td style=\"white-space:nowrap\">3504031<a name=\"cs-nemsis-exam-3504031\"> </a></td><td>Tenting</td></tr><tr><td style=\"white-space:nowrap\">3504033<a name=\"cs-nemsis-exam-3504033\"> </a></td><td>Warm</td></tr><tr><td style=\"white-space:nowrap\">3504035<a name=\"cs-nemsis-exam-3504035\"> </a></td><td>Capillary Nail Bed Refill less than 2 seconds</td></tr><tr><td style=\"white-space:nowrap\">3504037<a name=\"cs-nemsis-exam-3504037\"> </a></td><td>Capillary Nail Bed Refill 2-4 seconds</td></tr><tr><td style=\"white-space:nowrap\">3504039<a name=\"cs-nemsis-exam-3504039\"> </a></td><td>Capillary Nail Bed Refill more than 4 seconds</td></tr><tr><td style=\"white-space:nowrap\">3505001<a name=\"cs-nemsis-exam-3505001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3505003<a name=\"cs-nemsis-exam-3505003\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3505005<a name=\"cs-nemsis-exam-3505005\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3505007<a name=\"cs-nemsis-exam-3505007\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3505009<a name=\"cs-nemsis-exam-3505009\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3505011<a name=\"cs-nemsis-exam-3505011\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3505013<a name=\"cs-nemsis-exam-3505013\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3505015<a name=\"cs-nemsis-exam-3505015\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3505017<a name=\"cs-nemsis-exam-3505017\"> </a></td><td>Decapitation</td></tr><tr><td style=\"white-space:nowrap\">3505019<a name=\"cs-nemsis-exam-3505019\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3505021<a name=\"cs-nemsis-exam-3505021\"> </a></td><td>Drainage</td></tr><tr><td style=\"white-space:nowrap\">3505023<a name=\"cs-nemsis-exam-3505023\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3505029<a name=\"cs-nemsis-exam-3505029\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3505031<a name=\"cs-nemsis-exam-3505031\"> </a></td><td>Mass/Lesion</td></tr><tr><td style=\"white-space:nowrap\">3505033<a name=\"cs-nemsis-exam-3505033\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3505035<a name=\"cs-nemsis-exam-3505035\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3505037<a name=\"cs-nemsis-exam-3505037\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3505039<a name=\"cs-nemsis-exam-3505039\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3505045<a name=\"cs-nemsis-exam-3505045\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3505047<a name=\"cs-nemsis-exam-3505047\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3505049<a name=\"cs-nemsis-exam-3505049\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3505051<a name=\"cs-nemsis-exam-3505051\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3505053<a name=\"cs-nemsis-exam-3505053\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3506001<a name=\"cs-nemsis-exam-3506001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3506003<a name=\"cs-nemsis-exam-3506003\"> </a></td><td>Asymmetric Smile or Droop</td></tr><tr><td style=\"white-space:nowrap\">3506005<a name=\"cs-nemsis-exam-3506005\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3506007<a name=\"cs-nemsis-exam-3506007\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3506009<a name=\"cs-nemsis-exam-3506009\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3506011<a name=\"cs-nemsis-exam-3506011\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3506013<a name=\"cs-nemsis-exam-3506013\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3506015<a name=\"cs-nemsis-exam-3506015\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3506017<a name=\"cs-nemsis-exam-3506017\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3506021<a name=\"cs-nemsis-exam-3506021\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3506023<a name=\"cs-nemsis-exam-3506023\"> </a></td><td>Drainage</td></tr><tr><td style=\"white-space:nowrap\">3506025<a name=\"cs-nemsis-exam-3506025\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3506031<a name=\"cs-nemsis-exam-3506031\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3506033<a name=\"cs-nemsis-exam-3506033\"> </a></td><td>Mass/Lesion</td></tr><tr><td style=\"white-space:nowrap\">3506035<a name=\"cs-nemsis-exam-3506035\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3506037<a name=\"cs-nemsis-exam-3506037\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3506039<a name=\"cs-nemsis-exam-3506039\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3506041<a name=\"cs-nemsis-exam-3506041\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3506047<a name=\"cs-nemsis-exam-3506047\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3506049<a name=\"cs-nemsis-exam-3506049\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3506051<a name=\"cs-nemsis-exam-3506051\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3506053<a name=\"cs-nemsis-exam-3506053\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3506055<a name=\"cs-nemsis-exam-3506055\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3507001<a name=\"cs-nemsis-exam-3507001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3507003<a name=\"cs-nemsis-exam-3507003\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3507005<a name=\"cs-nemsis-exam-3507005\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3507007<a name=\"cs-nemsis-exam-3507007\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3507009<a name=\"cs-nemsis-exam-3507009\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3507011<a name=\"cs-nemsis-exam-3507011\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3507013<a name=\"cs-nemsis-exam-3507013\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3507015<a name=\"cs-nemsis-exam-3507015\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3507017<a name=\"cs-nemsis-exam-3507017\"> </a></td><td>Decapitation</td></tr><tr><td style=\"white-space:nowrap\">3507019<a name=\"cs-nemsis-exam-3507019\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3507025<a name=\"cs-nemsis-exam-3507025\"> </a></td><td>JVD</td></tr><tr><td style=\"white-space:nowrap\">3507027<a name=\"cs-nemsis-exam-3507027\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3507029<a name=\"cs-nemsis-exam-3507029\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3507031<a name=\"cs-nemsis-exam-3507031\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3507033<a name=\"cs-nemsis-exam-3507033\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3507035<a name=\"cs-nemsis-exam-3507035\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3507037<a name=\"cs-nemsis-exam-3507037\"> </a></td><td>Stridor</td></tr><tr><td style=\"white-space:nowrap\">3507039<a name=\"cs-nemsis-exam-3507039\"> </a></td><td>Subcutaneous Air</td></tr><tr><td style=\"white-space:nowrap\">3507045<a name=\"cs-nemsis-exam-3507045\"> </a></td><td>Tracheal Deviation-Left</td></tr><tr><td style=\"white-space:nowrap\">3507047<a name=\"cs-nemsis-exam-3507047\"> </a></td><td>Tracheal Deviation-Right</td></tr><tr><td style=\"white-space:nowrap\">3507049<a name=\"cs-nemsis-exam-3507049\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3507051<a name=\"cs-nemsis-exam-3507051\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3507053<a name=\"cs-nemsis-exam-3507053\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3507055<a name=\"cs-nemsis-exam-3507055\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3507057<a name=\"cs-nemsis-exam-3507057\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3507059<a name=\"cs-nemsis-exam-3507059\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3509001<a name=\"cs-nemsis-exam-3509001\"> </a></td><td>Clicks</td></tr><tr><td style=\"white-space:nowrap\">3509003<a name=\"cs-nemsis-exam-3509003\"> </a></td><td>Heart Sounds Decreased</td></tr><tr><td style=\"white-space:nowrap\">3509005<a name=\"cs-nemsis-exam-3509005\"> </a></td><td>Murmur-Diastolic</td></tr><tr><td style=\"white-space:nowrap\">3509007<a name=\"cs-nemsis-exam-3509007\"> </a></td><td>Murmur-Systolic</td></tr><tr><td style=\"white-space:nowrap\">3509009<a name=\"cs-nemsis-exam-3509009\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3509011<a name=\"cs-nemsis-exam-3509011\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3509013<a name=\"cs-nemsis-exam-3509013\"> </a></td><td>Rubs</td></tr><tr><td style=\"white-space:nowrap\">3509015<a name=\"cs-nemsis-exam-3509015\"> </a></td><td>S1</td></tr><tr><td style=\"white-space:nowrap\">3509017<a name=\"cs-nemsis-exam-3509017\"> </a></td><td>S2</td></tr><tr><td style=\"white-space:nowrap\">3509019<a name=\"cs-nemsis-exam-3509019\"> </a></td><td>S3</td></tr><tr><td style=\"white-space:nowrap\">3509021<a name=\"cs-nemsis-exam-3509021\"> </a></td><td>S4</td></tr><tr><td style=\"white-space:nowrap\">3510001<a name=\"cs-nemsis-exam-3510001\"> </a></td><td>Generalized</td></tr><tr><td style=\"white-space:nowrap\">3510003<a name=\"cs-nemsis-exam-3510003\"> </a></td><td>Left Lower Quadrant</td></tr><tr><td style=\"white-space:nowrap\">3510005<a name=\"cs-nemsis-exam-3510005\"> </a></td><td>Left Upper Quadrant</td></tr><tr><td style=\"white-space:nowrap\">3510007<a name=\"cs-nemsis-exam-3510007\"> </a></td><td>Periumbilical</td></tr><tr><td style=\"white-space:nowrap\">3510009<a name=\"cs-nemsis-exam-3510009\"> </a></td><td>Right Lower Quadrant</td></tr><tr><td style=\"white-space:nowrap\">3510011<a name=\"cs-nemsis-exam-3510011\"> </a></td><td>Right Upper Quadrant</td></tr><tr><td style=\"white-space:nowrap\">3510013<a name=\"cs-nemsis-exam-3510013\"> </a></td><td>Epigastric</td></tr><tr><td style=\"white-space:nowrap\">3511001<a name=\"cs-nemsis-exam-3511001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3511003<a name=\"cs-nemsis-exam-3511003\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3511005<a name=\"cs-nemsis-exam-3511005\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3511007<a name=\"cs-nemsis-exam-3511007\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3511009<a name=\"cs-nemsis-exam-3511009\"> </a></td><td>Bowel Sounds-Absent</td></tr><tr><td style=\"white-space:nowrap\">3511011<a name=\"cs-nemsis-exam-3511011\"> </a></td><td>Bowel Sounds-Present</td></tr><tr><td style=\"white-space:nowrap\">3511013<a name=\"cs-nemsis-exam-3511013\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3511015<a name=\"cs-nemsis-exam-3511015\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3511017<a name=\"cs-nemsis-exam-3511017\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3511019<a name=\"cs-nemsis-exam-3511019\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3511021<a name=\"cs-nemsis-exam-3511021\"> </a></td><td>Distention</td></tr><tr><td style=\"white-space:nowrap\">3511023<a name=\"cs-nemsis-exam-3511023\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3511025<a name=\"cs-nemsis-exam-3511025\"> </a></td><td>Guarding</td></tr><tr><td style=\"white-space:nowrap\">3511031<a name=\"cs-nemsis-exam-3511031\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3511033<a name=\"cs-nemsis-exam-3511033\"> </a></td><td>Mass/Lesion</td></tr><tr><td style=\"white-space:nowrap\">3511035<a name=\"cs-nemsis-exam-3511035\"> </a></td><td>Mass-Pulsating</td></tr><tr><td style=\"white-space:nowrap\">3511037<a name=\"cs-nemsis-exam-3511037\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3511039<a name=\"cs-nemsis-exam-3511039\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3511041<a name=\"cs-nemsis-exam-3511041\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3511043<a name=\"cs-nemsis-exam-3511043\"> </a></td><td>Pregnant-Palpable Uterus</td></tr><tr><td style=\"white-space:nowrap\">3511045<a name=\"cs-nemsis-exam-3511045\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3511051<a name=\"cs-nemsis-exam-3511051\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3511053<a name=\"cs-nemsis-exam-3511053\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3511055<a name=\"cs-nemsis-exam-3511055\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3511057<a name=\"cs-nemsis-exam-3511057\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3511059<a name=\"cs-nemsis-exam-3511059\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3511061<a name=\"cs-nemsis-exam-3511061\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3511063<a name=\"cs-nemsis-exam-3511063\"> </a></td><td>Rebound Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3511065<a name=\"cs-nemsis-exam-3511065\"> </a></td><td>Rigidity</td></tr><tr><td style=\"white-space:nowrap\">3512001<a name=\"cs-nemsis-exam-3512001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3512003<a name=\"cs-nemsis-exam-3512003\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3512005<a name=\"cs-nemsis-exam-3512005\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3512007<a name=\"cs-nemsis-exam-3512007\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3512009<a name=\"cs-nemsis-exam-3512009\"> </a></td><td>Bleeding-Rectal</td></tr><tr><td style=\"white-space:nowrap\">3512011<a name=\"cs-nemsis-exam-3512011\"> </a></td><td>Bleeding-Urethral</td></tr><tr><td style=\"white-space:nowrap\">3512013<a name=\"cs-nemsis-exam-3512013\"> </a></td><td>Bleeding-Vaginal</td></tr><tr><td style=\"white-space:nowrap\">3512015<a name=\"cs-nemsis-exam-3512015\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3512017<a name=\"cs-nemsis-exam-3512017\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3512019<a name=\"cs-nemsis-exam-3512019\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3512021<a name=\"cs-nemsis-exam-3512021\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3512023<a name=\"cs-nemsis-exam-3512023\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3512025<a name=\"cs-nemsis-exam-3512025\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3512027<a name=\"cs-nemsis-exam-3512027\"> </a></td><td>Genital Injury</td></tr><tr><td style=\"white-space:nowrap\">3512033<a name=\"cs-nemsis-exam-3512033\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3512035<a name=\"cs-nemsis-exam-3512035\"> </a></td><td>Mass/Lesion</td></tr><tr><td style=\"white-space:nowrap\">3512037<a name=\"cs-nemsis-exam-3512037\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3512039<a name=\"cs-nemsis-exam-3512039\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3512041<a name=\"cs-nemsis-exam-3512041\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3512043<a name=\"cs-nemsis-exam-3512043\"> </a></td><td>Pelvic Fracture</td></tr><tr><td style=\"white-space:nowrap\">3512045<a name=\"cs-nemsis-exam-3512045\"> </a></td><td>Pelvic Instability</td></tr><tr><td style=\"white-space:nowrap\">3512047<a name=\"cs-nemsis-exam-3512047\"> </a></td><td>Penile Priapism/Erection</td></tr><tr><td style=\"white-space:nowrap\">3512049<a name=\"cs-nemsis-exam-3512049\"> </a></td><td>Pregnant-Crowning</td></tr><tr><td style=\"white-space:nowrap\">3512051<a name=\"cs-nemsis-exam-3512051\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3512057<a name=\"cs-nemsis-exam-3512057\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3512059<a name=\"cs-nemsis-exam-3512059\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3512061<a name=\"cs-nemsis-exam-3512061\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3512063<a name=\"cs-nemsis-exam-3512063\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3512065<a name=\"cs-nemsis-exam-3512065\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3513001<a name=\"cs-nemsis-exam-3513001\"> </a></td><td>Back-General</td></tr><tr><td style=\"white-space:nowrap\">3513003<a name=\"cs-nemsis-exam-3513003\"> </a></td><td>Cervical-Left</td></tr><tr><td style=\"white-space:nowrap\">3513005<a name=\"cs-nemsis-exam-3513005\"> </a></td><td>Cervical-Midline</td></tr><tr><td style=\"white-space:nowrap\">3513007<a name=\"cs-nemsis-exam-3513007\"> </a></td><td>Cervical-Right</td></tr><tr><td style=\"white-space:nowrap\">3513009<a name=\"cs-nemsis-exam-3513009\"> </a></td><td>Lumbar-Left</td></tr><tr><td style=\"white-space:nowrap\">3513011<a name=\"cs-nemsis-exam-3513011\"> </a></td><td>Lumbar-Midline</td></tr><tr><td style=\"white-space:nowrap\">3513013<a name=\"cs-nemsis-exam-3513013\"> </a></td><td>Lumbar-Right</td></tr><tr><td style=\"white-space:nowrap\">3513015<a name=\"cs-nemsis-exam-3513015\"> </a></td><td>Thoracic-Left</td></tr><tr><td style=\"white-space:nowrap\">3513017<a name=\"cs-nemsis-exam-3513017\"> </a></td><td>Thoracic-Midline</td></tr><tr><td style=\"white-space:nowrap\">3513019<a name=\"cs-nemsis-exam-3513019\"> </a></td><td>Thoracic-Right</td></tr><tr><td style=\"white-space:nowrap\">3513021<a name=\"cs-nemsis-exam-3513021\"> </a></td><td>Sacral-Left</td></tr><tr><td style=\"white-space:nowrap\">3513023<a name=\"cs-nemsis-exam-3513023\"> </a></td><td>Sacral-Midline</td></tr><tr><td style=\"white-space:nowrap\">3513025<a name=\"cs-nemsis-exam-3513025\"> </a></td><td>Sacral-Right</td></tr><tr><td style=\"white-space:nowrap\">3513029<a name=\"cs-nemsis-exam-3513029\"> </a></td><td>Flank-Left</td></tr><tr><td style=\"white-space:nowrap\">3513031<a name=\"cs-nemsis-exam-3513031\"> </a></td><td>Flank-Right</td></tr><tr><td style=\"white-space:nowrap\">3514001<a name=\"cs-nemsis-exam-3514001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3514003<a name=\"cs-nemsis-exam-3514003\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3514005<a name=\"cs-nemsis-exam-3514005\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3514007<a name=\"cs-nemsis-exam-3514007\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3514009<a name=\"cs-nemsis-exam-3514009\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3514011<a name=\"cs-nemsis-exam-3514011\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3514013<a name=\"cs-nemsis-exam-3514013\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3514015<a name=\"cs-nemsis-exam-3514015\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3514017<a name=\"cs-nemsis-exam-3514017\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3514019<a name=\"cs-nemsis-exam-3514019\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3514025<a name=\"cs-nemsis-exam-3514025\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3514027<a name=\"cs-nemsis-exam-3514027\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3514029<a name=\"cs-nemsis-exam-3514029\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3514031<a name=\"cs-nemsis-exam-3514031\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3514033<a name=\"cs-nemsis-exam-3514033\"> </a></td><td>Pain with Range of Motion</td></tr><tr><td style=\"white-space:nowrap\">3514035<a name=\"cs-nemsis-exam-3514035\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3514041<a name=\"cs-nemsis-exam-3514041\"> </a></td><td>Tenderness Costovertebral Angle</td></tr><tr><td style=\"white-space:nowrap\">3514043<a name=\"cs-nemsis-exam-3514043\"> </a></td><td>Tenderness Midline Spinous Process</td></tr><tr><td style=\"white-space:nowrap\">3514045<a name=\"cs-nemsis-exam-3514045\"> </a></td><td>Tenderness Paraspinous</td></tr><tr><td style=\"white-space:nowrap\">3514047<a name=\"cs-nemsis-exam-3514047\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3514049<a name=\"cs-nemsis-exam-3514049\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3514051<a name=\"cs-nemsis-exam-3514051\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3514053<a name=\"cs-nemsis-exam-3514053\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3514055<a name=\"cs-nemsis-exam-3514055\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3515001<a name=\"cs-nemsis-exam-3515001\"> </a></td><td>Ankle-Left</td></tr><tr><td style=\"white-space:nowrap\">3515003<a name=\"cs-nemsis-exam-3515003\"> </a></td><td>Ankle-Right</td></tr><tr><td style=\"white-space:nowrap\">3515005<a name=\"cs-nemsis-exam-3515005\"> </a></td><td>Arm-Upper-Left</td></tr><tr><td style=\"white-space:nowrap\">3515007<a name=\"cs-nemsis-exam-3515007\"> </a></td><td>Arm-Upper-Right</td></tr><tr><td style=\"white-space:nowrap\">3515009<a name=\"cs-nemsis-exam-3515009\"> </a></td><td>Elbow-Left</td></tr><tr><td style=\"white-space:nowrap\">3515011<a name=\"cs-nemsis-exam-3515011\"> </a></td><td>Elbow-Right</td></tr><tr><td style=\"white-space:nowrap\">3515013<a name=\"cs-nemsis-exam-3515013\"> </a></td><td>Finger-2nd (Index)-Left</td></tr><tr><td style=\"white-space:nowrap\">3515015<a name=\"cs-nemsis-exam-3515015\"> </a></td><td>Finger-2nd (Index)-Right</td></tr><tr><td style=\"white-space:nowrap\">3515017<a name=\"cs-nemsis-exam-3515017\"> </a></td><td>Finger-3rd (Middle)-Left</td></tr><tr><td style=\"white-space:nowrap\">3515019<a name=\"cs-nemsis-exam-3515019\"> </a></td><td>Finger-3rd (Middle)-Right</td></tr><tr><td style=\"white-space:nowrap\">3515021<a name=\"cs-nemsis-exam-3515021\"> </a></td><td>Finger-4th (Ring)-Left</td></tr><tr><td style=\"white-space:nowrap\">3515023<a name=\"cs-nemsis-exam-3515023\"> </a></td><td>Finger-4th (Ring)-Right</td></tr><tr><td style=\"white-space:nowrap\">3515025<a name=\"cs-nemsis-exam-3515025\"> </a></td><td>Finger-5th (Smallest)-Left</td></tr><tr><td style=\"white-space:nowrap\">3515027<a name=\"cs-nemsis-exam-3515027\"> </a></td><td>Finger-5th (Smallest)-Right</td></tr><tr><td style=\"white-space:nowrap\">3515029<a name=\"cs-nemsis-exam-3515029\"> </a></td><td>Foot-Dorsal-Left</td></tr><tr><td style=\"white-space:nowrap\">3515031<a name=\"cs-nemsis-exam-3515031\"> </a></td><td>Foot-Dorsal-Right</td></tr><tr><td style=\"white-space:nowrap\">3515033<a name=\"cs-nemsis-exam-3515033\"> </a></td><td>Foot-Plantar-Left</td></tr><tr><td style=\"white-space:nowrap\">3515035<a name=\"cs-nemsis-exam-3515035\"> </a></td><td>Foot-Plantar-Right</td></tr><tr><td style=\"white-space:nowrap\">3515037<a name=\"cs-nemsis-exam-3515037\"> </a></td><td>Arm-Lower-Left</td></tr><tr><td style=\"white-space:nowrap\">3515039<a name=\"cs-nemsis-exam-3515039\"> </a></td><td>Arm-Lower-Right</td></tr><tr><td style=\"white-space:nowrap\">3515041<a name=\"cs-nemsis-exam-3515041\"> </a></td><td>Hand-Dorsal-Left</td></tr><tr><td style=\"white-space:nowrap\">3515043<a name=\"cs-nemsis-exam-3515043\"> </a></td><td>Hand-Dorsal-Right</td></tr><tr><td style=\"white-space:nowrap\">3515045<a name=\"cs-nemsis-exam-3515045\"> </a></td><td>Hand-Palm-Left</td></tr><tr><td style=\"white-space:nowrap\">3515047<a name=\"cs-nemsis-exam-3515047\"> </a></td><td>Hand-Palm-Right</td></tr><tr><td style=\"white-space:nowrap\">3515049<a name=\"cs-nemsis-exam-3515049\"> </a></td><td>Hip-Left</td></tr><tr><td style=\"white-space:nowrap\">3515051<a name=\"cs-nemsis-exam-3515051\"> </a></td><td>Hip-Right</td></tr><tr><td style=\"white-space:nowrap\">3515053<a name=\"cs-nemsis-exam-3515053\"> </a></td><td>Knee-Left</td></tr><tr><td style=\"white-space:nowrap\">3515055<a name=\"cs-nemsis-exam-3515055\"> </a></td><td>Knee-Right</td></tr><tr><td style=\"white-space:nowrap\">3515057<a name=\"cs-nemsis-exam-3515057\"> </a></td><td>Leg-Lower-Left</td></tr><tr><td style=\"white-space:nowrap\">3515059<a name=\"cs-nemsis-exam-3515059\"> </a></td><td>Leg-Lower-Right</td></tr><tr><td style=\"white-space:nowrap\">3515061<a name=\"cs-nemsis-exam-3515061\"> </a></td><td>Leg-Upper-Left</td></tr><tr><td style=\"white-space:nowrap\">3515063<a name=\"cs-nemsis-exam-3515063\"> </a></td><td>Leg-Upper-Right</td></tr><tr><td style=\"white-space:nowrap\">3515065<a name=\"cs-nemsis-exam-3515065\"> </a></td><td>Shoulder-Left</td></tr><tr><td style=\"white-space:nowrap\">3515067<a name=\"cs-nemsis-exam-3515067\"> </a></td><td>Shoulder-Right</td></tr><tr><td style=\"white-space:nowrap\">3515069<a name=\"cs-nemsis-exam-3515069\"> </a></td><td>Thumb-Left</td></tr><tr><td style=\"white-space:nowrap\">3515071<a name=\"cs-nemsis-exam-3515071\"> </a></td><td>Thumb-Right</td></tr><tr><td style=\"white-space:nowrap\">3515073<a name=\"cs-nemsis-exam-3515073\"> </a></td><td>Toe-1st (Big)-Left</td></tr><tr><td style=\"white-space:nowrap\">3515075<a name=\"cs-nemsis-exam-3515075\"> </a></td><td>Toe-1st (Big)-Right</td></tr><tr><td style=\"white-space:nowrap\">3515077<a name=\"cs-nemsis-exam-3515077\"> </a></td><td>Toe-2nd-Left</td></tr><tr><td style=\"white-space:nowrap\">3515079<a name=\"cs-nemsis-exam-3515079\"> </a></td><td>Toe-2nd-Right</td></tr><tr><td style=\"white-space:nowrap\">3515081<a name=\"cs-nemsis-exam-3515081\"> </a></td><td>Toe-3rd-Left</td></tr><tr><td style=\"white-space:nowrap\">3515083<a name=\"cs-nemsis-exam-3515083\"> </a></td><td>Toe-3rd-Right</td></tr><tr><td style=\"white-space:nowrap\">3515085<a name=\"cs-nemsis-exam-3515085\"> </a></td><td>Toe-4th-Left</td></tr><tr><td style=\"white-space:nowrap\">3515087<a name=\"cs-nemsis-exam-3515087\"> </a></td><td>Toe-4th-Right</td></tr><tr><td style=\"white-space:nowrap\">3515089<a name=\"cs-nemsis-exam-3515089\"> </a></td><td>Toe-5th (Smallest)-Left</td></tr><tr><td style=\"white-space:nowrap\">3515091<a name=\"cs-nemsis-exam-3515091\"> </a></td><td>Toe-5th (Smallest)-Right</td></tr><tr><td style=\"white-space:nowrap\">3515093<a name=\"cs-nemsis-exam-3515093\"> </a></td><td>Wrist-Left</td></tr><tr><td style=\"white-space:nowrap\">3515095<a name=\"cs-nemsis-exam-3515095\"> </a></td><td>Wrist-Right</td></tr><tr><td style=\"white-space:nowrap\">3515097<a name=\"cs-nemsis-exam-3515097\"> </a></td><td>Arm-Whole Arm and Hand-Left</td></tr><tr><td style=\"white-space:nowrap\">3515099<a name=\"cs-nemsis-exam-3515099\"> </a></td><td>Arm-Whole Arm and Hand-Right</td></tr><tr><td style=\"white-space:nowrap\">3515101<a name=\"cs-nemsis-exam-3515101\"> </a></td><td>Hand-Whole Hand-Left</td></tr><tr><td style=\"white-space:nowrap\">3515103<a name=\"cs-nemsis-exam-3515103\"> </a></td><td>Hand-Whole Hand-Right</td></tr><tr><td style=\"white-space:nowrap\">3515105<a name=\"cs-nemsis-exam-3515105\"> </a></td><td>Leg-Whole Leg-Left</td></tr><tr><td style=\"white-space:nowrap\">3515107<a name=\"cs-nemsis-exam-3515107\"> </a></td><td>Leg-Whole Leg-Right</td></tr><tr><td style=\"white-space:nowrap\">3515109<a name=\"cs-nemsis-exam-3515109\"> </a></td><td>Foot-Whole Foot-Left</td></tr><tr><td style=\"white-space:nowrap\">3515111<a name=\"cs-nemsis-exam-3515111\"> </a></td><td>Foot-Whole Foot-Right</td></tr><tr><td style=\"white-space:nowrap\">3516001<a name=\"cs-nemsis-exam-3516001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3516003<a name=\"cs-nemsis-exam-3516003\"> </a></td><td>Amputation-Acute</td></tr><tr><td style=\"white-space:nowrap\">3516005<a name=\"cs-nemsis-exam-3516005\"> </a></td><td>Amputation-Previous</td></tr><tr><td style=\"white-space:nowrap\">3516007<a name=\"cs-nemsis-exam-3516007\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3516009<a name=\"cs-nemsis-exam-3516009\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3516011<a name=\"cs-nemsis-exam-3516011\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3516013<a name=\"cs-nemsis-exam-3516013\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3516015<a name=\"cs-nemsis-exam-3516015\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3516017<a name=\"cs-nemsis-exam-3516017\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3516019<a name=\"cs-nemsis-exam-3516019\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3516021<a name=\"cs-nemsis-exam-3516021\"> </a></td><td>Clubbing (of fingers)</td></tr><tr><td style=\"white-space:nowrap\">3516023<a name=\"cs-nemsis-exam-3516023\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3516025<a name=\"cs-nemsis-exam-3516025\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3516027<a name=\"cs-nemsis-exam-3516027\"> </a></td><td>Dislocation</td></tr><tr><td style=\"white-space:nowrap\">3516029<a name=\"cs-nemsis-exam-3516029\"> </a></td><td>Edema</td></tr><tr><td style=\"white-space:nowrap\">3516031<a name=\"cs-nemsis-exam-3516031\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3516033<a name=\"cs-nemsis-exam-3516033\"> </a></td><td>Fracture-Closed</td></tr><tr><td style=\"white-space:nowrap\">3516035<a name=\"cs-nemsis-exam-3516035\"> </a></td><td>Fracture-Open</td></tr><tr><td style=\"white-space:nowrap\">3516041<a name=\"cs-nemsis-exam-3516041\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3516043<a name=\"cs-nemsis-exam-3516043\"> </a></td><td>Motor Function-Abnormal/Weakness</td></tr><tr><td style=\"white-space:nowrap\">3516045<a name=\"cs-nemsis-exam-3516045\"> </a></td><td>Motor Function-Absent</td></tr><tr><td style=\"white-space:nowrap\">3516047<a name=\"cs-nemsis-exam-3516047\"> </a></td><td>Motor Function-Normal</td></tr><tr><td style=\"white-space:nowrap\">3516049<a name=\"cs-nemsis-exam-3516049\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3516051<a name=\"cs-nemsis-exam-3516051\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3516053<a name=\"cs-nemsis-exam-3516053\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3516055<a name=\"cs-nemsis-exam-3516055\"> </a></td><td>Paralysis</td></tr><tr><td style=\"white-space:nowrap\">3516057<a name=\"cs-nemsis-exam-3516057\"> </a></td><td>Pulse-Abnormal</td></tr><tr><td style=\"white-space:nowrap\">3516059<a name=\"cs-nemsis-exam-3516059\"> </a></td><td>Pulse-Absent</td></tr><tr><td style=\"white-space:nowrap\">3516061<a name=\"cs-nemsis-exam-3516061\"> </a></td><td>Pulse-Normal</td></tr><tr><td style=\"white-space:nowrap\">3516063<a name=\"cs-nemsis-exam-3516063\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3516065<a name=\"cs-nemsis-exam-3516065\"> </a></td><td>Sensation-Abnormal</td></tr><tr><td style=\"white-space:nowrap\">3516067<a name=\"cs-nemsis-exam-3516067\"> </a></td><td>Sensation-Absent</td></tr><tr><td style=\"white-space:nowrap\">3516069<a name=\"cs-nemsis-exam-3516069\"> </a></td><td>Sensation-Normal</td></tr><tr><td style=\"white-space:nowrap\">3516075<a name=\"cs-nemsis-exam-3516075\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3516077<a name=\"cs-nemsis-exam-3516077\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3516079<a name=\"cs-nemsis-exam-3516079\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3516081<a name=\"cs-nemsis-exam-3516081\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3516083<a name=\"cs-nemsis-exam-3516083\"> </a></td><td>Arm Drift</td></tr><tr><td style=\"white-space:nowrap\">3516085<a name=\"cs-nemsis-exam-3516085\"> </a></td><td>Cool/Cold to Touch</td></tr><tr><td style=\"white-space:nowrap\">3516087<a name=\"cs-nemsis-exam-3516087\"> </a></td><td>Cyanosis</td></tr><tr><td style=\"white-space:nowrap\">3516089<a name=\"cs-nemsis-exam-3516089\"> </a></td><td>Erythema/Flushing</td></tr><tr><td style=\"white-space:nowrap\">3516091<a name=\"cs-nemsis-exam-3516091\"> </a></td><td>Hot/Warm to Touch</td></tr><tr><td style=\"white-space:nowrap\">3516093<a name=\"cs-nemsis-exam-3516093\"> </a></td><td>Lividity</td></tr><tr><td style=\"white-space:nowrap\">3516095<a name=\"cs-nemsis-exam-3516095\"> </a></td><td>Mottled</td></tr><tr><td style=\"white-space:nowrap\">3516097<a name=\"cs-nemsis-exam-3516097\"> </a></td><td>Pale</td></tr><tr><td style=\"white-space:nowrap\">3517001<a name=\"cs-nemsis-exam-3517001\"> </a></td><td>Bilateral</td></tr><tr><td style=\"white-space:nowrap\">3517003<a name=\"cs-nemsis-exam-3517003\"> </a></td><td>Left</td></tr><tr><td style=\"white-space:nowrap\">3517005<a name=\"cs-nemsis-exam-3517005\"> </a></td><td>Right</td></tr><tr><td style=\"white-space:nowrap\">3518001<a name=\"cs-nemsis-exam-3518001\"> </a></td><td>1-mm</td></tr><tr><td style=\"white-space:nowrap\">3518003<a name=\"cs-nemsis-exam-3518003\"> </a></td><td>2-mm</td></tr><tr><td style=\"white-space:nowrap\">3518005<a name=\"cs-nemsis-exam-3518005\"> </a></td><td>3-mm</td></tr><tr><td style=\"white-space:nowrap\">3518007<a name=\"cs-nemsis-exam-3518007\"> </a></td><td>4-mm</td></tr><tr><td style=\"white-space:nowrap\">3518009<a name=\"cs-nemsis-exam-3518009\"> </a></td><td>5-mm</td></tr><tr><td style=\"white-space:nowrap\">3518011<a name=\"cs-nemsis-exam-3518011\"> </a></td><td>6-mm</td></tr><tr><td style=\"white-space:nowrap\">3518013<a name=\"cs-nemsis-exam-3518013\"> </a></td><td>7-mm</td></tr><tr><td style=\"white-space:nowrap\">3518015<a name=\"cs-nemsis-exam-3518015\"> </a></td><td>8-mm or &gt;</td></tr><tr><td style=\"white-space:nowrap\">3518017<a name=\"cs-nemsis-exam-3518017\"> </a></td><td>Blind</td></tr><tr><td style=\"white-space:nowrap\">3518019<a name=\"cs-nemsis-exam-3518019\"> </a></td><td>Cataract Present</td></tr><tr><td style=\"white-space:nowrap\">3518021<a name=\"cs-nemsis-exam-3518021\"> </a></td><td>Clouded</td></tr><tr><td style=\"white-space:nowrap\">3518023<a name=\"cs-nemsis-exam-3518023\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3518025<a name=\"cs-nemsis-exam-3518025\"> </a></td><td>Dysconjugate Gaze</td></tr><tr><td style=\"white-space:nowrap\">3518027<a name=\"cs-nemsis-exam-3518027\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3518029<a name=\"cs-nemsis-exam-3518029\"> </a></td><td>Glaucoma Present</td></tr><tr><td style=\"white-space:nowrap\">3518031<a name=\"cs-nemsis-exam-3518031\"> </a></td><td>Hyphema</td></tr><tr><td style=\"white-space:nowrap\">3518033<a name=\"cs-nemsis-exam-3518033\"> </a></td><td>Jaundiced Sclera</td></tr><tr><td style=\"white-space:nowrap\">3518035<a name=\"cs-nemsis-exam-3518035\"> </a></td><td>Missing</td></tr><tr><td style=\"white-space:nowrap\">3518037<a name=\"cs-nemsis-exam-3518037\"> </a></td><td>Non-Reactive</td></tr><tr><td style=\"white-space:nowrap\">3518039<a name=\"cs-nemsis-exam-3518039\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3518041<a name=\"cs-nemsis-exam-3518041\"> </a></td><td>Non-Reactive Prosthetic</td></tr><tr><td style=\"white-space:nowrap\">3518043<a name=\"cs-nemsis-exam-3518043\"> </a></td><td>Nystagmus Noted</td></tr><tr><td style=\"white-space:nowrap\">3518045<a name=\"cs-nemsis-exam-3518045\"> </a></td><td>Open Globe</td></tr><tr><td style=\"white-space:nowrap\">3518047<a name=\"cs-nemsis-exam-3518047\"> </a></td><td>PERRL</td></tr><tr><td style=\"white-space:nowrap\">3518049<a name=\"cs-nemsis-exam-3518049\"> </a></td><td>Pupil-Irregular/Teardrop</td></tr><tr><td style=\"white-space:nowrap\">3518051<a name=\"cs-nemsis-exam-3518051\"> </a></td><td>Reactive</td></tr><tr><td style=\"white-space:nowrap\">3518053<a name=\"cs-nemsis-exam-3518053\"> </a></td><td>Sluggish</td></tr><tr><td style=\"white-space:nowrap\">3518055<a name=\"cs-nemsis-exam-3518055\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3518057<a name=\"cs-nemsis-exam-3518057\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3518059<a name=\"cs-nemsis-exam-3518059\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3518061<a name=\"cs-nemsis-exam-3518061\"> </a></td><td>Dilated</td></tr><tr><td style=\"white-space:nowrap\">3518063<a name=\"cs-nemsis-exam-3518063\"> </a></td><td>Pin Point</td></tr><tr><td style=\"white-space:nowrap\">3519001<a name=\"cs-nemsis-exam-3519001\"> </a></td><td>Combative</td></tr><tr><td style=\"white-space:nowrap\">3519003<a name=\"cs-nemsis-exam-3519003\"> </a></td><td>Confused</td></tr><tr><td style=\"white-space:nowrap\">3519005<a name=\"cs-nemsis-exam-3519005\"> </a></td><td>Hallucinations</td></tr><tr><td style=\"white-space:nowrap\">3519007<a name=\"cs-nemsis-exam-3519007\"> </a></td><td>Normal Baseline for Patient</td></tr><tr><td style=\"white-space:nowrap\">3519009<a name=\"cs-nemsis-exam-3519009\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3519011<a name=\"cs-nemsis-exam-3519011\"> </a></td><td>Oriented-Person</td></tr><tr><td style=\"white-space:nowrap\">3519013<a name=\"cs-nemsis-exam-3519013\"> </a></td><td>Oriented-Place</td></tr><tr><td style=\"white-space:nowrap\">3519015<a name=\"cs-nemsis-exam-3519015\"> </a></td><td>Oriented-Event</td></tr><tr><td style=\"white-space:nowrap\">3519017<a name=\"cs-nemsis-exam-3519017\"> </a></td><td>Oriented-Time</td></tr><tr><td style=\"white-space:nowrap\">3519021<a name=\"cs-nemsis-exam-3519021\"> </a></td><td>Unresponsive</td></tr><tr><td style=\"white-space:nowrap\">3519023<a name=\"cs-nemsis-exam-3519023\"> </a></td><td>Agitation</td></tr><tr><td style=\"white-space:nowrap\">3519025<a name=\"cs-nemsis-exam-3519025\"> </a></td><td>Somnolent</td></tr><tr><td style=\"white-space:nowrap\">3519027<a name=\"cs-nemsis-exam-3519027\"> </a></td><td>Stupor</td></tr><tr><td style=\"white-space:nowrap\">3519029<a name=\"cs-nemsis-exam-3519029\"> </a></td><td>Altered mental status, unspecified</td></tr><tr><td style=\"white-space:nowrap\">3519031<a name=\"cs-nemsis-exam-3519031\"> </a></td><td>Developmentally Impaired</td></tr><tr><td style=\"white-space:nowrap\">3519033<a name=\"cs-nemsis-exam-3519033\"> </a></td><td>Disorientation, unspecified</td></tr><tr><td style=\"white-space:nowrap\">3519035<a name=\"cs-nemsis-exam-3519035\"> </a></td><td>Pharmacologically Paralyzed</td></tr><tr><td style=\"white-space:nowrap\">3519037<a name=\"cs-nemsis-exam-3519037\"> </a></td><td>Pharmacologically Sedated</td></tr><tr><td style=\"white-space:nowrap\">3519039<a name=\"cs-nemsis-exam-3519039\"> </a></td><td>Psychologically Impaired</td></tr><tr><td style=\"white-space:nowrap\">3519041<a name=\"cs-nemsis-exam-3519041\"> </a></td><td>Slowness and poor responsiveness</td></tr><tr><td style=\"white-space:nowrap\">3519043<a name=\"cs-nemsis-exam-3519043\"> </a></td><td>State of emotional shock and stress, unspecified</td></tr><tr><td style=\"white-space:nowrap\">3519045<a name=\"cs-nemsis-exam-3519045\"> </a></td><td>Strange and inexplicable behavior</td></tr><tr><td style=\"white-space:nowrap\">3519047<a name=\"cs-nemsis-exam-3519047\"> </a></td><td>Uncooperative</td></tr><tr><td style=\"white-space:nowrap\">3519049<a name=\"cs-nemsis-exam-3519049\"> </a></td><td>Unspecified coma</td></tr><tr><td style=\"white-space:nowrap\">3520001<a name=\"cs-nemsis-exam-3520001\"> </a></td><td>Aphagia</td></tr><tr><td style=\"white-space:nowrap\">3520003<a name=\"cs-nemsis-exam-3520003\"> </a></td><td>Aphasia</td></tr><tr><td style=\"white-space:nowrap\">3520005<a name=\"cs-nemsis-exam-3520005\"> </a></td><td>Cerebellar Function-Abnormal</td></tr><tr><td style=\"white-space:nowrap\">3520007<a name=\"cs-nemsis-exam-3520007\"> </a></td><td>Cerebellar Function-Normal</td></tr><tr><td style=\"white-space:nowrap\">3520009<a name=\"cs-nemsis-exam-3520009\"> </a></td><td>Decerebrate Posturing</td></tr><tr><td style=\"white-space:nowrap\">3520011<a name=\"cs-nemsis-exam-3520011\"> </a></td><td>Decorticate Posturing</td></tr><tr><td style=\"white-space:nowrap\">3520013<a name=\"cs-nemsis-exam-3520013\"> </a></td><td>Gait-Abnormal</td></tr><tr><td style=\"white-space:nowrap\">3520015<a name=\"cs-nemsis-exam-3520015\"> </a></td><td>Gait-Normal</td></tr><tr><td style=\"white-space:nowrap\">3520017<a name=\"cs-nemsis-exam-3520017\"> </a></td><td>Hemiplegia-Left</td></tr><tr><td style=\"white-space:nowrap\">3520019<a name=\"cs-nemsis-exam-3520019\"> </a></td><td>Hemiplegia-Right</td></tr><tr><td style=\"white-space:nowrap\">3520021<a name=\"cs-nemsis-exam-3520021\"> </a></td><td>Normal Baseline for Patient</td></tr><tr><td style=\"white-space:nowrap\">3520023<a name=\"cs-nemsis-exam-3520023\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3520026<a name=\"cs-nemsis-exam-3520026\"> </a></td><td>Status Seizure</td></tr><tr><td style=\"white-space:nowrap\">3520027<a name=\"cs-nemsis-exam-3520027\"> </a></td><td>Speech Normal</td></tr><tr><td style=\"white-space:nowrap\">3520029<a name=\"cs-nemsis-exam-3520029\"> </a></td><td>Speech Slurring</td></tr><tr><td style=\"white-space:nowrap\">3520031<a name=\"cs-nemsis-exam-3520031\"> </a></td><td>Strength-Asymmetric</td></tr><tr><td style=\"white-space:nowrap\">3520033<a name=\"cs-nemsis-exam-3520033\"> </a></td><td>Strength-Normal</td></tr><tr><td style=\"white-space:nowrap\">3520035<a name=\"cs-nemsis-exam-3520035\"> </a></td><td>Strength-Symmetric</td></tr><tr><td style=\"white-space:nowrap\">3520037<a name=\"cs-nemsis-exam-3520037\"> </a></td><td>Tremors</td></tr><tr><td style=\"white-space:nowrap\">3520039<a name=\"cs-nemsis-exam-3520039\"> </a></td><td>Weakness-Facial Droop-Left</td></tr><tr><td style=\"white-space:nowrap\">3520041<a name=\"cs-nemsis-exam-3520041\"> </a></td><td>Weakness-Facial Droop-Right</td></tr><tr><td style=\"white-space:nowrap\">3520043<a name=\"cs-nemsis-exam-3520043\"> </a></td><td>Weakness-Left Sided</td></tr><tr><td style=\"white-space:nowrap\">3520045<a name=\"cs-nemsis-exam-3520045\"> </a></td><td>Weakness-Right Sided</td></tr><tr><td style=\"white-space:nowrap\">3520051<a name=\"cs-nemsis-exam-3520051\"> </a></td><td>Arm Drift-Left</td></tr><tr><td style=\"white-space:nowrap\">3520053<a name=\"cs-nemsis-exam-3520053\"> </a></td><td>Arm Drift-Right</td></tr><tr><td style=\"white-space:nowrap\">3520055<a name=\"cs-nemsis-exam-3520055\"> </a></td><td>Other Seizures</td></tr><tr><td style=\"white-space:nowrap\">3521001<a name=\"cs-nemsis-exam-3521001\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3521003<a name=\"cs-nemsis-exam-3521003\"> </a></td><td>Yes-Resolved Prior to EMS Arrival</td></tr><tr><td style=\"white-space:nowrap\">3521005<a name=\"cs-nemsis-exam-3521005\"> </a></td><td>Yes-Resolved in EMS Presence</td></tr><tr><td style=\"white-space:nowrap\">3522001<a name=\"cs-nemsis-exam-3522001\"> </a></td><td>Left</td></tr><tr><td style=\"white-space:nowrap\">3522003<a name=\"cs-nemsis-exam-3522003\"> </a></td><td>Right</td></tr><tr><td style=\"white-space:nowrap\">3522005<a name=\"cs-nemsis-exam-3522005\"> </a></td><td>Bilateral</td></tr><tr><td style=\"white-space:nowrap\">3523001<a name=\"cs-nemsis-exam-3523001\"> </a></td><td>Breath Sounds-Absent</td></tr><tr><td style=\"white-space:nowrap\">3523003<a name=\"cs-nemsis-exam-3523003\"> </a></td><td>Breath Sounds-Decreased</td></tr><tr><td style=\"white-space:nowrap\">3523005<a name=\"cs-nemsis-exam-3523005\"> </a></td><td>Breath Sounds-Equal</td></tr><tr><td style=\"white-space:nowrap\">3523007<a name=\"cs-nemsis-exam-3523007\"> </a></td><td>Breath Sounds-Normal</td></tr><tr><td style=\"white-space:nowrap\">3523009<a name=\"cs-nemsis-exam-3523009\"> </a></td><td>Foreign Body</td></tr><tr><td style=\"white-space:nowrap\">3523011<a name=\"cs-nemsis-exam-3523011\"> </a></td><td>Increased Respiratory Effort</td></tr><tr><td style=\"white-space:nowrap\">3523013<a name=\"cs-nemsis-exam-3523013\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3523015<a name=\"cs-nemsis-exam-3523015\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3523017<a name=\"cs-nemsis-exam-3523017\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3523019<a name=\"cs-nemsis-exam-3523019\"> </a></td><td>Pain with Inspiration/Expiration</td></tr><tr><td style=\"white-space:nowrap\">3523021<a name=\"cs-nemsis-exam-3523021\"> </a></td><td>Rales</td></tr><tr><td style=\"white-space:nowrap\">3523023<a name=\"cs-nemsis-exam-3523023\"> </a></td><td>Rhonchi</td></tr><tr><td style=\"white-space:nowrap\">3523025<a name=\"cs-nemsis-exam-3523025\"> </a></td><td>Rhonchi/Wheezing</td></tr><tr><td style=\"white-space:nowrap\">3523027<a name=\"cs-nemsis-exam-3523027\"> </a></td><td>Stridor</td></tr><tr><td style=\"white-space:nowrap\">3523029<a name=\"cs-nemsis-exam-3523029\"> </a></td><td>Wheezing-Expiratory</td></tr><tr><td style=\"white-space:nowrap\">3523031<a name=\"cs-nemsis-exam-3523031\"> </a></td><td>Wheezing-Inspiratory</td></tr><tr><td style=\"white-space:nowrap\">3524001<a name=\"cs-nemsis-exam-3524001\"> </a></td><td>Left - Anterior</td></tr><tr><td style=\"white-space:nowrap\">3524003<a name=\"cs-nemsis-exam-3524003\"> </a></td><td>Left - Posterior (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">3524005<a name=\"cs-nemsis-exam-3524005\"> </a></td><td>Right - Anterior</td></tr><tr><td style=\"white-space:nowrap\">3524007<a name=\"cs-nemsis-exam-3524007\"> </a></td><td>Right - Posterior (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">3524009<a name=\"cs-nemsis-exam-3524009\"> </a></td><td>General - Anterior</td></tr><tr><td style=\"white-space:nowrap\">3524011<a name=\"cs-nemsis-exam-3524011\"> </a></td><td>General - Posterior</td></tr><tr><td style=\"white-space:nowrap\">3524013<a name=\"cs-nemsis-exam-3524013\"> </a></td><td>Left - Side</td></tr><tr><td style=\"white-space:nowrap\">3524015<a name=\"cs-nemsis-exam-3524015\"> </a></td><td>Right - Side</td></tr><tr><td style=\"white-space:nowrap\">3525001<a name=\"cs-nemsis-exam-3525001\"> </a></td><td>Abrasion</td></tr><tr><td style=\"white-space:nowrap\">3525003<a name=\"cs-nemsis-exam-3525003\"> </a></td><td>Avulsion</td></tr><tr><td style=\"white-space:nowrap\">3525005<a name=\"cs-nemsis-exam-3525005\"> </a></td><td>Accessory Muscles Used with Breathing</td></tr><tr><td style=\"white-space:nowrap\">3525007<a name=\"cs-nemsis-exam-3525007\"> </a></td><td>Bleeding Controlled</td></tr><tr><td style=\"white-space:nowrap\">3525009<a name=\"cs-nemsis-exam-3525009\"> </a></td><td>Bleeding Uncontrolled</td></tr><tr><td style=\"white-space:nowrap\">3525011<a name=\"cs-nemsis-exam-3525011\"> </a></td><td>Burn-Blistering</td></tr><tr><td style=\"white-space:nowrap\">3525013<a name=\"cs-nemsis-exam-3525013\"> </a></td><td>Burn-Charring</td></tr><tr><td style=\"white-space:nowrap\">3525015<a name=\"cs-nemsis-exam-3525015\"> </a></td><td>Burn-Redness</td></tr><tr><td style=\"white-space:nowrap\">3525017<a name=\"cs-nemsis-exam-3525017\"> </a></td><td>Burn-White/Waxy</td></tr><tr><td style=\"white-space:nowrap\">3525019<a name=\"cs-nemsis-exam-3525019\"> </a></td><td>Crush Injury</td></tr><tr><td style=\"white-space:nowrap\">3525021<a name=\"cs-nemsis-exam-3525021\"> </a></td><td>Deformity</td></tr><tr><td style=\"white-space:nowrap\">3525023<a name=\"cs-nemsis-exam-3525023\"> </a></td><td>Flail Segment</td></tr><tr><td style=\"white-space:nowrap\">3525025<a name=\"cs-nemsis-exam-3525025\"> </a></td><td>Implanted Device</td></tr><tr><td style=\"white-space:nowrap\">3525027<a name=\"cs-nemsis-exam-3525027\"> </a></td><td>Laceration</td></tr><tr><td style=\"white-space:nowrap\">3525029<a name=\"cs-nemsis-exam-3525029\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3525031<a name=\"cs-nemsis-exam-3525031\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">3525033<a name=\"cs-nemsis-exam-3525033\"> </a></td><td>Pain</td></tr><tr><td style=\"white-space:nowrap\">3525035<a name=\"cs-nemsis-exam-3525035\"> </a></td><td>Pain with Inspiration/Expiration</td></tr><tr><td style=\"white-space:nowrap\">3525037<a name=\"cs-nemsis-exam-3525037\"> </a></td><td>Puncture/Stab Wound</td></tr><tr><td style=\"white-space:nowrap\">3525039<a name=\"cs-nemsis-exam-3525039\"> </a></td><td>Retraction</td></tr><tr><td style=\"white-space:nowrap\">3525041<a name=\"cs-nemsis-exam-3525041\"> </a></td><td>Tenderness</td></tr><tr><td style=\"white-space:nowrap\">3525043<a name=\"cs-nemsis-exam-3525043\"> </a></td><td>Gunshot Wound</td></tr><tr><td style=\"white-space:nowrap\">3525045<a name=\"cs-nemsis-exam-3525045\"> </a></td><td>Swelling</td></tr><tr><td style=\"white-space:nowrap\">3525047<a name=\"cs-nemsis-exam-3525047\"> </a></td><td>Contusion</td></tr><tr><td style=\"white-space:nowrap\">3525049<a name=\"cs-nemsis-exam-3525049\"> </a></td><td>Tenderness-General (DEPRECATED)</td></tr></table></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.1.5"
+  }],
+  "version" : "0.2.0",
+  "name" : "NEMSISExam",
+  "title" : "NEMSIS Physical Exam Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Enumeration codes for the NEMSIS eExam physical examination section. Covers body region assessments and finding location qualifiers. NEMSIS 3.5.1.251001CP2.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 457,
+  "concept" : [{
+    "code" : "3502001",
+    "display" : "Blue"
+  },
+  {
+    "code" : "3502003",
+    "display" : "Green"
+  },
+  {
+    "code" : "3502005",
+    "display" : "Grey"
+  },
+  {
+    "code" : "3502007",
+    "display" : "Orange"
+  },
+  {
+    "code" : "3502009",
+    "display" : "Pink"
+  },
+  {
+    "code" : "3502011",
+    "display" : "Purple"
+  },
+  {
+    "code" : "3502013",
+    "display" : "Red"
+  },
+  {
+    "code" : "3502015",
+    "display" : "White"
+  },
+  {
+    "code" : "3502017",
+    "display" : "Yellow"
+  },
+  {
+    "code" : "3504001",
+    "display" : "Clammy"
+  },
+  {
+    "code" : "3504003",
+    "display" : "Cold"
+  },
+  {
+    "code" : "3504005",
+    "display" : "Cyanotic"
+  },
+  {
+    "code" : "3504007",
+    "display" : "Diaphoretic"
+  },
+  {
+    "code" : "3504009",
+    "display" : "Dry"
+  },
+  {
+    "code" : "3504011",
+    "display" : "Flushed"
+  },
+  {
+    "code" : "3504013",
+    "display" : "Hot"
+  },
+  {
+    "code" : "3504015",
+    "display" : "Jaundiced"
+  },
+  {
+    "code" : "3504017",
+    "display" : "Lividity"
+  },
+  {
+    "code" : "3504019",
+    "display" : "Mottled"
+  },
+  {
+    "code" : "3504021",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3504023",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3504025",
+    "display" : "Pale"
+  },
+  {
+    "code" : "3504027",
+    "display" : "Poor Turgor"
+  },
+  {
+    "code" : "3504029",
+    "display" : "Red (Erythematous)"
+  },
+  {
+    "code" : "3504031",
+    "display" : "Tenting"
+  },
+  {
+    "code" : "3504033",
+    "display" : "Warm"
+  },
+  {
+    "code" : "3504035",
+    "display" : "Capillary Nail Bed Refill less than 2 seconds"
+  },
+  {
+    "code" : "3504037",
+    "display" : "Capillary Nail Bed Refill 2-4 seconds"
+  },
+  {
+    "code" : "3504039",
+    "display" : "Capillary Nail Bed Refill more than 4 seconds"
+  },
+  {
+    "code" : "3505001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3505003",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3505005",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3505007",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3505009",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3505011",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3505013",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3505015",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3505017",
+    "display" : "Decapitation"
+  },
+  {
+    "code" : "3505019",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3505021",
+    "display" : "Drainage"
+  },
+  {
+    "code" : "3505023",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3505029",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3505031",
+    "display" : "Mass/Lesion"
+  },
+  {
+    "code" : "3505033",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3505035",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3505037",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3505039",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3505045",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3505047",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3505049",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3505051",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3505053",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3506001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3506003",
+    "display" : "Asymmetric Smile or Droop"
+  },
+  {
+    "code" : "3506005",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3506007",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3506009",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3506011",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3506013",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3506015",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3506017",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3506021",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3506023",
+    "display" : "Drainage"
+  },
+  {
+    "code" : "3506025",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3506031",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3506033",
+    "display" : "Mass/Lesion"
+  },
+  {
+    "code" : "3506035",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3506037",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3506039",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3506041",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3506047",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3506049",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3506051",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3506053",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3506055",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3507001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3507003",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3507005",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3507007",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3507009",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3507011",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3507013",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3507015",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3507017",
+    "display" : "Decapitation"
+  },
+  {
+    "code" : "3507019",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3507025",
+    "display" : "JVD"
+  },
+  {
+    "code" : "3507027",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3507029",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3507031",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3507033",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3507035",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3507037",
+    "display" : "Stridor"
+  },
+  {
+    "code" : "3507039",
+    "display" : "Subcutaneous Air"
+  },
+  {
+    "code" : "3507045",
+    "display" : "Tracheal Deviation-Left"
+  },
+  {
+    "code" : "3507047",
+    "display" : "Tracheal Deviation-Right"
+  },
+  {
+    "code" : "3507049",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3507051",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3507053",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3507055",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3507057",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3507059",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3509001",
+    "display" : "Clicks"
+  },
+  {
+    "code" : "3509003",
+    "display" : "Heart Sounds Decreased"
+  },
+  {
+    "code" : "3509005",
+    "display" : "Murmur-Diastolic"
+  },
+  {
+    "code" : "3509007",
+    "display" : "Murmur-Systolic"
+  },
+  {
+    "code" : "3509009",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3509011",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3509013",
+    "display" : "Rubs"
+  },
+  {
+    "code" : "3509015",
+    "display" : "S1"
+  },
+  {
+    "code" : "3509017",
+    "display" : "S2"
+  },
+  {
+    "code" : "3509019",
+    "display" : "S3"
+  },
+  {
+    "code" : "3509021",
+    "display" : "S4"
+  },
+  {
+    "code" : "3510001",
+    "display" : "Generalized"
+  },
+  {
+    "code" : "3510003",
+    "display" : "Left Lower Quadrant"
+  },
+  {
+    "code" : "3510005",
+    "display" : "Left Upper Quadrant"
+  },
+  {
+    "code" : "3510007",
+    "display" : "Periumbilical"
+  },
+  {
+    "code" : "3510009",
+    "display" : "Right Lower Quadrant"
+  },
+  {
+    "code" : "3510011",
+    "display" : "Right Upper Quadrant"
+  },
+  {
+    "code" : "3510013",
+    "display" : "Epigastric"
+  },
+  {
+    "code" : "3511001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3511003",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3511005",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3511007",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3511009",
+    "display" : "Bowel Sounds-Absent"
+  },
+  {
+    "code" : "3511011",
+    "display" : "Bowel Sounds-Present"
+  },
+  {
+    "code" : "3511013",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3511015",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3511017",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3511019",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3511021",
+    "display" : "Distention"
+  },
+  {
+    "code" : "3511023",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3511025",
+    "display" : "Guarding"
+  },
+  {
+    "code" : "3511031",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3511033",
+    "display" : "Mass/Lesion"
+  },
+  {
+    "code" : "3511035",
+    "display" : "Mass-Pulsating"
+  },
+  {
+    "code" : "3511037",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3511039",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3511041",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3511043",
+    "display" : "Pregnant-Palpable Uterus"
+  },
+  {
+    "code" : "3511045",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3511051",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3511053",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3511055",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3511057",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3511059",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3511061",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3511063",
+    "display" : "Rebound Tenderness"
+  },
+  {
+    "code" : "3511065",
+    "display" : "Rigidity"
+  },
+  {
+    "code" : "3512001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3512003",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3512005",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3512007",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3512009",
+    "display" : "Bleeding-Rectal"
+  },
+  {
+    "code" : "3512011",
+    "display" : "Bleeding-Urethral"
+  },
+  {
+    "code" : "3512013",
+    "display" : "Bleeding-Vaginal"
+  },
+  {
+    "code" : "3512015",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3512017",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3512019",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3512021",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3512023",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3512025",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3512027",
+    "display" : "Genital Injury"
+  },
+  {
+    "code" : "3512033",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3512035",
+    "display" : "Mass/Lesion"
+  },
+  {
+    "code" : "3512037",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3512039",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3512041",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3512043",
+    "display" : "Pelvic Fracture"
+  },
+  {
+    "code" : "3512045",
+    "display" : "Pelvic Instability"
+  },
+  {
+    "code" : "3512047",
+    "display" : "Penile Priapism/Erection"
+  },
+  {
+    "code" : "3512049",
+    "display" : "Pregnant-Crowning"
+  },
+  {
+    "code" : "3512051",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3512057",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3512059",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3512061",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3512063",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3512065",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3513001",
+    "display" : "Back-General"
+  },
+  {
+    "code" : "3513003",
+    "display" : "Cervical-Left"
+  },
+  {
+    "code" : "3513005",
+    "display" : "Cervical-Midline"
+  },
+  {
+    "code" : "3513007",
+    "display" : "Cervical-Right"
+  },
+  {
+    "code" : "3513009",
+    "display" : "Lumbar-Left"
+  },
+  {
+    "code" : "3513011",
+    "display" : "Lumbar-Midline"
+  },
+  {
+    "code" : "3513013",
+    "display" : "Lumbar-Right"
+  },
+  {
+    "code" : "3513015",
+    "display" : "Thoracic-Left"
+  },
+  {
+    "code" : "3513017",
+    "display" : "Thoracic-Midline"
+  },
+  {
+    "code" : "3513019",
+    "display" : "Thoracic-Right"
+  },
+  {
+    "code" : "3513021",
+    "display" : "Sacral-Left"
+  },
+  {
+    "code" : "3513023",
+    "display" : "Sacral-Midline"
+  },
+  {
+    "code" : "3513025",
+    "display" : "Sacral-Right"
+  },
+  {
+    "code" : "3513029",
+    "display" : "Flank-Left"
+  },
+  {
+    "code" : "3513031",
+    "display" : "Flank-Right"
+  },
+  {
+    "code" : "3514001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3514003",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3514005",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3514007",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3514009",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3514011",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3514013",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3514015",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3514017",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3514019",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3514025",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3514027",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3514029",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3514031",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3514033",
+    "display" : "Pain with Range of Motion"
+  },
+  {
+    "code" : "3514035",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3514041",
+    "display" : "Tenderness Costovertebral Angle"
+  },
+  {
+    "code" : "3514043",
+    "display" : "Tenderness Midline Spinous Process"
+  },
+  {
+    "code" : "3514045",
+    "display" : "Tenderness Paraspinous"
+  },
+  {
+    "code" : "3514047",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3514049",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3514051",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3514053",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3514055",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3515001",
+    "display" : "Ankle-Left"
+  },
+  {
+    "code" : "3515003",
+    "display" : "Ankle-Right"
+  },
+  {
+    "code" : "3515005",
+    "display" : "Arm-Upper-Left"
+  },
+  {
+    "code" : "3515007",
+    "display" : "Arm-Upper-Right"
+  },
+  {
+    "code" : "3515009",
+    "display" : "Elbow-Left"
+  },
+  {
+    "code" : "3515011",
+    "display" : "Elbow-Right"
+  },
+  {
+    "code" : "3515013",
+    "display" : "Finger-2nd (Index)-Left"
+  },
+  {
+    "code" : "3515015",
+    "display" : "Finger-2nd (Index)-Right"
+  },
+  {
+    "code" : "3515017",
+    "display" : "Finger-3rd (Middle)-Left"
+  },
+  {
+    "code" : "3515019",
+    "display" : "Finger-3rd (Middle)-Right"
+  },
+  {
+    "code" : "3515021",
+    "display" : "Finger-4th (Ring)-Left"
+  },
+  {
+    "code" : "3515023",
+    "display" : "Finger-4th (Ring)-Right"
+  },
+  {
+    "code" : "3515025",
+    "display" : "Finger-5th (Smallest)-Left"
+  },
+  {
+    "code" : "3515027",
+    "display" : "Finger-5th (Smallest)-Right"
+  },
+  {
+    "code" : "3515029",
+    "display" : "Foot-Dorsal-Left"
+  },
+  {
+    "code" : "3515031",
+    "display" : "Foot-Dorsal-Right"
+  },
+  {
+    "code" : "3515033",
+    "display" : "Foot-Plantar-Left"
+  },
+  {
+    "code" : "3515035",
+    "display" : "Foot-Plantar-Right"
+  },
+  {
+    "code" : "3515037",
+    "display" : "Arm-Lower-Left"
+  },
+  {
+    "code" : "3515039",
+    "display" : "Arm-Lower-Right"
+  },
+  {
+    "code" : "3515041",
+    "display" : "Hand-Dorsal-Left"
+  },
+  {
+    "code" : "3515043",
+    "display" : "Hand-Dorsal-Right"
+  },
+  {
+    "code" : "3515045",
+    "display" : "Hand-Palm-Left"
+  },
+  {
+    "code" : "3515047",
+    "display" : "Hand-Palm-Right"
+  },
+  {
+    "code" : "3515049",
+    "display" : "Hip-Left"
+  },
+  {
+    "code" : "3515051",
+    "display" : "Hip-Right"
+  },
+  {
+    "code" : "3515053",
+    "display" : "Knee-Left"
+  },
+  {
+    "code" : "3515055",
+    "display" : "Knee-Right"
+  },
+  {
+    "code" : "3515057",
+    "display" : "Leg-Lower-Left"
+  },
+  {
+    "code" : "3515059",
+    "display" : "Leg-Lower-Right"
+  },
+  {
+    "code" : "3515061",
+    "display" : "Leg-Upper-Left"
+  },
+  {
+    "code" : "3515063",
+    "display" : "Leg-Upper-Right"
+  },
+  {
+    "code" : "3515065",
+    "display" : "Shoulder-Left"
+  },
+  {
+    "code" : "3515067",
+    "display" : "Shoulder-Right"
+  },
+  {
+    "code" : "3515069",
+    "display" : "Thumb-Left"
+  },
+  {
+    "code" : "3515071",
+    "display" : "Thumb-Right"
+  },
+  {
+    "code" : "3515073",
+    "display" : "Toe-1st (Big)-Left"
+  },
+  {
+    "code" : "3515075",
+    "display" : "Toe-1st (Big)-Right"
+  },
+  {
+    "code" : "3515077",
+    "display" : "Toe-2nd-Left"
+  },
+  {
+    "code" : "3515079",
+    "display" : "Toe-2nd-Right"
+  },
+  {
+    "code" : "3515081",
+    "display" : "Toe-3rd-Left"
+  },
+  {
+    "code" : "3515083",
+    "display" : "Toe-3rd-Right"
+  },
+  {
+    "code" : "3515085",
+    "display" : "Toe-4th-Left"
+  },
+  {
+    "code" : "3515087",
+    "display" : "Toe-4th-Right"
+  },
+  {
+    "code" : "3515089",
+    "display" : "Toe-5th (Smallest)-Left"
+  },
+  {
+    "code" : "3515091",
+    "display" : "Toe-5th (Smallest)-Right"
+  },
+  {
+    "code" : "3515093",
+    "display" : "Wrist-Left"
+  },
+  {
+    "code" : "3515095",
+    "display" : "Wrist-Right"
+  },
+  {
+    "code" : "3515097",
+    "display" : "Arm-Whole Arm and Hand-Left"
+  },
+  {
+    "code" : "3515099",
+    "display" : "Arm-Whole Arm and Hand-Right"
+  },
+  {
+    "code" : "3515101",
+    "display" : "Hand-Whole Hand-Left"
+  },
+  {
+    "code" : "3515103",
+    "display" : "Hand-Whole Hand-Right"
+  },
+  {
+    "code" : "3515105",
+    "display" : "Leg-Whole Leg-Left"
+  },
+  {
+    "code" : "3515107",
+    "display" : "Leg-Whole Leg-Right"
+  },
+  {
+    "code" : "3515109",
+    "display" : "Foot-Whole Foot-Left"
+  },
+  {
+    "code" : "3515111",
+    "display" : "Foot-Whole Foot-Right"
+  },
+  {
+    "code" : "3516001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3516003",
+    "display" : "Amputation-Acute"
+  },
+  {
+    "code" : "3516005",
+    "display" : "Amputation-Previous"
+  },
+  {
+    "code" : "3516007",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3516009",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3516011",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3516013",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3516015",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3516017",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3516019",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3516021",
+    "display" : "Clubbing (of fingers)"
+  },
+  {
+    "code" : "3516023",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3516025",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3516027",
+    "display" : "Dislocation"
+  },
+  {
+    "code" : "3516029",
+    "display" : "Edema"
+  },
+  {
+    "code" : "3516031",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3516033",
+    "display" : "Fracture-Closed"
+  },
+  {
+    "code" : "3516035",
+    "display" : "Fracture-Open"
+  },
+  {
+    "code" : "3516041",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3516043",
+    "display" : "Motor Function-Abnormal/Weakness"
+  },
+  {
+    "code" : "3516045",
+    "display" : "Motor Function-Absent"
+  },
+  {
+    "code" : "3516047",
+    "display" : "Motor Function-Normal"
+  },
+  {
+    "code" : "3516049",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3516051",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3516053",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3516055",
+    "display" : "Paralysis"
+  },
+  {
+    "code" : "3516057",
+    "display" : "Pulse-Abnormal"
+  },
+  {
+    "code" : "3516059",
+    "display" : "Pulse-Absent"
+  },
+  {
+    "code" : "3516061",
+    "display" : "Pulse-Normal"
+  },
+  {
+    "code" : "3516063",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3516065",
+    "display" : "Sensation-Abnormal"
+  },
+  {
+    "code" : "3516067",
+    "display" : "Sensation-Absent"
+  },
+  {
+    "code" : "3516069",
+    "display" : "Sensation-Normal"
+  },
+  {
+    "code" : "3516075",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3516077",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3516079",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3516081",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3516083",
+    "display" : "Arm Drift"
+  },
+  {
+    "code" : "3516085",
+    "display" : "Cool/Cold to Touch"
+  },
+  {
+    "code" : "3516087",
+    "display" : "Cyanosis"
+  },
+  {
+    "code" : "3516089",
+    "display" : "Erythema/Flushing"
+  },
+  {
+    "code" : "3516091",
+    "display" : "Hot/Warm to Touch"
+  },
+  {
+    "code" : "3516093",
+    "display" : "Lividity"
+  },
+  {
+    "code" : "3516095",
+    "display" : "Mottled"
+  },
+  {
+    "code" : "3516097",
+    "display" : "Pale"
+  },
+  {
+    "code" : "3517001",
+    "display" : "Bilateral"
+  },
+  {
+    "code" : "3517003",
+    "display" : "Left"
+  },
+  {
+    "code" : "3517005",
+    "display" : "Right"
+  },
+  {
+    "code" : "3518001",
+    "display" : "1-mm"
+  },
+  {
+    "code" : "3518003",
+    "display" : "2-mm"
+  },
+  {
+    "code" : "3518005",
+    "display" : "3-mm"
+  },
+  {
+    "code" : "3518007",
+    "display" : "4-mm"
+  },
+  {
+    "code" : "3518009",
+    "display" : "5-mm"
+  },
+  {
+    "code" : "3518011",
+    "display" : "6-mm"
+  },
+  {
+    "code" : "3518013",
+    "display" : "7-mm"
+  },
+  {
+    "code" : "3518015",
+    "display" : "8-mm or >"
+  },
+  {
+    "code" : "3518017",
+    "display" : "Blind"
+  },
+  {
+    "code" : "3518019",
+    "display" : "Cataract Present"
+  },
+  {
+    "code" : "3518021",
+    "display" : "Clouded"
+  },
+  {
+    "code" : "3518023",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3518025",
+    "display" : "Dysconjugate Gaze"
+  },
+  {
+    "code" : "3518027",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3518029",
+    "display" : "Glaucoma Present"
+  },
+  {
+    "code" : "3518031",
+    "display" : "Hyphema"
+  },
+  {
+    "code" : "3518033",
+    "display" : "Jaundiced Sclera"
+  },
+  {
+    "code" : "3518035",
+    "display" : "Missing"
+  },
+  {
+    "code" : "3518037",
+    "display" : "Non-Reactive"
+  },
+  {
+    "code" : "3518039",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3518041",
+    "display" : "Non-Reactive Prosthetic"
+  },
+  {
+    "code" : "3518043",
+    "display" : "Nystagmus Noted"
+  },
+  {
+    "code" : "3518045",
+    "display" : "Open Globe"
+  },
+  {
+    "code" : "3518047",
+    "display" : "PERRL"
+  },
+  {
+    "code" : "3518049",
+    "display" : "Pupil-Irregular/Teardrop"
+  },
+  {
+    "code" : "3518051",
+    "display" : "Reactive"
+  },
+  {
+    "code" : "3518053",
+    "display" : "Sluggish"
+  },
+  {
+    "code" : "3518055",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3518057",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3518059",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3518061",
+    "display" : "Dilated"
+  },
+  {
+    "code" : "3518063",
+    "display" : "Pin Point"
+  },
+  {
+    "code" : "3519001",
+    "display" : "Combative"
+  },
+  {
+    "code" : "3519003",
+    "display" : "Confused"
+  },
+  {
+    "code" : "3519005",
+    "display" : "Hallucinations"
+  },
+  {
+    "code" : "3519007",
+    "display" : "Normal Baseline for Patient"
+  },
+  {
+    "code" : "3519009",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3519011",
+    "display" : "Oriented-Person"
+  },
+  {
+    "code" : "3519013",
+    "display" : "Oriented-Place"
+  },
+  {
+    "code" : "3519015",
+    "display" : "Oriented-Event"
+  },
+  {
+    "code" : "3519017",
+    "display" : "Oriented-Time"
+  },
+  {
+    "code" : "3519021",
+    "display" : "Unresponsive"
+  },
+  {
+    "code" : "3519023",
+    "display" : "Agitation"
+  },
+  {
+    "code" : "3519025",
+    "display" : "Somnolent"
+  },
+  {
+    "code" : "3519027",
+    "display" : "Stupor"
+  },
+  {
+    "code" : "3519029",
+    "display" : "Altered mental status, unspecified"
+  },
+  {
+    "code" : "3519031",
+    "display" : "Developmentally Impaired"
+  },
+  {
+    "code" : "3519033",
+    "display" : "Disorientation, unspecified"
+  },
+  {
+    "code" : "3519035",
+    "display" : "Pharmacologically Paralyzed"
+  },
+  {
+    "code" : "3519037",
+    "display" : "Pharmacologically Sedated"
+  },
+  {
+    "code" : "3519039",
+    "display" : "Psychologically Impaired"
+  },
+  {
+    "code" : "3519041",
+    "display" : "Slowness and poor responsiveness"
+  },
+  {
+    "code" : "3519043",
+    "display" : "State of emotional shock and stress, unspecified"
+  },
+  {
+    "code" : "3519045",
+    "display" : "Strange and inexplicable behavior"
+  },
+  {
+    "code" : "3519047",
+    "display" : "Uncooperative"
+  },
+  {
+    "code" : "3519049",
+    "display" : "Unspecified coma"
+  },
+  {
+    "code" : "3520001",
+    "display" : "Aphagia"
+  },
+  {
+    "code" : "3520003",
+    "display" : "Aphasia"
+  },
+  {
+    "code" : "3520005",
+    "display" : "Cerebellar Function-Abnormal"
+  },
+  {
+    "code" : "3520007",
+    "display" : "Cerebellar Function-Normal"
+  },
+  {
+    "code" : "3520009",
+    "display" : "Decerebrate Posturing"
+  },
+  {
+    "code" : "3520011",
+    "display" : "Decorticate Posturing"
+  },
+  {
+    "code" : "3520013",
+    "display" : "Gait-Abnormal"
+  },
+  {
+    "code" : "3520015",
+    "display" : "Gait-Normal"
+  },
+  {
+    "code" : "3520017",
+    "display" : "Hemiplegia-Left"
+  },
+  {
+    "code" : "3520019",
+    "display" : "Hemiplegia-Right"
+  },
+  {
+    "code" : "3520021",
+    "display" : "Normal Baseline for Patient"
+  },
+  {
+    "code" : "3520023",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3520026",
+    "display" : "Status Seizure"
+  },
+  {
+    "code" : "3520027",
+    "display" : "Speech Normal"
+  },
+  {
+    "code" : "3520029",
+    "display" : "Speech Slurring"
+  },
+  {
+    "code" : "3520031",
+    "display" : "Strength-Asymmetric"
+  },
+  {
+    "code" : "3520033",
+    "display" : "Strength-Normal"
+  },
+  {
+    "code" : "3520035",
+    "display" : "Strength-Symmetric"
+  },
+  {
+    "code" : "3520037",
+    "display" : "Tremors"
+  },
+  {
+    "code" : "3520039",
+    "display" : "Weakness-Facial Droop-Left"
+  },
+  {
+    "code" : "3520041",
+    "display" : "Weakness-Facial Droop-Right"
+  },
+  {
+    "code" : "3520043",
+    "display" : "Weakness-Left Sided"
+  },
+  {
+    "code" : "3520045",
+    "display" : "Weakness-Right Sided"
+  },
+  {
+    "code" : "3520051",
+    "display" : "Arm Drift-Left"
+  },
+  {
+    "code" : "3520053",
+    "display" : "Arm Drift-Right"
+  },
+  {
+    "code" : "3520055",
+    "display" : "Other Seizures"
+  },
+  {
+    "code" : "3521001",
+    "display" : "No"
+  },
+  {
+    "code" : "3521003",
+    "display" : "Yes-Resolved Prior to EMS Arrival"
+  },
+  {
+    "code" : "3521005",
+    "display" : "Yes-Resolved in EMS Presence"
+  },
+  {
+    "code" : "3522001",
+    "display" : "Left"
+  },
+  {
+    "code" : "3522003",
+    "display" : "Right"
+  },
+  {
+    "code" : "3522005",
+    "display" : "Bilateral"
+  },
+  {
+    "code" : "3523001",
+    "display" : "Breath Sounds-Absent"
+  },
+  {
+    "code" : "3523003",
+    "display" : "Breath Sounds-Decreased"
+  },
+  {
+    "code" : "3523005",
+    "display" : "Breath Sounds-Equal"
+  },
+  {
+    "code" : "3523007",
+    "display" : "Breath Sounds-Normal"
+  },
+  {
+    "code" : "3523009",
+    "display" : "Foreign Body"
+  },
+  {
+    "code" : "3523011",
+    "display" : "Increased Respiratory Effort"
+  },
+  {
+    "code" : "3523013",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3523015",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3523017",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3523019",
+    "display" : "Pain with Inspiration/Expiration"
+  },
+  {
+    "code" : "3523021",
+    "display" : "Rales"
+  },
+  {
+    "code" : "3523023",
+    "display" : "Rhonchi"
+  },
+  {
+    "code" : "3523025",
+    "display" : "Rhonchi/Wheezing"
+  },
+  {
+    "code" : "3523027",
+    "display" : "Stridor"
+  },
+  {
+    "code" : "3523029",
+    "display" : "Wheezing-Expiratory"
+  },
+  {
+    "code" : "3523031",
+    "display" : "Wheezing-Inspiratory"
+  },
+  {
+    "code" : "3524001",
+    "display" : "Left - Anterior"
+  },
+  {
+    "code" : "3524003",
+    "display" : "Left - Posterior (DEPRECATED)"
+  },
+  {
+    "code" : "3524005",
+    "display" : "Right - Anterior"
+  },
+  {
+    "code" : "3524007",
+    "display" : "Right - Posterior (DEPRECATED)"
+  },
+  {
+    "code" : "3524009",
+    "display" : "General - Anterior"
+  },
+  {
+    "code" : "3524011",
+    "display" : "General - Posterior"
+  },
+  {
+    "code" : "3524013",
+    "display" : "Left - Side"
+  },
+  {
+    "code" : "3524015",
+    "display" : "Right - Side"
+  },
+  {
+    "code" : "3525001",
+    "display" : "Abrasion"
+  },
+  {
+    "code" : "3525003",
+    "display" : "Avulsion"
+  },
+  {
+    "code" : "3525005",
+    "display" : "Accessory Muscles Used with Breathing"
+  },
+  {
+    "code" : "3525007",
+    "display" : "Bleeding Controlled"
+  },
+  {
+    "code" : "3525009",
+    "display" : "Bleeding Uncontrolled"
+  },
+  {
+    "code" : "3525011",
+    "display" : "Burn-Blistering"
+  },
+  {
+    "code" : "3525013",
+    "display" : "Burn-Charring"
+  },
+  {
+    "code" : "3525015",
+    "display" : "Burn-Redness"
+  },
+  {
+    "code" : "3525017",
+    "display" : "Burn-White/Waxy"
+  },
+  {
+    "code" : "3525019",
+    "display" : "Crush Injury"
+  },
+  {
+    "code" : "3525021",
+    "display" : "Deformity"
+  },
+  {
+    "code" : "3525023",
+    "display" : "Flail Segment"
+  },
+  {
+    "code" : "3525025",
+    "display" : "Implanted Device"
+  },
+  {
+    "code" : "3525027",
+    "display" : "Laceration"
+  },
+  {
+    "code" : "3525029",
+    "display" : "Normal"
+  },
+  {
+    "code" : "3525031",
+    "display" : "Not Done"
+  },
+  {
+    "code" : "3525033",
+    "display" : "Pain"
+  },
+  {
+    "code" : "3525035",
+    "display" : "Pain with Inspiration/Expiration"
+  },
+  {
+    "code" : "3525037",
+    "display" : "Puncture/Stab Wound"
+  },
+  {
+    "code" : "3525039",
+    "display" : "Retraction"
+  },
+  {
+    "code" : "3525041",
+    "display" : "Tenderness"
+  },
+  {
+    "code" : "3525043",
+    "display" : "Gunshot Wound"
+  },
+  {
+    "code" : "3525045",
+    "display" : "Swelling"
+  },
+  {
+    "code" : "3525047",
+    "display" : "Contusion"
+  },
+  {
+    "code" : "3525049",
+    "display" : "Tenderness-General (DEPRECATED)"
+  }]
+}

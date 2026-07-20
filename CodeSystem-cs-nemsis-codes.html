@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NEMSIS General Codes - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.252"}
+    h3,h4,h5,h6{--heading-prefix:"17.252"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NEMSIS General Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-codes.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-codes.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-codes.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: NEMSIS General Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NEMSISCodes</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.25.219926138944530828037824748808947630693.1.3
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>General NEMSIS enumeration codes for sections without a dedicated CodeSystem. Currently covers eHistory (eHistory.01 - Barriers to Patient Care). NEMSIS 3.5.1.251001CP2.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-vs-ems-agency-level-of-service.html">EMSAgencyLevelOfServiceVS</a></li>
+ <li><a href="ValueSet-vs-ems-agency-org-status.html">EMSAgencyOrgStatusVS</a></li>
+ <li><a href="ValueSet-vs-ems-agency-org-type.html">EMSAgencyOrgTypeVS</a></li>
+ <li><a href="ValueSet-vs-ems-agency-service-type.html">EMSAgencyServiceTypeVS</a></li>
+ <li><a href="ValueSet-vs-ems-barrier-to-patient-care.html">EMSBarrierToPatientCareVS</a></li>
+ <li><a href="ValueSet-vs-ems-crew-role.html">EMSCrewRoleVS</a></li>
+ <li><a href="ValueSet-vs-ems-external-report-type.html">EMSExternalReportTypeVS</a></li>
+ <li><a href="ValueSet-vs-ems-initial-acuity.html">EMSInitialAcuityVS</a></li>
+ <li><a href="ValueSet-vs-ems-mci-triage-class.html">EMSMCITriageClassVS</a></li>
+ <li><a href="ValueSet-vs-ems-situation-organ-system.html">EMSSituationOrganSystemVS</a></li>
+ <li><a href="ValueSet-vs-ems-transfer-reason.html">EMSTransferReasonVS</a></li>
+ <li><a href="ValueSet-vs-ems-vehicle-type.html">EMSVehicleTypeVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="cs-nemsis-codes"> </a><a name="hccs-nemsis-codes"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">section-eResponse<a name="cs-nemsis-codes-section-eResponse"> </a></td>
+<td>EMS Response</td></tr>
+<tr><td style="white-space:nowrap">section-eTimes<a name="cs-nemsis-codes-section-eTimes"> </a></td>
+<td>EMS Times</td></tr>
+<tr><td style="white-space:nowrap">section-eScene<a name="cs-nemsis-codes-section-eScene"> </a></td>
+<td>EMS Scene</td></tr>
+<tr><td style="white-space:nowrap">section-eSituation<a name="cs-nemsis-codes-section-eSituation"> </a></td>
+<td>EMS Patient Situation</td></tr>
+<tr><td style="white-space:nowrap">section-eAirway<a name="cs-nemsis-codes-section-eAirway"> </a></td>
+<td>EMS Airway Management</td></tr>
+<tr><td style="white-space:nowrap">section-eArrest<a name="cs-nemsis-codes-section-eArrest"> </a></td>
+<td>EMS Cardiac Arrest</td></tr>
+<tr><td style="white-space:nowrap">section-eExam<a name="cs-nemsis-codes-section-eExam"> </a></td>
+<td>EMS Physical Exam</td></tr>
+<tr><td style="white-space:nowrap">section-eLabs<a name="cs-nemsis-codes-section-eLabs"> </a></td>
+<td>EMS Labs</td></tr>
+<tr><td style="white-space:nowrap">section-eCrew<a name="cs-nemsis-codes-section-eCrew"> </a></td>
+<td>EMS Crew</td></tr>
+<tr><td style="white-space:nowrap">9920001<a name="cs-nemsis-codes-9920001"> </a></td>
+<td>911 Response (Scene) with Transport Capability</td></tr>
+<tr><td style="white-space:nowrap">9920003<a name="cs-nemsis-codes-9920003"> </a></td>
+<td>911 Response (Scene) without Transport Capability</td></tr>
+<tr><td style="white-space:nowrap">9920005<a name="cs-nemsis-codes-9920005"> </a></td>
+<td>Air Medical</td></tr>
+<tr><td style="white-space:nowrap">9920007<a name="cs-nemsis-codes-9920007"> </a></td>
+<td>ALS Intercept</td></tr>
+<tr><td style="white-space:nowrap">9920011<a name="cs-nemsis-codes-9920011"> </a></td>
+<td>Hazmat</td></tr>
+<tr><td style="white-space:nowrap">9920013<a name="cs-nemsis-codes-9920013"> </a></td>
+<td>Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)</td></tr>
+<tr><td style="white-space:nowrap">9920015<a name="cs-nemsis-codes-9920015"> </a></td>
+<td>Rescue</td></tr>
+<tr><td style="white-space:nowrap">9920017<a name="cs-nemsis-codes-9920017"> </a></td>
+<td>Community Paramedicine</td></tr>
+<tr><td style="white-space:nowrap">9920019<a name="cs-nemsis-codes-9920019"> </a></td>
+<td>Critical Care (Ground)</td></tr>
+<tr><td style="white-space:nowrap">9917001<a name="cs-nemsis-codes-9917001"> </a></td>
+<td>Advanced Emergency Medical Technician (AEMT)</td></tr>
+<tr><td style="white-space:nowrap">9917002<a name="cs-nemsis-codes-9917002"> </a></td>
+<td>Emergency Medical Technician - Intermediate</td></tr>
+<tr><td style="white-space:nowrap">9917003<a name="cs-nemsis-codes-9917003"> </a></td>
+<td>Emergency Medical Responder (EMR)</td></tr>
+<tr><td style="white-space:nowrap">9917005<a name="cs-nemsis-codes-9917005"> </a></td>
+<td>Emergency Medical Technician (EMT)</td></tr>
+<tr><td style="white-space:nowrap">9917007<a name="cs-nemsis-codes-9917007"> </a></td>
+<td>Paramedic</td></tr>
+<tr><td style="white-space:nowrap">9917019<a name="cs-nemsis-codes-9917019"> </a></td>
+<td>Physician</td></tr>
+<tr><td style="white-space:nowrap">9917021<a name="cs-nemsis-codes-9917021"> </a></td>
+<td>Critical Care Paramedic</td></tr>
+<tr><td style="white-space:nowrap">9917023<a name="cs-nemsis-codes-9917023"> </a></td>
+<td>Community Paramedicine</td></tr>
+<tr><td style="white-space:nowrap">9917025<a name="cs-nemsis-codes-9917025"> </a></td>
+<td>Nurse Practitioner</td></tr>
+<tr><td style="white-space:nowrap">9917027<a name="cs-nemsis-codes-9917027"> </a></td>
+<td>Physician Assistant</td></tr>
+<tr><td style="white-space:nowrap">9917029<a name="cs-nemsis-codes-9917029"> </a></td>
+<td>Licensed Practical Nurse (LPN)</td></tr>
+<tr><td style="white-space:nowrap">9917031<a name="cs-nemsis-codes-9917031"> </a></td>
+<td>Registered Nurse</td></tr>
+<tr><td style="white-space:nowrap">1016001<a name="cs-nemsis-codes-1016001"> </a></td>
+<td>Mixed</td></tr>
+<tr><td style="white-space:nowrap">1016003<a name="cs-nemsis-codes-1016003"> </a></td>
+<td>Non-Volunteer</td></tr>
+<tr><td style="white-space:nowrap">1016005<a name="cs-nemsis-codes-1016005"> </a></td>
+<td>Volunteer</td></tr>
+<tr><td style="white-space:nowrap">9912001<a name="cs-nemsis-codes-9912001"> </a></td>
+<td>Fire Department</td></tr>
+<tr><td style="white-space:nowrap">9912003<a name="cs-nemsis-codes-9912003"> </a></td>
+<td>Governmental, Non-Fire</td></tr>
+<tr><td style="white-space:nowrap">9912005<a name="cs-nemsis-codes-9912005"> </a></td>
+<td>Hospital</td></tr>
+<tr><td style="white-space:nowrap">9912007<a name="cs-nemsis-codes-9912007"> </a></td>
+<td>Private, Nonhospital</td></tr>
+<tr><td style="white-space:nowrap">9912009<a name="cs-nemsis-codes-9912009"> </a></td>
+<td>Tribal</td></tr>
+<tr><td style="white-space:nowrap">2403001<a name="cs-nemsis-codes-2403001"> </a></td>
+<td>Driver/Pilot-Response</td></tr>
+<tr><td style="white-space:nowrap">2403003<a name="cs-nemsis-codes-2403003"> </a></td>
+<td>Driver/Pilot-Transport</td></tr>
+<tr><td style="white-space:nowrap">2403005<a name="cs-nemsis-codes-2403005"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">2403007<a name="cs-nemsis-codes-2403007"> </a></td>
+<td>Other Patient Caregiver-At Scene</td></tr>
+<tr><td style="white-space:nowrap">2403009<a name="cs-nemsis-codes-2403009"> </a></td>
+<td>Other Patient Caregiver-Transport</td></tr>
+<tr><td style="white-space:nowrap">2403011<a name="cs-nemsis-codes-2403011"> </a></td>
+<td>Primary Patient Caregiver-At Scene</td></tr>
+<tr><td style="white-space:nowrap">2403013<a name="cs-nemsis-codes-2403013"> </a></td>
+<td>Primary Patient Caregiver-Transport</td></tr>
+<tr><td style="white-space:nowrap">2708001<a name="cs-nemsis-codes-2708001"> </a></td>
+<td>Red - Immediate</td></tr>
+<tr><td style="white-space:nowrap">2708003<a name="cs-nemsis-codes-2708003"> </a></td>
+<td>Yellow - Delayed</td></tr>
+<tr><td style="white-space:nowrap">2708005<a name="cs-nemsis-codes-2708005"> </a></td>
+<td>Green - Minimal (Minor)</td></tr>
+<tr><td style="white-space:nowrap">2708007<a name="cs-nemsis-codes-2708007"> </a></td>
+<td>Gray - Expectant</td></tr>
+<tr><td style="white-space:nowrap">2708009<a name="cs-nemsis-codes-2708009"> </a></td>
+<td>Black - Deceased</td></tr>
+<tr><td style="white-space:nowrap">2808001<a name="cs-nemsis-codes-2808001"> </a></td>
+<td>Behavioral/Psychiatric</td></tr>
+<tr><td style="white-space:nowrap">2808003<a name="cs-nemsis-codes-2808003"> </a></td>
+<td>Cardiovascular</td></tr>
+<tr><td style="white-space:nowrap">2808005<a name="cs-nemsis-codes-2808005"> </a></td>
+<td>CNS/Neuro</td></tr>
+<tr><td style="white-space:nowrap">2808007<a name="cs-nemsis-codes-2808007"> </a></td>
+<td>Endocrine/Metabolic</td></tr>
+<tr><td style="white-space:nowrap">2808009<a name="cs-nemsis-codes-2808009"> </a></td>
+<td>GI</td></tr>
+<tr><td style="white-space:nowrap">2808011<a name="cs-nemsis-codes-2808011"> </a></td>
+<td>Global/General</td></tr>
+<tr><td style="white-space:nowrap">2808013<a name="cs-nemsis-codes-2808013"> </a></td>
+<td>Lymphatic/Immune</td></tr>
+<tr><td style="white-space:nowrap">2808015<a name="cs-nemsis-codes-2808015"> </a></td>
+<td>Musculoskeletal/Skin</td></tr>
+<tr><td style="white-space:nowrap">2808017<a name="cs-nemsis-codes-2808017"> </a></td>
+<td>Reproductive</td></tr>
+<tr><td style="white-space:nowrap">2808019<a name="cs-nemsis-codes-2808019"> </a></td>
+<td>Pulmonary</td></tr>
+<tr><td style="white-space:nowrap">2808021<a name="cs-nemsis-codes-2808021"> </a></td>
+<td>Renal</td></tr>
+<tr><td style="white-space:nowrap">2813001<a name="cs-nemsis-codes-2813001"> </a></td>
+<td>Critical (Red)</td></tr>
+<tr><td style="white-space:nowrap">2813003<a name="cs-nemsis-codes-2813003"> </a></td>
+<td>Emergent (Yellow)</td></tr>
+<tr><td style="white-space:nowrap">2813005<a name="cs-nemsis-codes-2813005"> </a></td>
+<td>Lower Acuity (Green)</td></tr>
+<tr><td style="white-space:nowrap">2813007<a name="cs-nemsis-codes-2813007"> </a></td>
+<td>Dead without Resuscitation Efforts (Black)</td></tr>
+<tr><td style="white-space:nowrap">2813009<a name="cs-nemsis-codes-2813009"> </a></td>
+<td>Non-Acute/Routine</td></tr>
+<tr><td style="white-space:nowrap">2820001<a name="cs-nemsis-codes-2820001"> </a></td>
+<td>Cardiac Specialty</td></tr>
+<tr><td style="white-space:nowrap">2820003<a name="cs-nemsis-codes-2820003"> </a></td>
+<td>Convenience Transfer (Patient Request)</td></tr>
+<tr><td style="white-space:nowrap">2820005<a name="cs-nemsis-codes-2820005"> </a></td>
+<td>Diagnostic Testing</td></tr>
+<tr><td style="white-space:nowrap">2820007<a name="cs-nemsis-codes-2820007"> </a></td>
+<td>Dialysis</td></tr>
+<tr><td style="white-space:nowrap">2820009<a name="cs-nemsis-codes-2820009"> </a></td>
+<td>Drug and/or Alcohol Rehabilitation Care</td></tr>
+<tr><td style="white-space:nowrap">2820011<a name="cs-nemsis-codes-2820011"> </a></td>
+<td>Extended Care</td></tr>
+<tr><td style="white-space:nowrap">2820013<a name="cs-nemsis-codes-2820013"> </a></td>
+<td>Maternal/Neonatal</td></tr>
+<tr><td style="white-space:nowrap">2820015<a name="cs-nemsis-codes-2820015"> </a></td>
+<td>Medical Specialty Care (Other, Not Listed)</td></tr>
+<tr><td style="white-space:nowrap">2820017<a name="cs-nemsis-codes-2820017"> </a></td>
+<td>Neurological Specialty Care</td></tr>
+<tr><td style="white-space:nowrap">2820019<a name="cs-nemsis-codes-2820019"> </a></td>
+<td>Palliative/Hospice Care (Home or Facility)</td></tr>
+<tr><td style="white-space:nowrap">2820021<a name="cs-nemsis-codes-2820021"> </a></td>
+<td>Pediatric Specialty Care</td></tr>
+<tr><td style="white-space:nowrap">2820023<a name="cs-nemsis-codes-2820023"> </a></td>
+<td>Psychiatric/Behavioral Care</td></tr>
+<tr><td style="white-space:nowrap">2820025<a name="cs-nemsis-codes-2820025"> </a></td>
+<td>Physical Rehabilitation Care</td></tr>
+<tr><td style="white-space:nowrap">2820027<a name="cs-nemsis-codes-2820027"> </a></td>
+<td>Return to Home/Residence</td></tr>
+<tr><td style="white-space:nowrap">2820029<a name="cs-nemsis-codes-2820029"> </a></td>
+<td>Surgical Specialty Care (Other, Not Listed)</td></tr>
+<tr><td style="white-space:nowrap">2820031<a name="cs-nemsis-codes-2820031"> </a></td>
+<td>Trauma/Orthopedic Specialty Care</td></tr>
+<tr><td style="white-space:nowrap">3101001<a name="cs-nemsis-codes-3101001"> </a></td>
+<td>Cultural, Custom, Religious</td></tr>
+<tr><td style="white-space:nowrap">3101003<a name="cs-nemsis-codes-3101003"> </a></td>
+<td>Developmentally Impaired</td></tr>
+<tr><td style="white-space:nowrap">3101005<a name="cs-nemsis-codes-3101005"> </a></td>
+<td>Hearing Impaired</td></tr>
+<tr><td style="white-space:nowrap">3101007<a name="cs-nemsis-codes-3101007"> </a></td>
+<td>Language</td></tr>
+<tr><td style="white-space:nowrap">3101009<a name="cs-nemsis-codes-3101009"> </a></td>
+<td>None Noted</td></tr>
+<tr><td style="white-space:nowrap">3101011<a name="cs-nemsis-codes-3101011"> </a></td>
+<td>Obesity</td></tr>
+<tr><td style="white-space:nowrap">3101013<a name="cs-nemsis-codes-3101013"> </a></td>
+<td>Physical Barrier (Unable to Access Patient)</td></tr>
+<tr><td style="white-space:nowrap">3101015<a name="cs-nemsis-codes-3101015"> </a></td>
+<td>Physically Impaired</td></tr>
+<tr><td style="white-space:nowrap">3101017<a name="cs-nemsis-codes-3101017"> </a></td>
+<td>Physically Restrained</td></tr>
+<tr><td style="white-space:nowrap">3101019<a name="cs-nemsis-codes-3101019"> </a></td>
+<td>Psychologically Impaired</td></tr>
+<tr><td style="white-space:nowrap">3101021<a name="cs-nemsis-codes-3101021"> </a></td>
+<td>Sight Impaired</td></tr>
+<tr><td style="white-space:nowrap">3101023<a name="cs-nemsis-codes-3101023"> </a></td>
+<td>Speech Impaired</td></tr>
+<tr><td style="white-space:nowrap">3101025<a name="cs-nemsis-codes-3101025"> </a></td>
+<td>Unattended or Unsupervised (including minors)</td></tr>
+<tr><td style="white-space:nowrap">3101027<a name="cs-nemsis-codes-3101027"> </a></td>
+<td>Unconscious</td></tr>
+<tr><td style="white-space:nowrap">3101029<a name="cs-nemsis-codes-3101029"> </a></td>
+<td>Uncooperative</td></tr>
+<tr><td style="white-space:nowrap">3101031<a name="cs-nemsis-codes-3101031"> </a></td>
+<td>State of Emotional Distress</td></tr>
+<tr><td style="white-space:nowrap">3101033<a name="cs-nemsis-codes-3101033"> </a></td>
+<td>Alcohol Use, Suspected</td></tr>
+<tr><td style="white-space:nowrap">3101035<a name="cs-nemsis-codes-3101035"> </a></td>
+<td>Drug Use, Suspected</td></tr>
+<tr><td style="white-space:nowrap">4303001<a name="cs-nemsis-codes-4303001"> </a></td>
+<td>Disaster Tag</td></tr>
+<tr><td style="white-space:nowrap">4303003<a name="cs-nemsis-codes-4303003"> </a></td>
+<td>Fire Incident Report</td></tr>
+<tr><td style="white-space:nowrap">4303005<a name="cs-nemsis-codes-4303005"> </a></td>
+<td>Hospital-Receiving</td></tr>
+<tr><td style="white-space:nowrap">4303007<a name="cs-nemsis-codes-4303007"> </a></td>
+<td>Hospital-Transferring</td></tr>
+<tr><td style="white-space:nowrap">4303009<a name="cs-nemsis-codes-4303009"> </a></td>
+<td>Law Enforcement Report</td></tr>
+<tr><td style="white-space:nowrap">4303011<a name="cs-nemsis-codes-4303011"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4303013<a name="cs-nemsis-codes-4303013"> </a></td>
+<td>Other Registry</td></tr>
+<tr><td style="white-space:nowrap">4303015<a name="cs-nemsis-codes-4303015"> </a></td>
+<td>Other Report</td></tr>
+<tr><td style="white-space:nowrap">4303017<a name="cs-nemsis-codes-4303017"> </a></td>
+<td>Patient ID</td></tr>
+<tr><td style="white-space:nowrap">4303019<a name="cs-nemsis-codes-4303019"> </a></td>
+<td>Prior EMS Patient Care Report</td></tr>
+<tr><td style="white-space:nowrap">4303021<a name="cs-nemsis-codes-4303021"> </a></td>
+<td>STEMI Registry</td></tr>
+<tr><td style="white-space:nowrap">4303023<a name="cs-nemsis-codes-4303023"> </a></td>
+<td>Stroke Registry</td></tr>
+<tr><td style="white-space:nowrap">4303025<a name="cs-nemsis-codes-4303025"> </a></td>
+<td>Trauma Registry</td></tr>
+<tr><td style="white-space:nowrap">1404001<a name="cs-nemsis-codes-1404001"> </a></td>
+<td>Ambulance</td></tr>
+<tr><td style="white-space:nowrap">1404003<a name="cs-nemsis-codes-1404003"> </a></td>
+<td>ATV</td></tr>
+<tr><td style="white-space:nowrap">1404005<a name="cs-nemsis-codes-1404005"> </a></td>
+<td>Bicycle</td></tr>
+<tr><td style="white-space:nowrap">1404007<a name="cs-nemsis-codes-1404007"> </a></td>
+<td>Fire Apparatus</td></tr>
+<tr><td style="white-space:nowrap">1404009<a name="cs-nemsis-codes-1404009"> </a></td>
+<td>Fixed Wing</td></tr>
+<tr><td style="white-space:nowrap">1404011<a name="cs-nemsis-codes-1404011"> </a></td>
+<td>Motorcycle</td></tr>
+<tr><td style="white-space:nowrap">1404013<a name="cs-nemsis-codes-1404013"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">1404015<a name="cs-nemsis-codes-1404015"> </a></td>
+<td>Personal Vehicle</td></tr>
+<tr><td style="white-space:nowrap">1404017<a name="cs-nemsis-codes-1404017"> </a></td>
+<td>Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)</td></tr>
+<tr><td style="white-space:nowrap">1404019<a name="cs-nemsis-codes-1404019"> </a></td>
+<td>Rescue</td></tr>
+<tr><td style="white-space:nowrap">1404021<a name="cs-nemsis-codes-1404021"> </a></td>
+<td>Rotor Craft</td></tr>
+<tr><td style="white-space:nowrap">1404023<a name="cs-nemsis-codes-1404023"> </a></td>
+<td>Snow Vehicle</td></tr>
+<tr><td style="white-space:nowrap">1404025<a name="cs-nemsis-codes-1404025"> </a></td>
+<td>Watercraft</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

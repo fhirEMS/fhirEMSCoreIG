@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-extremity-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-extremity-location</b></p><a name="vs-ems-exam-extremity-location"> </a><a name="hcvs-ems-exam-extremity-location"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515001">3515001</a></td><td>Ankle-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515003">3515003</a></td><td>Ankle-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515005">3515005</a></td><td>Arm-Upper-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515007">3515007</a></td><td>Arm-Upper-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515009">3515009</a></td><td>Elbow-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515011">3515011</a></td><td>Elbow-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515013">3515013</a></td><td>Finger-2nd (Index)-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515015">3515015</a></td><td>Finger-2nd (Index)-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515017">3515017</a></td><td>Finger-3rd (Middle)-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515019">3515019</a></td><td>Finger-3rd (Middle)-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515021">3515021</a></td><td>Finger-4th (Ring)-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515023">3515023</a></td><td>Finger-4th (Ring)-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515025">3515025</a></td><td>Finger-5th (Smallest)-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515027">3515027</a></td><td>Finger-5th (Smallest)-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515029">3515029</a></td><td>Foot-Dorsal-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515031">3515031</a></td><td>Foot-Dorsal-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515033">3515033</a></td><td>Foot-Plantar-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515035">3515035</a></td><td>Foot-Plantar-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515037">3515037</a></td><td>Arm-Lower-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515039">3515039</a></td><td>Arm-Lower-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515041">3515041</a></td><td>Hand-Dorsal-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515043">3515043</a></td><td>Hand-Dorsal-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515045">3515045</a></td><td>Hand-Palm-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515047">3515047</a></td><td>Hand-Palm-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515049">3515049</a></td><td>Hip-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515051">3515051</a></td><td>Hip-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515053">3515053</a></td><td>Knee-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515055">3515055</a></td><td>Knee-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515057">3515057</a></td><td>Leg-Lower-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515059">3515059</a></td><td>Leg-Lower-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515061">3515061</a></td><td>Leg-Upper-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515063">3515063</a></td><td>Leg-Upper-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515065">3515065</a></td><td>Shoulder-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515067">3515067</a></td><td>Shoulder-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515069">3515069</a></td><td>Thumb-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515071">3515071</a></td><td>Thumb-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515073">3515073</a></td><td>Toe-1st (Big)-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515075">3515075</a></td><td>Toe-1st (Big)-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515077">3515077</a></td><td>Toe-2nd-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515079">3515079</a></td><td>Toe-2nd-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515081">3515081</a></td><td>Toe-3rd-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515083">3515083</a></td><td>Toe-3rd-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515085">3515085</a></td><td>Toe-4th-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515087">3515087</a></td><td>Toe-4th-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515089">3515089</a></td><td>Toe-5th (Smallest)-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515091">3515091</a></td><td>Toe-5th (Smallest)-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515093">3515093</a></td><td>Wrist-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515095">3515095</a></td><td>Wrist-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515097">3515097</a></td><td>Arm-Whole Arm and Hand-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515099">3515099</a></td><td>Arm-Whole Arm and Hand-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515101">3515101</a></td><td>Hand-Whole Hand-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515103">3515103</a></td><td>Hand-Whole Hand-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515105">3515105</a></td><td>Leg-Whole Leg-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515107">3515107</a></td><td>Leg-Whole Leg-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515109">3515109</a></td><td>Foot-Whole Foot-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515111">3515111</a></td><td>Foot-Whole Foot-Right</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremity-location"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.56"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamExtremityLocationVS"/>
+  <title value="EMS Extremity Assessment Finding Location"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.15 - Location qualifier for extremity assessment findings."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3515001"/>
+        <display value="Ankle-Left"/>
+      </concept>
+      <concept>
+        <code value="3515003"/>
+        <display value="Ankle-Right"/>
+      </concept>
+      <concept>
+        <code value="3515005"/>
+        <display value="Arm-Upper-Left"/>
+      </concept>
+      <concept>
+        <code value="3515007"/>
+        <display value="Arm-Upper-Right"/>
+      </concept>
+      <concept>
+        <code value="3515009"/>
+        <display value="Elbow-Left"/>
+      </concept>
+      <concept>
+        <code value="3515011"/>
+        <display value="Elbow-Right"/>
+      </concept>
+      <concept>
+        <code value="3515013"/>
+        <display value="Finger-2nd (Index)-Left"/>
+      </concept>
+      <concept>
+        <code value="3515015"/>
+        <display value="Finger-2nd (Index)-Right"/>
+      </concept>
+      <concept>
+        <code value="3515017"/>
+        <display value="Finger-3rd (Middle)-Left"/>
+      </concept>
+      <concept>
+        <code value="3515019"/>
+        <display value="Finger-3rd (Middle)-Right"/>
+      </concept>
+      <concept>
+        <code value="3515021"/>
+        <display value="Finger-4th (Ring)-Left"/>
+      </concept>
+      <concept>
+        <code value="3515023"/>
+        <display value="Finger-4th (Ring)-Right"/>
+      </concept>
+      <concept>
+        <code value="3515025"/>
+        <display value="Finger-5th (Smallest)-Left"/>
+      </concept>
+      <concept>
+        <code value="3515027"/>
+        <display value="Finger-5th (Smallest)-Right"/>
+      </concept>
+      <concept>
+        <code value="3515029"/>
+        <display value="Foot-Dorsal-Left"/>
+      </concept>
+      <concept>
+        <code value="3515031"/>
+        <display value="Foot-Dorsal-Right"/>
+      </concept>
+      <concept>
+        <code value="3515033"/>
+        <display value="Foot-Plantar-Left"/>
+      </concept>
+      <concept>
+        <code value="3515035"/>
+        <display value="Foot-Plantar-Right"/>
+      </concept>
+      <concept>
+        <code value="3515037"/>
+        <display value="Arm-Lower-Left"/>
+      </concept>
+      <concept>
+        <code value="3515039"/>
+        <display value="Arm-Lower-Right"/>
+      </concept>
+      <concept>
+        <code value="3515041"/>
+        <display value="Hand-Dorsal-Left"/>
+      </concept>
+      <concept>
+        <code value="3515043"/>
+        <display value="Hand-Dorsal-Right"/>
+      </concept>
+      <concept>
+        <code value="3515045"/>
+        <display value="Hand-Palm-Left"/>
+      </concept>
+      <concept>
+        <code value="3515047"/>
+        <display value="Hand-Palm-Right"/>
+      </concept>
+      <concept>
+        <code value="3515049"/>
+        <display value="Hip-Left"/>
+      </concept>
+      <concept>
+        <code value="3515051"/>
+        <display value="Hip-Right"/>
+      </concept>
+      <concept>
+        <code value="3515053"/>
+        <display value="Knee-Left"/>
+      </concept>
+      <concept>
+        <code value="3515055"/>
+        <display value="Knee-Right"/>
+      </concept>
+      <concept>
+        <code value="3515057"/>
+        <display value="Leg-Lower-Left"/>
+      </concept>
+      <concept>
+        <code value="3515059"/>
+        <display value="Leg-Lower-Right"/>
+      </concept>
+      <concept>
+        <code value="3515061"/>
+        <display value="Leg-Upper-Left"/>
+      </concept>
+      <concept>
+        <code value="3515063"/>
+        <display value="Leg-Upper-Right"/>
+      </concept>
+      <concept>
+        <code value="3515065"/>
+        <display value="Shoulder-Left"/>
+      </concept>
+      <concept>
+        <code value="3515067"/>
+        <display value="Shoulder-Right"/>
+      </concept>
+      <concept>
+        <code value="3515069"/>
+        <display value="Thumb-Left"/>
+      </concept>
+      <concept>
+        <code value="3515071"/>
+        <display value="Thumb-Right"/>
+      </concept>
+      <concept>
+        <code value="3515073"/>
+        <display value="Toe-1st (Big)-Left"/>
+      </concept>
+      <concept>
+        <code value="3515075"/>
+        <display value="Toe-1st (Big)-Right"/>
+      </concept>
+      <concept>
+        <code value="3515077"/>
+        <display value="Toe-2nd-Left"/>
+      </concept>
+      <concept>
+        <code value="3515079"/>
+        <display value="Toe-2nd-Right"/>
+      </concept>
+      <concept>
+        <code value="3515081"/>
+        <display value="Toe-3rd-Left"/>
+      </concept>
+      <concept>
+        <code value="3515083"/>
+        <display value="Toe-3rd-Right"/>
+      </concept>
+      <concept>
+        <code value="3515085"/>
+        <display value="Toe-4th-Left"/>
+      </concept>
+      <concept>
+        <code value="3515087"/>
+        <display value="Toe-4th-Right"/>
+      </concept>
+      <concept>
+        <code value="3515089"/>
+        <display value="Toe-5th (Smallest)-Left"/>
+      </concept>
+      <concept>
+        <code value="3515091"/>
+        <display value="Toe-5th (Smallest)-Right"/>
+      </concept>
+      <concept>
+        <code value="3515093"/>
+        <display value="Wrist-Left"/>
+      </concept>
+      <concept>
+        <code value="3515095"/>
+        <display value="Wrist-Right"/>
+      </concept>
+      <concept>
+        <code value="3515097"/>
+        <display value="Arm-Whole Arm and Hand-Left"/>
+      </concept>
+      <concept>
+        <code value="3515099"/>
+        <display value="Arm-Whole Arm and Hand-Right"/>
+      </concept>
+      <concept>
+        <code value="3515101"/>
+        <display value="Hand-Whole Hand-Left"/>
+      </concept>
+      <concept>
+        <code value="3515103"/>
+        <display value="Hand-Whole Hand-Right"/>
+      </concept>
+      <concept>
+        <code value="3515105"/>
+        <display value="Leg-Whole Leg-Left"/>
+      </concept>
+      <concept>
+        <code value="3515107"/>
+        <display value="Leg-Whole Leg-Right"/>
+      </concept>
+      <concept>
+        <code value="3515109"/>
+        <display value="Foot-Whole Foot-Left"/>
+      </concept>
+      <concept>
+        <code value="3515111"/>
+        <display value="Foot-Whole Foot-Right"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

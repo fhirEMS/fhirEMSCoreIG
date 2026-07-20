@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-stroke-scale"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ex-ems-stroke-scale</b></p><a name="ex-ems-stroke-scale"> </a><a name="hcex-ems-stroke-scale"> </a><blockquote><p><b>EMS Stroke Scale Context</b></p><ul><li>scaleType: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 3330001}">Cincinnati Prehospital Stroke Scale (CPSS)</span></li><li>scaleScore: 0</li></ul></blockquote><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}">Exam</span></p><p><b>code</b>: <span title="Codes:">Stroke Scale Result (eVitals.29)</span></p><p><b>subject</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href="Encounter-ex-ems-encounter.html">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-14 14:40:00-0800</p><p><b>performer</b>: <a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></p><p><b>value</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 3329001}">Negative</span></p></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-stroke-scale-context">
+    <extension url="scaleType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+          <code value="3330001"/>
+          <display value="Cincinnati Prehospital Stroke Scale (CPSS)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="scaleScore">
+      <valueDecimal value="0"/>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+    </coding>
+  </category>
+  <code>
+    <text value="Stroke Scale Result (eVitals.29)"/>
+  </code>
+  <subject>
+    <reference value="Patient/ex-ems-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ex-ems-encounter"/>
+  </encounter>
+  <effectiveDateTime value="2026-03-14T14:40:00-08:00"/>
+  <performer>
+    <reference value="Practitioner/ex-ems-practitioner"/>
+  </performer>
+  <valueCodeableConcept>
+    <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-pertinent-negative">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative"/>
+          <code value="PN.ExamFindingNotPresent"/>
+          <display value="Exam Finding Not Present"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+      <code value="3329001"/>
+      <display value="Negative"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

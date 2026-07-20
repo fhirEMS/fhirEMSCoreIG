@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-provenance"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance ex-ems-provenance</b></p><a name="ex-ems-provenance"> </a><a name="hcex-ems-provenance"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-provenance.html">EMS Provenance — PCR Signature</a></p></div><p>Provenance for <a href="Composition-ex-ems-composition.html">Composition EMS Patient Care Report</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2026-03-14 15:08:00-0800</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></td><td><a href="Organization-ex-ems-organization-agency.html">Organization Riverside County EMS Agency</a></td></tr></table></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-signature-context">
+    <extension url="signerType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+          <code value="4512003"/>
+          <display value="EMS Primary Care Provider (for this event)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="signatureReason">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+          <code value="4513007"/>
+          <display value="Transfer of Patient Care"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="signatureStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+          <code value="4515031"/>
+          <display value="Signed"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="signatureFileName">
+      <valueString value="signature-p1234.png"/>
+    </extension>
+    <extension url="signatureFileType">
+      <valueString value="image/png"/>
+    </extension>
+    <extension url="signerName">
+      <valueHumanName>
+        <family value="Smith"/>
+        <given value="John"/>
+      </valueHumanName>
+    </extension>
+  </extension>
+  <target>
+    <reference value="Composition/ex-ems-composition"/>
+  </target>
+  <recorded value="2026-03-14T15:08:00-08:00"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Practitioner/ex-ems-practitioner"/>
+    </who>
+    <onBehalfOf>
+      <reference value="Organization/ex-ems-organization-agency"/>
+    </onBehalfOf>
+  </agent>
+  <signature>
+    <type>
+      <system value="urn:iso-astm:E1762-95:2013"/>
+      <code value="1.2.840.10065.1.12.1.1"/>
+      <display value="Author's Signature"/>
+    </type>
+    <when value="2026-03-14T15:08:00-08:00"/>
+    <who>
+      <reference value="Practitioner/ex-ems-practitioner"/>
+    </who>
+    <sigFormat value="image/png"/>
+    <data value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="/>
+  </signature>
+</Provenance>

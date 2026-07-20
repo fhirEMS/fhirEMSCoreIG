@@ -1,0 +1,2340 @@
+{
+  "package": "fhirems.emscore",
+  "version": "0.2.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
+  "extensions": [
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-acn-incident",
+      "title": "EMS ACN Incident",
+      "types": [
+        "string",
+        "string",
+        "ContactPoint",
+        "dateTime",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "date",
+        "boolean",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "boolean",
+        "integer",
+        "boolean",
+        "CodeableConcept",
+        "boolean",
+        "boolean",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-additional-response-mode",
+      "title": "EMS Additional Response Mode Descriptors",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-configuration",
+      "title": "EMS Agency Configuration",
+      "types": [
+        "string",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "CodeableConcept",
+        "boolean",
+        "CodeableConcept",
+        "string",
+        "CodeableConcept",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-details",
+      "title": "EMS Agency Details",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-airway-context",
+      "title": "EMS Airway Management Context",
+      "types": [
+        "CodeableConcept",
+        "dateTime",
+        "CodeableConcept",
+        "CodeableConcept",
+        "Quantity",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "dateTime",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-als-assessment",
+      "title": "EMS ALS Assessment Performed and Warranted",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-alternate-residence",
+      "title": "Alternate Home Residence",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions",
+      "title": "EMS Ambulance Conditions Indicator",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-transport-reason",
+      "title": "EMS Ambulance Transport Reason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-arrest-context",
+      "title": "EMS Cardiac Arrest Context",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "boolean",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "dateTime",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-bp-method",
+      "title": "EMS Blood Pressure Measurement Method",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-census-tract",
+      "title": "Patient Home Census Tract",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-certification-level",
+      "title": "EMS Certification Level",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-cms-service-level",
+      "title": "EMS CMS Service Level",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-crew-safety",
+      "title": "EMS Crew Safety",
+      "types": [
+        "string",
+        "CodeableConcept",
+        "boolean",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-custom-target",
+      "title": "EMS Custom Result Target",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-destination-details",
+      "title": "EMS Destination Details",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "dateTime",
+        "positiveInt",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-info",
+      "title": "EMS Dispatch Information",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "string",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-reason",
+      "title": "EMS Dispatch Reason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-disposition-codes",
+      "title": "EMS Disposition Codes",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-document-type",
+      "title": "EMS External Document Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ecg-context",
+      "title": "EMS ECG Context",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-history-context",
+      "title": "EMS History Context",
+      "types": [
+        "CodeableConcept",
+        "HumanName",
+        "CodeableConcept",
+        "CodeableConcept",
+        "date",
+        "boolean",
+        "CodeableConcept",
+        "CodeableConcept",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-incident-type",
+      "title": "EMS Chief Complaint Anatomic Location",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-injury-context",
+      "title": "EMS Injury Context",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "integer",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-medical-director",
+      "title": "EMS Agency Medical Director",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-medication-context",
+      "title": "EMS Medication Administration Context",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-mileage-to-closest",
+      "title": "EMS Mileage to Closest Hospital",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-not-value",
+      "title": "NEMSIS Not Value",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-other-context",
+      "title": "EMS Other Context",
+      "types": [
+        "boolean",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-pain-scale-type",
+      "title": "EMS Pain Scale Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-age",
+      "title": "EMS Patient Estimated Age",
+      "types": [
+        "decimal",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-barrier",
+      "title": "Barriers to Patient Care",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-payer-type",
+      "title": "EMS Payer Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-pertinent-negative",
+      "title": "NEMSIS Pertinent Negative",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-primary-payment-method",
+      "title": "EMS Primary Payment Method",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-procedure-context",
+      "title": "EMS Procedure Context",
+      "types": [
+        "CodeableConcept",
+        "integer",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-protocol-used",
+      "title": "EMS Protocol Used",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-delays",
+      "title": "EMS Response Delays",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-mode",
+      "title": "EMS Response Mode to Scene",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-type",
+      "title": "EMS Response Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-urgency",
+      "title": "EMS Response Urgency",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-details",
+      "title": "EMS Scene Details",
+      "types": [
+        "CodeableConcept",
+        "positiveInt",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-gps",
+      "title": "EMS Scene GPS Location",
+      "types": [
+        "decimal",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-signature-context",
+      "title": "EMS Signature Context",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "string",
+        "HumanName",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-stroke-scale-context",
+      "title": "EMS Stroke Scale Context",
+      "types": [
+        "CodeableConcept",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-times",
+      "title": "EMS Response Times",
+      "types": [
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment",
+      "title": "EMS Patient Transport Assessment",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-details",
+      "title": "EMS Transport Details",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-reason",
+      "title": "EMS Transport Disposition (Legacy)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit",
+      "title": "EMS Vehicle Unit Identification",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit-type",
+      "title": "EMS Unit Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-usng",
+      "title": "US National Grid Coordinates",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-vital-obtained-prior",
+      "title": "EMS Vital Obtained Prior to EMS Care",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-allergyintolerance",
+        "title": "EMS AllergyIntolerance"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim",
+        "title": "EMS Ambulance Claim"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition",
+        "title": "EMS Patient Care Report (PCR)"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition",
+        "title": "EMS Condition"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-arrest",
+        "title": "EMS Cardiac Arrest Condition"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-injury",
+        "title": "EMS Injury Condition"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-problems",
+        "title": "EMS Condition — Past Medical History"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-coverage",
+        "title": "EMS Coverage (Insurance)"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-device-vehicle",
+        "title": "EMS Vehicle Device"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-documentreference",
+        "title": "EMS Document Reference"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter",
+        "title": "EMS Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-agency",
+        "title": "EMS Location — Agency Station"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-destination",
+        "title": "EMS Destination Location"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene",
+        "title": "EMS Scene Location"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationadministration",
+        "title": "EMS Medication Administration"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-medicationstatement",
+        "title": "EMS Medication Statement — Home Medications"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway",
+        "title": "EMS Airway Management Observation"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp",
+        "title": "EMS Blood Pressure Observation"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-exam",
+        "title": "EMS Physical Exam Observation"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs",
+        "title": "EMS Glasgow Coma Score (GCS) Panel"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-labs",
+        "title": "EMS Lab and Imaging Observation"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome",
+        "title": "EMS Outcome Observation"
+      },
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-vitalsigns",
+        "title": "EMS Vital Signs Observation"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-organization",
+        "title": "EMS Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient",
+        "title": "EMS Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitioner",
+        "title": "EMS Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole",
+        "title": "EMS PractitionerRole"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure",
+        "title": "EMS Procedure"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-provenance",
+        "title": "EMS Provenance — PCR Signature"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-questionnaire",
+        "title": "EMS Questionnaire — Custom Element Definitions"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-questionnaireresponse",
+        "title": "EMS Questionnaire Response — Custom Element Results"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-acn-incident": [
+      "Condition"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-additional-response-mode": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-configuration": [
+      "Organization"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-details": [
+      "Organization"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-airway-context": [
+      "Observation"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-als-assessment": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-alternate-residence": [
+      "Patient"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-transport-reason": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-arrest-context": [
+      "Condition"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-bp-method": [
+      "Observation"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-census-tract": [
+      "Patient"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-certification-level": [
+      "PractitionerRole"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-cms-service-level": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-crew-safety": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-custom-target": [
+      "QuestionnaireResponse.item"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-destination-details": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-info": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-reason": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-disposition-codes": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-document-type": [
+      "DocumentReference"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ecg-context": [
+      "Observation"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-history-context": [
+      "Condition"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-incident-type": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-injury-context": [
+      "Condition"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-medical-director": [
+      "Organization"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-medication-context": [
+      "MedicationAdministration"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-mileage-to-closest": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-not-value": [
+      "Patient.maritalStatus"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-other-context": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-pain-scale-type": [
+      "Observation"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-age": [
+      "Patient"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-barrier": [
+      "Patient"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-payer-type": [
+      "Coverage"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-pertinent-negative": [
+      "Observation.valueCodeableConcept"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-primary-payment-method": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-procedure-context": [
+      "Procedure"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-protocol-used": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-delays": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-mode": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-type": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-urgency": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-details": [
+      "Location"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-gps": [
+      "Location"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-signature-context": [
+      "Provenance"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-stroke-scale-context": [
+      "Observation"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-times": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment": [
+      "Claim"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-details": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-reason": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit-type": [
+      "Encounter"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-usng": [
+      "Location"
+    ],
+    "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-vital-obtained-prior": [
+      "Observation"
+    ]
+  }
+}

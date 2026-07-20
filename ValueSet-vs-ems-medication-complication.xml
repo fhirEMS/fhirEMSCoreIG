@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-medication-complication"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-medication-complication</b></p><a name="vs-ems-medication-complication"> </a><a name="hcvs-ems-medication-complication"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-medications.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708001">3708001</a></td><td>Altered Mental Status</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708003">3708003</a></td><td>Apnea</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708005">3708005</a></td><td>Bleeding</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708007">3708007</a></td><td>Bradycardia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708009">3708009</a></td><td>Bradypnea</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708011">3708011</a></td><td>Diarrhea</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708013">3708013</a></td><td>Extravasation</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708015">3708015</a></td><td>Hypertension</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708017">3708017</a></td><td>Hyperthermia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708019">3708019</a></td><td>Hypotension</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708021">3708021</a></td><td>Hypothermia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708023">3708023</a></td><td>Hypoxia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708025">3708025</a></td><td>Injury</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708029">3708029</a></td><td>Nausea</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708031">3708031</a></td><td>None</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708033">3708033</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708035">3708035</a></td><td>Respiratory Distress</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708037">3708037</a></td><td>Tachycardia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708039">3708039</a></td><td>Tachypnea</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708041">3708041</a></td><td>Vomiting</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708043">3708043</a></td><td>Itching</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3708045">3708045</a></td><td>Urticaria</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-complication"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.85"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSMedicationComplicationVS"/>
+  <title value="EMS Medication Complication"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eMedications.08 - Adverse reactions or complications occurring with medication administration."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+      <concept>
+        <code value="3708001"/>
+        <display value="Altered Mental Status"/>
+      </concept>
+      <concept>
+        <code value="3708003"/>
+        <display value="Apnea"/>
+      </concept>
+      <concept>
+        <code value="3708005"/>
+        <display value="Bleeding"/>
+      </concept>
+      <concept>
+        <code value="3708007"/>
+        <display value="Bradycardia"/>
+      </concept>
+      <concept>
+        <code value="3708009"/>
+        <display value="Bradypnea"/>
+      </concept>
+      <concept>
+        <code value="3708011"/>
+        <display value="Diarrhea"/>
+      </concept>
+      <concept>
+        <code value="3708013"/>
+        <display value="Extravasation"/>
+      </concept>
+      <concept>
+        <code value="3708015"/>
+        <display value="Hypertension"/>
+      </concept>
+      <concept>
+        <code value="3708017"/>
+        <display value="Hyperthermia"/>
+      </concept>
+      <concept>
+        <code value="3708019"/>
+        <display value="Hypotension"/>
+      </concept>
+      <concept>
+        <code value="3708021"/>
+        <display value="Hypothermia"/>
+      </concept>
+      <concept>
+        <code value="3708023"/>
+        <display value="Hypoxia"/>
+      </concept>
+      <concept>
+        <code value="3708025"/>
+        <display value="Injury"/>
+      </concept>
+      <concept>
+        <code value="3708029"/>
+        <display value="Nausea"/>
+      </concept>
+      <concept>
+        <code value="3708031"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="3708033"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="3708035"/>
+        <display value="Respiratory Distress"/>
+      </concept>
+      <concept>
+        <code value="3708037"/>
+        <display value="Tachycardia"/>
+      </concept>
+      <concept>
+        <code value="3708039"/>
+        <display value="Tachypnea"/>
+      </concept>
+      <concept>
+        <code value="3708041"/>
+        <display value="Vomiting"/>
+      </concept>
+      <concept>
+        <code value="3708043"/>
+        <display value="Itching"/>
+      </concept>
+      <concept>
+        <code value="3708045"/>
+        <display value="Urticaria"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

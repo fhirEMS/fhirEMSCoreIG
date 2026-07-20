@@ -1,0 +1,446 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-injury"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-injury</b></p><a name=\"cs-nemsis-injury\"> </a><a name=\"hccs-nemsis-injury\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">2902001<a name=\"cs-nemsis-injury-2902001\"> </a></td><td>Blunt</td></tr><tr><td style=\"white-space:nowrap\">2902003<a name=\"cs-nemsis-injury-2902003\"> </a></td><td>Burn</td></tr><tr><td style=\"white-space:nowrap\">2902005<a name=\"cs-nemsis-injury-2902005\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">2902007<a name=\"cs-nemsis-injury-2902007\"> </a></td><td>Penetrating</td></tr><tr><td style=\"white-space:nowrap\">2903001<a name=\"cs-nemsis-injury-2903001\"> </a></td><td>Amputation proximal to wrist or ankle</td></tr><tr><td style=\"white-space:nowrap\">2903003<a name=\"cs-nemsis-injury-2903003\"> </a></td><td>Crushed, degloved, mangled, or pulseless extremity</td></tr><tr><td style=\"white-space:nowrap\">2903005<a name=\"cs-nemsis-injury-2903005\"> </a></td><td>Chest wall instability, deformity, or suspected flail chest</td></tr><tr><td style=\"white-space:nowrap\">2903007<a name=\"cs-nemsis-injury-2903007\"> </a></td><td>Glasgow Coma Score &lt;= 13 (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2903009<a name=\"cs-nemsis-injury-2903009\"> </a></td><td>Skull deformity, suspected skull fracture</td></tr><tr><td style=\"white-space:nowrap\">2903011<a name=\"cs-nemsis-injury-2903011\"> </a></td><td>Paralysis (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2903013<a name=\"cs-nemsis-injury-2903013\"> </a></td><td>Suspected pelvic fracture</td></tr><tr><td style=\"white-space:nowrap\">2903015<a name=\"cs-nemsis-injury-2903015\"> </a></td><td>Penetrating injuries to head, neck, torso, and proximal extremities</td></tr><tr><td style=\"white-space:nowrap\">2903017<a name=\"cs-nemsis-injury-2903017\"> </a></td><td>Respiratory Rate &lt;10 or &gt;29 breaths per minute (&lt;20 in infants aged &lt;1 year) or need for ventilatory support (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2903019<a name=\"cs-nemsis-injury-2903019\"> </a></td><td>Systolic Blood Pressure &lt;90 mmHg (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2903021<a name=\"cs-nemsis-injury-2903021\"> </a></td><td>Suspected fracture of two or more proximal long bones</td></tr><tr><td style=\"white-space:nowrap\">2903023<a name=\"cs-nemsis-injury-2903023\"> </a></td><td>Active bleeding requiring a tourniquet or wound packing with continuous pressure</td></tr><tr><td style=\"white-space:nowrap\">2903025<a name=\"cs-nemsis-injury-2903025\"> </a></td><td>Age &gt;= 10 years: HR &gt; SBP</td></tr><tr><td style=\"white-space:nowrap\">2903027<a name=\"cs-nemsis-injury-2903027\"> </a></td><td>Age &gt;= 65 years: SBP &lt; 110 mmHg</td></tr><tr><td style=\"white-space:nowrap\">2903029<a name=\"cs-nemsis-injury-2903029\"> </a></td><td>Age 0-9 years: SBP &lt; 70mm Hg + (2 x age in years)</td></tr><tr><td style=\"white-space:nowrap\">2903031<a name=\"cs-nemsis-injury-2903031\"> </a></td><td>Age 10-64 years: SBP &lt; 90 mmHg</td></tr><tr><td style=\"white-space:nowrap\">2903033<a name=\"cs-nemsis-injury-2903033\"> </a></td><td>Respiratory distress or need for respiratory support</td></tr><tr><td style=\"white-space:nowrap\">2903035<a name=\"cs-nemsis-injury-2903035\"> </a></td><td>Room-air pulse oximetry &lt; 90%</td></tr><tr><td style=\"white-space:nowrap\">2903037<a name=\"cs-nemsis-injury-2903037\"> </a></td><td>RR &lt; 10 or &gt; 29 breaths/min</td></tr><tr><td style=\"white-space:nowrap\">2903039<a name=\"cs-nemsis-injury-2903039\"> </a></td><td>Suspected spinal injury with new motor or sensory loss</td></tr><tr><td style=\"white-space:nowrap\">2903041<a name=\"cs-nemsis-injury-2903041\"> </a></td><td>Unable to follow commands (motor GCS &lt; 6)</td></tr><tr><td style=\"white-space:nowrap\">2904001<a name=\"cs-nemsis-injury-2904001\"> </a></td><td>Pedestrian/bicycle rider thrown, run over, or with significant impact</td></tr><tr><td style=\"white-space:nowrap\">2904003<a name=\"cs-nemsis-injury-2904003\"> </a></td><td>Fall Adults: &gt; 20 ft. (one story is equal to 10 ft.) (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2904005<a name=\"cs-nemsis-injury-2904005\"> </a></td><td>Fall Children: &gt; 10 ft. or 2-3 times the height of the child (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2904007<a name=\"cs-nemsis-injury-2904007\"> </a></td><td>Auto Crash: Death in passenger compartment</td></tr><tr><td style=\"white-space:nowrap\">2904009<a name=\"cs-nemsis-injury-2904009\"> </a></td><td>Auto Crash: Partial or complete ejection</td></tr><tr><td style=\"white-space:nowrap\">2904011<a name=\"cs-nemsis-injury-2904011\"> </a></td><td>Auto Crash: Significant intrusion (including roof): &gt;12 inches occupant site; &gt;18 inches any site; need for extrication</td></tr><tr><td style=\"white-space:nowrap\">2904013<a name=\"cs-nemsis-injury-2904013\"> </a></td><td>Auto Crash: Vehicle telemetry data consistent with severe injury</td></tr><tr><td style=\"white-space:nowrap\">2904015<a name=\"cs-nemsis-injury-2904015\"> </a></td><td>Motorcycle Crash &gt; 20 MPH (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2904017<a name=\"cs-nemsis-injury-2904017\"> </a></td><td>SBP &lt; 110 for age &gt; 65 (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2904019<a name=\"cs-nemsis-injury-2904019\"> </a></td><td>Anticoagulant use</td></tr><tr><td style=\"white-space:nowrap\">2904021<a name=\"cs-nemsis-injury-2904021\"> </a></td><td>Pregnancy &gt; 20 weeks</td></tr><tr><td style=\"white-space:nowrap\">2904023<a name=\"cs-nemsis-injury-2904023\"> </a></td><td>Other EMS judgment</td></tr><tr><td style=\"white-space:nowrap\">2904025<a name=\"cs-nemsis-injury-2904025\"> </a></td><td>Burn, without other trauma (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">2904027<a name=\"cs-nemsis-injury-2904027\"> </a></td><td>Burns in conjunction with trauma</td></tr><tr><td style=\"white-space:nowrap\">2904029<a name=\"cs-nemsis-injury-2904029\"> </a></td><td>Auto Crash: Child (age 0-9 years) unrestrained or in unsecured child safety seat</td></tr><tr><td style=\"white-space:nowrap\">2904031<a name=\"cs-nemsis-injury-2904031\"> </a></td><td>Fall from height &gt; 10 feet (all ages)</td></tr><tr><td style=\"white-space:nowrap\">2904033<a name=\"cs-nemsis-injury-2904033\"> </a></td><td>Low-level falls in young children (age &lt;= 5 years) or older adults (age &gt;= 65 years) with significant head impact</td></tr><tr><td style=\"white-space:nowrap\">2904035<a name=\"cs-nemsis-injury-2904035\"> </a></td><td>Rider separated from transport vehicle with significant impact (eg, motorcycle, ATV, horse, etc.)</td></tr><tr><td style=\"white-space:nowrap\">2904037<a name=\"cs-nemsis-injury-2904037\"> </a></td><td>Special, high-resource healthcare needs</td></tr><tr><td style=\"white-space:nowrap\">2904039<a name=\"cs-nemsis-injury-2904039\"> </a></td><td>Suspicion of child abuse</td></tr><tr><td style=\"white-space:nowrap\">2906001<a name=\"cs-nemsis-injury-2906001\"> </a></td><td>Front Seat-Left Side (or motorcycle driver)</td></tr><tr><td style=\"white-space:nowrap\">2906003<a name=\"cs-nemsis-injury-2906003\"> </a></td><td>Front Seat-Middle</td></tr><tr><td style=\"white-space:nowrap\">2906005<a name=\"cs-nemsis-injury-2906005\"> </a></td><td>Front Seat-Right Side</td></tr><tr><td style=\"white-space:nowrap\">2906007<a name=\"cs-nemsis-injury-2906007\"> </a></td><td>Passenger in other enclosed passenger or cargo area (non-trailing unit such as a bus, etc.)</td></tr><tr><td style=\"white-space:nowrap\">2906009<a name=\"cs-nemsis-injury-2906009\"> </a></td><td>Passenger in unenclosed passenger or cargo area (non-trailing unit such as a pickup, etc.)</td></tr><tr><td style=\"white-space:nowrap\">2906011<a name=\"cs-nemsis-injury-2906011\"> </a></td><td>Riding on Vehicle Exterior (non-trailing unit)</td></tr><tr><td style=\"white-space:nowrap\">2906013<a name=\"cs-nemsis-injury-2906013\"> </a></td><td>Second Seat-Left Side (or motorcycle passenger)</td></tr><tr><td style=\"white-space:nowrap\">2906015<a name=\"cs-nemsis-injury-2906015\"> </a></td><td>Second Seat-Middle</td></tr><tr><td style=\"white-space:nowrap\">2906017<a name=\"cs-nemsis-injury-2906017\"> </a></td><td>Second Seat-Right Side</td></tr><tr><td style=\"white-space:nowrap\">2906019<a name=\"cs-nemsis-injury-2906019\"> </a></td><td>Sleeper Section of Cab (truck)</td></tr><tr><td style=\"white-space:nowrap\">2906021<a name=\"cs-nemsis-injury-2906021\"> </a></td><td>Third Row-Left Side (or motorcycle passenger)</td></tr><tr><td style=\"white-space:nowrap\">2906023<a name=\"cs-nemsis-injury-2906023\"> </a></td><td>Third Row-Middle</td></tr><tr><td style=\"white-space:nowrap\">2906025<a name=\"cs-nemsis-injury-2906025\"> </a></td><td>Third Row-Right Side</td></tr><tr><td style=\"white-space:nowrap\">2906027<a name=\"cs-nemsis-injury-2906027\"> </a></td><td>Trailing Unit</td></tr><tr><td style=\"white-space:nowrap\">2906029<a name=\"cs-nemsis-injury-2906029\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">2907001<a name=\"cs-nemsis-injury-2907001\"> </a></td><td>Child Booster Seat</td></tr><tr><td style=\"white-space:nowrap\">2907003<a name=\"cs-nemsis-injury-2907003\"> </a></td><td>Eye Protection</td></tr><tr><td style=\"white-space:nowrap\">2907005<a name=\"cs-nemsis-injury-2907005\"> </a></td><td>Helmet Worn</td></tr><tr><td style=\"white-space:nowrap\">2907007<a name=\"cs-nemsis-injury-2907007\"> </a></td><td>Infant Car Seat Forward Facing</td></tr><tr><td style=\"white-space:nowrap\">2907009<a name=\"cs-nemsis-injury-2907009\"> </a></td><td>Infant Car Seat Rear Facing</td></tr><tr><td style=\"white-space:nowrap\">2907015<a name=\"cs-nemsis-injury-2907015\"> </a></td><td>None</td></tr><tr><td style=\"white-space:nowrap\">2907017<a name=\"cs-nemsis-injury-2907017\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">2907019<a name=\"cs-nemsis-injury-2907019\"> </a></td><td>Personal Floatation Device</td></tr><tr><td style=\"white-space:nowrap\">2907021<a name=\"cs-nemsis-injury-2907021\"> </a></td><td>Protective Clothing</td></tr><tr><td style=\"white-space:nowrap\">2907023<a name=\"cs-nemsis-injury-2907023\"> </a></td><td>Protective Non-Clothing Gear</td></tr><tr><td style=\"white-space:nowrap\">2907027<a name=\"cs-nemsis-injury-2907027\"> </a></td><td>Shoulder and Lap Belt Used</td></tr><tr><td style=\"white-space:nowrap\">2907029<a name=\"cs-nemsis-injury-2907029\"> </a></td><td>Lap Belt Only Used</td></tr><tr><td style=\"white-space:nowrap\">2907031<a name=\"cs-nemsis-injury-2907031\"> </a></td><td>Shoulder Belt Only Used</td></tr><tr><td style=\"white-space:nowrap\">2907033<a name=\"cs-nemsis-injury-2907033\"> </a></td><td>Unable to Determine</td></tr><tr><td style=\"white-space:nowrap\">2908001<a name=\"cs-nemsis-injury-2908001\"> </a></td><td>Airbag Deployed Front</td></tr><tr><td style=\"white-space:nowrap\">2908003<a name=\"cs-nemsis-injury-2908003\"> </a></td><td>Airbag Deployed Side</td></tr><tr><td style=\"white-space:nowrap\">2908005<a name=\"cs-nemsis-injury-2908005\"> </a></td><td>Airbag Deployed Other (knee, air belt, etc.)</td></tr><tr><td style=\"white-space:nowrap\">2908007<a name=\"cs-nemsis-injury-2908007\"> </a></td><td>No Airbag Deployed</td></tr><tr><td style=\"white-space:nowrap\">2908009<a name=\"cs-nemsis-injury-2908009\"> </a></td><td>No Airbag Present</td></tr><tr><td style=\"white-space:nowrap\">2910001<a name=\"cs-nemsis-injury-2910001\"> </a></td><td>Eye and Face Protection</td></tr><tr><td style=\"white-space:nowrap\">2910003<a name=\"cs-nemsis-injury-2910003\"> </a></td><td>Foot Protection</td></tr><tr><td style=\"white-space:nowrap\">2910005<a name=\"cs-nemsis-injury-2910005\"> </a></td><td>Head Protection</td></tr><tr><td style=\"white-space:nowrap\">2910007<a name=\"cs-nemsis-injury-2910007\"> </a></td><td>Hearing Protection</td></tr><tr><td style=\"white-space:nowrap\">2910009<a name=\"cs-nemsis-injury-2910009\"> </a></td><td>Respiratory Protection</td></tr><tr><td style=\"white-space:nowrap\">2910011<a name=\"cs-nemsis-injury-2910011\"> </a></td><td>Safety Belts, lifelines, and lanyards</td></tr><tr><td style=\"white-space:nowrap\">2910013<a name=\"cs-nemsis-injury-2910013\"> </a></td><td>Safety Nets</td></tr><tr><td style=\"white-space:nowrap\">2926001<a name=\"cs-nemsis-injury-2926001\"> </a></td><td>Driver Front Seat</td></tr><tr><td style=\"white-space:nowrap\">2926003<a name=\"cs-nemsis-injury-2926003\"> </a></td><td>Front Row Middle Seat</td></tr><tr><td style=\"white-space:nowrap\">2926005<a name=\"cs-nemsis-injury-2926005\"> </a></td><td>Passenger Front Seat</td></tr><tr><td style=\"white-space:nowrap\">2926007<a name=\"cs-nemsis-injury-2926007\"> </a></td><td>Second Row Left Seat</td></tr><tr><td style=\"white-space:nowrap\">2926009<a name=\"cs-nemsis-injury-2926009\"> </a></td><td>Second Row Middle Seat</td></tr><tr><td style=\"white-space:nowrap\">2926011<a name=\"cs-nemsis-injury-2926011\"> </a></td><td>Second Row Right Seat</td></tr><tr><td style=\"white-space:nowrap\">2926013<a name=\"cs-nemsis-injury-2926013\"> </a></td><td>Third Row Left Seat</td></tr><tr><td style=\"white-space:nowrap\">2926015<a name=\"cs-nemsis-injury-2926015\"> </a></td><td>Third Row Middle Seat</td></tr><tr><td style=\"white-space:nowrap\">2926017<a name=\"cs-nemsis-injury-2926017\"> </a></td><td>Third Row Right Seat</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.6" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISInjury"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS eInjury Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS 3.5.1 eInjury section covering mechanism of injury, CDC trauma triage criteria (high and moderate risk), vehicle occupant location, occupant safety equipment, airbag deployment, OSHA personal protective equipment, and ACN vehicle seat location."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "95"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2902001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blunt" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2902003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Burn" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2902005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2902007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Penetrating" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Amputation proximal to wrist or ankle" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Crushed, degloved, mangled, or pulseless extremity" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chest wall instability, deformity, or suspected flail chest" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Glasgow Coma Score <= 13 (DEPRECATED)" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Skull deformity, suspected skull fracture" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paralysis (DEPRECATED)" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suspected pelvic fracture" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Penetrating injuries to head, neck, torso, and proximal extremities" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory Rate <10 or >29 breaths per minute (<20 in infants aged <1 year) or need for ventilatory support (DEPRECATED)" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Systolic Blood Pressure <90 mmHg (DEPRECATED)" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suspected fracture of two or more proximal long bones" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Active bleeding requiring a tourniquet or wound packing with continuous pressure" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Age >= 10 years: HR > SBP" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Age >= 65 years: SBP < 110 mmHg" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Age 0-9 years: SBP < 70mm Hg + (2 x age in years)" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Age 10-64 years: SBP < 90 mmHg" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory distress or need for respiratory support" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Room-air pulse oximetry < 90%" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RR < 10 or > 29 breaths/min" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suspected spinal injury with new motor or sensory loss" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2903041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unable to follow commands (motor GCS < 6)" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pedestrian/bicycle rider thrown, run over, or with significant impact" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fall Adults: > 20 ft. (one story is equal to 10 ft.) (DEPRECATED)" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fall Children: > 10 ft. or 2-3 times the height of the child (DEPRECATED)" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auto Crash: Death in passenger compartment" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auto Crash: Partial or complete ejection" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auto Crash: Significant intrusion (including roof): >12 inches occupant site; >18 inches any site; need for extrication" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auto Crash: Vehicle telemetry data consistent with severe injury" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Motorcycle Crash > 20 MPH (DEPRECATED)" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SBP < 110 for age > 65 (DEPRECATED)" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticoagulant use" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pregnancy > 20 weeks" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other EMS judgment" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Burn, without other trauma (DEPRECATED)" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Burns in conjunction with trauma" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auto Crash: Child (age 0-9 years) unrestrained or in unsecured child safety seat" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fall from height > 10 feet (all ages)" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Low-level falls in young children (age <= 5 years) or older adults (age >= 65 years) with significant head impact" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rider separated from transport vehicle with significant impact (eg, motorcycle, ATV, horse, etc.)" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Special, high-resource healthcare needs" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2904039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suspicion of child abuse" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Front Seat-Left Side (or motorcycle driver)" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Front Seat-Middle" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Front Seat-Right Side" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Passenger in other enclosed passenger or cargo area (non-trailing unit such as a bus, etc.)" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Passenger in unenclosed passenger or cargo area (non-trailing unit such as a pickup, etc.)" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Riding on Vehicle Exterior (non-trailing unit)" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Second Seat-Left Side (or motorcycle passenger)" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Second Seat-Middle" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Second Seat-Right Side" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sleeper Section of Cab (truck)" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Third Row-Left Side (or motorcycle passenger)" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Third Row-Middle" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Third Row-Right Side" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trailing Unit" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2906029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Child Booster Seat" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eye Protection" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Helmet Worn" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infant Car Seat Forward Facing" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infant Car Seat Rear Facing" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Personal Floatation Device" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Protective Clothing" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Protective Non-Clothing Gear" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Shoulder and Lap Belt Used" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lap Belt Only Used" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Shoulder Belt Only Used" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2907033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unable to Determine" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2908001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Airbag Deployed Front" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2908003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Airbag Deployed Side" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2908005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Airbag Deployed Other (knee, air belt, etc.)" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2908007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No Airbag Deployed" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2908009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No Airbag Present" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2910001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eye and Face Protection" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2910003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Foot Protection" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2910005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Head Protection" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2910007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hearing Protection" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2910009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory Protection" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2910011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Safety Belts, lifelines, and lanyards" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2910013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Safety Nets" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Driver Front Seat" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Front Row Middle Seat" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Passenger Front Seat" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Second Row Left Seat" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Second Row Middle Seat" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Second Row Right Seat" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Third Row Left Seat" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Third Row Middle Seat" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2926017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Third Row Right Seat" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

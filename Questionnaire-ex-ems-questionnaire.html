@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example EMS Questionnaire — Agency Custom Elements - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.293"}
+    h3,h4,h5,h6{--heading-prefix:"17.293"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example EMS Questionnaire — Agency Custom Elements</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Questionnaire-ex-ems-questionnaire.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-ex-ems-questionnaire.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-ex-ems-questionnaire.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">Questionnaire: Example EMS Questionnaire — Agency Custom Elements
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhirems.github.io/fhirEMSCoreIG/Questionnaire/ex-ems-questionnaire<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/Questionnaire/ex-ems-questionnaire"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/Questionnaire/ex-ems-questionnaire|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ExampleAgencyCustomElements</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="Questionnaire-ex-ems-questionnaire.xml.html">XML</a>, <a href="Questionnaire-ex-ems-questionnaire.json.html">JSON</a>, <a href="Questionnaire-ex-ems-questionnaire.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div data-fhir="generated"><p class="res-header-id"/><a name="ex-ems-questionnaire"> </a><a name="hcex-ems-questionnaire"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-questionnaire.html">EMS Questionnaire — Custom Element Definitions</a></p></div><b>Structure</b><table border="1" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> ExampleAgencyCustomElements</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://fhirems.github.io/fhirEMSCoreIG/Questionnaire/ex-ems-questionnaire#0.2.0</td></tr>
+<tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.agency-decon-01" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> agency-decon-01</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Ambulance Decontaminated After Transport</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <br/>Options: <a href="#opt-item.agency-decon-01">2 options</a></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.agency-decon-01"> </a><p><b>Answer options for agency-decon-01 </b></p><ul><li style="font-size: 11px">http://terminology.hl7.org/CodeSystem/v2-0136#Y (&quot;Yes&quot;)</li><li style="font-size: 11px">http://terminology.hl7.org/CodeSystem/v2-0136#N (&quot;No&quot;)</li></ul></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

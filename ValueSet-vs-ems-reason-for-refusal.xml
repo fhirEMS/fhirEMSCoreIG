@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-reason-for-refusal"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-reason-for-refusal</b></p><a name="vs-ems-reason-for-refusal"> </a><a name="hcvs-ems-reason-for-refusal"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231001">4231001</a></td><td>Against Medical Advice</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231003">4231003</a></td><td>Patient/Guardian Indicates Ambulance Transport is Not Necessary</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231005">4231005</a></td><td>Released Following Protocol Guidelines</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231007">4231007</a></td><td>Released to Law Enforcement</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231009">4231009</a></td><td>Patient/Guardian States Intent to Transport by Other Means</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231011">4231011</a></td><td>DNR</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231013">4231013</a></td><td>Medical/Physician Orders for Life Sustaining Treatment</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231015">4231015</a></td><td>Other, Not Listed</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4231017">4231017</a></td><td>Patient Elopement</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-reason-for-refusal"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.102"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSReasonForRefusalVS"/>
+  <title value="EMS Reason for Refusal/Release"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eDisposition.31 - Reason documented when patient refused care or was released."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="4231001"/>
+        <display value="Against Medical Advice"/>
+      </concept>
+      <concept>
+        <code value="4231003"/>
+        <display value="Patient/Guardian Indicates Ambulance Transport is Not Necessary"/>
+      </concept>
+      <concept>
+        <code value="4231005"/>
+        <display value="Released Following Protocol Guidelines"/>
+      </concept>
+      <concept>
+        <code value="4231007"/>
+        <display value="Released to Law Enforcement"/>
+      </concept>
+      <concept>
+        <code value="4231009"/>
+        <display value="Patient/Guardian States Intent to Transport by Other Means"/>
+      </concept>
+      <concept>
+        <code value="4231011"/>
+        <display value="DNR"/>
+      </concept>
+      <concept>
+        <code value="4231013"/>
+        <display value="Medical/Physician Orders for Life Sustaining Treatment"/>
+      </concept>
+      <concept>
+        <code value="4231015"/>
+        <display value="Other, Not Listed"/>
+      </concept>
+      <concept>
+        <code value="4231017"/>
+        <display value="Patient Elopement"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

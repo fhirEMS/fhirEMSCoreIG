@@ -1,0 +1,165 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-procedure-complication> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-procedure-complication"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-procedure-complication</b></p><a name=\"vs-ems-procedure-complication\"> </a><a name=\"hcvs-ems-procedure-complication\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-medications.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907001\">3907001</a></td><td>Altered Mental Status</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907003\">3907003</a></td><td>Apnea</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907005\">3907005</a></td><td>Bleeding</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907007\">3907007</a></td><td>Bradypnea</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907009\">3907009</a></td><td>Diarrhea</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907011\">3907011</a></td><td>Esophageal Intubation-immediately</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907013\">3907013</a></td><td>Esophageal Intubation-other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907015\">3907015</a></td><td>Extravasation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907017\">3907017</a></td><td>Hypertension</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907019\">3907019</a></td><td>Hyperthermia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907021\">3907021</a></td><td>Hypotension</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907023\">3907023</a></td><td>Hypothermia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907025\">3907025</a></td><td>Hypoxia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907027\">3907027</a></td><td>Injury</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907031\">3907031</a></td><td>Nausea</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907033\">3907033</a></td><td>None</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907035\">3907035</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907039\">3907039</a></td><td>Respiratory Distress</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907041\">3907041</a></td><td>Tachycardia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907043\">3907043</a></td><td>Tachypnea</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907045\">3907045</a></td><td>Vomiting</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907047\">3907047</a></td><td>Bradycardia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907049\">3907049</a></td><td>Itching</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3907051\">3907051</a></td><td>Urticaria</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-procedure-complication"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.99" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSProcedureComplicationVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Procedure Complication"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eProcedures.07 - Adverse events or complications occurring with procedure performance."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Altered Mental Status" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Apnea" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bradypnea" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diarrhea" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Esophageal Intubation-immediately" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Esophageal Intubation-other" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extravasation" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypertension" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperthermia" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypotension" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypothermia" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypoxia" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Injury" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nausea" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "None" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Respiratory Distress" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tachycardia" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tachypnea" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vomiting" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bradycardia" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Itching" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3907051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urticaria" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-procedure-complication.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

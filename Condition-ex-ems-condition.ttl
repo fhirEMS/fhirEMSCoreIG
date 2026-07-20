@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Condition/ex-ems-condition> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-condition"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ex-ems-condition</b></p><a name=\"ex-ems-condition\"> </a><a name=\"hcex-ems-condition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-condition.html\">EMS Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm S09.90XA}\">Unspecified injury of head, initial encounter</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>onset</b>: 2026-03-14 14:15:00-0800</p><p><b>recorder</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p></div>"
+  ] ;
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ] ;
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ] ;
+       fhir:Coding.code [ fhir:value "provisional" ]
+     ]
+  ] ;
+  fhir:Condition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ] ;
+       fhir:Coding.code [ fhir:value "encounter-diagnosis" ] ;
+       fhir:Coding.display [ fhir:value "Encounter Diagnosis" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+       fhir:Coding.code [ fhir:value "S09.90XA" ] ;
+       fhir:Coding.display [ fhir:value "Unspecified injury of head, initial encounter" ]
+     ]
+  ] ;
+  fhir:Condition.subject [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Condition.encounter [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+  ] ;
+  fhir:Condition.onsetDateTime [ fhir:value "2026-03-14T14:15:00-08:00"^^xsd:dateTime] ;
+  fhir:Condition.recorder [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Condition/ex-ems-condition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

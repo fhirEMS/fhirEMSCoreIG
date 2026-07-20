@@ -1,0 +1,203 @@
+<hr/><a name="l1"> </a>
+<p>#1</p>
+<pre>
+GET https://tx.fhir.org/r4/metadata HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+User-Agent: fhir/publisher
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:4229
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:46:02 GMT
+etag:W/&quot;1085-b3ojsVPiVYenKYwjwc2+Thx1Ae0&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932255
+
+{&quot;resourceType&quot;:&quot;CapabilityStatement&quot;,&quot;id&quot;:&quot;FhirServer&quot;,&quot;extension&quot;:[{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;1.9.1&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;name&quot;,&quot;valueCode&quot;:&quot;mode&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;tx.fhir.org&quot;}],&quot;url&quot;:&quot;qualifier&quot;}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueBoolean&quot;:true}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot;:&quot;https://node.tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot;:&quot;4.0.1-0.10.1&quot;,&quot;name&quot;:&quot;FHIRTerminologyServer&quot;,&quot;title&quot;:&quot;FHIR Terminology Server&quot;,&quot;status&quot;:&quot;active&quot;,&quot;date&quot;:&quot;2026-07-20T00:46:02.529Z&quot;,&quot;contact&quot;:[{&quot;telecom&quot;:[{&quot;system&quot;:&quot;other&quot;,&quot;value&quot;:&quot;http://example.org/&quot;}]}],&quot;description&quot;:&quot;FHIR Terminology Server&quot;,&quot;kind&quot;:&quot;instance&quot;,&quot;instantiates&quot;:[&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot;:{&quot;name&quot;:&quot;FHIRsmith&quot;,&quot;version&quot;:&quot;0.10.1&quot;,&quot;releaseDate&quot;:&quot;2026-07-20T00:46:02.529Z&quot;},&quot;implementation&quot;:{&quot;description&quot;:&quot;FHIR Server running at https://node.tx.fhir.org/r4&quot;,&quot;url&quot;:&quot;https://node.tx.fhir.org/r4&quot;},&quot;fhirVersion&quot;:&quot;4.0.1&quot;,&quot;format&quot;:[&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot;:[{&quot;mode&quot;:&quot;server&quot;,&quot;security&quot;:{&quot;cors&quot;:true},&quot;resource&quot;:[{&quot;type&quot;:&quot;CodeSystem&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a code system&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the code systems&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;}]},{&quot;type&quot;:&quot;ValueSet&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ValueSet&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the value sets&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot;:&quot;compare&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/tools/OperationDefinition/ValueSet-compare&quot;}]},{&quot;type&quot;:&quot;ConceptMap&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ConceptMap&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the concept maps&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;}]}],&quot;interaction&quot;:[{&quot;code&quot;:&quot;transaction&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot;:&quot;compare&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/tools/OperationDefinition/ValueSet-compare&quot;},{&quot;name&quot;:&quot;cache-control&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/tools/OperationDefinition/cache-control&quot;},{&quot;name&quot;:&quot;versions&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/fhir-versions&quot;}]}]}
+</pre>
+<hr/><a name="l2"> </a>
+<p>#2</p>
+<pre>
+POST https://tx.fhir.org/r4/$cache-control?mode=start HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"sealed","valueBoolean":false}]}
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:112
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:46:02 GMT
+etag:W/&quot;70-u5fIdR2rP0kOhawV4VKIxlIAeoI&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932257
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;cache-id&quot;,&quot;valueId&quot;:&quot;4eeee5e2-a7b7-4d0c-b7a2-72174b8ffcf7&quot;}]}
+</pre>
+<hr/><a name="l3"> </a>
+<p>#3</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+X-Cache-Id: 4eeee5e2-a7b7-4d0c-b7a2-72174b8ffcf7
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets","code":"A0427","display":"Ambulance service, advanced life support, emergency transport, level 1 (ALS 1 - Emergency)"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"system-version","valueString":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:1021
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:46:31 GMT
+etag:W/&quot;3fd-e4TM+k8koGeYADziFfvleSRJ+lE&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932281
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;A0427&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets&quot;}]}
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+X-Cache-Id: 4eeee5e2-a7b7-4d0c-b7a2-72174b8ffcf7
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets","code":"A0425","display":"Ground mileage, per statute mile"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"system-version","valueString":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:1021
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:46:32 GMT
+etag:W/&quot;3fd-3iT4LSteTXmWfFyJJ983lBJ94mY&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932283
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;A0425&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets&quot;}]}
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+X-Cache-Id: 4eeee5e2-a7b7-4d0c-b7a2-72174b8ffcf7
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://www.nubc.org/CodeSystem/PatDischargeStatus","code":"09","display":"Admitted as an inpatient to this hospital"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"system-version","valueString":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:994
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:46:33 GMT
+etag:W/&quot;3e2-MStuq3aVjbo/h8qa5qH+GX8q+Ak&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932285
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'https://www.nubc.org/CodeSystem/PatDischargeStatus' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'https://www.nubc.org/CodeSystem/PatDischargeStatus' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;09&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus&quot;}]}
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+POST https://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+X-Cache-Id: 4eeee5e2-a7b7-4d0c-b7a2-72174b8ffcf7
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://www.nubc.org/CodeSystem/PatDischargeStatus","code":"09"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","url":"https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0","version":"0.2.0","status":"active","compose":{"include":[{"system":"https://www.nubc.org/CodeSystem/PatDischargeStatus","concept":[{"code":"01","display":"Discharged to home or self care (routine discharge)"},{"code":"02","display":"Discharged/transferred to another short term general hospital for inpatient care"},{"code":"03","display":"Discharged/transferred to a skilled nursing facility (SNF)"},{"code":"04","display":"Discharged/transferred to an intermediate care facility (ICF)"},{"code":"05","display":"Discharged/transferred to another type of institution not defined elsewhere in this code list"},{"code":"06","display":"Discharged/transferred to home under care of organized home health service organization"},{"code":"07","display":"Left against medical advice or discontinued care"},{"code":"09","display":"Admitted as an inpatient to this hospital"},{"code":"20","display":"Deceased/Expired"},{"code":"21","display":"Discharged/transferred to court/law enforcement"},{"code":"30","display":"Still a patient or expected to return for outpatient services"},{"code":"43","display":"Discharged/transferred to a Federal Health Care Facility"},{"code":"50","display":"Discharged/transferred to Hospice - home"},{"code":"51","display":"Discharged/transferred to Hospice - medical facility"},{"code":"61","display":"Discharged/transferred within this institution to a hospital based Medicare approved swing bed"},{"code":"62","display":"Discharged/transferred to a inpatient rehabilitation facility"},{"code":"63","display":"Discharged/transferred to long term care hospitals"},{"code":"64","display":"Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare"},{"code":"65","display":"Discharged/transferred to a psychiatric hospital or psychiatric distinct part unit of a hospital"},{"code":"66","display":"Discharged/transferred to a Critical Access Hospital (CAH)"},{"code":"70","display":"Discharged/transferred to another type of health care institution not defined elsewhere in the code list"}]}]}}},{"name":"system-version","valueString":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:2515
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:46:33 GMT
+etag:W/&quot;9d3-GZ/2qTQhRQW009HwcPlOahoNivE&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932286
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;09&quot;},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'https://www.nubc.org/CodeSystem/PatDischargeStatus' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'https://www.nubc.org/CodeSystem/PatDischargeStatus' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;diagnostics&quot;,&quot;valueString&quot;:&quot;0ms tx-op\n0ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: Analysing https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0 for validation purposes\n0ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: Parameters: disp-lang=en-US, generate-narrative, default-to-latest\n0ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/731000124108\n0ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: Prepare include[0]: \&quot;(https://www.nubc.org/CodeSystem/PatDischargeStatus)(01,02,03,04,05,06,07,09,20,21,30,43,50,51,61,62,63,64,65,66,70)\&quot;\n1ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: CodeSystem version undefined not found: \&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus\&quot;\n1ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: Validate \&quot;[https://www.nubc.org/CodeSystem/PatDischargeStatus#09 (\&quot;undefined\&quot;)]\&quot;\n1ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: Check \&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus#09\&quot;\n1ms https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition--0|0.2.0: CodeSystem not found: https://www.nubc.org/CodeSystem/PatDischargeStatus&quot;}]}
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+X-Cache-Id: 4eeee5e2-a7b7-4d0c-b7a2-72174b8ffcf7
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://www.nubc.org/CodeSystem/PatDischargeStatus","code":"09","display":"Admitted as an inpatient to this hospital"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"system-version","valueString":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:994
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:46:34 GMT
+etag:W/&quot;3e2-MStuq3aVjbo/h8qa5qH+GX8q+Ak&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932287
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'https://www.nubc.org/CodeSystem/PatDischargeStatus' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'https://www.nubc.org/CodeSystem/PatDischargeStatus' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;09&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;https://www.nubc.org/CodeSystem/PatDischargeStatus&quot;}]}
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST https://tx.fhir.org/r4/$cache-control?mode=end HTTP/1.1
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+X-Cache-Id: 4eeee5e2-a7b7-4d0c-b7a2-72174b8ffcf7
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters"}
+</pre>
+<pre>
+200
+access-control-allow-credentials:true
+connection:keep-alive
+content-length:44
+content-type:application/fhir+json; charset=utf-8
+date:Mon, 20 Jul 2026 00:48:23 GMT
+etag:W/&quot;2c-x1uJoaQHjLTPHoTrltn2q6mUG9w&quot;
+server:nginx
+vary:Origin
+x-powered-by:Express
+x-request-id:tx-4932468
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[]}
+</pre>

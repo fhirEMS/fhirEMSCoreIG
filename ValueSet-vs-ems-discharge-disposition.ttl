@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-discharge-disposition"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-discharge-disposition</b></p><a name=\"vs-ems-discharge-disposition\"> </a><a name=\"hcvs-ems-discharge-disposition\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-AHANUBCPatientDischargeStatus.html\"><code>https://www.nubc.org/CodeSystem/PatDischargeStatus</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>01</td><td>Discharged to home or self care (routine discharge)</td></tr><tr><td>02</td><td>Discharged/transferred to another short term general hospital for inpatient care</td></tr><tr><td>03</td><td>Discharged/transferred to a skilled nursing facility (SNF)</td></tr><tr><td>04</td><td>Discharged/transferred to an intermediate care facility (ICF)</td></tr><tr><td>05</td><td>Discharged/transferred to another type of institution not defined elsewhere in this code list</td></tr><tr><td>06</td><td>Discharged/transferred to home under care of organized home health service organization</td></tr><tr><td>07</td><td>Left against medical advice or discontinued care</td></tr><tr><td>09</td><td>Admitted as an inpatient to this hospital</td></tr><tr><td>20</td><td>Deceased/Expired</td></tr><tr><td>21</td><td>Discharged/transferred to court/law enforcement</td></tr><tr><td>30</td><td>Still a patient or expected to return for outpatient services</td></tr><tr><td>43</td><td>Discharged/transferred to a Federal Health Care Facility</td></tr><tr><td>50</td><td>Discharged/transferred to Hospice - home</td></tr><tr><td>51</td><td>Discharged/transferred to Hospice - medical facility</td></tr><tr><td>61</td><td>Discharged/transferred within this institution to a hospital based Medicare approved swing bed</td></tr><tr><td>62</td><td>Discharged/transferred to a inpatient rehabilitation facility</td></tr><tr><td>63</td><td>Discharged/transferred to long term care hospitals</td></tr><tr><td>64</td><td>Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare</td></tr><tr><td>65</td><td>Discharged/transferred to a psychiatric hospital or psychiatric distinct part unit of a hospital</td></tr><tr><td>66</td><td>Discharged/transferred to a Critical Access Hospital (CAH)</td></tr><tr><td>70</td><td>Discharged/transferred to another type of health care institution not defined elsewhere in the code list</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.41" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSDischargeDispositionVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Discharge Disposition VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "UB-04 patient discharge status codes used for ED disposition (eOutcome.01) and hospital disposition (eOutcome.02)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.nubc.org/CodeSystem/PatDischargeStatus" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged to home or self care (routine discharge)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to another short term general hospital for inpatient care" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to a skilled nursing facility (SNF)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to an intermediate care facility (ICF)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to another type of institution not defined elsewhere in this code list" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to home under care of organized home health service organization" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left against medical advice or discontinued care" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Admitted as an inpatient to this hospital" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deceased/Expired" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to court/law enforcement" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Still a patient or expected to return for outpatient services" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to a Federal Health Care Facility" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to Hospice - home" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to Hospice - medical facility" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred within this institution to a hospital based Medicare approved swing bed" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "62" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to a inpatient rehabilitation facility" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "63" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to long term care hospitals" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "64" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "65" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to a psychiatric hospital or psychiatric distinct part unit of a hospital" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to a Critical Access Hospital (CAH)" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Discharged/transferred to another type of health care institution not defined elsewhere in the code list" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-discharge-disposition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

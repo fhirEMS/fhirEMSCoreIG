@@ -1,0 +1,117 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ex-ems-patient",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ex-ems-patient</b></p><a name=\"ex-ems-patient\"> </a><a name=\"hcex-ems-patient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-patient.html\">EMS Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:\"></span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">1425 Oak Grove Rd Moreno Valley CA 92553 US </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Next-of-Kin\">Next-of-Kin:</td><td colspan=\"3\"><ul><li>Susan Johnson </li><li>ph: 951-555-0147</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"NEMSIS eHistory.01 - Barriers to the assessment or care of the patient (e.g., language, hearing impairment, unconscious). Required/National. Repeating (1..M). Nillable. NV: NotRecorded, NotApplicable.\"><a href=\"StructureDefinition-ext-ems-patient-barrier.html\">Barriers to Patient Care</a></td><td colspan=\"3\"><span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 3101009}\">None Noted</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"NEMSIS ePatient.11 - The US Census Bureau census tract for the patient's home address.\"><a href=\"StructureDefinition-ext-ems-census-tract.html\">Patient Home Census Tract</a></td><td colspan=\"3\">06065042518</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9). After version 6.0.0, this extension is no longer a *USCDI Requirement*.\"><a href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension</a></td><td colspan=\"3\">M</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Captures NEMSIS ePatient.15 (Age value) and ePatient.16 (Age Units) when the\npatient's date of birth (ePatient.17) is unknown. Both source elements are\nRequired/National. When birthDate is known, derive age computationally at the\ntime of the encounter; this extension is not needed in that case.\">EMS Patient Estimated Age:</td><td colspan=\"3\"><ul><li>value: 47</li><li>unit: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient 2516009}\">Years</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html#3) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-CDCREC.html#CDCREC-2106-3\">CDC Race and Ethnicity: 2106-3</a> (White)</li><li>text: White</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"NEMSIS ePatient.22 - Indicates the patient's alternate home residence situation (e.g., homeless, migrant worker, foreign visitor).\"><a href=\"StructureDefinition-ext-ems-alternate-residence.html\">Alternate Home Residence</a></td><td colspan=\"3\"><span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient 2522001}\">Homeless</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
+      }
+    },
+    {
+      "url" : "text",
+      "valueString" : "White"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+    "valueCode" : "M"
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-census-tract",
+    "valueString" : "06065042518"
+  },
+  {
+    "extension" : [{
+      "url" : "value",
+      "valueDecimal" : 47
+    },
+    {
+      "url" : "unit",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient",
+          "code" : "2516009",
+          "display" : "Years"
+        }]
+      }
+    }],
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-age"
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-alternate-residence",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient",
+        "code" : "2522001",
+        "display" : "Homeless"
+      }]
+    }
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-patient-barrier",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+        "code" : "3101009",
+        "display" : "None Noted"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/ems/patients",
+    "value" : "PAT-2026-0042"
+  }],
+  "name" : [{
+    "family" : "Johnson",
+    "given" : ["Robert",
+    "M"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1979-03-22",
+  "address" : [{
+    "line" : ["1425 Oak Grove Rd"],
+    "city" : "Moreno Valley",
+    "state" : "CA",
+    "postalCode" : "92553",
+    "country" : "US"
+  }],
+  "maritalStatus" : {
+    "extension" : [{
+      "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-not-value",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-not-values",
+          "code" : "NV.NotRecorded",
+          "display" : "Not Recorded"
+        }]
+      }
+    }]
+  },
+  "contact" : [{
+    "relationship" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "code" : "N"
+      }]
+    }],
+    "name" : {
+      "family" : "Johnson",
+      "given" : ["Susan"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "951-555-0147"
+    }]
+  }]
+}

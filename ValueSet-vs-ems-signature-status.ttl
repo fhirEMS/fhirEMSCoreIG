@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signature-status> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-signature-status"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-signature-status</b></p><a name=\"vs-ems-signature-status\"> </a><a name=\"hcvs-ems-signature-status\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-other.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515001\">4515001</a></td><td>Not Signed - Crew Called out to another call</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515003\">4515003</a></td><td>Not Signed - Deceased</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515005\">4515005</a></td><td>Not Signed - Due to Distress Level</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515007\">4515007</a></td><td>Not Signed - Equipment Failure</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515009\">4515009</a></td><td>Not Signed - In Law Enforcement Custody</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515011\">4515011</a></td><td>Not Signed - Language Barrier</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515013\">4515013</a></td><td>Not Signed - Mental Status/Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515015\">4515015</a></td><td>Not Signed - Minor/Child</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515017\">4515017</a></td><td>Not Signed - Physical Impairment of Extremities</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515019\">4515019</a></td><td>Not Signed - Refused</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515021\">4515021</a></td><td>Not Signed - Transferred Care/No Access to Obtain Signature</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515023\">4515023</a></td><td>Not Signed - Unconscious</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515025\">4515025</a></td><td>Not Signed -Visually Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515027\">4515027</a></td><td>Physical Signature/Paper Copy Obtained</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515031\">4515031</a></td><td>Signed</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515033\">4515033</a></td><td>Signed-Not Patient</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515035\">4515035</a></td><td>Not Signed-Illiterate (Unable to Read)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515037\">4515037</a></td><td>Not Signed-Restrained</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515039\">4515039</a></td><td>Not Signed-Combative or Uncooperative</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signature-status"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.145" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSSignatureStatusVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS SignatureStatus VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "The status/disposition of the signature (eOther.15)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Crew Called out to another call" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Deceased" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Due to Distress Level" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Equipment Failure" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - In Law Enforcement Custody" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Language Barrier" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Mental Status/Impaired" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Minor/Child" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Physical Impairment of Extremities" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Refused" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Transferred Care/No Access to Obtain Signature" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed - Unconscious" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed -Visually Impaired" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physical Signature/Paper Copy Obtained" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Signed" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Signed-Not Patient" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed-Illiterate (Unable to Read)" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed-Restrained" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4515039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Signed-Combative or Uncooperative" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signature-status.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

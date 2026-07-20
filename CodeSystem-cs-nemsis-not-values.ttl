@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-not-values> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-not-values"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-not-values</b></p><a name=\"cs-nemsis-not-values\"> </a><a name=\"hccs-nemsis-not-values\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-not-values</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">NV.NotApplicable<a name=\"cs-nemsis-not-values-NV.46NotApplicable\"> </a></td><td>Not Applicable</td><td>The data element is not applicable to this EMS event.</td></tr><tr><td style=\"white-space:nowrap\">NV.NotRecorded<a name=\"cs-nemsis-not-values-NV.46NotRecorded\"> </a></td><td>Not Recorded</td><td>The data element applies but was not recorded.</td></tr><tr><td style=\"white-space:nowrap\">NV.NotReporting<a name=\"cs-nemsis-not-values-NV.46NotReporting\"> </a></td><td>Not Reporting</td><td>The agency is not reporting this data element.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-not-values"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.9" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISNotValues"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS Not Value Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "NEMSIS Not Value (NV) codes used when a data element cannot be recorded. Three codes apply: NotApplicable (element does not apply to this event), NotRecorded (element applies but was not documented), NotReporting (agency is not reporting this element)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NV.NotApplicable" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Applicable" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The data element is not applicable to this EMS event." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NV.NotRecorded" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Recorded" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The data element applies but was not recorded." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NV.NotReporting" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Reporting" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The agency is not reporting this data element." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-not-values.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

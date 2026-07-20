@@ -1,0 +1,149 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-moderate-risk> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-trauma-triage-moderate-risk"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-trauma-triage-moderate-risk</b></p><a name=\"vs-ems-trauma-triage-moderate-risk\"> </a><a name=\"hcvs-ems-trauma-triage-moderate-risk\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-injury.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904001\">2904001</a></td><td>Pedestrian/bicycle rider thrown, run over, or with significant impact</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904003\">2904003</a></td><td>Fall Adults: &gt; 20 ft. (one story is equal to 10 ft.) (DEPRECATED)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904005\">2904005</a></td><td>Fall Children: &gt; 10 ft. or 2-3 times the height of the child (DEPRECATED)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904007\">2904007</a></td><td>Auto Crash: Death in passenger compartment</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904009\">2904009</a></td><td>Auto Crash: Partial or complete ejection</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904011\">2904011</a></td><td>Auto Crash: Significant intrusion (including roof): &gt;12 inches occupant site; &gt;18 inches any site; need for extrication</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904013\">2904013</a></td><td>Auto Crash: Vehicle telemetry data consistent with severe injury</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904015\">2904015</a></td><td>Motorcycle Crash &gt; 20 MPH (DEPRECATED)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904017\">2904017</a></td><td>SBP &lt; 110 for age &gt; 65 (DEPRECATED)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904019\">2904019</a></td><td>Anticoagulant use</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904021\">2904021</a></td><td>Pregnancy &gt; 20 weeks</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904023\">2904023</a></td><td>Other EMS judgment</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904025\">2904025</a></td><td>Burn, without other trauma (DEPRECATED)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904027\">2904027</a></td><td>Burns in conjunction with trauma</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904029\">2904029</a></td><td>Auto Crash: Child (age 0-9 years) unrestrained or in unsecured child safety seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904031\">2904031</a></td><td>Fall from height &gt; 10 feet (all ages)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904033\">2904033</a></td><td>Low-level falls in young children (age &lt;= 5 years) or older adults (age &gt;= 65 years) with significant head impact</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904035\">2904035</a></td><td>Rider separated from transport vehicle with significant impact (eg, motorcycle, ATV, horse, etc.)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904037\">2904037</a></td><td>Special, high-resource healthcare needs</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2904039\">2904039</a></td><td>Suspicion of child abuse</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-moderate-risk"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.124" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSTraumaTriageModerateRiskVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Trauma Triage Moderate Risk VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Trauma triage criteria indicating moderate risk for serious injury — CDC Field Triage Guideline yellow criteria (mechanism of injury and EMS judgment) (eInjury.04)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pedestrian/bicycle rider thrown, run over, or with significant impact" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fall Adults: > 20 ft. (one story is equal to 10 ft.) (DEPRECATED)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fall Children: > 10 ft. or 2-3 times the height of the child (DEPRECATED)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auto Crash: Death in passenger compartment" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auto Crash: Partial or complete ejection" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auto Crash: Significant intrusion (including roof): >12 inches occupant site; >18 inches any site; need for extrication" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auto Crash: Vehicle telemetry data consistent with severe injury" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Motorcycle Crash > 20 MPH (DEPRECATED)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SBP < 110 for age > 65 (DEPRECATED)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anticoagulant use" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pregnancy > 20 weeks" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other EMS judgment" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn, without other trauma (DEPRECATED)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burns in conjunction with trauma" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auto Crash: Child (age 0-9 years) unrestrained or in unsecured child safety seat" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fall from height > 10 feet (all ages)" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Low-level falls in young children (age <= 5 years) or older adults (age >= 65 years) with significant head impact" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rider separated from transport vehicle with significant impact (eg, motorcycle, ATV, horse, etc.)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Special, high-resource healthcare needs" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2904039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspicion of child abuse" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-trauma-triage-moderate-risk.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

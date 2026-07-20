@@ -1,0 +1,79 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-alcohol-drug-use",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-alcohol-drug-use</b></p><a name=\"vs-ems-alcohol-drug-use\"> </a><a name=\"hcvs-ems-alcohol-drug-use\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-history.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117001\">3117001</a></td><td>Alcohol Containers/Paraphernalia at Scene</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117003\">3117003</a></td><td>Drug Paraphernalia at Scene</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117005\">3117005</a></td><td>Patient Admits to Alcohol Use</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117007\">3117007</a></td><td>Patient Admits to Drug Use</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117009\">3117009</a></td><td>Positive Level known from Law Enforcement or Hospital Record</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117013\">3117013</a></td><td>Physical Exam Indicates Suspected Alcohol or Drug Use</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117015\">3117015</a></td><td>Bystander/Family Reports Drug Use</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3117017\">3117017</a></td><td>Bystander/Family Reports Alcohol Use</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-alcohol-drug-use",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.134"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSAlcoholDrugUseVS",
+  "title" : "EMS Alcohol/Drug Use Indicators VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Indicators of potential patient alcohol or drug use (eHistory.17).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+      "concept" : [{
+        "code" : "3117001",
+        "display" : "Alcohol Containers/Paraphernalia at Scene"
+      },
+      {
+        "code" : "3117003",
+        "display" : "Drug Paraphernalia at Scene"
+      },
+      {
+        "code" : "3117005",
+        "display" : "Patient Admits to Alcohol Use"
+      },
+      {
+        "code" : "3117007",
+        "display" : "Patient Admits to Drug Use"
+      },
+      {
+        "code" : "3117009",
+        "display" : "Positive Level known from Law Enforcement or Hospital Record"
+      },
+      {
+        "code" : "3117013",
+        "display" : "Physical Exam Indicates Suspected Alcohol or Drug Use"
+      },
+      {
+        "code" : "3117015",
+        "display" : "Bystander/Family Reports Drug Use"
+      },
+      {
+        "code" : "3117017",
+        "display" : "Bystander/Family Reports Alcohol Use"
+      }]
+    }]
+  }
+}

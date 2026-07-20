@@ -1,0 +1,123 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-signature-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-signature-status</b></p><a name=\"vs-ems-signature-status\"> </a><a name=\"hcvs-ems-signature-status\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-other.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515001\">4515001</a></td><td>Not Signed - Crew Called out to another call</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515003\">4515003</a></td><td>Not Signed - Deceased</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515005\">4515005</a></td><td>Not Signed - Due to Distress Level</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515007\">4515007</a></td><td>Not Signed - Equipment Failure</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515009\">4515009</a></td><td>Not Signed - In Law Enforcement Custody</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515011\">4515011</a></td><td>Not Signed - Language Barrier</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515013\">4515013</a></td><td>Not Signed - Mental Status/Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515015\">4515015</a></td><td>Not Signed - Minor/Child</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515017\">4515017</a></td><td>Not Signed - Physical Impairment of Extremities</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515019\">4515019</a></td><td>Not Signed - Refused</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515021\">4515021</a></td><td>Not Signed - Transferred Care/No Access to Obtain Signature</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515023\">4515023</a></td><td>Not Signed - Unconscious</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515025\">4515025</a></td><td>Not Signed -Visually Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515027\">4515027</a></td><td>Physical Signature/Paper Copy Obtained</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515031\">4515031</a></td><td>Signed</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515033\">4515033</a></td><td>Signed-Not Patient</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515035\">4515035</a></td><td>Not Signed-Illiterate (Unable to Read)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515037\">4515037</a></td><td>Not Signed-Restrained</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4515039\">4515039</a></td><td>Not Signed-Combative or Uncooperative</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signature-status",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.145"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSSignatureStatusVS",
+  "title" : "EMS SignatureStatus VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "The status/disposition of the signature (eOther.15).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other",
+      "concept" : [{
+        "code" : "4515001",
+        "display" : "Not Signed - Crew Called out to another call"
+      },
+      {
+        "code" : "4515003",
+        "display" : "Not Signed - Deceased"
+      },
+      {
+        "code" : "4515005",
+        "display" : "Not Signed - Due to Distress Level"
+      },
+      {
+        "code" : "4515007",
+        "display" : "Not Signed - Equipment Failure"
+      },
+      {
+        "code" : "4515009",
+        "display" : "Not Signed - In Law Enforcement Custody"
+      },
+      {
+        "code" : "4515011",
+        "display" : "Not Signed - Language Barrier"
+      },
+      {
+        "code" : "4515013",
+        "display" : "Not Signed - Mental Status/Impaired"
+      },
+      {
+        "code" : "4515015",
+        "display" : "Not Signed - Minor/Child"
+      },
+      {
+        "code" : "4515017",
+        "display" : "Not Signed - Physical Impairment of Extremities"
+      },
+      {
+        "code" : "4515019",
+        "display" : "Not Signed - Refused"
+      },
+      {
+        "code" : "4515021",
+        "display" : "Not Signed - Transferred Care/No Access to Obtain Signature"
+      },
+      {
+        "code" : "4515023",
+        "display" : "Not Signed - Unconscious"
+      },
+      {
+        "code" : "4515025",
+        "display" : "Not Signed -Visually Impaired"
+      },
+      {
+        "code" : "4515027",
+        "display" : "Physical Signature/Paper Copy Obtained"
+      },
+      {
+        "code" : "4515031",
+        "display" : "Signed"
+      },
+      {
+        "code" : "4515033",
+        "display" : "Signed-Not Patient"
+      },
+      {
+        "code" : "4515035",
+        "display" : "Not Signed-Illiterate (Unable to Read)"
+      },
+      {
+        "code" : "4515037",
+        "display" : "Not Signed-Restrained"
+      },
+      {
+        "code" : "4515039",
+        "display" : "Not Signed-Combative or Uncooperative"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-unit-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-unit-type</b></p><a name=\"vs-ems-unit-type\"> </a><a name=\"hcvs-ems-unit-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-encounter.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207011\">2207011</a></td><td>Air Transport-Helicopter</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207013\">2207013</a></td><td>Air Transport-Fixed Wing</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207015\">2207015</a></td><td>Ground Transport (ALS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207017\">2207017</a></td><td>Ground Transport (BLS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207019\">2207019</a></td><td>Ground Transport (Critical Care Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207021\">2207021</a></td><td>Non-Transport-Medical Treatment (ALS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207023\">2207023</a></td><td>Non-Transport-Medical Treatment (BLS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207025\">2207025</a></td><td>Wheel Chair Van/Ambulette</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207027\">2207027</a></td><td>Non-Transport-No Medical Equipment</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.127"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSUnitTypeVS",
+  "title" : "EMS Unit Type (ValueSet)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS eResponse.07 - The type of EMS vehicle/unit.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+      "concept" : [{
+        "code" : "2207011",
+        "display" : "Air Transport-Helicopter"
+      },
+      {
+        "code" : "2207013",
+        "display" : "Air Transport-Fixed Wing"
+      },
+      {
+        "code" : "2207015",
+        "display" : "Ground Transport (ALS Equipped)"
+      },
+      {
+        "code" : "2207017",
+        "display" : "Ground Transport (BLS Equipped)"
+      },
+      {
+        "code" : "2207019",
+        "display" : "Ground Transport (Critical Care Equipped)"
+      },
+      {
+        "code" : "2207021",
+        "display" : "Non-Transport-Medical Treatment (ALS Equipped)"
+      },
+      {
+        "code" : "2207023",
+        "display" : "Non-Transport-Medical Treatment (BLS Equipped)"
+      },
+      {
+        "code" : "2207025",
+        "display" : "Wheel Chair Van/Ambulette"
+      },
+      {
+        "code" : "2207027",
+        "display" : "Non-Transport-No Medical Equipment"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-first-responder> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-arrest-first-responder"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-arrest-first-responder</b></p><a name=\"vs-ems-arrest-first-responder\"> </a><a name=\"hcvs-ems-arrest-first-responder\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-arrest.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3020001\">3020001</a></td><td>Bystander</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3020003\">3020003</a></td><td>Family Member</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3020005\">3020005</a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3020007\">3020007</a></td><td>First Responder (EMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3020009\">3020009</a></td><td>First Responder (Law Enforcement)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3020011\">3020011</a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3020013\">3020013</a></td><td>EMS Responder (transport EMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3021001\">3021001</a></td><td>Bystander</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3021003\">3021003</a></td><td>Family Member</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3021005\">3021005</a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3021007\">3021007</a></td><td>First Responder (EMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3021009\">3021009</a></td><td>First Responder (Law Enforcement)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3021011\">3021011</a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3021013\">3021013</a></td><td>EMS Responder (transport EMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3022001\">3022001</a></td><td>Bystander</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3022003\">3022003</a></td><td>Family Member</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3022005\">3022005</a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3022007\">3022007</a></td><td>First Responder (EMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3022009\">3022009</a></td><td>First Responder (Law Enforcement)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3022011\">3022011</a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3022013\">3022013</a></td><td>EMS Responder (transport EMS)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-first-responder"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.23" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSArrestFirstResponderVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Arrest First Responder VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Who first performed CPR, applied the AED, or defibrillated the patient (eArrest.20/21/22)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3020001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bystander" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3020003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Family Member" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3020005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Healthcare Provider (non-911 Responder)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3020007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (EMS)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3020009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (Law Enforcement)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3020011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (non-EMS Fire)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3020013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EMS Responder (transport EMS)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3021001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bystander" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3021003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Family Member" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3021005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Healthcare Provider (non-911 Responder)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3021007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (EMS)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3021009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (Law Enforcement)" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3021011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (non-EMS Fire)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3021013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EMS Responder (transport EMS)" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3022001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bystander" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3022003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Family Member" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3022005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Healthcare Provider (non-911 Responder)" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3022007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (EMS)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3022009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (Law Enforcement)" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3022011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First Responder (non-EMS Fire)" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3022013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "EMS Responder (transport EMS)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-first-responder.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

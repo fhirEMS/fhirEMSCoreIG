@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-location> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-exam-back-location"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-exam-back-location</b></p><a name=\"vs-ems-exam-back-location\"> </a><a name=\"hcvs-ems-exam-back-location\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-exam.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513001\">3513001</a></td><td>Back-General</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513003\">3513003</a></td><td>Cervical-Left</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513005\">3513005</a></td><td>Cervical-Midline</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513007\">3513007</a></td><td>Cervical-Right</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513009\">3513009</a></td><td>Lumbar-Left</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513011\">3513011</a></td><td>Lumbar-Midline</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513013\">3513013</a></td><td>Lumbar-Right</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513015\">3513015</a></td><td>Thoracic-Left</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513017\">3513017</a></td><td>Thoracic-Midline</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513019\">3513019</a></td><td>Thoracic-Right</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513021\">3513021</a></td><td>Sacral-Left</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513023\">3513023</a></td><td>Sacral-Midline</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513025\">3513025</a></td><td>Sacral-Right</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513029\">3513029</a></td><td>Flank-Left</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3513031\">3513031</a></td><td>Flank-Right</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-location"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.51" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSExamBackSpineLocationVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Back and Spine Assessment Finding Location"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eExam.13 - Location qualifier for back and spine assessment findings."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Back-General" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervical-Left" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervical-Midline" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervical-Right" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumbar-Left" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumbar-Midline" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumbar-Right" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic-Left" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic-Midline" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic-Right" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sacral-Left" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sacral-Midline" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sacral-Right" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flank-Left" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3513031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flank-Right" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-back-location.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

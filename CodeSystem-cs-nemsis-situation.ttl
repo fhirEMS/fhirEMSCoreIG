@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-situation"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-situation</b></p><a name=\"cs-nemsis-situation\"> </a><a name=\"hccs-nemsis-situation\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">2807001<a name=\"cs-nemsis-situation-2807001\"> </a></td><td>Abdomen</td></tr><tr><td style=\"white-space:nowrap\">2807003<a name=\"cs-nemsis-situation-2807003\"> </a></td><td>Back</td></tr><tr><td style=\"white-space:nowrap\">2807005<a name=\"cs-nemsis-situation-2807005\"> </a></td><td>Chest</td></tr><tr><td style=\"white-space:nowrap\">2807007<a name=\"cs-nemsis-situation-2807007\"> </a></td><td>Extremity-Lower</td></tr><tr><td style=\"white-space:nowrap\">2807009<a name=\"cs-nemsis-situation-2807009\"> </a></td><td>Extremity-Upper</td></tr><tr><td style=\"white-space:nowrap\">2807011<a name=\"cs-nemsis-situation-2807011\"> </a></td><td>General/Global</td></tr><tr><td style=\"white-space:nowrap\">2807013<a name=\"cs-nemsis-situation-2807013\"> </a></td><td>Genitalia</td></tr><tr><td style=\"white-space:nowrap\">2807015<a name=\"cs-nemsis-situation-2807015\"> </a></td><td>Head</td></tr><tr><td style=\"white-space:nowrap\">2807017<a name=\"cs-nemsis-situation-2807017\"> </a></td><td>Neck</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.15" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISSituation"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS Situation Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS eSituation section (NEMSIS 3.5.1.251001CP2)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abdomen" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Back" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chest" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extremity-Lower" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extremity-Upper" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "General/Global" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Genitalia" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Head" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2807017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neck" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

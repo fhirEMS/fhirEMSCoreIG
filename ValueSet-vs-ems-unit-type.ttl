@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-unit-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-unit-type</b></p><a name=\"vs-ems-unit-type\"> </a><a name=\"hcvs-ems-unit-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-encounter.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207011\">2207011</a></td><td>Air Transport-Helicopter</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207013\">2207013</a></td><td>Air Transport-Fixed Wing</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207015\">2207015</a></td><td>Ground Transport (ALS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207017\">2207017</a></td><td>Ground Transport (BLS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207019\">2207019</a></td><td>Ground Transport (Critical Care Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207021\">2207021</a></td><td>Non-Transport-Medical Treatment (ALS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207023\">2207023</a></td><td>Non-Transport-Medical Treatment (BLS Equipped)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207025\">2207025</a></td><td>Wheel Chair Van/Ambulette</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2207027\">2207027</a></td><td>Non-Transport-No Medical Equipment</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-type"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.127" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSUnitTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Unit Type (ValueSet)"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eResponse.07 - The type of EMS vehicle/unit."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Air Transport-Helicopter" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Air Transport-Fixed Wing" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ground Transport (ALS Equipped)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ground Transport (BLS Equipped)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ground Transport (Critical Care Equipped)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-Transport-Medical Treatment (ALS Equipped)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-Transport-Medical Treatment (BLS Equipped)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wheel Chair Van/Ambulette" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2207027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-Transport-No Medical Equipment" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

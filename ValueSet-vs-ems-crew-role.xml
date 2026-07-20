@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-crew-role"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-crew-role</b></p><a name="vs-ems-crew-role"> </a><a name="hcvs-ems-crew-role"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-codes.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2403001">2403001</a></td><td>Driver/Pilot-Response</td></tr><tr><td><a href="CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2403003">2403003</a></td><td>Driver/Pilot-Transport</td></tr><tr><td><a href="CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2403005">2403005</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2403007">2403007</a></td><td>Other Patient Caregiver-At Scene</td></tr><tr><td><a href="CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2403009">2403009</a></td><td>Other Patient Caregiver-Transport</td></tr><tr><td><a href="CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2403011">2403011</a></td><td>Primary Patient Caregiver-At Scene</td></tr><tr><td><a href="CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2403013">2403013</a></td><td>Primary Patient Caregiver-Transport</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-role"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.38"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSCrewRoleVS"/>
+  <title value="EMS Crew Member Response Role"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eCrew.03 - The role of the crew member during the EMS response."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"/>
+      <concept>
+        <code value="2403001"/>
+        <display value="Driver/Pilot-Response"/>
+      </concept>
+      <concept>
+        <code value="2403003"/>
+        <display value="Driver/Pilot-Transport"/>
+      </concept>
+      <concept>
+        <code value="2403005"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="2403007"/>
+        <display value="Other Patient Caregiver-At Scene"/>
+      </concept>
+      <concept>
+        <code value="2403009"/>
+        <display value="Other Patient Caregiver-Transport"/>
+      </concept>
+      <concept>
+        <code value="2403011"/>
+        <display value="Primary Patient Caregiver-At Scene"/>
+      </concept>
+      <concept>
+        <code value="2403013"/>
+        <display value="Primary Patient Caregiver-Transport"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

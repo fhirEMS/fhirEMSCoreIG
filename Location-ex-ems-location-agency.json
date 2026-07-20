@@ -1,0 +1,47 @@
+{
+  "resourceType" : "Location",
+  "id" : "ex-ems-location-agency",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-agency"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location ex-ems-location-agency</b></p><a name=\"ex-ems-location-agency\"> </a><a name=\"hcex-ems-location-agency\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-location-agency.html\">EMS Location — Agency Station</a></p></div><p><b>US National Grid Coordinates</b>: 11SMT8236514637</p><p><b>identifier</b>: <code>http://example.org/ems/stations</code>/STA-7</p><p><b>status</b>: Active</p><p><b>name</b>: Riverside County Fire Station 7</p><p><b>type</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1301005}\">EMS Station</span></p><p><b>telecom</b>: ph: 951-555-0107</p><p><b>address</b>: 28155 Baxter Rd Murrieta CA 92563 US </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>-117.2138</td><td>33.5547</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-usng",
+    "valueString" : "11SMT8236514637"
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/ems/stations",
+    "value" : "STA-7"
+  }],
+  "status" : "active",
+  "name" : "Riverside County Fire Station 7",
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+      "code" : "1301005",
+      "display" : "EMS Station"
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "951-555-0107"
+  }],
+  "address" : {
+    "line" : ["28155 Baxter Rd"],
+    "city" : "Murrieta",
+    "district" : "06065",
+    "state" : "CA",
+    "postalCode" : "92563",
+    "country" : "US"
+  },
+  "position" : {
+    "longitude" : -117.2138,
+    "latitude" : 33.5547
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/ex-ems-organization-agency"
+  }
+}

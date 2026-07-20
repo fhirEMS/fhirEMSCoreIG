@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-capability> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-hospital-capability"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-hospital-capability</b></p><a name=\"vs-ems-hospital-capability\"> </a><a name=\"hcvs-ems-hospital-capability\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-encounter.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908001\">9908001</a></td><td>Behavioral Health</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908003\">9908003</a></td><td>Burn Center</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908005\">9908005</a></td><td>Critical Access Hospital</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908007\">9908007</a></td><td>Hospital (General)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908009\">9908009</a></td><td>Neonatal Center</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908011\">9908011</a></td><td>Pediatric Center</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908019\">9908019</a></td><td>Rehab Center</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908021\">9908021</a></td><td>Trauma Center Level 1</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908023\">9908023</a></td><td>Trauma Center Level 2</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908025\">9908025</a></td><td>Trauma Center Level 3</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908027\">9908027</a></td><td>Trauma Center Level 4</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908029\">9908029</a></td><td>Trauma Center Level 5</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908031\">9908031</a></td><td>Cardiac-STEMI/PCI Capable</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908033\">9908033</a></td><td>Cardiac-STEMI/PCI Capable (24/7)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908035\">9908035</a></td><td>Cardiac-STEMI/Non-PCI Capable</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908037\">9908037</a></td><td>Stroke-Acute Stroke Ready Hospital (ASRH)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908039\">9908039</a></td><td>Stroke-Primary Stroke Center (PSC)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908041\">9908041</a></td><td>Stroke-Thrombectomy-Capable Stroke Center (TSC)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908043\">9908043</a></td><td>Stroke-Comprehensive Stroke Center (CSC)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908045\">9908045</a></td><td>Cancer Center</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908047\">9908047</a></td><td>Labor and Delivery</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-capability"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.74" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSHospitalCapabilityVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Hospital Capability"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eDisposition.23 - Specialty capabilities of the receiving facility."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Behavioral Health" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn Center" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Critical Access Hospital" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hospital (General)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neonatal Center" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Center" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rehab Center" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma Center Level 1" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma Center Level 2" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma Center Level 3" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma Center Level 4" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma Center Level 5" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac-STEMI/PCI Capable" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac-STEMI/PCI Capable (24/7)" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac-STEMI/Non-PCI Capable" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stroke-Acute Stroke Ready Hospital (ASRH)" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stroke-Primary Stroke Center (PSC)" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stroke-Thrombectomy-Capable Stroke Center (TSC)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stroke-Comprehensive Stroke Center (CSC)" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cancer Center" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9908047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Labor and Delivery" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-capability.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

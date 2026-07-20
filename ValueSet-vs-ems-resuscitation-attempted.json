@@ -1,0 +1,71 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-resuscitation-attempted",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-resuscitation-attempted</b></p><a name=\"vs-ems-resuscitation-attempted\"> </a><a name=\"hcvs-ems-resuscitation-attempted\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-arrest.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3003001\">3003001</a></td><td>Attempted Defibrillation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3003003\">3003003</a></td><td>Attempted Ventilation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3003005\">3003005</a></td><td>Initiated Chest Compressions</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3003007\">3003007</a></td><td>Not Attempted-Considered Futile</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3003009\">3003009</a></td><td>Not Attempted-DNR Orders</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3003011\">3003011</a></td><td>Not Attempted-Signs of Circulation</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-resuscitation-attempted",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.109"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSResuscitationAttemptedVS",
+  "title" : "EMS Resuscitation Attempted VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Type of resuscitation attempted by the EMS unit (eArrest.03).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest",
+      "concept" : [{
+        "code" : "3003001",
+        "display" : "Attempted Defibrillation"
+      },
+      {
+        "code" : "3003003",
+        "display" : "Attempted Ventilation"
+      },
+      {
+        "code" : "3003005",
+        "display" : "Initiated Chest Compressions"
+      },
+      {
+        "code" : "3003007",
+        "display" : "Not Attempted-Considered Futile"
+      },
+      {
+        "code" : "3003009",
+        "display" : "Not Attempted-DNR Orders"
+      },
+      {
+        "code" : "3003011",
+        "display" : "Not Attempted-Signs of Circulation"
+      }]
+    }]
+  }
+}

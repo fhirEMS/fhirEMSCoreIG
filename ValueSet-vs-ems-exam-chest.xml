@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-chest"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-chest</b></p><a name="vs-ems-exam-chest"> </a><a name="hcvs-ems-exam-chest"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525001">3525001</a></td><td>Abrasion</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525003">3525003</a></td><td>Avulsion</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525005">3525005</a></td><td>Accessory Muscles Used with Breathing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525007">3525007</a></td><td>Bleeding Controlled</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525009">3525009</a></td><td>Bleeding Uncontrolled</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525011">3525011</a></td><td>Burn-Blistering</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525013">3525013</a></td><td>Burn-Charring</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525015">3525015</a></td><td>Burn-Redness</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525017">3525017</a></td><td>Burn-White/Waxy</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525019">3525019</a></td><td>Crush Injury</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525021">3525021</a></td><td>Deformity</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525023">3525023</a></td><td>Flail Segment</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525025">3525025</a></td><td>Implanted Device</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525027">3525027</a></td><td>Laceration</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525029">3525029</a></td><td>Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525031">3525031</a></td><td>Not Done</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525033">3525033</a></td><td>Pain</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525035">3525035</a></td><td>Pain with Inspiration/Expiration</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525037">3525037</a></td><td>Puncture/Stab Wound</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525039">3525039</a></td><td>Retraction</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525041">3525041</a></td><td>Tenderness</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525043">3525043</a></td><td>Gunshot Wound</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525045">3525045</a></td><td>Swelling</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3525047">3525047</a></td><td>Contusion</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-chest"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.53"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamChestVS"/>
+  <title value="EMS Chest Assessment"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.25 - Physical findings on chest assessment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3525001"/>
+        <display value="Abrasion"/>
+      </concept>
+      <concept>
+        <code value="3525003"/>
+        <display value="Avulsion"/>
+      </concept>
+      <concept>
+        <code value="3525005"/>
+        <display value="Accessory Muscles Used with Breathing"/>
+      </concept>
+      <concept>
+        <code value="3525007"/>
+        <display value="Bleeding Controlled"/>
+      </concept>
+      <concept>
+        <code value="3525009"/>
+        <display value="Bleeding Uncontrolled"/>
+      </concept>
+      <concept>
+        <code value="3525011"/>
+        <display value="Burn-Blistering"/>
+      </concept>
+      <concept>
+        <code value="3525013"/>
+        <display value="Burn-Charring"/>
+      </concept>
+      <concept>
+        <code value="3525015"/>
+        <display value="Burn-Redness"/>
+      </concept>
+      <concept>
+        <code value="3525017"/>
+        <display value="Burn-White/Waxy"/>
+      </concept>
+      <concept>
+        <code value="3525019"/>
+        <display value="Crush Injury"/>
+      </concept>
+      <concept>
+        <code value="3525021"/>
+        <display value="Deformity"/>
+      </concept>
+      <concept>
+        <code value="3525023"/>
+        <display value="Flail Segment"/>
+      </concept>
+      <concept>
+        <code value="3525025"/>
+        <display value="Implanted Device"/>
+      </concept>
+      <concept>
+        <code value="3525027"/>
+        <display value="Laceration"/>
+      </concept>
+      <concept>
+        <code value="3525029"/>
+        <display value="Normal"/>
+      </concept>
+      <concept>
+        <code value="3525031"/>
+        <display value="Not Done"/>
+      </concept>
+      <concept>
+        <code value="3525033"/>
+        <display value="Pain"/>
+      </concept>
+      <concept>
+        <code value="3525035"/>
+        <display value="Pain with Inspiration/Expiration"/>
+      </concept>
+      <concept>
+        <code value="3525037"/>
+        <display value="Puncture/Stab Wound"/>
+      </concept>
+      <concept>
+        <code value="3525039"/>
+        <display value="Retraction"/>
+      </concept>
+      <concept>
+        <code value="3525041"/>
+        <display value="Tenderness"/>
+      </concept>
+      <concept>
+        <code value="3525043"/>
+        <display value="Gunshot Wound"/>
+      </concept>
+      <concept>
+        <code value="3525045"/>
+        <display value="Swelling"/>
+      </concept>
+      <concept>
+        <code value="3525047"/>
+        <display value="Contusion"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

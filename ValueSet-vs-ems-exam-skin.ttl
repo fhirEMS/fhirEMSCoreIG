@@ -1,0 +1,149 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-skin> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-exam-skin"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-exam-skin</b></p><a name=\"vs-ems-exam-skin\"> </a><a name=\"hcvs-ems-exam-skin\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-exam.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504001\">3504001</a></td><td>Clammy</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504003\">3504003</a></td><td>Cold</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504005\">3504005</a></td><td>Cyanotic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504007\">3504007</a></td><td>Diaphoretic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504009\">3504009</a></td><td>Dry</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504011\">3504011</a></td><td>Flushed</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504013\">3504013</a></td><td>Hot</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504015\">3504015</a></td><td>Jaundiced</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504017\">3504017</a></td><td>Lividity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504019\">3504019</a></td><td>Mottled</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504021\">3504021</a></td><td>Normal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504023\">3504023</a></td><td>Not Done</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504025\">3504025</a></td><td>Pale</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504027\">3504027</a></td><td>Poor Turgor</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504029\">3504029</a></td><td>Red (Erythematous)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504031\">3504031</a></td><td>Tenting</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504033\">3504033</a></td><td>Warm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504035\">3504035</a></td><td>Capillary Nail Bed Refill less than 2 seconds</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504037\">3504037</a></td><td>Capillary Nail Bed Refill 2-4 seconds</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3504039\">3504039</a></td><td>Capillary Nail Bed Refill more than 4 seconds</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-skin"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.69" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSExamSkinVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Skin Assessment"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eExam.04 - Physical findings on skin assessment."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clammy" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cold" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cyanotic" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diaphoretic" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dry" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flushed" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hot" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jaundiced" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lividity" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mottled" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normal" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Done" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pale" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Poor Turgor" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Red (Erythematous)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenting" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Warm" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capillary Nail Bed Refill less than 2 seconds" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capillary Nail Bed Refill 2-4 seconds" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3504039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capillary Nail Bed Refill more than 4 seconds" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-skin.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

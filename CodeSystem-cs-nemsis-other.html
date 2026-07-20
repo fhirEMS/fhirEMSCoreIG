@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NEMSIS eOther Code System - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.248"}
+    h3,h4,h5,h6{--heading-prefix:"17.248"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NEMSIS eOther Code System</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-other.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-other.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-other.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: NEMSIS eOther Code System
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NEMSISOther</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.25.219926138944530828037824748808947630693.1.19
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Enumeration codes from the NEMSIS 3.5.1 eOther section covering registry candidacy, crew personal protective equipment, work-related injury/exposure types, disaster types, external document types, and signature metadata (signer type, reason, patient representative, status).</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-vs-ems-crew-ppe.html">EMSCrewPPEVS</a></li>
+ <li><a href="ValueSet-vs-ems-disaster-type.html">EMSDisasterTypeVS</a></li>
+ <li><a href="ValueSet-vs-ems-external-document-type.html">EMSExternalDocumentTypeVS</a></li>
+ <li><a href="ValueSet-vs-ems-patient-representative.html">EMSPatientRepresentativeVS</a></li>
+ <li><a href="ValueSet-vs-ems-registry-candidate.html">EMSRegistryCandidateVS</a></li>
+ <li><a href="ValueSet-vs-ems-signature-reason.html">EMSSignatureReasonVS</a></li>
+ <li><a href="ValueSet-vs-ems-signature-status.html">EMSSignatureStatusVS</a></li>
+ <li><a href="ValueSet-vs-ems-signer-type.html">EMSSignerTypeVS</a></li>
+ <li><a href="ValueSet-vs-ems-work-injury-exposure.html">EMSWorkInjuryExposureVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="cs-nemsis-other"> </a><a name="hccs-nemsis-other"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">4502001<a name="cs-nemsis-other-4502001"> </a></td>
+<td>Airway</td></tr>
+<tr><td style="white-space:nowrap">4502003<a name="cs-nemsis-other-4502003"> </a></td>
+<td>Burn</td></tr>
+<tr><td style="white-space:nowrap">4502005<a name="cs-nemsis-other-4502005"> </a></td>
+<td>Cardiac/MI</td></tr>
+<tr><td style="white-space:nowrap">4502007<a name="cs-nemsis-other-4502007"> </a></td>
+<td>CVA/Stroke</td></tr>
+<tr><td style="white-space:nowrap">4502009<a name="cs-nemsis-other-4502009"> </a></td>
+<td>Drowning</td></tr>
+<tr><td style="white-space:nowrap">4502011<a name="cs-nemsis-other-4502011"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4502013<a name="cs-nemsis-other-4502013"> </a></td>
+<td>Spinal Cord Injury</td></tr>
+<tr><td style="white-space:nowrap">4502015<a name="cs-nemsis-other-4502015"> </a></td>
+<td>STEMI/Acute Cardiac</td></tr>
+<tr><td style="white-space:nowrap">4502017<a name="cs-nemsis-other-4502017"> </a></td>
+<td>Trauma</td></tr>
+<tr><td style="white-space:nowrap">4502019<a name="cs-nemsis-other-4502019"> </a></td>
+<td>Traumatic Brain Injury</td></tr>
+<tr><td style="white-space:nowrap">4503001<a name="cs-nemsis-other-4503001"> </a></td>
+<td>Eye Protection</td></tr>
+<tr><td style="white-space:nowrap">4503003<a name="cs-nemsis-other-4503003"> </a></td>
+<td>Gloves</td></tr>
+<tr><td style="white-space:nowrap">4503005<a name="cs-nemsis-other-4503005"> </a></td>
+<td>Helmet</td></tr>
+<tr><td style="white-space:nowrap">4503007<a name="cs-nemsis-other-4503007"> </a></td>
+<td>Level A Suit</td></tr>
+<tr><td style="white-space:nowrap">4503009<a name="cs-nemsis-other-4503009"> </a></td>
+<td>Level B Suit</td></tr>
+<tr><td style="white-space:nowrap">4503011<a name="cs-nemsis-other-4503011"> </a></td>
+<td>Level C Suit</td></tr>
+<tr><td style="white-space:nowrap">4503013<a name="cs-nemsis-other-4503013"> </a></td>
+<td>Level D Suit (Turn out gear)</td></tr>
+<tr><td style="white-space:nowrap">4503015<a name="cs-nemsis-other-4503015"> </a></td>
+<td>Mask-N95</td></tr>
+<tr><td style="white-space:nowrap">4503017<a name="cs-nemsis-other-4503017"> </a></td>
+<td>Mask-Surgical (Non-Fitted)</td></tr>
+<tr><td style="white-space:nowrap">4503019<a name="cs-nemsis-other-4503019"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4503021<a name="cs-nemsis-other-4503021"> </a></td>
+<td>PAPR</td></tr>
+<tr><td style="white-space:nowrap">4503023<a name="cs-nemsis-other-4503023"> </a></td>
+<td>Reflective Vest</td></tr>
+<tr><td style="white-space:nowrap">4506001<a name="cs-nemsis-other-4506001"> </a></td>
+<td>Death-Cardiac Arrest</td></tr>
+<tr><td style="white-space:nowrap">4506003<a name="cs-nemsis-other-4506003"> </a></td>
+<td>Death-Injury Related</td></tr>
+<tr><td style="white-space:nowrap">4506005<a name="cs-nemsis-other-4506005"> </a></td>
+<td>Death-Other</td></tr>
+<tr><td style="white-space:nowrap">4506007<a name="cs-nemsis-other-4506007"> </a></td>
+<td>Exposure-Airborne Respiratory/Biological/Aerosolized Secretions</td></tr>
+<tr><td style="white-space:nowrap">4506009<a name="cs-nemsis-other-4506009"> </a></td>
+<td>Exposure-Body Fluid Contact to Broken Skin</td></tr>
+<tr><td style="white-space:nowrap">4506011<a name="cs-nemsis-other-4506011"> </a></td>
+<td>Exposure-Body Fluid Contact with Eye</td></tr>
+<tr><td style="white-space:nowrap">4506013<a name="cs-nemsis-other-4506013"> </a></td>
+<td>Exposure-Body Fluid Contact with Intact Skin</td></tr>
+<tr><td style="white-space:nowrap">4506015<a name="cs-nemsis-other-4506015"> </a></td>
+<td>Exposure-Body Fluid Contact with Mucosal Surface</td></tr>
+<tr><td style="white-space:nowrap">4506017<a name="cs-nemsis-other-4506017"> </a></td>
+<td>Exposure-Needle Stick with Body Fluid Injection</td></tr>
+<tr><td style="white-space:nowrap">4506019<a name="cs-nemsis-other-4506019"> </a></td>
+<td>Exposure-Needle Stick without Body Fluid Injection</td></tr>
+<tr><td style="white-space:nowrap">4506021<a name="cs-nemsis-other-4506021"> </a></td>
+<td>Exposure-Toxin/Chemical/Hazmat</td></tr>
+<tr><td style="white-space:nowrap">4506023<a name="cs-nemsis-other-4506023"> </a></td>
+<td>Injury-Lifting/Back/Musculoskeletal</td></tr>
+<tr><td style="white-space:nowrap">4506025<a name="cs-nemsis-other-4506025"> </a></td>
+<td>Injury-Other</td></tr>
+<tr><td style="white-space:nowrap">4506027<a name="cs-nemsis-other-4506027"> </a></td>
+<td>None</td></tr>
+<tr><td style="white-space:nowrap">4506029<a name="cs-nemsis-other-4506029"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4506031<a name="cs-nemsis-other-4506031"> </a></td>
+<td>Violence-Offensive, Intimidating, or Hateful Language</td></tr>
+<tr><td style="white-space:nowrap">4506033<a name="cs-nemsis-other-4506033"> </a></td>
+<td>Violence-Physical Threat, or Threatening Behavior</td></tr>
+<tr><td style="white-space:nowrap">4506035<a name="cs-nemsis-other-4506035"> </a></td>
+<td>Violence-Physical Attack or Attempt to Attack</td></tr>
+<tr><td style="white-space:nowrap">4506037<a name="cs-nemsis-other-4506037"> </a></td>
+<td>Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures</td></tr>
+<tr><td style="white-space:nowrap">4506039<a name="cs-nemsis-other-4506039"> </a></td>
+<td>Violence-Unwanted Touching of a Sexual Nature</td></tr>
+<tr><td style="white-space:nowrap">4506041<a name="cs-nemsis-other-4506041"> </a></td>
+<td>Struck by Vehicle Along Roadway</td></tr>
+<tr><td style="white-space:nowrap">4507001<a name="cs-nemsis-other-4507001"> </a></td>
+<td>Biologic Agent</td></tr>
+<tr><td style="white-space:nowrap">4507003<a name="cs-nemsis-other-4507003"> </a></td>
+<td>Building Failure</td></tr>
+<tr><td style="white-space:nowrap">4507005<a name="cs-nemsis-other-4507005"> </a></td>
+<td>Chemical Agent</td></tr>
+<tr><td style="white-space:nowrap">4507007<a name="cs-nemsis-other-4507007"> </a></td>
+<td>Explosive Device</td></tr>
+<tr><td style="white-space:nowrap">4507009<a name="cs-nemsis-other-4507009"> </a></td>
+<td>Fire</td></tr>
+<tr><td style="white-space:nowrap">4507011<a name="cs-nemsis-other-4507011"> </a></td>
+<td>Hostage Event</td></tr>
+<tr><td style="white-space:nowrap">4507013<a name="cs-nemsis-other-4507013"> </a></td>
+<td>Mass Gathering</td></tr>
+<tr><td style="white-space:nowrap">4507015<a name="cs-nemsis-other-4507015"> </a></td>
+<td>Mass Illness</td></tr>
+<tr><td style="white-space:nowrap">4507017<a name="cs-nemsis-other-4507017"> </a></td>
+<td>Nuclear Agent</td></tr>
+<tr><td style="white-space:nowrap">4507019<a name="cs-nemsis-other-4507019"> </a></td>
+<td>Radioactive Device</td></tr>
+<tr><td style="white-space:nowrap">4507021<a name="cs-nemsis-other-4507021"> </a></td>
+<td>Secondary Destructive Device</td></tr>
+<tr><td style="white-space:nowrap">4507023<a name="cs-nemsis-other-4507023"> </a></td>
+<td>Shooting/Sniper</td></tr>
+<tr><td style="white-space:nowrap">4507025<a name="cs-nemsis-other-4507025"> </a></td>
+<td>Vehicular</td></tr>
+<tr><td style="white-space:nowrap">4507027<a name="cs-nemsis-other-4507027"> </a></td>
+<td>Weather (Other)</td></tr>
+<tr><td style="white-space:nowrap">4507029<a name="cs-nemsis-other-4507029"> </a></td>
+<td>Earthquake</td></tr>
+<tr><td style="white-space:nowrap">4507031<a name="cs-nemsis-other-4507031"> </a></td>
+<td>Flood</td></tr>
+<tr><td style="white-space:nowrap">4507033<a name="cs-nemsis-other-4507033"> </a></td>
+<td>Land Slide</td></tr>
+<tr><td style="white-space:nowrap">4507035<a name="cs-nemsis-other-4507035"> </a></td>
+<td>Winter Storm</td></tr>
+<tr><td style="white-space:nowrap">4507037<a name="cs-nemsis-other-4507037"> </a></td>
+<td>Tornado</td></tr>
+<tr><td style="white-space:nowrap">4507039<a name="cs-nemsis-other-4507039"> </a></td>
+<td>Hurricane</td></tr>
+<tr><td style="white-space:nowrap">4509001<a name="cs-nemsis-other-4509001"> </a></td>
+<td>Other Audio Recording</td></tr>
+<tr><td style="white-space:nowrap">4509003<a name="cs-nemsis-other-4509003"> </a></td>
+<td>Billing Information</td></tr>
+<tr><td style="white-space:nowrap">4509005<a name="cs-nemsis-other-4509005"> </a></td>
+<td>Diagnostic Image (CT, X-ray, US, etc.)</td></tr>
+<tr><td style="white-space:nowrap">4509006<a name="cs-nemsis-other-4509006"> </a></td>
+<td>DNR</td></tr>
+<tr><td style="white-space:nowrap">4509008<a name="cs-nemsis-other-4509008"> </a></td>
+<td>Living Will</td></tr>
+<tr><td style="white-space:nowrap">4509009<a name="cs-nemsis-other-4509009"> </a></td>
+<td>ECG/Lab Results</td></tr>
+<tr><td style="white-space:nowrap">4509011<a name="cs-nemsis-other-4509011"> </a></td>
+<td>Guardianship/Power of Attorney</td></tr>
+<tr><td style="white-space:nowrap">4509013<a name="cs-nemsis-other-4509013"> </a></td>
+<td>Other Healthcare Record</td></tr>
+<tr><td style="white-space:nowrap">4509015<a name="cs-nemsis-other-4509015"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4509017<a name="cs-nemsis-other-4509017"> </a></td>
+<td>Patient Identification</td></tr>
+<tr><td style="white-space:nowrap">4509019<a name="cs-nemsis-other-4509019"> </a></td>
+<td>Patient Refusal Sheet</td></tr>
+<tr><td style="white-space:nowrap">4509021<a name="cs-nemsis-other-4509021"> </a></td>
+<td>Other Picture/Graphic</td></tr>
+<tr><td style="white-space:nowrap">4509025<a name="cs-nemsis-other-4509025"> </a></td>
+<td>Other Video/Movie</td></tr>
+<tr><td style="white-space:nowrap">4509027<a name="cs-nemsis-other-4509027"> </a></td>
+<td>ePCR</td></tr>
+<tr><td style="white-space:nowrap">4512001<a name="cs-nemsis-other-4512001"> </a></td>
+<td>EMS Crew Member (Other)</td></tr>
+<tr><td style="white-space:nowrap">4512003<a name="cs-nemsis-other-4512003"> </a></td>
+<td>EMS Primary Care Provider (for this event)</td></tr>
+<tr><td style="white-space:nowrap">4512005<a name="cs-nemsis-other-4512005"> </a></td>
+<td>Healthcare Provider</td></tr>
+<tr><td style="white-space:nowrap">4512007<a name="cs-nemsis-other-4512007"> </a></td>
+<td>Medical Director</td></tr>
+<tr><td style="white-space:nowrap">4512009<a name="cs-nemsis-other-4512009"> </a></td>
+<td>Non-Healthcare Provider</td></tr>
+<tr><td style="white-space:nowrap">4512011<a name="cs-nemsis-other-4512011"> </a></td>
+<td>Online Medical Control Healthcare Practitioner</td></tr>
+<tr><td style="white-space:nowrap">4512013<a name="cs-nemsis-other-4512013"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4512015<a name="cs-nemsis-other-4512015"> </a></td>
+<td>Patient</td></tr>
+<tr><td style="white-space:nowrap">4512017<a name="cs-nemsis-other-4512017"> </a></td>
+<td>Patient Representative</td></tr>
+<tr><td style="white-space:nowrap">4512019<a name="cs-nemsis-other-4512019"> </a></td>
+<td>Witness</td></tr>
+<tr><td style="white-space:nowrap">4513001<a name="cs-nemsis-other-4513001"> </a></td>
+<td>HIPAA acknowledgement/Release</td></tr>
+<tr><td style="white-space:nowrap">4513003<a name="cs-nemsis-other-4513003"> </a></td>
+<td>Permission to Treat</td></tr>
+<tr><td style="white-space:nowrap">4513005<a name="cs-nemsis-other-4513005"> </a></td>
+<td>Release for Billing</td></tr>
+<tr><td style="white-space:nowrap">4513007<a name="cs-nemsis-other-4513007"> </a></td>
+<td>Transfer of Patient Care</td></tr>
+<tr><td style="white-space:nowrap">4513009<a name="cs-nemsis-other-4513009"> </a></td>
+<td>Refusal of Care</td></tr>
+<tr><td style="white-space:nowrap">4513011<a name="cs-nemsis-other-4513011"> </a></td>
+<td>Controlled Substance, Administration</td></tr>
+<tr><td style="white-space:nowrap">4513013<a name="cs-nemsis-other-4513013"> </a></td>
+<td>Controlled Substance, Waste</td></tr>
+<tr><td style="white-space:nowrap">4513015<a name="cs-nemsis-other-4513015"> </a></td>
+<td>Airway Verification</td></tr>
+<tr><td style="white-space:nowrap">4513017<a name="cs-nemsis-other-4513017"> </a></td>
+<td>Patient Belongings (Receipt)</td></tr>
+<tr><td style="white-space:nowrap">4513019<a name="cs-nemsis-other-4513019"> </a></td>
+<td>Permission to Transport</td></tr>
+<tr><td style="white-space:nowrap">4513021<a name="cs-nemsis-other-4513021"> </a></td>
+<td>Refusal of Transport</td></tr>
+<tr><td style="white-space:nowrap">4513023<a name="cs-nemsis-other-4513023"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4514001<a name="cs-nemsis-other-4514001"> </a></td>
+<td>Aunt</td></tr>
+<tr><td style="white-space:nowrap">4514003<a name="cs-nemsis-other-4514003"> </a></td>
+<td>Brother</td></tr>
+<tr><td style="white-space:nowrap">4514005<a name="cs-nemsis-other-4514005"> </a></td>
+<td>Daughter</td></tr>
+<tr><td style="white-space:nowrap">4514007<a name="cs-nemsis-other-4514007"> </a></td>
+<td>Discharge Planner</td></tr>
+<tr><td style="white-space:nowrap">4514009<a name="cs-nemsis-other-4514009"> </a></td>
+<td>Domestic Partner</td></tr>
+<tr><td style="white-space:nowrap">4514011<a name="cs-nemsis-other-4514011"> </a></td>
+<td>Father</td></tr>
+<tr><td style="white-space:nowrap">4514013<a name="cs-nemsis-other-4514013"> </a></td>
+<td>Friend</td></tr>
+<tr><td style="white-space:nowrap">4514015<a name="cs-nemsis-other-4514015"> </a></td>
+<td>Grandfather</td></tr>
+<tr><td style="white-space:nowrap">4514017<a name="cs-nemsis-other-4514017"> </a></td>
+<td>Grandmother</td></tr>
+<tr><td style="white-space:nowrap">4514019<a name="cs-nemsis-other-4514019"> </a></td>
+<td>Guardian</td></tr>
+<tr><td style="white-space:nowrap">4514021<a name="cs-nemsis-other-4514021"> </a></td>
+<td>Husband</td></tr>
+<tr><td style="white-space:nowrap">4514023<a name="cs-nemsis-other-4514023"> </a></td>
+<td>Law Enforcement</td></tr>
+<tr><td style="white-space:nowrap">4514025<a name="cs-nemsis-other-4514025"> </a></td>
+<td>MD/DO</td></tr>
+<tr><td style="white-space:nowrap">4514027<a name="cs-nemsis-other-4514027"> </a></td>
+<td>Mother</td></tr>
+<tr><td style="white-space:nowrap">4514029<a name="cs-nemsis-other-4514029"> </a></td>
+<td>Nurse (RN)</td></tr>
+<tr><td style="white-space:nowrap">4514031<a name="cs-nemsis-other-4514031"> </a></td>
+<td>Nurse Practitioner (NP)</td></tr>
+<tr><td style="white-space:nowrap">4514033<a name="cs-nemsis-other-4514033"> </a></td>
+<td>Other Care Provider (Home health, hospice, etc.)</td></tr>
+<tr><td style="white-space:nowrap">4514035<a name="cs-nemsis-other-4514035"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">4514037<a name="cs-nemsis-other-4514037"> </a></td>
+<td>Physician's Assistant (PA)</td></tr>
+<tr><td style="white-space:nowrap">4514039<a name="cs-nemsis-other-4514039"> </a></td>
+<td>Power of Attorney</td></tr>
+<tr><td style="white-space:nowrap">4514041<a name="cs-nemsis-other-4514041"> </a></td>
+<td>Other Relative</td></tr>
+<tr><td style="white-space:nowrap">4514043<a name="cs-nemsis-other-4514043"> </a></td>
+<td>Self</td></tr>
+<tr><td style="white-space:nowrap">4514045<a name="cs-nemsis-other-4514045"> </a></td>
+<td>Sister</td></tr>
+<tr><td style="white-space:nowrap">4514047<a name="cs-nemsis-other-4514047"> </a></td>
+<td>Son</td></tr>
+<tr><td style="white-space:nowrap">4514049<a name="cs-nemsis-other-4514049"> </a></td>
+<td>Uncle</td></tr>
+<tr><td style="white-space:nowrap">4514051<a name="cs-nemsis-other-4514051"> </a></td>
+<td>Wife</td></tr>
+<tr><td style="white-space:nowrap">4515001<a name="cs-nemsis-other-4515001"> </a></td>
+<td>Not Signed - Crew Called out to another call</td></tr>
+<tr><td style="white-space:nowrap">4515003<a name="cs-nemsis-other-4515003"> </a></td>
+<td>Not Signed - Deceased</td></tr>
+<tr><td style="white-space:nowrap">4515005<a name="cs-nemsis-other-4515005"> </a></td>
+<td>Not Signed - Due to Distress Level</td></tr>
+<tr><td style="white-space:nowrap">4515007<a name="cs-nemsis-other-4515007"> </a></td>
+<td>Not Signed - Equipment Failure</td></tr>
+<tr><td style="white-space:nowrap">4515009<a name="cs-nemsis-other-4515009"> </a></td>
+<td>Not Signed - In Law Enforcement Custody</td></tr>
+<tr><td style="white-space:nowrap">4515011<a name="cs-nemsis-other-4515011"> </a></td>
+<td>Not Signed - Language Barrier</td></tr>
+<tr><td style="white-space:nowrap">4515013<a name="cs-nemsis-other-4515013"> </a></td>
+<td>Not Signed - Mental Status/Impaired</td></tr>
+<tr><td style="white-space:nowrap">4515015<a name="cs-nemsis-other-4515015"> </a></td>
+<td>Not Signed - Minor/Child</td></tr>
+<tr><td style="white-space:nowrap">4515017<a name="cs-nemsis-other-4515017"> </a></td>
+<td>Not Signed - Physical Impairment of Extremities</td></tr>
+<tr><td style="white-space:nowrap">4515019<a name="cs-nemsis-other-4515019"> </a></td>
+<td>Not Signed - Refused</td></tr>
+<tr><td style="white-space:nowrap">4515021<a name="cs-nemsis-other-4515021"> </a></td>
+<td>Not Signed - Transferred Care/No Access to Obtain Signature</td></tr>
+<tr><td style="white-space:nowrap">4515023<a name="cs-nemsis-other-4515023"> </a></td>
+<td>Not Signed - Unconscious</td></tr>
+<tr><td style="white-space:nowrap">4515025<a name="cs-nemsis-other-4515025"> </a></td>
+<td>Not Signed -Visually Impaired</td></tr>
+<tr><td style="white-space:nowrap">4515027<a name="cs-nemsis-other-4515027"> </a></td>
+<td>Physical Signature/Paper Copy Obtained</td></tr>
+<tr><td style="white-space:nowrap">4515031<a name="cs-nemsis-other-4515031"> </a></td>
+<td>Signed</td></tr>
+<tr><td style="white-space:nowrap">4515033<a name="cs-nemsis-other-4515033"> </a></td>
+<td>Signed-Not Patient</td></tr>
+<tr><td style="white-space:nowrap">4515035<a name="cs-nemsis-other-4515035"> </a></td>
+<td>Not Signed-Illiterate (Unable to Read)</td></tr>
+<tr><td style="white-space:nowrap">4515037<a name="cs-nemsis-other-4515037"> </a></td>
+<td>Not Signed-Restrained</td></tr>
+<tr><td style="white-space:nowrap">4515039<a name="cs-nemsis-other-4515039"> </a></td>
+<td>Not Signed-Combative or Uncooperative</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

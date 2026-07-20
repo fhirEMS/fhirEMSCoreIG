@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-payer-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-payer-type</b></p><a name="cs-nemsis-payer-type"> </a><a name="hccs-nemsis-payer-type"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">11<a name="cs-nemsis-payer-type-11"> </a></td><td>Other Non-Federal Programs</td></tr><tr><td style="white-space:nowrap">12<a name="cs-nemsis-payer-type-12"> </a></td><td>Preferred Provider Organization (PPO)</td></tr><tr><td style="white-space:nowrap">13<a name="cs-nemsis-payer-type-13"> </a></td><td>Point of Service (POS)</td></tr><tr><td style="white-space:nowrap">14<a name="cs-nemsis-payer-type-14"> </a></td><td>Exclusive Provider Organization (EPO)</td></tr><tr><td style="white-space:nowrap">15<a name="cs-nemsis-payer-type-15"> </a></td><td>Indemnity Insurance</td></tr><tr><td style="white-space:nowrap">16<a name="cs-nemsis-payer-type-16"> </a></td><td>Health Maintenance Organization (HMO) Medicare Risk</td></tr><tr><td style="white-space:nowrap">17<a name="cs-nemsis-payer-type-17"> </a></td><td>Dental Maintenance Organization</td></tr><tr><td style="white-space:nowrap">AM<a name="cs-nemsis-payer-type-AM"> </a></td><td>Automobile Medical</td></tr><tr><td style="white-space:nowrap">BL<a name="cs-nemsis-payer-type-BL"> </a></td><td>Blue Cross/Blue Shield</td></tr><tr><td style="white-space:nowrap">CH<a name="cs-nemsis-payer-type-CH"> </a></td><td>Champus</td></tr><tr><td style="white-space:nowrap">CI<a name="cs-nemsis-payer-type-CI"> </a></td><td>Commercial Insurance Co.</td></tr><tr><td style="white-space:nowrap">DS<a name="cs-nemsis-payer-type-DS"> </a></td><td>Disability</td></tr><tr><td style="white-space:nowrap">FI<a name="cs-nemsis-payer-type-FI"> </a></td><td>Federal Employees Program</td></tr><tr><td style="white-space:nowrap">HM<a name="cs-nemsis-payer-type-HM"> </a></td><td>Health Maintenance Organization</td></tr><tr><td style="white-space:nowrap">LM<a name="cs-nemsis-payer-type-LM"> </a></td><td>Liability Medical</td></tr><tr><td style="white-space:nowrap">MA<a name="cs-nemsis-payer-type-MA"> </a></td><td>Medicare Part A</td></tr><tr><td style="white-space:nowrap">MB<a name="cs-nemsis-payer-type-MB"> </a></td><td>Medicare Part B</td></tr><tr><td style="white-space:nowrap">MC<a name="cs-nemsis-payer-type-MC"> </a></td><td>Medicaid</td></tr><tr><td style="white-space:nowrap">OF<a name="cs-nemsis-payer-type-OF"> </a></td><td>Other Federal Program</td></tr><tr><td style="white-space:nowrap">TV<a name="cs-nemsis-payer-type-TV"> </a></td><td>Title V</td></tr><tr><td style="white-space:nowrap">VA<a name="cs-nemsis-payer-type-VA"> </a></td><td>Veteran Affairs Plan</td></tr><tr><td style="white-space:nowrap">WC<a name="cs-nemsis-payer-type-WC"> </a></td><td>Workers' Compensation Health Claim</td></tr><tr><td style="white-space:nowrap">ZZ<a name="cs-nemsis-payer-type-ZZ"> </a></td><td>Mutually Defined</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.10"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISPayerType"/>
+  <title value="NEMSIS ePayment Payer Type Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="X12 payer type codes used in NEMSIS ePayment.57 to identify the type of insurance payer."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="23"/>
+  <concept>
+    <code value="11"/>
+    <display value="Other Non-Federal Programs"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Preferred Provider Organization (PPO)"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Point of Service (POS)"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="Exclusive Provider Organization (EPO)"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="Indemnity Insurance"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="Health Maintenance Organization (HMO) Medicare Risk"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="Dental Maintenance Organization"/>
+  </concept>
+  <concept>
+    <code value="AM"/>
+    <display value="Automobile Medical"/>
+  </concept>
+  <concept>
+    <code value="BL"/>
+    <display value="Blue Cross/Blue Shield"/>
+  </concept>
+  <concept>
+    <code value="CH"/>
+    <display value="Champus"/>
+  </concept>
+  <concept>
+    <code value="CI"/>
+    <display value="Commercial Insurance Co."/>
+  </concept>
+  <concept>
+    <code value="DS"/>
+    <display value="Disability"/>
+  </concept>
+  <concept>
+    <code value="FI"/>
+    <display value="Federal Employees Program"/>
+  </concept>
+  <concept>
+    <code value="HM"/>
+    <display value="Health Maintenance Organization"/>
+  </concept>
+  <concept>
+    <code value="LM"/>
+    <display value="Liability Medical"/>
+  </concept>
+  <concept>
+    <code value="MA"/>
+    <display value="Medicare Part A"/>
+  </concept>
+  <concept>
+    <code value="MB"/>
+    <display value="Medicare Part B"/>
+  </concept>
+  <concept>
+    <code value="MC"/>
+    <display value="Medicaid"/>
+  </concept>
+  <concept>
+    <code value="OF"/>
+    <display value="Other Federal Program"/>
+  </concept>
+  <concept>
+    <code value="TV"/>
+    <display value="Title V"/>
+  </concept>
+  <concept>
+    <code value="VA"/>
+    <display value="Veteran Affairs Plan"/>
+  </concept>
+  <concept>
+    <code value="WC"/>
+    <display value="Workers' Compensation Health Claim"/>
+  </concept>
+  <concept>
+    <code value="ZZ"/>
+    <display value="Mutually Defined"/>
+  </concept>
+</CodeSystem>

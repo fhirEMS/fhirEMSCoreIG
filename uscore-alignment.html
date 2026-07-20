@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>US Core Alignment - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>US Core Alignment</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>US Core Alignment</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#us-core-alignment" id="markdown-toc-us-core-alignment">US Core Alignment</a>    <ul>
+      <li><a href="#alignment-strategy" id="markdown-toc-alignment-strategy">Alignment Strategy</a>        <ul>
+          <li><a href="#profile-derivation-hierarchy" id="markdown-toc-profile-derivation-hierarchy">Profile Derivation Hierarchy</a></li>
+        </ul>
+      </li>
+      <li><a href="#must-support-inheritance" id="markdown-toc-must-support-inheritance">Must Support Inheritance</a></li>
+      <li><a href="#profile-by-profile-alignment" id="markdown-toc-profile-by-profile-alignment">Profile-by-Profile Alignment</a>        <ul>
+          <li><a href="#emspatient--us-core-patient" id="markdown-toc-emspatient--us-core-patient">EMSPatient → us-core-patient</a></li>
+          <li><a href="#emsencounter--us-core-encounter" id="markdown-toc-emsencounter--us-core-encounter">EMSEncounter → us-core-encounter</a></li>
+          <li><a href="#emscondition--us-core-condition-encounter-diagnosis" id="markdown-toc-emscondition--us-core-condition-encounter-diagnosis">EMSCondition → us-core-condition-encounter-diagnosis</a></li>
+          <li><a href="#emsobservationvitalsigns--us-core-vital-signs" id="markdown-toc-emsobservationvitalsigns--us-core-vital-signs">EMSObservationVitalSigns → us-core-vital-signs</a></li>
+          <li><a href="#emsobservationbloodpressure--us-core-blood-pressure" id="markdown-toc-emsobservationbloodpressure--us-core-blood-pressure">EMSObservationBloodPressure → us-core-blood-pressure</a></li>
+          <li><a href="#emsprocedure--us-core-procedure" id="markdown-toc-emsprocedure--us-core-procedure">EMSProcedure → us-core-procedure</a></li>
+          <li><a href="#emsallergyintolerance--us-core-allergyintolerance" id="markdown-toc-emsallergyintolerance--us-core-allergyintolerance">EMSAllergyIntolerance → us-core-allergyintolerance</a></li>
+          <li><a href="#emspractitioner--us-core-practitioner" id="markdown-toc-emspractitioner--us-core-practitioner">EMSPractitioner → us-core-practitioner</a></li>
+          <li><a href="#emsorganization--us-core-organization" id="markdown-toc-emsorganization--us-core-organization">EMSOrganization → us-core-organization</a></li>
+        </ul>
+      </li>
+      <li><a href="#terminology-alignment" id="markdown-toc-terminology-alignment">Terminology Alignment</a></li>
+      <li><a href="#known-gaps-and-future-work" id="markdown-toc-known-gaps-and-future-work">Known Gaps and Future Work</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="us-core-alignment">US Core Alignment</h1>
+
+<p>This page describes how fhirEMSCore aligns with <a href="http://hl7.org/fhir/us/core/STU6.1/">US Core 6.1.0</a> and where EMS-specific requirements necessitate additional constraints or extensions.</p>
+
+<hr />
+
+<h2 id="alignment-strategy">Alignment Strategy</h2>
+
+<p>fhirEMSCore derives all profiles from US Core 6.1.0 where a US Core profile exists. This ensures EMS data can be exchanged across the broader US healthcare ecosystem — including hospital EHRs, health information exchanges (HIEs), and public health systems — without requiring EMS-specific parsing.</p>
+
+<h3 id="profile-derivation-hierarchy">Profile Derivation Hierarchy</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FHIR R4 Base Resource
+    └── US Core 6.1.0 Profile  (if one exists)
+            └── fhirEMSCore Profile  (always)
+</code></pre></div></div>
+
+<p><strong>Rule</strong>: When a US Core 6.1.0 profile exists for a FHIR resource, fhirEMSCore <strong>must</strong> derive from it. Never skip a US Core parent.</p>
+
+<p>Resources with <strong>no US Core profile</strong> derive directly from the FHIR R4 base resource:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>fhirEMSCore Profile</th>
+      <th>Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Composition</td>
+      <td>EMSComposition</td>
+      <td>No US Core Composition profile</td>
+    </tr>
+    <tr>
+      <td>MedicationAdministration</td>
+      <td>EMSMedicationAdministration</td>
+      <td>No US Core profile; NEMSIS records administered medications</td>
+    </tr>
+    <tr>
+      <td>Device</td>
+      <td>EMSDevice</td>
+      <td>No US Core Device profile</td>
+    </tr>
+    <tr>
+      <td>Coverage</td>
+      <td>EMSCoverage</td>
+      <td>No US Core Coverage profile</td>
+    </tr>
+    <tr>
+      <td>Claim</td>
+      <td>EMSClaim</td>
+      <td>No US Core Claim profile</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="must-support-inheritance">Must Support Inheritance</h2>
+
+<p>All Must Support (MS) obligations from US Core parent profiles are inherited by fhirEMSCore profiles. fhirEMSCore may additionally:</p>
+
+<ul>
+  <li><strong>Tighten</strong> cardinality (e.g., 0..1 → 1..1) when NEMSIS marks an element as Required or Mandatory</li>
+  <li><strong>Add MS</strong> to elements required by NEMSIS but optional in US Core</li>
+  <li><strong>Narrow</strong> reference targets to EMS-specific profiles (e.g., <code class="language-plaintext highlighter-rouge">Reference(Patient)</code> → <code class="language-plaintext highlighter-rouge">Reference(EMSPatient)</code>)</li>
+  <li><strong>Add extensions</strong> for NEMSIS data elements with no direct FHIR equivalent</li>
+  <li><strong>Bind</strong> additional value sets (required or extensible) for NEMSIS-coded elements</li>
+</ul>
+
+<p>fhirEMSCore profiles <strong>must not</strong> loosen cardinality, remove Must Support, or add constraints that conflict with US Core invariants.</p>
+
+<hr />
+
+<h2 id="profile-by-profile-alignment">Profile-by-Profile Alignment</h2>
+
+<h3 id="emspatient--us-core-patient">EMSPatient → us-core-patient</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>US Core Requirement</th>
+      <th>fhirEMSCore Constraint</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code> 1..*</td>
+      <td>Inherited (1..*)</td>
+      <td>Local PCR record ID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code> 1..*</td>
+      <td>Inherited</td>
+      <td>ePatient.03/04/05</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">gender</code> MS</td>
+      <td>Inherited + mapped per NDR-006</td>
+      <td>ePatient.11</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">birthDate</code> MS</td>
+      <td>Inherited</td>
+      <td>ePatient.17</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">us-core-race</code> extension MS</td>
+      <td>Inherited</td>
+      <td>ePatient.14 (OMB race categories)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">us-core-ethnicity</code> extension MS</td>
+      <td>Inherited</td>
+      <td>ePatient.15</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">us-core-birthsex</code> extension MS</td>
+      <td>Inherited</td>
+      <td>ePatient.11 (biological sex component)</td>
+    </tr>
+    <tr>
+      <td><em>EMS-specific additions:</em></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-age</code></td>
+      <td>Added 0..1 MS</td>
+      <td>ePatient.15 — age at time of call</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-alternate-residence</code></td>
+      <td>Added 0..1</td>
+      <td>ePatient.09 — alternate address</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-barrier</code></td>
+      <td>Added 0..* MS</td>
+      <td>ePatient.21 — language/communication barriers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address.extension[ext-ems-census-tract]</code></td>
+      <td>Added</td>
+      <td>ePatient.08 — census tract</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsencounter--us-core-encounter">EMSEncounter → us-core-encounter</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>US Core Requirement</th>
+      <th>fhirEMSCore Constraint</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code> 1..*</td>
+      <td>Incident number slice added</td>
+      <td>eRecord.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code> MS</td>
+      <td>Inherited</td>
+      <td>Completed PCR = <code class="language-plaintext highlighter-rouge">finished</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">class</code> MS</td>
+      <td>Bound to NEMSIS encounter codes</td>
+      <td>eResponse.05</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code> 1..* MS</td>
+      <td>SNOMED 409971007 required</td>
+      <td>EMS service type</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code> 1..1 MS</td>
+      <td>Reference(EMSPatient) only</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">period</code> MS</td>
+      <td>start = eTimes.03, end = eTimes.12</td>
+      <td>NDR-005</td>
+    </tr>
+    <tr>
+      <td><em>EMS-specific additions:</em></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eTimes 19-timestamp complex extension</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-type</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eResponse.05</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-unit-type</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eResponse.07</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eDispatch elements</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-transport-details</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eDisposition transport data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-mode</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eResponse response/travel mode</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-disposition-codes</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eDisposition destination data</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emscondition--us-core-condition-encounter-diagnosis">EMSCondition → us-core-condition-encounter-diagnosis</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>US Core Requirement</th>
+      <th>fhirEMSCore Constraint</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category[us-core]</code> 1..1</td>
+      <td>encounter-diagnosis required</td>
+      <td>eSituation primary/secondary impression</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code> 1..1 MS</td>
+      <td>SNOMED CT preferred</td>
+      <td>eSituation.11 primary impression</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code> 1..1 MS</td>
+      <td>Reference(EMSPatient) only</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code> MS</td>
+      <td>Reference(EMSEncounter)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><em>EMS additions:</em></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-incident-type</code></td>
+      <td>Added 0..1</td>
+      <td>eSituation.07 incident type</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-not-value</code></td>
+      <td>Allowed</td>
+      <td>NV support per NDR-001</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsobservationvitalsigns--us-core-vital-signs">EMSObservationVitalSigns → us-core-vital-signs</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>US Core Requirement</th>
+      <th>fhirEMSCore Constraint</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code> MS</td>
+      <td>final / amended / entered-in-error</td>
+      <td>eVitals status</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category</code> fixed to vital-signs</td>
+      <td>Inherited</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code> LOINC required</td>
+      <td>Bound to EMS vital sign LOINC codes</td>
+      <td>eVitals per LOINC mapping table</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code> 1..1 MS</td>
+      <td>Reference(EMSPatient) only</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">effective[x]</code> 1..1 MS</td>
+      <td>effectiveDateTime required</td>
+      <td>eVitals.01 timestamp</td>
+    </tr>
+    <tr>
+      <td><em>EMS additions:</em></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-vital-obtained-prior</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eVitals.02 (obtained prior to unit arrival)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-not-value</code></td>
+      <td>Allowed</td>
+      <td>NV support per NDR-001</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code></td>
+      <td>Allowed</td>
+      <td>PN support per NDR-002</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsobservationbloodpressure--us-core-blood-pressure">EMSObservationBloodPressure → us-core-blood-pressure</h3>
+
+<p>The US Core blood pressure profile fixes:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> = LOINC <code class="language-plaintext highlighter-rouge">85354-9</code> (Blood pressure panel with all children)</li>
+  <li>Systolic component = LOINC <code class="language-plaintext highlighter-rouge">8480-6</code></li>
+  <li>Diastolic component = LOINC <code class="language-plaintext highlighter-rouge">8462-4</code></li>
+  <li>UCUM unit constraints on valueQuantity components</li>
+</ul>
+
+<p>fhirEMSCore adds:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ext-ems-bp-method</code> for eVitals.08 (blood pressure measurement method)</li>
+  <li><code class="language-plaintext highlighter-rouge">ext-ems-vital-obtained-prior</code> for eVitals.02</li>
+</ul>
+
+<h3 id="emsprocedure--us-core-procedure">EMSProcedure → us-core-procedure</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>US Core Requirement</th>
+      <th>fhirEMSCore Constraint</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code> MS</td>
+      <td>completed / not-done</td>
+      <td>eProcedures.01 attempted flag</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code> 1..1 MS</td>
+      <td>SNOMED CT (NEMSIS uses SNOMED)</td>
+      <td>eProcedures.03 (direct SNOMED mapping)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code> 1..1 MS</td>
+      <td>Reference(EMSPatient) only</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">performed[x]</code> MS</td>
+      <td>performedDateTime</td>
+      <td>eProcedures.01 timestamp</td>
+    </tr>
+    <tr>
+      <td><em>EMS additions:</em></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-procedure-context</code></td>
+      <td>Added 0..1 MS</td>
+      <td>eProcedures context data</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsallergyintolerance--us-core-allergyintolerance">EMSAllergyIntolerance → us-core-allergyintolerance</h3>
+
+<p>Full alignment with US Core. EMS-specific additions:</p>
+<ul>
+  <li>Substance coded to RxNorm (consistent with NEMSIS eHistory.06)</li>
+  <li><code class="language-plaintext highlighter-rouge">recorder</code> reference narrowed to Reference(EMSPractitioner)</li>
+</ul>
+
+<h3 id="emspractitioner--us-core-practitioner">EMSPractitioner → us-core-practitioner</h3>
+
+<p>Full alignment with US Core. EMS additions:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">qualification</code> slice for EMS certification level (dPersonnel.24)</li>
+  <li><code class="language-plaintext highlighter-rouge">ext-ems-certification-level</code> extension</li>
+</ul>
+
+<h3 id="emsorganization--us-core-organization">EMSOrganization → us-core-organization</h3>
+
+<p>Full alignment. EMS additions:</p>
+<ul>
+  <li>Identifier slices for state EMS agency number and NPI-2</li>
+  <li><code class="language-plaintext highlighter-rouge">ext-ems-agency-details</code> for dAgency operational data</li>
+</ul>
+
+<hr />
+
+<h2 id="terminology-alignment">Terminology Alignment</h2>
+
+<p>fhirEMSCore uses US Core-recommended terminologies wherever NEMSIS data allows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Domain</th>
+      <th>US Core Standard</th>
+      <th>fhirEMSCore Implementation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Race/Ethnicity</td>
+      <td>OMB categories (us-core-race/ethnicity)</td>
+      <td>Full alignment</td>
+    </tr>
+    <tr>
+      <td>Vital Signs</td>
+      <td>LOINC</td>
+      <td>Full alignment — LOINC mapping table defined</td>
+    </tr>
+    <tr>
+      <td>Diagnoses</td>
+      <td>SNOMED CT or ICD-10-CM</td>
+      <td>SNOMED preferred; ICD-10-CM for billing claims</td>
+    </tr>
+    <tr>
+      <td>Procedures</td>
+      <td>SNOMED CT or CPT</td>
+      <td>SNOMED (NEMSIS eProcedures already uses SNOMED codes)</td>
+    </tr>
+    <tr>
+      <td>Medications</td>
+      <td>RxNorm</td>
+      <td>Full alignment (NEMSIS eMedications already uses RxNorm)</td>
+    </tr>
+    <tr>
+      <td>Units of Measure</td>
+      <td>UCUM</td>
+      <td>Full alignment</td>
+    </tr>
+    <tr>
+      <td>EMS-specific coded elements</td>
+      <td>NEMSIS CodeSystem</td>
+      <td>Used only where no standard code system applies</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="known-gaps-and-future-work">Known Gaps and Future Work</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gap</th>
+      <th>Description</th>
+      <th>Planned Resolution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Home medication history</td>
+      <td>NEMSIS eHistory records medications patient takes at home</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationStatement</code> profile (Phase 3)</td>
+    </tr>
+    <tr>
+      <td>Gender identity</td>
+      <td>NEMSIS sex codes include transgender values</td>
+      <td><code class="language-plaintext highlighter-rouge">gender-identity</code> extension (HL7 extension)</td>
+    </tr>
+    <tr>
+      <td>Multi-patient incidents</td>
+      <td>NEMSIS supports multiple patients per incident</td>
+      <td>Separate Encounter per patient; shared Location</td>
+    </tr>
+    <tr>
+      <td>Real-time streaming</td>
+      <td>NEMSIS supports near-real-time PCR submission</td>
+      <td>FHIR Subscription or <code class="language-plaintext highlighter-rouge">$process-message</code> (Phase 4)</td>
+    </tr>
+    <tr>
+      <td>eInjury section</td>
+      <td>29 trauma/injury elements not yet profiled</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code> extension or <code class="language-plaintext highlighter-rouge">InjuryCondition</code> profile (future)</td>
+    </tr>
+    <tr>
+      <td>eOther section</td>
+      <td>22 additional clinical elements</td>
+      <td>Observation extensions (future)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

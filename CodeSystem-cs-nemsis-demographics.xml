@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-demographics"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-demographics</b></p><a name="cs-nemsis-demographics"> </a><a name="hccs-nemsis-demographics"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1101001<a name="cs-nemsis-demographics-1101001"> </a></td><td>Administrative Assistant</td></tr><tr><td style="white-space:nowrap">1101003<a name="cs-nemsis-demographics-1101003"> </a></td><td>EMS Agency Director/Chief/Lead Administrator/CEO</td></tr><tr><td style="white-space:nowrap">1101005<a name="cs-nemsis-demographics-1101005"> </a></td><td>EMS Assistant Agency Director/Chief/Administrator/CEO</td></tr><tr><td style="white-space:nowrap">1101007<a name="cs-nemsis-demographics-1101007"> </a></td><td>EMS Assistant Medical Director</td></tr><tr><td style="white-space:nowrap">1101009<a name="cs-nemsis-demographics-1101009"> </a></td><td>EMS IT/Data Specialist</td></tr><tr><td style="white-space:nowrap">1101011<a name="cs-nemsis-demographics-1101011"> </a></td><td>EMS Medical Director</td></tr><tr><td style="white-space:nowrap">1101013<a name="cs-nemsis-demographics-1101013"> </a></td><td>EMS Quality/Performance Improvement Specialist</td></tr><tr><td style="white-space:nowrap">1101015<a name="cs-nemsis-demographics-1101015"> </a></td><td>EMS Training/Education Specialist</td></tr><tr><td style="white-space:nowrap">1101017<a name="cs-nemsis-demographics-1101017"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">1113001<a name="cs-nemsis-demographics-1113001"> </a></td><td>Doctor of Medicine</td></tr><tr><td style="white-space:nowrap">1113003<a name="cs-nemsis-demographics-1113003"> </a></td><td>Doctor of Osteopathy</td></tr><tr><td style="white-space:nowrap">1114001<a name="cs-nemsis-demographics-1114001"> </a></td><td>Allergy and Immunology</td></tr><tr><td style="white-space:nowrap">1114003<a name="cs-nemsis-demographics-1114003"> </a></td><td>Anesthesiology</td></tr><tr><td style="white-space:nowrap">1114005<a name="cs-nemsis-demographics-1114005"> </a></td><td>Colon and Rectal Surgery</td></tr><tr><td style="white-space:nowrap">1114007<a name="cs-nemsis-demographics-1114007"> </a></td><td>Dermatology</td></tr><tr><td style="white-space:nowrap">1114009<a name="cs-nemsis-demographics-1114009"> </a></td><td>Emergency Medicine</td></tr><tr><td style="white-space:nowrap">1114011<a name="cs-nemsis-demographics-1114011"> </a></td><td>Family Medicine</td></tr><tr><td style="white-space:nowrap">1114013<a name="cs-nemsis-demographics-1114013"> </a></td><td>Internal Medicine</td></tr><tr><td style="white-space:nowrap">1114015<a name="cs-nemsis-demographics-1114015"> </a></td><td>Neurological Surgery</td></tr><tr><td style="white-space:nowrap">1114017<a name="cs-nemsis-demographics-1114017"> </a></td><td>Neurology</td></tr><tr><td style="white-space:nowrap">1114019<a name="cs-nemsis-demographics-1114019"> </a></td><td>None (Not Board Certified)</td></tr><tr><td style="white-space:nowrap">1114021<a name="cs-nemsis-demographics-1114021"> </a></td><td>Obstetrics and Gynecology</td></tr><tr><td style="white-space:nowrap">1114023<a name="cs-nemsis-demographics-1114023"> </a></td><td>Ophthalmology</td></tr><tr><td style="white-space:nowrap">1114025<a name="cs-nemsis-demographics-1114025"> </a></td><td>Orthopedic Surgery</td></tr><tr><td style="white-space:nowrap">1114027<a name="cs-nemsis-demographics-1114027"> </a></td><td>Otolaryngology</td></tr><tr><td style="white-space:nowrap">1114029<a name="cs-nemsis-demographics-1114029"> </a></td><td>Pediatrics</td></tr><tr><td style="white-space:nowrap">1114031<a name="cs-nemsis-demographics-1114031"> </a></td><td>Physical Medicine and Rehabilitation</td></tr><tr><td style="white-space:nowrap">1114033<a name="cs-nemsis-demographics-1114033"> </a></td><td>Plastic Surgery</td></tr><tr><td style="white-space:nowrap">1114035<a name="cs-nemsis-demographics-1114035"> </a></td><td>Psychiatry</td></tr><tr><td style="white-space:nowrap">1114037<a name="cs-nemsis-demographics-1114037"> </a></td><td>Surgery</td></tr><tr><td style="white-space:nowrap">1114039<a name="cs-nemsis-demographics-1114039"> </a></td><td>Thoracic Surgery</td></tr><tr><td style="white-space:nowrap">1114041<a name="cs-nemsis-demographics-1114041"> </a></td><td>Urology</td></tr><tr><td style="white-space:nowrap">1114043<a name="cs-nemsis-demographics-1114043"> </a></td><td>Vascular Surgery</td></tr><tr><td style="white-space:nowrap">1115001<a name="cs-nemsis-demographics-1115001"> </a></td><td>Compensated</td></tr><tr><td style="white-space:nowrap">1115003<a name="cs-nemsis-demographics-1115003"> </a></td><td>Non-Compensated</td></tr><tr><td style="white-space:nowrap">1211001<a name="cs-nemsis-demographics-1211001"> </a></td><td>Air Rescue</td></tr><tr><td style="white-space:nowrap">1211003<a name="cs-nemsis-demographics-1211003"> </a></td><td>CBRNE</td></tr><tr><td style="white-space:nowrap">1211005<a name="cs-nemsis-demographics-1211005"> </a></td><td>Community Health Medicine</td></tr><tr><td style="white-space:nowrap">1211007<a name="cs-nemsis-demographics-1211007"> </a></td><td>Disaster Medical Assistance Team (DMAT)</td></tr><tr><td style="white-space:nowrap">1211009<a name="cs-nemsis-demographics-1211009"> </a></td><td>Disaster Mortuary (DMORT)</td></tr><tr><td style="white-space:nowrap">1211011<a name="cs-nemsis-demographics-1211011"> </a></td><td>Dive Rescue</td></tr><tr><td style="white-space:nowrap">1211013<a name="cs-nemsis-demographics-1211013"> </a></td><td>Farm Rescue</td></tr><tr><td style="white-space:nowrap">1211015<a name="cs-nemsis-demographics-1211015"> </a></td><td>High Angle Rescue</td></tr><tr><td style="white-space:nowrap">1211017<a name="cs-nemsis-demographics-1211017"> </a></td><td>Machinery Disentanglement</td></tr><tr><td style="white-space:nowrap">1211019<a name="cs-nemsis-demographics-1211019"> </a></td><td>None</td></tr><tr><td style="white-space:nowrap">1211021<a name="cs-nemsis-demographics-1211021"> </a></td><td>Ski / Snow Rescue</td></tr><tr><td style="white-space:nowrap">1211023<a name="cs-nemsis-demographics-1211023"> </a></td><td>Tactical EMS</td></tr><tr><td style="white-space:nowrap">1211025<a name="cs-nemsis-demographics-1211025"> </a></td><td>Trench / Confined Space Rescue</td></tr><tr><td style="white-space:nowrap">1211027<a name="cs-nemsis-demographics-1211027"> </a></td><td>Urban Search and Rescue (USAR)</td></tr><tr><td style="white-space:nowrap">1211029<a name="cs-nemsis-demographics-1211029"> </a></td><td>Vehicle Extrication</td></tr><tr><td style="white-space:nowrap">1211031<a name="cs-nemsis-demographics-1211031"> </a></td><td>Veterinary Medical Assistance Team (VMAT)</td></tr><tr><td style="white-space:nowrap">1211033<a name="cs-nemsis-demographics-1211033"> </a></td><td>Water or Ice Related Rescue (Incl Swift Water)</td></tr><tr><td style="white-space:nowrap">1211035<a name="cs-nemsis-demographics-1211035"> </a></td><td>Wilderness Search and Rescue</td></tr><tr><td style="white-space:nowrap">1213001<a name="cs-nemsis-demographics-1213001"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">1213003<a name="cs-nemsis-demographics-1213003"> </a></td><td>Yes, 100% of the EMS Agency's Service Area</td></tr><tr><td style="white-space:nowrap">1213005<a name="cs-nemsis-demographics-1213005"> </a></td><td>Yes, Less than 100% of the EMS Agency's Service Area</td></tr><tr><td style="white-space:nowrap">1215001<a name="cs-nemsis-demographics-1215001"> </a></td><td>Capnography-Numeric</td></tr><tr><td style="white-space:nowrap">1215003<a name="cs-nemsis-demographics-1215003"> </a></td><td>Capnography-Waveform</td></tr><tr><td style="white-space:nowrap">1215005<a name="cs-nemsis-demographics-1215005"> </a></td><td>ECG-12 Lead or Greater</td></tr><tr><td style="white-space:nowrap">1215007<a name="cs-nemsis-demographics-1215007"> </a></td><td>ECG-Less than 12 Lead (Cardiac Monitor)</td></tr><tr><td style="white-space:nowrap">1215009<a name="cs-nemsis-demographics-1215009"> </a></td><td>Oximetry-Carbon Monoxide</td></tr><tr><td style="white-space:nowrap">1215011<a name="cs-nemsis-demographics-1215011"> </a></td><td>Oximetry-Oxygen</td></tr><tr><td style="white-space:nowrap">1215013<a name="cs-nemsis-demographics-1215013"> </a></td><td>Pressure Measurement-Invasive (Arterial, CVP, Swan, etc.)</td></tr><tr><td style="white-space:nowrap">1215015<a name="cs-nemsis-demographics-1215015"> </a></td><td>Pressure Measurement-Non-Invasive (Blood Pressure, etc.)</td></tr><tr><td style="white-space:nowrap">1215017<a name="cs-nemsis-demographics-1215017"> </a></td><td>Ventilator-Transport</td></tr><tr><td style="white-space:nowrap">1215019<a name="cs-nemsis-demographics-1215019"> </a></td><td>Vital Sign Monitoring</td></tr><tr><td style="white-space:nowrap">1301001<a name="cs-nemsis-demographics-1301001"> </a></td><td>EMS Agency Headquarters</td></tr><tr><td style="white-space:nowrap">1301003<a name="cs-nemsis-demographics-1301003"> </a></td><td>EMS Staging Area</td></tr><tr><td style="white-space:nowrap">1301005<a name="cs-nemsis-demographics-1301005"> </a></td><td>EMS Station</td></tr><tr><td style="white-space:nowrap">1301007<a name="cs-nemsis-demographics-1301007"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.20"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISDemographics"/>
+  <title value="NEMSIS DEM Demographic Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS 3.5.1 DEM dataset sections dContact (agency contact type, medical director degree/board certification/compensation), dConfiguration (specialty service capability, EMD provision, patient monitoring capability), and dLocation (EMS location type)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="70"/>
+  <concept>
+    <code value="1101001"/>
+    <display value="Administrative Assistant"/>
+  </concept>
+  <concept>
+    <code value="1101003"/>
+    <display value="EMS Agency Director/Chief/Lead Administrator/CEO"/>
+  </concept>
+  <concept>
+    <code value="1101005"/>
+    <display value="EMS Assistant Agency Director/Chief/Administrator/CEO"/>
+  </concept>
+  <concept>
+    <code value="1101007"/>
+    <display value="EMS Assistant Medical Director"/>
+  </concept>
+  <concept>
+    <code value="1101009"/>
+    <display value="EMS IT/Data Specialist"/>
+  </concept>
+  <concept>
+    <code value="1101011"/>
+    <display value="EMS Medical Director"/>
+  </concept>
+  <concept>
+    <code value="1101013"/>
+    <display value="EMS Quality/Performance Improvement Specialist"/>
+  </concept>
+  <concept>
+    <code value="1101015"/>
+    <display value="EMS Training/Education Specialist"/>
+  </concept>
+  <concept>
+    <code value="1101017"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="1113001"/>
+    <display value="Doctor of Medicine"/>
+  </concept>
+  <concept>
+    <code value="1113003"/>
+    <display value="Doctor of Osteopathy"/>
+  </concept>
+  <concept>
+    <code value="1114001"/>
+    <display value="Allergy and Immunology"/>
+  </concept>
+  <concept>
+    <code value="1114003"/>
+    <display value="Anesthesiology"/>
+  </concept>
+  <concept>
+    <code value="1114005"/>
+    <display value="Colon and Rectal Surgery"/>
+  </concept>
+  <concept>
+    <code value="1114007"/>
+    <display value="Dermatology"/>
+  </concept>
+  <concept>
+    <code value="1114009"/>
+    <display value="Emergency Medicine"/>
+  </concept>
+  <concept>
+    <code value="1114011"/>
+    <display value="Family Medicine"/>
+  </concept>
+  <concept>
+    <code value="1114013"/>
+    <display value="Internal Medicine"/>
+  </concept>
+  <concept>
+    <code value="1114015"/>
+    <display value="Neurological Surgery"/>
+  </concept>
+  <concept>
+    <code value="1114017"/>
+    <display value="Neurology"/>
+  </concept>
+  <concept>
+    <code value="1114019"/>
+    <display value="None (Not Board Certified)"/>
+  </concept>
+  <concept>
+    <code value="1114021"/>
+    <display value="Obstetrics and Gynecology"/>
+  </concept>
+  <concept>
+    <code value="1114023"/>
+    <display value="Ophthalmology"/>
+  </concept>
+  <concept>
+    <code value="1114025"/>
+    <display value="Orthopedic Surgery"/>
+  </concept>
+  <concept>
+    <code value="1114027"/>
+    <display value="Otolaryngology"/>
+  </concept>
+  <concept>
+    <code value="1114029"/>
+    <display value="Pediatrics"/>
+  </concept>
+  <concept>
+    <code value="1114031"/>
+    <display value="Physical Medicine and Rehabilitation"/>
+  </concept>
+  <concept>
+    <code value="1114033"/>
+    <display value="Plastic Surgery"/>
+  </concept>
+  <concept>
+    <code value="1114035"/>
+    <display value="Psychiatry"/>
+  </concept>
+  <concept>
+    <code value="1114037"/>
+    <display value="Surgery"/>
+  </concept>
+  <concept>
+    <code value="1114039"/>
+    <display value="Thoracic Surgery"/>
+  </concept>
+  <concept>
+    <code value="1114041"/>
+    <display value="Urology"/>
+  </concept>
+  <concept>
+    <code value="1114043"/>
+    <display value="Vascular Surgery"/>
+  </concept>
+  <concept>
+    <code value="1115001"/>
+    <display value="Compensated"/>
+  </concept>
+  <concept>
+    <code value="1115003"/>
+    <display value="Non-Compensated"/>
+  </concept>
+  <concept>
+    <code value="1211001"/>
+    <display value="Air Rescue"/>
+  </concept>
+  <concept>
+    <code value="1211003"/>
+    <display value="CBRNE"/>
+  </concept>
+  <concept>
+    <code value="1211005"/>
+    <display value="Community Health Medicine"/>
+  </concept>
+  <concept>
+    <code value="1211007"/>
+    <display value="Disaster Medical Assistance Team (DMAT)"/>
+  </concept>
+  <concept>
+    <code value="1211009"/>
+    <display value="Disaster Mortuary (DMORT)"/>
+  </concept>
+  <concept>
+    <code value="1211011"/>
+    <display value="Dive Rescue"/>
+  </concept>
+  <concept>
+    <code value="1211013"/>
+    <display value="Farm Rescue"/>
+  </concept>
+  <concept>
+    <code value="1211015"/>
+    <display value="High Angle Rescue"/>
+  </concept>
+  <concept>
+    <code value="1211017"/>
+    <display value="Machinery Disentanglement"/>
+  </concept>
+  <concept>
+    <code value="1211019"/>
+    <display value="None"/>
+  </concept>
+  <concept>
+    <code value="1211021"/>
+    <display value="Ski / Snow Rescue"/>
+  </concept>
+  <concept>
+    <code value="1211023"/>
+    <display value="Tactical EMS"/>
+  </concept>
+  <concept>
+    <code value="1211025"/>
+    <display value="Trench / Confined Space Rescue"/>
+  </concept>
+  <concept>
+    <code value="1211027"/>
+    <display value="Urban Search and Rescue (USAR)"/>
+  </concept>
+  <concept>
+    <code value="1211029"/>
+    <display value="Vehicle Extrication"/>
+  </concept>
+  <concept>
+    <code value="1211031"/>
+    <display value="Veterinary Medical Assistance Team (VMAT)"/>
+  </concept>
+  <concept>
+    <code value="1211033"/>
+    <display value="Water or Ice Related Rescue (Incl Swift Water)"/>
+  </concept>
+  <concept>
+    <code value="1211035"/>
+    <display value="Wilderness Search and Rescue"/>
+  </concept>
+  <concept>
+    <code value="1213001"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="1213003"/>
+    <display value="Yes, 100% of the EMS Agency's Service Area"/>
+  </concept>
+  <concept>
+    <code value="1213005"/>
+    <display value="Yes, Less than 100% of the EMS Agency's Service Area"/>
+  </concept>
+  <concept>
+    <code value="1215001"/>
+    <display value="Capnography-Numeric"/>
+  </concept>
+  <concept>
+    <code value="1215003"/>
+    <display value="Capnography-Waveform"/>
+  </concept>
+  <concept>
+    <code value="1215005"/>
+    <display value="ECG-12 Lead or Greater"/>
+  </concept>
+  <concept>
+    <code value="1215007"/>
+    <display value="ECG-Less than 12 Lead (Cardiac Monitor)"/>
+  </concept>
+  <concept>
+    <code value="1215009"/>
+    <display value="Oximetry-Carbon Monoxide"/>
+  </concept>
+  <concept>
+    <code value="1215011"/>
+    <display value="Oximetry-Oxygen"/>
+  </concept>
+  <concept>
+    <code value="1215013"/>
+    <display value="Pressure Measurement-Invasive (Arterial, CVP, Swan, etc.)"/>
+  </concept>
+  <concept>
+    <code value="1215015"/>
+    <display value="Pressure Measurement-Non-Invasive (Blood Pressure, etc.)"/>
+  </concept>
+  <concept>
+    <code value="1215017"/>
+    <display value="Ventilator-Transport"/>
+  </concept>
+  <concept>
+    <code value="1215019"/>
+    <display value="Vital Sign Monitoring"/>
+  </concept>
+  <concept>
+    <code value="1301001"/>
+    <display value="EMS Agency Headquarters"/>
+  </concept>
+  <concept>
+    <code value="1301003"/>
+    <display value="EMS Staging Area"/>
+  </concept>
+  <concept>
+    <code value="1301005"/>
+    <display value="EMS Station"/>
+  </concept>
+  <concept>
+    <code value="1301007"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

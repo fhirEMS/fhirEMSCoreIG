@@ -1,0 +1,479 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example EMS Claim — ALS Level 1 Emergency - TTL Representation - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.267"}
+    h3,h4,h5,h6{--heading-prefix:"17.267"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example EMS Claim — ALS Level 1 Emergency</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Claim-ex-ems-claim.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Claim-ex-ems-claim.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Claim-ex-ems-claim.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example EMS Claim — ALS Level 1 Emergency - TTL Representation</h2>
+
+
+<p><a href="Claim-ex-ems-claim.ttl" no-download="true">Raw ttl</a> | <a href="Claim-ex-ems-claim.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/Claim/ex-ems-claim&gt; a fhir:Claim ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Claim.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;ex-ems-claim&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Claim.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim&quot; ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim&gt;
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#Claim.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Claim ex-ems-claim&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ex-ems-claim\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcex-ems-claim\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ems-claim.html\&quot;&gt;EMS Ambulance Claim&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;EMS Primary Payment Method&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2601005}\&quot;&gt;Medicare&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS CMS Service Level&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2650003}\&quot;&gt;ALS, Level 1 Emergency&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Response Urgency&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2640001}\&quot;&gt;Immediate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Patient Transport Assessment&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2641003}\&quot;&gt;Unable to stand without assistance&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Patient Transport Assessment&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2641005}\&quot;&gt;Unable to walk without assistance&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Ambulance Transport Reason&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment A}\&quot;&gt;Patient was transported to the nearest facility for care of symptoms, complaints, or both&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Ambulance Conditions Indicator&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 05}\&quot;&gt;Patient was unconscious or in shock&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Ambulance Conditions Indicator&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 06}\&quot;&gt;Patient was transported in an emergency situation&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Ambulance Conditions Indicator&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 09}\&quot;&gt;Ambulance service was medically necessary&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS ALS Assessment Performed and Warranted&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Mileage to Closest Hospital&lt;/b&gt;: 8.4 miles&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}\&quot;&gt;Professional&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: Claim&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-ex-ems-patient.html\&quot;&gt;Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: 2026-03-14&lt;/p&gt;&lt;p&gt;&lt;b&gt;provider&lt;/b&gt;: &lt;a href=\&quot;Organization-ex-ems-organization-agency.html\&quot;&gt;Organization Riverside County EMS Agency&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\&quot;&gt;Normal&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;SupportingInfos&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/claiminformationcategory attachment}\&quot;&gt;Attachment&lt;/span&gt;&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Diagnosis[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://hl7.org/fhir/sid/icd-10-cm I46.9}\&quot;&gt;Cardiac arrest, cause unspecified&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Insurances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focal&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Coverage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Coverage-ex-ems-coverage.html\&quot;&gt;Coverage: extension = Medicare Part B; status = active; subscriberId = 1EG4-TE5-MK72; relationship = Self; order = 1&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets A0427}\&quot;&gt;Ambulance service, advanced life support, emergency transport, level 1 (ALS 1 - Emergency)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets A0425}\&quot;&gt;Ground mileage, per statute mile&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 8.4&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#Claim.extension">fhir:DomainResource.extension</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-primary-payment-method&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2601005&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medicare&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-cms-service-level&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2650003&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ALS, Level 1 Emergency&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-urgency&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2640001&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Immediate&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2641003&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Unable to stand without assistance&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2641005&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Unable to walk without assistance&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-transport-reason&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;A&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient was transported to the nearest facility for care of symptoms, complaints, or both&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;05&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient was unconscious or in shock&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;06&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient was transported in an emergency situation&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;09&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ambulance service was medically necessary&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-als-assessment&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueBoolean</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10 ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-mileage-to-closest&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueQuantity</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;8.4&quot;^^xsd:decimal ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;miles&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.status">fhir:Claim.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.type">fhir:Claim.type</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/claim-type&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;professional&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.use">fhir:Claim.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;claim&quot;] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.patient">fhir:Claim.patient</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Patient/ex-ems-patient&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/ex-ems-patient&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.created">fhir:Claim.created</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-03-14&quot;^^xsd:date] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.provider">fhir:Claim.provider</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Organization/ex-ems-organization-agency&gt; ;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Organization/ex-ems-organization-agency&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.priority">fhir:Claim.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/processpriority&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;normal&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo">fhir:Claim.supportingInfo</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.sequence">fhir:Claim.supportingInfo.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.category">fhir:Claim.supportingInfo.category</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/claiminformationcategory&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;attachment&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.value_x_">fhir:Claim.supportingInfo.valueBoolean</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.diagnosis">fhir:Claim.diagnosis</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.diagnosis.sequence">fhir:Claim.diagnosis.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.diagnosis.diagnosis_x_">fhir:Claim.diagnosis.diagnosisCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/sid/icd-10-cm&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;I46.9&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cardiac arrest, cause unspecified&quot; ]
+       ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance">fhir:Claim.insurance</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.sequence">fhir:Claim.insurance.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.focal">fhir:Claim.insurance.focal</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.coverage">fhir:Claim.insurance.coverage</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/Coverage/ex-ems-coverage&gt; ;
+       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Coverage/ex-ems-coverage&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/claim.html#Claim.item">fhir:Claim.item</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.item.sequence">fhir:Claim.item.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.item.productOrService">fhir:Claim.item.productOrService</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;A0427&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ambulance service, advanced life support, emergency transport, level 1 (ALS 1 - Emergency)&quot; ]
+       ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.item.sequence">fhir:Claim.item.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;2&quot;^^xsd:positiveInteger ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.item.productOrService">fhir:Claim.item.productOrService</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;A0425&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ground mileage, per statute mile&quot; ]
+       ]
+     ] ;
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim.item.quantity">fhir:Claim.item.quantity</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;8.4&quot;^^xsd:decimal ]
+     ]
+  ] .
+
+&lt;http://hl7.org/fhir/Patient/ex-ems-patient&gt; a fhir:Patient .
+
+&lt;http://hl7.org/fhir/Organization/ex-ems-organization-agency&gt; a fhir:Organization .
+
+&lt;http://hl7.org/fhir/Coverage/ex-ems-coverage&gt; a fhir:Coverage .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/Claim/ex-ems-claim.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/Claim/ex-ems-claim.ttl&gt; .
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

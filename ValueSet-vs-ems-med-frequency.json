@@ -1,0 +1,107 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-med-frequency",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-med-frequency</b></p><a name=\"vs-ems-med-frequency\"> </a><a name=\"hcvs-ems-med-frequency\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-history.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120001\">3120001</a></td><td>q1h (every hour)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120003\">3120003</a></td><td>q2h (every 2 hours)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120005\">3120005</a></td><td>q3h (every 3 hours)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120007\">3120007</a></td><td>q4h (every 4 hours)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120009\">3120009</a></td><td>qid (four times a day)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120011\">3120011</a></td><td>tid (three times a day)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120013\">3120013</a></td><td>ac (before meals)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120015\">3120015</a></td><td>pc (after meals)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120017\">3120017</a></td><td>bid (twice a day)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120019\">3120019</a></td><td>qd (every day)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120021\">3120021</a></td><td>qd-am (every day in the morning)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120023\">3120023</a></td><td>qd-pm (every day in the evening)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120025\">3120025</a></td><td>hs (at bedtime)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120027\">3120027</a></td><td>qod (every other day)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3120029\">3120029</a></td><td>prn (as needed)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-med-frequency",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.136"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSMedFrequencyVS",
+  "title" : "EMS Home Medication Frequency VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Dosing frequency for the patient's current (home) medications (eHistory.20).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+      "concept" : [{
+        "code" : "3120001",
+        "display" : "q1h (every hour)"
+      },
+      {
+        "code" : "3120003",
+        "display" : "q2h (every 2 hours)"
+      },
+      {
+        "code" : "3120005",
+        "display" : "q3h (every 3 hours)"
+      },
+      {
+        "code" : "3120007",
+        "display" : "q4h (every 4 hours)"
+      },
+      {
+        "code" : "3120009",
+        "display" : "qid (four times a day)"
+      },
+      {
+        "code" : "3120011",
+        "display" : "tid (three times a day)"
+      },
+      {
+        "code" : "3120013",
+        "display" : "ac (before meals)"
+      },
+      {
+        "code" : "3120015",
+        "display" : "pc (after meals)"
+      },
+      {
+        "code" : "3120017",
+        "display" : "bid (twice a day)"
+      },
+      {
+        "code" : "3120019",
+        "display" : "qd (every day)"
+      },
+      {
+        "code" : "3120021",
+        "display" : "qd-am (every day in the morning)"
+      },
+      {
+        "code" : "3120023",
+        "display" : "qd-pm (every day in the evening)"
+      },
+      {
+        "code" : "3120025",
+        "display" : "hs (at bedtime)"
+      },
+      {
+        "code" : "3120027",
+        "display" : "qod (every other day)"
+      },
+      {
+        "code" : "3120029",
+        "display" : "prn (as needed)"
+      }]
+    }]
+  }
+}

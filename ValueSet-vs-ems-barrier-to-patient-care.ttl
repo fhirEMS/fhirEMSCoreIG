@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-barrier-to-patient-care> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-barrier-to-patient-care"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-barrier-to-patient-care</b></p><a name=\"vs-ems-barrier-to-patient-care\"> </a><a name=\"hcvs-ems-barrier-to-patient-care\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-codes.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101001\">3101001</a></td><td>Cultural, Custom, Religious</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101003\">3101003</a></td><td>Developmentally Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101005\">3101005</a></td><td>Hearing Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101007\">3101007</a></td><td>Language</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101009\">3101009</a></td><td>None Noted</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101011\">3101011</a></td><td>Obesity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101013\">3101013</a></td><td>Physical Barrier (Unable to Access Patient)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101015\">3101015</a></td><td>Physically Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101017\">3101017</a></td><td>Physically Restrained</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101019\">3101019</a></td><td>Psychologically Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101021\">3101021</a></td><td>Sight Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101023\">3101023</a></td><td>Speech Impaired</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101025\">3101025</a></td><td>Unattended or Unsupervised (including minors)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101027\">3101027</a></td><td>Unconscious</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101029\">3101029</a></td><td>Uncooperative</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101031\">3101031</a></td><td>State of Emotional Distress</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101033\">3101033</a></td><td>Alcohol Use, Suspected</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-3101035\">3101035</a></td><td>Drug Use, Suspected</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-barrier-to-patient-care"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.27" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSBarrierToPatientCareVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Barriers to Patient Care"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eHistory.01 - Barriers encountered during patient assessment or care."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cultural, Custom, Religious" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Developmentally Impaired" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hearing Impaired" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Language" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "None Noted" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obesity" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physical Barrier (Unable to Access Patient)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physically Impaired" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physically Restrained" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psychologically Impaired" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sight Impaired" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Speech Impaired" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unattended or Unsupervised (including minors)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unconscious" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uncooperative" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "State of Emotional Distress" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alcohol Use, Suspected" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3101035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drug Use, Suspected" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-barrier-to-patient-care.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

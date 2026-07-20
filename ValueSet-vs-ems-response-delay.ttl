@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-delay> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-response-delay"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-response-delay</b></p><a name=\"vs-ems-response-delay\"> </a><a name=\"hcvs-ems-response-delay\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-encounter.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209001\">2209001</a></td><td>Crowd</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209003\">2209003</a></td><td>Directions/Unable to Locate</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209005\">2209005</a></td><td>Distance</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209007\">2209007</a></td><td>Diversion (Different Incident)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209009\">2209009</a></td><td>HazMat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209011\">2209011</a></td><td>None/No Delay</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209013\">2209013</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209015\">2209015</a></td><td>Rendezvous Transport Unavailable</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209017\">2209017</a></td><td>Route Obstruction (e.g., Train)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209019\">2209019</a></td><td>Scene Safety (Not Secure for EMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209021\">2209021</a></td><td>Staff Delay</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209023\">2209023</a></td><td>Traffic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209025\">2209025</a></td><td>Vehicle Crash Involving this Unit</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209027\">2209027</a></td><td>Vehicle Failure of this Unit</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209029\">2209029</a></td><td>Weather</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209031\">2209031</a></td><td>Mechanical Issue-Unit, Equipment, etc.</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209033\">2209033</a></td><td>Flight Planning</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2209035\">2209035</a></td><td>Out of Service Area Response</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-delay"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.105" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSResponseDelayVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Type of Response Delay"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eResponse.09 - Types of response delay en route to scene."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crowd" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Directions/Unable to Locate" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Distance" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diversion (Different Incident)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HazMat" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "None/No Delay" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rendezvous Transport Unavailable" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Route Obstruction (e.g., Train)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scene Safety (Not Secure for EMS)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Staff Delay" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Traffic" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vehicle Crash Involving this Unit" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vehicle Failure of this Unit" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Weather" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mechanical Issue-Unit, Equipment, etc." ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flight Planning" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2209035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Out of Service Area Response" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-delay.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-age-units> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-age-units"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-age-units</b></p><a name=\"vs-ems-age-units\"> </a><a name=\"hcvs-ems-age-units\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-nemsis-patient.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2516001\">2516001</a></td><td>Days</td><td>NEMSIS ePatient.16: Patient age expressed in days.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2516003\">2516003</a></td><td>Hours</td><td>NEMSIS ePatient.16: Patient age expressed in hours.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2516005\">2516005</a></td><td>Minutes</td><td>NEMSIS ePatient.16: Patient age expressed in minutes.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2516007\">2516007</a></td><td>Months</td><td>NEMSIS ePatient.16: Patient age expressed in months.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2516009\">2516009</a></td><td>Years</td><td>NEMSIS ePatient.16: Patient age expressed in years.</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-age-units"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.5" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSAgeUnitsVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Age Units"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS ePatient.16 - Units of measure for the patient's age when exact date of birth is unknown. Used alongside ePatient.15 (Age)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2516001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Days" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2516003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hours" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2516005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Minutes" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2516007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Months" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2516009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Years" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-age-units.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

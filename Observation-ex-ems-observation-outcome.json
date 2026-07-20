@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ex-ems-observation-outcome",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ex-ems-observation-outcome</b></p><a name=\"ex-ems-observation-outcome\"> </a><a name=\"hcex-ems-observation-outcome\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-observation-outcome.html\">EMS Outcome Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomePanel}\">EMS Outcome Observation Panel</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-15 08:00:00-0800</p><p><b>performer</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomeEDDisposition}\">Emergency Department Patient Disposition</span></p><p><b>value</b>: <span title=\"Codes:{https://www.nubc.org/CodeSystem/PatDischargeStatus 09}\">Admitted as an inpatient to this hospital</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29548-5}\">Diagnosis Narrative</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm S09.90XA}\">Unspecified injury of head, initial encounter</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 52455-3}\">Admission date</span></p><p><b>value</b>: 2026-03-14 17:30:00-0800</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomeEDArrivalDateTime}\">Emergency Department Arrival Date and Time</span></p><p><b>value</b>: 2026-03-14 15:08:00-0800</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomeInjurySeverityScore}\">Injury Severity Score (ISS)</span></p><p><b>value</b>: 9</p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+      "code" : "eOutcomePanel",
+      "display" : "EMS Outcome Observation Panel"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ex-ems-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ex-ems-encounter"
+  },
+  "effectiveDateTime" : "2026-03-15T08:00:00-08:00",
+  "performer" : [{
+    "reference" : "Practitioner/ex-ems-practitioner"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+        "code" : "eOutcomeEDDisposition"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.nubc.org/CodeSystem/PatDischargeStatus",
+        "code" : "09",
+        "display" : "Admitted as an inpatient to this hospital"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "29548-5",
+        "display" : "Diagnosis Narrative"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+        "code" : "S09.90XA",
+        "display" : "Unspecified injury of head, initial encounter"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "52455-3",
+        "display" : "Admission date"
+      }]
+    },
+    "valueDateTime" : "2026-03-14T17:30:00-08:00"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+        "code" : "eOutcomeEDArrivalDateTime"
+      }]
+    },
+    "valueDateTime" : "2026-03-14T15:08:00-08:00"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+        "code" : "eOutcomeInjurySeverityScore"
+      }]
+    },
+    "valueInteger" : 9
+  }]
+}

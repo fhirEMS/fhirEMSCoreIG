@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-lab-result-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-lab-result-type</b></p><a name="vs-ems-lab-result-type"> </a><a name="hcvs-ems-lab-result-type"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-labs.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-labs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403001">3403001</a></td><td>Alanine Transaminase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403003">3403003</a></td><td>Alcohol-Blood</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403005">3403005</a></td><td>Alcohol-Breath</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403007">3403007</a></td><td>Alkaline Phosphatase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403009">3403009</a></td><td>Amylase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403013">3403013</a></td><td>Aspartate Transaminase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403015">3403015</a></td><td>B-Type Natriuretic Peptide (BNP)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403017">3403017</a></td><td>Base Excess</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403019">3403019</a></td><td>Bilirubin-Direct</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403021">3403021</a></td><td>Bilirubin-Total</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403023">3403023</a></td><td>BUN</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403025">3403025</a></td><td>Calcium-Ionized</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403027">3403027</a></td><td>Calcium-Serum</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403029">3403029</a></td><td>Carbon Dioxide-Partial Pressure</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403033">3403033</a></td><td>Chloride</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403035">3403035</a></td><td>Creatine Kinase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403037">3403037</a></td><td>Creatine Kinase-MB</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403039">3403039</a></td><td>Creatinine</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403041">3403041</a></td><td>Gamma Glutamyl Transpeptidase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403043">3403043</a></td><td>Glucose</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403045">3403045</a></td><td>Hematocrit</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403047">3403047</a></td><td>Hemoglobin</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403049">3403049</a></td><td>Human Chorionic Gonadotropin-Serum</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403051">3403051</a></td><td>Human Chorionic Gonadotropin-Urine</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403053">3403053</a></td><td>International Normalized Ratio (INR)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403055">3403055</a></td><td>Lactate Dehydrogenase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403057">3403057</a></td><td>Lactate-Arterial</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403059">3403059</a></td><td>Lactate-Venous</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403061">3403061</a></td><td>Lipase</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403063">3403063</a></td><td>Magnesium</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403065">3403065</a></td><td>Oxygen-Partial Pressure</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403067">3403067</a></td><td>Partial Thromboplastin Time</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403071">3403071</a></td><td>pH-ABG</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403073">3403073</a></td><td>pH-Venous</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403075">3403075</a></td><td>Platelets</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403077">3403077</a></td><td>Potassium</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403079">3403079</a></td><td>Prothrombin Time</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403081">3403081</a></td><td>Red Blood Cells</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403083">3403083</a></td><td>Sodium</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403085">3403085</a></td><td>Troponin</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403087">3403087</a></td><td>White Blood Cells</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403089">3403089</a></td><td>Ammonia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403091">3403091</a></td><td>Bicarbonate (HCO3)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403093">3403093</a></td><td>Carboxyhemoglobin</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403095">3403095</a></td><td>CO2, Total (Bicarbonate)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403097">3403097</a></td><td>CRP (C-Reactive Protein)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403099">3403099</a></td><td>Dilantin</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403101">3403101</a></td><td>Leukocytes</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403103">3403103</a></td><td>Nitrates</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403105">3403105</a></td><td>Phenobarbital</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403107">3403107</a></td><td>Protein</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403109">3403109</a></td><td>Salicylate</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403111">3403111</a></td><td>Specific Gravity</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403113">3403113</a></td><td>Tylenol</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403115">3403115</a></td><td>ACT Celite (ACTc)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403117">3403117</a></td><td>ACT Kaolin (ACTk)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403119">3403119</a></td><td>Bands</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403121">3403121</a></td><td>Basophils</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403125">3403125</a></td><td>Eosinophils</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403127">3403127</a></td><td>Erythrocyte Count</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403129">3403129</a></td><td>Erythrocyte Morphology</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403131">3403131</a></td><td>Erythrocyte Sedimentation Rate</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403133">3403133</a></td><td>High-Sensitivity C-reactive Protein (hs-CRP)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403135">3403135</a></td><td>Lymphocytes</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403137">3403137</a></td><td>Mean Corpuscular Hemoglobin (MCH)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403139">3403139</a></td><td>Mean Corpuscular Hemoglobin Concentration (MCHC)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403141">3403141</a></td><td>Mean Corpuscular Volume (MCV)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403143">3403143</a></td><td>Monocytes</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403145">3403145</a></td><td>Myoglobin</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403147">3403147</a></td><td>Neutrophils</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403149">3403149</a></td><td>Oxygen Saturation (SaO2)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403151">3403151</a></td><td>Oxygen Volume/Content (SVO2)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403153">3403153</a></td><td>Phosphorus (PO4)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403155">3403155</a></td><td>Prothromblin test time (PT/INR)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403157">3403157</a></td><td>Red Cell Distribution Width (RDW)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403159">3403159</a></td><td>Reticulocyte Count</td></tr><tr><td><a href="CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403161">3403161</a></td><td>Troponin T (cTnT)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-lab-result-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.81"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSLabResultTypeVS"/>
+  <title value="EMS Lab Result Type VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Type of lab result obtained (eLabs.03)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-labs"/>
+      <concept>
+        <code value="3403001"/>
+        <display value="Alanine Transaminase"/>
+      </concept>
+      <concept>
+        <code value="3403003"/>
+        <display value="Alcohol-Blood"/>
+      </concept>
+      <concept>
+        <code value="3403005"/>
+        <display value="Alcohol-Breath"/>
+      </concept>
+      <concept>
+        <code value="3403007"/>
+        <display value="Alkaline Phosphatase"/>
+      </concept>
+      <concept>
+        <code value="3403009"/>
+        <display value="Amylase"/>
+      </concept>
+      <concept>
+        <code value="3403013"/>
+        <display value="Aspartate Transaminase"/>
+      </concept>
+      <concept>
+        <code value="3403015"/>
+        <display value="B-Type Natriuretic Peptide (BNP)"/>
+      </concept>
+      <concept>
+        <code value="3403017"/>
+        <display value="Base Excess"/>
+      </concept>
+      <concept>
+        <code value="3403019"/>
+        <display value="Bilirubin-Direct"/>
+      </concept>
+      <concept>
+        <code value="3403021"/>
+        <display value="Bilirubin-Total"/>
+      </concept>
+      <concept>
+        <code value="3403023"/>
+        <display value="BUN"/>
+      </concept>
+      <concept>
+        <code value="3403025"/>
+        <display value="Calcium-Ionized"/>
+      </concept>
+      <concept>
+        <code value="3403027"/>
+        <display value="Calcium-Serum"/>
+      </concept>
+      <concept>
+        <code value="3403029"/>
+        <display value="Carbon Dioxide-Partial Pressure"/>
+      </concept>
+      <concept>
+        <code value="3403033"/>
+        <display value="Chloride"/>
+      </concept>
+      <concept>
+        <code value="3403035"/>
+        <display value="Creatine Kinase"/>
+      </concept>
+      <concept>
+        <code value="3403037"/>
+        <display value="Creatine Kinase-MB"/>
+      </concept>
+      <concept>
+        <code value="3403039"/>
+        <display value="Creatinine"/>
+      </concept>
+      <concept>
+        <code value="3403041"/>
+        <display value="Gamma Glutamyl Transpeptidase"/>
+      </concept>
+      <concept>
+        <code value="3403043"/>
+        <display value="Glucose"/>
+      </concept>
+      <concept>
+        <code value="3403045"/>
+        <display value="Hematocrit"/>
+      </concept>
+      <concept>
+        <code value="3403047"/>
+        <display value="Hemoglobin"/>
+      </concept>
+      <concept>
+        <code value="3403049"/>
+        <display value="Human Chorionic Gonadotropin-Serum"/>
+      </concept>
+      <concept>
+        <code value="3403051"/>
+        <display value="Human Chorionic Gonadotropin-Urine"/>
+      </concept>
+      <concept>
+        <code value="3403053"/>
+        <display value="International Normalized Ratio (INR)"/>
+      </concept>
+      <concept>
+        <code value="3403055"/>
+        <display value="Lactate Dehydrogenase"/>
+      </concept>
+      <concept>
+        <code value="3403057"/>
+        <display value="Lactate-Arterial"/>
+      </concept>
+      <concept>
+        <code value="3403059"/>
+        <display value="Lactate-Venous"/>
+      </concept>
+      <concept>
+        <code value="3403061"/>
+        <display value="Lipase"/>
+      </concept>
+      <concept>
+        <code value="3403063"/>
+        <display value="Magnesium"/>
+      </concept>
+      <concept>
+        <code value="3403065"/>
+        <display value="Oxygen-Partial Pressure"/>
+      </concept>
+      <concept>
+        <code value="3403067"/>
+        <display value="Partial Thromboplastin Time"/>
+      </concept>
+      <concept>
+        <code value="3403071"/>
+        <display value="pH-ABG"/>
+      </concept>
+      <concept>
+        <code value="3403073"/>
+        <display value="pH-Venous"/>
+      </concept>
+      <concept>
+        <code value="3403075"/>
+        <display value="Platelets"/>
+      </concept>
+      <concept>
+        <code value="3403077"/>
+        <display value="Potassium"/>
+      </concept>
+      <concept>
+        <code value="3403079"/>
+        <display value="Prothrombin Time"/>
+      </concept>
+      <concept>
+        <code value="3403081"/>
+        <display value="Red Blood Cells"/>
+      </concept>
+      <concept>
+        <code value="3403083"/>
+        <display value="Sodium"/>
+      </concept>
+      <concept>
+        <code value="3403085"/>
+        <display value="Troponin"/>
+      </concept>
+      <concept>
+        <code value="3403087"/>
+        <display value="White Blood Cells"/>
+      </concept>
+      <concept>
+        <code value="3403089"/>
+        <display value="Ammonia"/>
+      </concept>
+      <concept>
+        <code value="3403091"/>
+        <display value="Bicarbonate (HCO3)"/>
+      </concept>
+      <concept>
+        <code value="3403093"/>
+        <display value="Carboxyhemoglobin"/>
+      </concept>
+      <concept>
+        <code value="3403095"/>
+        <display value="CO2, Total (Bicarbonate)"/>
+      </concept>
+      <concept>
+        <code value="3403097"/>
+        <display value="CRP (C-Reactive Protein)"/>
+      </concept>
+      <concept>
+        <code value="3403099"/>
+        <display value="Dilantin"/>
+      </concept>
+      <concept>
+        <code value="3403101"/>
+        <display value="Leukocytes"/>
+      </concept>
+      <concept>
+        <code value="3403103"/>
+        <display value="Nitrates"/>
+      </concept>
+      <concept>
+        <code value="3403105"/>
+        <display value="Phenobarbital"/>
+      </concept>
+      <concept>
+        <code value="3403107"/>
+        <display value="Protein"/>
+      </concept>
+      <concept>
+        <code value="3403109"/>
+        <display value="Salicylate"/>
+      </concept>
+      <concept>
+        <code value="3403111"/>
+        <display value="Specific Gravity"/>
+      </concept>
+      <concept>
+        <code value="3403113"/>
+        <display value="Tylenol"/>
+      </concept>
+      <concept>
+        <code value="3403115"/>
+        <display value="ACT Celite (ACTc)"/>
+      </concept>
+      <concept>
+        <code value="3403117"/>
+        <display value="ACT Kaolin (ACTk)"/>
+      </concept>
+      <concept>
+        <code value="3403119"/>
+        <display value="Bands"/>
+      </concept>
+      <concept>
+        <code value="3403121"/>
+        <display value="Basophils"/>
+      </concept>
+      <concept>
+        <code value="3403125"/>
+        <display value="Eosinophils"/>
+      </concept>
+      <concept>
+        <code value="3403127"/>
+        <display value="Erythrocyte Count"/>
+      </concept>
+      <concept>
+        <code value="3403129"/>
+        <display value="Erythrocyte Morphology"/>
+      </concept>
+      <concept>
+        <code value="3403131"/>
+        <display value="Erythrocyte Sedimentation Rate"/>
+      </concept>
+      <concept>
+        <code value="3403133"/>
+        <display value="High-Sensitivity C-reactive Protein (hs-CRP)"/>
+      </concept>
+      <concept>
+        <code value="3403135"/>
+        <display value="Lymphocytes"/>
+      </concept>
+      <concept>
+        <code value="3403137"/>
+        <display value="Mean Corpuscular Hemoglobin (MCH)"/>
+      </concept>
+      <concept>
+        <code value="3403139"/>
+        <display value="Mean Corpuscular Hemoglobin Concentration (MCHC)"/>
+      </concept>
+      <concept>
+        <code value="3403141"/>
+        <display value="Mean Corpuscular Volume (MCV)"/>
+      </concept>
+      <concept>
+        <code value="3403143"/>
+        <display value="Monocytes"/>
+      </concept>
+      <concept>
+        <code value="3403145"/>
+        <display value="Myoglobin"/>
+      </concept>
+      <concept>
+        <code value="3403147"/>
+        <display value="Neutrophils"/>
+      </concept>
+      <concept>
+        <code value="3403149"/>
+        <display value="Oxygen Saturation (SaO2)"/>
+      </concept>
+      <concept>
+        <code value="3403151"/>
+        <display value="Oxygen Volume/Content (SVO2)"/>
+      </concept>
+      <concept>
+        <code value="3403153"/>
+        <display value="Phosphorus (PO4)"/>
+      </concept>
+      <concept>
+        <code value="3403155"/>
+        <display value="Prothromblin test time (PT/INR)"/>
+      </concept>
+      <concept>
+        <code value="3403157"/>
+        <display value="Red Cell Distribution Width (RDW)"/>
+      </concept>
+      <concept>
+        <code value="3403159"/>
+        <display value="Reticulocyte Count"/>
+      </concept>
+      <concept>
+        <code value="3403161"/>
+        <display value="Troponin T (cTnT)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

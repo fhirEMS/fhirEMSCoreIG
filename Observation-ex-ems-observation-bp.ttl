@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-bp> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-observation-bp"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-bp>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ex-ems-observation-bp</b></p><a name=\"ex-ems-observation-bp\"> </a><a name=\"hcex-ems-observation-bp\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-observation-bp.html\">EMS Blood Pressure Observation</a></p></div><p><b>EMS Vital Obtained Prior to EMS Care</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></p><p><b>EMS Blood Pressure Measurement Method</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 3308007}\">Cuff-Manual Auscultated</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-14 14:35:00-0800</p><p><b>performer</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 148 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 94 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-vital-obtained-prior" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0136" ] ;
+         fhir:Coding.code [ fhir:value "N" ] ;
+         fhir:Coding.display [ fhir:value "No" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-bp-method" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals" ] ;
+         fhir:Coding.code [ fhir:value "3308007" ] ;
+         fhir:Coding.display [ fhir:value "Cuff-Manual Auscultated" ]
+       ]
+     ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:85354-9 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "85354-9" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-03-14T14:35:00-08:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8480-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8480-6" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "148"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mmHg" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8462-4 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8462-4" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "94"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "mmHg" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-bp.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

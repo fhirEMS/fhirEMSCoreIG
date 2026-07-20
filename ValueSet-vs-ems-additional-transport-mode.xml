@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-additional-transport-mode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-additional-transport-mode</b></p><a name="vs-ems-additional-transport-mode"> </a><a name="hcvs-ems-additional-transport-mode"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218001">4218001</a></td><td>Intersection Navigation-Against Normal Light Patterns</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218003">4218003</a></td><td>Intersection Navigation-With Automated Light Changing Technology</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218005">4218005</a></td><td>Intersection Navigation-With Normal Light Patterns</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218007">4218007</a></td><td>Speed-Enhanced per Local Policy</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218009">4218009</a></td><td>Speed-Normal Traffic</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218011">4218011</a></td><td>Lights and Sirens</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218013">4218013</a></td><td>Lights and No Sirens</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218015">4218015</a></td><td>No Lights or Sirens</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218017">4218017</a></td><td>Initial No Lights or Sirens, Upgraded to Lights and Sirens</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4218019">4218019</a></td><td>Initial Lights and Sirens, Downgraded to No Lights or Sirens</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-additional-transport-mode"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.3"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSAdditionalTransportModeVS"/>
+  <title value="EMS Additional Transport Mode Descriptors"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eDisposition.18 - Additional descriptors of transport mode (lights, sirens, speed, intersection navigation)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="4218001"/>
+        <display value="Intersection Navigation-Against Normal Light Patterns"/>
+      </concept>
+      <concept>
+        <code value="4218003"/>
+        <display value="Intersection Navigation-With Automated Light Changing Technology"/>
+      </concept>
+      <concept>
+        <code value="4218005"/>
+        <display value="Intersection Navigation-With Normal Light Patterns"/>
+      </concept>
+      <concept>
+        <code value="4218007"/>
+        <display value="Speed-Enhanced per Local Policy"/>
+      </concept>
+      <concept>
+        <code value="4218009"/>
+        <display value="Speed-Normal Traffic"/>
+      </concept>
+      <concept>
+        <code value="4218011"/>
+        <display value="Lights and Sirens"/>
+      </concept>
+      <concept>
+        <code value="4218013"/>
+        <display value="Lights and No Sirens"/>
+      </concept>
+      <concept>
+        <code value="4218015"/>
+        <display value="No Lights or Sirens"/>
+      </concept>
+      <concept>
+        <code value="4218017"/>
+        <display value="Initial No Lights or Sirens, Upgraded to Lights and Sirens"/>
+      </concept>
+      <concept>
+        <code value="4218019"/>
+        <display value="Initial Lights and Sirens, Downgraded to No Lights or Sirens"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

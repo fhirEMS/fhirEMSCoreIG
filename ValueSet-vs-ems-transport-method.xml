@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-transport-method"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-transport-method</b></p><a name="vs-ems-transport-method"> </a><a name="hcvs-ems-transport-method"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216001">4216001</a></td><td>Air Medical-Fixed Wing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216003">4216003</a></td><td>Air Medical-Rotor Craft</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216005">4216005</a></td><td>Ground-Ambulance</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216007">4216007</a></td><td>Ground-ATV or Rescue Vehicle</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216009">4216009</a></td><td>Ground-Bariatric</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216011">4216011</a></td><td>Ground-Other Not Listed</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216013">4216013</a></td><td>Ground-Mass Casualty Bus/Vehicle</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216015">4216015</a></td><td>Ground-Wheelchair Van</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216017">4216017</a></td><td>Water-Boat</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-method"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.121"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSTransportMethodVS"/>
+  <title value="EMS Transport Method"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eDisposition.16 - The vehicle/mode used to transport the patient."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="4216001"/>
+        <display value="Air Medical-Fixed Wing"/>
+      </concept>
+      <concept>
+        <code value="4216003"/>
+        <display value="Air Medical-Rotor Craft"/>
+      </concept>
+      <concept>
+        <code value="4216005"/>
+        <display value="Ground-Ambulance"/>
+      </concept>
+      <concept>
+        <code value="4216007"/>
+        <display value="Ground-ATV or Rescue Vehicle"/>
+      </concept>
+      <concept>
+        <code value="4216009"/>
+        <display value="Ground-Bariatric"/>
+      </concept>
+      <concept>
+        <code value="4216011"/>
+        <display value="Ground-Other Not Listed"/>
+      </concept>
+      <concept>
+        <code value="4216013"/>
+        <display value="Ground-Mass Casualty Bus/Vehicle"/>
+      </concept>
+      <concept>
+        <code value="4216015"/>
+        <display value="Ground-Wheelchair Van"/>
+      </concept>
+      <concept>
+        <code value="4216017"/>
+        <display value="Water-Boat"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

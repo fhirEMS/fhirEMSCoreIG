@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NEMSIS-to-FHIR Mapping - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>NEMSIS-to-FHIR Mapping</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>NEMSIS-to-FHIR Mapping</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="nemsis-to-fhir-mapping">NEMSIS-to-FHIR Mapping</h1>
+
+<p>This page provides a high-level NEMSIS 3.5.1 → FHIR R4 mapping reference. For the complete element-by-element mapping, see the <code class="language-plaintext highlighter-rouge">fhirEMSCore_MappingMatrix.xlsx</code> spreadsheet in the project <code class="language-plaintext highlighter-rouge">docs/mapping/</code> folder.</p>
+
+<hr />
+
+<h2 id="mapping-approach">Mapping Approach</h2>
+
+<p>Each NEMSIS element is mapped to one of:</p>
+
+<ol>
+  <li><strong>Native FHIR element</strong> — a standard element on a FHIR resource that carries the same semantic meaning</li>
+  <li><strong>Extension</strong> — an fhirEMSCore-defined extension when no native FHIR element exists</li>
+  <li><strong>Terminology binding</strong> — a coded element with a NEMSIS value set bound to a FHIR CodeableConcept</li>
+  <li><strong>Not mapped</strong> — elements that are derivable from other data or out of scope for this IG version</li>
+</ol>
+
+<hr />
+
+<h2 id="erecord-section">eRecord Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eRecord.01</td>
+      <td>Patient Care Report Number</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.identifier</code> (PCR number)</td>
+    </tr>
+    <tr>
+      <td>eRecord.02</td>
+      <td>Software Creator</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition.author</code> + meta.source</td>
+    </tr>
+    <tr>
+      <td>eRecord.03</td>
+      <td>Software Name</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition.author</code></td>
+    </tr>
+    <tr>
+      <td>eRecord.04</td>
+      <td>Software Version</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition.meta</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="eresponse-section">eResponse Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eResponse.01</td>
+      <td>EMS Agency Number</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.serviceProvider</code> → EMSOrganization.identifier</td>
+    </tr>
+    <tr>
+      <td>eResponse.03</td>
+      <td>Incident Number</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.identifier</code></td>
+    </tr>
+    <tr>
+      <td>eResponse.05</td>
+      <td>Type of Service Requested</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.class</code> + <code class="language-plaintext highlighter-rouge">ext-ems-response-type</code></td>
+    </tr>
+    <tr>
+      <td>eResponse.07</td>
+      <td>Unit Transport/Capability</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-unit-type</code> extension</td>
+    </tr>
+    <tr>
+      <td>eResponse.08–13</td>
+      <td>Response Delays</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-delays</code> extension (repeating)</td>
+    </tr>
+    <tr>
+      <td>eResponse.14</td>
+      <td>EMS Vehicle Number</td>
+      <td><code class="language-plaintext highlighter-rouge">Device.identifier</code> → EMSDevice</td>
+    </tr>
+    <tr>
+      <td>eResponse.23</td>
+      <td>Response Mode</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-mode</code> extension</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="edispatch-section">eDispatch Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eDispatch.01</td>
+      <td>Complaint Reported by Dispatch</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info.dispatchComplaint</code></td>
+    </tr>
+    <tr>
+      <td>eDispatch.02</td>
+      <td>EMD Performed</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info.emdPerformed</code></td>
+    </tr>
+    <tr>
+      <td>eDispatch.03</td>
+      <td>EMD Card Number</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info.emdCardNumber</code></td>
+    </tr>
+    <tr>
+      <td>eDispatch.04</td>
+      <td>Dispatch Center Name</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info.dispatchCenter</code></td>
+    </tr>
+    <tr>
+      <td>eDispatch.05</td>
+      <td>Dispatch Priority</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info.dispatchPriority</code></td>
+    </tr>
+    <tr>
+      <td>eDispatch.06</td>
+      <td>Unit Notified by Dispatch DateTime</td>
+      <td><code class="language-plaintext highlighter-rouge">eTimes extension</code> (also eTimes.03)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="etimes-section">eTimes Section</h2>
+
+<p>NEMSIS defines 19 date/time stamps. Two map to <code class="language-plaintext highlighter-rouge">Encounter.period</code>; the rest use <code class="language-plaintext highlighter-rouge">ext-ems-times</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eTimes.01</td>
+      <td>PSAP Call Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.psapCallDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.02</td>
+      <td>Dispatch Notified Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.dispatchNotifiedDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.03</td>
+      <td>Unit Notified by Dispatch Date/Time</td>
+      <td><strong><code class="language-plaintext highlighter-rouge">Encounter.period.start</code></strong> (NDR-005)</td>
+    </tr>
+    <tr>
+      <td>eTimes.04</td>
+      <td>Dispatch Acknowledged Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.dispatchAcknowledgedDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.05</td>
+      <td>Unit En Route Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.unitEnRouteDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.06</td>
+      <td>Unit Arrived on Scene Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.unitArrivedOnSceneDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.07</td>
+      <td>Arrived at Patient Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.arrivedAtPatientDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.08</td>
+      <td>Transfer of EMS Patient Care Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.transferOfEMSCareDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.09</td>
+      <td>Unit Left Scene Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.unitLeftSceneDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.11</td>
+      <td>Patient Arrived at Destination Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.patientArrivedAtDestinationDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.12</td>
+      <td>Destination Patient Transfer of Care Date/Time</td>
+      <td><strong><code class="language-plaintext highlighter-rouge">Encounter.period.end</code></strong> (NDR-005)</td>
+    </tr>
+    <tr>
+      <td>eTimes.13</td>
+      <td>Unit Back in Service Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.unitBackInServiceDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eTimes.16</td>
+      <td>EMS Call Completed Date/Time</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times.emsCallCompletedDateTime</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="epatient-section">ePatient Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ePatient.03</td>
+      <td>Last Name</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.name.family</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.04</td>
+      <td>First Name</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.name.given[0]</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.05</td>
+      <td>Middle Name</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.name.given[1]</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.06</td>
+      <td>Patient's Home Address</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.address</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.07</td>
+      <td>Patient's Home City</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.address.city</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.08</td>
+      <td>Patient's Home County</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.address.district</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.09</td>
+      <td>Patient's Home State</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.address.state</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.11</td>
+      <td>Age</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.birthDate</code> (calculated) + <code class="language-plaintext highlighter-rouge">ext-ems-patient-age</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.13</td>
+      <td>Gender</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.gender</code> (mapped per NDR-006)</td>
+    </tr>
+    <tr>
+      <td>ePatient.14</td>
+      <td>Race</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.extension[us-core-race]</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.15</td>
+      <td>Ethnicity</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.extension[us-core-ethnicity]</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.17</td>
+      <td>Date of Birth</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.birthDate</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.18</td>
+      <td>Patient's Phone Number</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.telecom</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.19</td>
+      <td>Patient's Email</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.telecom</code></td>
+    </tr>
+    <tr>
+      <td>ePatient.21</td>
+      <td>Language Barrier</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-barrier</code> extension</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="escene-section">eScene Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eScene.01</td>
+      <td>First EMS Unit on Scene</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-details.firstUnitOnScene</code></td>
+    </tr>
+    <tr>
+      <td>eScene.07</td>
+      <td>Mass Casualty Incident</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-details.massCasualtyIncident</code></td>
+    </tr>
+    <tr>
+      <td>eScene.08</td>
+      <td>Number of Patients</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-details.numberOfPatients</code></td>
+    </tr>
+    <tr>
+      <td>eScene.09</td>
+      <td>Incident Location Type</td>
+      <td><code class="language-plaintext highlighter-rouge">Location.type</code></td>
+    </tr>
+    <tr>
+      <td>eScene.11</td>
+      <td>Scene GPS Location</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-gps</code> extension</td>
+    </tr>
+    <tr>
+      <td>eScene.15</td>
+      <td>Census Tract</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-census-tract</code> extension</td>
+    </tr>
+    <tr>
+      <td>eScene.17</td>
+      <td>Scene Address</td>
+      <td><code class="language-plaintext highlighter-rouge">Location.address</code></td>
+    </tr>
+    <tr>
+      <td>eScene.18</td>
+      <td>Scene City</td>
+      <td><code class="language-plaintext highlighter-rouge">Location.address.city</code></td>
+    </tr>
+    <tr>
+      <td>eScene.19</td>
+      <td>Scene County</td>
+      <td><code class="language-plaintext highlighter-rouge">Location.address.district</code></td>
+    </tr>
+    <tr>
+      <td>eScene.20</td>
+      <td>Scene State</td>
+      <td><code class="language-plaintext highlighter-rouge">Location.address.state</code></td>
+    </tr>
+    <tr>
+      <td>eScene.21</td>
+      <td>Scene ZIP Code</td>
+      <td><code class="language-plaintext highlighter-rouge">Location.address.postalCode</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="esituation-section">eSituation Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eSituation.01</td>
+      <td>Date/Time of Symptom Onset</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.onsetDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eSituation.02</td>
+      <td>Possible Injury</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-incident-type</code></td>
+    </tr>
+    <tr>
+      <td>eSituation.07</td>
+      <td>Chief Complaint Anatomic Location</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.bodySite</code></td>
+    </tr>
+    <tr>
+      <td>eSituation.08</td>
+      <td>Chief Complaint Organ System</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.category</code> extension</td>
+    </tr>
+    <tr>
+      <td>eSituation.09</td>
+      <td>Primary Symptom</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.code</code> (SNOMED)</td>
+    </tr>
+    <tr>
+      <td>eSituation.11</td>
+      <td>Primary Impression</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.code</code> (primary clinical impression)</td>
+    </tr>
+    <tr>
+      <td>eSituation.12</td>
+      <td>Secondary Impression</td>
+      <td>Additional <code class="language-plaintext highlighter-rouge">Condition</code> resources</td>
+    </tr>
+    <tr>
+      <td>eSituation.13</td>
+      <td>Initial Patient Acuity</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.priority</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="evitals-section">eVitals Section</h2>
+
+<p>Each vital sign becomes a separate <code class="language-plaintext highlighter-rouge">Observation</code> resource. GCS is a panel (NDR-007).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eVitals.01</td>
+      <td>Date/Time Vital Signs Taken</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.effectiveDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eVitals.02</td>
+      <td>Obtained Prior to EMS Unit</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-vital-obtained-prior</code></td>
+    </tr>
+    <tr>
+      <td>eVitals.03</td>
+      <td>Cardiac Rhythm</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code> LOINC 59408-5 (or ECG type)</td>
+    </tr>
+    <tr>
+      <td>eVitals.06</td>
+      <td>SBP</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.component[systolic].valueQuantity</code></td>
+    </tr>
+    <tr>
+      <td>eVitals.07</td>
+      <td>DBP</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.component[diastolic].valueQuantity</code></td>
+    </tr>
+    <tr>
+      <td>eVitals.10</td>
+      <td>Pulse Rate</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 8867-4)</td>
+    </tr>
+    <tr>
+      <td>eVitals.12</td>
+      <td>Pulse Oximetry</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 59408-5)</td>
+    </tr>
+    <tr>
+      <td>eVitals.14</td>
+      <td>Respiratory Rate</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 9279-1)</td>
+    </tr>
+    <tr>
+      <td>eVitals.16</td>
+      <td>End Tidal CO2</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 19889-5)</td>
+    </tr>
+    <tr>
+      <td>eVitals.18</td>
+      <td>Blood Glucose Level</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 59469-7)</td>
+    </tr>
+    <tr>
+      <td>eVitals.19–22</td>
+      <td>GCS Eye/Verbal/Motor/Total</td>
+      <td>GCS panel Observations</td>
+    </tr>
+    <tr>
+      <td>eVitals.24</td>
+      <td>Body Temperature</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 8310-5)</td>
+    </tr>
+    <tr>
+      <td>eVitals.26</td>
+      <td>Level of Responsiveness (AVPU)</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> (LOINC 67775-7)</td>
+    </tr>
+    <tr>
+      <td>eVitals.27</td>
+      <td>Pain Scale Score</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 72514-3)</td>
+    </tr>
+    <tr>
+      <td>eVitals.28</td>
+      <td>Body Weight</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (LOINC 29463-7)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="eprocedures-section">eProcedures Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eProcedures.01</td>
+      <td>Date/Time Procedure Performed</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure.performedDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eProcedures.02</td>
+      <td>Procedure Successful</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure.outcome</code></td>
+    </tr>
+    <tr>
+      <td>eProcedures.03</td>
+      <td>Procedure (SNOMED)</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure.code</code> (SNOMED CT — direct mapping)</td>
+    </tr>
+    <tr>
+      <td>eProcedures.04</td>
+      <td>Procedure Performed Prior to EMS Arrival</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-procedure-context.performedPrior</code></td>
+    </tr>
+    <tr>
+      <td>eProcedures.07</td>
+      <td>Performed by Crew Member</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure.performer.actor</code> → EMSPractitioner</td>
+    </tr>
+    <tr>
+      <td>eProcedures.08</td>
+      <td>Response to Procedure</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-procedure-context.responseToProc</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="emedications-section">eMedications Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eMedications.01</td>
+      <td>Date/Time Medication Administered</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.effectiveDateTime</code></td>
+    </tr>
+    <tr>
+      <td>eMedications.03</td>
+      <td>Medication (RxNorm)</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.medicationCodeableConcept</code> (RxNorm — direct)</td>
+    </tr>
+    <tr>
+      <td>eMedications.04</td>
+      <td>Medication Administered Prior to EMS Arrival</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-medication-context.administeredPrior</code></td>
+    </tr>
+    <tr>
+      <td>eMedications.05</td>
+      <td>Medication Administered Route</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage.route</code></td>
+    </tr>
+    <tr>
+      <td>eMedications.06</td>
+      <td>Medication Dosage</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage.dose</code></td>
+    </tr>
+    <tr>
+      <td>eMedications.07</td>
+      <td>Medication Dosage Units</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage.dose.unit</code> (UCUM)</td>
+    </tr>
+    <tr>
+      <td>eMedications.10</td>
+      <td>Response to Medication</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-medication-context.responseToMed</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="epayment-section">ePayment Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ePayment.01</td>
+      <td>Primary Method of Payment</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[primaryPaymentMethod]</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.09</td>
+      <td>Insurance Company ID</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.payor</code> → Organization.identifier</td>
+    </tr>
+    <tr>
+      <td>ePayment.10</td>
+      <td>Insurance Company Name</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.payor</code> → Organization.name</td>
+    </tr>
+    <tr>
+      <td>ePayment.11</td>
+      <td>Insurance Company Billing Priority</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.order</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.17</td>
+      <td>Insurance Group ID</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.class[group].value</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.18</td>
+      <td>Insurance Policy ID Number</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.subscriberId</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.19–21</td>
+      <td>Insured Last/First/Middle Name</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.subscriber</code> → EMSPatient or RelatedPerson</td>
+    </tr>
+    <tr>
+      <td>ePayment.22</td>
+      <td>Patient's Relationship to the Insured</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.relationship</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.40</td>
+      <td>Response Urgency</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[responseUrgency]</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.41</td>
+      <td>Patient Transport Assessment</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[transportAssessment]</code> (0..*)</td>
+    </tr>
+    <tr>
+      <td>ePayment.44</td>
+      <td>Ambulance Transport Reason Code</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[ambulanceTransportReason]</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.45</td>
+      <td>Round Trip Purpose Description</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.supportingInfo[roundTripPurpose].valueString</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.46</td>
+      <td>Stretcher Purpose Description</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.supportingInfo[stretcherPurpose].valueString</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.47</td>
+      <td>Ambulance Conditions Indicator</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[ambulanceConditions]</code> (0..*)</td>
+    </tr>
+    <tr>
+      <td>ePayment.48</td>
+      <td>Mileage to Closest Hospital Facility</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[mileageToClosest]</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.49</td>
+      <td>ALS Assessment Performed and Warranted</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[alsAssessment]</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.50</td>
+      <td>CMS Service Level</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.extension[cmsServiceLevel]</code> + <code class="language-plaintext highlighter-rouge">Claim.item.productOrService</code> (HCPCS)</td>
+    </tr>
+    <tr>
+      <td>ePayment.57</td>
+      <td>Payer Type (X12)</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.extension[payerType]</code></td>
+    </tr>
+    <tr>
+      <td>ePayment.58</td>
+      <td>Insurance Group Name</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage.class[group].name</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="mapping-conventions">Mapping Conventions</h2>
+
+<ul>
+  <li>NEMSIS <strong>Mandatory</strong> elements (minOccurs=1, not nillable) → FHIR cardinality 1..1, MS</li>
+  <li>NEMSIS <strong>Required</strong> elements (Usage=Required/National) → FHIR cardinality 1..1 or 0..1, MS</li>
+  <li>NEMSIS <strong>Recommended</strong> elements → FHIR 0..1 or 0..*, MS with comment</li>
+  <li>NEMSIS <strong>Optional</strong> elements → FHIR 0..1 or 0..*, no MS unless operationally significant</li>
+  <li>NEMSIS <strong>NV</strong> elements → FHIR <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> or <code class="language-plaintext highlighter-rouge">ext-ems-not-value</code></li>
+  <li>NEMSIS <strong>PN</strong> elements → FHIR <code class="language-plaintext highlighter-rouge">Observation</code> absence value or <code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code></li>
+  <li>NEMSIS <strong>State</strong> elements → FHIR 0..1 with comment noting state-only applicability</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

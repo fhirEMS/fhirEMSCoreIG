@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="fromNarrative"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Requirements fromNarrative</b></p><a name="fromNarrative"> </a><a name="hcfromNarrative"> </a><table class="grid"/></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="https://fhirems.github.io/fhirEMSCoreIG/Requirements/fromNarrative"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="0.2.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="FromNarrative"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Narrative Conformance Statements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2026-07-19T20:45:43-04:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="fhirEMSCore Research Project"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description">
+    <valueMarkdown value="Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="US"/>
+        <display value="United States of America"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

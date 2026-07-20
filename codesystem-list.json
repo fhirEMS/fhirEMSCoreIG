@@ -1,0 +1,182 @@
+{
+  "codeSystems" : [{
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISAirway",
+    "title" : "NEMSIS eAirway Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 eAirway section covering airway management indications, device types, confirmation methods, confirming personnel, complications, and reasons for failed management.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.1"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISArrest",
+    "title" : "NEMSIS eArrest Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 eArrest section covering cardiac arrest status, etiology, resuscitation attempts, CPR type, ROSC, neurological outcome, end-of-event disposition, and first-responder roles.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.2"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISCodes",
+    "title" : "NEMSIS General Codes",
+    "description" : "General NEMSIS enumeration codes for sections without a dedicated CodeSystem. Currently covers eHistory (eHistory.01 - Barriers to Patient Care). NEMSIS 3.5.1.251001CP2.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.3"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISDemographics",
+    "title" : "NEMSIS DEM Demographic Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 DEM dataset sections dContact (agency contact type, medical director degree/board certification/compensation), dConfiguration (specialty service capability, EMD provision, patient monitoring capability), and dLocation (EMS location type).",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.20"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISEncounter",
+    "title" : "NEMSIS Encounter Codes",
+    "description" : "Enumeration codes from the NEMSIS eResponse, eDispatch, and eDisposition sections (NEMSIS 3.5.1.251001CP2).",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.4"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISExam",
+    "title" : "NEMSIS Physical Exam Codes",
+    "description" : "Enumeration codes for the NEMSIS eExam physical examination section. Covers body region assessments and finding location qualifiers. NEMSIS 3.5.1.251001CP2.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.5"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISHistory",
+    "title" : "NEMSIS eHistory Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 eHistory section covering advance directives, medical history source, immunization type, current medication dosage units and frequency, alcohol/drug use indicators, and pregnancy status.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.18"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISInjury",
+    "title" : "NEMSIS eInjury Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 eInjury section covering mechanism of injury, CDC trauma triage criteria (high and moderate risk), vehicle occupant location, occupant safety equipment, airbag deployment, OSHA personal protective equipment, and ACN vehicle seat location.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.6"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-labs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISLabs",
+    "title" : "NEMSIS eLabs Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 eLabs section covering lab result types and imaging study types.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.7"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISMedications",
+    "title" : "NEMSIS Medications and Procedures Codes",
+    "description" : "Enumeration codes for the NEMSIS eMedications and eProcedures sections. Covers administration routes, dosage units, complications, vascular access locations, airway techniques, clinical response, authorization types, caregiver levels, and Yes/No values shared across both sections. NEMSIS 3.5.1.251001CP2.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.8"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-not-values",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISNotValues",
+    "title" : "NEMSIS Not Value Codes",
+    "description" : "NEMSIS Not Value (NV) codes used when a data element cannot be recorded. Three codes apply: NotApplicable (element does not apply to this event), NotRecorded (element applies but was not documented), NotReporting (agency is not reporting this element).",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.9"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISOther",
+    "title" : "NEMSIS eOther Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 eOther section covering registry candidacy, crew personal protective equipment, work-related injury/exposure types, disaster types, external document types, and signature metadata (signer type, reason, patient representative, status).",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.19"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISPayerType",
+    "title" : "NEMSIS ePayment Payer Type Code System",
+    "description" : "X12 payer type codes used in NEMSIS ePayment.57 to identify the type of insurance payer.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.10"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISPayment",
+    "title" : "NEMSIS ePayment Code System",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1 ePayment section covering primary method of payment, insurance billing priority, relationship to insured, response urgency, patient transport assessment, ambulance transport reason codes, ambulance conditions indicators, CMS service level, and payer type.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.11"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISPersonnel",
+    "title" : "NEMSIS Personnel Level Codes",
+    "description" : "NEMSIS eCrew.02 - Crew Member Level certification and licensure codes (NEMSIS 3.5.1.251001CP2).",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.12"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISPertinentNegative",
+    "title" : "NEMSIS Pertinent Negative Codes",
+    "description" : "NEMSIS Pertinent Negative (PN) codes indicating a clinically significant documented absence. Applied to clinical data elements where documenting a negative finding is as meaningful as documenting a positive one.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.13"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISProcedures",
+    "title" : "NEMSIS Procedures/Protocols Codes",
+    "description" : "Enumeration codes from the NEMSIS eProtocols section (eProtocols.01 - Protocols Used). NEMSIS 3.5.1.251001CP2.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.14"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISSituation",
+    "title" : "NEMSIS Situation Codes",
+    "description" : "Enumeration codes from the NEMSIS eSituation section (NEMSIS 3.5.1.251001CP2).",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.15"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISVitals",
+    "title" : "NEMSIS Vital Signs Codes",
+    "description" : "Enumeration codes from the NEMSIS eVitals section (NEMSIS 3.5.1.251001CP2).",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.16"]
+  },
+  {
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NEMSISPatientCodes",
+    "title" : "NEMSIS ePatient Codes",
+    "description" : "Enumeration codes from the NEMSIS 3.5.1.251001CP2 ePatient section.\nIncludes codes for Sex (ePatient.25), Age Units (ePatient.16),\nand Alternate Home Residence (ePatient.22).\nRace codes (ePatient.14) are mapped to OMB/CDC categories used in us-core-race.",
+    "oids" : ["2.25.219926138944530828037824748808947630693.1.17"]
+  }]
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-claim"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Claim ex-ems-claim</b></p><a name="ex-ems-claim"> </a><a name="hcex-ems-claim"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-claim.html">EMS Ambulance Claim</a></p></div><p><b>EMS Primary Payment Method</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2601005}">Medicare</span></p><p><b>EMS CMS Service Level</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2650003}">ALS, Level 1 Emergency</span></p><p><b>EMS Response Urgency</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2640001}">Immediate</span></p><p><b>EMS Patient Transport Assessment</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2641003}">Unable to stand without assistance</span></p><p><b>EMS Patient Transport Assessment</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2641005}">Unable to walk without assistance</span></p><p><b>EMS Ambulance Transport Reason</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment A}">Patient was transported to the nearest facility for care of symptoms, complaints, or both</span></p><p><b>EMS Ambulance Conditions Indicator</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 05}">Patient was unconscious or in shock</span></p><p><b>EMS Ambulance Conditions Indicator</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 06}">Patient was transported in an emergency situation</span></p><p><b>EMS Ambulance Conditions Indicator</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 09}">Ambulance service was medically necessary</span></p><p><b>EMS ALS Assessment Performed and Warranted</b>: true</p><p><b>EMS Mileage to Closest Hospital</b>: 8.4 miles</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>created</b>: 2026-03-14</p><p><b>provider</b>: <a href="Organization-ex-ems-organization-agency.html">Organization Riverside County EMS Agency</a></p><p><b>priority</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}">Normal</span></p><h3>SupportingInfos</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/claiminformationcategory attachment}">Attachment</span></td><td>false</td></tr></table><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm I46.9}">Cardiac arrest, cause unspecified</span></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style="display: none">*</td><td>1</td><td>true</td><td><a href="Coverage-ex-ems-coverage.html">Coverage: extension = Medicare Part B; status = active; subscriberId = 1EG4-TE5-MK72; relationship = Self; order = 1</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title="Codes:{https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets A0427}">Ambulance service, advanced life support, emergency transport, level 1 (ALS 1 - Emergency)</span></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>productOrService</b>: <span title="Codes:{https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets A0425}">Ground mileage, per statute mile</span></p><p><b>quantity</b>: 8.4</p></blockquote></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-primary-payment-method">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="2601005"/>
+        <display value="Medicare"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-cms-service-level">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="2650003"/>
+        <display value="ALS, Level 1 Emergency"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-urgency">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="2640001"/>
+        <display value="Immediate"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="2641003"/>
+        <display value="Unable to stand without assistance"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="2641005"/>
+        <display value="Unable to walk without assistance"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-transport-reason">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="A"/>
+        <display value="Patient was transported to the nearest facility for care of symptoms, complaints, or both"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="05"/>
+        <display value="Patient was unconscious or in shock"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="06"/>
+        <display value="Patient was transported in an emergency situation"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+        <code value="09"/>
+        <display value="Ambulance service was medically necessary"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-als-assessment">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-mileage-to-closest">
+    <valueQuantity>
+      <value value="8.4"/>
+      <unit value="miles"/>
+    </valueQuantity>
+  </extension>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="professional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/ex-ems-patient"/>
+  </patient>
+  <created value="2026-03-14"/>
+  <provider>
+    <reference value="Organization/ex-ems-organization-agency"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="attachment"/>
+      </coding>
+    </category>
+    <valueBoolean value="false"/>
+  </supportingInfo>
+  <diagnosis>
+    <sequence value="1"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+        <code value="I46.9"/>
+        <display value="Cardiac arrest, cause unspecified"/>
+      </coding>
+    </diagnosisCodeableConcept>
+  </diagnosis>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <reference value="Coverage/ex-ems-coverage"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"/>
+        <code value="A0427"/>
+        <display value="Ambulance service, advanced life support, emergency transport, level 1 (ALS 1 - Emergency)"/>
+      </coding>
+    </productOrService>
+  </item>
+  <item>
+    <sequence value="2"/>
+    <productOrService>
+      <coding>
+        <system value="https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"/>
+        <code value="A0425"/>
+        <display value="Ground mileage, per statute mile"/>
+      </coding>
+    </productOrService>
+    <quantity>
+      <value value="8.4"/>
+    </quantity>
+  </item>
+</Claim>

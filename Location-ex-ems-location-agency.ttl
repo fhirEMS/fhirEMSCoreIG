@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-agency> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-location-agency"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-agency" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-agency>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location ex-ems-location-agency</b></p><a name=\"ex-ems-location-agency\"> </a><a name=\"hcex-ems-location-agency\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-location-agency.html\">EMS Location — Agency Station</a></p></div><p><b>US National Grid Coordinates</b>: 11SMT8236514637</p><p><b>identifier</b>: <code>http://example.org/ems/stations</code>/STA-7</p><p><b>status</b>: Active</p><p><b>name</b>: Riverside County Fire Station 7</p><p><b>type</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1301005}\">EMS Station</span></p><p><b>telecom</b>: ph: 951-555-0107</p><p><b>address</b>: 28155 Baxter Rd Murrieta CA 92563 US </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>-117.2138</td><td>33.5547</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-usng" ] ;
+     fhir:Extension.valueString [ fhir:value "11SMT8236514637" ]
+  ] ;
+  fhir:Location.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://example.org/ems/stations" ] ;
+     fhir:Identifier.value [ fhir:value "STA-7" ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Riverside County Fire Station 7"] ;
+  fhir:Location.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics" ] ;
+       fhir:Coding.code [ fhir:value "1301005" ] ;
+       fhir:Coding.display [ fhir:value "EMS Station" ]
+     ]
+  ] ;
+  fhir:Location.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "951-555-0107" ]
+  ] ;
+  fhir:Location.address [
+     fhir:Address.line [
+       fhir:value "28155 Baxter Rd" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Murrieta" ] ;
+     fhir:Address.district [ fhir:value "06065" ] ;
+     fhir:Address.state [ fhir:value "CA" ] ;
+     fhir:Address.postalCode [ fhir:value "92563" ] ;
+     fhir:Address.country [ fhir:value "US" ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "-117.2138"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "33.5547"^^xsd:decimal ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Organization/ex-ems-organization-agency> ;
+     fhir:Reference.reference [ fhir:value "Organization/ex-ems-organization-agency" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-agency.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,470 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-vitals"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-vitals</b></p><a name=\"cs-nemsis-vitals\"> </a><a name=\"hccs-nemsis-vitals\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">9901001<a name=\"cs-nemsis-vitals-9901001\"> </a></td><td>Agonal/Idioventricular</td></tr><tr><td style=\"white-space:nowrap\">9901003<a name=\"cs-nemsis-vitals-9901003\"> </a></td><td>Asystole</td></tr><tr><td style=\"white-space:nowrap\">9901005<a name=\"cs-nemsis-vitals-9901005\"> </a></td><td>Artifact</td></tr><tr><td style=\"white-space:nowrap\">9901007<a name=\"cs-nemsis-vitals-9901007\"> </a></td><td>Atrial Fibrillation</td></tr><tr><td style=\"white-space:nowrap\">9901009<a name=\"cs-nemsis-vitals-9901009\"> </a></td><td>Atrial Flutter</td></tr><tr><td style=\"white-space:nowrap\">9901011<a name=\"cs-nemsis-vitals-9901011\"> </a></td><td>AV Block-1st Degree</td></tr><tr><td style=\"white-space:nowrap\">9901013<a name=\"cs-nemsis-vitals-9901013\"> </a></td><td>AV Block-2nd Degree-Type 1</td></tr><tr><td style=\"white-space:nowrap\">9901015<a name=\"cs-nemsis-vitals-9901015\"> </a></td><td>AV Block-2nd Degree-Type 2</td></tr><tr><td style=\"white-space:nowrap\">9901017<a name=\"cs-nemsis-vitals-9901017\"> </a></td><td>AV Block-3rd Degree</td></tr><tr><td style=\"white-space:nowrap\">9901019<a name=\"cs-nemsis-vitals-9901019\"> </a></td><td>Junctional</td></tr><tr><td style=\"white-space:nowrap\">9901021<a name=\"cs-nemsis-vitals-9901021\"> </a></td><td>Left Bundle Branch Block</td></tr><tr><td style=\"white-space:nowrap\">9901023<a name=\"cs-nemsis-vitals-9901023\"> </a></td><td>Non-STEMI Anterior Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901025<a name=\"cs-nemsis-vitals-9901025\"> </a></td><td>Non-STEMI Inferior Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901027<a name=\"cs-nemsis-vitals-9901027\"> </a></td><td>Non-STEMI Lateral Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901029<a name=\"cs-nemsis-vitals-9901029\"> </a></td><td>Non-STEMI Posterior Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901030<a name=\"cs-nemsis-vitals-9901030\"> </a></td><td>Non-STEMI Septal Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901031<a name=\"cs-nemsis-vitals-9901031\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">9901033<a name=\"cs-nemsis-vitals-9901033\"> </a></td><td>Paced Rhythm</td></tr><tr><td style=\"white-space:nowrap\">9901035<a name=\"cs-nemsis-vitals-9901035\"> </a></td><td>PEA</td></tr><tr><td style=\"white-space:nowrap\">9901037<a name=\"cs-nemsis-vitals-9901037\"> </a></td><td>Premature Atrial Contractions</td></tr><tr><td style=\"white-space:nowrap\">9901039<a name=\"cs-nemsis-vitals-9901039\"> </a></td><td>Premature Ventricular Contractions</td></tr><tr><td style=\"white-space:nowrap\">9901041<a name=\"cs-nemsis-vitals-9901041\"> </a></td><td>Right Bundle Branch Block</td></tr><tr><td style=\"white-space:nowrap\">9901043<a name=\"cs-nemsis-vitals-9901043\"> </a></td><td>Sinus Arrhythmia</td></tr><tr><td style=\"white-space:nowrap\">9901045<a name=\"cs-nemsis-vitals-9901045\"> </a></td><td>Sinus Bradycardia</td></tr><tr><td style=\"white-space:nowrap\">9901047<a name=\"cs-nemsis-vitals-9901047\"> </a></td><td>Sinus Rhythm</td></tr><tr><td style=\"white-space:nowrap\">9901049<a name=\"cs-nemsis-vitals-9901049\"> </a></td><td>Sinus Tachycardia</td></tr><tr><td style=\"white-space:nowrap\">9901051<a name=\"cs-nemsis-vitals-9901051\"> </a></td><td>STEMI Anterior Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901053<a name=\"cs-nemsis-vitals-9901053\"> </a></td><td>STEMI Inferior Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901055<a name=\"cs-nemsis-vitals-9901055\"> </a></td><td>STEMI Lateral Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901057<a name=\"cs-nemsis-vitals-9901057\"> </a></td><td>STEMI Posterior Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901058<a name=\"cs-nemsis-vitals-9901058\"> </a></td><td>STEMI Septal Ischemia</td></tr><tr><td style=\"white-space:nowrap\">9901059<a name=\"cs-nemsis-vitals-9901059\"> </a></td><td>Supraventricular Tachycardia</td></tr><tr><td style=\"white-space:nowrap\">9901061<a name=\"cs-nemsis-vitals-9901061\"> </a></td><td>Torsades De Points</td></tr><tr><td style=\"white-space:nowrap\">9901063<a name=\"cs-nemsis-vitals-9901063\"> </a></td><td>Unknown AED Non-Shockable Rhythm</td></tr><tr><td style=\"white-space:nowrap\">9901065<a name=\"cs-nemsis-vitals-9901065\"> </a></td><td>Unknown AED Shockable Rhythm</td></tr><tr><td style=\"white-space:nowrap\">9901067<a name=\"cs-nemsis-vitals-9901067\"> </a></td><td>Ventricular Fibrillation</td></tr><tr><td style=\"white-space:nowrap\">9901069<a name=\"cs-nemsis-vitals-9901069\"> </a></td><td>Ventricular Tachycardia (With Pulse)</td></tr><tr><td style=\"white-space:nowrap\">9901071<a name=\"cs-nemsis-vitals-9901071\"> </a></td><td>Ventricular Tachycardia (Pulseless)</td></tr><tr><td style=\"white-space:nowrap\">3304000<a name=\"cs-nemsis-vitals-3304000\"> </a></td><td>2 Lead ECG (pads or paddles)</td></tr><tr><td style=\"white-space:nowrap\">3304001<a name=\"cs-nemsis-vitals-3304001\"> </a></td><td>3 Lead</td></tr><tr><td style=\"white-space:nowrap\">3304003<a name=\"cs-nemsis-vitals-3304003\"> </a></td><td>4 Lead</td></tr><tr><td style=\"white-space:nowrap\">3304005<a name=\"cs-nemsis-vitals-3304005\"> </a></td><td>5 Lead</td></tr><tr><td style=\"white-space:nowrap\">3304007<a name=\"cs-nemsis-vitals-3304007\"> </a></td><td>12 Lead-Left Sided (Normal)</td></tr><tr><td style=\"white-space:nowrap\">3304009<a name=\"cs-nemsis-vitals-3304009\"> </a></td><td>12 Lead-Right Sided</td></tr><tr><td style=\"white-space:nowrap\">3304011<a name=\"cs-nemsis-vitals-3304011\"> </a></td><td>15 Lead</td></tr><tr><td style=\"white-space:nowrap\">3304013<a name=\"cs-nemsis-vitals-3304013\"> </a></td><td>18 Lead</td></tr><tr><td style=\"white-space:nowrap\">3304015<a name=\"cs-nemsis-vitals-3304015\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3305001<a name=\"cs-nemsis-vitals-3305001\"> </a></td><td>Computer Interpretation</td></tr><tr><td style=\"white-space:nowrap\">3305003<a name=\"cs-nemsis-vitals-3305003\"> </a></td><td>Manual Interpretation</td></tr><tr><td style=\"white-space:nowrap\">3305005<a name=\"cs-nemsis-vitals-3305005\"> </a></td><td>Transmission with No Interpretation</td></tr><tr><td style=\"white-space:nowrap\">3305007<a name=\"cs-nemsis-vitals-3305007\"> </a></td><td>Transmission with Remote Interpretation</td></tr><tr><td style=\"white-space:nowrap\">3308001<a name=\"cs-nemsis-vitals-3308001\"> </a></td><td>Arterial Line</td></tr><tr><td style=\"white-space:nowrap\">3308003<a name=\"cs-nemsis-vitals-3308003\"> </a></td><td>Doppler</td></tr><tr><td style=\"white-space:nowrap\">3308005<a name=\"cs-nemsis-vitals-3308005\"> </a></td><td>Cuff-Automated</td></tr><tr><td style=\"white-space:nowrap\">3308007<a name=\"cs-nemsis-vitals-3308007\"> </a></td><td>Cuff-Manual Auscultated</td></tr><tr><td style=\"white-space:nowrap\">3308009<a name=\"cs-nemsis-vitals-3308009\"> </a></td><td>Cuff-Manual Palpated Only</td></tr><tr><td style=\"white-space:nowrap\">3308011<a name=\"cs-nemsis-vitals-3308011\"> </a></td><td>Venous Line</td></tr><tr><td style=\"white-space:nowrap\">3313001<a name=\"cs-nemsis-vitals-3313001\"> </a></td><td>Irregularly Irregular</td></tr><tr><td style=\"white-space:nowrap\">3313003<a name=\"cs-nemsis-vitals-3313003\"> </a></td><td>Regular</td></tr><tr><td style=\"white-space:nowrap\">3313005<a name=\"cs-nemsis-vitals-3313005\"> </a></td><td>Regularly Irregular</td></tr><tr><td style=\"white-space:nowrap\">3315001<a name=\"cs-nemsis-vitals-3315001\"> </a></td><td>Apneic</td></tr><tr><td style=\"white-space:nowrap\">3315003<a name=\"cs-nemsis-vitals-3315003\"> </a></td><td>Labored</td></tr><tr><td style=\"white-space:nowrap\">3315005<a name=\"cs-nemsis-vitals-3315005\"> </a></td><td>Mechanically Assisted (BVM, CPAP, etc.)</td></tr><tr><td style=\"white-space:nowrap\">3315007<a name=\"cs-nemsis-vitals-3315007\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">3315009<a name=\"cs-nemsis-vitals-3315009\"> </a></td><td>Rapid</td></tr><tr><td style=\"white-space:nowrap\">3315011<a name=\"cs-nemsis-vitals-3315011\"> </a></td><td>Shallow</td></tr><tr><td style=\"white-space:nowrap\">3315013<a name=\"cs-nemsis-vitals-3315013\"> </a></td><td>Weak/Agonal</td></tr><tr><td style=\"white-space:nowrap\">3322001<a name=\"cs-nemsis-vitals-3322001\"> </a></td><td>Eye Obstruction Prevents Eye Assessment</td></tr><tr><td style=\"white-space:nowrap\">3322003<a name=\"cs-nemsis-vitals-3322003\"> </a></td><td>Initial GCS has legitimate values without interventions</td></tr><tr><td style=\"white-space:nowrap\">3322005<a name=\"cs-nemsis-vitals-3322005\"> </a></td><td>Patient Chemically Paralyzed</td></tr><tr><td style=\"white-space:nowrap\">3322007<a name=\"cs-nemsis-vitals-3322007\"> </a></td><td>Patient Chemically Sedated</td></tr><tr><td style=\"white-space:nowrap\">3322009<a name=\"cs-nemsis-vitals-3322009\"> </a></td><td>Patient Intubated</td></tr><tr><td style=\"white-space:nowrap\">3326001<a name=\"cs-nemsis-vitals-3326001\"> </a></td><td>Alert</td></tr><tr><td style=\"white-space:nowrap\">3326003<a name=\"cs-nemsis-vitals-3326003\"> </a></td><td>Verbal</td></tr><tr><td style=\"white-space:nowrap\">3326005<a name=\"cs-nemsis-vitals-3326005\"> </a></td><td>Painful</td></tr><tr><td style=\"white-space:nowrap\">3326007<a name=\"cs-nemsis-vitals-3326007\"> </a></td><td>Unresponsive</td></tr><tr><td style=\"white-space:nowrap\">3328001<a name=\"cs-nemsis-vitals-3328001\"> </a></td><td>FLACC (Face, Legs, Activity, Cry, Consolability)</td></tr><tr><td style=\"white-space:nowrap\">3328003<a name=\"cs-nemsis-vitals-3328003\"> </a></td><td>Numeric (0-10)</td></tr><tr><td style=\"white-space:nowrap\">3328005<a name=\"cs-nemsis-vitals-3328005\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3328007<a name=\"cs-nemsis-vitals-3328007\"> </a></td><td>Wong-Baker (FACES)</td></tr><tr><td style=\"white-space:nowrap\">3329001<a name=\"cs-nemsis-vitals-3329001\"> </a></td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\">3329003<a name=\"cs-nemsis-vitals-3329003\"> </a></td><td>Non-Conclusive</td></tr><tr><td style=\"white-space:nowrap\">3329005<a name=\"cs-nemsis-vitals-3329005\"> </a></td><td>Positive</td></tr><tr><td style=\"white-space:nowrap\">3330001<a name=\"cs-nemsis-vitals-3330001\"> </a></td><td>Cincinnati Prehospital Stroke Scale (CPSS)</td></tr><tr><td style=\"white-space:nowrap\">3330004<a name=\"cs-nemsis-vitals-3330004\"> </a></td><td>Los Angeles Prehospital Stroke Screen (LAPSS)</td></tr><tr><td style=\"white-space:nowrap\">3330005<a name=\"cs-nemsis-vitals-3330005\"> </a></td><td>Massachusetts Stroke Scale (MSS)</td></tr><tr><td style=\"white-space:nowrap\">3330007<a name=\"cs-nemsis-vitals-3330007\"> </a></td><td>Miami Emergency Neurologic Deficit Exam (MEND)</td></tr><tr><td style=\"white-space:nowrap\">3330009<a name=\"cs-nemsis-vitals-3330009\"> </a></td><td>NIH Stroke Scale (NIHSS)</td></tr><tr><td style=\"white-space:nowrap\">3330011<a name=\"cs-nemsis-vitals-3330011\"> </a></td><td>Other Stroke Scale Type</td></tr><tr><td style=\"white-space:nowrap\">3330013<a name=\"cs-nemsis-vitals-3330013\"> </a></td><td>FAST</td></tr><tr><td style=\"white-space:nowrap\">3330015<a name=\"cs-nemsis-vitals-3330015\"> </a></td><td>Boston Stroke Scale (BOSS)</td></tr><tr><td style=\"white-space:nowrap\">3330017<a name=\"cs-nemsis-vitals-3330017\"> </a></td><td>Ontario Prehospital Stroke Scale (OPSS)</td></tr><tr><td style=\"white-space:nowrap\">3330019<a name=\"cs-nemsis-vitals-3330019\"> </a></td><td>Melbourne Ambulance Stroke Screen (MASS)</td></tr><tr><td style=\"white-space:nowrap\">3330021<a name=\"cs-nemsis-vitals-3330021\"> </a></td><td>Rapid Arterial oCclusion Evaluation (RACE)</td></tr><tr><td style=\"white-space:nowrap\">3330023<a name=\"cs-nemsis-vitals-3330023\"> </a></td><td>Los Angeles Motor Score (LAMS)</td></tr><tr><td style=\"white-space:nowrap\">3330025<a name=\"cs-nemsis-vitals-3330025\"> </a></td><td>Vision, Aphasia, Neglect (VAN)</td></tr><tr><td style=\"white-space:nowrap\">3330027<a name=\"cs-nemsis-vitals-3330027\"> </a></td><td>FAST-ED</td></tr><tr><td style=\"white-space:nowrap\">3330029<a name=\"cs-nemsis-vitals-3330029\"> </a></td><td>BEFAST</td></tr><tr><td style=\"white-space:nowrap\">3331001<a name=\"cs-nemsis-vitals-3331001\"> </a></td><td>Definite Contraindications to Thrombolytic Use</td></tr><tr><td style=\"white-space:nowrap\">3331003<a name=\"cs-nemsis-vitals-3331003\"> </a></td><td>No Contraindications to Thrombolytic Use</td></tr><tr><td style=\"white-space:nowrap\">3331005<a name=\"cs-nemsis-vitals-3331005\"> </a></td><td>Possible Contraindications to Thrombolytic Use</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.16" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISVitals"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS Vital Signs Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS eVitals section (NEMSIS 3.5.1.251001CP2)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "101"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Agonal/Idioventricular" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Asystole" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artifact" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atrial Fibrillation" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atrial Flutter" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AV Block-1st Degree" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AV Block-2nd Degree-Type 1" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AV Block-2nd Degree-Type 2" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AV Block-3rd Degree" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Junctional" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Left Bundle Branch Block" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-STEMI Anterior Ischemia" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-STEMI Inferior Ischemia" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-STEMI Lateral Ischemia" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-STEMI Posterior Ischemia" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901030" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-STEMI Septal Ischemia" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paced Rhythm" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PEA" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Premature Atrial Contractions" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Premature Ventricular Contractions" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Right Bundle Branch Block" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sinus Arrhythmia" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sinus Bradycardia" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sinus Rhythm" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sinus Tachycardia" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Anterior Ischemia" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901053" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Inferior Ischemia" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901055" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Lateral Ischemia" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901057" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Posterior Ischemia" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901058" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Septal Ischemia" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901059" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Supraventricular Tachycardia" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901061" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Torsades De Points" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901063" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown AED Non-Shockable Rhythm" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901065" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown AED Shockable Rhythm" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901067" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricular Fibrillation" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901069" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricular Tachycardia (With Pulse)" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9901071" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricular Tachycardia (Pulseless)" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304000" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "2 Lead ECG (pads or paddles)" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "3 Lead" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "4 Lead" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "5 Lead" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "12 Lead-Left Sided (Normal)" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "12 Lead-Right Sided" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "15 Lead" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "18 Lead" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3304015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3305001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Computer Interpretation" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3305003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Manual Interpretation" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3305005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transmission with No Interpretation" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3305007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transmission with Remote Interpretation" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3308001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Arterial Line" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3308003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doppler" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3308005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cuff-Automated" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3308007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cuff-Manual Auscultated" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3308009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cuff-Manual Palpated Only" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3308011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Venous Line" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3313001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Irregularly Irregular" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3313003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Regular" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3313005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Regularly Irregular" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3315001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Apneic" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3315003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Labored" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3315005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mechanically Assisted (BVM, CPAP, etc.)" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3315007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Normal" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3315009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rapid" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3315011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Shallow" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3315013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Weak/Agonal" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3322001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eye Obstruction Prevents Eye Assessment" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3322003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Initial GCS has legitimate values without interventions" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3322005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Chemically Paralyzed" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3322007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Chemically Sedated" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3322009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Intubated" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3326001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alert" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3326003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Verbal" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3326005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Painful" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3326007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unresponsive" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3328001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FLACC (Face, Legs, Activity, Cry, Consolability)" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3328003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Numeric (0-10)" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3328005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3328007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wong-Baker (FACES)" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3329001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Negative" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3329003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Conclusive" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3329005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Positive" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cincinnati Prehospital Stroke Scale (CPSS)" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Los Angeles Prehospital Stroke Screen (LAPSS)" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Massachusetts Stroke Scale (MSS)" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Miami Emergency Neurologic Deficit Exam (MEND)" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NIH Stroke Scale (NIHSS)" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Stroke Scale Type" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FAST" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Boston Stroke Scale (BOSS)" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ontario Prehospital Stroke Scale (OPSS)" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Melbourne Ambulance Stroke Screen (MASS)" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rapid Arterial oCclusion Evaluation (RACE)" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Los Angeles Motor Score (LAMS)" ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vision, Aphasia, Neglect (VAN)" ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FAST-ED" ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3330029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BEFAST" ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3331001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Definite Contraindications to Thrombolytic Use" ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3331003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No Contraindications to Thrombolytic Use" ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3331005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Possible Contraindications to Thrombolytic Use" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

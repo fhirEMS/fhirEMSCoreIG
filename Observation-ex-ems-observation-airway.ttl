@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-airway> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-observation-airway"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-airway>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ex-ems-observation-airway</b></p><a name=\"ex-ems-observation-airway\"> </a><a name=\"hcex-ems-observation-airway\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-observation-airway.html\">EMS Airway Management Observation</a></p></div><blockquote><p><b>EMS Airway Management Context</b></p><ul><li>indications: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway 4001005}\">Apnea or Agonal Respirations</span></li><li>confirmedDateTime: 2026-03-14 14:32:00-0800</li><li>deviceConfirmed: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway 4003003}\">Endotracheal Tube</span></li><li>confirmationMethod: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway 4004019}\">Waveform ETCO2</span></li><li>confirmationMethod: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway 4004001}\">Auscultation</span></li><li>confirmingPersonType: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway 4006001}\">Another Person on the Same Crew</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 182682004}\">Emergency laryngeal intubation</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-14 14:32:00-0800</p><p><b>performer</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 19841-6}\">Respiratory rate by Spirometry --at maximum voluntary ventilation</span></td><td>22 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "indications" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway" ] ;
+           fhir:Coding.code [ fhir:value "4001005" ] ;
+           fhir:Coding.display [ fhir:value "Apnea or Agonal Respirations" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "confirmedDateTime" ] ;
+       fhir:Extension.valueDateTime [ fhir:value "2026-03-14T14:32:00-08:00"^^xsd:dateTime ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "deviceConfirmed" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway" ] ;
+           fhir:Coding.code [ fhir:value "4003003" ] ;
+           fhir:Coding.display [ fhir:value "Endotracheal Tube" ]
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "confirmationMethod" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway" ] ;
+           fhir:Coding.code [ fhir:value "4004019" ] ;
+           fhir:Coding.display [ fhir:value "Waveform ETCO2" ]
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Extension.url [ fhir:value "confirmationMethod" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway" ] ;
+           fhir:Coding.code [ fhir:value "4004001" ] ;
+           fhir:Coding.display [ fhir:value "Auscultation" ]
+         ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Extension.url [ fhir:value "confirmingPersonType" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway" ] ;
+           fhir:Coding.code [ fhir:value "4006001" ] ;
+           fhir:Coding.display [ fhir:value "Another Person on the Same Crew" ]
+         ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-airway-context" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "procedure" ] ;
+       fhir:Coding.display [ fhir:value "Procedure" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:182682004 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "182682004" ] ;
+       fhir:Coding.display [ fhir:value "Emergency laryngeal intubation" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-03-14T14:32:00-08:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:19841-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "19841-6" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "22"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "cm" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "cm" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-airway.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

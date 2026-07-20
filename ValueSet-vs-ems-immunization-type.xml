@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-immunization-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-immunization-type</b></p><a name="vs-ems-immunization-type"> </a><a name="hcvs-ems-immunization-type"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-history.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910001">9910001</a></td><td>Anthrax</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910003">9910003</a></td><td>Cholera</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910005">9910005</a></td><td>DPT / TDaP (Diphtheria, Pertussis, Tetanus)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910007">9910007</a></td><td>Hemophilus Influenza B</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910009">9910009</a></td><td>Hepatitis A</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910011">9910011</a></td><td>Hepatitis B</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910013">9910013</a></td><td>Human Papilloma Virus (HPV)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910015">9910015</a></td><td>Influenza-H1N1</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910017">9910017</a></td><td>Influenza-Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910019">9910019</a></td><td>Influenza-Seasonal (In past 12 months)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910021">9910021</a></td><td>Lyme Disease</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910023">9910023</a></td><td>Meningococcus</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910025">9910025</a></td><td>MMR (Measles, Mumps, Rubella)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910027">9910027</a></td><td>Other-Not Listed</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910029">9910029</a></td><td>Plague</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910031">9910031</a></td><td>Pneumococcal (Pneumonia)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910033">9910033</a></td><td>Polio</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910035">9910035</a></td><td>Rabies</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910037">9910037</a></td><td>Rotavirus</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910039">9910039</a></td><td>Shingles</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910041">9910041</a></td><td>Small Pox</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910043">9910043</a></td><td>Tetanus</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910045">9910045</a></td><td>Tuberculosis</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910047">9910047</a></td><td>Typhoid</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910049">9910049</a></td><td>Varicella (Chickenpox)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910051">9910051</a></td><td>Yellow Fever</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910053">9910053</a></td><td>None</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-immunization-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.132"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSImmunizationTypeVS"/>
+  <title value="EMS Immunization Type VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="The patient's immunization history type (eHistory.10)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history"/>
+      <concept>
+        <code value="9910001"/>
+        <display value="Anthrax"/>
+      </concept>
+      <concept>
+        <code value="9910003"/>
+        <display value="Cholera"/>
+      </concept>
+      <concept>
+        <code value="9910005"/>
+        <display value="DPT / TDaP (Diphtheria, Pertussis, Tetanus)"/>
+      </concept>
+      <concept>
+        <code value="9910007"/>
+        <display value="Hemophilus Influenza B"/>
+      </concept>
+      <concept>
+        <code value="9910009"/>
+        <display value="Hepatitis A"/>
+      </concept>
+      <concept>
+        <code value="9910011"/>
+        <display value="Hepatitis B"/>
+      </concept>
+      <concept>
+        <code value="9910013"/>
+        <display value="Human Papilloma Virus (HPV)"/>
+      </concept>
+      <concept>
+        <code value="9910015"/>
+        <display value="Influenza-H1N1"/>
+      </concept>
+      <concept>
+        <code value="9910017"/>
+        <display value="Influenza-Other"/>
+      </concept>
+      <concept>
+        <code value="9910019"/>
+        <display value="Influenza-Seasonal (In past 12 months)"/>
+      </concept>
+      <concept>
+        <code value="9910021"/>
+        <display value="Lyme Disease"/>
+      </concept>
+      <concept>
+        <code value="9910023"/>
+        <display value="Meningococcus"/>
+      </concept>
+      <concept>
+        <code value="9910025"/>
+        <display value="MMR (Measles, Mumps, Rubella)"/>
+      </concept>
+      <concept>
+        <code value="9910027"/>
+        <display value="Other-Not Listed"/>
+      </concept>
+      <concept>
+        <code value="9910029"/>
+        <display value="Plague"/>
+      </concept>
+      <concept>
+        <code value="9910031"/>
+        <display value="Pneumococcal (Pneumonia)"/>
+      </concept>
+      <concept>
+        <code value="9910033"/>
+        <display value="Polio"/>
+      </concept>
+      <concept>
+        <code value="9910035"/>
+        <display value="Rabies"/>
+      </concept>
+      <concept>
+        <code value="9910037"/>
+        <display value="Rotavirus"/>
+      </concept>
+      <concept>
+        <code value="9910039"/>
+        <display value="Shingles"/>
+      </concept>
+      <concept>
+        <code value="9910041"/>
+        <display value="Small Pox"/>
+      </concept>
+      <concept>
+        <code value="9910043"/>
+        <display value="Tetanus"/>
+      </concept>
+      <concept>
+        <code value="9910045"/>
+        <display value="Tuberculosis"/>
+      </concept>
+      <concept>
+        <code value="9910047"/>
+        <display value="Typhoid"/>
+      </concept>
+      <concept>
+        <code value="9910049"/>
+        <display value="Varicella (Chickenpox)"/>
+      </concept>
+      <concept>
+        <code value="9910051"/>
+        <display value="Yellow Fever"/>
+      </concept>
+      <concept>
+        <code value="9910053"/>
+        <display value="None"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

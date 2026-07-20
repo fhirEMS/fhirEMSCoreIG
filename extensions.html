@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Extensions - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Extensions</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Extensions</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a>    <ul>
+      <li><a href="#extension-design-principles" id="markdown-toc-extension-design-principles">Extension Design Principles</a></li>
+      <li><a href="#extension-registry" id="markdown-toc-extension-registry">Extension Registry</a>        <ul>
+          <li><a href="#encounter-extensions" id="markdown-toc-encounter-extensions">Encounter Extensions</a></li>
+          <li><a href="#patient-extensions" id="markdown-toc-patient-extensions">Patient Extensions</a></li>
+          <li><a href="#location-extensions" id="markdown-toc-location-extensions">Location Extensions</a></li>
+          <li><a href="#observation-extensions-clinical" id="markdown-toc-observation-extensions-clinical">Observation Extensions (Clinical)</a></li>
+          <li><a href="#medication-and-procedure-extensions" id="markdown-toc-medication-and-procedure-extensions">Medication and Procedure Extensions</a></li>
+          <li><a href="#cardiac-arrest-extension" id="markdown-toc-cardiac-arrest-extension">Cardiac Arrest Extension</a></li>
+          <li><a href="#airway-extension" id="markdown-toc-airway-extension">Airway Extension</a></li>
+          <li><a href="#injury-extensions" id="markdown-toc-injury-extensions">Injury Extensions</a></li>
+          <li><a href="#agency-and-personnel-extensions" id="markdown-toc-agency-and-personnel-extensions">Agency and Personnel Extensions</a></li>
+          <li><a href="#universal-extensions-apply-to-any-resource" id="markdown-toc-universal-extensions-apply-to-any-resource">Universal Extensions (apply to any resource)</a></li>
+        </ul>
+      </li>
+      <li><a href="#etimes-complex-extension" id="markdown-toc-etimes-complex-extension">eTimes Complex Extension</a></li>
+      <li><a href="#adding-new-extensions" id="markdown-toc-adding-new-extensions">Adding New Extensions</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="extensions">Extensions</h1>
+
+<p>This page documents all FHIR extensions defined in fhirEMSCore to represent NEMSIS data elements that have no direct mapping in FHIR R4 or US Core 6.1.0.</p>
+
+<hr />
+
+<h2 id="extension-design-principles">Extension Design Principles</h2>
+
+<ol>
+  <li><strong>Extensions are a last resort</strong> — use standard FHIR elements first</li>
+  <li><strong>Group related extensions</strong> as complex extensions (backbone) to reduce top-level clutter</li>
+  <li><strong>Bind value sets</strong> from the same NEMSIS CodeSystem used in the parent element</li>
+  <li><strong>Document NEMSIS source</strong> in the extension's <code class="language-plaintext highlighter-rouge">^comment</code> using the standard pattern: <code class="language-plaintext highlighter-rouge">NEMSIS eXxx.xx. Usage: level. NV: yes/no. PN: yes/no.</code></li>
+  <li><strong>Alias all extensions</strong> in <code class="language-plaintext highlighter-rouge">aliases.fsh</code> before referencing in profiles</li>
+</ol>
+
+<hr />
+
+<h2 id="extension-registry">Extension Registry</h2>
+
+<h3 id="encounter-extensions">Encounter Extensions</h3>
+
+<p>These extensions are applied to <strong>EMSEncounter</strong> to represent NEMSIS response, dispatch, transport, and timing data.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Cardinality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-mode</code></td>
+      <td>Response Mode</td>
+      <td>eResponse response/travel mode</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-additional-response-mode</code></td>
+      <td>Additional Response Mode</td>
+      <td>eResponse additional modes</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-delays</code></td>
+      <td>Response Delays</td>
+      <td>eResponse.08–13 delay codes</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-unit</code></td>
+      <td>EMS Unit</td>
+      <td>eResponse unit identifier</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info</code></td>
+      <td>Dispatch Information</td>
+      <td>eDispatch.01–06 chief complaint, priority, CAD</td>
+      <td>0..1 complex</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times</code></td>
+      <td>EMS Times</td>
+      <td>eTimes.01–19 (19-timestamp complex extension)</td>
+      <td>0..1 complex</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-transport-details</code></td>
+      <td>Transport Details</td>
+      <td>eDisposition transport mode and reason</td>
+      <td>0..1 complex</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-destination-details</code></td>
+      <td>Destination Details</td>
+      <td>eDisposition destination type and codes</td>
+      <td>0..1 complex</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-disposition-codes</code></td>
+      <td>Disposition Codes</td>
+      <td>eDisposition.12–18</td>
+      <td>0..1 complex</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-type</code></td>
+      <td>Response Type</td>
+      <td>eResponse.05</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-unit-type</code></td>
+      <td>Unit Type</td>
+      <td>eResponse.07</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-reason</code></td>
+      <td>Dispatch Reason</td>
+      <td>eDispatch.01</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-transport-reason</code></td>
+      <td>Transport Reason</td>
+      <td>eDisposition.22</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-incident-type</code></td>
+      <td>Incident Type</td>
+      <td>eSituation.07</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-protocol</code></td>
+      <td>Protocol Used</td>
+      <td>eProtocols.01</td>
+      <td>0..*</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="patient-extensions">Patient Extensions</h3>
+
+<p>These extensions are applied to <strong>EMSPatient</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Cardinality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-age</code></td>
+      <td>Patient Age</td>
+      <td>ePatient.15 (age at time of call)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-alternate-residence</code></td>
+      <td>Alternate Residence</td>
+      <td>ePatient.09 (home vs current address)</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-barrier</code></td>
+      <td>Communication Barrier</td>
+      <td>ePatient.21 language/barriers</td>
+      <td>0..*</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-census-tract</code></td>
+      <td>Census Tract</td>
+      <td>ePatient.08 / eScene.15</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="location-extensions">Location Extensions</h3>
+
+<p>These extensions are applied to <strong>EMSLocationScene</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Cardinality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-gps</code></td>
+      <td>Scene GPS Coordinates</td>
+      <td>eScene.11 GPS lat/long</td>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-details</code></td>
+      <td>Scene Details</td>
+      <td>eScene mass casualty, first unit, patient count</td>
+      <td>0..1 complex</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="observation-extensions-clinical">Observation Extensions (Clinical)</h3>
+
+<p>These extensions are applied to vital sign and clinical observation profiles.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Cardinality</th>
+      <th>Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-vital-obtained-prior</code></td>
+      <td>Obtained Prior to Arrival</td>
+      <td>eVitals.02</td>
+      <td>0..1</td>
+      <td>Observation</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-bp-method</code></td>
+      <td>BP Method</td>
+      <td>eVitals.08</td>
+      <td>0..1</td>
+      <td>Observation</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-ecg-context</code></td>
+      <td>ECG Context</td>
+      <td>eVitals.03 (cardiac rhythm)</td>
+      <td>0..1</td>
+      <td>Observation</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-stroke-scale-context</code></td>
+      <td>Stroke Scale Context</td>
+      <td>eVitals.29/30</td>
+      <td>0..1</td>
+      <td>Observation</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pain-scale-type</code></td>
+      <td>Pain Scale Type</td>
+      <td>eVitals.27 pain scale</td>
+      <td>0..1</td>
+      <td>Observation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="medication-and-procedure-extensions">Medication and Procedure Extensions</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Cardinality</th>
+      <th>Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-medication-context</code></td>
+      <td>Medication Context</td>
+      <td>eMedications context data</td>
+      <td>0..1</td>
+      <td>MedicationAdministration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-procedure-context</code></td>
+      <td>Procedure Context</td>
+      <td>eProcedures context data</td>
+      <td>0..1</td>
+      <td>Procedure</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="cardiac-arrest-extension">Cardiac Arrest Extension</h3>
+
+<p>The arrest context is a complex extension applied to <strong>EMSConditionArrest</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Sub-extensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-arrest-context</code></td>
+      <td>Arrest Context</td>
+      <td>eArrest.01–22</td>
+      <td>21 sub-extensions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Sub-extension details:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub-extension</th>
+      <th>NEMSIS Element</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cardiacArrestPrior</code></td>
+      <td>eArrest.01</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cardiacArrestReason</code></td>
+      <td>eArrest.02</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cardiacArrestWitnessed</code></td>
+      <td>eArrest.04</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">resuscitationAttempted</code></td>
+      <td>eArrest.03</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bystandardCPR</code></td>
+      <td>eArrest.05</td>
+      <td>boolean</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bystandardAED</code></td>
+      <td>eArrest.07</td>
+      <td>boolean</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">crewCPRInitiated</code></td>
+      <td>eArrest.06</td>
+      <td>boolean</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cprType</code></td>
+      <td>eArrest.09</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">firstMonitoredRhythm</code></td>
+      <td>eArrest.11</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">aedUse</code></td>
+      <td>eArrest.07</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rosc</code></td>
+      <td>eArrest.12</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cprDiscontinuedReason</code></td>
+      <td>eArrest.16</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">arrestEndEvent</code></td>
+      <td>eArrest.18</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">neurologicalOutcome</code></td>
+      <td>eArrest.13</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rhythmAtDestination</code></td>
+      <td>eArrest.17</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">firstResponderCPR</code></td>
+      <td>eArrest.20</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">firstResponderAED</code></td>
+      <td>eArrest.21</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">firstResponderRole</code></td>
+      <td>eArrest.22</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">timeFirstDefib</code></td>
+      <td>eArrest.15</td>
+      <td>dateTime</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">timeROSC</code></td>
+      <td>eArrest.14</td>
+      <td>dateTime</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dateArrestOrDeath</code></td>
+      <td>eArrest.14</td>
+      <td>date</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="airway-extension">Airway Extension</h3>
+
+<p>The airway context is a complex extension applied to <strong>EMSObservationAirway</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Sub-extensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-airway-context</code></td>
+      <td>Airway Context</td>
+      <td>eAirway.01–11</td>
+      <td>10 sub-extensions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Sub-extension details:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub-extension</th>
+      <th>NEMSIS Element</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airwayIndications</code></td>
+      <td>eAirway.01</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airwayDeviceType</code></td>
+      <td>eAirway.03</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airwayDevicePlacement</code></td>
+      <td>eAirway.04</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airwayConfirmationMethod</code></td>
+      <td>eAirway.04</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">confirmingPersonType</code></td>
+      <td>eAirway.06</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tubeDepth</code></td>
+      <td>eAirway.05</td>
+      <td>Quantity (cm)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airwayAttempts</code></td>
+      <td>eAirway.02</td>
+      <td>positiveInt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airwayComplications</code></td>
+      <td>eAirway.08</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airwayFailureReason</code></td>
+      <td>eAirway.09</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">crewMember</code></td>
+      <td>eAirway.10</td>
+      <td>Reference(Practitioner)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="injury-extensions">Injury Extensions</h3>
+
+<p>Two complex extensions applied to <strong>EMSConditionInjury</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Sub-extensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-injury-context</code></td>
+      <td>Injury Context</td>
+      <td>eInjury.02–.10</td>
+      <td>9 sub-extensions</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-acn-incident</code></td>
+      <td>ACN Incident</td>
+      <td>eInjury.11–.29</td>
+      <td>19 sub-extensions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Injury context sub-extension details:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub-extension</th>
+      <th>NEMSIS Element</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mechanismOfInjury</code></td>
+      <td>eInjury.02</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">traumaTriageHighRisk</code></td>
+      <td>eInjury.03</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">traumaTriageModerateRisk</code></td>
+      <td>eInjury.04</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vehicleImpactArea</code></td>
+      <td>eInjury.05</td>
+      <td>integer (1–12 clock)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patientVehicleLocation</code></td>
+      <td>eInjury.06</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">safetyEquipment</code></td>
+      <td>eInjury.07</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">airbagDeployment</code></td>
+      <td>eInjury.08</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">heightOfFall</code></td>
+      <td>eInjury.09</td>
+      <td>Quantity ([ft_i])</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">oshaPPE</code></td>
+      <td>eInjury.10</td>
+      <td>CodeableConcept (0..*)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ACN incident sub-extensions carry Automated Collision Notification telematics: company, incident id, callback phone, date/time, GPS location, vehicle body type/manufacturer/make/model/year, multiple impacts, delta velocity, high probability of injury, PDOF, rollover, seat location, seat occupied, seatbelt use, and airbag deployed (eInjury.11–.29).</p>
+
+<h3 id="agency-and-personnel-extensions">Agency and Personnel Extensions</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Elements</th>
+      <th>Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-agency-details</code></td>
+      <td>Agency Details</td>
+      <td>dAgency operational data</td>
+      <td>Organization</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-certification-level</code></td>
+      <td>Certification Level</td>
+      <td>eCrew.02 / dPersonnel.24</td>
+      <td>PractitionerRole</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="universal-extensions-apply-to-any-resource">Universal Extensions (apply to any resource)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension Id</th>
+      <th>Short Name</th>
+      <th>NEMSIS Pattern</th>
+      <th>Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-not-value</code></td>
+      <td>Not Value</td>
+      <td>NV codes (NDR-001)</td>
+      <td>Any element</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code></td>
+      <td>Pertinent Negative</td>
+      <td>PN codes (NDR-002)</td>
+      <td>Any element</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="etimes-complex-extension">eTimes Complex Extension</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">ext-ems-times</code> complex extension on <strong>EMSEncounter</strong> captures all 19 NEMSIS timestamps. The main <code class="language-plaintext highlighter-rouge">Encounter.period</code> carries only two:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>NEMSIS Element</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.period.start</code></td>
+      <td>eTimes.03 — Unit Notified by Dispatch</td>
+      <td>NDR-005</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.period.end</code></td>
+      <td>eTimes.12 — Patient Transfer of Care</td>
+      <td>NDR-005</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All other timestamps are in the complex extension:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub-extension</th>
+      <th>NEMSIS Element</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">psapCallDateTime</code></td>
+      <td>eTimes.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dispatchNotifiedDateTime</code></td>
+      <td>eTimes.02</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dispatchAcknowledgedDateTime</code></td>
+      <td>eTimes.04</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unitEnRouteDateTime</code></td>
+      <td>eTimes.05</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unitArrivedOnSceneDateTime</code></td>
+      <td>eTimes.06</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">arrivedAtPatientDateTime</code></td>
+      <td>eTimes.07</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">transferOfEMSCareDateTime</code></td>
+      <td>eTimes.08</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unitLeftSceneDateTime</code></td>
+      <td>eTimes.09</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patientArrivedAtDestinationDateTime</code></td>
+      <td>eTimes.11</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">destinationPatientTransferOfCareDateTime</code></td>
+      <td>eTimes.12</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unitBackInServiceDateTime</code></td>
+      <td>eTimes.13</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unitCancelledDateTime</code></td>
+      <td>eTimes.14</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unitBackAtHomeBaseDateTime</code></td>
+      <td>eTimes.15</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">emsCallCompletedDateTime</code></td>
+      <td>eTimes.16</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">firstCrewMemberAtPatientDateTime</code></td>
+      <td>eTimes.17</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">respondingUnitOnSceneDateTime</code></td>
+      <td>eTimes.18</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unitNotifiedByDispatchDateTime</code></td>
+      <td>eTimes.03 (also in period.start)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="adding-new-extensions">Adding New Extensions</h2>
+
+<p>To add a new extension to fhirEMSCore:</p>
+
+<ol>
+  <li>Add the FSH definition to the appropriate <code class="language-plaintext highlighter-rouge">input/fsh/extensions/ems-extensions-*.fsh</code> file</li>
+  <li>Add an alias to <code class="language-plaintext highlighter-rouge">input/fsh/aliases.fsh</code></li>
+  <li>Reference in the relevant profile using the alias</li>
+  <li>Document in the Extensions Registry table above</li>
+  <li>Document in <code class="language-plaintext highlighter-rouge">docs/mapping/fhirEMSCore_MappingMatrix.xlsx</code> → Extensions_Registry sheet</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

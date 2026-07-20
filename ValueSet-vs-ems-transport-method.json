@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-transport-method",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-transport-method</b></p><a name=\"vs-ems-transport-method\"> </a><a name=\"hcvs-ems-transport-method\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-encounter.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216001\">4216001</a></td><td>Air Medical-Fixed Wing</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216003\">4216003</a></td><td>Air Medical-Rotor Craft</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216005\">4216005</a></td><td>Ground-Ambulance</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216007\">4216007</a></td><td>Ground-ATV or Rescue Vehicle</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216009\">4216009</a></td><td>Ground-Bariatric</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216011\">4216011</a></td><td>Ground-Other Not Listed</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216013\">4216013</a></td><td>Ground-Mass Casualty Bus/Vehicle</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216015\">4216015</a></td><td>Ground-Wheelchair Van</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4216017\">4216017</a></td><td>Water-Boat</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-method",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.121"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSTransportMethodVS",
+  "title" : "EMS Transport Method",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS eDisposition.16 - The vehicle/mode used to transport the patient.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+      "concept" : [{
+        "code" : "4216001",
+        "display" : "Air Medical-Fixed Wing"
+      },
+      {
+        "code" : "4216003",
+        "display" : "Air Medical-Rotor Craft"
+      },
+      {
+        "code" : "4216005",
+        "display" : "Ground-Ambulance"
+      },
+      {
+        "code" : "4216007",
+        "display" : "Ground-ATV or Rescue Vehicle"
+      },
+      {
+        "code" : "4216009",
+        "display" : "Ground-Bariatric"
+      },
+      {
+        "code" : "4216011",
+        "display" : "Ground-Other Not Listed"
+      },
+      {
+        "code" : "4216013",
+        "display" : "Ground-Mass Casualty Bus/Vehicle"
+      },
+      {
+        "code" : "4216015",
+        "display" : "Ground-Wheelchair Van"
+      },
+      {
+        "code" : "4216017",
+        "display" : "Water-Boat"
+      }]
+    }]
+  }
+}

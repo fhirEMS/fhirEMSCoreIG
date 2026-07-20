@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-device-vehicle"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-device-vehicle"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device ex-ems-device-vehicle</b></p><a name="ex-ems-device-vehicle"> </a><a name="hcex-ems-device-vehicle"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-device-vehicle.html">EMS Vehicle Device</a></p></div><p><b>identifier</b>: Visit number/4321 (use: official, ), <a href="NamingSystem-ns-ems-vin.html" title="Identifier system for the Vehicle Identification Number (VIN) as used in EMS vehicle (dVehicle.02) records within the fhirEMSCore Implementation Guide.">EMSVehicleVIN</a>/1FDFE4FS0GDA12345 (use: secondary, ), <code>http://example.org/ems/callsigns</code>/Medic 21 (use: usual, )</p><p><b>manufactureDate</b>: 2022-01-01</p><p><b>type</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 1404001}">Ambulance</span></p><p><b>owner</b>: <a href="Organization-ex-ems-organization-agency.html">Organization Riverside County EMS Agency</a></p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="VN"/>
+      </coding>
+    </type>
+    <system value="http://example.org/ems/units"/>
+    <value value="4321"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <system value="https://fhirems.github.io/fhirEMSCoreIG/identifier/vin"/>
+    <value value="1FDFE4FS0GDA12345"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://example.org/ems/callsigns"/>
+    <value value="Medic 21"/>
+  </identifier>
+  <manufactureDate value="2022-01-01"/>
+  <type>
+    <coding>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"/>
+      <code value="1404001"/>
+      <display value="Ambulance"/>
+    </coding>
+  </type>
+  <owner>
+    <reference value="Organization/ex-ems-organization-agency"/>
+  </owner>
+</Device>

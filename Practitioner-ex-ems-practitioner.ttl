@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-practitioner"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitioner" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitioner>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ex-ems-practitioner</b></p><a name=\"ex-ems-practitioner\"> </a><a name=\"hcex-ems-practitioner\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-practitioner.html\">EMS Practitioner</a></p></div><p><b>identifier</b>: Employee number/P-20145</p><p><b>name</b>: Maria J Ramirez </p><p><b>gender</b>: Female</p><p><b>birthDate</b>: 1988-04-15</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><code>http://example.org/ems/cert-number</code>/NREMT-P-456789</td><td><span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level 9925007}\">Paramedic</span></td><td>2018-06-01 --&gt; 2026-06-01</td></tr></table></div>"
+  ] ;
+  fhir:Practitioner.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "EI" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://example.org/ems/personnel-id" ] ;
+     fhir:Identifier.value [ fhir:value "P-20145" ]
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Ramirez" ] ;
+     fhir:HumanName.given [
+       fhir:value "Maria" ;
+       fhir:index 0
+     ], [
+       fhir:value "J" ;
+       fhir:index 1
+     ]
+  ] ;
+  fhir:Practitioner.gender [ fhir:value "female"] ;
+  fhir:Practitioner.birthDate [ fhir:value "1988-04-15"^^xsd:date] ;
+  fhir:Practitioner.qualification [
+     fhir:index 0 ;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0 ;
+       fhir:Identifier.system [ fhir:value "http://example.org/ems/cert-number" ] ;
+       fhir:Identifier.value [ fhir:value "NREMT-P-456789" ]
+     ] ;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level" ] ;
+         fhir:Coding.code [ fhir:value "9925007" ] ;
+         fhir:Coding.display [ fhir:value "Paramedic" ]
+       ]
+     ] ;
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2018-06-01"^^xsd:date ] ;
+       fhir:Period.end [ fhir:value "2026-06-01"^^xsd:date ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

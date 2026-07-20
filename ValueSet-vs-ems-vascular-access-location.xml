@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-vascular-access-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-vascular-access-location</b></p><a name="vs-ems-vascular-access-location"> </a><a name="hcvs-ems-vascular-access-location"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-medications.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913001">3913001</a></td><td>Antecubital-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913003">3913003</a></td><td>Antecubital-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913005">3913005</a></td><td>External Jugular-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913007">3913007</a></td><td>External Jugular-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913009">3913009</a></td><td>Femoral-Left IV</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913011">3913011</a></td><td>Femoral-Right IV</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913013">3913013</a></td><td>Foot-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913015">3913015</a></td><td>Foot-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913017">3913017</a></td><td>Forearm-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913019">3913019</a></td><td>Forearm-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913021">3913021</a></td><td>Hand-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913023">3913023</a></td><td>Hand-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913025">3913025</a></td><td>Internal Jugular-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913027">3913027</a></td><td>Internal Jugular-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913029">3913029</a></td><td>IO-Iliac Crest-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913031">3913031</a></td><td>IO-Iliac Crest-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913033">3913033</a></td><td>IO-Femoral-Left Distal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913035">3913035</a></td><td>IO-Femoral-Right Distal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913037">3913037</a></td><td>IO-Humeral-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913039">3913039</a></td><td>IO-Humeral-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913041">3913041</a></td><td>IO-Tibia-Left Distal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913043">3913043</a></td><td>IO-Sternum</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913045">3913045</a></td><td>IO-Tibia-Right Distal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913047">3913047</a></td><td>IO-Tibia-Left Proximal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913049">3913049</a></td><td>IO-Tibia-Right Proximal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913051">3913051</a></td><td>Lower Extremity-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913053">3913053</a></td><td>Lower Extremity-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913055">3913055</a></td><td>Other Peripheral</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913057">3913057</a></td><td>Other Central (PICC, Portacath, etc.)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913059">3913059</a></td><td>Scalp</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913061">3913061</a></td><td>Subclavian-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913063">3913063</a></td><td>Subclavian-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913065">3913065</a></td><td>Umbilical</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913067">3913067</a></td><td>Venous Cutdown-Left Lower Extremity</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913069">3913069</a></td><td>Venous Cutdown-Right Lower Extremity</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913071">3913071</a></td><td>Upper Arm-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913073">3913073</a></td><td>Upper Arm-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913075">3913075</a></td><td>Radial-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913077">3913077</a></td><td>Radial-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913079">3913079</a></td><td>Wrist-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3913081">3913081</a></td><td>Wrist-Right</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vascular-access-location"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.128"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSVascularAccessLocationVS"/>
+  <title value="EMS Vascular Access Location"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eProcedures.13 - Anatomical site of vascular access (IV/IO line)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+      <concept>
+        <code value="3913001"/>
+        <display value="Antecubital-Left"/>
+      </concept>
+      <concept>
+        <code value="3913003"/>
+        <display value="Antecubital-Right"/>
+      </concept>
+      <concept>
+        <code value="3913005"/>
+        <display value="External Jugular-Left"/>
+      </concept>
+      <concept>
+        <code value="3913007"/>
+        <display value="External Jugular-Right"/>
+      </concept>
+      <concept>
+        <code value="3913009"/>
+        <display value="Femoral-Left IV"/>
+      </concept>
+      <concept>
+        <code value="3913011"/>
+        <display value="Femoral-Right IV"/>
+      </concept>
+      <concept>
+        <code value="3913013"/>
+        <display value="Foot-Right"/>
+      </concept>
+      <concept>
+        <code value="3913015"/>
+        <display value="Foot-Left"/>
+      </concept>
+      <concept>
+        <code value="3913017"/>
+        <display value="Forearm-Left"/>
+      </concept>
+      <concept>
+        <code value="3913019"/>
+        <display value="Forearm-Right"/>
+      </concept>
+      <concept>
+        <code value="3913021"/>
+        <display value="Hand-Left"/>
+      </concept>
+      <concept>
+        <code value="3913023"/>
+        <display value="Hand-Right"/>
+      </concept>
+      <concept>
+        <code value="3913025"/>
+        <display value="Internal Jugular-Left"/>
+      </concept>
+      <concept>
+        <code value="3913027"/>
+        <display value="Internal Jugular-Right"/>
+      </concept>
+      <concept>
+        <code value="3913029"/>
+        <display value="IO-Iliac Crest-Left"/>
+      </concept>
+      <concept>
+        <code value="3913031"/>
+        <display value="IO-Iliac Crest-Right"/>
+      </concept>
+      <concept>
+        <code value="3913033"/>
+        <display value="IO-Femoral-Left Distal"/>
+      </concept>
+      <concept>
+        <code value="3913035"/>
+        <display value="IO-Femoral-Right Distal"/>
+      </concept>
+      <concept>
+        <code value="3913037"/>
+        <display value="IO-Humeral-Left"/>
+      </concept>
+      <concept>
+        <code value="3913039"/>
+        <display value="IO-Humeral-Right"/>
+      </concept>
+      <concept>
+        <code value="3913041"/>
+        <display value="IO-Tibia-Left Distal"/>
+      </concept>
+      <concept>
+        <code value="3913043"/>
+        <display value="IO-Sternum"/>
+      </concept>
+      <concept>
+        <code value="3913045"/>
+        <display value="IO-Tibia-Right Distal"/>
+      </concept>
+      <concept>
+        <code value="3913047"/>
+        <display value="IO-Tibia-Left Proximal"/>
+      </concept>
+      <concept>
+        <code value="3913049"/>
+        <display value="IO-Tibia-Right Proximal"/>
+      </concept>
+      <concept>
+        <code value="3913051"/>
+        <display value="Lower Extremity-Left"/>
+      </concept>
+      <concept>
+        <code value="3913053"/>
+        <display value="Lower Extremity-Right"/>
+      </concept>
+      <concept>
+        <code value="3913055"/>
+        <display value="Other Peripheral"/>
+      </concept>
+      <concept>
+        <code value="3913057"/>
+        <display value="Other Central (PICC, Portacath, etc.)"/>
+      </concept>
+      <concept>
+        <code value="3913059"/>
+        <display value="Scalp"/>
+      </concept>
+      <concept>
+        <code value="3913061"/>
+        <display value="Subclavian-Left"/>
+      </concept>
+      <concept>
+        <code value="3913063"/>
+        <display value="Subclavian-Right"/>
+      </concept>
+      <concept>
+        <code value="3913065"/>
+        <display value="Umbilical"/>
+      </concept>
+      <concept>
+        <code value="3913067"/>
+        <display value="Venous Cutdown-Left Lower Extremity"/>
+      </concept>
+      <concept>
+        <code value="3913069"/>
+        <display value="Venous Cutdown-Right Lower Extremity"/>
+      </concept>
+      <concept>
+        <code value="3913071"/>
+        <display value="Upper Arm-Left"/>
+      </concept>
+      <concept>
+        <code value="3913073"/>
+        <display value="Upper Arm-Right"/>
+      </concept>
+      <concept>
+        <code value="3913075"/>
+        <display value="Radial-Left"/>
+      </concept>
+      <concept>
+        <code value="3913077"/>
+        <display value="Radial-Right"/>
+      </concept>
+      <concept>
+        <code value="3913079"/>
+        <display value="Wrist-Left"/>
+      </concept>
+      <concept>
+        <code value="3913081"/>
+        <display value="Wrist-Right"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

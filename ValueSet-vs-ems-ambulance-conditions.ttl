@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-conditions> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-ambulance-conditions"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-ambulance-conditions</b></p><a name=\"vs-ems-ambulance-conditions\"> </a><a name=\"hcvs-ems-ambulance-conditions\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-payment.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-01\">01</a></td><td>Patient was admitted to a hospital</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-04\">04</a></td><td>Patient was moved by stretcher</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-05\">05</a></td><td>Patient was unconscious or in shock</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-06\">06</a></td><td>Patient was transported in an emergency situation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-07\">07</a></td><td>Patient had to be physically restrained</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-08\">08</a></td><td>Patient had visible hemorrhaging</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-09\">09</a></td><td>Ambulance service was medically necessary</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-12\">12</a></td><td>Patient is confined to a bed or chair</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-conditions"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.19" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSAmbulanceConditionsVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Ambulance Conditions Indicator VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "CMS ambulance conditions indicators justifying medical necessity (ePayment.47)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient was admitted to a hospital" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient was moved by stretcher" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient was unconscious or in shock" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient was transported in an emergency situation" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient had to be physically restrained" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient had visible hemorrhaging" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ambulance service was medically necessary" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient is confined to a bed or chair" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-conditions.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

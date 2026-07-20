@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-vitals"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-vitals</b></p><a name="cs-nemsis-vitals"> </a><a name="hccs-nemsis-vitals"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">9901001<a name="cs-nemsis-vitals-9901001"> </a></td><td>Agonal/Idioventricular</td></tr><tr><td style="white-space:nowrap">9901003<a name="cs-nemsis-vitals-9901003"> </a></td><td>Asystole</td></tr><tr><td style="white-space:nowrap">9901005<a name="cs-nemsis-vitals-9901005"> </a></td><td>Artifact</td></tr><tr><td style="white-space:nowrap">9901007<a name="cs-nemsis-vitals-9901007"> </a></td><td>Atrial Fibrillation</td></tr><tr><td style="white-space:nowrap">9901009<a name="cs-nemsis-vitals-9901009"> </a></td><td>Atrial Flutter</td></tr><tr><td style="white-space:nowrap">9901011<a name="cs-nemsis-vitals-9901011"> </a></td><td>AV Block-1st Degree</td></tr><tr><td style="white-space:nowrap">9901013<a name="cs-nemsis-vitals-9901013"> </a></td><td>AV Block-2nd Degree-Type 1</td></tr><tr><td style="white-space:nowrap">9901015<a name="cs-nemsis-vitals-9901015"> </a></td><td>AV Block-2nd Degree-Type 2</td></tr><tr><td style="white-space:nowrap">9901017<a name="cs-nemsis-vitals-9901017"> </a></td><td>AV Block-3rd Degree</td></tr><tr><td style="white-space:nowrap">9901019<a name="cs-nemsis-vitals-9901019"> </a></td><td>Junctional</td></tr><tr><td style="white-space:nowrap">9901021<a name="cs-nemsis-vitals-9901021"> </a></td><td>Left Bundle Branch Block</td></tr><tr><td style="white-space:nowrap">9901023<a name="cs-nemsis-vitals-9901023"> </a></td><td>Non-STEMI Anterior Ischemia</td></tr><tr><td style="white-space:nowrap">9901025<a name="cs-nemsis-vitals-9901025"> </a></td><td>Non-STEMI Inferior Ischemia</td></tr><tr><td style="white-space:nowrap">9901027<a name="cs-nemsis-vitals-9901027"> </a></td><td>Non-STEMI Lateral Ischemia</td></tr><tr><td style="white-space:nowrap">9901029<a name="cs-nemsis-vitals-9901029"> </a></td><td>Non-STEMI Posterior Ischemia</td></tr><tr><td style="white-space:nowrap">9901030<a name="cs-nemsis-vitals-9901030"> </a></td><td>Non-STEMI Septal Ischemia</td></tr><tr><td style="white-space:nowrap">9901031<a name="cs-nemsis-vitals-9901031"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">9901033<a name="cs-nemsis-vitals-9901033"> </a></td><td>Paced Rhythm</td></tr><tr><td style="white-space:nowrap">9901035<a name="cs-nemsis-vitals-9901035"> </a></td><td>PEA</td></tr><tr><td style="white-space:nowrap">9901037<a name="cs-nemsis-vitals-9901037"> </a></td><td>Premature Atrial Contractions</td></tr><tr><td style="white-space:nowrap">9901039<a name="cs-nemsis-vitals-9901039"> </a></td><td>Premature Ventricular Contractions</td></tr><tr><td style="white-space:nowrap">9901041<a name="cs-nemsis-vitals-9901041"> </a></td><td>Right Bundle Branch Block</td></tr><tr><td style="white-space:nowrap">9901043<a name="cs-nemsis-vitals-9901043"> </a></td><td>Sinus Arrhythmia</td></tr><tr><td style="white-space:nowrap">9901045<a name="cs-nemsis-vitals-9901045"> </a></td><td>Sinus Bradycardia</td></tr><tr><td style="white-space:nowrap">9901047<a name="cs-nemsis-vitals-9901047"> </a></td><td>Sinus Rhythm</td></tr><tr><td style="white-space:nowrap">9901049<a name="cs-nemsis-vitals-9901049"> </a></td><td>Sinus Tachycardia</td></tr><tr><td style="white-space:nowrap">9901051<a name="cs-nemsis-vitals-9901051"> </a></td><td>STEMI Anterior Ischemia</td></tr><tr><td style="white-space:nowrap">9901053<a name="cs-nemsis-vitals-9901053"> </a></td><td>STEMI Inferior Ischemia</td></tr><tr><td style="white-space:nowrap">9901055<a name="cs-nemsis-vitals-9901055"> </a></td><td>STEMI Lateral Ischemia</td></tr><tr><td style="white-space:nowrap">9901057<a name="cs-nemsis-vitals-9901057"> </a></td><td>STEMI Posterior Ischemia</td></tr><tr><td style="white-space:nowrap">9901058<a name="cs-nemsis-vitals-9901058"> </a></td><td>STEMI Septal Ischemia</td></tr><tr><td style="white-space:nowrap">9901059<a name="cs-nemsis-vitals-9901059"> </a></td><td>Supraventricular Tachycardia</td></tr><tr><td style="white-space:nowrap">9901061<a name="cs-nemsis-vitals-9901061"> </a></td><td>Torsades De Points</td></tr><tr><td style="white-space:nowrap">9901063<a name="cs-nemsis-vitals-9901063"> </a></td><td>Unknown AED Non-Shockable Rhythm</td></tr><tr><td style="white-space:nowrap">9901065<a name="cs-nemsis-vitals-9901065"> </a></td><td>Unknown AED Shockable Rhythm</td></tr><tr><td style="white-space:nowrap">9901067<a name="cs-nemsis-vitals-9901067"> </a></td><td>Ventricular Fibrillation</td></tr><tr><td style="white-space:nowrap">9901069<a name="cs-nemsis-vitals-9901069"> </a></td><td>Ventricular Tachycardia (With Pulse)</td></tr><tr><td style="white-space:nowrap">9901071<a name="cs-nemsis-vitals-9901071"> </a></td><td>Ventricular Tachycardia (Pulseless)</td></tr><tr><td style="white-space:nowrap">3304000<a name="cs-nemsis-vitals-3304000"> </a></td><td>2 Lead ECG (pads or paddles)</td></tr><tr><td style="white-space:nowrap">3304001<a name="cs-nemsis-vitals-3304001"> </a></td><td>3 Lead</td></tr><tr><td style="white-space:nowrap">3304003<a name="cs-nemsis-vitals-3304003"> </a></td><td>4 Lead</td></tr><tr><td style="white-space:nowrap">3304005<a name="cs-nemsis-vitals-3304005"> </a></td><td>5 Lead</td></tr><tr><td style="white-space:nowrap">3304007<a name="cs-nemsis-vitals-3304007"> </a></td><td>12 Lead-Left Sided (Normal)</td></tr><tr><td style="white-space:nowrap">3304009<a name="cs-nemsis-vitals-3304009"> </a></td><td>12 Lead-Right Sided</td></tr><tr><td style="white-space:nowrap">3304011<a name="cs-nemsis-vitals-3304011"> </a></td><td>15 Lead</td></tr><tr><td style="white-space:nowrap">3304013<a name="cs-nemsis-vitals-3304013"> </a></td><td>18 Lead</td></tr><tr><td style="white-space:nowrap">3304015<a name="cs-nemsis-vitals-3304015"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">3305001<a name="cs-nemsis-vitals-3305001"> </a></td><td>Computer Interpretation</td></tr><tr><td style="white-space:nowrap">3305003<a name="cs-nemsis-vitals-3305003"> </a></td><td>Manual Interpretation</td></tr><tr><td style="white-space:nowrap">3305005<a name="cs-nemsis-vitals-3305005"> </a></td><td>Transmission with No Interpretation</td></tr><tr><td style="white-space:nowrap">3305007<a name="cs-nemsis-vitals-3305007"> </a></td><td>Transmission with Remote Interpretation</td></tr><tr><td style="white-space:nowrap">3308001<a name="cs-nemsis-vitals-3308001"> </a></td><td>Arterial Line</td></tr><tr><td style="white-space:nowrap">3308003<a name="cs-nemsis-vitals-3308003"> </a></td><td>Doppler</td></tr><tr><td style="white-space:nowrap">3308005<a name="cs-nemsis-vitals-3308005"> </a></td><td>Cuff-Automated</td></tr><tr><td style="white-space:nowrap">3308007<a name="cs-nemsis-vitals-3308007"> </a></td><td>Cuff-Manual Auscultated</td></tr><tr><td style="white-space:nowrap">3308009<a name="cs-nemsis-vitals-3308009"> </a></td><td>Cuff-Manual Palpated Only</td></tr><tr><td style="white-space:nowrap">3308011<a name="cs-nemsis-vitals-3308011"> </a></td><td>Venous Line</td></tr><tr><td style="white-space:nowrap">3313001<a name="cs-nemsis-vitals-3313001"> </a></td><td>Irregularly Irregular</td></tr><tr><td style="white-space:nowrap">3313003<a name="cs-nemsis-vitals-3313003"> </a></td><td>Regular</td></tr><tr><td style="white-space:nowrap">3313005<a name="cs-nemsis-vitals-3313005"> </a></td><td>Regularly Irregular</td></tr><tr><td style="white-space:nowrap">3315001<a name="cs-nemsis-vitals-3315001"> </a></td><td>Apneic</td></tr><tr><td style="white-space:nowrap">3315003<a name="cs-nemsis-vitals-3315003"> </a></td><td>Labored</td></tr><tr><td style="white-space:nowrap">3315005<a name="cs-nemsis-vitals-3315005"> </a></td><td>Mechanically Assisted (BVM, CPAP, etc.)</td></tr><tr><td style="white-space:nowrap">3315007<a name="cs-nemsis-vitals-3315007"> </a></td><td>Normal</td></tr><tr><td style="white-space:nowrap">3315009<a name="cs-nemsis-vitals-3315009"> </a></td><td>Rapid</td></tr><tr><td style="white-space:nowrap">3315011<a name="cs-nemsis-vitals-3315011"> </a></td><td>Shallow</td></tr><tr><td style="white-space:nowrap">3315013<a name="cs-nemsis-vitals-3315013"> </a></td><td>Weak/Agonal</td></tr><tr><td style="white-space:nowrap">3322001<a name="cs-nemsis-vitals-3322001"> </a></td><td>Eye Obstruction Prevents Eye Assessment</td></tr><tr><td style="white-space:nowrap">3322003<a name="cs-nemsis-vitals-3322003"> </a></td><td>Initial GCS has legitimate values without interventions</td></tr><tr><td style="white-space:nowrap">3322005<a name="cs-nemsis-vitals-3322005"> </a></td><td>Patient Chemically Paralyzed</td></tr><tr><td style="white-space:nowrap">3322007<a name="cs-nemsis-vitals-3322007"> </a></td><td>Patient Chemically Sedated</td></tr><tr><td style="white-space:nowrap">3322009<a name="cs-nemsis-vitals-3322009"> </a></td><td>Patient Intubated</td></tr><tr><td style="white-space:nowrap">3326001<a name="cs-nemsis-vitals-3326001"> </a></td><td>Alert</td></tr><tr><td style="white-space:nowrap">3326003<a name="cs-nemsis-vitals-3326003"> </a></td><td>Verbal</td></tr><tr><td style="white-space:nowrap">3326005<a name="cs-nemsis-vitals-3326005"> </a></td><td>Painful</td></tr><tr><td style="white-space:nowrap">3326007<a name="cs-nemsis-vitals-3326007"> </a></td><td>Unresponsive</td></tr><tr><td style="white-space:nowrap">3328001<a name="cs-nemsis-vitals-3328001"> </a></td><td>FLACC (Face, Legs, Activity, Cry, Consolability)</td></tr><tr><td style="white-space:nowrap">3328003<a name="cs-nemsis-vitals-3328003"> </a></td><td>Numeric (0-10)</td></tr><tr><td style="white-space:nowrap">3328005<a name="cs-nemsis-vitals-3328005"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">3328007<a name="cs-nemsis-vitals-3328007"> </a></td><td>Wong-Baker (FACES)</td></tr><tr><td style="white-space:nowrap">3329001<a name="cs-nemsis-vitals-3329001"> </a></td><td>Negative</td></tr><tr><td style="white-space:nowrap">3329003<a name="cs-nemsis-vitals-3329003"> </a></td><td>Non-Conclusive</td></tr><tr><td style="white-space:nowrap">3329005<a name="cs-nemsis-vitals-3329005"> </a></td><td>Positive</td></tr><tr><td style="white-space:nowrap">3330001<a name="cs-nemsis-vitals-3330001"> </a></td><td>Cincinnati Prehospital Stroke Scale (CPSS)</td></tr><tr><td style="white-space:nowrap">3330004<a name="cs-nemsis-vitals-3330004"> </a></td><td>Los Angeles Prehospital Stroke Screen (LAPSS)</td></tr><tr><td style="white-space:nowrap">3330005<a name="cs-nemsis-vitals-3330005"> </a></td><td>Massachusetts Stroke Scale (MSS)</td></tr><tr><td style="white-space:nowrap">3330007<a name="cs-nemsis-vitals-3330007"> </a></td><td>Miami Emergency Neurologic Deficit Exam (MEND)</td></tr><tr><td style="white-space:nowrap">3330009<a name="cs-nemsis-vitals-3330009"> </a></td><td>NIH Stroke Scale (NIHSS)</td></tr><tr><td style="white-space:nowrap">3330011<a name="cs-nemsis-vitals-3330011"> </a></td><td>Other Stroke Scale Type</td></tr><tr><td style="white-space:nowrap">3330013<a name="cs-nemsis-vitals-3330013"> </a></td><td>FAST</td></tr><tr><td style="white-space:nowrap">3330015<a name="cs-nemsis-vitals-3330015"> </a></td><td>Boston Stroke Scale (BOSS)</td></tr><tr><td style="white-space:nowrap">3330017<a name="cs-nemsis-vitals-3330017"> </a></td><td>Ontario Prehospital Stroke Scale (OPSS)</td></tr><tr><td style="white-space:nowrap">3330019<a name="cs-nemsis-vitals-3330019"> </a></td><td>Melbourne Ambulance Stroke Screen (MASS)</td></tr><tr><td style="white-space:nowrap">3330021<a name="cs-nemsis-vitals-3330021"> </a></td><td>Rapid Arterial oCclusion Evaluation (RACE)</td></tr><tr><td style="white-space:nowrap">3330023<a name="cs-nemsis-vitals-3330023"> </a></td><td>Los Angeles Motor Score (LAMS)</td></tr><tr><td style="white-space:nowrap">3330025<a name="cs-nemsis-vitals-3330025"> </a></td><td>Vision, Aphasia, Neglect (VAN)</td></tr><tr><td style="white-space:nowrap">3330027<a name="cs-nemsis-vitals-3330027"> </a></td><td>FAST-ED</td></tr><tr><td style="white-space:nowrap">3330029<a name="cs-nemsis-vitals-3330029"> </a></td><td>BEFAST</td></tr><tr><td style="white-space:nowrap">3331001<a name="cs-nemsis-vitals-3331001"> </a></td><td>Definite Contraindications to Thrombolytic Use</td></tr><tr><td style="white-space:nowrap">3331003<a name="cs-nemsis-vitals-3331003"> </a></td><td>No Contraindications to Thrombolytic Use</td></tr><tr><td style="white-space:nowrap">3331005<a name="cs-nemsis-vitals-3331005"> </a></td><td>Possible Contraindications to Thrombolytic Use</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.16"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISVitals"/>
+  <title value="NEMSIS Vital Signs Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS eVitals section (NEMSIS 3.5.1.251001CP2)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="101"/>
+  <concept>
+    <code value="9901001"/>
+    <display value="Agonal/Idioventricular"/>
+  </concept>
+  <concept>
+    <code value="9901003"/>
+    <display value="Asystole"/>
+  </concept>
+  <concept>
+    <code value="9901005"/>
+    <display value="Artifact"/>
+  </concept>
+  <concept>
+    <code value="9901007"/>
+    <display value="Atrial Fibrillation"/>
+  </concept>
+  <concept>
+    <code value="9901009"/>
+    <display value="Atrial Flutter"/>
+  </concept>
+  <concept>
+    <code value="9901011"/>
+    <display value="AV Block-1st Degree"/>
+  </concept>
+  <concept>
+    <code value="9901013"/>
+    <display value="AV Block-2nd Degree-Type 1"/>
+  </concept>
+  <concept>
+    <code value="9901015"/>
+    <display value="AV Block-2nd Degree-Type 2"/>
+  </concept>
+  <concept>
+    <code value="9901017"/>
+    <display value="AV Block-3rd Degree"/>
+  </concept>
+  <concept>
+    <code value="9901019"/>
+    <display value="Junctional"/>
+  </concept>
+  <concept>
+    <code value="9901021"/>
+    <display value="Left Bundle Branch Block"/>
+  </concept>
+  <concept>
+    <code value="9901023"/>
+    <display value="Non-STEMI Anterior Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901025"/>
+    <display value="Non-STEMI Inferior Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901027"/>
+    <display value="Non-STEMI Lateral Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901029"/>
+    <display value="Non-STEMI Posterior Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901030"/>
+    <display value="Non-STEMI Septal Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901031"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="9901033"/>
+    <display value="Paced Rhythm"/>
+  </concept>
+  <concept>
+    <code value="9901035"/>
+    <display value="PEA"/>
+  </concept>
+  <concept>
+    <code value="9901037"/>
+    <display value="Premature Atrial Contractions"/>
+  </concept>
+  <concept>
+    <code value="9901039"/>
+    <display value="Premature Ventricular Contractions"/>
+  </concept>
+  <concept>
+    <code value="9901041"/>
+    <display value="Right Bundle Branch Block"/>
+  </concept>
+  <concept>
+    <code value="9901043"/>
+    <display value="Sinus Arrhythmia"/>
+  </concept>
+  <concept>
+    <code value="9901045"/>
+    <display value="Sinus Bradycardia"/>
+  </concept>
+  <concept>
+    <code value="9901047"/>
+    <display value="Sinus Rhythm"/>
+  </concept>
+  <concept>
+    <code value="9901049"/>
+    <display value="Sinus Tachycardia"/>
+  </concept>
+  <concept>
+    <code value="9901051"/>
+    <display value="STEMI Anterior Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901053"/>
+    <display value="STEMI Inferior Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901055"/>
+    <display value="STEMI Lateral Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901057"/>
+    <display value="STEMI Posterior Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901058"/>
+    <display value="STEMI Septal Ischemia"/>
+  </concept>
+  <concept>
+    <code value="9901059"/>
+    <display value="Supraventricular Tachycardia"/>
+  </concept>
+  <concept>
+    <code value="9901061"/>
+    <display value="Torsades De Points"/>
+  </concept>
+  <concept>
+    <code value="9901063"/>
+    <display value="Unknown AED Non-Shockable Rhythm"/>
+  </concept>
+  <concept>
+    <code value="9901065"/>
+    <display value="Unknown AED Shockable Rhythm"/>
+  </concept>
+  <concept>
+    <code value="9901067"/>
+    <display value="Ventricular Fibrillation"/>
+  </concept>
+  <concept>
+    <code value="9901069"/>
+    <display value="Ventricular Tachycardia (With Pulse)"/>
+  </concept>
+  <concept>
+    <code value="9901071"/>
+    <display value="Ventricular Tachycardia (Pulseless)"/>
+  </concept>
+  <concept>
+    <code value="3304000"/>
+    <display value="2 Lead ECG (pads or paddles)"/>
+  </concept>
+  <concept>
+    <code value="3304001"/>
+    <display value="3 Lead"/>
+  </concept>
+  <concept>
+    <code value="3304003"/>
+    <display value="4 Lead"/>
+  </concept>
+  <concept>
+    <code value="3304005"/>
+    <display value="5 Lead"/>
+  </concept>
+  <concept>
+    <code value="3304007"/>
+    <display value="12 Lead-Left Sided (Normal)"/>
+  </concept>
+  <concept>
+    <code value="3304009"/>
+    <display value="12 Lead-Right Sided"/>
+  </concept>
+  <concept>
+    <code value="3304011"/>
+    <display value="15 Lead"/>
+  </concept>
+  <concept>
+    <code value="3304013"/>
+    <display value="18 Lead"/>
+  </concept>
+  <concept>
+    <code value="3304015"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="3305001"/>
+    <display value="Computer Interpretation"/>
+  </concept>
+  <concept>
+    <code value="3305003"/>
+    <display value="Manual Interpretation"/>
+  </concept>
+  <concept>
+    <code value="3305005"/>
+    <display value="Transmission with No Interpretation"/>
+  </concept>
+  <concept>
+    <code value="3305007"/>
+    <display value="Transmission with Remote Interpretation"/>
+  </concept>
+  <concept>
+    <code value="3308001"/>
+    <display value="Arterial Line"/>
+  </concept>
+  <concept>
+    <code value="3308003"/>
+    <display value="Doppler"/>
+  </concept>
+  <concept>
+    <code value="3308005"/>
+    <display value="Cuff-Automated"/>
+  </concept>
+  <concept>
+    <code value="3308007"/>
+    <display value="Cuff-Manual Auscultated"/>
+  </concept>
+  <concept>
+    <code value="3308009"/>
+    <display value="Cuff-Manual Palpated Only"/>
+  </concept>
+  <concept>
+    <code value="3308011"/>
+    <display value="Venous Line"/>
+  </concept>
+  <concept>
+    <code value="3313001"/>
+    <display value="Irregularly Irregular"/>
+  </concept>
+  <concept>
+    <code value="3313003"/>
+    <display value="Regular"/>
+  </concept>
+  <concept>
+    <code value="3313005"/>
+    <display value="Regularly Irregular"/>
+  </concept>
+  <concept>
+    <code value="3315001"/>
+    <display value="Apneic"/>
+  </concept>
+  <concept>
+    <code value="3315003"/>
+    <display value="Labored"/>
+  </concept>
+  <concept>
+    <code value="3315005"/>
+    <display value="Mechanically Assisted (BVM, CPAP, etc.)"/>
+  </concept>
+  <concept>
+    <code value="3315007"/>
+    <display value="Normal"/>
+  </concept>
+  <concept>
+    <code value="3315009"/>
+    <display value="Rapid"/>
+  </concept>
+  <concept>
+    <code value="3315011"/>
+    <display value="Shallow"/>
+  </concept>
+  <concept>
+    <code value="3315013"/>
+    <display value="Weak/Agonal"/>
+  </concept>
+  <concept>
+    <code value="3322001"/>
+    <display value="Eye Obstruction Prevents Eye Assessment"/>
+  </concept>
+  <concept>
+    <code value="3322003"/>
+    <display value="Initial GCS has legitimate values without interventions"/>
+  </concept>
+  <concept>
+    <code value="3322005"/>
+    <display value="Patient Chemically Paralyzed"/>
+  </concept>
+  <concept>
+    <code value="3322007"/>
+    <display value="Patient Chemically Sedated"/>
+  </concept>
+  <concept>
+    <code value="3322009"/>
+    <display value="Patient Intubated"/>
+  </concept>
+  <concept>
+    <code value="3326001"/>
+    <display value="Alert"/>
+  </concept>
+  <concept>
+    <code value="3326003"/>
+    <display value="Verbal"/>
+  </concept>
+  <concept>
+    <code value="3326005"/>
+    <display value="Painful"/>
+  </concept>
+  <concept>
+    <code value="3326007"/>
+    <display value="Unresponsive"/>
+  </concept>
+  <concept>
+    <code value="3328001"/>
+    <display value="FLACC (Face, Legs, Activity, Cry, Consolability)"/>
+  </concept>
+  <concept>
+    <code value="3328003"/>
+    <display value="Numeric (0-10)"/>
+  </concept>
+  <concept>
+    <code value="3328005"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="3328007"/>
+    <display value="Wong-Baker (FACES)"/>
+  </concept>
+  <concept>
+    <code value="3329001"/>
+    <display value="Negative"/>
+  </concept>
+  <concept>
+    <code value="3329003"/>
+    <display value="Non-Conclusive"/>
+  </concept>
+  <concept>
+    <code value="3329005"/>
+    <display value="Positive"/>
+  </concept>
+  <concept>
+    <code value="3330001"/>
+    <display value="Cincinnati Prehospital Stroke Scale (CPSS)"/>
+  </concept>
+  <concept>
+    <code value="3330004"/>
+    <display value="Los Angeles Prehospital Stroke Screen (LAPSS)"/>
+  </concept>
+  <concept>
+    <code value="3330005"/>
+    <display value="Massachusetts Stroke Scale (MSS)"/>
+  </concept>
+  <concept>
+    <code value="3330007"/>
+    <display value="Miami Emergency Neurologic Deficit Exam (MEND)"/>
+  </concept>
+  <concept>
+    <code value="3330009"/>
+    <display value="NIH Stroke Scale (NIHSS)"/>
+  </concept>
+  <concept>
+    <code value="3330011"/>
+    <display value="Other Stroke Scale Type"/>
+  </concept>
+  <concept>
+    <code value="3330013"/>
+    <display value="FAST"/>
+  </concept>
+  <concept>
+    <code value="3330015"/>
+    <display value="Boston Stroke Scale (BOSS)"/>
+  </concept>
+  <concept>
+    <code value="3330017"/>
+    <display value="Ontario Prehospital Stroke Scale (OPSS)"/>
+  </concept>
+  <concept>
+    <code value="3330019"/>
+    <display value="Melbourne Ambulance Stroke Screen (MASS)"/>
+  </concept>
+  <concept>
+    <code value="3330021"/>
+    <display value="Rapid Arterial oCclusion Evaluation (RACE)"/>
+  </concept>
+  <concept>
+    <code value="3330023"/>
+    <display value="Los Angeles Motor Score (LAMS)"/>
+  </concept>
+  <concept>
+    <code value="3330025"/>
+    <display value="Vision, Aphasia, Neglect (VAN)"/>
+  </concept>
+  <concept>
+    <code value="3330027"/>
+    <display value="FAST-ED"/>
+  </concept>
+  <concept>
+    <code value="3330029"/>
+    <display value="BEFAST"/>
+  </concept>
+  <concept>
+    <code value="3331001"/>
+    <display value="Definite Contraindications to Thrombolytic Use"/>
+  </concept>
+  <concept>
+    <code value="3331003"/>
+    <display value="No Contraindications to Thrombolytic Use"/>
+  </concept>
+  <concept>
+    <code value="3331005"/>
+    <display value="Possible Contraindications to Thrombolytic Use"/>
+  </concept>
+</CodeSystem>

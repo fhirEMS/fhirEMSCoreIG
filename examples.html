@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Examples - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Examples</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Examples</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
+      <li><a href="#example-scenario" id="markdown-toc-example-scenario">Example Scenario</a></li>
+      <li><a href="#example-instances" id="markdown-toc-example-instances">Example Instances</a>        <ul>
+          <li><a href="#patient-and-encounter" id="markdown-toc-patient-and-encounter">Patient and Encounter</a></li>
+          <li><a href="#scene-and-destination" id="markdown-toc-scene-and-destination">Scene and Destination</a></li>
+          <li><a href="#clinical-conditions" id="markdown-toc-clinical-conditions">Clinical Conditions</a></li>
+          <li><a href="#vital-signs" id="markdown-toc-vital-signs">Vital Signs</a></li>
+          <li><a href="#physical-exam" id="markdown-toc-physical-exam">Physical Exam</a></li>
+          <li><a href="#airway-and-labs" id="markdown-toc-airway-and-labs">Airway and Labs</a></li>
+          <li><a href="#procedures-and-medications" id="markdown-toc-procedures-and-medications">Procedures and Medications</a></li>
+          <li><a href="#history-and-allergies" id="markdown-toc-history-and-allergies">History and Allergies</a></li>
+          <li><a href="#documentation-signatures-and-custom-elements" id="markdown-toc-documentation-signatures-and-custom-elements">Documentation, Signatures, and Custom Elements</a></li>
+          <li><a href="#agency-and-crew" id="markdown-toc-agency-and-crew">Agency and Crew</a></li>
+          <li><a href="#outcome" id="markdown-toc-outcome">Outcome</a></li>
+          <li><a href="#payment" id="markdown-toc-payment">Payment</a></li>
+        </ul>
+      </li>
+      <li><a href="#resource-relationship-diagram-example-set" id="markdown-toc-resource-relationship-diagram-example-set">Resource Relationship Diagram (Example Set)</a></li>
+      <li><a href="#viewing-examples" id="markdown-toc-viewing-examples">Viewing Examples</a></li>
+      <li><a href="#validation-status" id="markdown-toc-validation-status">Validation Status</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="examples">Examples</h1>
+
+<p>This page documents the example instances defined in fhirEMSCore. All examples are machine-readable FHIR instances defined using FHIR Shorthand (FSH) in <code class="language-plaintext highlighter-rouge">input/fsh/examples/</code>.</p>
+
+<hr />
+
+<h2 id="example-scenario">Example Scenario</h2>
+
+<p>The examples collectively represent a single EMS incident: a <strong>motor vehicle accident (MVA)</strong> on Interstate 15 near Murrieta, California, involving a 35-year-old male patient with chest pain and altered mental status who went into cardiac arrest during transport.</p>
+
+<p>This scenario exercises the majority of fhirEMSCore profiles and demonstrates how the resources link together in a complete PCR.</p>
+
+<hr />
+
+<h2 id="example-instances">Example Instances</h2>
+
+<h3 id="patient-and-encounter">Patient and Encounter</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-patient</code></td>
+      <td>EMSPatient</td>
+      <td>35-year-old White male, DOB 1990-01-15, with NPI-based identifier and race/ethnicity extensions</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-encounter</code></td>
+      <td>EMSEncounter</td>
+      <td>EMS response encounter, code 409971007 "Emergency medical services", period start/end set, dispatch and transport extensions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="scene-and-destination">Scene and Destination</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-location-scene</code></td>
+      <td>EMSLocationScene</td>
+      <td>MVA scene on I-15 at mile marker 62, Murrieta CA; GPS coordinates, first unit on scene, mass casualty: No</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-location-destination</code></td>
+      <td>EMSLocationDestination</td>
+      <td>Riverside University Health System Medical Center, Level I Trauma Center</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clinical-conditions">Clinical Conditions</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-condition</code></td>
+      <td>EMSCondition</td>
+      <td>Primary impression: chest pain (SNOMED 29857009), encounter-diagnosis category</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-condition-arrest</code></td>
+      <td>EMSConditionArrest</td>
+      <td>Cardiac arrest (SNOMED 410429000); full EMSArrestContext extension: VF etiology, bystander CPR, ROSC prior to ED</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-condition-injury</code></td>
+      <td>EMSConditionInjury</td>
+      <td>MVA driver injury (ICD-10-CM V89.2XXA); blunt mechanism, trauma triage criteria, restrained with airbag deployment, ACN telematics (delta-V 42 mph, PDOF 12)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-condition-problems</code></td>
+      <td>EMSConditionProblems</td>
+      <td>Hypertension history (ICD-10-CM I10); advance directives, history source, immunization, alcohol/drug indicators via EMSHistoryContext</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-medicationstatement</code></td>
+      <td>EMSMedicationStatement</td>
+      <td>Lisinopril 10 mg oral daily (RxNorm 314076); NEMSIS route and frequency codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="vital-signs">Vital Signs</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-observation-bp</code></td>
+      <td>EMSObservationBloodPressure</td>
+      <td>BP 92/60 mmHg, obtained on scene</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-heart-rate</code></td>
+      <td>EMSObservationVitalSigns</td>
+      <td>HR 110 bpm (LOINC 8867-4)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-spo2</code></td>
+      <td>EMSObservationVitalSigns</td>
+      <td>SpO2 94% (LOINC 59408-5)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-respiratory-rate</code></td>
+      <td>EMSObservationVitalSigns</td>
+      <td>RR 22 breaths/min (LOINC 9279-1)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-observation-gcs</code></td>
+      <td>EMSObservationGCS</td>
+      <td>GCS 10 (Eye 3, Verbal 3, Motor 4) — panel observation with hasMember</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="physical-exam">Physical Exam</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-exam-skin</code></td>
+      <td>EMSObservationExam</td>
+      <td>Skin: pale, diaphoretic (eExam.16)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-exam-neuro</code></td>
+      <td>EMSObservationExam</td>
+      <td>Neuro: confused, abnormal motor response (eExam.23)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="airway-and-labs">Airway and Labs</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-observation-airway</code></td>
+      <td>EMSObservationAirway</td>
+      <td>Endotracheal intubation (SNOMED 182682004); confirmed by waveform ETCO2 + auscultation; tube depth 22 cm; EMSAirwayContext populated</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-ecg-rhythm</code></td>
+      <td>Observation (R4 base)</td>
+      <td>Sinus tachycardia (eVitals.03); 12-lead, computer interpretation via EMSECGContext</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-pain-score</code></td>
+      <td>Observation (R4 base)</td>
+      <td>Pain 7/10 (LOINC 72514-3); numeric scale via EMSPainScaleType</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-stroke-scale</code></td>
+      <td>Observation (R4 base)</td>
+      <td>CPSS negative (eVitals.29); EMSStrokeScaleContext + NDR-002 pertinent negative</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-observation-labs</code></td>
+      <td>EMSObservationLabs</td>
+      <td>Point-of-care blood glucose 142 mg/dL (LOINC 59469-7)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="procedures-and-medications">Procedures and Medications</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-procedure</code></td>
+      <td>EMSProcedure</td>
+      <td>IV access (SNOMED 269997006); completed; performed by EMSPractitioner</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-medicationadministration</code></td>
+      <td>EMSMedicationAdministration</td>
+      <td>Normal saline 500 mL IV bolus (RxNorm 313002)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="history-and-allergies">History and Allergies</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-allergyintolerance</code></td>
+      <td>EMSAllergyIntolerance</td>
+      <td>Penicillin allergy (RxNorm 7980), documented onset unknown; mild rash reaction</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="documentation-signatures-and-custom-elements">Documentation, Signatures, and Custom Elements</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-documentreference</code></td>
+      <td>EMSDocumentReference</td>
+      <td>12-lead ECG PDF attachment; LOINC 11524-6 + NEMSIS 4509009</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-provenance</code></td>
+      <td>EMSProvenance</td>
+      <td>Transfer-of-care signature by primary care provider; signed, PNG graphic</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-questionnaire</code></td>
+      <td>EMSQuestionnaire</td>
+      <td>Agency custom element: ambulance decontaminated after transport</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-questionnaireresponse</code></td>
+      <td>EMSQuestionnaireResponse</td>
+      <td>Answer: Yes, with PCR correlation ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="agency-and-crew">Agency and Crew</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-organization</code></td>
+      <td>EMSOrganization</td>
+      <td>Riverside County Fire Department EMS, NPI-2 identifier, CA license number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-practitioner</code></td>
+      <td>EMSPractitioner</td>
+      <td>Paramedic John Smith, NPI, CA EMS certificate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-practitionerrole</code></td>
+      <td>EMSPractitionerRole</td>
+      <td>Paramedic (SNOMED 9925007) role, cert level: Paramedic</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-device-vehicle</code></td>
+      <td>EMSDevice</td>
+      <td>Medic 7 vehicle; unit number (official), VIN (secondary), call sign (usual)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-location-agency</code></td>
+      <td>EMSLocationAgency</td>
+      <td>Fire Station 7, Murrieta CA; GPS + USNG, station number</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="outcome">Outcome</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-observation-outcome</code></td>
+      <td>EMSObservationOutcome</td>
+      <td>ED admission disposition 01 (admitted to hospital); hospital admit confirmed; ICD-10-CM S09.90XA diagnosis; ISS=9</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="payment">Payment</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Id</th>
+      <th>Profile</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-coverage</code></td>
+      <td>EMSCoverage</td>
+      <td>Medicare Part B primary insurance; policy ID, insured = patient (self), priority 1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ex-ems-claim</code></td>
+      <td>EMSClaim</td>
+      <td>CMS ALS Level 1 Emergency ambulance claim; Medicare primary; transport assessment codes; physician certification flag</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="resource-relationship-diagram-example-set">Resource Relationship Diagram (Example Set)</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ex-ems-composition
+├── subject         → ex-ems-patient
+├── encounter       → ex-ems-encounter
+│     ├── location  → ex-ems-location-scene
+│     └── location  → ex-ems-location-destination
+├── section[conditions]
+│     ├──            → ex-ems-condition (chest pain)
+│     └──            → ex-ems-condition-arrest (cardiac arrest)
+├── section[vitals]
+│     ├──            → ex-ems-observation-bp
+│     ├──            → ex-ems-heart-rate
+│     ├──            → ex-ems-spo2
+│     ├──            → ex-ems-respiratory-rate
+│     └──            → ex-ems-observation-gcs
+├── section[exam]
+│     ├──            → ex-ems-exam-skin
+│     └──            → ex-ems-exam-neuro
+├── section[airway]
+│     └──            → ex-ems-observation-airway
+├── section[labs]
+│     └──            → ex-ems-observation-labs
+├── section[procedures]
+│     └──            → ex-ems-procedure
+├── section[medications]
+│     └──            → ex-ems-medicationadministration
+├── section[allergy]
+│     └──            → ex-ems-allergyintolerance
+├── section[outcome]
+│     └──            → ex-ems-observation-outcome
+├── author          → ex-ems-practitioner
+│                   → ex-ems-organization
+└── section[payment]
+      ├──           → ex-ems-coverage
+      └──           → ex-ems-claim
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="viewing-examples">Viewing Examples</h2>
+
+<p>All example instances are included in the <code class="language-plaintext highlighter-rouge">fsh-generated/resources/</code> directory after SUSHI compilation. They can be browsed in the Artifacts section of this IG or downloaded in JSON or XML format from the <a href="downloads.html">Downloads</a> page.</p>
+
+<hr />
+
+<h2 id="validation-status">Validation Status</h2>
+
+<p>All examples compile with SUSHI (0 errors, 0 warnings) and validate through the full IG Publisher pipeline against FHIR R4, US Core 6.1.0, and the profiles in this guide (0 errors, 0 warnings, 0 broken links).</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

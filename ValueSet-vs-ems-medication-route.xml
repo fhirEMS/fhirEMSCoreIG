@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-medication-route"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-medication-route</b></p><a name="vs-ems-medication-route"> </a><a name="hcvs-ems-medication-route"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-medications.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927001">9927001</a></td><td>Blow-By</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927003">9927003</a></td><td>Buccal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927005">9927005</a></td><td>Endotracheal Tube (ET)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927007">9927007</a></td><td>Gastrostomy Tube</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927009">9927009</a></td><td>Inhalation</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927011">9927011</a></td><td>Intraarterial</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927013">9927013</a></td><td>Intradermal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927015">9927015</a></td><td>Intramuscular (IM)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927017">9927017</a></td><td>Intranasal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927019">9927019</a></td><td>Intraocular</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927021">9927021</a></td><td>Intraosseous (IO)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927023">9927023</a></td><td>Intravenous (IV)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927025">9927025</a></td><td>Nasal Cannula</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927027">9927027</a></td><td>Nasogastric</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927029">9927029</a></td><td>Nasotracheal Tube</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927031">9927031</a></td><td>Non-Rebreather Mask</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927033">9927033</a></td><td>Ophthalmic</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927035">9927035</a></td><td>Oral</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927037">9927037</a></td><td>Other/miscellaneous</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927039">9927039</a></td><td>Otic</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927041">9927041</a></td><td>Re-breather mask</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927043">9927043</a></td><td>Rectal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927045">9927045</a></td><td>Subcutaneous</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927047">9927047</a></td><td>Sublingual</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927049">9927049</a></td><td>Topical</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927051">9927051</a></td><td>Tracheostomy</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927053">9927053</a></td><td>Transdermal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927055">9927055</a></td><td>Urethral</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927057">9927057</a></td><td>Ventimask</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927059">9927059</a></td><td>Wound</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927061">9927061</a></td><td>Portacath</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927063">9927063</a></td><td>Auto Injector</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927065">9927065</a></td><td>BVM</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927067">9927067</a></td><td>CPAP</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927069">9927069</a></td><td>IV Pump</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927071">9927071</a></td><td>Nebulizer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927073">9927073</a></td><td>Umbilical Artery Catheter</td></tr><tr><td><a href="CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927075">9927075</a></td><td>Umbilical Venous Catheter</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-route"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.87"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSMedicationRouteVS"/>
+  <title value="EMS Medication Administered Route"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eMedications.04 - The route by which the medication was administered."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+      <concept>
+        <code value="9927001"/>
+        <display value="Blow-By"/>
+      </concept>
+      <concept>
+        <code value="9927003"/>
+        <display value="Buccal"/>
+      </concept>
+      <concept>
+        <code value="9927005"/>
+        <display value="Endotracheal Tube (ET)"/>
+      </concept>
+      <concept>
+        <code value="9927007"/>
+        <display value="Gastrostomy Tube"/>
+      </concept>
+      <concept>
+        <code value="9927009"/>
+        <display value="Inhalation"/>
+      </concept>
+      <concept>
+        <code value="9927011"/>
+        <display value="Intraarterial"/>
+      </concept>
+      <concept>
+        <code value="9927013"/>
+        <display value="Intradermal"/>
+      </concept>
+      <concept>
+        <code value="9927015"/>
+        <display value="Intramuscular (IM)"/>
+      </concept>
+      <concept>
+        <code value="9927017"/>
+        <display value="Intranasal"/>
+      </concept>
+      <concept>
+        <code value="9927019"/>
+        <display value="Intraocular"/>
+      </concept>
+      <concept>
+        <code value="9927021"/>
+        <display value="Intraosseous (IO)"/>
+      </concept>
+      <concept>
+        <code value="9927023"/>
+        <display value="Intravenous (IV)"/>
+      </concept>
+      <concept>
+        <code value="9927025"/>
+        <display value="Nasal Cannula"/>
+      </concept>
+      <concept>
+        <code value="9927027"/>
+        <display value="Nasogastric"/>
+      </concept>
+      <concept>
+        <code value="9927029"/>
+        <display value="Nasotracheal Tube"/>
+      </concept>
+      <concept>
+        <code value="9927031"/>
+        <display value="Non-Rebreather Mask"/>
+      </concept>
+      <concept>
+        <code value="9927033"/>
+        <display value="Ophthalmic"/>
+      </concept>
+      <concept>
+        <code value="9927035"/>
+        <display value="Oral"/>
+      </concept>
+      <concept>
+        <code value="9927037"/>
+        <display value="Other/miscellaneous"/>
+      </concept>
+      <concept>
+        <code value="9927039"/>
+        <display value="Otic"/>
+      </concept>
+      <concept>
+        <code value="9927041"/>
+        <display value="Re-breather mask"/>
+      </concept>
+      <concept>
+        <code value="9927043"/>
+        <display value="Rectal"/>
+      </concept>
+      <concept>
+        <code value="9927045"/>
+        <display value="Subcutaneous"/>
+      </concept>
+      <concept>
+        <code value="9927047"/>
+        <display value="Sublingual"/>
+      </concept>
+      <concept>
+        <code value="9927049"/>
+        <display value="Topical"/>
+      </concept>
+      <concept>
+        <code value="9927051"/>
+        <display value="Tracheostomy"/>
+      </concept>
+      <concept>
+        <code value="9927053"/>
+        <display value="Transdermal"/>
+      </concept>
+      <concept>
+        <code value="9927055"/>
+        <display value="Urethral"/>
+      </concept>
+      <concept>
+        <code value="9927057"/>
+        <display value="Ventimask"/>
+      </concept>
+      <concept>
+        <code value="9927059"/>
+        <display value="Wound"/>
+      </concept>
+      <concept>
+        <code value="9927061"/>
+        <display value="Portacath"/>
+      </concept>
+      <concept>
+        <code value="9927063"/>
+        <display value="Auto Injector"/>
+      </concept>
+      <concept>
+        <code value="9927065"/>
+        <display value="BVM"/>
+      </concept>
+      <concept>
+        <code value="9927067"/>
+        <display value="CPAP"/>
+      </concept>
+      <concept>
+        <code value="9927069"/>
+        <display value="IV Pump"/>
+      </concept>
+      <concept>
+        <code value="9927071"/>
+        <display value="Nebulizer"/>
+      </concept>
+      <concept>
+        <code value="9927073"/>
+        <display value="Umbilical Artery Catheter"/>
+      </concept>
+      <concept>
+        <code value="9927075"/>
+        <display value="Umbilical Venous Catheter"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

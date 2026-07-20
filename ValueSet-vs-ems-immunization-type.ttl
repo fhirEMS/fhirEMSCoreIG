@@ -1,0 +1,177 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-immunization-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-immunization-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-immunization-type</b></p><a name=\"vs-ems-immunization-type\"> </a><a name=\"hcvs-ems-immunization-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-history.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910001\">9910001</a></td><td>Anthrax</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910003\">9910003</a></td><td>Cholera</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910005\">9910005</a></td><td>DPT / TDaP (Diphtheria, Pertussis, Tetanus)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910007\">9910007</a></td><td>Hemophilus Influenza B</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910009\">9910009</a></td><td>Hepatitis A</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910011\">9910011</a></td><td>Hepatitis B</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910013\">9910013</a></td><td>Human Papilloma Virus (HPV)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910015\">9910015</a></td><td>Influenza-H1N1</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910017\">9910017</a></td><td>Influenza-Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910019\">9910019</a></td><td>Influenza-Seasonal (In past 12 months)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910021\">9910021</a></td><td>Lyme Disease</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910023\">9910023</a></td><td>Meningococcus</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910025\">9910025</a></td><td>MMR (Measles, Mumps, Rubella)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910027\">9910027</a></td><td>Other-Not Listed</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910029\">9910029</a></td><td>Plague</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910031\">9910031</a></td><td>Pneumococcal (Pneumonia)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910033\">9910033</a></td><td>Polio</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910035\">9910035</a></td><td>Rabies</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910037\">9910037</a></td><td>Rotavirus</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910039\">9910039</a></td><td>Shingles</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910041\">9910041</a></td><td>Small Pox</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910043\">9910043</a></td><td>Tetanus</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910045\">9910045</a></td><td>Tuberculosis</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910047\">9910047</a></td><td>Typhoid</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910049\">9910049</a></td><td>Varicella (Chickenpox)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910051\">9910051</a></td><td>Yellow Fever</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-history.html#cs-nemsis-history-9910053\">9910053</a></td><td>None</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-immunization-type"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.132" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSImmunizationTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Immunization Type VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "The patient's immunization history type (eHistory.10)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anthrax" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cholera" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DPT / TDaP (Diphtheria, Pertussis, Tetanus)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemophilus Influenza B" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis A" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis B" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human Papilloma Virus (HPV)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Influenza-H1N1" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Influenza-Other" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Influenza-Seasonal (In past 12 months)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyme Disease" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Meningococcus" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MMR (Measles, Mumps, Rubella)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other-Not Listed" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plague" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pneumococcal (Pneumonia)" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polio" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rabies" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rotavirus" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Shingles" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Small Pox" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tetanus" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tuberculosis" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Typhoid" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Varicella (Chickenpox)" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yellow Fever" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9910053" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "None" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-immunization-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

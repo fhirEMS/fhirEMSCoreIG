@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-sex",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-sex</b></p><a name=\"vs-ems-sex\"> </a><a name=\"hcvs-ems-sex\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-nemsis-patient.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-9919001\">9919001</a></td><td>Female</td><td>NEMSIS ePatient.25: Female sex as documented at the time of the EMS encounter.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-9919003\">9919003</a></td><td>Male</td><td>NEMSIS ePatient.25: Male sex as documented at the time of the EMS encounter.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-9919005\">9919005</a></td><td>Unknown</td><td>NEMSIS ePatient.25: Sex is unknown or unable to be determined.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-sex",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.114"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSSexVS",
+  "title" : "EMS Sex",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS ePatient.25 - The patient's sex as recorded by EMS.\nUsed for documentation and mapping to Patient.gender and the us-core-birthsex extension.\nNote: ePatient.13 (Gender) is DEPRECATED in NEMSIS 3.5.1.251001CP2 — use ePatient.25 (Sex) instead.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient",
+      "concept" : [{
+        "code" : "9919001",
+        "display" : "Female"
+      },
+      {
+        "code" : "9919003",
+        "display" : "Male"
+      },
+      {
+        "code" : "9919005",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

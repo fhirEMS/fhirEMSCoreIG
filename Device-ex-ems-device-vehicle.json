@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Device",
+  "id" : "ex-ems-device-vehicle",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-device-vehicle"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device ex-ems-device-vehicle</b></p><a name=\"ex-ems-device-vehicle\"> </a><a name=\"hcex-ems-device-vehicle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-device-vehicle.html\">EMS Vehicle Device</a></p></div><p><b>identifier</b>: Visit number/4321\u00a0(use:\u00a0official,\u00a0), <a href=\"NamingSystem-ns-ems-vin.html\" title=\"Identifier system for the Vehicle Identification Number (VIN) as used in EMS vehicle (dVehicle.02) records within the fhirEMSCore Implementation Guide.\">EMSVehicleVIN</a>/1FDFE4FS0GDA12345\u00a0(use:\u00a0secondary,\u00a0), <code>http://example.org/ems/callsigns</code>/Medic 21\u00a0(use:\u00a0usual,\u00a0)</p><p><b>manufactureDate</b>: 2022-01-01</p><p><b>type</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 1404001}\">Ambulance</span></p><p><b>owner</b>: <a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "VN"
+      }]
+    },
+    "system" : "http://example.org/ems/units",
+    "value" : "4321"
+  },
+  {
+    "use" : "secondary",
+    "system" : "https://fhirems.github.io/fhirEMSCoreIG/identifier/vin",
+    "value" : "1FDFE4FS0GDA12345"
+  },
+  {
+    "use" : "usual",
+    "system" : "http://example.org/ems/callsigns",
+    "value" : "Medic 21"
+  }],
+  "manufactureDate" : "2022-01-01",
+  "type" : {
+    "coding" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+      "code" : "1404001",
+      "display" : "Ambulance"
+    }]
+  },
+  "owner" : {
+    "reference" : "Organization/ex-ems-organization-agency"
+  }
+}

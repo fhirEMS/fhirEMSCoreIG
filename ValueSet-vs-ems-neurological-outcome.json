@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-neurological-outcome",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-neurological-outcome</b></p><a name=\"vs-ems-neurological-outcome\"> </a><a name=\"hcvs-ems-neurological-outcome\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-arrest.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3013001\">3013001</a></td><td>CPC 1 Good Cerebral Performance</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3013003\">3013003</a></td><td>CPC 2 Moderate Cerebral Disability</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3013005\">3013005</a></td><td>CPC 3 Severe Cerebral Disability</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3013007\">3013007</a></td><td>CPC 4 Coma or Vegetative State</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-neurological-outcome",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.88"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSNeurologicalOutcomeVS",
+  "title" : "EMS Neurological Outcome VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Cerebral performance category (CPC) at hospital discharge (eArrest.13).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest",
+      "concept" : [{
+        "code" : "3013001",
+        "display" : "CPC 1 Good Cerebral Performance"
+      },
+      {
+        "code" : "3013003",
+        "display" : "CPC 2 Moderate Cerebral Disability"
+      },
+      {
+        "code" : "3013005",
+        "display" : "CPC 3 Severe Cerebral Disability"
+      },
+      {
+        "code" : "3013007",
+        "display" : "CPC 4 Coma or Vegetative State"
+      }]
+    }]
+  }
+}

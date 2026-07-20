@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insured-relationship> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-insured-relationship"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-insured-relationship</b></p><a name=\"vs-ems-insured-relationship\"> </a><a name=\"hcvs-ems-insured-relationship\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-payment.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622001\">2622001</a></td><td>Self</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622003\">2622003</a></td><td>Spouse</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622005\">2622005</a></td><td>Child/Dependent</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622009\">2622009</a></td><td>Cadaver Donor</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622011\">2622011</a></td><td>Employee</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622013\">2622013</a></td><td>Life/Domestic Partner</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622015\">2622015</a></td><td>Organ Donor</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622017\">2622017</a></td><td>Unknown</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2622019\">2622019</a></td><td>Other Relationship</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insured-relationship"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.80" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSInsuredRelationshipVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Insured Relationship VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Patient's relationship to the insured (ePayment.22)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Self" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spouse" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Child/Dependent" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cadaver Donor" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Employee" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Life/Domestic Partner" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Organ Donor" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2622019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Relationship" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insured-relationship.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

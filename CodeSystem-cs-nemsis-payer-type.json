@@ -1,0 +1,137 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-nemsis-payer-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-payer-type</b></p><a name=\"cs-nemsis-payer-type\"> </a><a name=\"hccs-nemsis-payer-type\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"cs-nemsis-payer-type-11\"> </a></td><td>Other Non-Federal Programs</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-nemsis-payer-type-12\"> </a></td><td>Preferred Provider Organization (PPO)</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"cs-nemsis-payer-type-13\"> </a></td><td>Point of Service (POS)</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"cs-nemsis-payer-type-14\"> </a></td><td>Exclusive Provider Organization (EPO)</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"cs-nemsis-payer-type-15\"> </a></td><td>Indemnity Insurance</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"cs-nemsis-payer-type-16\"> </a></td><td>Health Maintenance Organization (HMO) Medicare Risk</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"cs-nemsis-payer-type-17\"> </a></td><td>Dental Maintenance Organization</td></tr><tr><td style=\"white-space:nowrap\">AM<a name=\"cs-nemsis-payer-type-AM\"> </a></td><td>Automobile Medical</td></tr><tr><td style=\"white-space:nowrap\">BL<a name=\"cs-nemsis-payer-type-BL\"> </a></td><td>Blue Cross/Blue Shield</td></tr><tr><td style=\"white-space:nowrap\">CH<a name=\"cs-nemsis-payer-type-CH\"> </a></td><td>Champus</td></tr><tr><td style=\"white-space:nowrap\">CI<a name=\"cs-nemsis-payer-type-CI\"> </a></td><td>Commercial Insurance Co.</td></tr><tr><td style=\"white-space:nowrap\">DS<a name=\"cs-nemsis-payer-type-DS\"> </a></td><td>Disability</td></tr><tr><td style=\"white-space:nowrap\">FI<a name=\"cs-nemsis-payer-type-FI\"> </a></td><td>Federal Employees Program</td></tr><tr><td style=\"white-space:nowrap\">HM<a name=\"cs-nemsis-payer-type-HM\"> </a></td><td>Health Maintenance Organization</td></tr><tr><td style=\"white-space:nowrap\">LM<a name=\"cs-nemsis-payer-type-LM\"> </a></td><td>Liability Medical</td></tr><tr><td style=\"white-space:nowrap\">MA<a name=\"cs-nemsis-payer-type-MA\"> </a></td><td>Medicare Part A</td></tr><tr><td style=\"white-space:nowrap\">MB<a name=\"cs-nemsis-payer-type-MB\"> </a></td><td>Medicare Part B</td></tr><tr><td style=\"white-space:nowrap\">MC<a name=\"cs-nemsis-payer-type-MC\"> </a></td><td>Medicaid</td></tr><tr><td style=\"white-space:nowrap\">OF<a name=\"cs-nemsis-payer-type-OF\"> </a></td><td>Other Federal Program</td></tr><tr><td style=\"white-space:nowrap\">TV<a name=\"cs-nemsis-payer-type-TV\"> </a></td><td>Title V</td></tr><tr><td style=\"white-space:nowrap\">VA<a name=\"cs-nemsis-payer-type-VA\"> </a></td><td>Veteran Affairs Plan</td></tr><tr><td style=\"white-space:nowrap\">WC<a name=\"cs-nemsis-payer-type-WC\"> </a></td><td>Workers' Compensation Health Claim</td></tr><tr><td style=\"white-space:nowrap\">ZZ<a name=\"cs-nemsis-payer-type-ZZ\"> </a></td><td>Mutually Defined</td></tr></table></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.1.10"
+  }],
+  "version" : "0.2.0",
+  "name" : "NEMSISPayerType",
+  "title" : "NEMSIS ePayment Payer Type Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "X12 payer type codes used in NEMSIS ePayment.57 to identify the type of insurance payer.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 23,
+  "concept" : [{
+    "code" : "11",
+    "display" : "Other Non-Federal Programs"
+  },
+  {
+    "code" : "12",
+    "display" : "Preferred Provider Organization (PPO)"
+  },
+  {
+    "code" : "13",
+    "display" : "Point of Service (POS)"
+  },
+  {
+    "code" : "14",
+    "display" : "Exclusive Provider Organization (EPO)"
+  },
+  {
+    "code" : "15",
+    "display" : "Indemnity Insurance"
+  },
+  {
+    "code" : "16",
+    "display" : "Health Maintenance Organization (HMO) Medicare Risk"
+  },
+  {
+    "code" : "17",
+    "display" : "Dental Maintenance Organization"
+  },
+  {
+    "code" : "AM",
+    "display" : "Automobile Medical"
+  },
+  {
+    "code" : "BL",
+    "display" : "Blue Cross/Blue Shield"
+  },
+  {
+    "code" : "CH",
+    "display" : "Champus"
+  },
+  {
+    "code" : "CI",
+    "display" : "Commercial Insurance Co."
+  },
+  {
+    "code" : "DS",
+    "display" : "Disability"
+  },
+  {
+    "code" : "FI",
+    "display" : "Federal Employees Program"
+  },
+  {
+    "code" : "HM",
+    "display" : "Health Maintenance Organization"
+  },
+  {
+    "code" : "LM",
+    "display" : "Liability Medical"
+  },
+  {
+    "code" : "MA",
+    "display" : "Medicare Part A"
+  },
+  {
+    "code" : "MB",
+    "display" : "Medicare Part B"
+  },
+  {
+    "code" : "MC",
+    "display" : "Medicaid"
+  },
+  {
+    "code" : "OF",
+    "display" : "Other Federal Program"
+  },
+  {
+    "code" : "TV",
+    "display" : "Title V"
+  },
+  {
+    "code" : "VA",
+    "display" : "Veteran Affairs Plan"
+  },
+  {
+    "code" : "WC",
+    "display" : "Workers' Compensation Health Claim"
+  },
+  {
+    "code" : "ZZ",
+    "display" : "Mutually Defined"
+  }]
+}

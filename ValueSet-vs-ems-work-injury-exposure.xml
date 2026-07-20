@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-work-injury-exposure"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-work-injury-exposure</b></p><a name="vs-ems-work-injury-exposure"> </a><a name="hcvs-ems-work-injury-exposure"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-other.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506001">4506001</a></td><td>Death-Cardiac Arrest</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506003">4506003</a></td><td>Death-Injury Related</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506005">4506005</a></td><td>Death-Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506007">4506007</a></td><td>Exposure-Airborne Respiratory/Biological/Aerosolized Secretions</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506009">4506009</a></td><td>Exposure-Body Fluid Contact to Broken Skin</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506011">4506011</a></td><td>Exposure-Body Fluid Contact with Eye</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506013">4506013</a></td><td>Exposure-Body Fluid Contact with Intact Skin</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506015">4506015</a></td><td>Exposure-Body Fluid Contact with Mucosal Surface</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506017">4506017</a></td><td>Exposure-Needle Stick with Body Fluid Injection</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506019">4506019</a></td><td>Exposure-Needle Stick without Body Fluid Injection</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506021">4506021</a></td><td>Exposure-Toxin/Chemical/Hazmat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506023">4506023</a></td><td>Injury-Lifting/Back/Musculoskeletal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506025">4506025</a></td><td>Injury-Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506027">4506027</a></td><td>None</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506029">4506029</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506031">4506031</a></td><td>Violence-Offensive, Intimidating, or Hateful Language</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506033">4506033</a></td><td>Violence-Physical Threat, or Threatening Behavior</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506035">4506035</a></td><td>Violence-Physical Attack or Attempt to Attack</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506037">4506037</a></td><td>Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506039">4506039</a></td><td>Violence-Unwanted Touching of a Sexual Nature</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4506041">4506041</a></td><td>Struck by Vehicle Along Roadway</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-work-injury-exposure"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.139"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSWorkInjuryExposureVS"/>
+  <title value="EMS WorkInjuryExposure VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Type of crew work-related injury, death, or suspected exposure (eOther.06)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+      <concept>
+        <code value="4506001"/>
+        <display value="Death-Cardiac Arrest"/>
+      </concept>
+      <concept>
+        <code value="4506003"/>
+        <display value="Death-Injury Related"/>
+      </concept>
+      <concept>
+        <code value="4506005"/>
+        <display value="Death-Other"/>
+      </concept>
+      <concept>
+        <code value="4506007"/>
+        <display value="Exposure-Airborne Respiratory/Biological/Aerosolized Secretions"/>
+      </concept>
+      <concept>
+        <code value="4506009"/>
+        <display value="Exposure-Body Fluid Contact to Broken Skin"/>
+      </concept>
+      <concept>
+        <code value="4506011"/>
+        <display value="Exposure-Body Fluid Contact with Eye"/>
+      </concept>
+      <concept>
+        <code value="4506013"/>
+        <display value="Exposure-Body Fluid Contact with Intact Skin"/>
+      </concept>
+      <concept>
+        <code value="4506015"/>
+        <display value="Exposure-Body Fluid Contact with Mucosal Surface"/>
+      </concept>
+      <concept>
+        <code value="4506017"/>
+        <display value="Exposure-Needle Stick with Body Fluid Injection"/>
+      </concept>
+      <concept>
+        <code value="4506019"/>
+        <display value="Exposure-Needle Stick without Body Fluid Injection"/>
+      </concept>
+      <concept>
+        <code value="4506021"/>
+        <display value="Exposure-Toxin/Chemical/Hazmat"/>
+      </concept>
+      <concept>
+        <code value="4506023"/>
+        <display value="Injury-Lifting/Back/Musculoskeletal"/>
+      </concept>
+      <concept>
+        <code value="4506025"/>
+        <display value="Injury-Other"/>
+      </concept>
+      <concept>
+        <code value="4506027"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="4506029"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="4506031"/>
+        <display value="Violence-Offensive, Intimidating, or Hateful Language"/>
+      </concept>
+      <concept>
+        <code value="4506033"/>
+        <display value="Violence-Physical Threat, or Threatening Behavior"/>
+      </concept>
+      <concept>
+        <code value="4506035"/>
+        <display value="Violence-Physical Attack or Attempt to Attack"/>
+      </concept>
+      <concept>
+        <code value="4506037"/>
+        <display value="Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures"/>
+      </concept>
+      <concept>
+        <code value="4506039"/>
+        <display value="Violence-Unwanted Touching of a Sexual Nature"/>
+      </concept>
+      <concept>
+        <code value="4506041"/>
+        <display value="Struck by Vehicle Along Roadway"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

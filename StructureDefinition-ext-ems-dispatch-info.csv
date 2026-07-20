@@ -1,0 +1,87 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","EMS Dispatch Information","Captures NEMSIS eDispatch supplementary fields: EMD performed (eDispatch.02, Required/National), EMD determinant code (eDispatch.03), dispatch center (eDispatch.04), dispatch priority (eDispatch.05), and CAD record ID (eDispatch.06).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Extension.extension","Extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Extension.extension:emdPerformed","Extension.extension","emdPerformed","","",0,1,"Y","","","Extension {[]} {[]}
+","eDispatch.02 - EMD Performed","An Extension","NEMSIS eDispatch.02. Usage: Required/National. Nillable. NV: NotRecorded, NotApplicable. Whether Emergency Medical Dispatch pre-arrival instructions were provided.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:emdPerformed.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Extension.extension:emdPerformed.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:emdPerformed.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""emdPerformed""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.extension:emdPerformed.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-emd-performed","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Extension.extension:emdDeterminant","Extension.extension","emdDeterminant","","",0,1,"","","","Extension {[]} {[]}
+","eDispatch.03 - EMD Determinant Code","An Extension","NEMSIS eDispatch.03. Usage: Optional. The alphanumeric EMD determinant code (e.g., MPDS/IAED code) assigned by the dispatch system.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:emdDeterminant.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Extension.extension:emdDeterminant.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:emdDeterminant.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""emdDeterminant""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.extension:emdDeterminant.value[x]","Extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Extension.extension:dispatchCenterNameOrId","Extension.extension","dispatchCenterNameOrId","","",0,1,"","","","Extension {[]} {[]}
+","eDispatch.04 - Dispatch Center Name or ID","An Extension","NEMSIS eDispatch.04. Usage: Optional. The name or identifier of the dispatch center.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:dispatchCenterNameOrId.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Extension.extension:dispatchCenterNameOrId.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:dispatchCenterNameOrId.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""dispatchCenterNameOrId""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.extension:dispatchCenterNameOrId.value[x]","Extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Extension.extension:dispatchPriority","Extension.extension","dispatchPriority","","",0,1,"Y","","","Extension {[]} {[]}
+","eDispatch.05 - Dispatch Priority (Patient Acuity)","An Extension","NEMSIS eDispatch.05. Usage: Optional. The acuity level as assigned at the time of dispatch.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:dispatchPriority.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Extension.extension:dispatchPriority.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:dispatchPriority.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""dispatchPriority""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.extension:dispatchPriority.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-dispatch-priority","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Extension.extension:cadRecordId","Extension.extension","cadRecordId","","",0,1,"","","","Extension {[]} {[]}
+","eDispatch.06 - Unit Dispatched CAD Record ID","An Extension","NEMSIS eDispatch.06. Usage: Optional. The Computer Aided Dispatch record identifier for this unit's response.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:cadRecordId.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Extension.extension:cadRecordId.extension","Extension.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension:cadRecordId.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""cadRecordId""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.extension:cadRecordId.value[x]","Extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-info""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"

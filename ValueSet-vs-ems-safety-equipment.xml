@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-safety-equipment"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-safety-equipment</b></p><a name="vs-ems-safety-equipment"> </a><a name="hcvs-ems-safety-equipment"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-injury.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907001">2907001</a></td><td>Child Booster Seat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907003">2907003</a></td><td>Eye Protection</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907005">2907005</a></td><td>Helmet Worn</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907007">2907007</a></td><td>Infant Car Seat Forward Facing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907009">2907009</a></td><td>Infant Car Seat Rear Facing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907015">2907015</a></td><td>None</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907017">2907017</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907019">2907019</a></td><td>Personal Floatation Device</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907021">2907021</a></td><td>Protective Clothing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907023">2907023</a></td><td>Protective Non-Clothing Gear</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907027">2907027</a></td><td>Shoulder and Lap Belt Used</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907029">2907029</a></td><td>Lap Belt Only Used</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907031">2907031</a></td><td>Shoulder Belt Only Used</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2907033">2907033</a></td><td>Unable to Determine</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-safety-equipment"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.111"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSSafetyEquipmentVS"/>
+  <title value="EMS Occupant Safety Equipment VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Occupant safety equipment in use by the patient at the time of the injury (eInjury.07)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury"/>
+      <concept>
+        <code value="2907001"/>
+        <display value="Child Booster Seat"/>
+      </concept>
+      <concept>
+        <code value="2907003"/>
+        <display value="Eye Protection"/>
+      </concept>
+      <concept>
+        <code value="2907005"/>
+        <display value="Helmet Worn"/>
+      </concept>
+      <concept>
+        <code value="2907007"/>
+        <display value="Infant Car Seat Forward Facing"/>
+      </concept>
+      <concept>
+        <code value="2907009"/>
+        <display value="Infant Car Seat Rear Facing"/>
+      </concept>
+      <concept>
+        <code value="2907015"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="2907017"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="2907019"/>
+        <display value="Personal Floatation Device"/>
+      </concept>
+      <concept>
+        <code value="2907021"/>
+        <display value="Protective Clothing"/>
+      </concept>
+      <concept>
+        <code value="2907023"/>
+        <display value="Protective Non-Clothing Gear"/>
+      </concept>
+      <concept>
+        <code value="2907027"/>
+        <display value="Shoulder and Lap Belt Used"/>
+      </concept>
+      <concept>
+        <code value="2907029"/>
+        <display value="Lap Belt Only Used"/>
+      </concept>
+      <concept>
+        <code value="2907031"/>
+        <display value="Shoulder Belt Only Used"/>
+      </concept>
+      <concept>
+        <code value="2907033"/>
+        <display value="Unable to Determine"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

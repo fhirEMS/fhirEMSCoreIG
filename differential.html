@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NEMSIS vs US Core Differential - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>NEMSIS vs US Core Differential</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>NEMSIS vs US Core Differential</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#nemsis-vs-us-core-differential" id="markdown-toc-nemsis-vs-us-core-differential">NEMSIS vs US Core Differential</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#patient-demographics" id="markdown-toc-patient-demographics">Patient Demographics</a></li>
+      <li><a href="#temporal-model" id="markdown-toc-temporal-model">Temporal Model</a></li>
+      <li><a href="#coding-systems" id="markdown-toc-coding-systems">Coding Systems</a></li>
+      <li><a href="#null-value-handling" id="markdown-toc-null-value-handling">Null Value Handling</a>        <ul>
+          <li><a href="#not-values-nv--269-elements" id="markdown-toc-not-values-nv--269-elements">Not Values (NV) — 269 elements</a></li>
+          <li><a href="#pertinent-negatives-pn--70-elements" id="markdown-toc-pertinent-negatives-pn--70-elements">Pertinent Negatives (PN) — 70 elements</a></li>
+        </ul>
+      </li>
+      <li><a href="#document-vs-resource-model" id="markdown-toc-document-vs-resource-model">Document vs Resource Model</a></li>
+      <li><a href="#cardinality-differences" id="markdown-toc-cardinality-differences">Cardinality Differences</a></li>
+      <li><a href="#ems-specific-data-with-no-fhir-equivalent" id="markdown-toc-ems-specific-data-with-no-fhir-equivalent">EMS-Specific Data with No FHIR Equivalent</a></li>
+      <li><a href="#sections-not-yet-mapped" id="markdown-toc-sections-not-yet-mapped">Sections Not Yet Mapped</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="nemsis-vs-us-core-differential">NEMSIS vs US Core Differential</h1>
+
+<p>This page documents the key differences between the NEMSIS 3.5.1 data model and US Core 6.1.0 / FHIR R4, explaining the architectural decisions made to bridge these standards.</p>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>NEMSIS and FHIR/US Core were designed for different purposes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>NEMSIS 3.5.1</th>
+      <th>US Core 6.1.0 / FHIR R4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Primary purpose</strong></td>
+      <td>Pre-hospital EMS data collection and reporting</td>
+      <td>Clinical data exchange across all healthcare settings</td>
+    </tr>
+    <tr>
+      <td><strong>Data model</strong></td>
+      <td>XML-based PCR document (single-patient, single-incident)</td>
+      <td>RESTful resource graph (patient-centric)</td>
+    </tr>
+    <tr>
+      <td><strong>Coding paradigm</strong></td>
+      <td>Proprietary enumeration codes (NEMSIS CodeSystem)</td>
+      <td>Standard terminologies (SNOMED, LOINC, RxNorm)</td>
+    </tr>
+    <tr>
+      <td><strong>Temporal model</strong></td>
+      <td>19 discrete timestamps per incident</td>
+      <td>Period (start/end) + discrete dateTime</td>
+    </tr>
+    <tr>
+      <td><strong>Document structure</strong></td>
+      <td>Nested XML sections mirroring PCR form</td>
+      <td>Independent resources linked by references</td>
+    </tr>
+    <tr>
+      <td><strong>Null handling</strong></td>
+      <td>Explicit NV (Not Value) and PN (Pertinent Negative) codes</td>
+      <td>dataAbsentReason extension, or omission</td>
+    </tr>
+    <tr>
+      <td><strong>Identifiers</strong></td>
+      <td>State/agency/incident number</td>
+      <td>NPI, SSN, MRN, or local identifiers</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="patient-demographics">Patient Demographics</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>NEMSIS</th>
+      <th>US Core</th>
+      <th>Bridge Decision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex / Gender</td>
+      <td>ePatient.11: Single field mixing sex, gender identity, and legal sex</td>
+      <td><code class="language-plaintext highlighter-rouge">gender</code> (administrative) + <code class="language-plaintext highlighter-rouge">us-core-birthsex</code> + <code class="language-plaintext highlighter-rouge">gender-identity</code> extension</td>
+      <td>NDR-006: Map NEMSIS sex codes to both <code class="language-plaintext highlighter-rouge">gender</code> and <code class="language-plaintext highlighter-rouge">birthsex</code>; transgender codes map to both fields</td>
+    </tr>
+    <tr>
+      <td>Race</td>
+      <td>ePatient.14: NEMSIS-specific race codes</td>
+      <td>OMB race categories via <code class="language-plaintext highlighter-rouge">us-core-race</code></td>
+      <td>Map NEMSIS codes to closest OMB category; add NEMSIS coding to same CodeableConcept</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>ePatient.15: Age at time of call</td>
+      <td>Not a standard FHIR element (derived from birthDate)</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-age</code> extension preserves operational age</td>
+    </tr>
+    <tr>
+      <td>Communication barriers</td>
+      <td>ePatient.21: Coded list of barriers</td>
+      <td>No US Core equivalent</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-barrier</code> extension (0..*)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="temporal-model">Temporal Model</h2>
+
+<p>NEMSIS has 19 discrete timestamps representing every phase of an EMS response. FHIR Encounter has only <code class="language-plaintext highlighter-rouge">period</code> (start/end).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Timestamp</th>
+      <th>Meaning</th>
+      <th>FHIR Mapping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eTimes.03</td>
+      <td>Unit notified by dispatch</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.period.start</code> (NDR-005)</td>
+    </tr>
+    <tr>
+      <td>eTimes.12</td>
+      <td>Patient transfer of care</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.period.end</code> (NDR-005)</td>
+    </tr>
+    <tr>
+      <td>eTimes.01, .02, .04–.11, .13–.19</td>
+      <td>All other EMS timestamps</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times</code> complex extension</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Rationale (NDR-005)</strong>: eTimes.03 is the operational "call start" and eTimes.12 is the "call end" from a patient care perspective. These align most closely with the FHIR Encounter period concept. The other 17 timestamps have no standard FHIR representation and require extension.</p>
+
+<hr />
+
+<h2 id="coding-systems">Coding Systems</h2>
+
+<p>NEMSIS was designed before SNOMED, LOINC, and RxNorm were widely adopted in EMS. NEMSIS 3.5.1 made progress toward standard terminologies but retains proprietary codes for most sections.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Domain</th>
+      <th>NEMSIS Approach</th>
+      <th>fhirEMSCore Resolution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Medications</td>
+      <td>eMedications.03: Already RxNorm</td>
+      <td>Direct mapping to <code class="language-plaintext highlighter-rouge">MedicationAdministration.medicationCodeableConcept</code></td>
+    </tr>
+    <tr>
+      <td>Procedures</td>
+      <td>eProcedures.03: Already SNOMED CT</td>
+      <td>Direct mapping to <code class="language-plaintext highlighter-rouge">Procedure.code</code></td>
+    </tr>
+    <tr>
+      <td>Chief complaint / impression</td>
+      <td>NEMSIS ICD-9/10 or SNOMED mix</td>
+      <td>SNOMED CT preferred; ICD-10-CM for billing</td>
+    </tr>
+    <tr>
+      <td>Vital signs</td>
+      <td>NEMSIS-specific codes</td>
+      <td>Mapped to LOINC (see Terminology page)</td>
+    </tr>
+    <tr>
+      <td>All other sections</td>
+      <td>NEMSIS proprietary codes</td>
+      <td>NEMSIS CodeSystem + ValueSet; SNOMED/LOINC added where direct mapping exists</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="null-value-handling">Null Value Handling</h2>
+
+<p>NEMSIS has two types of coded null: NV (Not Value) and PN (Pertinent Negative). FHIR handles absence differently depending on context.</p>
+
+<h3 id="not-values-nv--269-elements">Not Values (NV) — 269 elements</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS NV</th>
+      <th>Semantic</th>
+      <th>FHIR Approach</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotApplicable</code></td>
+      <td>Not applicable in this context</td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason = not-applicable</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotRecorded</code></td>
+      <td>Not recorded</td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason = not-asked</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotReporting</code></td>
+      <td>Agency not reporting</td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason = unknown</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> is not available (e.g., on non-Observation elements), use <code class="language-plaintext highlighter-rouge">ext-ems-not-value</code>.</p>
+
+<h3 id="pertinent-negatives-pn--70-elements">Pertinent Negatives (PN) — 70 elements</h3>
+
+<p>PN codes represent clinically significant documented absence — the provider specifically looked for something and it was not present. FHIR Observation supports absence values via:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">valueCodeableConcept</code> with a code indicating absence</li>
+  <li><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> extension carrying the specific PN code</li>
+</ol>
+
+<p>FHIR's <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> is <strong>not</strong> suitable for PN, as it means the observation was not done — but PN means it was specifically assessed and found absent.</p>
+
+<hr />
+
+<h2 id="document-vs-resource-model">Document vs Resource Model</h2>
+
+<p>NEMSIS is a <strong>document-centric</strong> standard: one XML file per incident, containing all data for that patient call.</p>
+
+<p>FHIR is <strong>resource-centric</strong>: each clinical concept is a separate resource linked by references.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS PCR Structure</th>
+      <th>FHIR Equivalent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Root PCR document</td>
+      <td><code class="language-plaintext highlighter-rouge">EMSComposition</code> (document Bundle)</td>
+    </tr>
+    <tr>
+      <td>ePatient section</td>
+      <td><code class="language-plaintext highlighter-rouge">EMSPatient</code> resource</td>
+    </tr>
+    <tr>
+      <td>eResponse section</td>
+      <td><code class="language-plaintext highlighter-rouge">EMSEncounter</code> resource</td>
+    </tr>
+    <tr>
+      <td>eVitals group (repeated)</td>
+      <td>Multiple <code class="language-plaintext highlighter-rouge">EMSObservation*</code> resources</td>
+    </tr>
+    <tr>
+      <td>eProcedures group (repeated)</td>
+      <td>Multiple <code class="language-plaintext highlighter-rouge">EMSProcedure</code> resources</td>
+    </tr>
+    <tr>
+      <td>eMedications group (repeated)</td>
+      <td>Multiple <code class="language-plaintext highlighter-rouge">EMSMedicationAdministration</code> resources</td>
+    </tr>
+    <tr>
+      <td>ePayment section</td>
+      <td><code class="language-plaintext highlighter-rouge">EMSCoverage</code> + <code class="language-plaintext highlighter-rouge">EMSClaim</code> resources</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Repeating NEMSIS groups (VitalGroup, MedicationGroup, ProcedureGroup) become <strong>multiple FHIR resources</strong> with:</p>
+<ul>
+  <li>Same <code class="language-plaintext highlighter-rouge">Observation.encounter</code> / <code class="language-plaintext highlighter-rouge">Procedure.encounter</code> reference</li>
+  <li>Timestamp from group header → <code class="language-plaintext highlighter-rouge">effective[x]</code> or <code class="language-plaintext highlighter-rouge">performed[x]</code> on each resource</li>
+  <li>Crew member from group → <code class="language-plaintext highlighter-rouge">performer</code> reference</li>
+</ul>
+
+<hr />
+
+<h2 id="cardinality-differences">Cardinality Differences</h2>
+
+<p>Several significant cardinality differences exist between NEMSIS and FHIR:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>NEMSIS</th>
+      <th>FHIR US Core</th>
+      <th>fhirEMSCore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient identifier</td>
+      <td>Optional in NEMSIS PCR</td>
+      <td>Required (1..*)</td>
+      <td>Required (1..*) — use PCR incident number</td>
+    </tr>
+    <tr>
+      <td>Encounter type</td>
+      <td>Not in NEMSIS</td>
+      <td>Required (1..*) in US Core</td>
+      <td>Required — SNOMED 409971007 "EMS"</td>
+    </tr>
+    <tr>
+      <td>Vital sign code</td>
+      <td>Required</td>
+      <td>Required LOINC</td>
+      <td>Required LOINC (same)</td>
+    </tr>
+    <tr>
+      <td>Procedure performer</td>
+      <td>Required in NEMSIS</td>
+      <td>Optional in US Core</td>
+      <td>MS in fhirEMSCore</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="ems-specific-data-with-no-fhir-equivalent">EMS-Specific Data with No FHIR Equivalent</h2>
+
+<p>The following NEMSIS data elements have no standard FHIR representation and require custom extensions:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element(s)</th>
+      <th>Category</th>
+      <th>Extension</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eTimes.01–19 (17 non-standard times)</td>
+      <td>Temporal</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-times</code> complex</td>
+    </tr>
+    <tr>
+      <td>eResponse response/travel mode</td>
+      <td>Response</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-response-mode</code></td>
+    </tr>
+    <tr>
+      <td>eDispatch dispatch information</td>
+      <td>Dispatch</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-dispatch-info</code> complex</td>
+    </tr>
+    <tr>
+      <td>eScene GPS coordinates</td>
+      <td>Location</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-gps</code></td>
+    </tr>
+    <tr>
+      <td>eScene mass casualty data</td>
+      <td>Scene</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-details</code> complex</td>
+    </tr>
+    <tr>
+      <td>ePatient age at time of call</td>
+      <td>Patient</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-age</code></td>
+    </tr>
+    <tr>
+      <td>ePatient communication barriers</td>
+      <td>Patient</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-patient-barrier</code></td>
+    </tr>
+    <tr>
+      <td>eVitals obtained-prior flag</td>
+      <td>Vitals</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-vital-obtained-prior</code></td>
+    </tr>
+    <tr>
+      <td>eArrest full arrest context</td>
+      <td>Arrest</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-arrest-context</code> complex (21 fields)</td>
+    </tr>
+    <tr>
+      <td>eAirway device/confirmation data</td>
+      <td>Airway</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-airway-context</code> complex (10 fields)</td>
+    </tr>
+    <tr>
+      <td>eCrew certification level</td>
+      <td>Crew</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-certification-level</code></td>
+    </tr>
+    <tr>
+      <td>dAgency operational details</td>
+      <td>Agency</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-agency-details</code> complex</td>
+    </tr>
+    <tr>
+      <td>All NV elements</td>
+      <td>Null</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-not-value</code></td>
+    </tr>
+    <tr>
+      <td>All PN elements</td>
+      <td>Clinical null</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="sections-not-yet-mapped">Sections Not Yet Mapped</h2>
+
+<p>The following NEMSIS sections are not profiled in this version (v0.1.0) of the IG:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Elements</th>
+      <th>Planned Profile</th>
+      <th>Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eInjury</td>
+      <td>29</td>
+      <td>EMSConditionInjury</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>eOther</td>
+      <td>22</td>
+      <td>EMSObservationOther</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>eCustom/Configuration</td>
+      <td>9</td>
+      <td>Questionnaire + QuestionnaireResponse (NDR-010)</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>dRecord</td>
+      <td>3</td>
+      <td>Composition metadata</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>sState</td>
+      <td>Variable</td>
+      <td>State-specific extensions</td>
+      <td>Out of scope</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

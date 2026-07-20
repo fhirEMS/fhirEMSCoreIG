@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-neurological"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-neurological</b></p><a name="vs-ems-exam-neurological"> </a><a name="hcvs-ems-exam-neurological"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520001">3520001</a></td><td>Aphagia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520003">3520003</a></td><td>Aphasia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520005">3520005</a></td><td>Cerebellar Function-Abnormal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520007">3520007</a></td><td>Cerebellar Function-Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520009">3520009</a></td><td>Decerebrate Posturing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520011">3520011</a></td><td>Decorticate Posturing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520013">3520013</a></td><td>Gait-Abnormal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520015">3520015</a></td><td>Gait-Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520017">3520017</a></td><td>Hemiplegia-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520019">3520019</a></td><td>Hemiplegia-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520021">3520021</a></td><td>Normal Baseline for Patient</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520023">3520023</a></td><td>Not Done</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520026">3520026</a></td><td>Status Seizure</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520027">3520027</a></td><td>Speech Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520029">3520029</a></td><td>Speech Slurring</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520031">3520031</a></td><td>Strength-Asymmetric</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520033">3520033</a></td><td>Strength-Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520035">3520035</a></td><td>Strength-Symmetric</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520037">3520037</a></td><td>Tremors</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520039">3520039</a></td><td>Weakness-Facial Droop-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520041">3520041</a></td><td>Weakness-Facial Droop-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520043">3520043</a></td><td>Weakness-Left Sided</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520045">3520045</a></td><td>Weakness-Right Sided</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520051">3520051</a></td><td>Arm Drift-Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520053">3520053</a></td><td>Arm Drift-Right</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3520055">3520055</a></td><td>Other Seizures</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-neurological"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.67"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamNeurologicalVS"/>
+  <title value="EMS Neurological Assessment"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.20 - Neurological assessment findings including strength, speech, coordination, and seizures."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3520001"/>
+        <display value="Aphagia"/>
+      </concept>
+      <concept>
+        <code value="3520003"/>
+        <display value="Aphasia"/>
+      </concept>
+      <concept>
+        <code value="3520005"/>
+        <display value="Cerebellar Function-Abnormal"/>
+      </concept>
+      <concept>
+        <code value="3520007"/>
+        <display value="Cerebellar Function-Normal"/>
+      </concept>
+      <concept>
+        <code value="3520009"/>
+        <display value="Decerebrate Posturing"/>
+      </concept>
+      <concept>
+        <code value="3520011"/>
+        <display value="Decorticate Posturing"/>
+      </concept>
+      <concept>
+        <code value="3520013"/>
+        <display value="Gait-Abnormal"/>
+      </concept>
+      <concept>
+        <code value="3520015"/>
+        <display value="Gait-Normal"/>
+      </concept>
+      <concept>
+        <code value="3520017"/>
+        <display value="Hemiplegia-Left"/>
+      </concept>
+      <concept>
+        <code value="3520019"/>
+        <display value="Hemiplegia-Right"/>
+      </concept>
+      <concept>
+        <code value="3520021"/>
+        <display value="Normal Baseline for Patient"/>
+      </concept>
+      <concept>
+        <code value="3520023"/>
+        <display value="Not Done"/>
+      </concept>
+      <concept>
+        <code value="3520026"/>
+        <display value="Status Seizure"/>
+      </concept>
+      <concept>
+        <code value="3520027"/>
+        <display value="Speech Normal"/>
+      </concept>
+      <concept>
+        <code value="3520029"/>
+        <display value="Speech Slurring"/>
+      </concept>
+      <concept>
+        <code value="3520031"/>
+        <display value="Strength-Asymmetric"/>
+      </concept>
+      <concept>
+        <code value="3520033"/>
+        <display value="Strength-Normal"/>
+      </concept>
+      <concept>
+        <code value="3520035"/>
+        <display value="Strength-Symmetric"/>
+      </concept>
+      <concept>
+        <code value="3520037"/>
+        <display value="Tremors"/>
+      </concept>
+      <concept>
+        <code value="3520039"/>
+        <display value="Weakness-Facial Droop-Left"/>
+      </concept>
+      <concept>
+        <code value="3520041"/>
+        <display value="Weakness-Facial Droop-Right"/>
+      </concept>
+      <concept>
+        <code value="3520043"/>
+        <display value="Weakness-Left Sided"/>
+      </concept>
+      <concept>
+        <code value="3520045"/>
+        <display value="Weakness-Right Sided"/>
+      </concept>
+      <concept>
+        <code value="3520051"/>
+        <display value="Arm Drift-Left"/>
+      </concept>
+      <concept>
+        <code value="3520053"/>
+        <display value="Arm Drift-Right"/>
+      </concept>
+      <concept>
+        <code value="3520055"/>
+        <display value="Other Seizures"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

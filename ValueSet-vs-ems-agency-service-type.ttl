@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-agency-service-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-agency-service-type</b></p><a name=\"vs-ems-agency-service-type\"> </a><a name=\"hcvs-ems-agency-service-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-codes.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920001\">9920001</a></td><td>911 Response (Scene) with Transport Capability</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920003\">9920003</a></td><td>911 Response (Scene) without Transport Capability</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920005\">9920005</a></td><td>Air Medical</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920007\">9920007</a></td><td>ALS Intercept</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920011\">9920011</a></td><td>Hazmat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920013\">9920013</a></td><td>Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920015\">9920015</a></td><td>Rescue</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920017\">9920017</a></td><td>Community Paramedicine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920019\">9920019</a></td><td>Critical Care (Ground)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.9" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSAgencyServiceTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Agency Service Type"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS dAgency.09/10 - The type(s) of EMS service provided by the agency."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "911 Response (Scene) with Transport Capability" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "911 Response (Scene) without Transport Capability" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Air Medical" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ALS Intercept" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hazmat" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rescue" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Community Paramedicine" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9920019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Critical Care (Ground)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

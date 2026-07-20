@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-agency-service-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-agency-service-type</b></p><a name=\"vs-ems-agency-service-type\"> </a><a name=\"hcvs-ems-agency-service-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-codes.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920001\">9920001</a></td><td>911 Response (Scene) with Transport Capability</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920003\">9920003</a></td><td>911 Response (Scene) without Transport Capability</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920005\">9920005</a></td><td>Air Medical</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920007\">9920007</a></td><td>ALS Intercept</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920011\">9920011</a></td><td>Hazmat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920013\">9920013</a></td><td>Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920015\">9920015</a></td><td>Rescue</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920017\">9920017</a></td><td>Community Paramedicine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-9920019\">9920019</a></td><td>Critical Care (Ground)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-service-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.9"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSAgencyServiceTypeVS",
+  "title" : "EMS Agency Service Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS dAgency.09/10 - The type(s) of EMS service provided by the agency.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+      "concept" : [{
+        "code" : "9920001",
+        "display" : "911 Response (Scene) with Transport Capability"
+      },
+      {
+        "code" : "9920003",
+        "display" : "911 Response (Scene) without Transport Capability"
+      },
+      {
+        "code" : "9920005",
+        "display" : "Air Medical"
+      },
+      {
+        "code" : "9920007",
+        "display" : "ALS Intercept"
+      },
+      {
+        "code" : "9920011",
+        "display" : "Hazmat"
+      },
+      {
+        "code" : "9920013",
+        "display" : "Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)"
+      },
+      {
+        "code" : "9920015",
+        "display" : "Rescue"
+      },
+      {
+        "code" : "9920017",
+        "display" : "Community Paramedicine"
+      },
+      {
+        "code" : "9920019",
+        "display" : "Critical Care (Ground)"
+      }]
+    }]
+  }
+}

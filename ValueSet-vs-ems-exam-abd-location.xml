@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-abd-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-abd-location</b></p><a name="vs-ems-exam-abd-location"> </a><a name="hcvs-ems-exam-abd-location"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3510001">3510001</a></td><td>Generalized</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3510003">3510003</a></td><td>Left Lower Quadrant</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3510005">3510005</a></td><td>Left Upper Quadrant</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3510007">3510007</a></td><td>Periumbilical</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3510009">3510009</a></td><td>Right Lower Quadrant</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3510011">3510011</a></td><td>Right Upper Quadrant</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3510013">3510013</a></td><td>Epigastric</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-abd-location"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.49"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamAbdominalFindingLocationVS"/>
+  <title value="EMS Abdominal Assessment Finding Location"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.10 - Location qualifier for abdominal assessment findings."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3510001"/>
+        <display value="Generalized"/>
+      </concept>
+      <concept>
+        <code value="3510003"/>
+        <display value="Left Lower Quadrant"/>
+      </concept>
+      <concept>
+        <code value="3510005"/>
+        <display value="Left Upper Quadrant"/>
+      </concept>
+      <concept>
+        <code value="3510007"/>
+        <display value="Periumbilical"/>
+      </concept>
+      <concept>
+        <code value="3510009"/>
+        <display value="Right Lower Quadrant"/>
+      </concept>
+      <concept>
+        <code value="3510011"/>
+        <display value="Right Upper Quadrant"/>
+      </concept>
+      <concept>
+        <code value="3510013"/>
+        <display value="Epigastric"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-response-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-response-type</b></p><a name="vs-ems-response-type"> </a><a name="hcvs-ems-response-type"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205001">2205001</a></td><td>Emergency Response (Primary Response Area)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205003">2205003</a></td><td>Emergency Response (Intercept)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205009">2205009</a></td><td>Emergency Response (Mutual Aid)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205005">2205005</a></td><td>Hospital-to-Hospital Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205015">2205015</a></td><td>Hospital to Non-Hospital Facility Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205017">2205017</a></td><td>Non-Hospital Facility to Non-Hospital Facility Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205019">2205019</a></td><td>Non-Hospital Facility to Hospital Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205007">2205007</a></td><td>Other Routine Medical Transport</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205011">2205011</a></td><td>Public Assistance</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205013">2205013</a></td><td>Standby</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205021">2205021</a></td><td>Support Services</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205023">2205023</a></td><td>Non-Patient Care Rescue/Extrication</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205025">2205025</a></td><td>Crew Transport Only</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205027">2205027</a></td><td>Transport of Organs or Body Parts</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205029">2205029</a></td><td>Mortuary Services</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205031">2205031</a></td><td>Mobile Integrated Health Care Encounter</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205033">2205033</a></td><td>Evaluation for Special Referral/Intake Programs</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205035">2205035</a></td><td>Administrative Operations</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.107"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSResponseTypeVS"/>
+  <title value="EMS Response Type (ValueSet)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eResponse.05 - The type of EMS response."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="2205001"/>
+        <display value="Emergency Response (Primary Response Area)"/>
+      </concept>
+      <concept>
+        <code value="2205003"/>
+        <display value="Emergency Response (Intercept)"/>
+      </concept>
+      <concept>
+        <code value="2205009"/>
+        <display value="Emergency Response (Mutual Aid)"/>
+      </concept>
+      <concept>
+        <code value="2205005"/>
+        <display value="Hospital-to-Hospital Transfer"/>
+      </concept>
+      <concept>
+        <code value="2205015"/>
+        <display value="Hospital to Non-Hospital Facility Transfer"/>
+      </concept>
+      <concept>
+        <code value="2205017"/>
+        <display value="Non-Hospital Facility to Non-Hospital Facility Transfer"/>
+      </concept>
+      <concept>
+        <code value="2205019"/>
+        <display value="Non-Hospital Facility to Hospital Transfer"/>
+      </concept>
+      <concept>
+        <code value="2205007"/>
+        <display value="Other Routine Medical Transport"/>
+      </concept>
+      <concept>
+        <code value="2205011"/>
+        <display value="Public Assistance"/>
+      </concept>
+      <concept>
+        <code value="2205013"/>
+        <display value="Standby"/>
+      </concept>
+      <concept>
+        <code value="2205021"/>
+        <display value="Support Services"/>
+      </concept>
+      <concept>
+        <code value="2205023"/>
+        <display value="Non-Patient Care Rescue/Extrication"/>
+      </concept>
+      <concept>
+        <code value="2205025"/>
+        <display value="Crew Transport Only"/>
+      </concept>
+      <concept>
+        <code value="2205027"/>
+        <display value="Transport of Organs or Body Parts"/>
+      </concept>
+      <concept>
+        <code value="2205029"/>
+        <display value="Mortuary Services"/>
+      </concept>
+      <concept>
+        <code value="2205031"/>
+        <display value="Mobile Integrated Health Care Encounter"/>
+      </concept>
+      <concept>
+        <code value="2205033"/>
+        <display value="Evaluation for Special Referral/Intake Programs"/>
+      </concept>
+      <concept>
+        <code value="2205035"/>
+        <display value="Administrative Operations"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

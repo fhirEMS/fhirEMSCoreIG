@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Profiles Overview - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Profiles Overview</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Profiles Overview</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#profiles-overview" id="markdown-toc-profiles-overview">Profiles Overview</a>    <ul>
+      <li><a href="#profile-summary" id="markdown-toc-profile-summary">Profile Summary</a>        <ul>
+          <li><a href="#patient-care-report-pcr-core-profiles" id="markdown-toc-patient-care-report-pcr-core-profiles">Patient Care Report (PCR) Core Profiles</a></li>
+          <li><a href="#response-and-scene-profiles" id="markdown-toc-response-and-scene-profiles">Response and Scene Profiles</a></li>
+          <li><a href="#clinical-assessment-profiles" id="markdown-toc-clinical-assessment-profiles">Clinical Assessment Profiles</a></li>
+          <li><a href="#agency-and-crew-profiles" id="markdown-toc-agency-and-crew-profiles">Agency and Crew Profiles</a></li>
+          <li><a href="#payment-and-billing-profiles" id="markdown-toc-payment-and-billing-profiles">Payment and Billing Profiles</a></li>
+          <li><a href="#documentation-and-custom-element-profiles" id="markdown-toc-documentation-and-custom-element-profiles">Documentation and Custom Element Profiles</a></li>
+        </ul>
+      </li>
+      <li><a href="#profile-relationship-diagram" id="markdown-toc-profile-relationship-diagram">Profile Relationship Diagram</a></li>
+      <li><a href="#ems-data-flow" id="markdown-toc-ems-data-flow">EMS Data Flow</a></li>
+      <li><a href="#nemsis-coverage-by-section" id="markdown-toc-nemsis-coverage-by-section">NEMSIS Coverage by Section</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="profiles-overview">Profiles Overview</h1>
+
+<div class="dragon">
+
+  <p>This IG is an unofficial AI-generated research project. Profiles have been compiled with SUSHI (0 errors, 0 warnings) but have <strong>not been run through IG Publisher full validation</strong> and have not been reviewed by clinical or NEMSIS domain experts. See <a href="ip-statements.html">Disclaimer</a>.</p>
+
+</div>
+
+<p>This page provides a summary of all profiles defined in fhirEMSCore, their derivation chain, primary NEMSIS source sections, and build status.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Status key:</strong> ✅ FSH compiled, US Core conflicts resolved</td>
+      <td>⚠ Compiled, known gaps</td>
+      <td>🚧 Not started</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="profile-summary">Profile Summary</h2>
+
+<h3 id="patient-care-report-pcr-core-profiles">Patient Care Report (PCR) Core Profiles</h3>
+
+<p>These profiles represent the fundamental resources in an EMS Patient Care Report.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Id</th>
+      <th>Parent</th>
+      <th>NEMSIS Section</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMSComposition</td>
+      <td>ems-composition</td>
+      <td>Composition (R4 base)</td>
+      <td>eRecord</td>
+      <td>✅</td>
+      <td>PCR document structure; links all EMS resources</td>
+    </tr>
+    <tr>
+      <td>EMSPatient</td>
+      <td>ems-patient</td>
+      <td>us-core-patient</td>
+      <td>ePatient</td>
+      <td>✅</td>
+      <td>Demographics, barriers, SSN handling</td>
+    </tr>
+    <tr>
+      <td>EMSEncounter</td>
+      <td>ems-encounter</td>
+      <td>us-core-encounter</td>
+      <td>eResponse / eTimes / eDisposition</td>
+      <td>✅</td>
+      <td>19-timestamp extension; dispatch/disposition</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="response-and-scene-profiles">Response and Scene Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Id</th>
+      <th>Parent</th>
+      <th>NEMSIS Section</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMSLocationScene</td>
+      <td>ems-location-scene</td>
+      <td>us-core-location</td>
+      <td>eScene</td>
+      <td>✅</td>
+      <td>GPS, address, MCI context</td>
+    </tr>
+    <tr>
+      <td>EMSLocationDestination</td>
+      <td>ems-location-destination</td>
+      <td>us-core-location</td>
+      <td>eDisposition</td>
+      <td>✅</td>
+      <td>Receiving facility</td>
+    </tr>
+    <tr>
+      <td>EMSLocationAgency</td>
+      <td>ems-location-agency</td>
+      <td>us-core-location</td>
+      <td>dLocation</td>
+      <td>✅</td>
+      <td>Agency stations/bases with GPS and USNG</td>
+    </tr>
+    <tr>
+      <td>EMSCondition</td>
+      <td>ems-condition</td>
+      <td>us-core-condition-encounter-diagnosis</td>
+      <td>eSituation</td>
+      <td>✅</td>
+      <td>Encounter diagnoses only — eHistory conditions need separate profile</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clinical-assessment-profiles">Clinical Assessment Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Id</th>
+      <th>Parent</th>
+      <th>NEMSIS Section</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMSObservationVitalSigns</td>
+      <td>ems-observation-vitalsigns</td>
+      <td>us-core-vital-signs</td>
+      <td>eVitals</td>
+      <td>✅</td>
+      <td>HR, RR, SpO2, temp, ETCO2, AVPU, pain, etc.</td>
+    </tr>
+    <tr>
+      <td>EMSObservationBloodPressure</td>
+      <td>ems-observation-bp</td>
+      <td>us-core-blood-pressure</td>
+      <td>eVitals.06–08</td>
+      <td>✅</td>
+      <td>Systolic + diastolic panel</td>
+    </tr>
+    <tr>
+      <td>EMSObservationGCS</td>
+      <td>ems-observation-gcs</td>
+      <td>us-core-observation-clinical-result</td>
+      <td>eVitals.19–22</td>
+      <td>✅</td>
+      <td>GCS panel with hasMember sub-scores</td>
+    </tr>
+    <tr>
+      <td>EMSObservationExam</td>
+      <td>ems-observation-exam</td>
+      <td>us-core-observation-clinical-result</td>
+      <td>eExam</td>
+      <td>✅</td>
+      <td>Physical exam findings by body region</td>
+    </tr>
+    <tr>
+      <td>EMSObservationAirway</td>
+      <td>ems-observation-airway</td>
+      <td>us-core-observation-clinical-result</td>
+      <td>eAirway</td>
+      <td>⚠</td>
+      <td>value[x] not populated (detail in extension); IG Publisher validation pending</td>
+    </tr>
+    <tr>
+      <td>EMSObservationLabs</td>
+      <td>ems-observation-labs</td>
+      <td>us-core-observation-clinical-result</td>
+      <td>eLabs</td>
+      <td>✅</td>
+      <td>Point-of-care labs and imaging</td>
+    </tr>
+    <tr>
+      <td>EMSObservationOutcome</td>
+      <td>ems-observation-outcome</td>
+      <td>us-core-observation-clinical-result</td>
+      <td>eOutcome</td>
+      <td>✅</td>
+      <td>ED/hospital outcome panel</td>
+    </tr>
+    <tr>
+      <td>EMSConditionArrest</td>
+      <td>ems-condition-arrest</td>
+      <td>us-core-condition-encounter-diagnosis</td>
+      <td>eArrest</td>
+      <td>✅</td>
+      <td>Cardiac arrest with full eArrest context extension</td>
+    </tr>
+    <tr>
+      <td>EMSConditionInjury</td>
+      <td>ems-condition-injury</td>
+      <td>us-core-condition-encounter-diagnosis</td>
+      <td>eInjury</td>
+      <td>✅</td>
+      <td>Injury cause (ICD-10-CM), trauma triage criteria, collision and ACN telematics extensions</td>
+    </tr>
+    <tr>
+      <td>EMSConditionProblems</td>
+      <td>ems-condition-problems</td>
+      <td>us-core-condition-problems-health-concerns</td>
+      <td>eHistory.08 + context</td>
+      <td>✅</td>
+      <td>Past medical history (ICD-10-CM) with eHistory context extension</td>
+    </tr>
+    <tr>
+      <td>EMSMedicationStatement</td>
+      <td>ems-medicationstatement</td>
+      <td>MedicationStatement (R4 base)</td>
+      <td>eHistory.12–.15, .20</td>
+      <td>✅</td>
+      <td>Home medications: RxNorm, dose, route, frequency</td>
+    </tr>
+    <tr>
+      <td>EMSProcedure</td>
+      <td>ems-procedure</td>
+      <td>us-core-procedure</td>
+      <td>eProcedures</td>
+      <td>✅</td>
+      <td>SNOMED-coded EMS procedures</td>
+    </tr>
+    <tr>
+      <td>EMSMedicationAdministration</td>
+      <td>ems-medicationadministration</td>
+      <td>MedicationAdministration (R4 base)</td>
+      <td>eMedications</td>
+      <td>⚠</td>
+      <td>No US Core parent — base R4 only; RxNorm coded</td>
+    </tr>
+    <tr>
+      <td>EMSAllergyIntolerance</td>
+      <td>ems-allergyintolerance</td>
+      <td>us-core-allergyintolerance</td>
+      <td>eHistory.06</td>
+      <td>✅</td>
+      <td>Medication and environmental allergies</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="agency-and-crew-profiles">Agency and Crew Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Id</th>
+      <th>Parent</th>
+      <th>NEMSIS Section</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMSOrganization</td>
+      <td>ems-organization</td>
+      <td>us-core-organization</td>
+      <td>dAgency / dContact / dConfiguration</td>
+      <td>✅</td>
+      <td>Agency ID, NPI, service type, contacts, medical director, state configuration</td>
+    </tr>
+    <tr>
+      <td>EMSPractitioner</td>
+      <td>ems-practitioner</td>
+      <td>us-core-practitioner</td>
+      <td>dPersonnel</td>
+      <td>✅</td>
+      <td>EMS crew member with state licensure</td>
+    </tr>
+    <tr>
+      <td>EMSPractitionerRole</td>
+      <td>ems-practitionerrole</td>
+      <td>us-core-practitionerrole</td>
+      <td>eCrew / dPersonnel</td>
+      <td>✅</td>
+      <td>Response role and certification level</td>
+    </tr>
+    <tr>
+      <td>EMSDevice</td>
+      <td>ems-device-vehicle</td>
+      <td>Device (R4 base)</td>
+      <td>dVehicle</td>
+      <td>⚠</td>
+      <td>No US Core parent; vehicle/unit identification only; dVehicle full coverage unverified</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="payment-and-billing-profiles">Payment and Billing Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Id</th>
+      <th>Parent</th>
+      <th>NEMSIS Section</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMSCoverage</td>
+      <td>ems-coverage</td>
+      <td>Coverage (R4 base)</td>
+      <td>ePayment.09–22, .57–60</td>
+      <td>⚠</td>
+      <td>No US Core parent; CMS billing rules not encoded as invariants</td>
+    </tr>
+    <tr>
+      <td>EMSClaim</td>
+      <td>ems-claim</td>
+      <td>Claim (R4 base)</td>
+      <td>ePayment (billing)</td>
+      <td>⚠</td>
+      <td>No US Core parent; Medicare ambulance claim rules not validated</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="documentation-and-custom-element-profiles">Documentation and Custom Element Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Id</th>
+      <th>Parent</th>
+      <th>NEMSIS Section</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMSDocumentReference</td>
+      <td>ems-documentreference</td>
+      <td>us-core-documentreference</td>
+      <td>eOther.09–.11, .22</td>
+      <td>✅</td>
+      <td>External attachments; NEMSIS doc type extension</td>
+    </tr>
+    <tr>
+      <td>EMSProvenance</td>
+      <td>ems-provenance</td>
+      <td>us-core-provenance</td>
+      <td>eOther.12–.21</td>
+      <td>✅</td>
+      <td>PCR signatures with NEMSIS signer/reason/status metadata</td>
+    </tr>
+    <tr>
+      <td>EMSQuestionnaire</td>
+      <td>ems-questionnaire</td>
+      <td>Questionnaire (R4 base)</td>
+      <td>eCustomConfiguration</td>
+      <td>✅</td>
+      <td>Custom element definitions (NDR-010)</td>
+    </tr>
+    <tr>
+      <td>EMSQuestionnaireResponse</td>
+      <td>ems-questionnaireresponse</td>
+      <td>QuestionnaireResponse (R4 base)</td>
+      <td>eCustomResults</td>
+      <td>✅</td>
+      <td>Custom element results (NDR-010)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="profile-relationship-diagram">Profile Relationship Diagram</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EMSComposition (PCR Document)
+├── subject          → EMSPatient
+├── encounter        → EMSEncounter
+│     ├── location   → EMSLocationScene
+│     └── location   → EMSLocationDestination
+├── section[condition]      → EMSCondition
+│                           → EMSConditionArrest
+├── section[vitals]         → EMSObservationVitalSigns
+│                           → EMSObservationBloodPressure
+│                           → EMSObservationGCS
+├── section[exam]           → EMSObservationExam
+├── section[airway]         → EMSObservationAirway
+├── section[labs]           → EMSObservationLabs
+├── section[procedures]     → EMSProcedure
+├── section[medications]    → EMSMedicationAdministration
+├── section[allergy]        → EMSAllergyIntolerance
+├── section[outcome]        → EMSObservationOutcome
+├── author          → EMSPractitioner
+│                   → EMSOrganization
+└── attester        → EMSPractitionerRole
+
+EMSClaim
+└── insurance.coverage → EMSCoverage
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ems-data-flow">EMS Data Flow</h2>
+
+<p>A complete EMS PCR in fhirEMSCore follows this resource creation sequence:</p>
+
+<ol>
+  <li><strong>Dispatch</strong> — <code class="language-plaintext highlighter-rouge">EMSEncounter</code> created with dispatch extension data (eDispatch)</li>
+  <li><strong>Unit Response</strong> — Encounter updated with response mode, unit type (eResponse)</li>
+  <li><strong>Scene Arrival</strong> — <code class="language-plaintext highlighter-rouge">EMSLocationScene</code> created; encounter updated with scene times</li>
+  <li><strong>Patient Assessment</strong> — <code class="language-plaintext highlighter-rouge">EMSPatient</code>, <code class="language-plaintext highlighter-rouge">EMSCondition</code>, <code class="language-plaintext highlighter-rouge">EMSObservation*</code> resources created</li>
+  <li><strong>Treatment</strong> — <code class="language-plaintext highlighter-rouge">EMSProcedure</code>, <code class="language-plaintext highlighter-rouge">EMSMedicationAdministration</code> resources added</li>
+  <li><strong>Transport</strong> — Encounter updated with transport destination, <code class="language-plaintext highlighter-rouge">EMSLocationDestination</code></li>
+  <li><strong>Disposition</strong> — Encounter closed with disposition codes</li>
+  <li><strong>Outcome</strong> — <code class="language-plaintext highlighter-rouge">EMSObservationOutcome</code> created with ED/hospital results</li>
+  <li><strong>Billing</strong> — <code class="language-plaintext highlighter-rouge">EMSCoverage</code>, <code class="language-plaintext highlighter-rouge">EMSClaim</code> created for CMS submission</li>
+  <li><strong>Document Assembly</strong> — <code class="language-plaintext highlighter-rouge">EMSComposition</code> bundles all resources into a FHIR document</li>
+</ol>
+
+<hr />
+
+<h2 id="nemsis-coverage-by-section">NEMSIS Coverage by Section</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Section</th>
+      <th>Elements</th>
+      <th>fhirEMSCore Profile(s)</th>
+      <th>Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eRecord</td>
+      <td>4</td>
+      <td>EMSComposition</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eResponse</td>
+      <td>23</td>
+      <td>EMSEncounter (extensions)</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eDispatch</td>
+      <td>6</td>
+      <td>EMSEncounter (ext-ems-dispatch-info)</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eCrew</td>
+      <td>3</td>
+      <td>EMSPractitionerRole</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eTimes</td>
+      <td>17</td>
+      <td>EMSEncounter (ext-ems-times)</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>ePatient</td>
+      <td>25</td>
+      <td>EMSPatient</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eScene</td>
+      <td>25</td>
+      <td>EMSLocationScene</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eSituation</td>
+      <td>20</td>
+      <td>EMSCondition + EMSEncounter</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eHistory</td>
+      <td>20</td>
+      <td>EMSConditionProblems + EMSMedicationStatement + EMSAllergyIntolerance</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eVitals</td>
+      <td>34</td>
+      <td>EMSObservationVitalSigns / BP / GCS</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eLabs</td>
+      <td>8</td>
+      <td>EMSObservationLabs</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eExam</td>
+      <td>24</td>
+      <td>EMSObservationExam</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eProcedures</td>
+      <td>15</td>
+      <td>EMSProcedure</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eMedications</td>
+      <td>13</td>
+      <td>EMSMedicationAdministration</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eAirway</td>
+      <td>11</td>
+      <td>EMSObservationAirway</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eArrest</td>
+      <td>19</td>
+      <td>EMSConditionArrest</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eInjury</td>
+      <td>29</td>
+      <td>EMSConditionInjury</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eDisposition</td>
+      <td>31</td>
+      <td>EMSEncounter (extensions)</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eOutcome</td>
+      <td>15</td>
+      <td>EMSObservationOutcome</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>ePayment</td>
+      <td>59</td>
+      <td>EMSCoverage + EMSClaim</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eOther</td>
+      <td>22</td>
+      <td>EMSDocumentReference + EMSProvenance + EMSEncounter (extensions)</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eDevice</td>
+      <td>12</td>
+      <td>EMSDevice</td>
+      <td>Partial</td>
+    </tr>
+    <tr>
+      <td>eProtocols</td>
+      <td>2</td>
+      <td>EMSEncounter (extension)</td>
+      <td>Full</td>
+    </tr>
+    <tr>
+      <td>eNarrative</td>
+      <td>1</td>
+      <td>EMSComposition.section</td>
+      <td>Full</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

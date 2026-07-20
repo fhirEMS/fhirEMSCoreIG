@@ -1,0 +1,221 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-route> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-medication-route"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-medication-route</b></p><a name=\"vs-ems-medication-route\"> </a><a name=\"hcvs-ems-medication-route\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-medications.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927001\">9927001</a></td><td>Blow-By</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927003\">9927003</a></td><td>Buccal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927005\">9927005</a></td><td>Endotracheal Tube (ET)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927007\">9927007</a></td><td>Gastrostomy Tube</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927009\">9927009</a></td><td>Inhalation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927011\">9927011</a></td><td>Intraarterial</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927013\">9927013</a></td><td>Intradermal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927015\">9927015</a></td><td>Intramuscular (IM)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927017\">9927017</a></td><td>Intranasal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927019\">9927019</a></td><td>Intraocular</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927021\">9927021</a></td><td>Intraosseous (IO)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927023\">9927023</a></td><td>Intravenous (IV)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927025\">9927025</a></td><td>Nasal Cannula</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927027\">9927027</a></td><td>Nasogastric</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927029\">9927029</a></td><td>Nasotracheal Tube</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927031\">9927031</a></td><td>Non-Rebreather Mask</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927033\">9927033</a></td><td>Ophthalmic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927035\">9927035</a></td><td>Oral</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927037\">9927037</a></td><td>Other/miscellaneous</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927039\">9927039</a></td><td>Otic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927041\">9927041</a></td><td>Re-breather mask</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927043\">9927043</a></td><td>Rectal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927045\">9927045</a></td><td>Subcutaneous</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927047\">9927047</a></td><td>Sublingual</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927049\">9927049</a></td><td>Topical</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927051\">9927051</a></td><td>Tracheostomy</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927053\">9927053</a></td><td>Transdermal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927055\">9927055</a></td><td>Urethral</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927057\">9927057</a></td><td>Ventimask</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927059\">9927059</a></td><td>Wound</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927061\">9927061</a></td><td>Portacath</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927063\">9927063</a></td><td>Auto Injector</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927065\">9927065</a></td><td>BVM</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927067\">9927067</a></td><td>CPAP</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927069\">9927069</a></td><td>IV Pump</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927071\">9927071</a></td><td>Nebulizer</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927073\">9927073</a></td><td>Umbilical Artery Catheter</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-9927075\">9927075</a></td><td>Umbilical Venous Catheter</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-route"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.87" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSMedicationRouteVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Medication Administered Route"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eMedications.04 - The route by which the medication was administered."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blow-By" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Buccal" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endotracheal Tube (ET)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastrostomy Tube" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhalation" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraarterial" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intradermal" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intramuscular (IM)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intranasal" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraocular" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraosseous (IO)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intravenous (IV)" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal Cannula" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasogastric" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasotracheal Tube" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-Rebreather Mask" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ophthalmic" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other/miscellaneous" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Otic" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Re-breather mask" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectal" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subcutaneous" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sublingual" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Topical" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tracheostomy" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927053" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transdermal" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927055" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urethral" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927057" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventimask" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927059" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wound" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927061" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Portacath" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927063" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auto Injector" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927065" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BVM" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927067" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CPAP" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927069" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IV Pump" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927071" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nebulizer" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927073" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Umbilical Artery Catheter" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9927075" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Umbilical Venous Catheter" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-route.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

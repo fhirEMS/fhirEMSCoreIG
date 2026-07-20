@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-eye-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-eye-location</b></p><a name="vs-ems-exam-eye-location"> </a><a name="hcvs-ems-exam-eye-location"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3517001">3517001</a></td><td>Bilateral</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3517003">3517003</a></td><td>Left</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3517005">3517005</a></td><td>Right</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye-location"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.58"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamEyeLocationVS"/>
+  <title value="EMS Eye Assessment Finding Location"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.17 - Laterality qualifier for eye assessment findings."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3517001"/>
+        <display value="Bilateral"/>
+      </concept>
+      <concept>
+        <code value="3517003"/>
+        <display value="Left"/>
+      </concept>
+      <concept>
+        <code value="3517005"/>
+        <display value="Right"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-airbag-deployment"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-airbag-deployment</b></p><a name="vs-ems-airbag-deployment"> </a><a name="hcvs-ems-airbag-deployment"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-injury.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2908001">2908001</a></td><td>Airbag Deployed Front</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2908003">2908003</a></td><td>Airbag Deployed Side</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2908005">2908005</a></td><td>Airbag Deployed Other (knee, air belt, etc.)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2908007">2908007</a></td><td>No Airbag Deployed</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2908009">2908009</a></td><td>No Airbag Present</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airbag-deployment"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.10"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSAirbagDeploymentVS"/>
+  <title value="EMS Airbag Deployment VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Airbag deployment status observed at the crash (eInjury.08)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury"/>
+      <concept>
+        <code value="2908001"/>
+        <display value="Airbag Deployed Front"/>
+      </concept>
+      <concept>
+        <code value="2908003"/>
+        <display value="Airbag Deployed Side"/>
+      </concept>
+      <concept>
+        <code value="2908005"/>
+        <display value="Airbag Deployed Other (knee, air belt, etc.)"/>
+      </concept>
+      <concept>
+        <code value="2908007"/>
+        <display value="No Airbag Deployed"/>
+      </concept>
+      <concept>
+        <code value="2908009"/>
+        <display value="No Airbag Present"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

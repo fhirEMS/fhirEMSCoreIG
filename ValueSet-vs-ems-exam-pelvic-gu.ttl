@@ -1,0 +1,185 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-pelvic-gu> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-exam-pelvic-gu"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-exam-pelvic-gu</b></p><a name=\"vs-ems-exam-pelvic-gu\"> </a><a name=\"hcvs-ems-exam-pelvic-gu\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-exam.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512001\">3512001</a></td><td>Abrasion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512003\">3512003</a></td><td>Avulsion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512005\">3512005</a></td><td>Bleeding Controlled</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512007\">3512007</a></td><td>Bleeding Uncontrolled</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512009\">3512009</a></td><td>Bleeding-Rectal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512011\">3512011</a></td><td>Bleeding-Urethral</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512013\">3512013</a></td><td>Bleeding-Vaginal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512015\">3512015</a></td><td>Burn-Blistering</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512017\">3512017</a></td><td>Burn-Charring</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512019\">3512019</a></td><td>Burn-Redness</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512021\">3512021</a></td><td>Burn-White/Waxy</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512023\">3512023</a></td><td>Deformity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512025\">3512025</a></td><td>Foreign Body</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512027\">3512027</a></td><td>Genital Injury</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512033\">3512033</a></td><td>Laceration</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512035\">3512035</a></td><td>Mass/Lesion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512037\">3512037</a></td><td>Normal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512039\">3512039</a></td><td>Not Done</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512041\">3512041</a></td><td>Pain</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512043\">3512043</a></td><td>Pelvic Fracture</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512045\">3512045</a></td><td>Pelvic Instability</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512047\">3512047</a></td><td>Penile Priapism/Erection</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512049\">3512049</a></td><td>Pregnant-Crowning</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512051\">3512051</a></td><td>Puncture/Stab Wound</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512057\">3512057</a></td><td>Tenderness</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512059\">3512059</a></td><td>Gunshot Wound</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512061\">3512061</a></td><td>Crush Injury</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512063\">3512063</a></td><td>Swelling</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3512065\">3512065</a></td><td>Contusion</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-pelvic-gu"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.68" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSExamPelvicGUVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Pelvis/Genitourinary Assessment"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eExam.12 - Physical findings on pelvic/genitourinary assessment."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abrasion" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Avulsion" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding Controlled" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding Uncontrolled" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding-Rectal" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding-Urethral" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding-Vaginal" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-Blistering" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-Charring" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-Redness" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-White/Waxy" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deformity" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foreign Body" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genital Injury" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laceration" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mass/Lesion" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normal" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Done" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pain" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pelvic Fracture" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pelvic Instability" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Penile Priapism/Erection" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pregnant-Crowning" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puncture/Stab Wound" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512057" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenderness" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512059" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gunshot Wound" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512061" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crush Injury" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512063" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swelling" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3512065" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contusion" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-pelvic-gu.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

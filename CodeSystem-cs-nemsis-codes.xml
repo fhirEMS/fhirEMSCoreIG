@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-codes</b></p><a name="cs-nemsis-codes"> </a><a name="hccs-nemsis-codes"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">section-eResponse<a name="cs-nemsis-codes-section-eResponse"> </a></td><td>EMS Response</td></tr><tr><td style="white-space:nowrap">section-eTimes<a name="cs-nemsis-codes-section-eTimes"> </a></td><td>EMS Times</td></tr><tr><td style="white-space:nowrap">section-eScene<a name="cs-nemsis-codes-section-eScene"> </a></td><td>EMS Scene</td></tr><tr><td style="white-space:nowrap">section-eSituation<a name="cs-nemsis-codes-section-eSituation"> </a></td><td>EMS Patient Situation</td></tr><tr><td style="white-space:nowrap">section-eAirway<a name="cs-nemsis-codes-section-eAirway"> </a></td><td>EMS Airway Management</td></tr><tr><td style="white-space:nowrap">section-eArrest<a name="cs-nemsis-codes-section-eArrest"> </a></td><td>EMS Cardiac Arrest</td></tr><tr><td style="white-space:nowrap">section-eExam<a name="cs-nemsis-codes-section-eExam"> </a></td><td>EMS Physical Exam</td></tr><tr><td style="white-space:nowrap">section-eLabs<a name="cs-nemsis-codes-section-eLabs"> </a></td><td>EMS Labs</td></tr><tr><td style="white-space:nowrap">section-eCrew<a name="cs-nemsis-codes-section-eCrew"> </a></td><td>EMS Crew</td></tr><tr><td style="white-space:nowrap">9920001<a name="cs-nemsis-codes-9920001"> </a></td><td>911 Response (Scene) with Transport Capability</td></tr><tr><td style="white-space:nowrap">9920003<a name="cs-nemsis-codes-9920003"> </a></td><td>911 Response (Scene) without Transport Capability</td></tr><tr><td style="white-space:nowrap">9920005<a name="cs-nemsis-codes-9920005"> </a></td><td>Air Medical</td></tr><tr><td style="white-space:nowrap">9920007<a name="cs-nemsis-codes-9920007"> </a></td><td>ALS Intercept</td></tr><tr><td style="white-space:nowrap">9920011<a name="cs-nemsis-codes-9920011"> </a></td><td>Hazmat</td></tr><tr><td style="white-space:nowrap">9920013<a name="cs-nemsis-codes-9920013"> </a></td><td>Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)</td></tr><tr><td style="white-space:nowrap">9920015<a name="cs-nemsis-codes-9920015"> </a></td><td>Rescue</td></tr><tr><td style="white-space:nowrap">9920017<a name="cs-nemsis-codes-9920017"> </a></td><td>Community Paramedicine</td></tr><tr><td style="white-space:nowrap">9920019<a name="cs-nemsis-codes-9920019"> </a></td><td>Critical Care (Ground)</td></tr><tr><td style="white-space:nowrap">9917001<a name="cs-nemsis-codes-9917001"> </a></td><td>Advanced Emergency Medical Technician (AEMT)</td></tr><tr><td style="white-space:nowrap">9917002<a name="cs-nemsis-codes-9917002"> </a></td><td>Emergency Medical Technician - Intermediate</td></tr><tr><td style="white-space:nowrap">9917003<a name="cs-nemsis-codes-9917003"> </a></td><td>Emergency Medical Responder (EMR)</td></tr><tr><td style="white-space:nowrap">9917005<a name="cs-nemsis-codes-9917005"> </a></td><td>Emergency Medical Technician (EMT)</td></tr><tr><td style="white-space:nowrap">9917007<a name="cs-nemsis-codes-9917007"> </a></td><td>Paramedic</td></tr><tr><td style="white-space:nowrap">9917019<a name="cs-nemsis-codes-9917019"> </a></td><td>Physician</td></tr><tr><td style="white-space:nowrap">9917021<a name="cs-nemsis-codes-9917021"> </a></td><td>Critical Care Paramedic</td></tr><tr><td style="white-space:nowrap">9917023<a name="cs-nemsis-codes-9917023"> </a></td><td>Community Paramedicine</td></tr><tr><td style="white-space:nowrap">9917025<a name="cs-nemsis-codes-9917025"> </a></td><td>Nurse Practitioner</td></tr><tr><td style="white-space:nowrap">9917027<a name="cs-nemsis-codes-9917027"> </a></td><td>Physician Assistant</td></tr><tr><td style="white-space:nowrap">9917029<a name="cs-nemsis-codes-9917029"> </a></td><td>Licensed Practical Nurse (LPN)</td></tr><tr><td style="white-space:nowrap">9917031<a name="cs-nemsis-codes-9917031"> </a></td><td>Registered Nurse</td></tr><tr><td style="white-space:nowrap">1016001<a name="cs-nemsis-codes-1016001"> </a></td><td>Mixed</td></tr><tr><td style="white-space:nowrap">1016003<a name="cs-nemsis-codes-1016003"> </a></td><td>Non-Volunteer</td></tr><tr><td style="white-space:nowrap">1016005<a name="cs-nemsis-codes-1016005"> </a></td><td>Volunteer</td></tr><tr><td style="white-space:nowrap">9912001<a name="cs-nemsis-codes-9912001"> </a></td><td>Fire Department</td></tr><tr><td style="white-space:nowrap">9912003<a name="cs-nemsis-codes-9912003"> </a></td><td>Governmental, Non-Fire</td></tr><tr><td style="white-space:nowrap">9912005<a name="cs-nemsis-codes-9912005"> </a></td><td>Hospital</td></tr><tr><td style="white-space:nowrap">9912007<a name="cs-nemsis-codes-9912007"> </a></td><td>Private, Nonhospital</td></tr><tr><td style="white-space:nowrap">9912009<a name="cs-nemsis-codes-9912009"> </a></td><td>Tribal</td></tr><tr><td style="white-space:nowrap">2403001<a name="cs-nemsis-codes-2403001"> </a></td><td>Driver/Pilot-Response</td></tr><tr><td style="white-space:nowrap">2403003<a name="cs-nemsis-codes-2403003"> </a></td><td>Driver/Pilot-Transport</td></tr><tr><td style="white-space:nowrap">2403005<a name="cs-nemsis-codes-2403005"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">2403007<a name="cs-nemsis-codes-2403007"> </a></td><td>Other Patient Caregiver-At Scene</td></tr><tr><td style="white-space:nowrap">2403009<a name="cs-nemsis-codes-2403009"> </a></td><td>Other Patient Caregiver-Transport</td></tr><tr><td style="white-space:nowrap">2403011<a name="cs-nemsis-codes-2403011"> </a></td><td>Primary Patient Caregiver-At Scene</td></tr><tr><td style="white-space:nowrap">2403013<a name="cs-nemsis-codes-2403013"> </a></td><td>Primary Patient Caregiver-Transport</td></tr><tr><td style="white-space:nowrap">2708001<a name="cs-nemsis-codes-2708001"> </a></td><td>Red - Immediate</td></tr><tr><td style="white-space:nowrap">2708003<a name="cs-nemsis-codes-2708003"> </a></td><td>Yellow - Delayed</td></tr><tr><td style="white-space:nowrap">2708005<a name="cs-nemsis-codes-2708005"> </a></td><td>Green - Minimal (Minor)</td></tr><tr><td style="white-space:nowrap">2708007<a name="cs-nemsis-codes-2708007"> </a></td><td>Gray - Expectant</td></tr><tr><td style="white-space:nowrap">2708009<a name="cs-nemsis-codes-2708009"> </a></td><td>Black - Deceased</td></tr><tr><td style="white-space:nowrap">2808001<a name="cs-nemsis-codes-2808001"> </a></td><td>Behavioral/Psychiatric</td></tr><tr><td style="white-space:nowrap">2808003<a name="cs-nemsis-codes-2808003"> </a></td><td>Cardiovascular</td></tr><tr><td style="white-space:nowrap">2808005<a name="cs-nemsis-codes-2808005"> </a></td><td>CNS/Neuro</td></tr><tr><td style="white-space:nowrap">2808007<a name="cs-nemsis-codes-2808007"> </a></td><td>Endocrine/Metabolic</td></tr><tr><td style="white-space:nowrap">2808009<a name="cs-nemsis-codes-2808009"> </a></td><td>GI</td></tr><tr><td style="white-space:nowrap">2808011<a name="cs-nemsis-codes-2808011"> </a></td><td>Global/General</td></tr><tr><td style="white-space:nowrap">2808013<a name="cs-nemsis-codes-2808013"> </a></td><td>Lymphatic/Immune</td></tr><tr><td style="white-space:nowrap">2808015<a name="cs-nemsis-codes-2808015"> </a></td><td>Musculoskeletal/Skin</td></tr><tr><td style="white-space:nowrap">2808017<a name="cs-nemsis-codes-2808017"> </a></td><td>Reproductive</td></tr><tr><td style="white-space:nowrap">2808019<a name="cs-nemsis-codes-2808019"> </a></td><td>Pulmonary</td></tr><tr><td style="white-space:nowrap">2808021<a name="cs-nemsis-codes-2808021"> </a></td><td>Renal</td></tr><tr><td style="white-space:nowrap">2813001<a name="cs-nemsis-codes-2813001"> </a></td><td>Critical (Red)</td></tr><tr><td style="white-space:nowrap">2813003<a name="cs-nemsis-codes-2813003"> </a></td><td>Emergent (Yellow)</td></tr><tr><td style="white-space:nowrap">2813005<a name="cs-nemsis-codes-2813005"> </a></td><td>Lower Acuity (Green)</td></tr><tr><td style="white-space:nowrap">2813007<a name="cs-nemsis-codes-2813007"> </a></td><td>Dead without Resuscitation Efforts (Black)</td></tr><tr><td style="white-space:nowrap">2813009<a name="cs-nemsis-codes-2813009"> </a></td><td>Non-Acute/Routine</td></tr><tr><td style="white-space:nowrap">2820001<a name="cs-nemsis-codes-2820001"> </a></td><td>Cardiac Specialty</td></tr><tr><td style="white-space:nowrap">2820003<a name="cs-nemsis-codes-2820003"> </a></td><td>Convenience Transfer (Patient Request)</td></tr><tr><td style="white-space:nowrap">2820005<a name="cs-nemsis-codes-2820005"> </a></td><td>Diagnostic Testing</td></tr><tr><td style="white-space:nowrap">2820007<a name="cs-nemsis-codes-2820007"> </a></td><td>Dialysis</td></tr><tr><td style="white-space:nowrap">2820009<a name="cs-nemsis-codes-2820009"> </a></td><td>Drug and/or Alcohol Rehabilitation Care</td></tr><tr><td style="white-space:nowrap">2820011<a name="cs-nemsis-codes-2820011"> </a></td><td>Extended Care</td></tr><tr><td style="white-space:nowrap">2820013<a name="cs-nemsis-codes-2820013"> </a></td><td>Maternal/Neonatal</td></tr><tr><td style="white-space:nowrap">2820015<a name="cs-nemsis-codes-2820015"> </a></td><td>Medical Specialty Care (Other, Not Listed)</td></tr><tr><td style="white-space:nowrap">2820017<a name="cs-nemsis-codes-2820017"> </a></td><td>Neurological Specialty Care</td></tr><tr><td style="white-space:nowrap">2820019<a name="cs-nemsis-codes-2820019"> </a></td><td>Palliative/Hospice Care (Home or Facility)</td></tr><tr><td style="white-space:nowrap">2820021<a name="cs-nemsis-codes-2820021"> </a></td><td>Pediatric Specialty Care</td></tr><tr><td style="white-space:nowrap">2820023<a name="cs-nemsis-codes-2820023"> </a></td><td>Psychiatric/Behavioral Care</td></tr><tr><td style="white-space:nowrap">2820025<a name="cs-nemsis-codes-2820025"> </a></td><td>Physical Rehabilitation Care</td></tr><tr><td style="white-space:nowrap">2820027<a name="cs-nemsis-codes-2820027"> </a></td><td>Return to Home/Residence</td></tr><tr><td style="white-space:nowrap">2820029<a name="cs-nemsis-codes-2820029"> </a></td><td>Surgical Specialty Care (Other, Not Listed)</td></tr><tr><td style="white-space:nowrap">2820031<a name="cs-nemsis-codes-2820031"> </a></td><td>Trauma/Orthopedic Specialty Care</td></tr><tr><td style="white-space:nowrap">3101001<a name="cs-nemsis-codes-3101001"> </a></td><td>Cultural, Custom, Religious</td></tr><tr><td style="white-space:nowrap">3101003<a name="cs-nemsis-codes-3101003"> </a></td><td>Developmentally Impaired</td></tr><tr><td style="white-space:nowrap">3101005<a name="cs-nemsis-codes-3101005"> </a></td><td>Hearing Impaired</td></tr><tr><td style="white-space:nowrap">3101007<a name="cs-nemsis-codes-3101007"> </a></td><td>Language</td></tr><tr><td style="white-space:nowrap">3101009<a name="cs-nemsis-codes-3101009"> </a></td><td>None Noted</td></tr><tr><td style="white-space:nowrap">3101011<a name="cs-nemsis-codes-3101011"> </a></td><td>Obesity</td></tr><tr><td style="white-space:nowrap">3101013<a name="cs-nemsis-codes-3101013"> </a></td><td>Physical Barrier (Unable to Access Patient)</td></tr><tr><td style="white-space:nowrap">3101015<a name="cs-nemsis-codes-3101015"> </a></td><td>Physically Impaired</td></tr><tr><td style="white-space:nowrap">3101017<a name="cs-nemsis-codes-3101017"> </a></td><td>Physically Restrained</td></tr><tr><td style="white-space:nowrap">3101019<a name="cs-nemsis-codes-3101019"> </a></td><td>Psychologically Impaired</td></tr><tr><td style="white-space:nowrap">3101021<a name="cs-nemsis-codes-3101021"> </a></td><td>Sight Impaired</td></tr><tr><td style="white-space:nowrap">3101023<a name="cs-nemsis-codes-3101023"> </a></td><td>Speech Impaired</td></tr><tr><td style="white-space:nowrap">3101025<a name="cs-nemsis-codes-3101025"> </a></td><td>Unattended or Unsupervised (including minors)</td></tr><tr><td style="white-space:nowrap">3101027<a name="cs-nemsis-codes-3101027"> </a></td><td>Unconscious</td></tr><tr><td style="white-space:nowrap">3101029<a name="cs-nemsis-codes-3101029"> </a></td><td>Uncooperative</td></tr><tr><td style="white-space:nowrap">3101031<a name="cs-nemsis-codes-3101031"> </a></td><td>State of Emotional Distress</td></tr><tr><td style="white-space:nowrap">3101033<a name="cs-nemsis-codes-3101033"> </a></td><td>Alcohol Use, Suspected</td></tr><tr><td style="white-space:nowrap">3101035<a name="cs-nemsis-codes-3101035"> </a></td><td>Drug Use, Suspected</td></tr><tr><td style="white-space:nowrap">4303001<a name="cs-nemsis-codes-4303001"> </a></td><td>Disaster Tag</td></tr><tr><td style="white-space:nowrap">4303003<a name="cs-nemsis-codes-4303003"> </a></td><td>Fire Incident Report</td></tr><tr><td style="white-space:nowrap">4303005<a name="cs-nemsis-codes-4303005"> </a></td><td>Hospital-Receiving</td></tr><tr><td style="white-space:nowrap">4303007<a name="cs-nemsis-codes-4303007"> </a></td><td>Hospital-Transferring</td></tr><tr><td style="white-space:nowrap">4303009<a name="cs-nemsis-codes-4303009"> </a></td><td>Law Enforcement Report</td></tr><tr><td style="white-space:nowrap">4303011<a name="cs-nemsis-codes-4303011"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4303013<a name="cs-nemsis-codes-4303013"> </a></td><td>Other Registry</td></tr><tr><td style="white-space:nowrap">4303015<a name="cs-nemsis-codes-4303015"> </a></td><td>Other Report</td></tr><tr><td style="white-space:nowrap">4303017<a name="cs-nemsis-codes-4303017"> </a></td><td>Patient ID</td></tr><tr><td style="white-space:nowrap">4303019<a name="cs-nemsis-codes-4303019"> </a></td><td>Prior EMS Patient Care Report</td></tr><tr><td style="white-space:nowrap">4303021<a name="cs-nemsis-codes-4303021"> </a></td><td>STEMI Registry</td></tr><tr><td style="white-space:nowrap">4303023<a name="cs-nemsis-codes-4303023"> </a></td><td>Stroke Registry</td></tr><tr><td style="white-space:nowrap">4303025<a name="cs-nemsis-codes-4303025"> </a></td><td>Trauma Registry</td></tr><tr><td style="white-space:nowrap">1404001<a name="cs-nemsis-codes-1404001"> </a></td><td>Ambulance</td></tr><tr><td style="white-space:nowrap">1404003<a name="cs-nemsis-codes-1404003"> </a></td><td>ATV</td></tr><tr><td style="white-space:nowrap">1404005<a name="cs-nemsis-codes-1404005"> </a></td><td>Bicycle</td></tr><tr><td style="white-space:nowrap">1404007<a name="cs-nemsis-codes-1404007"> </a></td><td>Fire Apparatus</td></tr><tr><td style="white-space:nowrap">1404009<a name="cs-nemsis-codes-1404009"> </a></td><td>Fixed Wing</td></tr><tr><td style="white-space:nowrap">1404011<a name="cs-nemsis-codes-1404011"> </a></td><td>Motorcycle</td></tr><tr><td style="white-space:nowrap">1404013<a name="cs-nemsis-codes-1404013"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">1404015<a name="cs-nemsis-codes-1404015"> </a></td><td>Personal Vehicle</td></tr><tr><td style="white-space:nowrap">1404017<a name="cs-nemsis-codes-1404017"> </a></td><td>Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)</td></tr><tr><td style="white-space:nowrap">1404019<a name="cs-nemsis-codes-1404019"> </a></td><td>Rescue</td></tr><tr><td style="white-space:nowrap">1404021<a name="cs-nemsis-codes-1404021"> </a></td><td>Rotor Craft</td></tr><tr><td style="white-space:nowrap">1404023<a name="cs-nemsis-codes-1404023"> </a></td><td>Snow Vehicle</td></tr><tr><td style="white-space:nowrap">1404025<a name="cs-nemsis-codes-1404025"> </a></td><td>Watercraft</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.3"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISCodes"/>
+  <title value="NEMSIS General Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="General NEMSIS enumeration codes for sections without a dedicated CodeSystem. Currently covers eHistory (eHistory.01 - Barriers to Patient Care). NEMSIS 3.5.1.251001CP2."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="126"/>
+  <concept>
+    <code value="section-eResponse"/>
+    <display value="EMS Response"/>
+  </concept>
+  <concept>
+    <code value="section-eTimes"/>
+    <display value="EMS Times"/>
+  </concept>
+  <concept>
+    <code value="section-eScene"/>
+    <display value="EMS Scene"/>
+  </concept>
+  <concept>
+    <code value="section-eSituation"/>
+    <display value="EMS Patient Situation"/>
+  </concept>
+  <concept>
+    <code value="section-eAirway"/>
+    <display value="EMS Airway Management"/>
+  </concept>
+  <concept>
+    <code value="section-eArrest"/>
+    <display value="EMS Cardiac Arrest"/>
+  </concept>
+  <concept>
+    <code value="section-eExam"/>
+    <display value="EMS Physical Exam"/>
+  </concept>
+  <concept>
+    <code value="section-eLabs"/>
+    <display value="EMS Labs"/>
+  </concept>
+  <concept>
+    <code value="section-eCrew"/>
+    <display value="EMS Crew"/>
+  </concept>
+  <concept>
+    <code value="9920001"/>
+    <display value="911 Response (Scene) with Transport Capability"/>
+  </concept>
+  <concept>
+    <code value="9920003"/>
+    <display value="911 Response (Scene) without Transport Capability"/>
+  </concept>
+  <concept>
+    <code value="9920005"/>
+    <display value="Air Medical"/>
+  </concept>
+  <concept>
+    <code value="9920007"/>
+    <display value="ALS Intercept"/>
+  </concept>
+  <concept>
+    <code value="9920011"/>
+    <display value="Hazmat"/>
+  </concept>
+  <concept>
+    <code value="9920013"/>
+    <display value="Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)"/>
+  </concept>
+  <concept>
+    <code value="9920015"/>
+    <display value="Rescue"/>
+  </concept>
+  <concept>
+    <code value="9920017"/>
+    <display value="Community Paramedicine"/>
+  </concept>
+  <concept>
+    <code value="9920019"/>
+    <display value="Critical Care (Ground)"/>
+  </concept>
+  <concept>
+    <code value="9917001"/>
+    <display value="Advanced Emergency Medical Technician (AEMT)"/>
+  </concept>
+  <concept>
+    <code value="9917002"/>
+    <display value="Emergency Medical Technician - Intermediate"/>
+  </concept>
+  <concept>
+    <code value="9917003"/>
+    <display value="Emergency Medical Responder (EMR)"/>
+  </concept>
+  <concept>
+    <code value="9917005"/>
+    <display value="Emergency Medical Technician (EMT)"/>
+  </concept>
+  <concept>
+    <code value="9917007"/>
+    <display value="Paramedic"/>
+  </concept>
+  <concept>
+    <code value="9917019"/>
+    <display value="Physician"/>
+  </concept>
+  <concept>
+    <code value="9917021"/>
+    <display value="Critical Care Paramedic"/>
+  </concept>
+  <concept>
+    <code value="9917023"/>
+    <display value="Community Paramedicine"/>
+  </concept>
+  <concept>
+    <code value="9917025"/>
+    <display value="Nurse Practitioner"/>
+  </concept>
+  <concept>
+    <code value="9917027"/>
+    <display value="Physician Assistant"/>
+  </concept>
+  <concept>
+    <code value="9917029"/>
+    <display value="Licensed Practical Nurse (LPN)"/>
+  </concept>
+  <concept>
+    <code value="9917031"/>
+    <display value="Registered Nurse"/>
+  </concept>
+  <concept>
+    <code value="1016001"/>
+    <display value="Mixed"/>
+  </concept>
+  <concept>
+    <code value="1016003"/>
+    <display value="Non-Volunteer"/>
+  </concept>
+  <concept>
+    <code value="1016005"/>
+    <display value="Volunteer"/>
+  </concept>
+  <concept>
+    <code value="9912001"/>
+    <display value="Fire Department"/>
+  </concept>
+  <concept>
+    <code value="9912003"/>
+    <display value="Governmental, Non-Fire"/>
+  </concept>
+  <concept>
+    <code value="9912005"/>
+    <display value="Hospital"/>
+  </concept>
+  <concept>
+    <code value="9912007"/>
+    <display value="Private, Nonhospital"/>
+  </concept>
+  <concept>
+    <code value="9912009"/>
+    <display value="Tribal"/>
+  </concept>
+  <concept>
+    <code value="2403001"/>
+    <display value="Driver/Pilot-Response"/>
+  </concept>
+  <concept>
+    <code value="2403003"/>
+    <display value="Driver/Pilot-Transport"/>
+  </concept>
+  <concept>
+    <code value="2403005"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="2403007"/>
+    <display value="Other Patient Caregiver-At Scene"/>
+  </concept>
+  <concept>
+    <code value="2403009"/>
+    <display value="Other Patient Caregiver-Transport"/>
+  </concept>
+  <concept>
+    <code value="2403011"/>
+    <display value="Primary Patient Caregiver-At Scene"/>
+  </concept>
+  <concept>
+    <code value="2403013"/>
+    <display value="Primary Patient Caregiver-Transport"/>
+  </concept>
+  <concept>
+    <code value="2708001"/>
+    <display value="Red - Immediate"/>
+  </concept>
+  <concept>
+    <code value="2708003"/>
+    <display value="Yellow - Delayed"/>
+  </concept>
+  <concept>
+    <code value="2708005"/>
+    <display value="Green - Minimal (Minor)"/>
+  </concept>
+  <concept>
+    <code value="2708007"/>
+    <display value="Gray - Expectant"/>
+  </concept>
+  <concept>
+    <code value="2708009"/>
+    <display value="Black - Deceased"/>
+  </concept>
+  <concept>
+    <code value="2808001"/>
+    <display value="Behavioral/Psychiatric"/>
+  </concept>
+  <concept>
+    <code value="2808003"/>
+    <display value="Cardiovascular"/>
+  </concept>
+  <concept>
+    <code value="2808005"/>
+    <display value="CNS/Neuro"/>
+  </concept>
+  <concept>
+    <code value="2808007"/>
+    <display value="Endocrine/Metabolic"/>
+  </concept>
+  <concept>
+    <code value="2808009"/>
+    <display value="GI"/>
+  </concept>
+  <concept>
+    <code value="2808011"/>
+    <display value="Global/General"/>
+  </concept>
+  <concept>
+    <code value="2808013"/>
+    <display value="Lymphatic/Immune"/>
+  </concept>
+  <concept>
+    <code value="2808015"/>
+    <display value="Musculoskeletal/Skin"/>
+  </concept>
+  <concept>
+    <code value="2808017"/>
+    <display value="Reproductive"/>
+  </concept>
+  <concept>
+    <code value="2808019"/>
+    <display value="Pulmonary"/>
+  </concept>
+  <concept>
+    <code value="2808021"/>
+    <display value="Renal"/>
+  </concept>
+  <concept>
+    <code value="2813001"/>
+    <display value="Critical (Red)"/>
+  </concept>
+  <concept>
+    <code value="2813003"/>
+    <display value="Emergent (Yellow)"/>
+  </concept>
+  <concept>
+    <code value="2813005"/>
+    <display value="Lower Acuity (Green)"/>
+  </concept>
+  <concept>
+    <code value="2813007"/>
+    <display value="Dead without Resuscitation Efforts (Black)"/>
+  </concept>
+  <concept>
+    <code value="2813009"/>
+    <display value="Non-Acute/Routine"/>
+  </concept>
+  <concept>
+    <code value="2820001"/>
+    <display value="Cardiac Specialty"/>
+  </concept>
+  <concept>
+    <code value="2820003"/>
+    <display value="Convenience Transfer (Patient Request)"/>
+  </concept>
+  <concept>
+    <code value="2820005"/>
+    <display value="Diagnostic Testing"/>
+  </concept>
+  <concept>
+    <code value="2820007"/>
+    <display value="Dialysis"/>
+  </concept>
+  <concept>
+    <code value="2820009"/>
+    <display value="Drug and/or Alcohol Rehabilitation Care"/>
+  </concept>
+  <concept>
+    <code value="2820011"/>
+    <display value="Extended Care"/>
+  </concept>
+  <concept>
+    <code value="2820013"/>
+    <display value="Maternal/Neonatal"/>
+  </concept>
+  <concept>
+    <code value="2820015"/>
+    <display value="Medical Specialty Care (Other, Not Listed)"/>
+  </concept>
+  <concept>
+    <code value="2820017"/>
+    <display value="Neurological Specialty Care"/>
+  </concept>
+  <concept>
+    <code value="2820019"/>
+    <display value="Palliative/Hospice Care (Home or Facility)"/>
+  </concept>
+  <concept>
+    <code value="2820021"/>
+    <display value="Pediatric Specialty Care"/>
+  </concept>
+  <concept>
+    <code value="2820023"/>
+    <display value="Psychiatric/Behavioral Care"/>
+  </concept>
+  <concept>
+    <code value="2820025"/>
+    <display value="Physical Rehabilitation Care"/>
+  </concept>
+  <concept>
+    <code value="2820027"/>
+    <display value="Return to Home/Residence"/>
+  </concept>
+  <concept>
+    <code value="2820029"/>
+    <display value="Surgical Specialty Care (Other, Not Listed)"/>
+  </concept>
+  <concept>
+    <code value="2820031"/>
+    <display value="Trauma/Orthopedic Specialty Care"/>
+  </concept>
+  <concept>
+    <code value="3101001"/>
+    <display value="Cultural, Custom, Religious"/>
+  </concept>
+  <concept>
+    <code value="3101003"/>
+    <display value="Developmentally Impaired"/>
+  </concept>
+  <concept>
+    <code value="3101005"/>
+    <display value="Hearing Impaired"/>
+  </concept>
+  <concept>
+    <code value="3101007"/>
+    <display value="Language"/>
+  </concept>
+  <concept>
+    <code value="3101009"/>
+    <display value="None Noted"/>
+  </concept>
+  <concept>
+    <code value="3101011"/>
+    <display value="Obesity"/>
+  </concept>
+  <concept>
+    <code value="3101013"/>
+    <display value="Physical Barrier (Unable to Access Patient)"/>
+  </concept>
+  <concept>
+    <code value="3101015"/>
+    <display value="Physically Impaired"/>
+  </concept>
+  <concept>
+    <code value="3101017"/>
+    <display value="Physically Restrained"/>
+  </concept>
+  <concept>
+    <code value="3101019"/>
+    <display value="Psychologically Impaired"/>
+  </concept>
+  <concept>
+    <code value="3101021"/>
+    <display value="Sight Impaired"/>
+  </concept>
+  <concept>
+    <code value="3101023"/>
+    <display value="Speech Impaired"/>
+  </concept>
+  <concept>
+    <code value="3101025"/>
+    <display value="Unattended or Unsupervised (including minors)"/>
+  </concept>
+  <concept>
+    <code value="3101027"/>
+    <display value="Unconscious"/>
+  </concept>
+  <concept>
+    <code value="3101029"/>
+    <display value="Uncooperative"/>
+  </concept>
+  <concept>
+    <code value="3101031"/>
+    <display value="State of Emotional Distress"/>
+  </concept>
+  <concept>
+    <code value="3101033"/>
+    <display value="Alcohol Use, Suspected"/>
+  </concept>
+  <concept>
+    <code value="3101035"/>
+    <display value="Drug Use, Suspected"/>
+  </concept>
+  <concept>
+    <code value="4303001"/>
+    <display value="Disaster Tag"/>
+  </concept>
+  <concept>
+    <code value="4303003"/>
+    <display value="Fire Incident Report"/>
+  </concept>
+  <concept>
+    <code value="4303005"/>
+    <display value="Hospital-Receiving"/>
+  </concept>
+  <concept>
+    <code value="4303007"/>
+    <display value="Hospital-Transferring"/>
+  </concept>
+  <concept>
+    <code value="4303009"/>
+    <display value="Law Enforcement Report"/>
+  </concept>
+  <concept>
+    <code value="4303011"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4303013"/>
+    <display value="Other Registry"/>
+  </concept>
+  <concept>
+    <code value="4303015"/>
+    <display value="Other Report"/>
+  </concept>
+  <concept>
+    <code value="4303017"/>
+    <display value="Patient ID"/>
+  </concept>
+  <concept>
+    <code value="4303019"/>
+    <display value="Prior EMS Patient Care Report"/>
+  </concept>
+  <concept>
+    <code value="4303021"/>
+    <display value="STEMI Registry"/>
+  </concept>
+  <concept>
+    <code value="4303023"/>
+    <display value="Stroke Registry"/>
+  </concept>
+  <concept>
+    <code value="4303025"/>
+    <display value="Trauma Registry"/>
+  </concept>
+  <concept>
+    <code value="1404001"/>
+    <display value="Ambulance"/>
+  </concept>
+  <concept>
+    <code value="1404003"/>
+    <display value="ATV"/>
+  </concept>
+  <concept>
+    <code value="1404005"/>
+    <display value="Bicycle"/>
+  </concept>
+  <concept>
+    <code value="1404007"/>
+    <display value="Fire Apparatus"/>
+  </concept>
+  <concept>
+    <code value="1404009"/>
+    <display value="Fixed Wing"/>
+  </concept>
+  <concept>
+    <code value="1404011"/>
+    <display value="Motorcycle"/>
+  </concept>
+  <concept>
+    <code value="1404013"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="1404015"/>
+    <display value="Personal Vehicle"/>
+  </concept>
+  <concept>
+    <code value="1404017"/>
+    <display value="Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)"/>
+  </concept>
+  <concept>
+    <code value="1404019"/>
+    <display value="Rescue"/>
+  </concept>
+  <concept>
+    <code value="1404021"/>
+    <display value="Rotor Craft"/>
+  </concept>
+  <concept>
+    <code value="1404023"/>
+    <display value="Snow Vehicle"/>
+  </concept>
+  <concept>
+    <code value="1404025"/>
+    <display value="Watercraft"/>
+  </concept>
+</CodeSystem>

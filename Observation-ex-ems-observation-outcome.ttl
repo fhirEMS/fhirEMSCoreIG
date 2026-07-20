@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-outcome> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-observation-outcome"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-outcome>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ex-ems-observation-outcome</b></p><a name=\"ex-ems-observation-outcome\"> </a><a name=\"hcex-ems-observation-outcome\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-observation-outcome.html\">EMS Outcome Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomePanel}\">EMS Outcome Observation Panel</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-15 08:00:00-0800</p><p><b>performer</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomeEDDisposition}\">Emergency Department Patient Disposition</span></p><p><b>value</b>: <span title=\"Codes:{https://www.nubc.org/CodeSystem/PatDischargeStatus 09}\">Admitted as an inpatient to this hospital</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29548-5}\">Diagnosis Narrative</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm S09.90XA}\">Unspecified injury of head, initial encounter</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 52455-3}\">Admission date</span></p><p><b>value</b>: 2026-03-14 17:30:00-0800</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomeEDArrivalDateTime}\">Emergency Department Arrival Date and Time</span></p><p><b>value</b>: 2026-03-14 15:08:00-0800</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter eOutcomeInjurySeverityScore}\">Injury Severity Score (ISS)</span></p><p><b>value</b>: 9</p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "exam" ] ;
+       fhir:Coding.display [ fhir:value "Exam" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter" ] ;
+       fhir:Coding.code [ fhir:value "eOutcomePanel" ] ;
+       fhir:Coding.display [ fhir:value "EMS Outcome Observation Panel" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Observation.encounter [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-03-15T08:00:00-08:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter" ] ;
+         fhir:Coding.code [ fhir:value "eOutcomeEDDisposition" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://www.nubc.org/CodeSystem/PatDischargeStatus" ] ;
+         fhir:Coding.code [ fhir:value "09" ] ;
+         fhir:Coding.display [ fhir:value "Admitted as an inpatient to this hospital" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:29548-5 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "29548-5" ] ;
+         fhir:Coding.display [ fhir:value "Diagnosis Narrative" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+         fhir:Coding.code [ fhir:value "S09.90XA" ] ;
+         fhir:Coding.display [ fhir:value "Unspecified injury of head, initial encounter" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:52455-3 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "52455-3" ] ;
+         fhir:Coding.display [ fhir:value "Admission date" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueDateTime [ fhir:value "2026-03-14T17:30:00-08:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 3 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter" ] ;
+         fhir:Coding.code [ fhir:value "eOutcomeEDArrivalDateTime" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueDateTime [ fhir:value "2026-03-14T15:08:00-08:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 4 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter" ] ;
+         fhir:Coding.code [ fhir:value "eOutcomeInjurySeverityScore" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueInteger [ fhir:value "9"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-outcome.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

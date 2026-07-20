@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-heart"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-heart</b></p><a name="vs-ems-exam-heart"> </a><a name="hcvs-ems-exam-heart"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509001">3509001</a></td><td>Clicks</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509003">3509003</a></td><td>Heart Sounds Decreased</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509005">3509005</a></td><td>Murmur-Diastolic</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509007">3509007</a></td><td>Murmur-Systolic</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509009">3509009</a></td><td>Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509011">3509011</a></td><td>Not Done</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509013">3509013</a></td><td>Rubs</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509015">3509015</a></td><td>S1</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509017">3509017</a></td><td>S2</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509019">3509019</a></td><td>S3</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3509021">3509021</a></td><td>S4</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-heart"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.61"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamHeartVS"/>
+  <title value="EMS Heart Assessment"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.09 - Physical findings on heart/cardiac auscultation."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3509001"/>
+        <display value="Clicks"/>
+      </concept>
+      <concept>
+        <code value="3509003"/>
+        <display value="Heart Sounds Decreased"/>
+      </concept>
+      <concept>
+        <code value="3509005"/>
+        <display value="Murmur-Diastolic"/>
+      </concept>
+      <concept>
+        <code value="3509007"/>
+        <display value="Murmur-Systolic"/>
+      </concept>
+      <concept>
+        <code value="3509009"/>
+        <display value="Normal"/>
+      </concept>
+      <concept>
+        <code value="3509011"/>
+        <display value="Not Done"/>
+      </concept>
+      <concept>
+        <code value="3509013"/>
+        <display value="Rubs"/>
+      </concept>
+      <concept>
+        <code value="3509015"/>
+        <display value="S1"/>
+      </concept>
+      <concept>
+        <code value="3509017"/>
+        <display value="S2"/>
+      </concept>
+      <concept>
+        <code value="3509019"/>
+        <display value="S3"/>
+      </concept>
+      <concept>
+        <code value="3509021"/>
+        <display value="S4"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

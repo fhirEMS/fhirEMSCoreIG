@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-transport-disposition"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-transport-disposition</b></p><a name="vs-ems-transport-disposition"> </a><a name="hcvs-ems-transport-disposition"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4230001">4230001</a></td><td>Transport by This EMS Unit (This Crew Only)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4230003">4230003</a></td><td>Transport by This EMS Unit, with a Member of Another Crew</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4230005">4230005</a></td><td>Transport by Another EMS Unit/Agency</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4230007">4230007</a></td><td>Transport by Another EMS Unit/Agency, with a Member of This Crew</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4230009">4230009</a></td><td>Patient Refused Transport</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4230011">4230011</a></td><td>Non-Patient Transport (Not Otherwise Listed)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4230013">4230013</a></td><td>No Transport</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-disposition"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.120"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSTransportDispositionVS"/>
+  <title value="EMS Transport Disposition"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eDisposition.30 - Whether/how the patient was transported."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="4230001"/>
+        <display value="Transport by This EMS Unit (This Crew Only)"/>
+      </concept>
+      <concept>
+        <code value="4230003"/>
+        <display value="Transport by This EMS Unit, with a Member of Another Crew"/>
+      </concept>
+      <concept>
+        <code value="4230005"/>
+        <display value="Transport by Another EMS Unit/Agency"/>
+      </concept>
+      <concept>
+        <code value="4230007"/>
+        <display value="Transport by Another EMS Unit/Agency, with a Member of This Crew"/>
+      </concept>
+      <concept>
+        <code value="4230009"/>
+        <display value="Patient Refused Transport"/>
+      </concept>
+      <concept>
+        <code value="4230011"/>
+        <display value="Non-Patient Transport (Not Otherwise Listed)"/>
+      </concept>
+      <concept>
+        <code value="4230013"/>
+        <display value="No Transport"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

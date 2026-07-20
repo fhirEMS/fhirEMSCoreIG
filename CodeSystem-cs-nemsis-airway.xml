@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-airway"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-airway</b></p><a name="cs-nemsis-airway"> </a><a name="hccs-nemsis-airway"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">4001001<a name="cs-nemsis-airway-4001001"> </a></td><td>Adequate Airway Reflexes/Effort, Potential for Compromise</td></tr><tr><td style="white-space:nowrap">4001003<a name="cs-nemsis-airway-4001003"> </a></td><td>Airway Reflex Compromised</td></tr><tr><td style="white-space:nowrap">4001005<a name="cs-nemsis-airway-4001005"> </a></td><td>Apnea or Agonal Respirations</td></tr><tr><td style="white-space:nowrap">4001007<a name="cs-nemsis-airway-4001007"> </a></td><td>Illness Involving Airway</td></tr><tr><td style="white-space:nowrap">4001009<a name="cs-nemsis-airway-4001009"> </a></td><td>Injury Involving Airway</td></tr><tr><td style="white-space:nowrap">4001011<a name="cs-nemsis-airway-4001011"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4001013<a name="cs-nemsis-airway-4001013"> </a></td><td>Ventilatory Effort Compromised</td></tr><tr><td style="white-space:nowrap">4003001<a name="cs-nemsis-airway-4003001"> </a></td><td>Cricothyrotomy Tube</td></tr><tr><td style="white-space:nowrap">4003003<a name="cs-nemsis-airway-4003003"> </a></td><td>Endotracheal Tube</td></tr><tr><td style="white-space:nowrap">4003005<a name="cs-nemsis-airway-4003005"> </a></td><td>Other-Invasive Airway</td></tr><tr><td style="white-space:nowrap">4003007<a name="cs-nemsis-airway-4003007"> </a></td><td>SAD-Combitube</td></tr><tr><td style="white-space:nowrap">4003009<a name="cs-nemsis-airway-4003009"> </a></td><td>SAD-King</td></tr><tr><td style="white-space:nowrap">4003011<a name="cs-nemsis-airway-4003011"> </a></td><td>SAD-LMA</td></tr><tr><td style="white-space:nowrap">4003013<a name="cs-nemsis-airway-4003013"> </a></td><td>SAD-Other</td></tr><tr><td style="white-space:nowrap">4003015<a name="cs-nemsis-airway-4003015"> </a></td><td>Tracheostomy Tube</td></tr><tr><td style="white-space:nowrap">4004001<a name="cs-nemsis-airway-4004001"> </a></td><td>Auscultation</td></tr><tr><td style="white-space:nowrap">4004003<a name="cs-nemsis-airway-4004003"> </a></td><td>Bulb/Syringe Aspiration</td></tr><tr><td style="white-space:nowrap">4004005<a name="cs-nemsis-airway-4004005"> </a></td><td>Colorimetric ETCO2</td></tr><tr><td style="white-space:nowrap">4004007<a name="cs-nemsis-airway-4004007"> </a></td><td>Condensation in Tube</td></tr><tr><td style="white-space:nowrap">4004009<a name="cs-nemsis-airway-4004009"> </a></td><td>Digital (Numeric) ETCO2</td></tr><tr><td style="white-space:nowrap">4004011<a name="cs-nemsis-airway-4004011"> </a></td><td>Direct Re-Visualization of Tube in Place</td></tr><tr><td style="white-space:nowrap">4004013<a name="cs-nemsis-airway-4004013"> </a></td><td>Endotracheal Tube Whistle (BAAM, etc.)</td></tr><tr><td style="white-space:nowrap">4004015<a name="cs-nemsis-airway-4004015"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4004017<a name="cs-nemsis-airway-4004017"> </a></td><td>Visualization of Vocal Cords</td></tr><tr><td style="white-space:nowrap">4004019<a name="cs-nemsis-airway-4004019"> </a></td><td>Waveform ETCO2</td></tr><tr><td style="white-space:nowrap">4004021<a name="cs-nemsis-airway-4004021"> </a></td><td>Chest Rise</td></tr><tr><td style="white-space:nowrap">4006001<a name="cs-nemsis-airway-4006001"> </a></td><td>Another Person on the Same Crew</td></tr><tr><td style="white-space:nowrap">4006003<a name="cs-nemsis-airway-4006003"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4006005<a name="cs-nemsis-airway-4006005"> </a></td><td>Person Performing Intubation</td></tr><tr><td style="white-space:nowrap">4006007<a name="cs-nemsis-airway-4006007"> </a></td><td>Receiving Air Medical/EMS Crew</td></tr><tr><td style="white-space:nowrap">4006009<a name="cs-nemsis-airway-4006009"> </a></td><td>Receiving Hospital Team</td></tr><tr><td style="white-space:nowrap">4008001<a name="cs-nemsis-airway-4008001"> </a></td><td>Adverse Event from Facilitating Drugs</td></tr><tr><td style="white-space:nowrap">4008003<a name="cs-nemsis-airway-4008003"> </a></td><td>Bradycardia (&lt;50)</td></tr><tr><td style="white-space:nowrap">4008005<a name="cs-nemsis-airway-4008005"> </a></td><td>Cardiac Arrest</td></tr><tr><td style="white-space:nowrap">4008007<a name="cs-nemsis-airway-4008007"> </a></td><td>Esophageal Intubation-Delayed Detection (After Tube Secured)</td></tr><tr><td style="white-space:nowrap">4008009<a name="cs-nemsis-airway-4008009"> </a></td><td>Esophageal Intubation-Detected in Emergency Department</td></tr><tr><td style="white-space:nowrap">4008011<a name="cs-nemsis-airway-4008011"> </a></td><td>Failed Intubation Effort</td></tr><tr><td style="white-space:nowrap">4008013<a name="cs-nemsis-airway-4008013"> </a></td><td>Injury or Trauma to Patient from Airway Management Effort</td></tr><tr><td style="white-space:nowrap">4008015<a name="cs-nemsis-airway-4008015"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4008017<a name="cs-nemsis-airway-4008017"> </a></td><td>Oxygen Desaturation (&lt;90%)</td></tr><tr><td style="white-space:nowrap">4008019<a name="cs-nemsis-airway-4008019"> </a></td><td>Patient Vomiting/Aspiration</td></tr><tr><td style="white-space:nowrap">4008021<a name="cs-nemsis-airway-4008021"> </a></td><td>Tube Dislodged During Transport/Patient Care</td></tr><tr><td style="white-space:nowrap">4008023<a name="cs-nemsis-airway-4008023"> </a></td><td>Tube Was Not in Correct Position when EMS Crew/Team Assumed Care of the Patient</td></tr><tr><td style="white-space:nowrap">4009001<a name="cs-nemsis-airway-4009001"> </a></td><td>Difficult Patient Airway Anatomy</td></tr><tr><td style="white-space:nowrap">4009003<a name="cs-nemsis-airway-4009003"> </a></td><td>ETI Attempted, but Arrived At Destination Facility Before Accomplished</td></tr><tr><td style="white-space:nowrap">4009005<a name="cs-nemsis-airway-4009005"> </a></td><td>Facial or Oral Trauma</td></tr><tr><td style="white-space:nowrap">4009007<a name="cs-nemsis-airway-4009007"> </a></td><td>Inability to Expose Vocal Cords</td></tr><tr><td style="white-space:nowrap">4009009<a name="cs-nemsis-airway-4009009"> </a></td><td>Inadequate Patient Relaxation/Presence of Protective Airway Reflexes</td></tr><tr><td style="white-space:nowrap">4009011<a name="cs-nemsis-airway-4009011"> </a></td><td>Jaw Clenched (Trismus)</td></tr><tr><td style="white-space:nowrap">4009013<a name="cs-nemsis-airway-4009013"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4009015<a name="cs-nemsis-airway-4009015"> </a></td><td>Poor Patient Access</td></tr><tr><td style="white-space:nowrap">4009017<a name="cs-nemsis-airway-4009017"> </a></td><td>Secretions/Blood/Vomit</td></tr><tr><td style="white-space:nowrap">4009019<a name="cs-nemsis-airway-4009019"> </a></td><td>Unable to Position or Access Patient</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.1"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISAirway"/>
+  <title value="NEMSIS eAirway Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS 3.5.1 eAirway section covering airway management indications, device types, confirmation methods, confirming personnel, complications, and reasons for failed management."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="53"/>
+  <concept>
+    <code value="4001001"/>
+    <display value="Adequate Airway Reflexes/Effort, Potential for Compromise"/>
+  </concept>
+  <concept>
+    <code value="4001003"/>
+    <display value="Airway Reflex Compromised"/>
+  </concept>
+  <concept>
+    <code value="4001005"/>
+    <display value="Apnea or Agonal Respirations"/>
+  </concept>
+  <concept>
+    <code value="4001007"/>
+    <display value="Illness Involving Airway"/>
+  </concept>
+  <concept>
+    <code value="4001009"/>
+    <display value="Injury Involving Airway"/>
+  </concept>
+  <concept>
+    <code value="4001011"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4001013"/>
+    <display value="Ventilatory Effort Compromised"/>
+  </concept>
+  <concept>
+    <code value="4003001"/>
+    <display value="Cricothyrotomy Tube"/>
+  </concept>
+  <concept>
+    <code value="4003003"/>
+    <display value="Endotracheal Tube"/>
+  </concept>
+  <concept>
+    <code value="4003005"/>
+    <display value="Other-Invasive Airway"/>
+  </concept>
+  <concept>
+    <code value="4003007"/>
+    <display value="SAD-Combitube"/>
+  </concept>
+  <concept>
+    <code value="4003009"/>
+    <display value="SAD-King"/>
+  </concept>
+  <concept>
+    <code value="4003011"/>
+    <display value="SAD-LMA"/>
+  </concept>
+  <concept>
+    <code value="4003013"/>
+    <display value="SAD-Other"/>
+  </concept>
+  <concept>
+    <code value="4003015"/>
+    <display value="Tracheostomy Tube"/>
+  </concept>
+  <concept>
+    <code value="4004001"/>
+    <display value="Auscultation"/>
+  </concept>
+  <concept>
+    <code value="4004003"/>
+    <display value="Bulb/Syringe Aspiration"/>
+  </concept>
+  <concept>
+    <code value="4004005"/>
+    <display value="Colorimetric ETCO2"/>
+  </concept>
+  <concept>
+    <code value="4004007"/>
+    <display value="Condensation in Tube"/>
+  </concept>
+  <concept>
+    <code value="4004009"/>
+    <display value="Digital (Numeric) ETCO2"/>
+  </concept>
+  <concept>
+    <code value="4004011"/>
+    <display value="Direct Re-Visualization of Tube in Place"/>
+  </concept>
+  <concept>
+    <code value="4004013"/>
+    <display value="Endotracheal Tube Whistle (BAAM, etc.)"/>
+  </concept>
+  <concept>
+    <code value="4004015"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4004017"/>
+    <display value="Visualization of Vocal Cords"/>
+  </concept>
+  <concept>
+    <code value="4004019"/>
+    <display value="Waveform ETCO2"/>
+  </concept>
+  <concept>
+    <code value="4004021"/>
+    <display value="Chest Rise"/>
+  </concept>
+  <concept>
+    <code value="4006001"/>
+    <display value="Another Person on the Same Crew"/>
+  </concept>
+  <concept>
+    <code value="4006003"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4006005"/>
+    <display value="Person Performing Intubation"/>
+  </concept>
+  <concept>
+    <code value="4006007"/>
+    <display value="Receiving Air Medical/EMS Crew"/>
+  </concept>
+  <concept>
+    <code value="4006009"/>
+    <display value="Receiving Hospital Team"/>
+  </concept>
+  <concept>
+    <code value="4008001"/>
+    <display value="Adverse Event from Facilitating Drugs"/>
+  </concept>
+  <concept>
+    <code value="4008003"/>
+    <display value="Bradycardia (&lt;50)"/>
+  </concept>
+  <concept>
+    <code value="4008005"/>
+    <display value="Cardiac Arrest"/>
+  </concept>
+  <concept>
+    <code value="4008007"/>
+    <display value="Esophageal Intubation-Delayed Detection (After Tube Secured)"/>
+  </concept>
+  <concept>
+    <code value="4008009"/>
+    <display value="Esophageal Intubation-Detected in Emergency Department"/>
+  </concept>
+  <concept>
+    <code value="4008011"/>
+    <display value="Failed Intubation Effort"/>
+  </concept>
+  <concept>
+    <code value="4008013"/>
+    <display value="Injury or Trauma to Patient from Airway Management Effort"/>
+  </concept>
+  <concept>
+    <code value="4008015"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4008017"/>
+    <display value="Oxygen Desaturation (&lt;90%)"/>
+  </concept>
+  <concept>
+    <code value="4008019"/>
+    <display value="Patient Vomiting/Aspiration"/>
+  </concept>
+  <concept>
+    <code value="4008021"/>
+    <display value="Tube Dislodged During Transport/Patient Care"/>
+  </concept>
+  <concept>
+    <code value="4008023"/>
+    <display value="Tube Was Not in Correct Position when EMS Crew/Team Assumed Care of the Patient"/>
+  </concept>
+  <concept>
+    <code value="4009001"/>
+    <display value="Difficult Patient Airway Anatomy"/>
+  </concept>
+  <concept>
+    <code value="4009003"/>
+    <display value="ETI Attempted, but Arrived At Destination Facility Before Accomplished"/>
+  </concept>
+  <concept>
+    <code value="4009005"/>
+    <display value="Facial or Oral Trauma"/>
+  </concept>
+  <concept>
+    <code value="4009007"/>
+    <display value="Inability to Expose Vocal Cords"/>
+  </concept>
+  <concept>
+    <code value="4009009"/>
+    <display value="Inadequate Patient Relaxation/Presence of Protective Airway Reflexes"/>
+  </concept>
+  <concept>
+    <code value="4009011"/>
+    <display value="Jaw Clenched (Trismus)"/>
+  </concept>
+  <concept>
+    <code value="4009013"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4009015"/>
+    <display value="Poor Patient Access"/>
+  </concept>
+  <concept>
+    <code value="4009017"/>
+    <display value="Secretions/Blood/Vomit"/>
+  </concept>
+  <concept>
+    <code value="4009019"/>
+    <display value="Unable to Position or Access Patient"/>
+  </concept>
+</CodeSystem>

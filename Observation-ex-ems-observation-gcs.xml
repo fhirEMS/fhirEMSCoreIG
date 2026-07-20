@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-observation-gcs"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ex-ems-observation-gcs</b></p><a name="ex-ems-observation-gcs"> </a><a name="hcex-ems-observation-gcs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-observation-gcs.html">EMS Glasgow Coma Score (GCS) Panel</a></p></div><p><b>EMS Vital Obtained Prior to EMS Care</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}">No</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}">Exam</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 9269-2}">Glasgow coma score total</span></p><p><b>subject</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href="Encounter-ex-ems-encounter.html">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-14 14:37:00-0800</p><p><b>performer</b>: <a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-ex-ems-gcs-eye.html">Observation Glasgow coma score eye opening</a></li><li><a href="Observation-ex-ems-gcs-verbal.html">Observation Glasgow coma score verbal</a></li><li><a href="Observation-ex-ems-gcs-motor.html">Observation Glasgow coma score motor</a></li></ul><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 55285-1}">Glasgow coma score special circumstances</span></td><td><span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 3322003}">Initial GCS has legitimate values without interventions</span></td></tr></table></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-vital-obtained-prior">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+        <code value="N"/>
+        <display value="No"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="9269-2"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-ems-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ex-ems-encounter"/>
+  </encounter>
+  <effectiveDateTime value="2026-03-14T14:37:00-08:00"/>
+  <performer>
+    <reference value="Practitioner/ex-ems-practitioner"/>
+  </performer>
+  <hasMember>
+    <reference value="Observation/ex-ems-gcs-eye"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ex-ems-gcs-verbal"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ex-ems-gcs-motor"/>
+  </hasMember>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="55285-1"/>
+        <display value="Glasgow coma score special circumstances"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+        <code value="3322003"/>
+        <display value="Initial GCS has legitimate values without interventions"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

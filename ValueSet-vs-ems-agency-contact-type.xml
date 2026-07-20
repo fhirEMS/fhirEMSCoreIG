@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-agency-contact-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-agency-contact-type</b></p><a name="vs-ems-agency-contact-type"> </a><a name="hcvs-ems-agency-contact-type"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-demographics.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101001">1101001</a></td><td>Administrative Assistant</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101003">1101003</a></td><td>EMS Agency Director/Chief/Lead Administrator/CEO</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101005">1101005</a></td><td>EMS Assistant Agency Director/Chief/Administrator/CEO</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101007">1101007</a></td><td>EMS Assistant Medical Director</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101009">1101009</a></td><td>EMS IT/Data Specialist</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101011">1101011</a></td><td>EMS Medical Director</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101013">1101013</a></td><td>EMS Quality/Performance Improvement Specialist</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101015">1101015</a></td><td>EMS Training/Education Specialist</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1101017">1101017</a></td><td>Other</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-agency-contact-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.146"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSAgencyContactTypeVS"/>
+  <title value="EMS AgencyContactType VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="The role/type of the agency contact person (dContact.01)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics"/>
+      <concept>
+        <code value="1101001"/>
+        <display value="Administrative Assistant"/>
+      </concept>
+      <concept>
+        <code value="1101003"/>
+        <display value="EMS Agency Director/Chief/Lead Administrator/CEO"/>
+      </concept>
+      <concept>
+        <code value="1101005"/>
+        <display value="EMS Assistant Agency Director/Chief/Administrator/CEO"/>
+      </concept>
+      <concept>
+        <code value="1101007"/>
+        <display value="EMS Assistant Medical Director"/>
+      </concept>
+      <concept>
+        <code value="1101009"/>
+        <display value="EMS IT/Data Specialist"/>
+      </concept>
+      <concept>
+        <code value="1101011"/>
+        <display value="EMS Medical Director"/>
+      </concept>
+      <concept>
+        <code value="1101013"/>
+        <display value="EMS Quality/Performance Improvement Specialist"/>
+      </concept>
+      <concept>
+        <code value="1101015"/>
+        <display value="EMS Training/Education Specialist"/>
+      </concept>
+      <concept>
+        <code value="1101017"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

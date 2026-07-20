@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-acn-seat-location",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-acn-seat-location</b></p><a name=\"vs-ems-acn-seat-location\"> </a><a name=\"hcvs-ems-acn-seat-location\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-injury.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926001\">2926001</a></td><td>Driver Front Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926003\">2926003</a></td><td>Front Row Middle Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926005\">2926005</a></td><td>Passenger Front Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926007\">2926007</a></td><td>Second Row Left Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926009\">2926009</a></td><td>Second Row Middle Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926011\">2926011</a></td><td>Second Row Right Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926013\">2926013</a></td><td>Third Row Left Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926015\">2926015</a></td><td>Third Row Middle Seat</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2926017\">2926017</a></td><td>Third Row Right Seat</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-acn-seat-location",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.1"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSACNSeatLocationVS",
+  "title" : "EMS ACN Vehicle Seat Location VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Automated Collision Notification (ACN) vehicle seat location of the patient (eInjury.26).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury",
+      "concept" : [{
+        "code" : "2926001",
+        "display" : "Driver Front Seat"
+      },
+      {
+        "code" : "2926003",
+        "display" : "Front Row Middle Seat"
+      },
+      {
+        "code" : "2926005",
+        "display" : "Passenger Front Seat"
+      },
+      {
+        "code" : "2926007",
+        "display" : "Second Row Left Seat"
+      },
+      {
+        "code" : "2926009",
+        "display" : "Second Row Middle Seat"
+      },
+      {
+        "code" : "2926011",
+        "display" : "Second Row Right Seat"
+      },
+      {
+        "code" : "2926013",
+        "display" : "Third Row Left Seat"
+      },
+      {
+        "code" : "2926015",
+        "display" : "Third Row Middle Seat"
+      },
+      {
+        "code" : "2926017",
+        "display" : "Third Row Right Seat"
+      }]
+    }]
+  }
+}

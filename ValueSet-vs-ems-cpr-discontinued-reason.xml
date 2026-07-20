@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-cpr-discontinued-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-cpr-discontinued-reason</b></p><a name="vs-ems-cpr-discontinued-reason"> </a><a name="hcvs-ems-cpr-discontinued-reason"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-arrest.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3016001">3016001</a></td><td>DNR</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3016003">3016003</a></td><td>Medical Control Order</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3016005">3016005</a></td><td>Obvious Signs of Death</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3016007">3016007</a></td><td>Physically Unable to Perform</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3016009">3016009</a></td><td>Protocol/Policy Requirements Completed</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3016011">3016011</a></td><td>Return of Spontaneous Circulation (pulse or BP noted)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cpr-discontinued-reason"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.35"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSCPRDiscontinuedReasonVS"/>
+  <title value="EMS Reason CPR Discontinued VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Reason CPR or resuscitation was discontinued (eArrest.16)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+      <concept>
+        <code value="3016001"/>
+        <display value="DNR"/>
+      </concept>
+      <concept>
+        <code value="3016003"/>
+        <display value="Medical Control Order"/>
+      </concept>
+      <concept>
+        <code value="3016005"/>
+        <display value="Obvious Signs of Death"/>
+      </concept>
+      <concept>
+        <code value="3016007"/>
+        <display value="Physically Unable to Perform"/>
+      </concept>
+      <concept>
+        <code value="3016009"/>
+        <display value="Protocol/Policy Requirements Completed"/>
+      </concept>
+      <concept>
+        <code value="3016011"/>
+        <display value="Return of Spontaneous Circulation (pulse or BP noted)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-history"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-history</b></p><a name="cs-nemsis-history"> </a><a name="hccs-nemsis-history"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">3105001<a name="cs-nemsis-history-3105001"> </a></td><td>Family/Guardian request DNR (but no documentation)</td></tr><tr><td style="white-space:nowrap">3105003<a name="cs-nemsis-history-3105003"> </a></td><td>Living Will</td></tr><tr><td style="white-space:nowrap">3105005<a name="cs-nemsis-history-3105005"> </a></td><td>None</td></tr><tr><td style="white-space:nowrap">3105007<a name="cs-nemsis-history-3105007"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">3105009<a name="cs-nemsis-history-3105009"> </a></td><td>Other Healthcare Advanced Directive Form</td></tr><tr><td style="white-space:nowrap">3105011<a name="cs-nemsis-history-3105011"> </a></td><td>State EMS DNR or Medical Order Form</td></tr><tr><td style="white-space:nowrap">3109001<a name="cs-nemsis-history-3109001"> </a></td><td>Bystander/Other</td></tr><tr><td style="white-space:nowrap">3109003<a name="cs-nemsis-history-3109003"> </a></td><td>Family</td></tr><tr><td style="white-space:nowrap">3109005<a name="cs-nemsis-history-3109005"> </a></td><td>Health Care Personnel</td></tr><tr><td style="white-space:nowrap">3109007<a name="cs-nemsis-history-3109007"> </a></td><td>Patient</td></tr><tr><td style="white-space:nowrap">9910001<a name="cs-nemsis-history-9910001"> </a></td><td>Anthrax</td></tr><tr><td style="white-space:nowrap">9910003<a name="cs-nemsis-history-9910003"> </a></td><td>Cholera</td></tr><tr><td style="white-space:nowrap">9910005<a name="cs-nemsis-history-9910005"> </a></td><td>DPT / TDaP (Diphtheria, Pertussis, Tetanus)</td></tr><tr><td style="white-space:nowrap">9910007<a name="cs-nemsis-history-9910007"> </a></td><td>Hemophilus Influenza B</td></tr><tr><td style="white-space:nowrap">9910009<a name="cs-nemsis-history-9910009"> </a></td><td>Hepatitis A</td></tr><tr><td style="white-space:nowrap">9910011<a name="cs-nemsis-history-9910011"> </a></td><td>Hepatitis B</td></tr><tr><td style="white-space:nowrap">9910013<a name="cs-nemsis-history-9910013"> </a></td><td>Human Papilloma Virus (HPV)</td></tr><tr><td style="white-space:nowrap">9910015<a name="cs-nemsis-history-9910015"> </a></td><td>Influenza-H1N1</td></tr><tr><td style="white-space:nowrap">9910017<a name="cs-nemsis-history-9910017"> </a></td><td>Influenza-Other</td></tr><tr><td style="white-space:nowrap">9910019<a name="cs-nemsis-history-9910019"> </a></td><td>Influenza-Seasonal (In past 12 months)</td></tr><tr><td style="white-space:nowrap">9910021<a name="cs-nemsis-history-9910021"> </a></td><td>Lyme Disease</td></tr><tr><td style="white-space:nowrap">9910023<a name="cs-nemsis-history-9910023"> </a></td><td>Meningococcus</td></tr><tr><td style="white-space:nowrap">9910025<a name="cs-nemsis-history-9910025"> </a></td><td>MMR (Measles, Mumps, Rubella)</td></tr><tr><td style="white-space:nowrap">9910027<a name="cs-nemsis-history-9910027"> </a></td><td>Other-Not Listed</td></tr><tr><td style="white-space:nowrap">9910029<a name="cs-nemsis-history-9910029"> </a></td><td>Plague</td></tr><tr><td style="white-space:nowrap">9910031<a name="cs-nemsis-history-9910031"> </a></td><td>Pneumococcal (Pneumonia)</td></tr><tr><td style="white-space:nowrap">9910033<a name="cs-nemsis-history-9910033"> </a></td><td>Polio</td></tr><tr><td style="white-space:nowrap">9910035<a name="cs-nemsis-history-9910035"> </a></td><td>Rabies</td></tr><tr><td style="white-space:nowrap">9910037<a name="cs-nemsis-history-9910037"> </a></td><td>Rotavirus</td></tr><tr><td style="white-space:nowrap">9910039<a name="cs-nemsis-history-9910039"> </a></td><td>Shingles</td></tr><tr><td style="white-space:nowrap">9910041<a name="cs-nemsis-history-9910041"> </a></td><td>Small Pox</td></tr><tr><td style="white-space:nowrap">9910043<a name="cs-nemsis-history-9910043"> </a></td><td>Tetanus</td></tr><tr><td style="white-space:nowrap">9910045<a name="cs-nemsis-history-9910045"> </a></td><td>Tuberculosis</td></tr><tr><td style="white-space:nowrap">9910047<a name="cs-nemsis-history-9910047"> </a></td><td>Typhoid</td></tr><tr><td style="white-space:nowrap">9910049<a name="cs-nemsis-history-9910049"> </a></td><td>Varicella (Chickenpox)</td></tr><tr><td style="white-space:nowrap">9910051<a name="cs-nemsis-history-9910051"> </a></td><td>Yellow Fever</td></tr><tr><td style="white-space:nowrap">9910053<a name="cs-nemsis-history-9910053"> </a></td><td>None</td></tr><tr><td style="white-space:nowrap">3114001<a name="cs-nemsis-history-3114001"> </a></td><td>Centimeters (cm)</td></tr><tr><td style="white-space:nowrap">3114003<a name="cs-nemsis-history-3114003"> </a></td><td>Grams (gms)</td></tr><tr><td style="white-space:nowrap">3114005<a name="cs-nemsis-history-3114005"> </a></td><td>Drops (gtts)</td></tr><tr><td style="white-space:nowrap">3114007<a name="cs-nemsis-history-3114007"> </a></td><td>Inches (in)</td></tr><tr><td style="white-space:nowrap">3114009<a name="cs-nemsis-history-3114009"> </a></td><td>International Units (IU)</td></tr><tr><td style="white-space:nowrap">3114011<a name="cs-nemsis-history-3114011"> </a></td><td>Keep Vein Open (kvo)</td></tr><tr><td style="white-space:nowrap">3114013<a name="cs-nemsis-history-3114013"> </a></td><td>Liters Per Minute (l/min [fluid])</td></tr><tr><td style="white-space:nowrap">3114015<a name="cs-nemsis-history-3114015"> </a></td><td>Liters (l)</td></tr><tr><td style="white-space:nowrap">3114017<a name="cs-nemsis-history-3114017"> </a></td><td>Liters Per Minute (LPM [gas])</td></tr><tr><td style="white-space:nowrap">3114019<a name="cs-nemsis-history-3114019"> </a></td><td>Micrograms (mcg)</td></tr><tr><td style="white-space:nowrap">3114021<a name="cs-nemsis-history-3114021"> </a></td><td>Micrograms per Kilogram per Minute (mcg/kg/min)</td></tr><tr><td style="white-space:nowrap">3114023<a name="cs-nemsis-history-3114023"> </a></td><td>Micrograms per Minute (mcg/min)</td></tr><tr><td style="white-space:nowrap">3114025<a name="cs-nemsis-history-3114025"> </a></td><td>Milliequivalents (mEq)</td></tr><tr><td style="white-space:nowrap">3114027<a name="cs-nemsis-history-3114027"> </a></td><td>Metered Dose (MDI)</td></tr><tr><td style="white-space:nowrap">3114029<a name="cs-nemsis-history-3114029"> </a></td><td>Milligrams (mg)</td></tr><tr><td style="white-space:nowrap">3114031<a name="cs-nemsis-history-3114031"> </a></td><td>Milligrams per Kilogram (mg/kg)</td></tr><tr><td style="white-space:nowrap">3114033<a name="cs-nemsis-history-3114033"> </a></td><td>Milligrams per Kilogram Per Minute (mg/kg/min)</td></tr><tr><td style="white-space:nowrap">3114035<a name="cs-nemsis-history-3114035"> </a></td><td>Milligrams per Minute (mg/min)</td></tr><tr><td style="white-space:nowrap">3114037<a name="cs-nemsis-history-3114037"> </a></td><td>Milliliters (ml)</td></tr><tr><td style="white-space:nowrap">3114039<a name="cs-nemsis-history-3114039"> </a></td><td>Milliliters per Hour (ml/hr)</td></tr><tr><td style="white-space:nowrap">3114041<a name="cs-nemsis-history-3114041"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">3114043<a name="cs-nemsis-history-3114043"> </a></td><td>Puffs</td></tr><tr><td style="white-space:nowrap">3114045<a name="cs-nemsis-history-3114045"> </a></td><td>Units per Hour (units/hr)</td></tr><tr><td style="white-space:nowrap">3114047<a name="cs-nemsis-history-3114047"> </a></td><td>Micrograms per Kilogram (mcg/kg)</td></tr><tr><td style="white-space:nowrap">3114049<a name="cs-nemsis-history-3114049"> </a></td><td>Units</td></tr><tr><td style="white-space:nowrap">3114051<a name="cs-nemsis-history-3114051"> </a></td><td>Units per Kilogram per Hour (units/kg/hr)</td></tr><tr><td style="white-space:nowrap">3114053<a name="cs-nemsis-history-3114053"> </a></td><td>Units per Kilogram (units/kg)</td></tr><tr><td style="white-space:nowrap">3117001<a name="cs-nemsis-history-3117001"> </a></td><td>Alcohol Containers/Paraphernalia at Scene</td></tr><tr><td style="white-space:nowrap">3117003<a name="cs-nemsis-history-3117003"> </a></td><td>Drug Paraphernalia at Scene</td></tr><tr><td style="white-space:nowrap">3117005<a name="cs-nemsis-history-3117005"> </a></td><td>Patient Admits to Alcohol Use</td></tr><tr><td style="white-space:nowrap">3117007<a name="cs-nemsis-history-3117007"> </a></td><td>Patient Admits to Drug Use</td></tr><tr><td style="white-space:nowrap">3117009<a name="cs-nemsis-history-3117009"> </a></td><td>Positive Level known from Law Enforcement or Hospital Record</td></tr><tr><td style="white-space:nowrap">3117013<a name="cs-nemsis-history-3117013"> </a></td><td>Physical Exam Indicates Suspected Alcohol or Drug Use</td></tr><tr><td style="white-space:nowrap">3117015<a name="cs-nemsis-history-3117015"> </a></td><td>Bystander/Family Reports Drug Use</td></tr><tr><td style="white-space:nowrap">3117017<a name="cs-nemsis-history-3117017"> </a></td><td>Bystander/Family Reports Alcohol Use</td></tr><tr><td style="white-space:nowrap">3118001<a name="cs-nemsis-history-3118001"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">3118003<a name="cs-nemsis-history-3118003"> </a></td><td>Possible, Unconfirmed</td></tr><tr><td style="white-space:nowrap">3118005<a name="cs-nemsis-history-3118005"> </a></td><td>Yes, Confirmed 12 to 20 Weeks</td></tr><tr><td style="white-space:nowrap">3118007<a name="cs-nemsis-history-3118007"> </a></td><td>Yes, Confirmed Greater Than 20 Weeks</td></tr><tr><td style="white-space:nowrap">3118009<a name="cs-nemsis-history-3118009"> </a></td><td>Yes, Confirmed Less Than 12 Weeks</td></tr><tr><td style="white-space:nowrap">3118011<a name="cs-nemsis-history-3118011"> </a></td><td>Yes, Weeks Unknown</td></tr><tr><td style="white-space:nowrap">3120001<a name="cs-nemsis-history-3120001"> </a></td><td>q1h (every hour)</td></tr><tr><td style="white-space:nowrap">3120003<a name="cs-nemsis-history-3120003"> </a></td><td>q2h (every 2 hours)</td></tr><tr><td style="white-space:nowrap">3120005<a name="cs-nemsis-history-3120005"> </a></td><td>q3h (every 3 hours)</td></tr><tr><td style="white-space:nowrap">3120007<a name="cs-nemsis-history-3120007"> </a></td><td>q4h (every 4 hours)</td></tr><tr><td style="white-space:nowrap">3120009<a name="cs-nemsis-history-3120009"> </a></td><td>qid (four times a day)</td></tr><tr><td style="white-space:nowrap">3120011<a name="cs-nemsis-history-3120011"> </a></td><td>tid (three times a day)</td></tr><tr><td style="white-space:nowrap">3120013<a name="cs-nemsis-history-3120013"> </a></td><td>ac (before meals)</td></tr><tr><td style="white-space:nowrap">3120015<a name="cs-nemsis-history-3120015"> </a></td><td>pc (after meals)</td></tr><tr><td style="white-space:nowrap">3120017<a name="cs-nemsis-history-3120017"> </a></td><td>bid (twice a day)</td></tr><tr><td style="white-space:nowrap">3120019<a name="cs-nemsis-history-3120019"> </a></td><td>qd (every day)</td></tr><tr><td style="white-space:nowrap">3120021<a name="cs-nemsis-history-3120021"> </a></td><td>qd-am (every day in the morning)</td></tr><tr><td style="white-space:nowrap">3120023<a name="cs-nemsis-history-3120023"> </a></td><td>qd-pm (every day in the evening)</td></tr><tr><td style="white-space:nowrap">3120025<a name="cs-nemsis-history-3120025"> </a></td><td>hs (at bedtime)</td></tr><tr><td style="white-space:nowrap">3120027<a name="cs-nemsis-history-3120027"> </a></td><td>qod (every other day)</td></tr><tr><td style="white-space:nowrap">3120029<a name="cs-nemsis-history-3120029"> </a></td><td>prn (as needed)</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.18"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISHistory"/>
+  <title value="NEMSIS eHistory Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS 3.5.1 eHistory section covering advance directives, medical history source, immunization type, current medication dosage units and frequency, alcohol/drug use indicators, and pregnancy status."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="93"/>
+  <concept>
+    <code value="3105001"/>
+    <display value="Family/Guardian request DNR (but no documentation)"/>
+  </concept>
+  <concept>
+    <code value="3105003"/>
+    <display value="Living Will"/>
+  </concept>
+  <concept>
+    <code value="3105005"/>
+    <display value="None"/>
+  </concept>
+  <concept>
+    <code value="3105007"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="3105009"/>
+    <display value="Other Healthcare Advanced Directive Form"/>
+  </concept>
+  <concept>
+    <code value="3105011"/>
+    <display value="State EMS DNR or Medical Order Form"/>
+  </concept>
+  <concept>
+    <code value="3109001"/>
+    <display value="Bystander/Other"/>
+  </concept>
+  <concept>
+    <code value="3109003"/>
+    <display value="Family"/>
+  </concept>
+  <concept>
+    <code value="3109005"/>
+    <display value="Health Care Personnel"/>
+  </concept>
+  <concept>
+    <code value="3109007"/>
+    <display value="Patient"/>
+  </concept>
+  <concept>
+    <code value="9910001"/>
+    <display value="Anthrax"/>
+  </concept>
+  <concept>
+    <code value="9910003"/>
+    <display value="Cholera"/>
+  </concept>
+  <concept>
+    <code value="9910005"/>
+    <display value="DPT / TDaP (Diphtheria, Pertussis, Tetanus)"/>
+  </concept>
+  <concept>
+    <code value="9910007"/>
+    <display value="Hemophilus Influenza B"/>
+  </concept>
+  <concept>
+    <code value="9910009"/>
+    <display value="Hepatitis A"/>
+  </concept>
+  <concept>
+    <code value="9910011"/>
+    <display value="Hepatitis B"/>
+  </concept>
+  <concept>
+    <code value="9910013"/>
+    <display value="Human Papilloma Virus (HPV)"/>
+  </concept>
+  <concept>
+    <code value="9910015"/>
+    <display value="Influenza-H1N1"/>
+  </concept>
+  <concept>
+    <code value="9910017"/>
+    <display value="Influenza-Other"/>
+  </concept>
+  <concept>
+    <code value="9910019"/>
+    <display value="Influenza-Seasonal (In past 12 months)"/>
+  </concept>
+  <concept>
+    <code value="9910021"/>
+    <display value="Lyme Disease"/>
+  </concept>
+  <concept>
+    <code value="9910023"/>
+    <display value="Meningococcus"/>
+  </concept>
+  <concept>
+    <code value="9910025"/>
+    <display value="MMR (Measles, Mumps, Rubella)"/>
+  </concept>
+  <concept>
+    <code value="9910027"/>
+    <display value="Other-Not Listed"/>
+  </concept>
+  <concept>
+    <code value="9910029"/>
+    <display value="Plague"/>
+  </concept>
+  <concept>
+    <code value="9910031"/>
+    <display value="Pneumococcal (Pneumonia)"/>
+  </concept>
+  <concept>
+    <code value="9910033"/>
+    <display value="Polio"/>
+  </concept>
+  <concept>
+    <code value="9910035"/>
+    <display value="Rabies"/>
+  </concept>
+  <concept>
+    <code value="9910037"/>
+    <display value="Rotavirus"/>
+  </concept>
+  <concept>
+    <code value="9910039"/>
+    <display value="Shingles"/>
+  </concept>
+  <concept>
+    <code value="9910041"/>
+    <display value="Small Pox"/>
+  </concept>
+  <concept>
+    <code value="9910043"/>
+    <display value="Tetanus"/>
+  </concept>
+  <concept>
+    <code value="9910045"/>
+    <display value="Tuberculosis"/>
+  </concept>
+  <concept>
+    <code value="9910047"/>
+    <display value="Typhoid"/>
+  </concept>
+  <concept>
+    <code value="9910049"/>
+    <display value="Varicella (Chickenpox)"/>
+  </concept>
+  <concept>
+    <code value="9910051"/>
+    <display value="Yellow Fever"/>
+  </concept>
+  <concept>
+    <code value="9910053"/>
+    <display value="None"/>
+  </concept>
+  <concept>
+    <code value="3114001"/>
+    <display value="Centimeters (cm)"/>
+  </concept>
+  <concept>
+    <code value="3114003"/>
+    <display value="Grams (gms)"/>
+  </concept>
+  <concept>
+    <code value="3114005"/>
+    <display value="Drops (gtts)"/>
+  </concept>
+  <concept>
+    <code value="3114007"/>
+    <display value="Inches (in)"/>
+  </concept>
+  <concept>
+    <code value="3114009"/>
+    <display value="International Units (IU)"/>
+  </concept>
+  <concept>
+    <code value="3114011"/>
+    <display value="Keep Vein Open (kvo)"/>
+  </concept>
+  <concept>
+    <code value="3114013"/>
+    <display value="Liters Per Minute (l/min [fluid])"/>
+  </concept>
+  <concept>
+    <code value="3114015"/>
+    <display value="Liters (l)"/>
+  </concept>
+  <concept>
+    <code value="3114017"/>
+    <display value="Liters Per Minute (LPM [gas])"/>
+  </concept>
+  <concept>
+    <code value="3114019"/>
+    <display value="Micrograms (mcg)"/>
+  </concept>
+  <concept>
+    <code value="3114021"/>
+    <display value="Micrograms per Kilogram per Minute (mcg/kg/min)"/>
+  </concept>
+  <concept>
+    <code value="3114023"/>
+    <display value="Micrograms per Minute (mcg/min)"/>
+  </concept>
+  <concept>
+    <code value="3114025"/>
+    <display value="Milliequivalents (mEq)"/>
+  </concept>
+  <concept>
+    <code value="3114027"/>
+    <display value="Metered Dose (MDI)"/>
+  </concept>
+  <concept>
+    <code value="3114029"/>
+    <display value="Milligrams (mg)"/>
+  </concept>
+  <concept>
+    <code value="3114031"/>
+    <display value="Milligrams per Kilogram (mg/kg)"/>
+  </concept>
+  <concept>
+    <code value="3114033"/>
+    <display value="Milligrams per Kilogram Per Minute (mg/kg/min)"/>
+  </concept>
+  <concept>
+    <code value="3114035"/>
+    <display value="Milligrams per Minute (mg/min)"/>
+  </concept>
+  <concept>
+    <code value="3114037"/>
+    <display value="Milliliters (ml)"/>
+  </concept>
+  <concept>
+    <code value="3114039"/>
+    <display value="Milliliters per Hour (ml/hr)"/>
+  </concept>
+  <concept>
+    <code value="3114041"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="3114043"/>
+    <display value="Puffs"/>
+  </concept>
+  <concept>
+    <code value="3114045"/>
+    <display value="Units per Hour (units/hr)"/>
+  </concept>
+  <concept>
+    <code value="3114047"/>
+    <display value="Micrograms per Kilogram (mcg/kg)"/>
+  </concept>
+  <concept>
+    <code value="3114049"/>
+    <display value="Units"/>
+  </concept>
+  <concept>
+    <code value="3114051"/>
+    <display value="Units per Kilogram per Hour (units/kg/hr)"/>
+  </concept>
+  <concept>
+    <code value="3114053"/>
+    <display value="Units per Kilogram (units/kg)"/>
+  </concept>
+  <concept>
+    <code value="3117001"/>
+    <display value="Alcohol Containers/Paraphernalia at Scene"/>
+  </concept>
+  <concept>
+    <code value="3117003"/>
+    <display value="Drug Paraphernalia at Scene"/>
+  </concept>
+  <concept>
+    <code value="3117005"/>
+    <display value="Patient Admits to Alcohol Use"/>
+  </concept>
+  <concept>
+    <code value="3117007"/>
+    <display value="Patient Admits to Drug Use"/>
+  </concept>
+  <concept>
+    <code value="3117009"/>
+    <display value="Positive Level known from Law Enforcement or Hospital Record"/>
+  </concept>
+  <concept>
+    <code value="3117013"/>
+    <display value="Physical Exam Indicates Suspected Alcohol or Drug Use"/>
+  </concept>
+  <concept>
+    <code value="3117015"/>
+    <display value="Bystander/Family Reports Drug Use"/>
+  </concept>
+  <concept>
+    <code value="3117017"/>
+    <display value="Bystander/Family Reports Alcohol Use"/>
+  </concept>
+  <concept>
+    <code value="3118001"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="3118003"/>
+    <display value="Possible, Unconfirmed"/>
+  </concept>
+  <concept>
+    <code value="3118005"/>
+    <display value="Yes, Confirmed 12 to 20 Weeks"/>
+  </concept>
+  <concept>
+    <code value="3118007"/>
+    <display value="Yes, Confirmed Greater Than 20 Weeks"/>
+  </concept>
+  <concept>
+    <code value="3118009"/>
+    <display value="Yes, Confirmed Less Than 12 Weeks"/>
+  </concept>
+  <concept>
+    <code value="3118011"/>
+    <display value="Yes, Weeks Unknown"/>
+  </concept>
+  <concept>
+    <code value="3120001"/>
+    <display value="q1h (every hour)"/>
+  </concept>
+  <concept>
+    <code value="3120003"/>
+    <display value="q2h (every 2 hours)"/>
+  </concept>
+  <concept>
+    <code value="3120005"/>
+    <display value="q3h (every 3 hours)"/>
+  </concept>
+  <concept>
+    <code value="3120007"/>
+    <display value="q4h (every 4 hours)"/>
+  </concept>
+  <concept>
+    <code value="3120009"/>
+    <display value="qid (four times a day)"/>
+  </concept>
+  <concept>
+    <code value="3120011"/>
+    <display value="tid (three times a day)"/>
+  </concept>
+  <concept>
+    <code value="3120013"/>
+    <display value="ac (before meals)"/>
+  </concept>
+  <concept>
+    <code value="3120015"/>
+    <display value="pc (after meals)"/>
+  </concept>
+  <concept>
+    <code value="3120017"/>
+    <display value="bid (twice a day)"/>
+  </concept>
+  <concept>
+    <code value="3120019"/>
+    <display value="qd (every day)"/>
+  </concept>
+  <concept>
+    <code value="3120021"/>
+    <display value="qd-am (every day in the morning)"/>
+  </concept>
+  <concept>
+    <code value="3120023"/>
+    <display value="qd-pm (every day in the evening)"/>
+  </concept>
+  <concept>
+    <code value="3120025"/>
+    <display value="hs (at bedtime)"/>
+  </concept>
+  <concept>
+    <code value="3120027"/>
+    <display value="qod (every other day)"/>
+  </concept>
+  <concept>
+    <code value="3120029"/>
+    <display value="prn (as needed)"/>
+  </concept>
+</CodeSystem>

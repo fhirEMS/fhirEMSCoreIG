@@ -1,0 +1,803 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example EMS Encounter — MVA 911 Response - JSON Representation - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.275"}
+    h3,h4,h5,h6{--heading-prefix:"17.275"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example EMS Encounter — MVA 911 Response</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Encounter-ex-ems-encounter.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Encounter-ex-ems-encounter.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Encounter-ex-ems-encounter.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example EMS Encounter — MVA 911 Response - JSON Representation</h2>
+
+
+<p><a href="Encounter-ex-ems-encounter.json" no-download="true">Raw json</a> | <a href="Encounter-ex-ems-encounter.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resourceType</a>" : "Encounter",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a>" : "ex-ems-encounter",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-ems-encounter.html" style="color: Maroon">&#x1F517;</a> "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-encounter"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter ex-ems-encounter&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ex-ems-encounter\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcex-ems-encounter\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ems-encounter.html\&quot;&gt;EMS Encounter&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;EMS Response Type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2205001}\&quot;&gt;Emergency Response (Primary Response Area)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Unit Type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2207015}\&quot;&gt;Ground Transport (ALS Equipped)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Response Mode to Scene&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2223001}\&quot;&gt;Emergent (Immediate Response)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Additional Response Mode Descriptors&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2224015}\&quot;&gt;Lights and Sirens&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Response Delays&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sceneDelay: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2210011}\&quot;&gt;Extrication&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Vehicle Unit Identification&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;unitNumber: A-7&lt;/li&gt;&lt;li&gt;callSign: Medic 7&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Dispatch Reason&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 418399005}\&quot;&gt;Motor vehicle accident&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Dispatch Information&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;emdPerformed: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2302003}\&quot;&gt;Yes, With Pre-Arrival Instructions&lt;/span&gt;&lt;/li&gt;&lt;li&gt;emdDeterminant: 29D02p&lt;/li&gt;&lt;li&gt;dispatchCenterNameOrId: Riverside County Emergency Communications Center&lt;/li&gt;&lt;li&gt;dispatchPriority: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 2305001}\&quot;&gt;Critical&lt;/span&gt;&lt;/li&gt;&lt;li&gt;cadRecordId: CAD-2026-0314-008842&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Response Times&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;psapCallTime: 2026-03-14 14:20:00-0800&lt;/li&gt;&lt;li&gt;dispatchNotified: 2026-03-14 14:21:00-0800&lt;/li&gt;&lt;li&gt;unitNotified: 2026-03-14 14:22:00-0800&lt;/li&gt;&lt;li&gt;unitEnRoute: 2026-03-14 14:24:00-0800&lt;/li&gt;&lt;li&gt;unitArrivedScene: 2026-03-14 14:31:00-0800&lt;/li&gt;&lt;li&gt;arrivalAtPatient: 2026-03-14 14:33:00-0800&lt;/li&gt;&lt;li&gt;unitLeftScene: 2026-03-14 14:52:00-0800&lt;/li&gt;&lt;li&gt;patientArrivedDestination: 2026-03-14 15:05:00-0800&lt;/li&gt;&lt;li&gt;destinationPatientTransferOfCare: 2026-03-14 15:08:00-0800&lt;/li&gt;&lt;li&gt;unitBackInService: 2026-03-14 15:25:00-0800&lt;/li&gt;&lt;li&gt;unitBackAtBase: 2026-03-14 15:40:00-0800&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Disposition Codes&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;unitDisposition: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4227001}\&quot;&gt;Patient Contact Made&lt;/span&gt;&lt;/li&gt;&lt;li&gt;patientEvaluationCare: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4228001}\&quot;&gt;Patient Evaluated and Care Provided&lt;/span&gt;&lt;/li&gt;&lt;li&gt;crewDisposition: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4229001}\&quot;&gt;Initiated and Continued Primary Care&lt;/span&gt;&lt;/li&gt;&lt;li&gt;transportDisposition: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4230001}\&quot;&gt;Transport by This EMS Unit (This Crew Only)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;levelOfCareProvided: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4232005}\&quot;&gt;ALS - Paramedic&lt;/span&gt;&lt;/li&gt;&lt;li&gt;patientAcuity: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4219001}\&quot;&gt;Critical (Red)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Transport Details&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;transportMethod: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4216005}\&quot;&gt;Ground-Ambulance&lt;/span&gt;&lt;/li&gt;&lt;li&gt;transportMode: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4217001}\&quot;&gt;Emergent (Immediate Response)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;additionalTransportMode: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4218011}\&quot;&gt;Lights and Sirens&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Destination Details&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;reasonForChoosingDestination: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4220021}\&quot;&gt;Regional Specialty Center&lt;/span&gt;&lt;/li&gt;&lt;li&gt;typeOfDestination: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4221003}\&quot;&gt;Hospital-Emergency Department&lt;/span&gt;&lt;/li&gt;&lt;li&gt;hospitalInPatientDestination: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4222013}\&quot;&gt;Hospital-ICU&lt;/span&gt;&lt;/li&gt;&lt;li&gt;hospitalCapability: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 9908021}\&quot;&gt;Trauma Center Level 1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;preArrivalAlert: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4224003}\&quot;&gt;Yes-Adult Trauma&lt;/span&gt;&lt;/li&gt;&lt;li&gt;preArrivalAlertDateTime: 2026-03-14 14:50:00-0800&lt;/li&gt;&lt;li&gt;numberOfPatients: 1&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Protocol Used&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures 9914101}\&quot;&gt;Injury-Head&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Chief Complaint Anatomic Location&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation 2807015}\&quot;&gt;Head&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;EMS Transport Disposition (Legacy)&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter 4230001}\&quot;&gt;Transport by This EMS Unit (This Crew Only)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Other Context&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;reviewRequested: true&lt;/li&gt;&lt;li&gt;registryCandidate: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other 4502017}\&quot;&gt;Trauma&lt;/span&gt;&lt;/li&gt;&lt;li&gt;crewCompletingReport: P-1234&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;EMS Crew Safety&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;crewMemberId: P-1234&lt;/li&gt;&lt;li&gt;ppeUsed: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other 4503003}\&quot;&gt;Gloves&lt;/span&gt;&lt;/li&gt;&lt;li&gt;ppeUsed: &lt;span title=\&quot;Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other 4503001}\&quot;&gt;Eye Protection&lt;/span&gt;&lt;/li&gt;&lt;li&gt;workRelatedExposure: false&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Visit number/2026-03-14-0042, Resource identifier/2026-031400042-1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER\&quot;&gt;ActCode: EMER&lt;/a&gt; (emergency)&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 409971007}\&quot;&gt;Emergency medical services&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ex-ems-patient.html\&quot;&gt;Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PART}\&quot;&gt;Participation&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-ex-ems-practitioner.html\&quot;&gt;Practitioner Maria J Ramirez &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2026-03-14 14:22:00-0800 --&amp;gt; 2026-03-14 15:08:00-0800&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-ex-ems-organization-agency.html\&quot;&gt;Organization Riverside County EMS Agency&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-type",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2205001",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Emergency Response (Primary Response Area)"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit-type",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2207015",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Ground Transport (ALS Equipped)"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-mode",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2223001",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Emergent (Immediate Response)"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-additional-response-mode",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2224015",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Lights and Sirens"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "sceneDelay",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2210011",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Extrication"
+              }
+            ]
+          }
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-delays"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitNumber",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "A-7"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "callSign",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Medic 7"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-unit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-reason",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "418399005",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "emdPerformed",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2302003",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Yes, With Pre-Arrival Instructions"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "emdDeterminant",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "29D02p"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "dispatchCenterNameOrId",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Riverside County Emergency Communications Center"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "dispatchPriority",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2305001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Critical"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "cadRecordId",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CAD-2026-0314-008842"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-dispatch-info"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "psapCallTime",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:20:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "dispatchNotified",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:21:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitNotified",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:22:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitEnRoute",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:24:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitArrivedScene",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:31:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "arrivalAtPatient",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:33:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitLeftScene",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:52:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "patientArrivedDestination",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T15:05:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "destinationPatientTransferOfCare",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T15:08:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitBackInService",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T15:25:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitBackAtBase",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T15:40:00-08:00"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-times"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "unitDisposition",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4227001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient Contact Made"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "patientEvaluationCare",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4228001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient Evaluated and Care Provided"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "crewDisposition",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4229001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Initiated and Continued Primary Care"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "transportDisposition",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4230001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Transport by This EMS Unit (This Crew Only)"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "levelOfCareProvided",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4232005",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ALS - Paramedic"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "patientAcuity",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4219001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Critical (Red)"
+              }
+            ]
+          }
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-disposition-codes"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "transportMethod",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4216005",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Ground-Ambulance"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "transportMode",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4217001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Emergent (Immediate Response)"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "additionalTransportMode",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4218011",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Lights and Sirens"
+              }
+            ]
+          }
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-details"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "reasonForChoosingDestination",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4220021",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Regional Specialty Center"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "typeOfDestination",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4221003",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Hospital-Emergency Department"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "hospitalInPatientDestination",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4222013",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Hospital-ICU"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "hospitalCapability",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "9908021",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Trauma Center Level 1"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "preArrivalAlert",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4224003",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Yes-Adult Trauma"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "preArrivalAlertDateTime",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDateTime</a>" : "2026-03-14T14:50:00-08:00"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "numberOfPatients",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valuePositiveInt</a>" : 1
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-destination-details"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-protocol-used",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "9914101",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Injury-Head"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-incident-type",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2807015",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Head"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-reason",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4230001",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Transport by This EMS Unit (This Crew Only)"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "reviewRequested",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : true
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "registryCandidate",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4502017",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Trauma"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "crewCompletingReport",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "P-1234"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-other-context"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "crewMemberId",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "P-1234"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "ppeUsed",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4503003",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Gloves"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "ppeUsed",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "4503001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Eye Protection"
+              }
+            ]
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "workRelatedExposure",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : false
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-crew-safety"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "VN",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Visit number"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://example.org/ems/incidents",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "2026-03-14-0042"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "RI",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Resource identifier"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://example.org/ems/responses",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "2026-031400042-1"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "EMER",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "emergency"
+  },
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.type">type</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "409971007",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Emergency medical services"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
+    <a href="Patient-ex-ems-patient.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/ex-ems-patient"
+  },
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PART"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+        <a href="Practitioner-ex-ems-practitioner.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/ex-ems-practitioner"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2026-03-14T14:22:00-08:00",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2026-03-14T15:08:00-08:00"
+  },
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>" : {
+    <a href="Organization-ex-ems-organization-agency.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/ex-ems-organization-agency"
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

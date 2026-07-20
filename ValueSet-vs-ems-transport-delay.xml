@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-transport-delay"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-transport-delay</b></p><a name="vs-ems-transport-delay"> </a><a name="hcvs-ems-transport-delay"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211001">2211001</a></td><td>Crowd</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211003">2211003</a></td><td>Directions/Unable to Locate</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211005">2211005</a></td><td>Distance</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211007">2211007</a></td><td>Diversion</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211009">2211009</a></td><td>HazMat</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211011">2211011</a></td><td>None/No Delay</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211013">2211013</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211015">2211015</a></td><td>Rendezvous Transport Unavailable</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211017">2211017</a></td><td>Route Obstruction (e.g., Train)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211019">2211019</a></td><td>Safety</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211021">2211021</a></td><td>Staff Delay</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211023">2211023</a></td><td>Traffic</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211025">2211025</a></td><td>Vehicle Crash Involving this Unit</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211027">2211027</a></td><td>Vehicle Failure of this Unit</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211029">2211029</a></td><td>Weather</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2211031">2211031</a></td><td>Patient Condition Change (e.g., Unit Stopped)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transport-delay"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.119"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSTransportDelayVS"/>
+  <title value="EMS Type of Transport Delay"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eResponse.11 - Types of delay during transport."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="2211001"/>
+        <display value="Crowd"/>
+      </concept>
+      <concept>
+        <code value="2211003"/>
+        <display value="Directions/Unable to Locate"/>
+      </concept>
+      <concept>
+        <code value="2211005"/>
+        <display value="Distance"/>
+      </concept>
+      <concept>
+        <code value="2211007"/>
+        <display value="Diversion"/>
+      </concept>
+      <concept>
+        <code value="2211009"/>
+        <display value="HazMat"/>
+      </concept>
+      <concept>
+        <code value="2211011"/>
+        <display value="None/No Delay"/>
+      </concept>
+      <concept>
+        <code value="2211013"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="2211015"/>
+        <display value="Rendezvous Transport Unavailable"/>
+      </concept>
+      <concept>
+        <code value="2211017"/>
+        <display value="Route Obstruction (e.g., Train)"/>
+      </concept>
+      <concept>
+        <code value="2211019"/>
+        <display value="Safety"/>
+      </concept>
+      <concept>
+        <code value="2211021"/>
+        <display value="Staff Delay"/>
+      </concept>
+      <concept>
+        <code value="2211023"/>
+        <display value="Traffic"/>
+      </concept>
+      <concept>
+        <code value="2211025"/>
+        <display value="Vehicle Crash Involving this Unit"/>
+      </concept>
+      <concept>
+        <code value="2211027"/>
+        <display value="Vehicle Failure of this Unit"/>
+      </concept>
+      <concept>
+        <code value="2211029"/>
+        <display value="Weather"/>
+      </concept>
+      <concept>
+        <code value="2211031"/>
+        <display value="Patient Condition Change (e.g., Unit Stopped)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,130 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-personnel-level"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-personnel-level</b></p><a name=\"cs-nemsis-personnel-level\"> </a><a name=\"hccs-nemsis-personnel-level\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">9925001<a name=\"cs-nemsis-personnel-level-9925001\"> </a></td><td>Advanced Emergency Medical Technician (AEMT)</td></tr><tr><td style=\"white-space:nowrap\">9925002<a name=\"cs-nemsis-personnel-level-9925002\"> </a></td><td>Emergency Medical Technician - Intermediate</td></tr><tr><td style=\"white-space:nowrap\">9925003<a name=\"cs-nemsis-personnel-level-9925003\"> </a></td><td>Emergency Medical Responder (EMR)</td></tr><tr><td style=\"white-space:nowrap\">9925005<a name=\"cs-nemsis-personnel-level-9925005\"> </a></td><td>Emergency Medical Technician (EMT)</td></tr><tr><td style=\"white-space:nowrap\">9925007<a name=\"cs-nemsis-personnel-level-9925007\"> </a></td><td>Paramedic</td></tr><tr><td style=\"white-space:nowrap\">9925023<a name=\"cs-nemsis-personnel-level-9925023\"> </a></td><td>Other Healthcare Professional</td></tr><tr><td style=\"white-space:nowrap\">9925025<a name=\"cs-nemsis-personnel-level-9925025\"> </a></td><td>Other Non-Healthcare Professional</td></tr><tr><td style=\"white-space:nowrap\">9925027<a name=\"cs-nemsis-personnel-level-9925027\"> </a></td><td>Physician</td></tr><tr><td style=\"white-space:nowrap\">9925029<a name=\"cs-nemsis-personnel-level-9925029\"> </a></td><td>Respiratory Therapist</td></tr><tr><td style=\"white-space:nowrap\">9925031<a name=\"cs-nemsis-personnel-level-9925031\"> </a></td><td>Student</td></tr><tr><td style=\"white-space:nowrap\">9925033<a name=\"cs-nemsis-personnel-level-9925033\"> </a></td><td>Critical Care Paramedic</td></tr><tr><td style=\"white-space:nowrap\">9925035<a name=\"cs-nemsis-personnel-level-9925035\"> </a></td><td>Community Paramedicine</td></tr><tr><td style=\"white-space:nowrap\">9925037<a name=\"cs-nemsis-personnel-level-9925037\"> </a></td><td>Nurse Practitioner</td></tr><tr><td style=\"white-space:nowrap\">9925039<a name=\"cs-nemsis-personnel-level-9925039\"> </a></td><td>Physician Assistant</td></tr><tr><td style=\"white-space:nowrap\">9925041<a name=\"cs-nemsis-personnel-level-9925041\"> </a></td><td>Licensed Practical Nurse (LPN)</td></tr><tr><td style=\"white-space:nowrap\">9925043<a name=\"cs-nemsis-personnel-level-9925043\"> </a></td><td>Registered Nurse</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.12" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISPersonnel"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS Personnel Level Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "NEMSIS eCrew.02 - Crew Member Level certification and licensure codes (NEMSIS 3.5.1.251001CP2)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "16"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Advanced Emergency Medical Technician (AEMT)" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Technician - Intermediate" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Responder (EMR)" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Technician (EMT)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paramedic" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Healthcare Professional" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Non-Healthcare Professional" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physician" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory Therapist" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Student" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Critical Care Paramedic" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community Paramedicine" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nurse Practitioner" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physician Assistant" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Licensed Practical Nurse (LPN)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9925043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Registered Nurse" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

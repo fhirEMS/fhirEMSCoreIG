@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-situation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-situation</b></p><a name="cs-nemsis-situation"> </a><a name="hccs-nemsis-situation"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">2807001<a name="cs-nemsis-situation-2807001"> </a></td><td>Abdomen</td></tr><tr><td style="white-space:nowrap">2807003<a name="cs-nemsis-situation-2807003"> </a></td><td>Back</td></tr><tr><td style="white-space:nowrap">2807005<a name="cs-nemsis-situation-2807005"> </a></td><td>Chest</td></tr><tr><td style="white-space:nowrap">2807007<a name="cs-nemsis-situation-2807007"> </a></td><td>Extremity-Lower</td></tr><tr><td style="white-space:nowrap">2807009<a name="cs-nemsis-situation-2807009"> </a></td><td>Extremity-Upper</td></tr><tr><td style="white-space:nowrap">2807011<a name="cs-nemsis-situation-2807011"> </a></td><td>General/Global</td></tr><tr><td style="white-space:nowrap">2807013<a name="cs-nemsis-situation-2807013"> </a></td><td>Genitalia</td></tr><tr><td style="white-space:nowrap">2807015<a name="cs-nemsis-situation-2807015"> </a></td><td>Head</td></tr><tr><td style="white-space:nowrap">2807017<a name="cs-nemsis-situation-2807017"> </a></td><td>Neck</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-situation"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.15"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISSituation"/>
+  <title value="NEMSIS Situation Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS eSituation section (NEMSIS 3.5.1.251001CP2)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="2807001"/>
+    <display value="Abdomen"/>
+  </concept>
+  <concept>
+    <code value="2807003"/>
+    <display value="Back"/>
+  </concept>
+  <concept>
+    <code value="2807005"/>
+    <display value="Chest"/>
+  </concept>
+  <concept>
+    <code value="2807007"/>
+    <display value="Extremity-Lower"/>
+  </concept>
+  <concept>
+    <code value="2807009"/>
+    <display value="Extremity-Upper"/>
+  </concept>
+  <concept>
+    <code value="2807011"/>
+    <display value="General/Global"/>
+  </concept>
+  <concept>
+    <code value="2807013"/>
+    <display value="Genitalia"/>
+  </concept>
+  <concept>
+    <code value="2807015"/>
+    <display value="Head"/>
+  </concept>
+  <concept>
+    <code value="2807017"/>
+    <display value="Neck"/>
+  </concept>
+</CodeSystem>

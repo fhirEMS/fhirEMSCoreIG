@@ -1,0 +1,438 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-history"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-history</b></p><a name=\"cs-nemsis-history\"> </a><a name=\"hccs-nemsis-history\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">3105001<a name=\"cs-nemsis-history-3105001\"> </a></td><td>Family/Guardian request DNR (but no documentation)</td></tr><tr><td style=\"white-space:nowrap\">3105003<a name=\"cs-nemsis-history-3105003\"> </a></td><td>Living Will</td></tr><tr><td style=\"white-space:nowrap\">3105005<a name=\"cs-nemsis-history-3105005\"> </a></td><td>None</td></tr><tr><td style=\"white-space:nowrap\">3105007<a name=\"cs-nemsis-history-3105007\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3105009<a name=\"cs-nemsis-history-3105009\"> </a></td><td>Other Healthcare Advanced Directive Form</td></tr><tr><td style=\"white-space:nowrap\">3105011<a name=\"cs-nemsis-history-3105011\"> </a></td><td>State EMS DNR or Medical Order Form</td></tr><tr><td style=\"white-space:nowrap\">3109001<a name=\"cs-nemsis-history-3109001\"> </a></td><td>Bystander/Other</td></tr><tr><td style=\"white-space:nowrap\">3109003<a name=\"cs-nemsis-history-3109003\"> </a></td><td>Family</td></tr><tr><td style=\"white-space:nowrap\">3109005<a name=\"cs-nemsis-history-3109005\"> </a></td><td>Health Care Personnel</td></tr><tr><td style=\"white-space:nowrap\">3109007<a name=\"cs-nemsis-history-3109007\"> </a></td><td>Patient</td></tr><tr><td style=\"white-space:nowrap\">9910001<a name=\"cs-nemsis-history-9910001\"> </a></td><td>Anthrax</td></tr><tr><td style=\"white-space:nowrap\">9910003<a name=\"cs-nemsis-history-9910003\"> </a></td><td>Cholera</td></tr><tr><td style=\"white-space:nowrap\">9910005<a name=\"cs-nemsis-history-9910005\"> </a></td><td>DPT / TDaP (Diphtheria, Pertussis, Tetanus)</td></tr><tr><td style=\"white-space:nowrap\">9910007<a name=\"cs-nemsis-history-9910007\"> </a></td><td>Hemophilus Influenza B</td></tr><tr><td style=\"white-space:nowrap\">9910009<a name=\"cs-nemsis-history-9910009\"> </a></td><td>Hepatitis A</td></tr><tr><td style=\"white-space:nowrap\">9910011<a name=\"cs-nemsis-history-9910011\"> </a></td><td>Hepatitis B</td></tr><tr><td style=\"white-space:nowrap\">9910013<a name=\"cs-nemsis-history-9910013\"> </a></td><td>Human Papilloma Virus (HPV)</td></tr><tr><td style=\"white-space:nowrap\">9910015<a name=\"cs-nemsis-history-9910015\"> </a></td><td>Influenza-H1N1</td></tr><tr><td style=\"white-space:nowrap\">9910017<a name=\"cs-nemsis-history-9910017\"> </a></td><td>Influenza-Other</td></tr><tr><td style=\"white-space:nowrap\">9910019<a name=\"cs-nemsis-history-9910019\"> </a></td><td>Influenza-Seasonal (In past 12 months)</td></tr><tr><td style=\"white-space:nowrap\">9910021<a name=\"cs-nemsis-history-9910021\"> </a></td><td>Lyme Disease</td></tr><tr><td style=\"white-space:nowrap\">9910023<a name=\"cs-nemsis-history-9910023\"> </a></td><td>Meningococcus</td></tr><tr><td style=\"white-space:nowrap\">9910025<a name=\"cs-nemsis-history-9910025\"> </a></td><td>MMR (Measles, Mumps, Rubella)</td></tr><tr><td style=\"white-space:nowrap\">9910027<a name=\"cs-nemsis-history-9910027\"> </a></td><td>Other-Not Listed</td></tr><tr><td style=\"white-space:nowrap\">9910029<a name=\"cs-nemsis-history-9910029\"> </a></td><td>Plague</td></tr><tr><td style=\"white-space:nowrap\">9910031<a name=\"cs-nemsis-history-9910031\"> </a></td><td>Pneumococcal (Pneumonia)</td></tr><tr><td style=\"white-space:nowrap\">9910033<a name=\"cs-nemsis-history-9910033\"> </a></td><td>Polio</td></tr><tr><td style=\"white-space:nowrap\">9910035<a name=\"cs-nemsis-history-9910035\"> </a></td><td>Rabies</td></tr><tr><td style=\"white-space:nowrap\">9910037<a name=\"cs-nemsis-history-9910037\"> </a></td><td>Rotavirus</td></tr><tr><td style=\"white-space:nowrap\">9910039<a name=\"cs-nemsis-history-9910039\"> </a></td><td>Shingles</td></tr><tr><td style=\"white-space:nowrap\">9910041<a name=\"cs-nemsis-history-9910041\"> </a></td><td>Small Pox</td></tr><tr><td style=\"white-space:nowrap\">9910043<a name=\"cs-nemsis-history-9910043\"> </a></td><td>Tetanus</td></tr><tr><td style=\"white-space:nowrap\">9910045<a name=\"cs-nemsis-history-9910045\"> </a></td><td>Tuberculosis</td></tr><tr><td style=\"white-space:nowrap\">9910047<a name=\"cs-nemsis-history-9910047\"> </a></td><td>Typhoid</td></tr><tr><td style=\"white-space:nowrap\">9910049<a name=\"cs-nemsis-history-9910049\"> </a></td><td>Varicella (Chickenpox)</td></tr><tr><td style=\"white-space:nowrap\">9910051<a name=\"cs-nemsis-history-9910051\"> </a></td><td>Yellow Fever</td></tr><tr><td style=\"white-space:nowrap\">9910053<a name=\"cs-nemsis-history-9910053\"> </a></td><td>None</td></tr><tr><td style=\"white-space:nowrap\">3114001<a name=\"cs-nemsis-history-3114001\"> </a></td><td>Centimeters (cm)</td></tr><tr><td style=\"white-space:nowrap\">3114003<a name=\"cs-nemsis-history-3114003\"> </a></td><td>Grams (gms)</td></tr><tr><td style=\"white-space:nowrap\">3114005<a name=\"cs-nemsis-history-3114005\"> </a></td><td>Drops (gtts)</td></tr><tr><td style=\"white-space:nowrap\">3114007<a name=\"cs-nemsis-history-3114007\"> </a></td><td>Inches (in)</td></tr><tr><td style=\"white-space:nowrap\">3114009<a name=\"cs-nemsis-history-3114009\"> </a></td><td>International Units (IU)</td></tr><tr><td style=\"white-space:nowrap\">3114011<a name=\"cs-nemsis-history-3114011\"> </a></td><td>Keep Vein Open (kvo)</td></tr><tr><td style=\"white-space:nowrap\">3114013<a name=\"cs-nemsis-history-3114013\"> </a></td><td>Liters Per Minute (l/min [fluid])</td></tr><tr><td style=\"white-space:nowrap\">3114015<a name=\"cs-nemsis-history-3114015\"> </a></td><td>Liters (l)</td></tr><tr><td style=\"white-space:nowrap\">3114017<a name=\"cs-nemsis-history-3114017\"> </a></td><td>Liters Per Minute (LPM [gas])</td></tr><tr><td style=\"white-space:nowrap\">3114019<a name=\"cs-nemsis-history-3114019\"> </a></td><td>Micrograms (mcg)</td></tr><tr><td style=\"white-space:nowrap\">3114021<a name=\"cs-nemsis-history-3114021\"> </a></td><td>Micrograms per Kilogram per Minute (mcg/kg/min)</td></tr><tr><td style=\"white-space:nowrap\">3114023<a name=\"cs-nemsis-history-3114023\"> </a></td><td>Micrograms per Minute (mcg/min)</td></tr><tr><td style=\"white-space:nowrap\">3114025<a name=\"cs-nemsis-history-3114025\"> </a></td><td>Milliequivalents (mEq)</td></tr><tr><td style=\"white-space:nowrap\">3114027<a name=\"cs-nemsis-history-3114027\"> </a></td><td>Metered Dose (MDI)</td></tr><tr><td style=\"white-space:nowrap\">3114029<a name=\"cs-nemsis-history-3114029\"> </a></td><td>Milligrams (mg)</td></tr><tr><td style=\"white-space:nowrap\">3114031<a name=\"cs-nemsis-history-3114031\"> </a></td><td>Milligrams per Kilogram (mg/kg)</td></tr><tr><td style=\"white-space:nowrap\">3114033<a name=\"cs-nemsis-history-3114033\"> </a></td><td>Milligrams per Kilogram Per Minute (mg/kg/min)</td></tr><tr><td style=\"white-space:nowrap\">3114035<a name=\"cs-nemsis-history-3114035\"> </a></td><td>Milligrams per Minute (mg/min)</td></tr><tr><td style=\"white-space:nowrap\">3114037<a name=\"cs-nemsis-history-3114037\"> </a></td><td>Milliliters (ml)</td></tr><tr><td style=\"white-space:nowrap\">3114039<a name=\"cs-nemsis-history-3114039\"> </a></td><td>Milliliters per Hour (ml/hr)</td></tr><tr><td style=\"white-space:nowrap\">3114041<a name=\"cs-nemsis-history-3114041\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3114043<a name=\"cs-nemsis-history-3114043\"> </a></td><td>Puffs</td></tr><tr><td style=\"white-space:nowrap\">3114045<a name=\"cs-nemsis-history-3114045\"> </a></td><td>Units per Hour (units/hr)</td></tr><tr><td style=\"white-space:nowrap\">3114047<a name=\"cs-nemsis-history-3114047\"> </a></td><td>Micrograms per Kilogram (mcg/kg)</td></tr><tr><td style=\"white-space:nowrap\">3114049<a name=\"cs-nemsis-history-3114049\"> </a></td><td>Units</td></tr><tr><td style=\"white-space:nowrap\">3114051<a name=\"cs-nemsis-history-3114051\"> </a></td><td>Units per Kilogram per Hour (units/kg/hr)</td></tr><tr><td style=\"white-space:nowrap\">3114053<a name=\"cs-nemsis-history-3114053\"> </a></td><td>Units per Kilogram (units/kg)</td></tr><tr><td style=\"white-space:nowrap\">3117001<a name=\"cs-nemsis-history-3117001\"> </a></td><td>Alcohol Containers/Paraphernalia at Scene</td></tr><tr><td style=\"white-space:nowrap\">3117003<a name=\"cs-nemsis-history-3117003\"> </a></td><td>Drug Paraphernalia at Scene</td></tr><tr><td style=\"white-space:nowrap\">3117005<a name=\"cs-nemsis-history-3117005\"> </a></td><td>Patient Admits to Alcohol Use</td></tr><tr><td style=\"white-space:nowrap\">3117007<a name=\"cs-nemsis-history-3117007\"> </a></td><td>Patient Admits to Drug Use</td></tr><tr><td style=\"white-space:nowrap\">3117009<a name=\"cs-nemsis-history-3117009\"> </a></td><td>Positive Level known from Law Enforcement or Hospital Record</td></tr><tr><td style=\"white-space:nowrap\">3117013<a name=\"cs-nemsis-history-3117013\"> </a></td><td>Physical Exam Indicates Suspected Alcohol or Drug Use</td></tr><tr><td style=\"white-space:nowrap\">3117015<a name=\"cs-nemsis-history-3117015\"> </a></td><td>Bystander/Family Reports Drug Use</td></tr><tr><td style=\"white-space:nowrap\">3117017<a name=\"cs-nemsis-history-3117017\"> </a></td><td>Bystander/Family Reports Alcohol Use</td></tr><tr><td style=\"white-space:nowrap\">3118001<a name=\"cs-nemsis-history-3118001\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3118003<a name=\"cs-nemsis-history-3118003\"> </a></td><td>Possible, Unconfirmed</td></tr><tr><td style=\"white-space:nowrap\">3118005<a name=\"cs-nemsis-history-3118005\"> </a></td><td>Yes, Confirmed 12 to 20 Weeks</td></tr><tr><td style=\"white-space:nowrap\">3118007<a name=\"cs-nemsis-history-3118007\"> </a></td><td>Yes, Confirmed Greater Than 20 Weeks</td></tr><tr><td style=\"white-space:nowrap\">3118009<a name=\"cs-nemsis-history-3118009\"> </a></td><td>Yes, Confirmed Less Than 12 Weeks</td></tr><tr><td style=\"white-space:nowrap\">3118011<a name=\"cs-nemsis-history-3118011\"> </a></td><td>Yes, Weeks Unknown</td></tr><tr><td style=\"white-space:nowrap\">3120001<a name=\"cs-nemsis-history-3120001\"> </a></td><td>q1h (every hour)</td></tr><tr><td style=\"white-space:nowrap\">3120003<a name=\"cs-nemsis-history-3120003\"> </a></td><td>q2h (every 2 hours)</td></tr><tr><td style=\"white-space:nowrap\">3120005<a name=\"cs-nemsis-history-3120005\"> </a></td><td>q3h (every 3 hours)</td></tr><tr><td style=\"white-space:nowrap\">3120007<a name=\"cs-nemsis-history-3120007\"> </a></td><td>q4h (every 4 hours)</td></tr><tr><td style=\"white-space:nowrap\">3120009<a name=\"cs-nemsis-history-3120009\"> </a></td><td>qid (four times a day)</td></tr><tr><td style=\"white-space:nowrap\">3120011<a name=\"cs-nemsis-history-3120011\"> </a></td><td>tid (three times a day)</td></tr><tr><td style=\"white-space:nowrap\">3120013<a name=\"cs-nemsis-history-3120013\"> </a></td><td>ac (before meals)</td></tr><tr><td style=\"white-space:nowrap\">3120015<a name=\"cs-nemsis-history-3120015\"> </a></td><td>pc (after meals)</td></tr><tr><td style=\"white-space:nowrap\">3120017<a name=\"cs-nemsis-history-3120017\"> </a></td><td>bid (twice a day)</td></tr><tr><td style=\"white-space:nowrap\">3120019<a name=\"cs-nemsis-history-3120019\"> </a></td><td>qd (every day)</td></tr><tr><td style=\"white-space:nowrap\">3120021<a name=\"cs-nemsis-history-3120021\"> </a></td><td>qd-am (every day in the morning)</td></tr><tr><td style=\"white-space:nowrap\">3120023<a name=\"cs-nemsis-history-3120023\"> </a></td><td>qd-pm (every day in the evening)</td></tr><tr><td style=\"white-space:nowrap\">3120025<a name=\"cs-nemsis-history-3120025\"> </a></td><td>hs (at bedtime)</td></tr><tr><td style=\"white-space:nowrap\">3120027<a name=\"cs-nemsis-history-3120027\"> </a></td><td>qod (every other day)</td></tr><tr><td style=\"white-space:nowrap\">3120029<a name=\"cs-nemsis-history-3120029\"> </a></td><td>prn (as needed)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.18" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISHistory"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS eHistory Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS 3.5.1 eHistory section covering advance directives, medical history source, immunization type, current medication dosage units and frequency, alcohol/drug use indicators, and pregnancy status."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "93"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3105001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Family/Guardian request DNR (but no documentation)" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3105003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Living Will" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3105005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3105007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3105009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Healthcare Advanced Directive Form" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3105011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "State EMS DNR or Medical Order Form" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3109001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bystander/Other" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3109003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Family" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3109005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Health Care Personnel" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3109007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anthrax" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cholera" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DPT / TDaP (Diphtheria, Pertussis, Tetanus)" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hemophilus Influenza B" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis A" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hepatitis B" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Human Papilloma Virus (HPV)" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Influenza-H1N1" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Influenza-Other" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Influenza-Seasonal (In past 12 months)" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lyme Disease" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Meningococcus" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MMR (Measles, Mumps, Rubella)" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other-Not Listed" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Plague" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pneumococcal (Pneumonia)" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polio" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rabies" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotavirus" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Shingles" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Small Pox" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tetanus" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tuberculosis" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Typhoid" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Varicella (Chickenpox)" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yellow Fever" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9910053" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Centimeters (cm)" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grams (gms)" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drops (gtts)" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inches (in)" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "International Units (IU)" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Keep Vein Open (kvo)" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liters Per Minute (l/min [fluid])" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liters (l)" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liters Per Minute (LPM [gas])" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms (mcg)" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms per Kilogram per Minute (mcg/kg/min)" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms per Minute (mcg/min)" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milliequivalents (mEq)" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metered Dose (MDI)" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams (mg)" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams per Kilogram (mg/kg)" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams per Kilogram Per Minute (mg/kg/min)" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams per Minute (mg/min)" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milliliters (ml)" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milliliters per Hour (ml/hr)" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Puffs" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units per Hour (units/hr)" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms per Kilogram (mcg/kg)" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units per Kilogram per Hour (units/kg/hr)" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3114053" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units per Kilogram (units/kg)" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alcohol Containers/Paraphernalia at Scene" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drug Paraphernalia at Scene" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Admits to Alcohol Use" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Admits to Drug Use" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Positive Level known from Law Enforcement or Hospital Record" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physical Exam Indicates Suspected Alcohol or Drug Use" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bystander/Family Reports Drug Use" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3117017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bystander/Family Reports Alcohol Use" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3118001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3118003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Possible, Unconfirmed" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3118005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Confirmed 12 to 20 Weeks" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3118007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Confirmed Greater Than 20 Weeks" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3118009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Confirmed Less Than 12 Weeks" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3118011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Weeks Unknown" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "q1h (every hour)" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "q2h (every 2 hours)" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "q3h (every 3 hours)" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "q4h (every 4 hours)" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "qid (four times a day)" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "tid (three times a day)" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ac (before meals)" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "pc (after meals)" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "bid (twice a day)" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "qd (every day)" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "qd-am (every day in the morning)" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "qd-pm (every day in the evening)" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "hs (at bedtime)" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "qod (every other day)" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3120029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "prn (as needed)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

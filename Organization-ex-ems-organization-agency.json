@@ -1,0 +1,232 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ex-ems-organization-agency",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-organization"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ex-ems-organization-agency</b></p><a name=\"ex-ems-organization-agency\"> </a><a name=\"hcex-ems-organization-agency\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-organization.html\">EMS Organization</a></p></div><blockquote><p><b>EMS Agency Details</b></p><ul><li>primaryServiceType: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 9920001}\">911 Response (Scene) with Transport Capability</span></li><li>levelOfService: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 9917007}\">Paramedic</span></li><li>organizationStatus: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 1016003}\">Non-Volunteer</span></li></ul></blockquote><blockquote><p><b>EMS Agency Medical Director</b></p><ul><li>degree: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1113001}\">Doctor of Medicine</span></li><li>boardCertificationType: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1114009}\">Emergency Medicine</span></li><li>compensation: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1115001}\">Compensated</span></li><li>boardCertifiedEligible: true</li></ul></blockquote><blockquote><p><b>EMS Agency Configuration</b></p><blockquote><p><b>url</b></p>state</blockquote><p><b>value</b>: CA</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 232674004}\">Orotracheal intubation</span></p><p><b>permittedLevel</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level 9925007}\">Paramedic</span></p><blockquote><p><b>url</b></p>procedure</blockquote><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 7242}\">naloxone</span></p><p><b>permittedLevel</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level 9925007}\">Paramedic</span></p><blockquote><p><b>url</b></p>medication</blockquote><blockquote><p><b>url</b></p>protocol</blockquote><p><b>value</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures 9914001}\">Airway</span></p><blockquote><p><b>url</b></p>specialtyCapability</blockquote><p><b>value</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1211029}\">Vehicle Extrication</span></p><blockquote><p><b>url</b></p>billingStatus</blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p>emdProvided</blockquote><p><b>value</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1213003}\">Yes, 100% of the EMS Agency's Service Area</span></p><blockquote><p><b>url</b></p>monitoringCapability</blockquote><p><b>value</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1215003}\">Capnography-Waveform</span></p><blockquote><p><b>url</b></p>crewCallSign</blockquote><p><b>value</b>: Medic 7</p><blockquote><p><b>url</b></p>dispatchCenter</blockquote><p><b>value</b>: Riverside County Emergency Communications Center</p></blockquote><p><b>identifier</b>: Organization identifier/CA-4065</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 9912003}\">Governmental, Non-Fire</span></p><p><b>name</b>: Riverside County EMS Agency</p><p><b>address</b>: 3990 Lemon Street Riverside CA 92501 </p><blockquote><p><b>contact</b></p><p><b>purpose</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics 1101011}\">EMS Medical Director</span></p><p><b>name</b>: Maria Reyes </p><p><b>telecom</b>: ph: 951-555-0180, <a href=\"mailto:medical.director@rcfd.example.org\">medical.director@rcfd.example.org</a></p></blockquote></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "primaryServiceType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+          "code" : "9920001",
+          "display" : "911 Response (Scene) with Transport Capability"
+        }]
+      }
+    },
+    {
+      "url" : "levelOfService",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+          "code" : "9917007",
+          "display" : "Paramedic"
+        }]
+      }
+    },
+    {
+      "url" : "organizationStatus",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+          "code" : "1016003",
+          "display" : "Non-Volunteer"
+        }]
+      }
+    }],
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-details"
+  },
+  {
+    "extension" : [{
+      "url" : "degree",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+          "code" : "1113001",
+          "display" : "Doctor of Medicine"
+        }]
+      }
+    },
+    {
+      "url" : "boardCertificationType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+          "code" : "1114009",
+          "display" : "Emergency Medicine"
+        }]
+      }
+    },
+    {
+      "url" : "compensation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+          "code" : "1115001",
+          "display" : "Compensated"
+        }]
+      }
+    },
+    {
+      "url" : "boardCertifiedEligible",
+      "valueBoolean" : true
+    }],
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-medical-director"
+  },
+  {
+    "extension" : [{
+      "url" : "state",
+      "valueString" : "CA"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "232674004",
+            "display" : "Orotracheal intubation"
+          }]
+        }
+      },
+      {
+        "url" : "permittedLevel",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level",
+            "code" : "9925007",
+            "display" : "Paramedic"
+          }]
+        }
+      }],
+      "url" : "procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code" : "7242",
+            "display" : "naloxone"
+          }]
+        }
+      },
+      {
+        "url" : "permittedLevel",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level",
+            "code" : "9925007",
+            "display" : "Paramedic"
+          }]
+        }
+      }],
+      "url" : "medication"
+    },
+    {
+      "url" : "protocol",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures",
+          "code" : "9914001",
+          "display" : "Airway"
+        }]
+      }
+    },
+    {
+      "url" : "specialtyCapability",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+          "code" : "1211029",
+          "display" : "Vehicle Extrication"
+        }]
+      }
+    },
+    {
+      "url" : "billingStatus",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "emdProvided",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+          "code" : "1213003",
+          "display" : "Yes, 100% of the EMS Agency's Service Area"
+        }]
+      }
+    },
+    {
+      "url" : "monitoringCapability",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+          "code" : "1215003",
+          "display" : "Capnography-Waveform"
+        }]
+      }
+    },
+    {
+      "url" : "crewCallSign",
+      "valueString" : "Medic 7"
+    },
+    {
+      "url" : "dispatchCenter",
+      "valueString" : "Riverside County Emergency Communications Center"
+    }],
+    "url" : "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-agency-configuration"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "XX"
+      }]
+    },
+    "system" : "http://example.org/ems/state-agency-id",
+    "value" : "CA-4065"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+      "code" : "9912003",
+      "display" : "Governmental, Non-Fire"
+    }]
+  }],
+  "name" : "Riverside County EMS Agency",
+  "address" : [{
+    "line" : ["3990 Lemon Street"],
+    "city" : "Riverside",
+    "state" : "CA",
+    "postalCode" : "92501"
+  }],
+  "contact" : [{
+    "purpose" : {
+      "coding" : [{
+        "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+        "code" : "1101011",
+        "display" : "EMS Medical Director"
+      }]
+    },
+    "name" : {
+      "family" : "Reyes",
+      "given" : ["Maria"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "951-555-0180"
+    },
+    {
+      "system" : "email",
+      "value" : "medical.director@rcfd.example.org"
+    }]
+  }]
+}

@@ -1,0 +1,409 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EMS Hospital Capability - JSON Representation - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.161"}
+    h3,h4,h5,h6{--heading-prefix:"17.161"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMS Hospital Capability</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-vs-ems-hospital-capability.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-hospital-capability.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-hospital-capability.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EMS Hospital Capability - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-vs-ems-hospital-capability.json" no-download="true">Raw json</a> | <a href="ValueSet-vs-ems-hospital-capability.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a>" : "vs-ems-hospital-capability",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet vs-ems-hospital-capability&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;vs-ems-hospital-capability\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcvs-ems-hospital-capability\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html\&quot;&gt;&lt;code&gt;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version &amp;#x1F4E6;0.2.0&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908001\&quot;&gt;9908001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Behavioral Health&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908003\&quot;&gt;9908003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Burn Center&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908005\&quot;&gt;9908005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Critical Access Hospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908007\&quot;&gt;9908007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital (General)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908009\&quot;&gt;9908009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neonatal Center&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908011\&quot;&gt;9908011&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pediatric Center&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908019\&quot;&gt;9908019&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rehab Center&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908021\&quot;&gt;9908021&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Center Level 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908023\&quot;&gt;9908023&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Center Level 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908025\&quot;&gt;9908025&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Center Level 3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908027\&quot;&gt;9908027&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Center Level 4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908029\&quot;&gt;9908029&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Center Level 5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908031\&quot;&gt;9908031&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac-STEMI/PCI Capable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908033\&quot;&gt;9908033&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac-STEMI/PCI Capable (24/7)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908035\&quot;&gt;9908035&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac-STEMI/Non-PCI Capable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908037\&quot;&gt;9908037&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke-Acute Stroke Ready Hospital (ASRH)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908039\&quot;&gt;9908039&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke-Primary Stroke Center (PSC)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908041\&quot;&gt;9908041&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke-Thrombectomy-Capable Stroke Center (TSC)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908043\&quot;&gt;9908043&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke-Comprehensive Stroke Center (CSC)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908045\&quot;&gt;9908045&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cancer Center&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-9908047\&quot;&gt;9908047&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Labor and Delivery&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-hospital-capability",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:oid:2.25.219926138944530828037824748808947630693.2.74"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.2.0",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "EMSHospitalCapabilityVS",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "EMS Hospital Capability",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2026-07-19T20:45:43-04:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "fhirEMSCore Research Project",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "NEMSIS eDisposition.23 - Specialty capabilities of the receiving facility.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "US",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "United States of America"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908001",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Behavioral Health"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908003",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Burn Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908005",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Critical Access Hospital"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908007",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hospital (General)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908009",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neonatal Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908011",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908019",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rehab Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908021",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Trauma Center Level 1"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908023",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Trauma Center Level 2"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908025",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Trauma Center Level 3"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908027",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Trauma Center Level 4"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908029",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Trauma Center Level 5"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908031",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cardiac-STEMI/PCI Capable"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908033",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cardiac-STEMI/PCI Capable (24/7)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908035",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cardiac-STEMI/Non-PCI Capable"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908037",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stroke-Acute Stroke Ready Hospital (ASRH)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908039",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stroke-Primary Stroke Center (PSC)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908041",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stroke-Thrombectomy-Capable Stroke Center (TSC)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908043",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stroke-Comprehensive Stroke Center (CSC)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908045",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cancer Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "9908047",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Labor and Delivery"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-destination> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-location-destination"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-destination" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-destination>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location ex-ems-location-destination</b></p><a name=\"ex-ems-location-destination\"> </a><a name=\"hcex-ems-location-destination\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-location-destination.html\">EMS Destination Location</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1508855537</p><p><b>status</b>: Active</p><p><b>name</b>: Riverside University Health System Medical Center</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span></p><p><b>address</b>: 26520 Cactus Avenue Moreno Valley CA 92555 US (work)</p></div>"
+  ] ;
+  fhir:Location.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ] ;
+     fhir:Identifier.value [ fhir:value "1508855537" ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Riverside University Health System Medical Center"] ;
+  fhir:Location.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ] ;
+       fhir:Coding.code [ fhir:value "HOSP" ] ;
+       fhir:Coding.display [ fhir:value "Hospital" ]
+     ]
+  ] ;
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.line [
+       fhir:value "26520 Cactus Avenue" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Moreno Valley" ] ;
+     fhir:Address.state [ fhir:value "CA" ] ;
+     fhir:Address.postalCode [ fhir:value "92555" ] ;
+     fhir:Address.country [ fhir:value "US" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-destination.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

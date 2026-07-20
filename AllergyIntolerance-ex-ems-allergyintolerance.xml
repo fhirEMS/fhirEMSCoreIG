@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-allergyintolerance"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-allergyintolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance ex-ems-allergyintolerance</b></p><a name="ex-ems-allergyintolerance"> </a><a name="hcex-ems-allergyintolerance"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-allergyintolerance.html">EMS AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}">Unconfirmed</span></p><p><b>category</b>: Medication</p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 7980}">penicillin G</span></p><p><b>patient</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>recorder</b>: <a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></p><h3>Reactions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Manifestation</b></td><td><b>Severity</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 271807003}">Eruption of skin</span></td><td>Mild</td></tr></table></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="unconfirmed"/>
+    </coding>
+  </verificationStatus>
+  <category value="medication"/>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="7980"/>
+      <display value="penicillin G"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/ex-ems-patient"/>
+  </patient>
+  <recorder>
+    <reference value="Practitioner/ex-ems-practitioner"/>
+  </recorder>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271807003"/>
+        <display value="Eruption of skin"/>
+      </coding>
+    </manifestation>
+    <severity value="mild"/>
+  </reaction>
+</AllergyIntolerance>

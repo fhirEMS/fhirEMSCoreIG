@@ -1,0 +1,264 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Composition/ex-ems-composition> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-composition"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-composition>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition ex-ems-composition</b></p><a name=\"ex-ems-composition\"> </a><a name=\"hcex-ems-composition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-composition.html\">EMS Patient Care Report (PCR)</a></p></div><p><b>identifier</b>: <code>http://example.org/ems/pcr</code>/PCR-2026-03-14-0042</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 67796-3}\">EMS patient care report - version 3 Document NEMSIS</span></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>date</b>: 2026-03-14 18:45:00-0800</p><p><b>author</b>: </p><ul><li><a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></li><li><a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></li></ul><p><b>title</b>: EMS Patient Care Report</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td>2026-03-14 19:30:00-0800</td><td><a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></p></div>"
+  ] ;
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://example.org/ems/pcr" ] ;
+     fhir:Identifier.value [ fhir:value "PCR-2026-03-14-0042" ]
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:67796-3 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "67796-3" ] ;
+       fhir:Coding.display [ fhir:value "EMS patient care report - version 3 Document NEMSIS" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Composition.encounter [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2026-03-14T18:45:00-08:00"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Organization/ex-ems-organization-agency> ;
+     fhir:Reference.reference [ fhir:value "Organization/ex-ems-organization-agency" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "EMS Patient Care Report"] ;
+  fhir:Composition.attester [
+     fhir:index 0 ;
+     fhir:Composition.attester.mode [ fhir:value "legal" ] ;
+     fhir:Composition.attester.time [ fhir:value "2026-03-14T19:30:00-08:00"^^xsd:dateTime ] ;
+     fhir:Composition.attester.party [
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+     ]
+  ] ;
+  fhir:Composition.custodian [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Organization/ex-ems-organization-agency> ;
+     fhir:Reference.reference [ fhir:value "Organization/ex-ems-organization-agency" ]
+  ] ;
+  fhir:Composition.section [
+     fhir:index 0 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+         fhir:Coding.code [ fhir:value "section-eResponse" ] ;
+         fhir:Coding.display [ fhir:value "EMS Response" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+       fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+         fhir:Coding.code [ fhir:value "section-eTimes" ] ;
+         fhir:Coding.display [ fhir:value "EMS Times" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+       fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:29762-2 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "29762-2" ] ;
+         fhir:Coding.display [ fhir:value "Social history note" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+       fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+         fhir:Coding.code [ fhir:value "section-eScene" ] ;
+         fhir:Coding.display [ fhir:value "EMS Scene" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-scene> ;
+       fhir:Reference.reference [ fhir:value "Location/ex-ems-location-scene" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:55110-1 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "55110-1" ] ;
+         fhir:Coding.display [ fhir:value "Conclusions [Interpretation] Document" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Condition/ex-ems-condition> ;
+       fhir:Reference.reference [ fhir:value "Condition/ex-ems-condition" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:18776-5 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "18776-5" ] ;
+         fhir:Coding.display [ fhir:value "Plan of care note" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-destination> ;
+       fhir:Reference.reference [ fhir:value "Location/ex-ems-location-destination" ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:8716-3 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "8716-3" ] ;
+         fhir:Coding.display [ fhir:value "Vital signs note" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-bp> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-ems-observation-bp" ]
+     ], [
+       fhir:index 1 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-heart-rate> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-ems-heart-rate" ]
+     ], [
+       fhir:index 2 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-spo2> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-ems-spo2" ]
+     ], [
+       fhir:index 3 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-respiratory-rate> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-ems-respiratory-rate" ]
+     ], [
+       fhir:index 4 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-gcs> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-ems-observation-gcs" ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:29554-3 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "29554-3" ] ;
+         fhir:Coding.display [ fhir:value "Procedure Narrative" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Procedure/ex-ems-procedure> ;
+       fhir:Reference.reference [ fhir:value "Procedure/ex-ems-procedure" ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:29549-3 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "29549-3" ] ;
+         fhir:Coding.display [ fhir:value "Medication administered Narrative" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/MedicationAdministration/ex-ems-medicationadministration> ;
+       fhir:Reference.reference [ fhir:value "MedicationAdministration/ex-ems-medicationadministration" ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+         fhir:Coding.code [ fhir:value "section-eAirway" ] ;
+         fhir:Coding.display [ fhir:value "EMS Airway Management" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Observation/ex-ems-observation-airway> ;
+       fhir:Reference.reference [ fhir:value "Observation/ex-ems-observation-airway" ]
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+         fhir:Coding.code [ fhir:value "section-eArrest" ] ;
+         fhir:Coding.display [ fhir:value "EMS Cardiac Arrest" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Condition/ex-ems-condition-arrest> ;
+       fhir:Reference.reference [ fhir:value "Condition/ex-ems-condition-arrest" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Composition/ex-ems-composition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

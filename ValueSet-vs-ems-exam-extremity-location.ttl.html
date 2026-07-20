@@ -1,0 +1,557 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EMS Extremity Assessment Finding Location - TTL Representation - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.151"}
+    h3,h4,h5,h6{--heading-prefix:"17.151"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMS Extremity Assessment Finding Location</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-vs-ems-exam-extremity-location.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-exam-extremity-location.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-exam-extremity-location.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EMS Extremity Assessment Finding Location - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-vs-ems-exam-extremity-location.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-vs-ems-exam-extremity-location.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/ValueSet/vs-ems-exam-extremity-location&gt; a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;vs-ems-exam-extremity-location&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet vs-ems-exam-extremity-location&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;vs-ems-exam-extremity-location\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcvs-ems-exam-extremity-location\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html\&quot;&gt;&lt;code&gt;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version ?0.2.0&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515001\&quot;&gt;3515001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ankle-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515003\&quot;&gt;3515003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ankle-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515005\&quot;&gt;3515005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arm-Upper-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515007\&quot;&gt;3515007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arm-Upper-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515009\&quot;&gt;3515009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elbow-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515011\&quot;&gt;3515011&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elbow-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515013\&quot;&gt;3515013&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-2nd (Index)-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515015\&quot;&gt;3515015&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-2nd (Index)-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515017\&quot;&gt;3515017&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-3rd (Middle)-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515019\&quot;&gt;3515019&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-3rd (Middle)-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515021\&quot;&gt;3515021&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-4th (Ring)-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515023\&quot;&gt;3515023&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-4th (Ring)-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515025\&quot;&gt;3515025&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-5th (Smallest)-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515027\&quot;&gt;3515027&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finger-5th (Smallest)-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515029\&quot;&gt;3515029&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foot-Dorsal-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515031\&quot;&gt;3515031&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foot-Dorsal-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515033\&quot;&gt;3515033&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foot-Plantar-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515035\&quot;&gt;3515035&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foot-Plantar-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515037\&quot;&gt;3515037&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arm-Lower-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515039\&quot;&gt;3515039&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arm-Lower-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515041\&quot;&gt;3515041&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hand-Dorsal-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515043\&quot;&gt;3515043&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hand-Dorsal-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515045\&quot;&gt;3515045&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hand-Palm-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515047\&quot;&gt;3515047&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hand-Palm-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515049\&quot;&gt;3515049&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hip-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515051\&quot;&gt;3515051&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hip-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515053\&quot;&gt;3515053&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knee-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515055\&quot;&gt;3515055&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knee-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515057\&quot;&gt;3515057&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leg-Lower-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515059\&quot;&gt;3515059&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leg-Lower-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515061\&quot;&gt;3515061&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leg-Upper-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515063\&quot;&gt;3515063&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leg-Upper-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515065\&quot;&gt;3515065&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Shoulder-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515067\&quot;&gt;3515067&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Shoulder-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515069\&quot;&gt;3515069&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thumb-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515071\&quot;&gt;3515071&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thumb-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515073\&quot;&gt;3515073&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-1st (Big)-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515075\&quot;&gt;3515075&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-1st (Big)-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515077\&quot;&gt;3515077&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-2nd-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515079\&quot;&gt;3515079&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-2nd-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515081\&quot;&gt;3515081&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-3rd-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515083\&quot;&gt;3515083&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-3rd-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515085\&quot;&gt;3515085&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-4th-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515087\&quot;&gt;3515087&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-4th-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515089\&quot;&gt;3515089&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-5th (Smallest)-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515091\&quot;&gt;3515091&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Toe-5th (Smallest)-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515093\&quot;&gt;3515093&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wrist-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515095\&quot;&gt;3515095&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wrist-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515097\&quot;&gt;3515097&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arm-Whole Arm and Hand-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515099\&quot;&gt;3515099&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arm-Whole Arm and Hand-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515101\&quot;&gt;3515101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hand-Whole Hand-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515103\&quot;&gt;3515103&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hand-Whole Hand-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515105\&quot;&gt;3515105&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leg-Whole Leg-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515107\&quot;&gt;3515107&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leg-Whole Leg-Right&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515109\&quot;&gt;3515109&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foot-Whole Foot-Left&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3515111\&quot;&gt;3515111&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foot-Whole Foot-Right&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremity-location&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.identifier">fhir:ValueSet.identifier</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:ietf:rfc:3986&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;urn:oid:2.25.219926138944530828037824748808947630693.2.56&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.2.0&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMSExamExtremityLocationVS&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Extremity Assessment Finding Location&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:ValueSet.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-07-19T20:45:43-04:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fhirEMSCore Research Project (AI-Generated — Unofficial)&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fhirEMSCore Research Project (AI-Generated — Unofficial)&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://github.com/fhirEMS/fhirEMSCoreIG&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fhirEMSCore Research Project&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://github.com/fhirEMS/fhirEMSCoreIG&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;NEMSIS eExam.15 - Location qualifier for extremity assessment findings.&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">fhir:ValueSet.jurisdiction</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;US&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;United States of America&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515001&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ankle-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515003&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ankle-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515005&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arm-Upper-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515007&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arm-Upper-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515009&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Elbow-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515011&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Elbow-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515013&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-2nd (Index)-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515015&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-2nd (Index)-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515017&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-3rd (Middle)-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515019&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-3rd (Middle)-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515021&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-4th (Ring)-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515023&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-4th (Ring)-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515025&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-5th (Smallest)-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 13 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515027&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Finger-5th (Smallest)-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 14 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515029&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Foot-Dorsal-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 15 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515031&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Foot-Dorsal-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 16 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515033&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Foot-Plantar-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 17 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515035&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Foot-Plantar-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 18 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515037&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arm-Lower-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 19 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515039&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arm-Lower-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 20 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515041&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hand-Dorsal-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 21 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515043&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hand-Dorsal-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 22 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515045&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hand-Palm-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 23 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515047&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hand-Palm-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 24 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515049&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hip-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 25 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515051&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hip-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 26 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515053&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Knee-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 27 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515055&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Knee-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 28 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515057&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Leg-Lower-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 29 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515059&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Leg-Lower-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 30 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515061&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Leg-Upper-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 31 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515063&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Leg-Upper-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 32 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515065&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Shoulder-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 33 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515067&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Shoulder-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 34 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515069&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Thumb-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 35 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515071&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Thumb-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 36 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515073&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-1st (Big)-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 37 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515075&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-1st (Big)-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 38 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515077&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-2nd-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 39 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515079&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-2nd-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 40 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515081&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-3rd-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 41 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515083&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-3rd-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 42 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515085&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-4th-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 43 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515087&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-4th-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 44 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515089&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-5th (Smallest)-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 45 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515091&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Toe-5th (Smallest)-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 46 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515093&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Wrist-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 47 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515095&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Wrist-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 48 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515097&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arm-Whole Arm and Hand-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 49 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515099&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arm-Whole Arm and Hand-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 50 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515101&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hand-Whole Hand-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 51 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515103&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hand-Whole Hand-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 52 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515105&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Leg-Whole Leg-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 53 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515107&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Leg-Whole Leg-Right&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 54 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515109&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Foot-Whole Foot-Left&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 55 ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3515111&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Foot-Whole Foot-Right&quot; ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/ValueSet/vs-ems-exam-extremity-location.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/ValueSet/vs-ems-exam-extremity-location.ttl&gt; .
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

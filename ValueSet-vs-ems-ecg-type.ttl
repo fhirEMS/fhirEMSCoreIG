@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ecg-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-ecg-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-ecg-type</b></p><a name=\"vs-ems-ecg-type\"> </a><a name=\"hcvs-ems-ecg-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-vitals.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304000\">3304000</a></td><td>2 Lead ECG (pads or paddles)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304001\">3304001</a></td><td>3 Lead</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304003\">3304003</a></td><td>4 Lead</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304005\">3304005</a></td><td>5 Lead</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304007\">3304007</a></td><td>12 Lead-Left Sided (Normal)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304009\">3304009</a></td><td>12 Lead-Right Sided</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304011\">3304011</a></td><td>15 Lead</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304013\">3304013</a></td><td>18 Lead</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3304015\">3304015</a></td><td>Other</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ecg-type"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.47" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSECGTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS ECG Type"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eVitals.04 - The number of leads used for ECG acquisition."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "2 Lead ECG (pads or paddles)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "3 Lead" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "4 Lead" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "5 Lead" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "12 Lead-Left Sided (Normal)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "12 Lead-Right Sided" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "15 Lead" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "18 Lead" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3304015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ecg-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

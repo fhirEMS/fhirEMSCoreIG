@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Condition/ex-ems-condition-problems> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-condition-problems"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-problems" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-problems>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ex-ems-condition-problems</b></p><a name=\"ex-ems-condition-problems\"> </a><a name=\"hcex-ems-condition-problems\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-condition-problems.html\">EMS Condition — Past Medical History</a></p></div><blockquote><p><b>EMS History Context</b></p><ul><li>advanceDirectives: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 3105005}\">None</span></li><li>practitionerName: Sarah Chen </li><li>historyObtainedFrom: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 3109007}\">Patient</span></li><li>immunizationType: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 9910043}\">Tetanus</span></li><li>immunizationYear: 2020</li><li>emergencyInformationForm: false</li><li>alcoholDrugUse: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history 3117013}\">Physical Exam Indicates Suspected Alcohol or Drug Use</span></li><li>lastOralIntake: 2026-03-14 12:30:00-0800</li></ul></blockquote><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status unconfirmed}\">Unconfirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm I10}\">Hypertension</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>recordedDate</b>: 2026-03-14 14:40:00-0800</p><p><b>recorder</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "advanceDirectives" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history" ] ;
+           fhir:Coding.code [ fhir:value "3105005" ] ;
+           fhir:Coding.display [ fhir:value "None" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "practitionerName" ] ;
+       fhir:Extension.valueHumanName [
+         fhir:HumanName.family [ fhir:value "Chen" ] ;
+         fhir:HumanName.given [
+           fhir:value "Sarah" ;
+           fhir:index 0
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "historyObtainedFrom" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history" ] ;
+           fhir:Coding.code [ fhir:value "3109007" ] ;
+           fhir:Coding.display [ fhir:value "Patient" ]
+         ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "immunizationType" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history" ] ;
+           fhir:Coding.code [ fhir:value "9910043" ] ;
+           fhir:Coding.display [ fhir:value "Tetanus" ]
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Extension.url [ fhir:value "immunizationYear" ] ;
+       fhir:Extension.valueDate [ fhir:value "2020"^^xsd:gYear ]
+     ], [
+       fhir:index 5 ;
+       fhir:Extension.url [ fhir:value "emergencyInformationForm" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6 ;
+       fhir:Extension.url [ fhir:value "alcoholDrugUse" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history" ] ;
+           fhir:Coding.code [ fhir:value "3117013" ] ;
+           fhir:Coding.display [ fhir:value "Physical Exam Indicates Suspected Alcohol or Drug Use" ]
+         ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Extension.url [ fhir:value "lastOralIntake" ] ;
+       fhir:Extension.valueDateTime [ fhir:value "2026-03-14T12:30:00-08:00"^^xsd:dateTime ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-history-context" ]
+  ] ;
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ] ;
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ] ;
+       fhir:Coding.code [ fhir:value "unconfirmed" ]
+     ]
+  ] ;
+  fhir:Condition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ] ;
+       fhir:Coding.code [ fhir:value "problem-list-item" ] ;
+       fhir:Coding.display [ fhir:value "Problem List Item" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+       fhir:Coding.code [ fhir:value "I10" ] ;
+       fhir:Coding.display [ fhir:value "Essential (primary) hypertension" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Hypertension" ]
+  ] ;
+  fhir:Condition.subject [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Condition.encounter [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Encounter/ex-ems-encounter> ;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-ems-encounter" ]
+  ] ;
+  fhir:Condition.recordedDate [ fhir:value "2026-03-14T14:40:00-08:00"^^xsd:dateTime] ;
+  fhir:Condition.recorder [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Condition/ex-ems-condition-problems.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

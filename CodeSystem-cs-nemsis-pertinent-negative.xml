@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-pertinent-negative"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-pertinent-negative</b></p><a name="cs-nemsis-pertinent-negative"> </a><a name="hccs-nemsis-pertinent-negative"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">PN.Approximate<a name="cs-nemsis-pertinent-negative-PN.46Approximate"> </a></td><td>Approximate</td><td>The value is an estimate (e.g., estimated age).</td></tr><tr><td style="white-space:nowrap">PN.ContraindicationNoted<a name="cs-nemsis-pertinent-negative-PN.46ContraindicationNoted"> </a></td><td>Contraindication Noted</td><td>A contraindication was identified that prevented the action.</td></tr><tr><td style="white-space:nowrap">PN.DeniedByOrder<a name="cs-nemsis-pertinent-negative-PN.46DeniedByOrder"> </a></td><td>Denied By Order</td><td>The action was denied by a physician or standing order.</td></tr><tr><td style="white-space:nowrap">PN.ExamFindingNotPresent<a name="cs-nemsis-pertinent-negative-PN.46ExamFindingNotPresent"> </a></td><td>Exam Finding Not Present</td><td>The physical exam finding was specifically assessed and not found.</td></tr><tr><td style="white-space:nowrap">PN.MedicationAllergy<a name="cs-nemsis-pertinent-negative-PN.46MedicationAllergy"> </a></td><td>Medication Allergy</td><td>The patient has a known allergy to the medication.</td></tr><tr><td style="white-space:nowrap">PN.MedicationAlreadyTaken<a name="cs-nemsis-pertinent-negative-PN.46MedicationAlreadyTaken"> </a></td><td>Medication Already Taken</td><td>The patient had already taken the medication prior to EMS arrival.</td></tr><tr><td style="white-space:nowrap">PN.NoKnownDrugAllergy<a name="cs-nemsis-pertinent-negative-PN.46NoKnownDrugAllergy"> </a></td><td>No Known Drug Allergy</td><td>The patient has no known drug allergies.</td></tr><tr><td style="white-space:nowrap">PN.NoneReported<a name="cs-nemsis-pertinent-negative-PN.46NoneReported"> </a></td><td>None Reported</td><td>No pertinent history or findings were reported.</td></tr><tr><td style="white-space:nowrap">PN.NotImmunized<a name="cs-nemsis-pertinent-negative-PN.46NotImmunized"> </a></td><td>Not Immunized</td><td>The patient has not received the relevant immunization.</td></tr><tr><td style="white-space:nowrap">PN.OrderCriteriaNotMet<a name="cs-nemsis-pertinent-negative-PN.46OrderCriteriaNotMet"> </a></td><td>Order Criteria Not Met</td><td>The criteria required for a standing order were not met.</td></tr><tr><td style="white-space:nowrap">PN.Refused<a name="cs-nemsis-pertinent-negative-PN.46Refused"> </a></td><td>Refused</td><td>The patient refused the assessment or intervention.</td></tr><tr><td style="white-space:nowrap">PN.SymptomNotPresent<a name="cs-nemsis-pertinent-negative-PN.46SymptomNotPresent"> </a></td><td>Symptom Not Present</td><td>The symptom was specifically assessed and denied by the patient.</td></tr><tr><td style="white-space:nowrap">PN.UnableToComplete<a name="cs-nemsis-pertinent-negative-PN.46UnableToComplete"> </a></td><td>Unable To Complete</td><td>The assessment or intervention could not be completed.</td></tr><tr><td style="white-space:nowrap">PN.Unresponsive<a name="cs-nemsis-pertinent-negative-PN.46Unresponsive"> </a></td><td>Unresponsive</td><td>The patient was unresponsive and unable to provide information.</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.13"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISPertinentNegative"/>
+  <title value="NEMSIS Pertinent Negative Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS Pertinent Negative (PN) codes indicating a clinically significant documented absence. Applied to clinical data elements where documenting a negative finding is as meaningful as documenting a positive one."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="PN.Approximate"/>
+    <display value="Approximate"/>
+    <definition value="The value is an estimate (e.g., estimated age)."/>
+  </concept>
+  <concept>
+    <code value="PN.ContraindicationNoted"/>
+    <display value="Contraindication Noted"/>
+    <definition value="A contraindication was identified that prevented the action."/>
+  </concept>
+  <concept>
+    <code value="PN.DeniedByOrder"/>
+    <display value="Denied By Order"/>
+    <definition value="The action was denied by a physician or standing order."/>
+  </concept>
+  <concept>
+    <code value="PN.ExamFindingNotPresent"/>
+    <display value="Exam Finding Not Present"/>
+    <definition value="The physical exam finding was specifically assessed and not found."/>
+  </concept>
+  <concept>
+    <code value="PN.MedicationAllergy"/>
+    <display value="Medication Allergy"/>
+    <definition value="The patient has a known allergy to the medication."/>
+  </concept>
+  <concept>
+    <code value="PN.MedicationAlreadyTaken"/>
+    <display value="Medication Already Taken"/>
+    <definition value="The patient had already taken the medication prior to EMS arrival."/>
+  </concept>
+  <concept>
+    <code value="PN.NoKnownDrugAllergy"/>
+    <display value="No Known Drug Allergy"/>
+    <definition value="The patient has no known drug allergies."/>
+  </concept>
+  <concept>
+    <code value="PN.NoneReported"/>
+    <display value="None Reported"/>
+    <definition value="No pertinent history or findings were reported."/>
+  </concept>
+  <concept>
+    <code value="PN.NotImmunized"/>
+    <display value="Not Immunized"/>
+    <definition value="The patient has not received the relevant immunization."/>
+  </concept>
+  <concept>
+    <code value="PN.OrderCriteriaNotMet"/>
+    <display value="Order Criteria Not Met"/>
+    <definition value="The criteria required for a standing order were not met."/>
+  </concept>
+  <concept>
+    <code value="PN.Refused"/>
+    <display value="Refused"/>
+    <definition value="The patient refused the assessment or intervention."/>
+  </concept>
+  <concept>
+    <code value="PN.SymptomNotPresent"/>
+    <display value="Symptom Not Present"/>
+    <definition value="The symptom was specifically assessed and denied by the patient."/>
+  </concept>
+  <concept>
+    <code value="PN.UnableToComplete"/>
+    <display value="Unable To Complete"/>
+    <definition value="The assessment or intervention could not be completed."/>
+  </concept>
+  <concept>
+    <code value="PN.Unresponsive"/>
+    <display value="Unresponsive"/>
+    <definition value="The patient was unresponsive and unable to provide information."/>
+  </concept>
+</CodeSystem>

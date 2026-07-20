@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-pertinent-negative"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-pertinent-negative</b></p><a name=\"cs-nemsis-pertinent-negative\"> </a><a name=\"hccs-nemsis-pertinent-negative\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">PN.Approximate<a name=\"cs-nemsis-pertinent-negative-PN.46Approximate\"> </a></td><td>Approximate</td><td>The value is an estimate (e.g., estimated age).</td></tr><tr><td style=\"white-space:nowrap\">PN.ContraindicationNoted<a name=\"cs-nemsis-pertinent-negative-PN.46ContraindicationNoted\"> </a></td><td>Contraindication Noted</td><td>A contraindication was identified that prevented the action.</td></tr><tr><td style=\"white-space:nowrap\">PN.DeniedByOrder<a name=\"cs-nemsis-pertinent-negative-PN.46DeniedByOrder\"> </a></td><td>Denied By Order</td><td>The action was denied by a physician or standing order.</td></tr><tr><td style=\"white-space:nowrap\">PN.ExamFindingNotPresent<a name=\"cs-nemsis-pertinent-negative-PN.46ExamFindingNotPresent\"> </a></td><td>Exam Finding Not Present</td><td>The physical exam finding was specifically assessed and not found.</td></tr><tr><td style=\"white-space:nowrap\">PN.MedicationAllergy<a name=\"cs-nemsis-pertinent-negative-PN.46MedicationAllergy\"> </a></td><td>Medication Allergy</td><td>The patient has a known allergy to the medication.</td></tr><tr><td style=\"white-space:nowrap\">PN.MedicationAlreadyTaken<a name=\"cs-nemsis-pertinent-negative-PN.46MedicationAlreadyTaken\"> </a></td><td>Medication Already Taken</td><td>The patient had already taken the medication prior to EMS arrival.</td></tr><tr><td style=\"white-space:nowrap\">PN.NoKnownDrugAllergy<a name=\"cs-nemsis-pertinent-negative-PN.46NoKnownDrugAllergy\"> </a></td><td>No Known Drug Allergy</td><td>The patient has no known drug allergies.</td></tr><tr><td style=\"white-space:nowrap\">PN.NoneReported<a name=\"cs-nemsis-pertinent-negative-PN.46NoneReported\"> </a></td><td>None Reported</td><td>No pertinent history or findings were reported.</td></tr><tr><td style=\"white-space:nowrap\">PN.NotImmunized<a name=\"cs-nemsis-pertinent-negative-PN.46NotImmunized\"> </a></td><td>Not Immunized</td><td>The patient has not received the relevant immunization.</td></tr><tr><td style=\"white-space:nowrap\">PN.OrderCriteriaNotMet<a name=\"cs-nemsis-pertinent-negative-PN.46OrderCriteriaNotMet\"> </a></td><td>Order Criteria Not Met</td><td>The criteria required for a standing order were not met.</td></tr><tr><td style=\"white-space:nowrap\">PN.Refused<a name=\"cs-nemsis-pertinent-negative-PN.46Refused\"> </a></td><td>Refused</td><td>The patient refused the assessment or intervention.</td></tr><tr><td style=\"white-space:nowrap\">PN.SymptomNotPresent<a name=\"cs-nemsis-pertinent-negative-PN.46SymptomNotPresent\"> </a></td><td>Symptom Not Present</td><td>The symptom was specifically assessed and denied by the patient.</td></tr><tr><td style=\"white-space:nowrap\">PN.UnableToComplete<a name=\"cs-nemsis-pertinent-negative-PN.46UnableToComplete\"> </a></td><td>Unable To Complete</td><td>The assessment or intervention could not be completed.</td></tr><tr><td style=\"white-space:nowrap\">PN.Unresponsive<a name=\"cs-nemsis-pertinent-negative-PN.46Unresponsive\"> </a></td><td>Unresponsive</td><td>The patient was unresponsive and unable to provide information.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.13" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISPertinentNegative"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS Pertinent Negative Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "NEMSIS Pertinent Negative (PN) codes indicating a clinically significant documented absence. Applied to clinical data elements where documenting a negative finding is as meaningful as documenting a positive one."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "14"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.Approximate" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Approximate" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The value is an estimate (e.g., estimated age)." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.ContraindicationNoted" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Contraindication Noted" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A contraindication was identified that prevented the action." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.DeniedByOrder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Denied By Order" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The action was denied by a physician or standing order." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.ExamFindingNotPresent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exam Finding Not Present" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The physical exam finding was specifically assessed and not found." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.MedicationAllergy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication Allergy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient has a known allergy to the medication." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.MedicationAlreadyTaken" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication Already Taken" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient had already taken the medication prior to EMS arrival." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.NoKnownDrugAllergy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No Known Drug Allergy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient has no known drug allergies." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.NoneReported" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None Reported" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "No pertinent history or findings were reported." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.NotImmunized" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Immunized" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient has not received the relevant immunization." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.OrderCriteriaNotMet" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Order Criteria Not Met" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The criteria required for a standing order were not met." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.Refused" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Refused" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient refused the assessment or intervention." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.SymptomNotPresent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Symptom Not Present" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The symptom was specifically assessed and denied by the patient." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.UnableToComplete" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unable To Complete" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The assessment or intervention could not be completed." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PN.Unresponsive" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unresponsive" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The patient was unresponsive and unable to provide information." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-pertinent-negative.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-history-med-dosage-units"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-history-med-dosage-units</b></p><a name="vs-ems-history-med-dosage-units"> </a><a name="hcvs-ems-history-med-dosage-units"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-history.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114001">3114001</a></td><td>Centimeters (cm)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114003">3114003</a></td><td>Grams (gms)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114005">3114005</a></td><td>Drops (gtts)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114007">3114007</a></td><td>Inches (in)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114009">3114009</a></td><td>International Units (IU)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114011">3114011</a></td><td>Keep Vein Open (kvo)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114013">3114013</a></td><td>Liters Per Minute (l/min [fluid])</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114015">3114015</a></td><td>Liters (l)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114017">3114017</a></td><td>Liters Per Minute (LPM [gas])</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114019">3114019</a></td><td>Micrograms (mcg)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114021">3114021</a></td><td>Micrograms per Kilogram per Minute (mcg/kg/min)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114023">3114023</a></td><td>Micrograms per Minute (mcg/min)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114025">3114025</a></td><td>Milliequivalents (mEq)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114027">3114027</a></td><td>Metered Dose (MDI)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114029">3114029</a></td><td>Milligrams (mg)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114031">3114031</a></td><td>Milligrams per Kilogram (mg/kg)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114033">3114033</a></td><td>Milligrams per Kilogram Per Minute (mg/kg/min)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114035">3114035</a></td><td>Milligrams per Minute (mg/min)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114037">3114037</a></td><td>Milliliters (ml)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114039">3114039</a></td><td>Milliliters per Hour (ml/hr)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114041">3114041</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114043">3114043</a></td><td>Puffs</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114045">3114045</a></td><td>Units per Hour (units/hr)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114047">3114047</a></td><td>Micrograms per Kilogram (mcg/kg)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114049">3114049</a></td><td>Units</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114051">3114051</a></td><td>Units per Kilogram per Hour (units/kg/hr)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3114053">3114053</a></td><td>Units per Kilogram (units/kg)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-history-med-dosage-units"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.133"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSHistoryMedDosageUnitsVS"/>
+  <title value="EMS Home Medication Dosage Units VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Units for the patient's current (home) medication dose (eHistory.14). Distinct from the eMedications.06 administered-dose units (3706xxx codes)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history"/>
+      <concept>
+        <code value="3114001"/>
+        <display value="Centimeters (cm)"/>
+      </concept>
+      <concept>
+        <code value="3114003"/>
+        <display value="Grams (gms)"/>
+      </concept>
+      <concept>
+        <code value="3114005"/>
+        <display value="Drops (gtts)"/>
+      </concept>
+      <concept>
+        <code value="3114007"/>
+        <display value="Inches (in)"/>
+      </concept>
+      <concept>
+        <code value="3114009"/>
+        <display value="International Units (IU)"/>
+      </concept>
+      <concept>
+        <code value="3114011"/>
+        <display value="Keep Vein Open (kvo)"/>
+      </concept>
+      <concept>
+        <code value="3114013"/>
+        <display value="Liters Per Minute (l/min [fluid])"/>
+      </concept>
+      <concept>
+        <code value="3114015"/>
+        <display value="Liters (l)"/>
+      </concept>
+      <concept>
+        <code value="3114017"/>
+        <display value="Liters Per Minute (LPM [gas])"/>
+      </concept>
+      <concept>
+        <code value="3114019"/>
+        <display value="Micrograms (mcg)"/>
+      </concept>
+      <concept>
+        <code value="3114021"/>
+        <display value="Micrograms per Kilogram per Minute (mcg/kg/min)"/>
+      </concept>
+      <concept>
+        <code value="3114023"/>
+        <display value="Micrograms per Minute (mcg/min)"/>
+      </concept>
+      <concept>
+        <code value="3114025"/>
+        <display value="Milliequivalents (mEq)"/>
+      </concept>
+      <concept>
+        <code value="3114027"/>
+        <display value="Metered Dose (MDI)"/>
+      </concept>
+      <concept>
+        <code value="3114029"/>
+        <display value="Milligrams (mg)"/>
+      </concept>
+      <concept>
+        <code value="3114031"/>
+        <display value="Milligrams per Kilogram (mg/kg)"/>
+      </concept>
+      <concept>
+        <code value="3114033"/>
+        <display value="Milligrams per Kilogram Per Minute (mg/kg/min)"/>
+      </concept>
+      <concept>
+        <code value="3114035"/>
+        <display value="Milligrams per Minute (mg/min)"/>
+      </concept>
+      <concept>
+        <code value="3114037"/>
+        <display value="Milliliters (ml)"/>
+      </concept>
+      <concept>
+        <code value="3114039"/>
+        <display value="Milliliters per Hour (ml/hr)"/>
+      </concept>
+      <concept>
+        <code value="3114041"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="3114043"/>
+        <display value="Puffs"/>
+      </concept>
+      <concept>
+        <code value="3114045"/>
+        <display value="Units per Hour (units/hr)"/>
+      </concept>
+      <concept>
+        <code value="3114047"/>
+        <display value="Micrograms per Kilogram (mcg/kg)"/>
+      </concept>
+      <concept>
+        <code value="3114049"/>
+        <display value="Units"/>
+      </concept>
+      <concept>
+        <code value="3114051"/>
+        <display value="Units per Kilogram per Hour (units/kg/hr)"/>
+      </concept>
+      <concept>
+        <code value="3114053"/>
+        <display value="Units per Kilogram (units/kg)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

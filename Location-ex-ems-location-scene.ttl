@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-scene> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-location-scene"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-location-scene>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location ex-ems-location-scene</b></p><a name=\"ex-ems-location-scene\"> </a><a name=\"hcex-ems-location-scene\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-location-scene.html\">EMS Scene Location</a></p></div><blockquote><p><b>EMS Scene GPS Location</b></p><ul><li>latitude: 33.5731</li><li>longitude: -117.2147</li></ul></blockquote><blockquote><p><b>EMS Scene Details</b></p><ul><li>firstUnitOnScene: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}\">Yes</span></li><li>numberOfPatients: 1</li><li>massCasualtyIncident: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}\">No</span></li></ul></blockquote><p><b>status</b>: Active</p><p><b>name</b>: Interstate 15 NB mm 58.4</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm Y92.411}\">Interstate highway as the place of occurrence of the external cause</span></p><p><b>address</b>: I-15 NB Mile Marker 58.4 Murrieta CA 92563 US (work)</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "latitude" ] ;
+       fhir:Extension.valueDecimal [ fhir:value "33.5731"^^xsd:decimal ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "longitude" ] ;
+       fhir:Extension.valueDecimal [ fhir:value "-117.2147"^^xsd:decimal ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-gps" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "firstUnitOnScene" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0136" ] ;
+           fhir:Coding.code [ fhir:value "Y" ] ;
+           fhir:Coding.display [ fhir:value "Yes" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "numberOfPatients" ] ;
+       fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "massCasualtyIncident" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0136" ] ;
+           fhir:Coding.code [ fhir:value "N" ] ;
+           fhir:Coding.display [ fhir:value "No" ]
+         ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-scene-details" ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Interstate 15 NB mm 58.4"] ;
+  fhir:Location.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+       fhir:Coding.code [ fhir:value "Y92.411" ] ;
+       fhir:Coding.display [ fhir:value "Interstate highway as the place of occurrence of the external cause" ]
+     ]
+  ] ;
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.line [
+       fhir:value "I-15 NB Mile Marker 58.4" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Murrieta" ] ;
+     fhir:Address.state [ fhir:value "CA" ] ;
+     fhir:Address.postalCode [ fhir:value "92563" ] ;
+     fhir:Address.country [ fhir:value "US" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Location/ex-ems-location-scene.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

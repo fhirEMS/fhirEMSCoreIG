@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Coverage/ex-ems-coverage> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-coverage"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-coverage" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-coverage>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Coverage ex-ems-coverage</b></p><a name=\"ex-ems-coverage\"> </a><a name=\"hcex-ems-coverage\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-coverage.html\">EMS Coverage (Insurance)</a></p></div><p><b>EMS Payer Type</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type MB}\">Medicare Part B</span></p><p><b>status</b>: Active</p><p><b>subscriber</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>subscriberId</b>: 1EG4-TE5-MK72</p><p><b>beneficiary</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>relationship</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2622001}\">Self</span></p><p><b>payor</b>: Centers for Medicare &amp; Medicaid Services (Identifier: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234000002)</p><p><b>order</b>: 1</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-payer-type" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type" ] ;
+         fhir:Coding.code [ fhir:value "MB" ] ;
+         fhir:Coding.display [ fhir:value "Medicare Part B" ]
+       ]
+     ]
+  ] ;
+  fhir:Coverage.status [ fhir:value "active"] ;
+  fhir:Coverage.subscriber [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Coverage.subscriberId [ fhir:value "1EG4-TE5-MK72"] ;
+  fhir:Coverage.beneficiary [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+       fhir:Coding.code [ fhir:value "2622001" ] ;
+       fhir:Coding.display [ fhir:value "Self" ]
+     ]
+  ] ;
+  fhir:Coverage.payor [
+     fhir:index 0 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ] ;
+       fhir:Identifier.value [ fhir:value "1234000002" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Centers for Medicare & Medicaid Services" ]
+  ] ;
+  fhir:Coverage.order [ fhir:value "1"^^xsd:positiveInteger] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Coverage/ex-ems-coverage.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

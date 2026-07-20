@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-condition-arrest"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-condition-arrest"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition ex-ems-condition-arrest</b></p><a name="ex-ems-condition-arrest"> </a><a name="hcex-ems-condition-arrest"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-condition-arrest.html">EMS Cardiac Arrest Condition</a></p></div><blockquote><p><b>EMS Cardiac Arrest Context</b></p><ul><li>cardiacArrest: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3001003}">Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)</span></li><li>etiology: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3002001}">Cardiac (Presumed)</span></li><li>resuscitationBy: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3003005}">Initiated Chest Compressions</span></li><li>resuscitationBy: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3003001}">Attempted Defibrillation</span></li><li>witnessedBy: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3004001}">Not Witnessed</span></li><li>aedUsePrior: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3007001}">No</span></li><li>cprType: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3009001}">Compressions-Manual</span></li><li>cprType: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3009013}">Ventilation-Bag Valve Mask</span></li><li>therapeuticHypothermia: false</li><li>firstRhythm: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3011011}">Ventricular Fibrillation</span></li><li>rosc: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3012005}">Yes, Prior to Arrival at the ED</span></li><li>cprDiscontinuedReason: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3016011}">Return of Spontaneous Circulation (pulse or BP noted)</span></li><li>rhythmAtDestination: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 9901049}">Sinus Tachycardia</span></li><li>endOfArrestEvent: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3018007}">ROSC in the Field</span></li><li>whoFirstCPR: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3020001}">Bystander</span></li><li>whoFirstAED: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3021007}">First Responder (EMS)</span></li><li>whoFirstDefibrillated: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest 3022007}">First Responder (EMS)</span></li></ul></blockquote><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 410429000}">Cardiac arrest</span></p><p><b>subject</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href="Encounter-ex-ems-encounter.html">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>onset</b>: 2026-03-14 14:12:00-0800</p><p><b>recorder</b>: <a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></p></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-arrest-context">
+    <extension url="cardiacArrest">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3001003"/>
+          <display value="Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="etiology">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3002001"/>
+          <display value="Cardiac (Presumed)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="resuscitationBy">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3003005"/>
+          <display value="Initiated Chest Compressions"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="resuscitationBy">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3003001"/>
+          <display value="Attempted Defibrillation"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="witnessedBy">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3004001"/>
+          <display value="Not Witnessed"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="aedUsePrior">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3007001"/>
+          <display value="No"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="cprType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3009001"/>
+          <display value="Compressions-Manual"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="cprType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3009013"/>
+          <display value="Ventilation-Bag Valve Mask"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="therapeuticHypothermia">
+      <valueBoolean value="false"/>
+    </extension>
+    <extension url="firstRhythm">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3011011"/>
+          <display value="Ventricular Fibrillation"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="rosc">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3012005"/>
+          <display value="Yes, Prior to Arrival at the ED"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="cprDiscontinuedReason">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3016011"/>
+          <display value="Return of Spontaneous Circulation (pulse or BP noted)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="rhythmAtDestination">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+          <code value="9901049"/>
+          <display value="Sinus Tachycardia"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="endOfArrestEvent">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3018007"/>
+          <display value="ROSC in the Field"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="whoFirstCPR">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3020001"/>
+          <display value="Bystander"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="whoFirstAED">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3021007"/>
+          <display value="First Responder (EMS)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="whoFirstDefibrillated">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+          <code value="3022007"/>
+          <display value="First Responder (EMS)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="410429000"/>
+      <display value="Cardiac arrest"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-ems-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ex-ems-encounter"/>
+  </encounter>
+  <onsetDateTime value="2026-03-14T14:12:00-08:00"/>
+  <recorder>
+    <reference value="Practitioner/ex-ems-practitioner"/>
+  </recorder>
+</Condition>

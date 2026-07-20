@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-crew-ppe"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-crew-ppe</b></p><a name="vs-ems-crew-ppe"> </a><a name="hcvs-ems-crew-ppe"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-other.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503001">4503001</a></td><td>Eye Protection</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503003">4503003</a></td><td>Gloves</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503005">4503005</a></td><td>Helmet</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503007">4503007</a></td><td>Level A Suit</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503009">4503009</a></td><td>Level B Suit</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503011">4503011</a></td><td>Level C Suit</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503013">4503013</a></td><td>Level D Suit (Turn out gear)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503015">4503015</a></td><td>Mask-N95</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503017">4503017</a></td><td>Mask-Surgical (Non-Fitted)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503019">4503019</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503021">4503021</a></td><td>PAPR</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503023">4503023</a></td><td>Reflective Vest</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-ppe"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.138"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSCrewPPEVS"/>
+  <title value="EMS CrewPPE VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Personal protective equipment used by the EMS crew member (eOther.03)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+      <concept>
+        <code value="4503001"/>
+        <display value="Eye Protection"/>
+      </concept>
+      <concept>
+        <code value="4503003"/>
+        <display value="Gloves"/>
+      </concept>
+      <concept>
+        <code value="4503005"/>
+        <display value="Helmet"/>
+      </concept>
+      <concept>
+        <code value="4503007"/>
+        <display value="Level A Suit"/>
+      </concept>
+      <concept>
+        <code value="4503009"/>
+        <display value="Level B Suit"/>
+      </concept>
+      <concept>
+        <code value="4503011"/>
+        <display value="Level C Suit"/>
+      </concept>
+      <concept>
+        <code value="4503013"/>
+        <display value="Level D Suit (Turn out gear)"/>
+      </concept>
+      <concept>
+        <code value="4503015"/>
+        <display value="Mask-N95"/>
+      </concept>
+      <concept>
+        <code value="4503017"/>
+        <display value="Mask-Surgical (Non-Fitted)"/>
+      </concept>
+      <concept>
+        <code value="4503019"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="4503021"/>
+        <display value="PAPR"/>
+      </concept>
+      <concept>
+        <code value="4503023"/>
+        <display value="Reflective Vest"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

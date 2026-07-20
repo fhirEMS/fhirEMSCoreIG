@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-other"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-other</b></p><a name="cs-nemsis-other"> </a><a name="hccs-nemsis-other"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">4502001<a name="cs-nemsis-other-4502001"> </a></td><td>Airway</td></tr><tr><td style="white-space:nowrap">4502003<a name="cs-nemsis-other-4502003"> </a></td><td>Burn</td></tr><tr><td style="white-space:nowrap">4502005<a name="cs-nemsis-other-4502005"> </a></td><td>Cardiac/MI</td></tr><tr><td style="white-space:nowrap">4502007<a name="cs-nemsis-other-4502007"> </a></td><td>CVA/Stroke</td></tr><tr><td style="white-space:nowrap">4502009<a name="cs-nemsis-other-4502009"> </a></td><td>Drowning</td></tr><tr><td style="white-space:nowrap">4502011<a name="cs-nemsis-other-4502011"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4502013<a name="cs-nemsis-other-4502013"> </a></td><td>Spinal Cord Injury</td></tr><tr><td style="white-space:nowrap">4502015<a name="cs-nemsis-other-4502015"> </a></td><td>STEMI/Acute Cardiac</td></tr><tr><td style="white-space:nowrap">4502017<a name="cs-nemsis-other-4502017"> </a></td><td>Trauma</td></tr><tr><td style="white-space:nowrap">4502019<a name="cs-nemsis-other-4502019"> </a></td><td>Traumatic Brain Injury</td></tr><tr><td style="white-space:nowrap">4503001<a name="cs-nemsis-other-4503001"> </a></td><td>Eye Protection</td></tr><tr><td style="white-space:nowrap">4503003<a name="cs-nemsis-other-4503003"> </a></td><td>Gloves</td></tr><tr><td style="white-space:nowrap">4503005<a name="cs-nemsis-other-4503005"> </a></td><td>Helmet</td></tr><tr><td style="white-space:nowrap">4503007<a name="cs-nemsis-other-4503007"> </a></td><td>Level A Suit</td></tr><tr><td style="white-space:nowrap">4503009<a name="cs-nemsis-other-4503009"> </a></td><td>Level B Suit</td></tr><tr><td style="white-space:nowrap">4503011<a name="cs-nemsis-other-4503011"> </a></td><td>Level C Suit</td></tr><tr><td style="white-space:nowrap">4503013<a name="cs-nemsis-other-4503013"> </a></td><td>Level D Suit (Turn out gear)</td></tr><tr><td style="white-space:nowrap">4503015<a name="cs-nemsis-other-4503015"> </a></td><td>Mask-N95</td></tr><tr><td style="white-space:nowrap">4503017<a name="cs-nemsis-other-4503017"> </a></td><td>Mask-Surgical (Non-Fitted)</td></tr><tr><td style="white-space:nowrap">4503019<a name="cs-nemsis-other-4503019"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4503021<a name="cs-nemsis-other-4503021"> </a></td><td>PAPR</td></tr><tr><td style="white-space:nowrap">4503023<a name="cs-nemsis-other-4503023"> </a></td><td>Reflective Vest</td></tr><tr><td style="white-space:nowrap">4506001<a name="cs-nemsis-other-4506001"> </a></td><td>Death-Cardiac Arrest</td></tr><tr><td style="white-space:nowrap">4506003<a name="cs-nemsis-other-4506003"> </a></td><td>Death-Injury Related</td></tr><tr><td style="white-space:nowrap">4506005<a name="cs-nemsis-other-4506005"> </a></td><td>Death-Other</td></tr><tr><td style="white-space:nowrap">4506007<a name="cs-nemsis-other-4506007"> </a></td><td>Exposure-Airborne Respiratory/Biological/Aerosolized Secretions</td></tr><tr><td style="white-space:nowrap">4506009<a name="cs-nemsis-other-4506009"> </a></td><td>Exposure-Body Fluid Contact to Broken Skin</td></tr><tr><td style="white-space:nowrap">4506011<a name="cs-nemsis-other-4506011"> </a></td><td>Exposure-Body Fluid Contact with Eye</td></tr><tr><td style="white-space:nowrap">4506013<a name="cs-nemsis-other-4506013"> </a></td><td>Exposure-Body Fluid Contact with Intact Skin</td></tr><tr><td style="white-space:nowrap">4506015<a name="cs-nemsis-other-4506015"> </a></td><td>Exposure-Body Fluid Contact with Mucosal Surface</td></tr><tr><td style="white-space:nowrap">4506017<a name="cs-nemsis-other-4506017"> </a></td><td>Exposure-Needle Stick with Body Fluid Injection</td></tr><tr><td style="white-space:nowrap">4506019<a name="cs-nemsis-other-4506019"> </a></td><td>Exposure-Needle Stick without Body Fluid Injection</td></tr><tr><td style="white-space:nowrap">4506021<a name="cs-nemsis-other-4506021"> </a></td><td>Exposure-Toxin/Chemical/Hazmat</td></tr><tr><td style="white-space:nowrap">4506023<a name="cs-nemsis-other-4506023"> </a></td><td>Injury-Lifting/Back/Musculoskeletal</td></tr><tr><td style="white-space:nowrap">4506025<a name="cs-nemsis-other-4506025"> </a></td><td>Injury-Other</td></tr><tr><td style="white-space:nowrap">4506027<a name="cs-nemsis-other-4506027"> </a></td><td>None</td></tr><tr><td style="white-space:nowrap">4506029<a name="cs-nemsis-other-4506029"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4506031<a name="cs-nemsis-other-4506031"> </a></td><td>Violence-Offensive, Intimidating, or Hateful Language</td></tr><tr><td style="white-space:nowrap">4506033<a name="cs-nemsis-other-4506033"> </a></td><td>Violence-Physical Threat, or Threatening Behavior</td></tr><tr><td style="white-space:nowrap">4506035<a name="cs-nemsis-other-4506035"> </a></td><td>Violence-Physical Attack or Attempt to Attack</td></tr><tr><td style="white-space:nowrap">4506037<a name="cs-nemsis-other-4506037"> </a></td><td>Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures</td></tr><tr><td style="white-space:nowrap">4506039<a name="cs-nemsis-other-4506039"> </a></td><td>Violence-Unwanted Touching of a Sexual Nature</td></tr><tr><td style="white-space:nowrap">4506041<a name="cs-nemsis-other-4506041"> </a></td><td>Struck by Vehicle Along Roadway</td></tr><tr><td style="white-space:nowrap">4507001<a name="cs-nemsis-other-4507001"> </a></td><td>Biologic Agent</td></tr><tr><td style="white-space:nowrap">4507003<a name="cs-nemsis-other-4507003"> </a></td><td>Building Failure</td></tr><tr><td style="white-space:nowrap">4507005<a name="cs-nemsis-other-4507005"> </a></td><td>Chemical Agent</td></tr><tr><td style="white-space:nowrap">4507007<a name="cs-nemsis-other-4507007"> </a></td><td>Explosive Device</td></tr><tr><td style="white-space:nowrap">4507009<a name="cs-nemsis-other-4507009"> </a></td><td>Fire</td></tr><tr><td style="white-space:nowrap">4507011<a name="cs-nemsis-other-4507011"> </a></td><td>Hostage Event</td></tr><tr><td style="white-space:nowrap">4507013<a name="cs-nemsis-other-4507013"> </a></td><td>Mass Gathering</td></tr><tr><td style="white-space:nowrap">4507015<a name="cs-nemsis-other-4507015"> </a></td><td>Mass Illness</td></tr><tr><td style="white-space:nowrap">4507017<a name="cs-nemsis-other-4507017"> </a></td><td>Nuclear Agent</td></tr><tr><td style="white-space:nowrap">4507019<a name="cs-nemsis-other-4507019"> </a></td><td>Radioactive Device</td></tr><tr><td style="white-space:nowrap">4507021<a name="cs-nemsis-other-4507021"> </a></td><td>Secondary Destructive Device</td></tr><tr><td style="white-space:nowrap">4507023<a name="cs-nemsis-other-4507023"> </a></td><td>Shooting/Sniper</td></tr><tr><td style="white-space:nowrap">4507025<a name="cs-nemsis-other-4507025"> </a></td><td>Vehicular</td></tr><tr><td style="white-space:nowrap">4507027<a name="cs-nemsis-other-4507027"> </a></td><td>Weather (Other)</td></tr><tr><td style="white-space:nowrap">4507029<a name="cs-nemsis-other-4507029"> </a></td><td>Earthquake</td></tr><tr><td style="white-space:nowrap">4507031<a name="cs-nemsis-other-4507031"> </a></td><td>Flood</td></tr><tr><td style="white-space:nowrap">4507033<a name="cs-nemsis-other-4507033"> </a></td><td>Land Slide</td></tr><tr><td style="white-space:nowrap">4507035<a name="cs-nemsis-other-4507035"> </a></td><td>Winter Storm</td></tr><tr><td style="white-space:nowrap">4507037<a name="cs-nemsis-other-4507037"> </a></td><td>Tornado</td></tr><tr><td style="white-space:nowrap">4507039<a name="cs-nemsis-other-4507039"> </a></td><td>Hurricane</td></tr><tr><td style="white-space:nowrap">4509001<a name="cs-nemsis-other-4509001"> </a></td><td>Other Audio Recording</td></tr><tr><td style="white-space:nowrap">4509003<a name="cs-nemsis-other-4509003"> </a></td><td>Billing Information</td></tr><tr><td style="white-space:nowrap">4509005<a name="cs-nemsis-other-4509005"> </a></td><td>Diagnostic Image (CT, X-ray, US, etc.)</td></tr><tr><td style="white-space:nowrap">4509006<a name="cs-nemsis-other-4509006"> </a></td><td>DNR</td></tr><tr><td style="white-space:nowrap">4509008<a name="cs-nemsis-other-4509008"> </a></td><td>Living Will</td></tr><tr><td style="white-space:nowrap">4509009<a name="cs-nemsis-other-4509009"> </a></td><td>ECG/Lab Results</td></tr><tr><td style="white-space:nowrap">4509011<a name="cs-nemsis-other-4509011"> </a></td><td>Guardianship/Power of Attorney</td></tr><tr><td style="white-space:nowrap">4509013<a name="cs-nemsis-other-4509013"> </a></td><td>Other Healthcare Record</td></tr><tr><td style="white-space:nowrap">4509015<a name="cs-nemsis-other-4509015"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4509017<a name="cs-nemsis-other-4509017"> </a></td><td>Patient Identification</td></tr><tr><td style="white-space:nowrap">4509019<a name="cs-nemsis-other-4509019"> </a></td><td>Patient Refusal Sheet</td></tr><tr><td style="white-space:nowrap">4509021<a name="cs-nemsis-other-4509021"> </a></td><td>Other Picture/Graphic</td></tr><tr><td style="white-space:nowrap">4509025<a name="cs-nemsis-other-4509025"> </a></td><td>Other Video/Movie</td></tr><tr><td style="white-space:nowrap">4509027<a name="cs-nemsis-other-4509027"> </a></td><td>ePCR</td></tr><tr><td style="white-space:nowrap">4512001<a name="cs-nemsis-other-4512001"> </a></td><td>EMS Crew Member (Other)</td></tr><tr><td style="white-space:nowrap">4512003<a name="cs-nemsis-other-4512003"> </a></td><td>EMS Primary Care Provider (for this event)</td></tr><tr><td style="white-space:nowrap">4512005<a name="cs-nemsis-other-4512005"> </a></td><td>Healthcare Provider</td></tr><tr><td style="white-space:nowrap">4512007<a name="cs-nemsis-other-4512007"> </a></td><td>Medical Director</td></tr><tr><td style="white-space:nowrap">4512009<a name="cs-nemsis-other-4512009"> </a></td><td>Non-Healthcare Provider</td></tr><tr><td style="white-space:nowrap">4512011<a name="cs-nemsis-other-4512011"> </a></td><td>Online Medical Control Healthcare Practitioner</td></tr><tr><td style="white-space:nowrap">4512013<a name="cs-nemsis-other-4512013"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4512015<a name="cs-nemsis-other-4512015"> </a></td><td>Patient</td></tr><tr><td style="white-space:nowrap">4512017<a name="cs-nemsis-other-4512017"> </a></td><td>Patient Representative</td></tr><tr><td style="white-space:nowrap">4512019<a name="cs-nemsis-other-4512019"> </a></td><td>Witness</td></tr><tr><td style="white-space:nowrap">4513001<a name="cs-nemsis-other-4513001"> </a></td><td>HIPAA acknowledgement/Release</td></tr><tr><td style="white-space:nowrap">4513003<a name="cs-nemsis-other-4513003"> </a></td><td>Permission to Treat</td></tr><tr><td style="white-space:nowrap">4513005<a name="cs-nemsis-other-4513005"> </a></td><td>Release for Billing</td></tr><tr><td style="white-space:nowrap">4513007<a name="cs-nemsis-other-4513007"> </a></td><td>Transfer of Patient Care</td></tr><tr><td style="white-space:nowrap">4513009<a name="cs-nemsis-other-4513009"> </a></td><td>Refusal of Care</td></tr><tr><td style="white-space:nowrap">4513011<a name="cs-nemsis-other-4513011"> </a></td><td>Controlled Substance, Administration</td></tr><tr><td style="white-space:nowrap">4513013<a name="cs-nemsis-other-4513013"> </a></td><td>Controlled Substance, Waste</td></tr><tr><td style="white-space:nowrap">4513015<a name="cs-nemsis-other-4513015"> </a></td><td>Airway Verification</td></tr><tr><td style="white-space:nowrap">4513017<a name="cs-nemsis-other-4513017"> </a></td><td>Patient Belongings (Receipt)</td></tr><tr><td style="white-space:nowrap">4513019<a name="cs-nemsis-other-4513019"> </a></td><td>Permission to Transport</td></tr><tr><td style="white-space:nowrap">4513021<a name="cs-nemsis-other-4513021"> </a></td><td>Refusal of Transport</td></tr><tr><td style="white-space:nowrap">4513023<a name="cs-nemsis-other-4513023"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4514001<a name="cs-nemsis-other-4514001"> </a></td><td>Aunt</td></tr><tr><td style="white-space:nowrap">4514003<a name="cs-nemsis-other-4514003"> </a></td><td>Brother</td></tr><tr><td style="white-space:nowrap">4514005<a name="cs-nemsis-other-4514005"> </a></td><td>Daughter</td></tr><tr><td style="white-space:nowrap">4514007<a name="cs-nemsis-other-4514007"> </a></td><td>Discharge Planner</td></tr><tr><td style="white-space:nowrap">4514009<a name="cs-nemsis-other-4514009"> </a></td><td>Domestic Partner</td></tr><tr><td style="white-space:nowrap">4514011<a name="cs-nemsis-other-4514011"> </a></td><td>Father</td></tr><tr><td style="white-space:nowrap">4514013<a name="cs-nemsis-other-4514013"> </a></td><td>Friend</td></tr><tr><td style="white-space:nowrap">4514015<a name="cs-nemsis-other-4514015"> </a></td><td>Grandfather</td></tr><tr><td style="white-space:nowrap">4514017<a name="cs-nemsis-other-4514017"> </a></td><td>Grandmother</td></tr><tr><td style="white-space:nowrap">4514019<a name="cs-nemsis-other-4514019"> </a></td><td>Guardian</td></tr><tr><td style="white-space:nowrap">4514021<a name="cs-nemsis-other-4514021"> </a></td><td>Husband</td></tr><tr><td style="white-space:nowrap">4514023<a name="cs-nemsis-other-4514023"> </a></td><td>Law Enforcement</td></tr><tr><td style="white-space:nowrap">4514025<a name="cs-nemsis-other-4514025"> </a></td><td>MD/DO</td></tr><tr><td style="white-space:nowrap">4514027<a name="cs-nemsis-other-4514027"> </a></td><td>Mother</td></tr><tr><td style="white-space:nowrap">4514029<a name="cs-nemsis-other-4514029"> </a></td><td>Nurse (RN)</td></tr><tr><td style="white-space:nowrap">4514031<a name="cs-nemsis-other-4514031"> </a></td><td>Nurse Practitioner (NP)</td></tr><tr><td style="white-space:nowrap">4514033<a name="cs-nemsis-other-4514033"> </a></td><td>Other Care Provider (Home health, hospice, etc.)</td></tr><tr><td style="white-space:nowrap">4514035<a name="cs-nemsis-other-4514035"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">4514037<a name="cs-nemsis-other-4514037"> </a></td><td>Physician's Assistant (PA)</td></tr><tr><td style="white-space:nowrap">4514039<a name="cs-nemsis-other-4514039"> </a></td><td>Power of Attorney</td></tr><tr><td style="white-space:nowrap">4514041<a name="cs-nemsis-other-4514041"> </a></td><td>Other Relative</td></tr><tr><td style="white-space:nowrap">4514043<a name="cs-nemsis-other-4514043"> </a></td><td>Self</td></tr><tr><td style="white-space:nowrap">4514045<a name="cs-nemsis-other-4514045"> </a></td><td>Sister</td></tr><tr><td style="white-space:nowrap">4514047<a name="cs-nemsis-other-4514047"> </a></td><td>Son</td></tr><tr><td style="white-space:nowrap">4514049<a name="cs-nemsis-other-4514049"> </a></td><td>Uncle</td></tr><tr><td style="white-space:nowrap">4514051<a name="cs-nemsis-other-4514051"> </a></td><td>Wife</td></tr><tr><td style="white-space:nowrap">4515001<a name="cs-nemsis-other-4515001"> </a></td><td>Not Signed - Crew Called out to another call</td></tr><tr><td style="white-space:nowrap">4515003<a name="cs-nemsis-other-4515003"> </a></td><td>Not Signed - Deceased</td></tr><tr><td style="white-space:nowrap">4515005<a name="cs-nemsis-other-4515005"> </a></td><td>Not Signed - Due to Distress Level</td></tr><tr><td style="white-space:nowrap">4515007<a name="cs-nemsis-other-4515007"> </a></td><td>Not Signed - Equipment Failure</td></tr><tr><td style="white-space:nowrap">4515009<a name="cs-nemsis-other-4515009"> </a></td><td>Not Signed - In Law Enforcement Custody</td></tr><tr><td style="white-space:nowrap">4515011<a name="cs-nemsis-other-4515011"> </a></td><td>Not Signed - Language Barrier</td></tr><tr><td style="white-space:nowrap">4515013<a name="cs-nemsis-other-4515013"> </a></td><td>Not Signed - Mental Status/Impaired</td></tr><tr><td style="white-space:nowrap">4515015<a name="cs-nemsis-other-4515015"> </a></td><td>Not Signed - Minor/Child</td></tr><tr><td style="white-space:nowrap">4515017<a name="cs-nemsis-other-4515017"> </a></td><td>Not Signed - Physical Impairment of Extremities</td></tr><tr><td style="white-space:nowrap">4515019<a name="cs-nemsis-other-4515019"> </a></td><td>Not Signed - Refused</td></tr><tr><td style="white-space:nowrap">4515021<a name="cs-nemsis-other-4515021"> </a></td><td>Not Signed - Transferred Care/No Access to Obtain Signature</td></tr><tr><td style="white-space:nowrap">4515023<a name="cs-nemsis-other-4515023"> </a></td><td>Not Signed - Unconscious</td></tr><tr><td style="white-space:nowrap">4515025<a name="cs-nemsis-other-4515025"> </a></td><td>Not Signed -Visually Impaired</td></tr><tr><td style="white-space:nowrap">4515027<a name="cs-nemsis-other-4515027"> </a></td><td>Physical Signature/Paper Copy Obtained</td></tr><tr><td style="white-space:nowrap">4515031<a name="cs-nemsis-other-4515031"> </a></td><td>Signed</td></tr><tr><td style="white-space:nowrap">4515033<a name="cs-nemsis-other-4515033"> </a></td><td>Signed-Not Patient</td></tr><tr><td style="white-space:nowrap">4515035<a name="cs-nemsis-other-4515035"> </a></td><td>Not Signed-Illiterate (Unable to Read)</td></tr><tr><td style="white-space:nowrap">4515037<a name="cs-nemsis-other-4515037"> </a></td><td>Not Signed-Restrained</td></tr><tr><td style="white-space:nowrap">4515039<a name="cs-nemsis-other-4515039"> </a></td><td>Not Signed-Combative or Uncooperative</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.19"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISOther"/>
+  <title value="NEMSIS eOther Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS 3.5.1 eOther section covering registry candidacy, crew personal protective equipment, work-related injury/exposure types, disaster types, external document types, and signature metadata (signer type, reason, patient representative, status)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="144"/>
+  <concept>
+    <code value="4502001"/>
+    <display value="Airway"/>
+  </concept>
+  <concept>
+    <code value="4502003"/>
+    <display value="Burn"/>
+  </concept>
+  <concept>
+    <code value="4502005"/>
+    <display value="Cardiac/MI"/>
+  </concept>
+  <concept>
+    <code value="4502007"/>
+    <display value="CVA/Stroke"/>
+  </concept>
+  <concept>
+    <code value="4502009"/>
+    <display value="Drowning"/>
+  </concept>
+  <concept>
+    <code value="4502011"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4502013"/>
+    <display value="Spinal Cord Injury"/>
+  </concept>
+  <concept>
+    <code value="4502015"/>
+    <display value="STEMI/Acute Cardiac"/>
+  </concept>
+  <concept>
+    <code value="4502017"/>
+    <display value="Trauma"/>
+  </concept>
+  <concept>
+    <code value="4502019"/>
+    <display value="Traumatic Brain Injury"/>
+  </concept>
+  <concept>
+    <code value="4503001"/>
+    <display value="Eye Protection"/>
+  </concept>
+  <concept>
+    <code value="4503003"/>
+    <display value="Gloves"/>
+  </concept>
+  <concept>
+    <code value="4503005"/>
+    <display value="Helmet"/>
+  </concept>
+  <concept>
+    <code value="4503007"/>
+    <display value="Level A Suit"/>
+  </concept>
+  <concept>
+    <code value="4503009"/>
+    <display value="Level B Suit"/>
+  </concept>
+  <concept>
+    <code value="4503011"/>
+    <display value="Level C Suit"/>
+  </concept>
+  <concept>
+    <code value="4503013"/>
+    <display value="Level D Suit (Turn out gear)"/>
+  </concept>
+  <concept>
+    <code value="4503015"/>
+    <display value="Mask-N95"/>
+  </concept>
+  <concept>
+    <code value="4503017"/>
+    <display value="Mask-Surgical (Non-Fitted)"/>
+  </concept>
+  <concept>
+    <code value="4503019"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4503021"/>
+    <display value="PAPR"/>
+  </concept>
+  <concept>
+    <code value="4503023"/>
+    <display value="Reflective Vest"/>
+  </concept>
+  <concept>
+    <code value="4506001"/>
+    <display value="Death-Cardiac Arrest"/>
+  </concept>
+  <concept>
+    <code value="4506003"/>
+    <display value="Death-Injury Related"/>
+  </concept>
+  <concept>
+    <code value="4506005"/>
+    <display value="Death-Other"/>
+  </concept>
+  <concept>
+    <code value="4506007"/>
+    <display value="Exposure-Airborne Respiratory/Biological/Aerosolized Secretions"/>
+  </concept>
+  <concept>
+    <code value="4506009"/>
+    <display value="Exposure-Body Fluid Contact to Broken Skin"/>
+  </concept>
+  <concept>
+    <code value="4506011"/>
+    <display value="Exposure-Body Fluid Contact with Eye"/>
+  </concept>
+  <concept>
+    <code value="4506013"/>
+    <display value="Exposure-Body Fluid Contact with Intact Skin"/>
+  </concept>
+  <concept>
+    <code value="4506015"/>
+    <display value="Exposure-Body Fluid Contact with Mucosal Surface"/>
+  </concept>
+  <concept>
+    <code value="4506017"/>
+    <display value="Exposure-Needle Stick with Body Fluid Injection"/>
+  </concept>
+  <concept>
+    <code value="4506019"/>
+    <display value="Exposure-Needle Stick without Body Fluid Injection"/>
+  </concept>
+  <concept>
+    <code value="4506021"/>
+    <display value="Exposure-Toxin/Chemical/Hazmat"/>
+  </concept>
+  <concept>
+    <code value="4506023"/>
+    <display value="Injury-Lifting/Back/Musculoskeletal"/>
+  </concept>
+  <concept>
+    <code value="4506025"/>
+    <display value="Injury-Other"/>
+  </concept>
+  <concept>
+    <code value="4506027"/>
+    <display value="None"/>
+  </concept>
+  <concept>
+    <code value="4506029"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4506031"/>
+    <display value="Violence-Offensive, Intimidating, or Hateful Language"/>
+  </concept>
+  <concept>
+    <code value="4506033"/>
+    <display value="Violence-Physical Threat, or Threatening Behavior"/>
+  </concept>
+  <concept>
+    <code value="4506035"/>
+    <display value="Violence-Physical Attack or Attempt to Attack"/>
+  </concept>
+  <concept>
+    <code value="4506037"/>
+    <display value="Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures"/>
+  </concept>
+  <concept>
+    <code value="4506039"/>
+    <display value="Violence-Unwanted Touching of a Sexual Nature"/>
+  </concept>
+  <concept>
+    <code value="4506041"/>
+    <display value="Struck by Vehicle Along Roadway"/>
+  </concept>
+  <concept>
+    <code value="4507001"/>
+    <display value="Biologic Agent"/>
+  </concept>
+  <concept>
+    <code value="4507003"/>
+    <display value="Building Failure"/>
+  </concept>
+  <concept>
+    <code value="4507005"/>
+    <display value="Chemical Agent"/>
+  </concept>
+  <concept>
+    <code value="4507007"/>
+    <display value="Explosive Device"/>
+  </concept>
+  <concept>
+    <code value="4507009"/>
+    <display value="Fire"/>
+  </concept>
+  <concept>
+    <code value="4507011"/>
+    <display value="Hostage Event"/>
+  </concept>
+  <concept>
+    <code value="4507013"/>
+    <display value="Mass Gathering"/>
+  </concept>
+  <concept>
+    <code value="4507015"/>
+    <display value="Mass Illness"/>
+  </concept>
+  <concept>
+    <code value="4507017"/>
+    <display value="Nuclear Agent"/>
+  </concept>
+  <concept>
+    <code value="4507019"/>
+    <display value="Radioactive Device"/>
+  </concept>
+  <concept>
+    <code value="4507021"/>
+    <display value="Secondary Destructive Device"/>
+  </concept>
+  <concept>
+    <code value="4507023"/>
+    <display value="Shooting/Sniper"/>
+  </concept>
+  <concept>
+    <code value="4507025"/>
+    <display value="Vehicular"/>
+  </concept>
+  <concept>
+    <code value="4507027"/>
+    <display value="Weather (Other)"/>
+  </concept>
+  <concept>
+    <code value="4507029"/>
+    <display value="Earthquake"/>
+  </concept>
+  <concept>
+    <code value="4507031"/>
+    <display value="Flood"/>
+  </concept>
+  <concept>
+    <code value="4507033"/>
+    <display value="Land Slide"/>
+  </concept>
+  <concept>
+    <code value="4507035"/>
+    <display value="Winter Storm"/>
+  </concept>
+  <concept>
+    <code value="4507037"/>
+    <display value="Tornado"/>
+  </concept>
+  <concept>
+    <code value="4507039"/>
+    <display value="Hurricane"/>
+  </concept>
+  <concept>
+    <code value="4509001"/>
+    <display value="Other Audio Recording"/>
+  </concept>
+  <concept>
+    <code value="4509003"/>
+    <display value="Billing Information"/>
+  </concept>
+  <concept>
+    <code value="4509005"/>
+    <display value="Diagnostic Image (CT, X-ray, US, etc.)"/>
+  </concept>
+  <concept>
+    <code value="4509006"/>
+    <display value="DNR"/>
+  </concept>
+  <concept>
+    <code value="4509008"/>
+    <display value="Living Will"/>
+  </concept>
+  <concept>
+    <code value="4509009"/>
+    <display value="ECG/Lab Results"/>
+  </concept>
+  <concept>
+    <code value="4509011"/>
+    <display value="Guardianship/Power of Attorney"/>
+  </concept>
+  <concept>
+    <code value="4509013"/>
+    <display value="Other Healthcare Record"/>
+  </concept>
+  <concept>
+    <code value="4509015"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4509017"/>
+    <display value="Patient Identification"/>
+  </concept>
+  <concept>
+    <code value="4509019"/>
+    <display value="Patient Refusal Sheet"/>
+  </concept>
+  <concept>
+    <code value="4509021"/>
+    <display value="Other Picture/Graphic"/>
+  </concept>
+  <concept>
+    <code value="4509025"/>
+    <display value="Other Video/Movie"/>
+  </concept>
+  <concept>
+    <code value="4509027"/>
+    <display value="ePCR"/>
+  </concept>
+  <concept>
+    <code value="4512001"/>
+    <display value="EMS Crew Member (Other)"/>
+  </concept>
+  <concept>
+    <code value="4512003"/>
+    <display value="EMS Primary Care Provider (for this event)"/>
+  </concept>
+  <concept>
+    <code value="4512005"/>
+    <display value="Healthcare Provider"/>
+  </concept>
+  <concept>
+    <code value="4512007"/>
+    <display value="Medical Director"/>
+  </concept>
+  <concept>
+    <code value="4512009"/>
+    <display value="Non-Healthcare Provider"/>
+  </concept>
+  <concept>
+    <code value="4512011"/>
+    <display value="Online Medical Control Healthcare Practitioner"/>
+  </concept>
+  <concept>
+    <code value="4512013"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4512015"/>
+    <display value="Patient"/>
+  </concept>
+  <concept>
+    <code value="4512017"/>
+    <display value="Patient Representative"/>
+  </concept>
+  <concept>
+    <code value="4512019"/>
+    <display value="Witness"/>
+  </concept>
+  <concept>
+    <code value="4513001"/>
+    <display value="HIPAA acknowledgement/Release"/>
+  </concept>
+  <concept>
+    <code value="4513003"/>
+    <display value="Permission to Treat"/>
+  </concept>
+  <concept>
+    <code value="4513005"/>
+    <display value="Release for Billing"/>
+  </concept>
+  <concept>
+    <code value="4513007"/>
+    <display value="Transfer of Patient Care"/>
+  </concept>
+  <concept>
+    <code value="4513009"/>
+    <display value="Refusal of Care"/>
+  </concept>
+  <concept>
+    <code value="4513011"/>
+    <display value="Controlled Substance, Administration"/>
+  </concept>
+  <concept>
+    <code value="4513013"/>
+    <display value="Controlled Substance, Waste"/>
+  </concept>
+  <concept>
+    <code value="4513015"/>
+    <display value="Airway Verification"/>
+  </concept>
+  <concept>
+    <code value="4513017"/>
+    <display value="Patient Belongings (Receipt)"/>
+  </concept>
+  <concept>
+    <code value="4513019"/>
+    <display value="Permission to Transport"/>
+  </concept>
+  <concept>
+    <code value="4513021"/>
+    <display value="Refusal of Transport"/>
+  </concept>
+  <concept>
+    <code value="4513023"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4514001"/>
+    <display value="Aunt"/>
+  </concept>
+  <concept>
+    <code value="4514003"/>
+    <display value="Brother"/>
+  </concept>
+  <concept>
+    <code value="4514005"/>
+    <display value="Daughter"/>
+  </concept>
+  <concept>
+    <code value="4514007"/>
+    <display value="Discharge Planner"/>
+  </concept>
+  <concept>
+    <code value="4514009"/>
+    <display value="Domestic Partner"/>
+  </concept>
+  <concept>
+    <code value="4514011"/>
+    <display value="Father"/>
+  </concept>
+  <concept>
+    <code value="4514013"/>
+    <display value="Friend"/>
+  </concept>
+  <concept>
+    <code value="4514015"/>
+    <display value="Grandfather"/>
+  </concept>
+  <concept>
+    <code value="4514017"/>
+    <display value="Grandmother"/>
+  </concept>
+  <concept>
+    <code value="4514019"/>
+    <display value="Guardian"/>
+  </concept>
+  <concept>
+    <code value="4514021"/>
+    <display value="Husband"/>
+  </concept>
+  <concept>
+    <code value="4514023"/>
+    <display value="Law Enforcement"/>
+  </concept>
+  <concept>
+    <code value="4514025"/>
+    <display value="MD/DO"/>
+  </concept>
+  <concept>
+    <code value="4514027"/>
+    <display value="Mother"/>
+  </concept>
+  <concept>
+    <code value="4514029"/>
+    <display value="Nurse (RN)"/>
+  </concept>
+  <concept>
+    <code value="4514031"/>
+    <display value="Nurse Practitioner (NP)"/>
+  </concept>
+  <concept>
+    <code value="4514033"/>
+    <display value="Other Care Provider (Home health, hospice, etc.)"/>
+  </concept>
+  <concept>
+    <code value="4514035"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="4514037"/>
+    <display value="Physician's Assistant (PA)"/>
+  </concept>
+  <concept>
+    <code value="4514039"/>
+    <display value="Power of Attorney"/>
+  </concept>
+  <concept>
+    <code value="4514041"/>
+    <display value="Other Relative"/>
+  </concept>
+  <concept>
+    <code value="4514043"/>
+    <display value="Self"/>
+  </concept>
+  <concept>
+    <code value="4514045"/>
+    <display value="Sister"/>
+  </concept>
+  <concept>
+    <code value="4514047"/>
+    <display value="Son"/>
+  </concept>
+  <concept>
+    <code value="4514049"/>
+    <display value="Uncle"/>
+  </concept>
+  <concept>
+    <code value="4514051"/>
+    <display value="Wife"/>
+  </concept>
+  <concept>
+    <code value="4515001"/>
+    <display value="Not Signed - Crew Called out to another call"/>
+  </concept>
+  <concept>
+    <code value="4515003"/>
+    <display value="Not Signed - Deceased"/>
+  </concept>
+  <concept>
+    <code value="4515005"/>
+    <display value="Not Signed - Due to Distress Level"/>
+  </concept>
+  <concept>
+    <code value="4515007"/>
+    <display value="Not Signed - Equipment Failure"/>
+  </concept>
+  <concept>
+    <code value="4515009"/>
+    <display value="Not Signed - In Law Enforcement Custody"/>
+  </concept>
+  <concept>
+    <code value="4515011"/>
+    <display value="Not Signed - Language Barrier"/>
+  </concept>
+  <concept>
+    <code value="4515013"/>
+    <display value="Not Signed - Mental Status/Impaired"/>
+  </concept>
+  <concept>
+    <code value="4515015"/>
+    <display value="Not Signed - Minor/Child"/>
+  </concept>
+  <concept>
+    <code value="4515017"/>
+    <display value="Not Signed - Physical Impairment of Extremities"/>
+  </concept>
+  <concept>
+    <code value="4515019"/>
+    <display value="Not Signed - Refused"/>
+  </concept>
+  <concept>
+    <code value="4515021"/>
+    <display value="Not Signed - Transferred Care/No Access to Obtain Signature"/>
+  </concept>
+  <concept>
+    <code value="4515023"/>
+    <display value="Not Signed - Unconscious"/>
+  </concept>
+  <concept>
+    <code value="4515025"/>
+    <display value="Not Signed -Visually Impaired"/>
+  </concept>
+  <concept>
+    <code value="4515027"/>
+    <display value="Physical Signature/Paper Copy Obtained"/>
+  </concept>
+  <concept>
+    <code value="4515031"/>
+    <display value="Signed"/>
+  </concept>
+  <concept>
+    <code value="4515033"/>
+    <display value="Signed-Not Patient"/>
+  </concept>
+  <concept>
+    <code value="4515035"/>
+    <display value="Not Signed-Illiterate (Unable to Read)"/>
+  </concept>
+  <concept>
+    <code value="4515037"/>
+    <display value="Not Signed-Restrained"/>
+  </concept>
+  <concept>
+    <code value="4515039"/>
+    <display value="Not Signed-Combative or Uncooperative"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,495 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-protocol-used",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-protocol-used</b></p><a name=\"vs-ems-protocol-used\"> </a><a name=\"hcvs-ems-protocol-used\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-procedures.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914001\">9914001</a></td><td>Airway</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914003\">9914003</a></td><td>Airway-Failed</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914005\">9914005</a></td><td>Airway-Obstruction/Foreign Body</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914007\">9914007</a></td><td>Airway-Rapid Sequence Induction (RSI-Paralytic)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914009\">9914009</a></td><td>Airway-Sedation Assisted (Non-Paralytic)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914011\">9914011</a></td><td>Cardiac Arrest-Asystole</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914013\">9914013</a></td><td>Cardiac Arrest-Hypothermia-Therapeutic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914015\">9914015</a></td><td>Cardiac Arrest-Pulseless Electrical Activity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914017\">9914017</a></td><td>Cardiac Arrest-Ventricular Fibrillation/Pulseless Ventricular Tachycardia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914019\">9914019</a></td><td>Cardiac Arrest-Post Resuscitation Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914021\">9914021</a></td><td>Environmental-Altitude Sickness</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914023\">9914023</a></td><td>Environmental-Cold Exposure</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914025\">9914025</a></td><td>Environmental-Frostbite/Cold Injury</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914027\">9914027</a></td><td>Environmental-Heat Exposure/Exhaustion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914029\">9914029</a></td><td>Environmental-Heat Stroke/Hyperthermia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914031\">9914031</a></td><td>Environmental-Hypothermia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914033\">9914033</a></td><td>Exposure-Airway/Inhalation Irritants</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914035\">9914035</a></td><td>Exposure-Biological/Infectious</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914037\">9914037</a></td><td>Exposure-Blistering Agents</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914041\">9914041</a></td><td>Exposure-Chemicals to Eye</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914043\">9914043</a></td><td>Exposure-Cyanide</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914045\">9914045</a></td><td>Exposure-Explosive/Blast Injury</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914047\">9914047</a></td><td>Exposure-Nerve Agents</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914049\">9914049</a></td><td>Exposure-Radiologic Agents</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914051\">9914051</a></td><td>General-Back Pain</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914053\">9914053</a></td><td>General-Behavioral/Patient Restraint</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914055\">9914055</a></td><td>General-Cardiac Arrest</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914057\">9914057</a></td><td>General-Dental Problems</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914059\">9914059</a></td><td>General-Epistaxis</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914061\">9914061</a></td><td>General-Fever</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914063\">9914063</a></td><td>General-Individualized Patient Protocol</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914065\">9914065</a></td><td>General-Indwelling Medical Devices/Equipment</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914067\">9914067</a></td><td>General-IV Access</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914069\">9914069</a></td><td>General-Medical Device Malfunction</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914071\">9914071</a></td><td>General-Pain Control</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914073\">9914073</a></td><td>General-Spinal Immobilization/Clearance</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914075\">9914075</a></td><td>General-Universal Patient Care/Initial Patient Contact</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914077\">9914077</a></td><td>Injury-Amputation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914079\">9914079</a></td><td>Injury-Bites and Envenomations-Land</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914081\">9914081</a></td><td>Injury-Bites and Envenomations-Marine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914083\">9914083</a></td><td>Injury-Bleeding/Hemorrhage Control</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914085\">9914085</a></td><td>Injury-Burns-Thermal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914087\">9914087</a></td><td>Injury-Cardiac Arrest</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914089\">9914089</a></td><td>Injury-Crush Syndrome</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914091\">9914091</a></td><td>Injury-Diving Emergencies</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914093\">9914093</a></td><td>Injury-Drowning/Near Drowning</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914095\">9914095</a></td><td>Injury-Electrical Injuries</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914097\">9914097</a></td><td>Injury-Extremity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914099\">9914099</a></td><td>Injury-Eye</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914101\">9914101</a></td><td>Injury-Head</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914103\">9914103</a></td><td>Injury-Impaled Object</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914105\">9914105</a></td><td>Injury-Multisystem</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914107\">9914107</a></td><td>Injury-Spinal Cord</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914109\">9914109</a></td><td>Medical-Abdominal Pain</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914111\">9914111</a></td><td>Medical-Allergic Reaction/Anaphylaxis</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914113\">9914113</a></td><td>Medical-Altered Mental Status</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914115\">9914115</a></td><td>Medical-Bradycardia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914117\">9914117</a></td><td>Medical-Cardiac Chest Pain</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914119\">9914119</a></td><td>Medical-Diarrhea</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914121\">9914121</a></td><td>Medical-Hyperglycemia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914123\">9914123</a></td><td>Medical-Hypertension</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914125\">9914125</a></td><td>Medical-Hypoglycemia/Diabetic Emergency</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914127\">9914127</a></td><td>Medical-Hypotension/Shock (Non-Trauma)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914129\">9914129</a></td><td>Medical-Influenza-Like Illness/Upper Respiratory Infection</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914131\">9914131</a></td><td>Medical-Nausea/Vomiting</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914133\">9914133</a></td><td>Medical-Newborn/Neonatal Resuscitation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914135\">9914135</a></td><td>General-Overdose/Poisoning/Toxic Ingestion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914137\">9914137</a></td><td>Medical-Pulmonary Edema/CHF</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914139\">9914139</a></td><td>Medical-Respiratory Distress/Asthma/COPD/Reactive Airway</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914141\">9914141</a></td><td>Medical-Seizure</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914143\">9914143</a></td><td>Medical-ST-Elevation Myocardial Infarction (STEMI)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914145\">9914145</a></td><td>Medical-Stroke/TIA</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914147\">9914147</a></td><td>Medical-Supraventricular Tachycardia (Including Atrial Fibrillation)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914149\">9914149</a></td><td>Medical-Syncope</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914151\">9914151</a></td><td>Medical-Ventricular Tachycardia (With Pulse)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914153\">9914153</a></td><td>Not Done</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914155\">9914155</a></td><td>OB/GYN-Childbirth/Labor/Delivery</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914157\">9914157</a></td><td>OB/GYN-Eclampsia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914159\">9914159</a></td><td>OB/GYN-Gynecologic Emergencies</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914161\">9914161</a></td><td>OB/GYN-Pregnancy Related Emergencies</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914163\">9914163</a></td><td>OB/GYN-Post-partum Hemorrhage</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914165\">9914165</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914167\">9914167</a></td><td>Exposure-Carbon Monoxide</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914169\">9914169</a></td><td>Cardiac Arrest-Do Not Resuscitate</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914171\">9914171</a></td><td>Cardiac Arrest-Special Resuscitation Orders</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914173\">9914173</a></td><td>Exposure-Smoke Inhalation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914175\">9914175</a></td><td>General-Community Paramedicine/Mobile Integrated Healthcare</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914177\">9914177</a></td><td>General-Exception Protocol</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914179\">9914179</a></td><td>General-Extended Care Guidelines</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914181\">9914181</a></td><td>General-Interfacility Transfers</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914183\">9914183</a></td><td>General-Law Enforcement - Blood for Legal Purposes</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914185\">9914185</a></td><td>General-Law Enforcement - Assist with Law Enforcement Activity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914187\">9914187</a></td><td>General-Neglect or Abuse Suspected</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914189\">9914189</a></td><td>General-Refusal of Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914191\">9914191</a></td><td>Injury-Mass/Multiple Casualties</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914193\">9914193</a></td><td>Injury-Thoracic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914195\">9914195</a></td><td>Medical-Adrenal Insufficiency</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914197\">9914197</a></td><td>Medical-Apparent Life Threatening Event (ALTE)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914199\">9914199</a></td><td>Medical-Tachycardia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914201\">9914201</a></td><td>Cardiac Arrest-Determination of Death/Withholding Resuscitative Efforts</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914203\">9914203</a></td><td>Injury-Conducted Electrical Weapon (e.g., Taser)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914205\">9914205</a></td><td>Injury-Facial Trauma</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914207\">9914207</a></td><td>Injury-General Trauma Management</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914209\">9914209</a></td><td>Injury-Lightning/Lightning Strike</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914211\">9914211</a></td><td>Injury-SCUBA Injury/Accidents</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914213\">9914213</a></td><td>Injury-Topical Chemical Burn</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914215\">9914215</a></td><td>Medical-Beta Blocker Poisoning/Overdose</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914217\">9914217</a></td><td>Medical-Calcium Channel Blocker Poisoning/Overdose</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914219\">9914219</a></td><td>Medical-Opioid Poisoning/Overdose</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914221\">9914221</a></td><td>Medical-Respiratory Distress-Bronchiolitis</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914223\">9914223</a></td><td>Medical-Respiratory Distress-Croup</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-procedures.html#cs-nemsis-procedures-9914225\">9914225</a></td><td>Medical-Stimulant Poisoning/Overdose</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-protocol-used",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.100"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSProtocolUsedVS",
+  "title" : "EMS Protocols Used",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS eProtocols.01 - EMS protocol(s) followed during the response.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures",
+      "concept" : [{
+        "code" : "9914001",
+        "display" : "Airway"
+      },
+      {
+        "code" : "9914003",
+        "display" : "Airway-Failed"
+      },
+      {
+        "code" : "9914005",
+        "display" : "Airway-Obstruction/Foreign Body"
+      },
+      {
+        "code" : "9914007",
+        "display" : "Airway-Rapid Sequence Induction (RSI-Paralytic)"
+      },
+      {
+        "code" : "9914009",
+        "display" : "Airway-Sedation Assisted (Non-Paralytic)"
+      },
+      {
+        "code" : "9914011",
+        "display" : "Cardiac Arrest-Asystole"
+      },
+      {
+        "code" : "9914013",
+        "display" : "Cardiac Arrest-Hypothermia-Therapeutic"
+      },
+      {
+        "code" : "9914015",
+        "display" : "Cardiac Arrest-Pulseless Electrical Activity"
+      },
+      {
+        "code" : "9914017",
+        "display" : "Cardiac Arrest-Ventricular Fibrillation/Pulseless Ventricular Tachycardia"
+      },
+      {
+        "code" : "9914019",
+        "display" : "Cardiac Arrest-Post Resuscitation Care"
+      },
+      {
+        "code" : "9914021",
+        "display" : "Environmental-Altitude Sickness"
+      },
+      {
+        "code" : "9914023",
+        "display" : "Environmental-Cold Exposure"
+      },
+      {
+        "code" : "9914025",
+        "display" : "Environmental-Frostbite/Cold Injury"
+      },
+      {
+        "code" : "9914027",
+        "display" : "Environmental-Heat Exposure/Exhaustion"
+      },
+      {
+        "code" : "9914029",
+        "display" : "Environmental-Heat Stroke/Hyperthermia"
+      },
+      {
+        "code" : "9914031",
+        "display" : "Environmental-Hypothermia"
+      },
+      {
+        "code" : "9914033",
+        "display" : "Exposure-Airway/Inhalation Irritants"
+      },
+      {
+        "code" : "9914035",
+        "display" : "Exposure-Biological/Infectious"
+      },
+      {
+        "code" : "9914037",
+        "display" : "Exposure-Blistering Agents"
+      },
+      {
+        "code" : "9914041",
+        "display" : "Exposure-Chemicals to Eye"
+      },
+      {
+        "code" : "9914043",
+        "display" : "Exposure-Cyanide"
+      },
+      {
+        "code" : "9914045",
+        "display" : "Exposure-Explosive/Blast Injury"
+      },
+      {
+        "code" : "9914047",
+        "display" : "Exposure-Nerve Agents"
+      },
+      {
+        "code" : "9914049",
+        "display" : "Exposure-Radiologic Agents"
+      },
+      {
+        "code" : "9914051",
+        "display" : "General-Back Pain"
+      },
+      {
+        "code" : "9914053",
+        "display" : "General-Behavioral/Patient Restraint"
+      },
+      {
+        "code" : "9914055",
+        "display" : "General-Cardiac Arrest"
+      },
+      {
+        "code" : "9914057",
+        "display" : "General-Dental Problems"
+      },
+      {
+        "code" : "9914059",
+        "display" : "General-Epistaxis"
+      },
+      {
+        "code" : "9914061",
+        "display" : "General-Fever"
+      },
+      {
+        "code" : "9914063",
+        "display" : "General-Individualized Patient Protocol"
+      },
+      {
+        "code" : "9914065",
+        "display" : "General-Indwelling Medical Devices/Equipment"
+      },
+      {
+        "code" : "9914067",
+        "display" : "General-IV Access"
+      },
+      {
+        "code" : "9914069",
+        "display" : "General-Medical Device Malfunction"
+      },
+      {
+        "code" : "9914071",
+        "display" : "General-Pain Control"
+      },
+      {
+        "code" : "9914073",
+        "display" : "General-Spinal Immobilization/Clearance"
+      },
+      {
+        "code" : "9914075",
+        "display" : "General-Universal Patient Care/Initial Patient Contact"
+      },
+      {
+        "code" : "9914077",
+        "display" : "Injury-Amputation"
+      },
+      {
+        "code" : "9914079",
+        "display" : "Injury-Bites and Envenomations-Land"
+      },
+      {
+        "code" : "9914081",
+        "display" : "Injury-Bites and Envenomations-Marine"
+      },
+      {
+        "code" : "9914083",
+        "display" : "Injury-Bleeding/Hemorrhage Control"
+      },
+      {
+        "code" : "9914085",
+        "display" : "Injury-Burns-Thermal"
+      },
+      {
+        "code" : "9914087",
+        "display" : "Injury-Cardiac Arrest"
+      },
+      {
+        "code" : "9914089",
+        "display" : "Injury-Crush Syndrome"
+      },
+      {
+        "code" : "9914091",
+        "display" : "Injury-Diving Emergencies"
+      },
+      {
+        "code" : "9914093",
+        "display" : "Injury-Drowning/Near Drowning"
+      },
+      {
+        "code" : "9914095",
+        "display" : "Injury-Electrical Injuries"
+      },
+      {
+        "code" : "9914097",
+        "display" : "Injury-Extremity"
+      },
+      {
+        "code" : "9914099",
+        "display" : "Injury-Eye"
+      },
+      {
+        "code" : "9914101",
+        "display" : "Injury-Head"
+      },
+      {
+        "code" : "9914103",
+        "display" : "Injury-Impaled Object"
+      },
+      {
+        "code" : "9914105",
+        "display" : "Injury-Multisystem"
+      },
+      {
+        "code" : "9914107",
+        "display" : "Injury-Spinal Cord"
+      },
+      {
+        "code" : "9914109",
+        "display" : "Medical-Abdominal Pain"
+      },
+      {
+        "code" : "9914111",
+        "display" : "Medical-Allergic Reaction/Anaphylaxis"
+      },
+      {
+        "code" : "9914113",
+        "display" : "Medical-Altered Mental Status"
+      },
+      {
+        "code" : "9914115",
+        "display" : "Medical-Bradycardia"
+      },
+      {
+        "code" : "9914117",
+        "display" : "Medical-Cardiac Chest Pain"
+      },
+      {
+        "code" : "9914119",
+        "display" : "Medical-Diarrhea"
+      },
+      {
+        "code" : "9914121",
+        "display" : "Medical-Hyperglycemia"
+      },
+      {
+        "code" : "9914123",
+        "display" : "Medical-Hypertension"
+      },
+      {
+        "code" : "9914125",
+        "display" : "Medical-Hypoglycemia/Diabetic Emergency"
+      },
+      {
+        "code" : "9914127",
+        "display" : "Medical-Hypotension/Shock (Non-Trauma)"
+      },
+      {
+        "code" : "9914129",
+        "display" : "Medical-Influenza-Like Illness/Upper Respiratory Infection"
+      },
+      {
+        "code" : "9914131",
+        "display" : "Medical-Nausea/Vomiting"
+      },
+      {
+        "code" : "9914133",
+        "display" : "Medical-Newborn/Neonatal Resuscitation"
+      },
+      {
+        "code" : "9914135",
+        "display" : "General-Overdose/Poisoning/Toxic Ingestion"
+      },
+      {
+        "code" : "9914137",
+        "display" : "Medical-Pulmonary Edema/CHF"
+      },
+      {
+        "code" : "9914139",
+        "display" : "Medical-Respiratory Distress/Asthma/COPD/Reactive Airway"
+      },
+      {
+        "code" : "9914141",
+        "display" : "Medical-Seizure"
+      },
+      {
+        "code" : "9914143",
+        "display" : "Medical-ST-Elevation Myocardial Infarction (STEMI)"
+      },
+      {
+        "code" : "9914145",
+        "display" : "Medical-Stroke/TIA"
+      },
+      {
+        "code" : "9914147",
+        "display" : "Medical-Supraventricular Tachycardia (Including Atrial Fibrillation)"
+      },
+      {
+        "code" : "9914149",
+        "display" : "Medical-Syncope"
+      },
+      {
+        "code" : "9914151",
+        "display" : "Medical-Ventricular Tachycardia (With Pulse)"
+      },
+      {
+        "code" : "9914153",
+        "display" : "Not Done"
+      },
+      {
+        "code" : "9914155",
+        "display" : "OB/GYN-Childbirth/Labor/Delivery"
+      },
+      {
+        "code" : "9914157",
+        "display" : "OB/GYN-Eclampsia"
+      },
+      {
+        "code" : "9914159",
+        "display" : "OB/GYN-Gynecologic Emergencies"
+      },
+      {
+        "code" : "9914161",
+        "display" : "OB/GYN-Pregnancy Related Emergencies"
+      },
+      {
+        "code" : "9914163",
+        "display" : "OB/GYN-Post-partum Hemorrhage"
+      },
+      {
+        "code" : "9914165",
+        "display" : "Other"
+      },
+      {
+        "code" : "9914167",
+        "display" : "Exposure-Carbon Monoxide"
+      },
+      {
+        "code" : "9914169",
+        "display" : "Cardiac Arrest-Do Not Resuscitate"
+      },
+      {
+        "code" : "9914171",
+        "display" : "Cardiac Arrest-Special Resuscitation Orders"
+      },
+      {
+        "code" : "9914173",
+        "display" : "Exposure-Smoke Inhalation"
+      },
+      {
+        "code" : "9914175",
+        "display" : "General-Community Paramedicine/Mobile Integrated Healthcare"
+      },
+      {
+        "code" : "9914177",
+        "display" : "General-Exception Protocol"
+      },
+      {
+        "code" : "9914179",
+        "display" : "General-Extended Care Guidelines"
+      },
+      {
+        "code" : "9914181",
+        "display" : "General-Interfacility Transfers"
+      },
+      {
+        "code" : "9914183",
+        "display" : "General-Law Enforcement - Blood for Legal Purposes"
+      },
+      {
+        "code" : "9914185",
+        "display" : "General-Law Enforcement - Assist with Law Enforcement Activity"
+      },
+      {
+        "code" : "9914187",
+        "display" : "General-Neglect or Abuse Suspected"
+      },
+      {
+        "code" : "9914189",
+        "display" : "General-Refusal of Care"
+      },
+      {
+        "code" : "9914191",
+        "display" : "Injury-Mass/Multiple Casualties"
+      },
+      {
+        "code" : "9914193",
+        "display" : "Injury-Thoracic"
+      },
+      {
+        "code" : "9914195",
+        "display" : "Medical-Adrenal Insufficiency"
+      },
+      {
+        "code" : "9914197",
+        "display" : "Medical-Apparent Life Threatening Event (ALTE)"
+      },
+      {
+        "code" : "9914199",
+        "display" : "Medical-Tachycardia"
+      },
+      {
+        "code" : "9914201",
+        "display" : "Cardiac Arrest-Determination of Death/Withholding Resuscitative Efforts"
+      },
+      {
+        "code" : "9914203",
+        "display" : "Injury-Conducted Electrical Weapon (e.g., Taser)"
+      },
+      {
+        "code" : "9914205",
+        "display" : "Injury-Facial Trauma"
+      },
+      {
+        "code" : "9914207",
+        "display" : "Injury-General Trauma Management"
+      },
+      {
+        "code" : "9914209",
+        "display" : "Injury-Lightning/Lightning Strike"
+      },
+      {
+        "code" : "9914211",
+        "display" : "Injury-SCUBA Injury/Accidents"
+      },
+      {
+        "code" : "9914213",
+        "display" : "Injury-Topical Chemical Burn"
+      },
+      {
+        "code" : "9914215",
+        "display" : "Medical-Beta Blocker Poisoning/Overdose"
+      },
+      {
+        "code" : "9914217",
+        "display" : "Medical-Calcium Channel Blocker Poisoning/Overdose"
+      },
+      {
+        "code" : "9914219",
+        "display" : "Medical-Opioid Poisoning/Overdose"
+      },
+      {
+        "code" : "9914221",
+        "display" : "Medical-Respiratory Distress-Bronchiolitis"
+      },
+      {
+        "code" : "9914223",
+        "display" : "Medical-Respiratory Distress-Croup"
+      },
+      {
+        "code" : "9914225",
+        "display" : "Medical-Stimulant Poisoning/Overdose"
+      }]
+    }]
+  }
+}

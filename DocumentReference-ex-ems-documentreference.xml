@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-documentreference"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-documentreference"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference ex-ems-documentreference</b></p><a name="ex-ems-documentreference"> </a><a name="hcex-ems-documentreference"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-documentreference.html">EMS Document Reference</a></p></div><p><b>EMS External Document Type</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other 4509009}">ECG/Lab Results</span></p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11524-6}">EKG study</span></p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category clinical-note}">Clinical Note</span></p><p><b>subject</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>date</b>: 2026-03-14 14:45:00-0800</p><p><b>author</b>: <a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></p><p><b>custodian</b>: <a href="Organization-ex-ems-organization-agency.html">Organization Riverside County EMS Agency</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td><a href="http://example.org/ems/attachments/12-lead-ecg-2026-03-14.pdf">http://example.org/ems/attachments/12-lead-ecg-2026-03-14.pdf</a></td><td>12-lead-ecg-2026-03-14.pdf</td><td>2026-03-14 14:38:00-0800</td></tr></table></blockquote><h3>Contexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Encounter</b></td></tr><tr><td style="display: none">*</td><td><a href="Encounter-ex-ems-encounter.html">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></td></tr></table></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-document-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+        <code value="4509009"/>
+        <display value="ECG/Lab Results"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11524-6"/>
+      <display value="EKG study"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"/>
+      <code value="clinical-note"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/ex-ems-patient"/>
+  </subject>
+  <date value="2026-03-14T14:45:00-08:00"/>
+  <author>
+    <reference value="Practitioner/ex-ems-practitioner"/>
+  </author>
+  <custodian>
+    <reference value="Organization/ex-ems-organization-agency"/>
+  </custodian>
+  <content>
+    <attachment>
+      <contentType value="application/pdf"/>
+      <url value="http://example.org/ems/attachments/12-lead-ecg-2026-03-14.pdf"/>
+      <title value="12-lead-ecg-2026-03-14.pdf"/>
+      <creation value="2026-03-14T14:38:00-08:00"/>
+    </attachment>
+  </content>
+  <context>
+    <encounter>
+      <reference value="Encounter/ex-ems-encounter"/>
+    </encounter>
+  </context>
+</DocumentReference>

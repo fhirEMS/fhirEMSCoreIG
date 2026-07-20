@@ -1,0 +1,135 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-medical-director-board-cert",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-medical-director-board-cert</b></p><a name=\"vs-ems-medical-director-board-cert\"> </a><a name=\"hcvs-ems-medical-director-board-cert\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-demographics.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114001\">1114001</a></td><td>Allergy and Immunology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114003\">1114003</a></td><td>Anesthesiology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114005\">1114005</a></td><td>Colon and Rectal Surgery</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114007\">1114007</a></td><td>Dermatology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114009\">1114009</a></td><td>Emergency Medicine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114011\">1114011</a></td><td>Family Medicine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114013\">1114013</a></td><td>Internal Medicine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114015\">1114015</a></td><td>Neurological Surgery</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114017\">1114017</a></td><td>Neurology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114019\">1114019</a></td><td>None (Not Board Certified)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114021\">1114021</a></td><td>Obstetrics and Gynecology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114023\">1114023</a></td><td>Ophthalmology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114025\">1114025</a></td><td>Orthopedic Surgery</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114027\">1114027</a></td><td>Otolaryngology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114029\">1114029</a></td><td>Pediatrics</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114031\">1114031</a></td><td>Physical Medicine and Rehabilitation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114033\">1114033</a></td><td>Plastic Surgery</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114035\">1114035</a></td><td>Psychiatry</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114037\">1114037</a></td><td>Surgery</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114039\">1114039</a></td><td>Thoracic Surgery</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114041\">1114041</a></td><td>Urology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1114043\">1114043</a></td><td>Vascular Surgery</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medical-director-board-cert",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.148"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSMedicalDirectorBoardCertVS",
+  "title" : "EMS MedicalDirectorBoardCert VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "The agency medical director board certification type (dContact.14).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics",
+      "concept" : [{
+        "code" : "1114001",
+        "display" : "Allergy and Immunology"
+      },
+      {
+        "code" : "1114003",
+        "display" : "Anesthesiology"
+      },
+      {
+        "code" : "1114005",
+        "display" : "Colon and Rectal Surgery"
+      },
+      {
+        "code" : "1114007",
+        "display" : "Dermatology"
+      },
+      {
+        "code" : "1114009",
+        "display" : "Emergency Medicine"
+      },
+      {
+        "code" : "1114011",
+        "display" : "Family Medicine"
+      },
+      {
+        "code" : "1114013",
+        "display" : "Internal Medicine"
+      },
+      {
+        "code" : "1114015",
+        "display" : "Neurological Surgery"
+      },
+      {
+        "code" : "1114017",
+        "display" : "Neurology"
+      },
+      {
+        "code" : "1114019",
+        "display" : "None (Not Board Certified)"
+      },
+      {
+        "code" : "1114021",
+        "display" : "Obstetrics and Gynecology"
+      },
+      {
+        "code" : "1114023",
+        "display" : "Ophthalmology"
+      },
+      {
+        "code" : "1114025",
+        "display" : "Orthopedic Surgery"
+      },
+      {
+        "code" : "1114027",
+        "display" : "Otolaryngology"
+      },
+      {
+        "code" : "1114029",
+        "display" : "Pediatrics"
+      },
+      {
+        "code" : "1114031",
+        "display" : "Physical Medicine and Rehabilitation"
+      },
+      {
+        "code" : "1114033",
+        "display" : "Plastic Surgery"
+      },
+      {
+        "code" : "1114035",
+        "display" : "Psychiatry"
+      },
+      {
+        "code" : "1114037",
+        "display" : "Surgery"
+      },
+      {
+        "code" : "1114039",
+        "display" : "Thoracic Surgery"
+      },
+      {
+        "code" : "1114041",
+        "display" : "Urology"
+      },
+      {
+        "code" : "1114043",
+        "display" : "Vascular Surgery"
+      }]
+    }]
+  }
+}

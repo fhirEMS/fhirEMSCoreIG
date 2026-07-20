@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-unit-disposition"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-unit-disposition</b></p><a name="vs-ems-unit-disposition"> </a><a name="hcvs-ems-unit-disposition"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4227001">4227001</a></td><td>Patient Contact Made</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4227003">4227003</a></td><td>Cancelled on Scene</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4227005">4227005</a></td><td>Cancelled Prior to Arrival at Scene</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4227007">4227007</a></td><td>No Patient Contact</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4227009">4227009</a></td><td>No Patient Found</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4227011">4227011</a></td><td>Non-Patient Incident (Not Otherwise Listed)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-unit-disposition"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.126"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSUnitDispositionVS"/>
+  <title value="EMS Unit Disposition"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eDisposition.27 - Whether/how the unit made patient contact."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="4227001"/>
+        <display value="Patient Contact Made"/>
+      </concept>
+      <concept>
+        <code value="4227003"/>
+        <display value="Cancelled on Scene"/>
+      </concept>
+      <concept>
+        <code value="4227005"/>
+        <display value="Cancelled Prior to Arrival at Scene"/>
+      </concept>
+      <concept>
+        <code value="4227007"/>
+        <display value="No Patient Contact"/>
+      </concept>
+      <concept>
+        <code value="4227009"/>
+        <display value="No Patient Found"/>
+      </concept>
+      <concept>
+        <code value="4227011"/>
+        <display value="Non-Patient Incident (Not Otherwise Listed)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

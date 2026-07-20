@@ -1,0 +1,834 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NEMSIS General Codes - TTL Representation - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.252"}
+    h3,h4,h5,h6{--heading-prefix:"17.252"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NEMSIS General Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-cs-nemsis-codes.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-codes.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-codes.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NEMSIS General Codes - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-cs-nemsis-codes.ttl" no-download="true">Raw ttl</a> | <a href="CodeSystem-cs-nemsis-codes.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/CodeSystem/cs-nemsis-codes&gt; a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cs-nemsis-codes&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem cs-nemsis-codes&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cs-nemsis-codes\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccs-nemsis-codes\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eResponse&lt;a name=\&quot;cs-nemsis-codes-section-eResponse\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Response&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eTimes&lt;a name=\&quot;cs-nemsis-codes-section-eTimes\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Times&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eScene&lt;a name=\&quot;cs-nemsis-codes-section-eScene\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Scene&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eSituation&lt;a name=\&quot;cs-nemsis-codes-section-eSituation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Patient Situation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eAirway&lt;a name=\&quot;cs-nemsis-codes-section-eAirway\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Airway Management&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eArrest&lt;a name=\&quot;cs-nemsis-codes-section-eArrest\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Cardiac Arrest&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eExam&lt;a name=\&quot;cs-nemsis-codes-section-eExam\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Physical Exam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eLabs&lt;a name=\&quot;cs-nemsis-codes-section-eLabs\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Labs&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;section-eCrew&lt;a name=\&quot;cs-nemsis-codes-section-eCrew\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EMS Crew&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920001&lt;a name=\&quot;cs-nemsis-codes-9920001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;911 Response (Scene) with Transport Capability&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920003&lt;a name=\&quot;cs-nemsis-codes-9920003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;911 Response (Scene) without Transport Capability&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920005&lt;a name=\&quot;cs-nemsis-codes-9920005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Air Medical&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920007&lt;a name=\&quot;cs-nemsis-codes-9920007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ALS Intercept&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920011&lt;a name=\&quot;cs-nemsis-codes-9920011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hazmat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920013&lt;a name=\&quot;cs-nemsis-codes-9920013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920015&lt;a name=\&quot;cs-nemsis-codes-9920015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rescue&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920017&lt;a name=\&quot;cs-nemsis-codes-9920017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community Paramedicine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9920019&lt;a name=\&quot;cs-nemsis-codes-9920019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Critical Care (Ground)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917001&lt;a name=\&quot;cs-nemsis-codes-9917001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Advanced Emergency Medical Technician (AEMT)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917002&lt;a name=\&quot;cs-nemsis-codes-9917002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Medical Technician - Intermediate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917003&lt;a name=\&quot;cs-nemsis-codes-9917003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Medical Responder (EMR)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917005&lt;a name=\&quot;cs-nemsis-codes-9917005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Medical Technician (EMT)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917007&lt;a name=\&quot;cs-nemsis-codes-9917007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paramedic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917019&lt;a name=\&quot;cs-nemsis-codes-9917019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physician&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917021&lt;a name=\&quot;cs-nemsis-codes-9917021\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Critical Care Paramedic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917023&lt;a name=\&quot;cs-nemsis-codes-9917023\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community Paramedicine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917025&lt;a name=\&quot;cs-nemsis-codes-9917025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nurse Practitioner&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917027&lt;a name=\&quot;cs-nemsis-codes-9917027\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physician Assistant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917029&lt;a name=\&quot;cs-nemsis-codes-9917029\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Licensed Practical Nurse (LPN)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9917031&lt;a name=\&quot;cs-nemsis-codes-9917031\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Registered Nurse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1016001&lt;a name=\&quot;cs-nemsis-codes-1016001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mixed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1016003&lt;a name=\&quot;cs-nemsis-codes-1016003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-Volunteer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1016005&lt;a name=\&quot;cs-nemsis-codes-1016005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volunteer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9912001&lt;a name=\&quot;cs-nemsis-codes-9912001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fire Department&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9912003&lt;a name=\&quot;cs-nemsis-codes-9912003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Governmental, Non-Fire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9912005&lt;a name=\&quot;cs-nemsis-codes-9912005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9912007&lt;a name=\&quot;cs-nemsis-codes-9912007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Private, Nonhospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9912009&lt;a name=\&quot;cs-nemsis-codes-9912009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tribal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403001&lt;a name=\&quot;cs-nemsis-codes-2403001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Driver/Pilot-Response&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403003&lt;a name=\&quot;cs-nemsis-codes-2403003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Driver/Pilot-Transport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403005&lt;a name=\&quot;cs-nemsis-codes-2403005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403007&lt;a name=\&quot;cs-nemsis-codes-2403007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Patient Caregiver-At Scene&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403009&lt;a name=\&quot;cs-nemsis-codes-2403009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Patient Caregiver-Transport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403011&lt;a name=\&quot;cs-nemsis-codes-2403011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primary Patient Caregiver-At Scene&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2403013&lt;a name=\&quot;cs-nemsis-codes-2403013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primary Patient Caregiver-Transport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2708001&lt;a name=\&quot;cs-nemsis-codes-2708001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Red - Immediate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2708003&lt;a name=\&quot;cs-nemsis-codes-2708003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yellow - Delayed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2708005&lt;a name=\&quot;cs-nemsis-codes-2708005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Green - Minimal (Minor)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2708007&lt;a name=\&quot;cs-nemsis-codes-2708007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gray - Expectant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2708009&lt;a name=\&quot;cs-nemsis-codes-2708009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Black - Deceased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808001&lt;a name=\&quot;cs-nemsis-codes-2808001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Behavioral/Psychiatric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808003&lt;a name=\&quot;cs-nemsis-codes-2808003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiovascular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808005&lt;a name=\&quot;cs-nemsis-codes-2808005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CNS/Neuro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808007&lt;a name=\&quot;cs-nemsis-codes-2808007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endocrine/Metabolic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808009&lt;a name=\&quot;cs-nemsis-codes-2808009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GI&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808011&lt;a name=\&quot;cs-nemsis-codes-2808011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Global/General&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808013&lt;a name=\&quot;cs-nemsis-codes-2808013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphatic/Immune&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808015&lt;a name=\&quot;cs-nemsis-codes-2808015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Musculoskeletal/Skin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808017&lt;a name=\&quot;cs-nemsis-codes-2808017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reproductive&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808019&lt;a name=\&quot;cs-nemsis-codes-2808019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pulmonary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2808021&lt;a name=\&quot;cs-nemsis-codes-2808021\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Renal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2813001&lt;a name=\&quot;cs-nemsis-codes-2813001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Critical (Red)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2813003&lt;a name=\&quot;cs-nemsis-codes-2813003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergent (Yellow)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2813005&lt;a name=\&quot;cs-nemsis-codes-2813005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lower Acuity (Green)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2813007&lt;a name=\&quot;cs-nemsis-codes-2813007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dead without Resuscitation Efforts (Black)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2813009&lt;a name=\&quot;cs-nemsis-codes-2813009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-Acute/Routine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820001&lt;a name=\&quot;cs-nemsis-codes-2820001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac Specialty&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820003&lt;a name=\&quot;cs-nemsis-codes-2820003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Convenience Transfer (Patient Request)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820005&lt;a name=\&quot;cs-nemsis-codes-2820005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diagnostic Testing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820007&lt;a name=\&quot;cs-nemsis-codes-2820007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dialysis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820009&lt;a name=\&quot;cs-nemsis-codes-2820009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug and/or Alcohol Rehabilitation Care&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820011&lt;a name=\&quot;cs-nemsis-codes-2820011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extended Care&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820013&lt;a name=\&quot;cs-nemsis-codes-2820013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maternal/Neonatal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820015&lt;a name=\&quot;cs-nemsis-codes-2820015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical Specialty Care (Other, Not Listed)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820017&lt;a name=\&quot;cs-nemsis-codes-2820017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurological Specialty Care&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820019&lt;a name=\&quot;cs-nemsis-codes-2820019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Palliative/Hospice Care (Home or Facility)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820021&lt;a name=\&quot;cs-nemsis-codes-2820021\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pediatric Specialty Care&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820023&lt;a name=\&quot;cs-nemsis-codes-2820023\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psychiatric/Behavioral Care&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820025&lt;a name=\&quot;cs-nemsis-codes-2820025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physical Rehabilitation Care&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820027&lt;a name=\&quot;cs-nemsis-codes-2820027\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Return to Home/Residence&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820029&lt;a name=\&quot;cs-nemsis-codes-2820029\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surgical Specialty Care (Other, Not Listed)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2820031&lt;a name=\&quot;cs-nemsis-codes-2820031\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma/Orthopedic Specialty Care&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101001&lt;a name=\&quot;cs-nemsis-codes-3101001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cultural, Custom, Religious&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101003&lt;a name=\&quot;cs-nemsis-codes-3101003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Developmentally Impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101005&lt;a name=\&quot;cs-nemsis-codes-3101005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hearing Impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101007&lt;a name=\&quot;cs-nemsis-codes-3101007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Language&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101009&lt;a name=\&quot;cs-nemsis-codes-3101009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;None Noted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101011&lt;a name=\&quot;cs-nemsis-codes-3101011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Obesity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101013&lt;a name=\&quot;cs-nemsis-codes-3101013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physical Barrier (Unable to Access Patient)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101015&lt;a name=\&quot;cs-nemsis-codes-3101015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physically Impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101017&lt;a name=\&quot;cs-nemsis-codes-3101017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physically Restrained&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101019&lt;a name=\&quot;cs-nemsis-codes-3101019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psychologically Impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101021&lt;a name=\&quot;cs-nemsis-codes-3101021\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sight Impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101023&lt;a name=\&quot;cs-nemsis-codes-3101023\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Speech Impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101025&lt;a name=\&quot;cs-nemsis-codes-3101025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unattended or Unsupervised (including minors)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101027&lt;a name=\&quot;cs-nemsis-codes-3101027\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unconscious&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101029&lt;a name=\&quot;cs-nemsis-codes-3101029\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uncooperative&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101031&lt;a name=\&quot;cs-nemsis-codes-3101031\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;State of Emotional Distress&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101033&lt;a name=\&quot;cs-nemsis-codes-3101033\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alcohol Use, Suspected&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3101035&lt;a name=\&quot;cs-nemsis-codes-3101035\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug Use, Suspected&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303001&lt;a name=\&quot;cs-nemsis-codes-4303001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disaster Tag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303003&lt;a name=\&quot;cs-nemsis-codes-4303003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fire Incident Report&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303005&lt;a name=\&quot;cs-nemsis-codes-4303005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital-Receiving&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303007&lt;a name=\&quot;cs-nemsis-codes-4303007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital-Transferring&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303009&lt;a name=\&quot;cs-nemsis-codes-4303009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Law Enforcement Report&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303011&lt;a name=\&quot;cs-nemsis-codes-4303011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303013&lt;a name=\&quot;cs-nemsis-codes-4303013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Registry&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303015&lt;a name=\&quot;cs-nemsis-codes-4303015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other Report&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303017&lt;a name=\&quot;cs-nemsis-codes-4303017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient ID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303019&lt;a name=\&quot;cs-nemsis-codes-4303019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prior EMS Patient Care Report&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303021&lt;a name=\&quot;cs-nemsis-codes-4303021\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;STEMI Registry&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303023&lt;a name=\&quot;cs-nemsis-codes-4303023\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stroke Registry&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4303025&lt;a name=\&quot;cs-nemsis-codes-4303025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trauma Registry&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404001&lt;a name=\&quot;cs-nemsis-codes-1404001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ambulance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404003&lt;a name=\&quot;cs-nemsis-codes-1404003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ATV&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404005&lt;a name=\&quot;cs-nemsis-codes-1404005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bicycle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404007&lt;a name=\&quot;cs-nemsis-codes-1404007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fire Apparatus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404009&lt;a name=\&quot;cs-nemsis-codes-1404009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fixed Wing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404011&lt;a name=\&quot;cs-nemsis-codes-1404011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Motorcycle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404013&lt;a name=\&quot;cs-nemsis-codes-1404013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404015&lt;a name=\&quot;cs-nemsis-codes-1404015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Personal Vehicle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404017&lt;a name=\&quot;cs-nemsis-codes-1404017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404019&lt;a name=\&quot;cs-nemsis-codes-1404019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rescue&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404021&lt;a name=\&quot;cs-nemsis-codes-1404021\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rotor Craft&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404023&lt;a name=\&quot;cs-nemsis-codes-1404023\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Snow Vehicle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1404025&lt;a name=\&quot;cs-nemsis-codes-1404025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Watercraft&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">fhir:CodeSystem.identifier</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:ietf:rfc:3986&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;urn:oid:2.25.219926138944530828037824748808947630693.1.3&quot; ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.2.0&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;NEMSISCodes&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;NEMSIS General Codes&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:CodeSystem.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-07-19T20:45:43-04:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:CodeSystem.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fhirEMSCore Research Project (AI-Generated — Unofficial)&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:CodeSystem.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fhirEMSCore Research Project (AI-Generated — Unofficial)&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://github.com/fhirEMS/fhirEMSCoreIG&quot; ]
+     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fhirEMSCore Research Project&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://github.com/fhirEMS/fhirEMSCoreIG&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;General NEMSIS enumeration codes for sections without a dedicated CodeSystem. Currently covers eHistory (eHistory.01 - Barriers to Patient Care). NEMSIS 3.5.1.251001CP2.&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">fhir:CodeSystem.jurisdiction</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;US&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;United States of America&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:CodeSystem.caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:CodeSystem.content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;complete&quot;] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:CodeSystem.count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;126&quot;^^xsd:nonNegativeInteger] ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:CodeSystem.concept</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eResponse&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Response&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eTimes&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Times&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eScene&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Scene&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eSituation&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Patient Situation&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eAirway&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Airway Management&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eArrest&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Cardiac Arrest&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eExam&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Physical Exam&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eLabs&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Labs&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;section-eCrew&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMS Crew&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;911 Response (Scene) with Transport Capability&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;911 Response (Scene) without Transport Capability&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Air Medical&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ALS Intercept&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 13 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920011&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hazmat&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 14 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920013&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 15 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Rescue&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 16 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920017&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Community Paramedicine&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 17 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9920019&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Critical Care (Ground)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 18 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Advanced Emergency Medical Technician (AEMT)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 19 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917002&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Emergency Medical Technician - Intermediate&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 20 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Emergency Medical Responder (EMR)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 21 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Emergency Medical Technician (EMT)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 22 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paramedic&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 23 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917019&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Physician&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 24 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917021&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Critical Care Paramedic&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 25 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917023&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Community Paramedicine&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 26 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917025&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Nurse Practitioner&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 27 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917027&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Physician Assistant&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 28 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917029&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Licensed Practical Nurse (LPN)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 29 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9917031&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Registered Nurse&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 30 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1016001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Mixed&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 31 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1016003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Non-Volunteer&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 32 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1016005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Volunteer&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 33 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9912001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Fire Department&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 34 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9912003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Governmental, Non-Fire&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 35 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9912005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hospital&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 36 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9912007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Private, Nonhospital&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 37 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9912009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Tribal&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 38 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2403001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Driver/Pilot-Response&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 39 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2403003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Driver/Pilot-Transport&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 40 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2403005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 41 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2403007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other Patient Caregiver-At Scene&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 42 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2403009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other Patient Caregiver-Transport&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 43 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2403011&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Primary Patient Caregiver-At Scene&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 44 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2403013&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Primary Patient Caregiver-Transport&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 45 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2708001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Red - Immediate&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 46 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2708003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Yellow - Delayed&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 47 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2708005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Green - Minimal (Minor)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 48 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2708007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Gray - Expectant&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 49 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2708009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Black - Deceased&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 50 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Behavioral/Psychiatric&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 51 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cardiovascular&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 52 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CNS/Neuro&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 53 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Endocrine/Metabolic&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 54 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;GI&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 55 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808011&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Global/General&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 56 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808013&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Lymphatic/Immune&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 57 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Musculoskeletal/Skin&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 58 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808017&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Reproductive&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 59 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808019&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pulmonary&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 60 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2808021&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Renal&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 61 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2813001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Critical (Red)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 62 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2813003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Emergent (Yellow)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 63 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2813005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Lower Acuity (Green)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 64 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2813007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Dead without Resuscitation Efforts (Black)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 65 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2813009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Non-Acute/Routine&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 66 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cardiac Specialty&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 67 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Convenience Transfer (Patient Request)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 68 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Diagnostic Testing&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 69 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Dialysis&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 70 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Drug and/or Alcohol Rehabilitation Care&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 71 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820011&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Extended Care&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 72 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820013&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maternal/Neonatal&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 73 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medical Specialty Care (Other, Not Listed)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 74 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820017&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Neurological Specialty Care&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 75 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820019&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Palliative/Hospice Care (Home or Facility)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 76 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820021&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pediatric Specialty Care&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 77 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820023&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Psychiatric/Behavioral Care&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 78 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820025&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Physical Rehabilitation Care&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 79 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820027&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Return to Home/Residence&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 80 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820029&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Surgical Specialty Care (Other, Not Listed)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 81 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2820031&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Trauma/Orthopedic Specialty Care&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 82 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cultural, Custom, Religious&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 83 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Developmentally Impaired&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 84 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hearing Impaired&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 85 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Language&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 86 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;None Noted&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 87 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101011&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Obesity&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 88 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101013&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Physical Barrier (Unable to Access Patient)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 89 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Physically Impaired&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 90 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101017&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Physically Restrained&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 91 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101019&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Psychologically Impaired&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 92 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101021&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sight Impaired&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 93 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101023&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Speech Impaired&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 94 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101025&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Unattended or Unsupervised (including minors)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 95 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101027&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Unconscious&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 96 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101029&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Uncooperative&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 97 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101031&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;State of Emotional Distress&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 98 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101033&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Alcohol Use, Suspected&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 99 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3101035&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Drug Use, Suspected&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 100 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Disaster Tag&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 101 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Fire Incident Report&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 102 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hospital-Receiving&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 103 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hospital-Transferring&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 104 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Law Enforcement Report&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 105 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303011&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 106 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303013&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other Registry&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 107 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other Report&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 108 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303017&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient ID&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 109 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303019&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Prior EMS Patient Care Report&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 110 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303021&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;STEMI Registry&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 111 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303023&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Stroke Registry&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 112 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4303025&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Trauma Registry&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 113 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404001&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ambulance&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 114 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404003&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ATV&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 115 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404005&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Bicycle&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 116 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404007&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Fire Apparatus&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 117 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404009&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Fixed Wing&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 118 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404011&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Motorcycle&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 119 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404013&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 120 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404015&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Personal Vehicle&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 121 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404017&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 122 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404019&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Rescue&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 123 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404021&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Rotor Craft&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 124 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404023&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Snow Vehicle&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 125 ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;1404025&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Watercraft&quot; ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/CodeSystem/cs-nemsis-codes.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/CodeSystem/cs-nemsis-codes.ttl&gt; .
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

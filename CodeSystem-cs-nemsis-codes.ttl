@@ -1,0 +1,570 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-codes"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-codes</b></p><a name=\"cs-nemsis-codes\"> </a><a name=\"hccs-nemsis-codes\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">section-eResponse<a name=\"cs-nemsis-codes-section-eResponse\"> </a></td><td>EMS Response</td></tr><tr><td style=\"white-space:nowrap\">section-eTimes<a name=\"cs-nemsis-codes-section-eTimes\"> </a></td><td>EMS Times</td></tr><tr><td style=\"white-space:nowrap\">section-eScene<a name=\"cs-nemsis-codes-section-eScene\"> </a></td><td>EMS Scene</td></tr><tr><td style=\"white-space:nowrap\">section-eSituation<a name=\"cs-nemsis-codes-section-eSituation\"> </a></td><td>EMS Patient Situation</td></tr><tr><td style=\"white-space:nowrap\">section-eAirway<a name=\"cs-nemsis-codes-section-eAirway\"> </a></td><td>EMS Airway Management</td></tr><tr><td style=\"white-space:nowrap\">section-eArrest<a name=\"cs-nemsis-codes-section-eArrest\"> </a></td><td>EMS Cardiac Arrest</td></tr><tr><td style=\"white-space:nowrap\">section-eExam<a name=\"cs-nemsis-codes-section-eExam\"> </a></td><td>EMS Physical Exam</td></tr><tr><td style=\"white-space:nowrap\">section-eLabs<a name=\"cs-nemsis-codes-section-eLabs\"> </a></td><td>EMS Labs</td></tr><tr><td style=\"white-space:nowrap\">section-eCrew<a name=\"cs-nemsis-codes-section-eCrew\"> </a></td><td>EMS Crew</td></tr><tr><td style=\"white-space:nowrap\">9920001<a name=\"cs-nemsis-codes-9920001\"> </a></td><td>911 Response (Scene) with Transport Capability</td></tr><tr><td style=\"white-space:nowrap\">9920003<a name=\"cs-nemsis-codes-9920003\"> </a></td><td>911 Response (Scene) without Transport Capability</td></tr><tr><td style=\"white-space:nowrap\">9920005<a name=\"cs-nemsis-codes-9920005\"> </a></td><td>Air Medical</td></tr><tr><td style=\"white-space:nowrap\">9920007<a name=\"cs-nemsis-codes-9920007\"> </a></td><td>ALS Intercept</td></tr><tr><td style=\"white-space:nowrap\">9920011<a name=\"cs-nemsis-codes-9920011\"> </a></td><td>Hazmat</td></tr><tr><td style=\"white-space:nowrap\">9920013<a name=\"cs-nemsis-codes-9920013\"> </a></td><td>Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)</td></tr><tr><td style=\"white-space:nowrap\">9920015<a name=\"cs-nemsis-codes-9920015\"> </a></td><td>Rescue</td></tr><tr><td style=\"white-space:nowrap\">9920017<a name=\"cs-nemsis-codes-9920017\"> </a></td><td>Community Paramedicine</td></tr><tr><td style=\"white-space:nowrap\">9920019<a name=\"cs-nemsis-codes-9920019\"> </a></td><td>Critical Care (Ground)</td></tr><tr><td style=\"white-space:nowrap\">9917001<a name=\"cs-nemsis-codes-9917001\"> </a></td><td>Advanced Emergency Medical Technician (AEMT)</td></tr><tr><td style=\"white-space:nowrap\">9917002<a name=\"cs-nemsis-codes-9917002\"> </a></td><td>Emergency Medical Technician - Intermediate</td></tr><tr><td style=\"white-space:nowrap\">9917003<a name=\"cs-nemsis-codes-9917003\"> </a></td><td>Emergency Medical Responder (EMR)</td></tr><tr><td style=\"white-space:nowrap\">9917005<a name=\"cs-nemsis-codes-9917005\"> </a></td><td>Emergency Medical Technician (EMT)</td></tr><tr><td style=\"white-space:nowrap\">9917007<a name=\"cs-nemsis-codes-9917007\"> </a></td><td>Paramedic</td></tr><tr><td style=\"white-space:nowrap\">9917019<a name=\"cs-nemsis-codes-9917019\"> </a></td><td>Physician</td></tr><tr><td style=\"white-space:nowrap\">9917021<a name=\"cs-nemsis-codes-9917021\"> </a></td><td>Critical Care Paramedic</td></tr><tr><td style=\"white-space:nowrap\">9917023<a name=\"cs-nemsis-codes-9917023\"> </a></td><td>Community Paramedicine</td></tr><tr><td style=\"white-space:nowrap\">9917025<a name=\"cs-nemsis-codes-9917025\"> </a></td><td>Nurse Practitioner</td></tr><tr><td style=\"white-space:nowrap\">9917027<a name=\"cs-nemsis-codes-9917027\"> </a></td><td>Physician Assistant</td></tr><tr><td style=\"white-space:nowrap\">9917029<a name=\"cs-nemsis-codes-9917029\"> </a></td><td>Licensed Practical Nurse (LPN)</td></tr><tr><td style=\"white-space:nowrap\">9917031<a name=\"cs-nemsis-codes-9917031\"> </a></td><td>Registered Nurse</td></tr><tr><td style=\"white-space:nowrap\">1016001<a name=\"cs-nemsis-codes-1016001\"> </a></td><td>Mixed</td></tr><tr><td style=\"white-space:nowrap\">1016003<a name=\"cs-nemsis-codes-1016003\"> </a></td><td>Non-Volunteer</td></tr><tr><td style=\"white-space:nowrap\">1016005<a name=\"cs-nemsis-codes-1016005\"> </a></td><td>Volunteer</td></tr><tr><td style=\"white-space:nowrap\">9912001<a name=\"cs-nemsis-codes-9912001\"> </a></td><td>Fire Department</td></tr><tr><td style=\"white-space:nowrap\">9912003<a name=\"cs-nemsis-codes-9912003\"> </a></td><td>Governmental, Non-Fire</td></tr><tr><td style=\"white-space:nowrap\">9912005<a name=\"cs-nemsis-codes-9912005\"> </a></td><td>Hospital</td></tr><tr><td style=\"white-space:nowrap\">9912007<a name=\"cs-nemsis-codes-9912007\"> </a></td><td>Private, Nonhospital</td></tr><tr><td style=\"white-space:nowrap\">9912009<a name=\"cs-nemsis-codes-9912009\"> </a></td><td>Tribal</td></tr><tr><td style=\"white-space:nowrap\">2403001<a name=\"cs-nemsis-codes-2403001\"> </a></td><td>Driver/Pilot-Response</td></tr><tr><td style=\"white-space:nowrap\">2403003<a name=\"cs-nemsis-codes-2403003\"> </a></td><td>Driver/Pilot-Transport</td></tr><tr><td style=\"white-space:nowrap\">2403005<a name=\"cs-nemsis-codes-2403005\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">2403007<a name=\"cs-nemsis-codes-2403007\"> </a></td><td>Other Patient Caregiver-At Scene</td></tr><tr><td style=\"white-space:nowrap\">2403009<a name=\"cs-nemsis-codes-2403009\"> </a></td><td>Other Patient Caregiver-Transport</td></tr><tr><td style=\"white-space:nowrap\">2403011<a name=\"cs-nemsis-codes-2403011\"> </a></td><td>Primary Patient Caregiver-At Scene</td></tr><tr><td style=\"white-space:nowrap\">2403013<a name=\"cs-nemsis-codes-2403013\"> </a></td><td>Primary Patient Caregiver-Transport</td></tr><tr><td style=\"white-space:nowrap\">2708001<a name=\"cs-nemsis-codes-2708001\"> </a></td><td>Red - Immediate</td></tr><tr><td style=\"white-space:nowrap\">2708003<a name=\"cs-nemsis-codes-2708003\"> </a></td><td>Yellow - Delayed</td></tr><tr><td style=\"white-space:nowrap\">2708005<a name=\"cs-nemsis-codes-2708005\"> </a></td><td>Green - Minimal (Minor)</td></tr><tr><td style=\"white-space:nowrap\">2708007<a name=\"cs-nemsis-codes-2708007\"> </a></td><td>Gray - Expectant</td></tr><tr><td style=\"white-space:nowrap\">2708009<a name=\"cs-nemsis-codes-2708009\"> </a></td><td>Black - Deceased</td></tr><tr><td style=\"white-space:nowrap\">2808001<a name=\"cs-nemsis-codes-2808001\"> </a></td><td>Behavioral/Psychiatric</td></tr><tr><td style=\"white-space:nowrap\">2808003<a name=\"cs-nemsis-codes-2808003\"> </a></td><td>Cardiovascular</td></tr><tr><td style=\"white-space:nowrap\">2808005<a name=\"cs-nemsis-codes-2808005\"> </a></td><td>CNS/Neuro</td></tr><tr><td style=\"white-space:nowrap\">2808007<a name=\"cs-nemsis-codes-2808007\"> </a></td><td>Endocrine/Metabolic</td></tr><tr><td style=\"white-space:nowrap\">2808009<a name=\"cs-nemsis-codes-2808009\"> </a></td><td>GI</td></tr><tr><td style=\"white-space:nowrap\">2808011<a name=\"cs-nemsis-codes-2808011\"> </a></td><td>Global/General</td></tr><tr><td style=\"white-space:nowrap\">2808013<a name=\"cs-nemsis-codes-2808013\"> </a></td><td>Lymphatic/Immune</td></tr><tr><td style=\"white-space:nowrap\">2808015<a name=\"cs-nemsis-codes-2808015\"> </a></td><td>Musculoskeletal/Skin</td></tr><tr><td style=\"white-space:nowrap\">2808017<a name=\"cs-nemsis-codes-2808017\"> </a></td><td>Reproductive</td></tr><tr><td style=\"white-space:nowrap\">2808019<a name=\"cs-nemsis-codes-2808019\"> </a></td><td>Pulmonary</td></tr><tr><td style=\"white-space:nowrap\">2808021<a name=\"cs-nemsis-codes-2808021\"> </a></td><td>Renal</td></tr><tr><td style=\"white-space:nowrap\">2813001<a name=\"cs-nemsis-codes-2813001\"> </a></td><td>Critical (Red)</td></tr><tr><td style=\"white-space:nowrap\">2813003<a name=\"cs-nemsis-codes-2813003\"> </a></td><td>Emergent (Yellow)</td></tr><tr><td style=\"white-space:nowrap\">2813005<a name=\"cs-nemsis-codes-2813005\"> </a></td><td>Lower Acuity (Green)</td></tr><tr><td style=\"white-space:nowrap\">2813007<a name=\"cs-nemsis-codes-2813007\"> </a></td><td>Dead without Resuscitation Efforts (Black)</td></tr><tr><td style=\"white-space:nowrap\">2813009<a name=\"cs-nemsis-codes-2813009\"> </a></td><td>Non-Acute/Routine</td></tr><tr><td style=\"white-space:nowrap\">2820001<a name=\"cs-nemsis-codes-2820001\"> </a></td><td>Cardiac Specialty</td></tr><tr><td style=\"white-space:nowrap\">2820003<a name=\"cs-nemsis-codes-2820003\"> </a></td><td>Convenience Transfer (Patient Request)</td></tr><tr><td style=\"white-space:nowrap\">2820005<a name=\"cs-nemsis-codes-2820005\"> </a></td><td>Diagnostic Testing</td></tr><tr><td style=\"white-space:nowrap\">2820007<a name=\"cs-nemsis-codes-2820007\"> </a></td><td>Dialysis</td></tr><tr><td style=\"white-space:nowrap\">2820009<a name=\"cs-nemsis-codes-2820009\"> </a></td><td>Drug and/or Alcohol Rehabilitation Care</td></tr><tr><td style=\"white-space:nowrap\">2820011<a name=\"cs-nemsis-codes-2820011\"> </a></td><td>Extended Care</td></tr><tr><td style=\"white-space:nowrap\">2820013<a name=\"cs-nemsis-codes-2820013\"> </a></td><td>Maternal/Neonatal</td></tr><tr><td style=\"white-space:nowrap\">2820015<a name=\"cs-nemsis-codes-2820015\"> </a></td><td>Medical Specialty Care (Other, Not Listed)</td></tr><tr><td style=\"white-space:nowrap\">2820017<a name=\"cs-nemsis-codes-2820017\"> </a></td><td>Neurological Specialty Care</td></tr><tr><td style=\"white-space:nowrap\">2820019<a name=\"cs-nemsis-codes-2820019\"> </a></td><td>Palliative/Hospice Care (Home or Facility)</td></tr><tr><td style=\"white-space:nowrap\">2820021<a name=\"cs-nemsis-codes-2820021\"> </a></td><td>Pediatric Specialty Care</td></tr><tr><td style=\"white-space:nowrap\">2820023<a name=\"cs-nemsis-codes-2820023\"> </a></td><td>Psychiatric/Behavioral Care</td></tr><tr><td style=\"white-space:nowrap\">2820025<a name=\"cs-nemsis-codes-2820025\"> </a></td><td>Physical Rehabilitation Care</td></tr><tr><td style=\"white-space:nowrap\">2820027<a name=\"cs-nemsis-codes-2820027\"> </a></td><td>Return to Home/Residence</td></tr><tr><td style=\"white-space:nowrap\">2820029<a name=\"cs-nemsis-codes-2820029\"> </a></td><td>Surgical Specialty Care (Other, Not Listed)</td></tr><tr><td style=\"white-space:nowrap\">2820031<a name=\"cs-nemsis-codes-2820031\"> </a></td><td>Trauma/Orthopedic Specialty Care</td></tr><tr><td style=\"white-space:nowrap\">3101001<a name=\"cs-nemsis-codes-3101001\"> </a></td><td>Cultural, Custom, Religious</td></tr><tr><td style=\"white-space:nowrap\">3101003<a name=\"cs-nemsis-codes-3101003\"> </a></td><td>Developmentally Impaired</td></tr><tr><td style=\"white-space:nowrap\">3101005<a name=\"cs-nemsis-codes-3101005\"> </a></td><td>Hearing Impaired</td></tr><tr><td style=\"white-space:nowrap\">3101007<a name=\"cs-nemsis-codes-3101007\"> </a></td><td>Language</td></tr><tr><td style=\"white-space:nowrap\">3101009<a name=\"cs-nemsis-codes-3101009\"> </a></td><td>None Noted</td></tr><tr><td style=\"white-space:nowrap\">3101011<a name=\"cs-nemsis-codes-3101011\"> </a></td><td>Obesity</td></tr><tr><td style=\"white-space:nowrap\">3101013<a name=\"cs-nemsis-codes-3101013\"> </a></td><td>Physical Barrier (Unable to Access Patient)</td></tr><tr><td style=\"white-space:nowrap\">3101015<a name=\"cs-nemsis-codes-3101015\"> </a></td><td>Physically Impaired</td></tr><tr><td style=\"white-space:nowrap\">3101017<a name=\"cs-nemsis-codes-3101017\"> </a></td><td>Physically Restrained</td></tr><tr><td style=\"white-space:nowrap\">3101019<a name=\"cs-nemsis-codes-3101019\"> </a></td><td>Psychologically Impaired</td></tr><tr><td style=\"white-space:nowrap\">3101021<a name=\"cs-nemsis-codes-3101021\"> </a></td><td>Sight Impaired</td></tr><tr><td style=\"white-space:nowrap\">3101023<a name=\"cs-nemsis-codes-3101023\"> </a></td><td>Speech Impaired</td></tr><tr><td style=\"white-space:nowrap\">3101025<a name=\"cs-nemsis-codes-3101025\"> </a></td><td>Unattended or Unsupervised (including minors)</td></tr><tr><td style=\"white-space:nowrap\">3101027<a name=\"cs-nemsis-codes-3101027\"> </a></td><td>Unconscious</td></tr><tr><td style=\"white-space:nowrap\">3101029<a name=\"cs-nemsis-codes-3101029\"> </a></td><td>Uncooperative</td></tr><tr><td style=\"white-space:nowrap\">3101031<a name=\"cs-nemsis-codes-3101031\"> </a></td><td>State of Emotional Distress</td></tr><tr><td style=\"white-space:nowrap\">3101033<a name=\"cs-nemsis-codes-3101033\"> </a></td><td>Alcohol Use, Suspected</td></tr><tr><td style=\"white-space:nowrap\">3101035<a name=\"cs-nemsis-codes-3101035\"> </a></td><td>Drug Use, Suspected</td></tr><tr><td style=\"white-space:nowrap\">4303001<a name=\"cs-nemsis-codes-4303001\"> </a></td><td>Disaster Tag</td></tr><tr><td style=\"white-space:nowrap\">4303003<a name=\"cs-nemsis-codes-4303003\"> </a></td><td>Fire Incident Report</td></tr><tr><td style=\"white-space:nowrap\">4303005<a name=\"cs-nemsis-codes-4303005\"> </a></td><td>Hospital-Receiving</td></tr><tr><td style=\"white-space:nowrap\">4303007<a name=\"cs-nemsis-codes-4303007\"> </a></td><td>Hospital-Transferring</td></tr><tr><td style=\"white-space:nowrap\">4303009<a name=\"cs-nemsis-codes-4303009\"> </a></td><td>Law Enforcement Report</td></tr><tr><td style=\"white-space:nowrap\">4303011<a name=\"cs-nemsis-codes-4303011\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4303013<a name=\"cs-nemsis-codes-4303013\"> </a></td><td>Other Registry</td></tr><tr><td style=\"white-space:nowrap\">4303015<a name=\"cs-nemsis-codes-4303015\"> </a></td><td>Other Report</td></tr><tr><td style=\"white-space:nowrap\">4303017<a name=\"cs-nemsis-codes-4303017\"> </a></td><td>Patient ID</td></tr><tr><td style=\"white-space:nowrap\">4303019<a name=\"cs-nemsis-codes-4303019\"> </a></td><td>Prior EMS Patient Care Report</td></tr><tr><td style=\"white-space:nowrap\">4303021<a name=\"cs-nemsis-codes-4303021\"> </a></td><td>STEMI Registry</td></tr><tr><td style=\"white-space:nowrap\">4303023<a name=\"cs-nemsis-codes-4303023\"> </a></td><td>Stroke Registry</td></tr><tr><td style=\"white-space:nowrap\">4303025<a name=\"cs-nemsis-codes-4303025\"> </a></td><td>Trauma Registry</td></tr><tr><td style=\"white-space:nowrap\">1404001<a name=\"cs-nemsis-codes-1404001\"> </a></td><td>Ambulance</td></tr><tr><td style=\"white-space:nowrap\">1404003<a name=\"cs-nemsis-codes-1404003\"> </a></td><td>ATV</td></tr><tr><td style=\"white-space:nowrap\">1404005<a name=\"cs-nemsis-codes-1404005\"> </a></td><td>Bicycle</td></tr><tr><td style=\"white-space:nowrap\">1404007<a name=\"cs-nemsis-codes-1404007\"> </a></td><td>Fire Apparatus</td></tr><tr><td style=\"white-space:nowrap\">1404009<a name=\"cs-nemsis-codes-1404009\"> </a></td><td>Fixed Wing</td></tr><tr><td style=\"white-space:nowrap\">1404011<a name=\"cs-nemsis-codes-1404011\"> </a></td><td>Motorcycle</td></tr><tr><td style=\"white-space:nowrap\">1404013<a name=\"cs-nemsis-codes-1404013\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">1404015<a name=\"cs-nemsis-codes-1404015\"> </a></td><td>Personal Vehicle</td></tr><tr><td style=\"white-space:nowrap\">1404017<a name=\"cs-nemsis-codes-1404017\"> </a></td><td>Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)</td></tr><tr><td style=\"white-space:nowrap\">1404019<a name=\"cs-nemsis-codes-1404019\"> </a></td><td>Rescue</td></tr><tr><td style=\"white-space:nowrap\">1404021<a name=\"cs-nemsis-codes-1404021\"> </a></td><td>Rotor Craft</td></tr><tr><td style=\"white-space:nowrap\">1404023<a name=\"cs-nemsis-codes-1404023\"> </a></td><td>Snow Vehicle</td></tr><tr><td style=\"white-space:nowrap\">1404025<a name=\"cs-nemsis-codes-1404025\"> </a></td><td>Watercraft</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.3" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISCodes"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS General Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "General NEMSIS enumeration codes for sections without a dedicated CodeSystem. Currently covers eHistory (eHistory.01 - Barriers to Patient Care). NEMSIS 3.5.1.251001CP2."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "126"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eResponse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Response" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eTimes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Times" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eScene" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Scene" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eSituation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Patient Situation" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eAirway" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Airway Management" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eArrest" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Cardiac Arrest" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eExam" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Physical Exam" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eLabs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Labs" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "section-eCrew" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Crew" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "911 Response (Scene) with Transport Capability" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "911 Response (Scene) without Transport Capability" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Air Medical" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ALS Intercept" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hazmat" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rescue" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community Paramedicine" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9920019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Critical Care (Ground)" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Advanced Emergency Medical Technician (AEMT)" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Technician - Intermediate" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Responder (EMR)" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Technician (EMT)" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paramedic" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physician" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Critical Care Paramedic" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community Paramedicine" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nurse Practitioner" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physician Assistant" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Licensed Practical Nurse (LPN)" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9917031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Registered Nurse" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1016001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mixed" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1016003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Volunteer" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1016005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Volunteer" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9912001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fire Department" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9912003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Governmental, Non-Fire" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9912005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hospital" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9912007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Private, Nonhospital" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9912009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tribal" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Driver/Pilot-Response" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Driver/Pilot-Transport" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Patient Caregiver-At Scene" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Patient Caregiver-Transport" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Primary Patient Caregiver-At Scene" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2403013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Primary Patient Caregiver-Transport" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2708001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Red - Immediate" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2708003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yellow - Delayed" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2708005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Green - Minimal (Minor)" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2708007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gray - Expectant" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2708009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Black - Deceased" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Behavioral/Psychiatric" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cardiovascular" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CNS/Neuro" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Endocrine/Metabolic" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "GI" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Global/General" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lymphatic/Immune" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Musculoskeletal/Skin" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reproductive" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pulmonary" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2808021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Renal" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2813001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Critical (Red)" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2813003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergent (Yellow)" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2813005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lower Acuity (Green)" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2813007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dead without Resuscitation Efforts (Black)" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2813009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Acute/Routine" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cardiac Specialty" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Convenience Transfer (Patient Request)" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diagnostic Testing" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dialysis" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drug and/or Alcohol Rehabilitation Care" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extended Care" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Maternal/Neonatal" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medical Specialty Care (Other, Not Listed)" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Neurological Specialty Care" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Palliative/Hospice Care (Home or Facility)" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pediatric Specialty Care" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Psychiatric/Behavioral Care" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physical Rehabilitation Care" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Return to Home/Residence" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Surgical Specialty Care (Other, Not Listed)" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2820031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma/Orthopedic Specialty Care" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cultural, Custom, Religious" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Developmentally Impaired" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hearing Impaired" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Language" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None Noted" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Obesity" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physical Barrier (Unable to Access Patient)" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physically Impaired" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physically Restrained" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Psychologically Impaired" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sight Impaired" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Speech Impaired" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unattended or Unsupervised (including minors)" ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unconscious" ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Uncooperative" ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "State of Emotional Distress" ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alcohol Use, Suspected" ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3101035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drug Use, Suspected" ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Disaster Tag" ]
+  ], [
+     fhir:index 101 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fire Incident Report" ]
+  ], [
+     fhir:index 102 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hospital-Receiving" ]
+  ], [
+     fhir:index 103 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hospital-Transferring" ]
+  ], [
+     fhir:index 104 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Law Enforcement Report" ]
+  ], [
+     fhir:index 105 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 106 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Registry" ]
+  ], [
+     fhir:index 107 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Report" ]
+  ], [
+     fhir:index 108 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient ID" ]
+  ], [
+     fhir:index 109 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Prior EMS Patient Care Report" ]
+  ], [
+     fhir:index 110 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI Registry" ]
+  ], [
+     fhir:index 111 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stroke Registry" ]
+  ], [
+     fhir:index 112 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4303025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma Registry" ]
+  ], [
+     fhir:index 113 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ambulance" ]
+  ], [
+     fhir:index 114 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ATV" ]
+  ], [
+     fhir:index 115 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bicycle" ]
+  ], [
+     fhir:index 116 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fire Apparatus" ]
+  ], [
+     fhir:index 117 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fixed Wing" ]
+  ], [
+     fhir:index 118 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Motorcycle" ]
+  ], [
+     fhir:index 119 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 120 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Personal Vehicle" ]
+  ], [
+     fhir:index 121 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)" ]
+  ], [
+     fhir:index 122 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rescue" ]
+  ], [
+     fhir:index 123 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotor Craft" ]
+  ], [
+     fhir:index 124 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Snow Vehicle" ]
+  ], [
+     fhir:index 125 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1404025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Watercraft" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

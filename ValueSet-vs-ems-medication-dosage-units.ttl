@@ -1,0 +1,177 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-dosage-units> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-medication-dosage-units"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-medication-dosage-units</b></p><a name=\"vs-ems-medication-dosage-units\"> </a><a name=\"hcvs-ems-medication-dosage-units\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-medications.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706001\">3706001</a></td><td>Grams (gms)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706003\">3706003</a></td><td>Inches (in)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706005\">3706005</a></td><td>International Units (IU)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706007\">3706007</a></td><td>Keep Vein Open (kvo)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706009\">3706009</a></td><td>Liters (l)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706013\">3706013</a></td><td>Metered Dose (MDI)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706015\">3706015</a></td><td>Micrograms (mcg)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706017\">3706017</a></td><td>Micrograms per Kilogram per Minute (mcg/kg/min)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706019\">3706019</a></td><td>Milliequivalents (mEq)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706021\">3706021</a></td><td>Milligrams (mg)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706023\">3706023</a></td><td>Milligrams per Kilogram Per Minute (mg/kg/min)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706025\">3706025</a></td><td>Milliliters (ml)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706027\">3706027</a></td><td>Milliliters per Hour (ml/hr)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706029\">3706029</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706031\">3706031</a></td><td>Centimeters (cm)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706033\">3706033</a></td><td>Drops (gtts)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706035\">3706035</a></td><td>Liters Per Minute (LPM [gas])</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706037\">3706037</a></td><td>Micrograms per Minute (mcg/min)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706039\">3706039</a></td><td>Milligrams per Kilogram (mg/kg)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706041\">3706041</a></td><td>Milligrams per Minute (mg/min)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706043\">3706043</a></td><td>Puffs</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706045\">3706045</a></td><td>Units per Hour (units/hr)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706047\">3706047</a></td><td>Micrograms per Kilogram (mcg/kg)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706049\">3706049</a></td><td>Units</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706051\">3706051</a></td><td>Units per Kilogram per Hour (units/kg/hr)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706053\">3706053</a></td><td>Units per Kilogram (units/kg)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-medications.html#cs-nemsis-medications-3706055\">3706055</a></td><td>Milligrams per Hour (mg/hr)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-dosage-units"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.86" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSMedicationDosageUnitsVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Medication Dosage Units"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eMedications.06 - Units of measurement for medication dosage."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Grams (gms)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inches (in)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "International Units (IU)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Keep Vein Open (kvo)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liters (l)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metered Dose (MDI)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Micrograms (mcg)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Micrograms per Kilogram per Minute (mcg/kg/min)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milliequivalents (mEq)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milligrams (mg)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milligrams per Kilogram Per Minute (mg/kg/min)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milliliters (ml)" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milliliters per Hour (ml/hr)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Centimeters (cm)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drops (gtts)" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liters Per Minute (LPM [gas])" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Micrograms per Minute (mcg/min)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milligrams per Kilogram (mg/kg)" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milligrams per Minute (mg/min)" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puffs" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Units per Hour (units/hr)" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Micrograms per Kilogram (mcg/kg)" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Units" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Units per Kilogram per Hour (units/kg/hr)" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706053" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Units per Kilogram (units/kg)" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3706055" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Milligrams per Hour (mg/hr)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-medication-dosage-units.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

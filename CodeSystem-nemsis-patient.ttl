@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "nemsis-patient"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nemsis-patient</b></p><a name=\"nemsis-patient\"> </a><a name=\"hcnemsis-patient\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">9919001<a name=\"nemsis-patient-9919001\"> </a></td><td>Female</td><td>NEMSIS ePatient.25: Female sex as documented at the time of the EMS encounter.</td></tr><tr><td style=\"white-space:nowrap\">9919003<a name=\"nemsis-patient-9919003\"> </a></td><td>Male</td><td>NEMSIS ePatient.25: Male sex as documented at the time of the EMS encounter.</td></tr><tr><td style=\"white-space:nowrap\">9919005<a name=\"nemsis-patient-9919005\"> </a></td><td>Unknown</td><td>NEMSIS ePatient.25: Sex is unknown or unable to be determined.</td></tr><tr><td style=\"white-space:nowrap\">2516001<a name=\"nemsis-patient-2516001\"> </a></td><td>Days</td><td>NEMSIS ePatient.16: Patient age expressed in days.</td></tr><tr><td style=\"white-space:nowrap\">2516003<a name=\"nemsis-patient-2516003\"> </a></td><td>Hours</td><td>NEMSIS ePatient.16: Patient age expressed in hours.</td></tr><tr><td style=\"white-space:nowrap\">2516005<a name=\"nemsis-patient-2516005\"> </a></td><td>Minutes</td><td>NEMSIS ePatient.16: Patient age expressed in minutes.</td></tr><tr><td style=\"white-space:nowrap\">2516007<a name=\"nemsis-patient-2516007\"> </a></td><td>Months</td><td>NEMSIS ePatient.16: Patient age expressed in months.</td></tr><tr><td style=\"white-space:nowrap\">2516009<a name=\"nemsis-patient-2516009\"> </a></td><td>Years</td><td>NEMSIS ePatient.16: Patient age expressed in years.</td></tr><tr><td style=\"white-space:nowrap\">2522001<a name=\"nemsis-patient-2522001\"> </a></td><td>Homeless</td><td>NEMSIS ePatient.22: Patient's primary residence is a shelter, street, or other location without permanent housing.</td></tr><tr><td style=\"white-space:nowrap\">2522003<a name=\"nemsis-patient-2522003\"> </a></td><td>Migrant Worker</td><td>NEMSIS ePatient.22: Patient is a migrant worker without a fixed permanent address.</td></tr><tr><td style=\"white-space:nowrap\">2522005<a name=\"nemsis-patient-2522005\"> </a></td><td>Foreign Visitor</td><td>NEMSIS ePatient.22: Patient is a visitor from a foreign country without a US home address.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.17" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISPatientCodes"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS ePatient Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS 3.5.1.251001CP2 ePatient section.\nIncludes codes for Sex (ePatient.25), Age Units (ePatient.16),\nand Alternate Home Residence (ePatient.22).\nRace codes (ePatient.14) are mapped to OMB/CDC categories used in us-core-race."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9919001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Female" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.25: Female sex as documented at the time of the EMS encounter." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9919003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Male" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.25: Male sex as documented at the time of the EMS encounter." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9919005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.25: Sex is unknown or unable to be determined." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2516001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Days" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.16: Patient age expressed in days." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2516003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hours" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.16: Patient age expressed in hours." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2516005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Minutes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.16: Patient age expressed in minutes." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2516007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Months" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.16: Patient age expressed in months." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2516009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Years" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.16: Patient age expressed in years." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2522001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Homeless" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.22: Patient's primary residence is a shelter, street, or other location without permanent housing." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2522003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Migrant Worker" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.22: Patient is a migrant worker without a fixed permanent address." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2522005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Foreign Visitor" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "NEMSIS ePatient.22: Patient is a visitor from a foreign country without a US home address." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

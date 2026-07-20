@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-practitionerrole"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole ex-ems-practitionerrole</b></p><a name="ex-ems-practitionerrole"> </a><a name="hcex-ems-practitionerrole"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-practitionerrole.html">EMS PractitionerRole</a></p></div><p><b>EMS Certification Level</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level 9925007}">Paramedic</span></p><p><b>identifier</b>: <code>http://example.org/ems/crew</code>/CR-2026-0042-1</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></p><p><b>organization</b>: <a href="Organization-ex-ems-organization-agency.html">Organization Riverside County EMS Agency</a></p><p><b>code</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 2403011}">Primary Patient Caregiver-At Scene</span></p><p><b>telecom</b>: ph: 951-555-0142(Work)</p></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-certification-level">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level"/>
+        <code value="9925007"/>
+        <display value="Paramedic"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://example.org/ems/crew"/>
+    <value value="CR-2026-0042-1"/>
+  </identifier>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/ex-ems-practitioner"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/ex-ems-organization-agency"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes"/>
+      <code value="2403011"/>
+      <display value="Primary Patient Caregiver-At Scene"/>
+    </coding>
+  </code>
+  <telecom>
+    <system value="phone"/>
+    <value value="951-555-0142"/>
+    <use value="work"/>
+  </telecom>
+</PractitionerRole>

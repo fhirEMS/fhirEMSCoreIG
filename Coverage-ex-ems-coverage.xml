@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-coverage"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-coverage"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Coverage ex-ems-coverage</b></p><a name="ex-ems-coverage"> </a><a name="hcex-ems-coverage"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-coverage.html">EMS Coverage (Insurance)</a></p></div><p><b>EMS Payer Type</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type MB}">Medicare Part B</span></p><p><b>status</b>: Active</p><p><b>subscriber</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>subscriberId</b>: 1EG4-TE5-MK72</p><p><b>beneficiary</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>relationship</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2622001}">Self</span></p><p><b>payor</b>: Centers for Medicare &amp; Medicaid Services (Identifier: <a href="http://terminology.hl7.org/5.5.0/NamingSystem-npi.html" title="National Provider Identifier">United States National Provider Identifier</a>/1234000002)</p><p><b>order</b>: 1</p></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-payer-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type"/>
+        <code value="MB"/>
+        <display value="Medicare Part B"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <subscriber>
+    <reference value="Patient/ex-ems-patient"/>
+  </subscriber>
+  <subscriberId value="1EG4-TE5-MK72"/>
+  <beneficiary>
+    <reference value="Patient/ex-ems-patient"/>
+  </beneficiary>
+  <relationship>
+    <coding>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+      <code value="2622001"/>
+      <display value="Self"/>
+    </coding>
+  </relationship>
+  <payor>
+    <identifier>
+      <system value="http://hl7.org/fhir/sid/us-npi"/>
+      <value value="1234000002"/>
+    </identifier>
+    <display value="Centers for Medicare &amp; Medicaid Services"/>
+  </payor>
+  <order value="1"/>
+</Coverage>

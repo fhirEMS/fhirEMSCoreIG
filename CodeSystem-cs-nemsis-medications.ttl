@@ -1,0 +1,818 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-medications"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-medications</b></p><a name=\"cs-nemsis-medications\"> </a><a name=\"hccs-nemsis-medications\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">9905001<a name=\"cs-nemsis-medications-9905001\"> </a></td><td>Advanced Emergency Medical Technician (AEMT)</td></tr><tr><td style=\"white-space:nowrap\">9905002<a name=\"cs-nemsis-medications-9905002\"> </a></td><td>Emergency Medical Technician - Intermediate</td></tr><tr><td style=\"white-space:nowrap\">9905003<a name=\"cs-nemsis-medications-9905003\"> </a></td><td>Emergency Medical Responder (EMR)</td></tr><tr><td style=\"white-space:nowrap\">9905005<a name=\"cs-nemsis-medications-9905005\"> </a></td><td>Emergency Medical Technician (EMT)</td></tr><tr><td style=\"white-space:nowrap\">9905007<a name=\"cs-nemsis-medications-9905007\"> </a></td><td>Paramedic</td></tr><tr><td style=\"white-space:nowrap\">9905019<a name=\"cs-nemsis-medications-9905019\"> </a></td><td>Other Healthcare Professional</td></tr><tr><td style=\"white-space:nowrap\">9905021<a name=\"cs-nemsis-medications-9905021\"> </a></td><td>Other Non-Healthcare Professional</td></tr><tr><td style=\"white-space:nowrap\">9905025<a name=\"cs-nemsis-medications-9905025\"> </a></td><td>Physician</td></tr><tr><td style=\"white-space:nowrap\">9905027<a name=\"cs-nemsis-medications-9905027\"> </a></td><td>Respiratory Therapist</td></tr><tr><td style=\"white-space:nowrap\">9905029<a name=\"cs-nemsis-medications-9905029\"> </a></td><td>Student</td></tr><tr><td style=\"white-space:nowrap\">9905031<a name=\"cs-nemsis-medications-9905031\"> </a></td><td>Critical Care Paramedic</td></tr><tr><td style=\"white-space:nowrap\">9905033<a name=\"cs-nemsis-medications-9905033\"> </a></td><td>Community Paramedicine</td></tr><tr><td style=\"white-space:nowrap\">9905035<a name=\"cs-nemsis-medications-9905035\"> </a></td><td>Nurse Practitioner</td></tr><tr><td style=\"white-space:nowrap\">9905037<a name=\"cs-nemsis-medications-9905037\"> </a></td><td>Physician Assistant</td></tr><tr><td style=\"white-space:nowrap\">9905039<a name=\"cs-nemsis-medications-9905039\"> </a></td><td>Licensed Practical Nurse (LPN)</td></tr><tr><td style=\"white-space:nowrap\">9905041<a name=\"cs-nemsis-medications-9905041\"> </a></td><td>Registered Nurse</td></tr><tr><td style=\"white-space:nowrap\">9905043<a name=\"cs-nemsis-medications-9905043\"> </a></td><td>Patient</td></tr><tr><td style=\"white-space:nowrap\">9905045<a name=\"cs-nemsis-medications-9905045\"> </a></td><td>Lay Person</td></tr><tr><td style=\"white-space:nowrap\">9905047<a name=\"cs-nemsis-medications-9905047\"> </a></td><td>Law Enforcement</td></tr><tr><td style=\"white-space:nowrap\">9905049<a name=\"cs-nemsis-medications-9905049\"> </a></td><td>Family Member</td></tr><tr><td style=\"white-space:nowrap\">9905051<a name=\"cs-nemsis-medications-9905051\"> </a></td><td>Fire Personnel (non EMS)</td></tr><tr><td style=\"white-space:nowrap\">9916001<a name=\"cs-nemsis-medications-9916001\"> </a></td><td>Improved</td></tr><tr><td style=\"white-space:nowrap\">9916003<a name=\"cs-nemsis-medications-9916003\"> </a></td><td>Unchanged</td></tr><tr><td style=\"white-space:nowrap\">9916005<a name=\"cs-nemsis-medications-9916005\"> </a></td><td>Worse</td></tr><tr><td style=\"white-space:nowrap\">9918001<a name=\"cs-nemsis-medications-9918001\"> </a></td><td>On-Line (Remote Verbal Order)</td></tr><tr><td style=\"white-space:nowrap\">9918003<a name=\"cs-nemsis-medications-9918003\"> </a></td><td>On-Scene</td></tr><tr><td style=\"white-space:nowrap\">9918005<a name=\"cs-nemsis-medications-9918005\"> </a></td><td>Protocol (Standing Order)</td></tr><tr><td style=\"white-space:nowrap\">9918007<a name=\"cs-nemsis-medications-9918007\"> </a></td><td>Written Orders (Patient Specific)</td></tr><tr><td style=\"white-space:nowrap\">9923001<a name=\"cs-nemsis-medications-9923001\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">9923003<a name=\"cs-nemsis-medications-9923003\"> </a></td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\">9927001<a name=\"cs-nemsis-medications-9927001\"> </a></td><td>Blow-By</td></tr><tr><td style=\"white-space:nowrap\">9927003<a name=\"cs-nemsis-medications-9927003\"> </a></td><td>Buccal</td></tr><tr><td style=\"white-space:nowrap\">9927005<a name=\"cs-nemsis-medications-9927005\"> </a></td><td>Endotracheal Tube (ET)</td></tr><tr><td style=\"white-space:nowrap\">9927007<a name=\"cs-nemsis-medications-9927007\"> </a></td><td>Gastrostomy Tube</td></tr><tr><td style=\"white-space:nowrap\">9927009<a name=\"cs-nemsis-medications-9927009\"> </a></td><td>Inhalation</td></tr><tr><td style=\"white-space:nowrap\">9927011<a name=\"cs-nemsis-medications-9927011\"> </a></td><td>Intraarterial</td></tr><tr><td style=\"white-space:nowrap\">9927013<a name=\"cs-nemsis-medications-9927013\"> </a></td><td>Intradermal</td></tr><tr><td style=\"white-space:nowrap\">9927015<a name=\"cs-nemsis-medications-9927015\"> </a></td><td>Intramuscular (IM)</td></tr><tr><td style=\"white-space:nowrap\">9927017<a name=\"cs-nemsis-medications-9927017\"> </a></td><td>Intranasal</td></tr><tr><td style=\"white-space:nowrap\">9927019<a name=\"cs-nemsis-medications-9927019\"> </a></td><td>Intraocular</td></tr><tr><td style=\"white-space:nowrap\">9927021<a name=\"cs-nemsis-medications-9927021\"> </a></td><td>Intraosseous (IO)</td></tr><tr><td style=\"white-space:nowrap\">9927023<a name=\"cs-nemsis-medications-9927023\"> </a></td><td>Intravenous (IV)</td></tr><tr><td style=\"white-space:nowrap\">9927025<a name=\"cs-nemsis-medications-9927025\"> </a></td><td>Nasal Cannula</td></tr><tr><td style=\"white-space:nowrap\">9927027<a name=\"cs-nemsis-medications-9927027\"> </a></td><td>Nasogastric</td></tr><tr><td style=\"white-space:nowrap\">9927029<a name=\"cs-nemsis-medications-9927029\"> </a></td><td>Nasotracheal Tube</td></tr><tr><td style=\"white-space:nowrap\">9927031<a name=\"cs-nemsis-medications-9927031\"> </a></td><td>Non-Rebreather Mask</td></tr><tr><td style=\"white-space:nowrap\">9927033<a name=\"cs-nemsis-medications-9927033\"> </a></td><td>Ophthalmic</td></tr><tr><td style=\"white-space:nowrap\">9927035<a name=\"cs-nemsis-medications-9927035\"> </a></td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\">9927037<a name=\"cs-nemsis-medications-9927037\"> </a></td><td>Other/miscellaneous</td></tr><tr><td style=\"white-space:nowrap\">9927039<a name=\"cs-nemsis-medications-9927039\"> </a></td><td>Otic</td></tr><tr><td style=\"white-space:nowrap\">9927041<a name=\"cs-nemsis-medications-9927041\"> </a></td><td>Re-breather mask</td></tr><tr><td style=\"white-space:nowrap\">9927043<a name=\"cs-nemsis-medications-9927043\"> </a></td><td>Rectal</td></tr><tr><td style=\"white-space:nowrap\">9927045<a name=\"cs-nemsis-medications-9927045\"> </a></td><td>Subcutaneous</td></tr><tr><td style=\"white-space:nowrap\">9927047<a name=\"cs-nemsis-medications-9927047\"> </a></td><td>Sublingual</td></tr><tr><td style=\"white-space:nowrap\">9927049<a name=\"cs-nemsis-medications-9927049\"> </a></td><td>Topical</td></tr><tr><td style=\"white-space:nowrap\">9927051<a name=\"cs-nemsis-medications-9927051\"> </a></td><td>Tracheostomy</td></tr><tr><td style=\"white-space:nowrap\">9927053<a name=\"cs-nemsis-medications-9927053\"> </a></td><td>Transdermal</td></tr><tr><td style=\"white-space:nowrap\">9927055<a name=\"cs-nemsis-medications-9927055\"> </a></td><td>Urethral</td></tr><tr><td style=\"white-space:nowrap\">9927057<a name=\"cs-nemsis-medications-9927057\"> </a></td><td>Ventimask</td></tr><tr><td style=\"white-space:nowrap\">9927059<a name=\"cs-nemsis-medications-9927059\"> </a></td><td>Wound</td></tr><tr><td style=\"white-space:nowrap\">9927061<a name=\"cs-nemsis-medications-9927061\"> </a></td><td>Portacath</td></tr><tr><td style=\"white-space:nowrap\">9927063<a name=\"cs-nemsis-medications-9927063\"> </a></td><td>Auto Injector</td></tr><tr><td style=\"white-space:nowrap\">9927065<a name=\"cs-nemsis-medications-9927065\"> </a></td><td>BVM</td></tr><tr><td style=\"white-space:nowrap\">9927067<a name=\"cs-nemsis-medications-9927067\"> </a></td><td>CPAP</td></tr><tr><td style=\"white-space:nowrap\">9927069<a name=\"cs-nemsis-medications-9927069\"> </a></td><td>IV Pump</td></tr><tr><td style=\"white-space:nowrap\">9927071<a name=\"cs-nemsis-medications-9927071\"> </a></td><td>Nebulizer</td></tr><tr><td style=\"white-space:nowrap\">9927073<a name=\"cs-nemsis-medications-9927073\"> </a></td><td>Umbilical Artery Catheter</td></tr><tr><td style=\"white-space:nowrap\">9927075<a name=\"cs-nemsis-medications-9927075\"> </a></td><td>Umbilical Venous Catheter</td></tr><tr><td style=\"white-space:nowrap\">3706001<a name=\"cs-nemsis-medications-3706001\"> </a></td><td>Grams (gms)</td></tr><tr><td style=\"white-space:nowrap\">3706003<a name=\"cs-nemsis-medications-3706003\"> </a></td><td>Inches (in)</td></tr><tr><td style=\"white-space:nowrap\">3706005<a name=\"cs-nemsis-medications-3706005\"> </a></td><td>International Units (IU)</td></tr><tr><td style=\"white-space:nowrap\">3706007<a name=\"cs-nemsis-medications-3706007\"> </a></td><td>Keep Vein Open (kvo)</td></tr><tr><td style=\"white-space:nowrap\">3706009<a name=\"cs-nemsis-medications-3706009\"> </a></td><td>Liters (l)</td></tr><tr><td style=\"white-space:nowrap\">3706013<a name=\"cs-nemsis-medications-3706013\"> </a></td><td>Metered Dose (MDI)</td></tr><tr><td style=\"white-space:nowrap\">3706015<a name=\"cs-nemsis-medications-3706015\"> </a></td><td>Micrograms (mcg)</td></tr><tr><td style=\"white-space:nowrap\">3706017<a name=\"cs-nemsis-medications-3706017\"> </a></td><td>Micrograms per Kilogram per Minute (mcg/kg/min)</td></tr><tr><td style=\"white-space:nowrap\">3706019<a name=\"cs-nemsis-medications-3706019\"> </a></td><td>Milliequivalents (mEq)</td></tr><tr><td style=\"white-space:nowrap\">3706021<a name=\"cs-nemsis-medications-3706021\"> </a></td><td>Milligrams (mg)</td></tr><tr><td style=\"white-space:nowrap\">3706023<a name=\"cs-nemsis-medications-3706023\"> </a></td><td>Milligrams per Kilogram Per Minute (mg/kg/min)</td></tr><tr><td style=\"white-space:nowrap\">3706025<a name=\"cs-nemsis-medications-3706025\"> </a></td><td>Milliliters (ml)</td></tr><tr><td style=\"white-space:nowrap\">3706027<a name=\"cs-nemsis-medications-3706027\"> </a></td><td>Milliliters per Hour (ml/hr)</td></tr><tr><td style=\"white-space:nowrap\">3706029<a name=\"cs-nemsis-medications-3706029\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3706031<a name=\"cs-nemsis-medications-3706031\"> </a></td><td>Centimeters (cm)</td></tr><tr><td style=\"white-space:nowrap\">3706033<a name=\"cs-nemsis-medications-3706033\"> </a></td><td>Drops (gtts)</td></tr><tr><td style=\"white-space:nowrap\">3706035<a name=\"cs-nemsis-medications-3706035\"> </a></td><td>Liters Per Minute (LPM [gas])</td></tr><tr><td style=\"white-space:nowrap\">3706037<a name=\"cs-nemsis-medications-3706037\"> </a></td><td>Micrograms per Minute (mcg/min)</td></tr><tr><td style=\"white-space:nowrap\">3706039<a name=\"cs-nemsis-medications-3706039\"> </a></td><td>Milligrams per Kilogram (mg/kg)</td></tr><tr><td style=\"white-space:nowrap\">3706041<a name=\"cs-nemsis-medications-3706041\"> </a></td><td>Milligrams per Minute (mg/min)</td></tr><tr><td style=\"white-space:nowrap\">3706043<a name=\"cs-nemsis-medications-3706043\"> </a></td><td>Puffs</td></tr><tr><td style=\"white-space:nowrap\">3706045<a name=\"cs-nemsis-medications-3706045\"> </a></td><td>Units per Hour (units/hr)</td></tr><tr><td style=\"white-space:nowrap\">3706047<a name=\"cs-nemsis-medications-3706047\"> </a></td><td>Micrograms per Kilogram (mcg/kg)</td></tr><tr><td style=\"white-space:nowrap\">3706049<a name=\"cs-nemsis-medications-3706049\"> </a></td><td>Units</td></tr><tr><td style=\"white-space:nowrap\">3706051<a name=\"cs-nemsis-medications-3706051\"> </a></td><td>Units per Kilogram per Hour (units/kg/hr)</td></tr><tr><td style=\"white-space:nowrap\">3706053<a name=\"cs-nemsis-medications-3706053\"> </a></td><td>Units per Kilogram (units/kg)</td></tr><tr><td style=\"white-space:nowrap\">3706055<a name=\"cs-nemsis-medications-3706055\"> </a></td><td>Milligrams per Hour (mg/hr)</td></tr><tr><td style=\"white-space:nowrap\">3708001<a name=\"cs-nemsis-medications-3708001\"> </a></td><td>Altered Mental Status</td></tr><tr><td style=\"white-space:nowrap\">3708003<a name=\"cs-nemsis-medications-3708003\"> </a></td><td>Apnea</td></tr><tr><td style=\"white-space:nowrap\">3708005<a name=\"cs-nemsis-medications-3708005\"> </a></td><td>Bleeding</td></tr><tr><td style=\"white-space:nowrap\">3708007<a name=\"cs-nemsis-medications-3708007\"> </a></td><td>Bradycardia</td></tr><tr><td style=\"white-space:nowrap\">3708009<a name=\"cs-nemsis-medications-3708009\"> </a></td><td>Bradypnea</td></tr><tr><td style=\"white-space:nowrap\">3708011<a name=\"cs-nemsis-medications-3708011\"> </a></td><td>Diarrhea</td></tr><tr><td style=\"white-space:nowrap\">3708013<a name=\"cs-nemsis-medications-3708013\"> </a></td><td>Extravasation</td></tr><tr><td style=\"white-space:nowrap\">3708015<a name=\"cs-nemsis-medications-3708015\"> </a></td><td>Hypertension</td></tr><tr><td style=\"white-space:nowrap\">3708017<a name=\"cs-nemsis-medications-3708017\"> </a></td><td>Hyperthermia</td></tr><tr><td style=\"white-space:nowrap\">3708019<a name=\"cs-nemsis-medications-3708019\"> </a></td><td>Hypotension</td></tr><tr><td style=\"white-space:nowrap\">3708021<a name=\"cs-nemsis-medications-3708021\"> </a></td><td>Hypothermia</td></tr><tr><td style=\"white-space:nowrap\">3708023<a name=\"cs-nemsis-medications-3708023\"> </a></td><td>Hypoxia</td></tr><tr><td style=\"white-space:nowrap\">3708025<a name=\"cs-nemsis-medications-3708025\"> </a></td><td>Injury</td></tr><tr><td style=\"white-space:nowrap\">3708029<a name=\"cs-nemsis-medications-3708029\"> </a></td><td>Nausea</td></tr><tr><td style=\"white-space:nowrap\">3708031<a name=\"cs-nemsis-medications-3708031\"> </a></td><td>None</td></tr><tr><td style=\"white-space:nowrap\">3708033<a name=\"cs-nemsis-medications-3708033\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3708035<a name=\"cs-nemsis-medications-3708035\"> </a></td><td>Respiratory Distress</td></tr><tr><td style=\"white-space:nowrap\">3708037<a name=\"cs-nemsis-medications-3708037\"> </a></td><td>Tachycardia</td></tr><tr><td style=\"white-space:nowrap\">3708039<a name=\"cs-nemsis-medications-3708039\"> </a></td><td>Tachypnea</td></tr><tr><td style=\"white-space:nowrap\">3708041<a name=\"cs-nemsis-medications-3708041\"> </a></td><td>Vomiting</td></tr><tr><td style=\"white-space:nowrap\">3708043<a name=\"cs-nemsis-medications-3708043\"> </a></td><td>Itching</td></tr><tr><td style=\"white-space:nowrap\">3708045<a name=\"cs-nemsis-medications-3708045\"> </a></td><td>Urticaria</td></tr><tr><td style=\"white-space:nowrap\">3907001<a name=\"cs-nemsis-medications-3907001\"> </a></td><td>Altered Mental Status</td></tr><tr><td style=\"white-space:nowrap\">3907003<a name=\"cs-nemsis-medications-3907003\"> </a></td><td>Apnea</td></tr><tr><td style=\"white-space:nowrap\">3907005<a name=\"cs-nemsis-medications-3907005\"> </a></td><td>Bleeding</td></tr><tr><td style=\"white-space:nowrap\">3907007<a name=\"cs-nemsis-medications-3907007\"> </a></td><td>Bradypnea</td></tr><tr><td style=\"white-space:nowrap\">3907009<a name=\"cs-nemsis-medications-3907009\"> </a></td><td>Diarrhea</td></tr><tr><td style=\"white-space:nowrap\">3907011<a name=\"cs-nemsis-medications-3907011\"> </a></td><td>Esophageal Intubation-immediately</td></tr><tr><td style=\"white-space:nowrap\">3907013<a name=\"cs-nemsis-medications-3907013\"> </a></td><td>Esophageal Intubation-other</td></tr><tr><td style=\"white-space:nowrap\">3907015<a name=\"cs-nemsis-medications-3907015\"> </a></td><td>Extravasation</td></tr><tr><td style=\"white-space:nowrap\">3907017<a name=\"cs-nemsis-medications-3907017\"> </a></td><td>Hypertension</td></tr><tr><td style=\"white-space:nowrap\">3907019<a name=\"cs-nemsis-medications-3907019\"> </a></td><td>Hyperthermia</td></tr><tr><td style=\"white-space:nowrap\">3907021<a name=\"cs-nemsis-medications-3907021\"> </a></td><td>Hypotension</td></tr><tr><td style=\"white-space:nowrap\">3907023<a name=\"cs-nemsis-medications-3907023\"> </a></td><td>Hypothermia</td></tr><tr><td style=\"white-space:nowrap\">3907025<a name=\"cs-nemsis-medications-3907025\"> </a></td><td>Hypoxia</td></tr><tr><td style=\"white-space:nowrap\">3907027<a name=\"cs-nemsis-medications-3907027\"> </a></td><td>Injury</td></tr><tr><td style=\"white-space:nowrap\">3907031<a name=\"cs-nemsis-medications-3907031\"> </a></td><td>Nausea</td></tr><tr><td style=\"white-space:nowrap\">3907033<a name=\"cs-nemsis-medications-3907033\"> </a></td><td>None</td></tr><tr><td style=\"white-space:nowrap\">3907035<a name=\"cs-nemsis-medications-3907035\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3907039<a name=\"cs-nemsis-medications-3907039\"> </a></td><td>Respiratory Distress</td></tr><tr><td style=\"white-space:nowrap\">3907041<a name=\"cs-nemsis-medications-3907041\"> </a></td><td>Tachycardia</td></tr><tr><td style=\"white-space:nowrap\">3907043<a name=\"cs-nemsis-medications-3907043\"> </a></td><td>Tachypnea</td></tr><tr><td style=\"white-space:nowrap\">3907045<a name=\"cs-nemsis-medications-3907045\"> </a></td><td>Vomiting</td></tr><tr><td style=\"white-space:nowrap\">3907047<a name=\"cs-nemsis-medications-3907047\"> </a></td><td>Bradycardia</td></tr><tr><td style=\"white-space:nowrap\">3907049<a name=\"cs-nemsis-medications-3907049\"> </a></td><td>Itching</td></tr><tr><td style=\"white-space:nowrap\">3907051<a name=\"cs-nemsis-medications-3907051\"> </a></td><td>Urticaria</td></tr><tr><td style=\"white-space:nowrap\">3913001<a name=\"cs-nemsis-medications-3913001\"> </a></td><td>Antecubital-Left</td></tr><tr><td style=\"white-space:nowrap\">3913003<a name=\"cs-nemsis-medications-3913003\"> </a></td><td>Antecubital-Right</td></tr><tr><td style=\"white-space:nowrap\">3913005<a name=\"cs-nemsis-medications-3913005\"> </a></td><td>External Jugular-Left</td></tr><tr><td style=\"white-space:nowrap\">3913007<a name=\"cs-nemsis-medications-3913007\"> </a></td><td>External Jugular-Right</td></tr><tr><td style=\"white-space:nowrap\">3913009<a name=\"cs-nemsis-medications-3913009\"> </a></td><td>Femoral-Left IV</td></tr><tr><td style=\"white-space:nowrap\">3913011<a name=\"cs-nemsis-medications-3913011\"> </a></td><td>Femoral-Right IV</td></tr><tr><td style=\"white-space:nowrap\">3913013<a name=\"cs-nemsis-medications-3913013\"> </a></td><td>Foot-Right</td></tr><tr><td style=\"white-space:nowrap\">3913015<a name=\"cs-nemsis-medications-3913015\"> </a></td><td>Foot-Left</td></tr><tr><td style=\"white-space:nowrap\">3913017<a name=\"cs-nemsis-medications-3913017\"> </a></td><td>Forearm-Left</td></tr><tr><td style=\"white-space:nowrap\">3913019<a name=\"cs-nemsis-medications-3913019\"> </a></td><td>Forearm-Right</td></tr><tr><td style=\"white-space:nowrap\">3913021<a name=\"cs-nemsis-medications-3913021\"> </a></td><td>Hand-Left</td></tr><tr><td style=\"white-space:nowrap\">3913023<a name=\"cs-nemsis-medications-3913023\"> </a></td><td>Hand-Right</td></tr><tr><td style=\"white-space:nowrap\">3913025<a name=\"cs-nemsis-medications-3913025\"> </a></td><td>Internal Jugular-Left</td></tr><tr><td style=\"white-space:nowrap\">3913027<a name=\"cs-nemsis-medications-3913027\"> </a></td><td>Internal Jugular-Right</td></tr><tr><td style=\"white-space:nowrap\">3913029<a name=\"cs-nemsis-medications-3913029\"> </a></td><td>IO-Iliac Crest-Left</td></tr><tr><td style=\"white-space:nowrap\">3913031<a name=\"cs-nemsis-medications-3913031\"> </a></td><td>IO-Iliac Crest-Right</td></tr><tr><td style=\"white-space:nowrap\">3913033<a name=\"cs-nemsis-medications-3913033\"> </a></td><td>IO-Femoral-Left Distal</td></tr><tr><td style=\"white-space:nowrap\">3913035<a name=\"cs-nemsis-medications-3913035\"> </a></td><td>IO-Femoral-Right Distal</td></tr><tr><td style=\"white-space:nowrap\">3913037<a name=\"cs-nemsis-medications-3913037\"> </a></td><td>IO-Humeral-Left</td></tr><tr><td style=\"white-space:nowrap\">3913039<a name=\"cs-nemsis-medications-3913039\"> </a></td><td>IO-Humeral-Right</td></tr><tr><td style=\"white-space:nowrap\">3913041<a name=\"cs-nemsis-medications-3913041\"> </a></td><td>IO-Tibia-Left Distal</td></tr><tr><td style=\"white-space:nowrap\">3913043<a name=\"cs-nemsis-medications-3913043\"> </a></td><td>IO-Sternum</td></tr><tr><td style=\"white-space:nowrap\">3913045<a name=\"cs-nemsis-medications-3913045\"> </a></td><td>IO-Tibia-Right Distal</td></tr><tr><td style=\"white-space:nowrap\">3913047<a name=\"cs-nemsis-medications-3913047\"> </a></td><td>IO-Tibia-Left Proximal</td></tr><tr><td style=\"white-space:nowrap\">3913049<a name=\"cs-nemsis-medications-3913049\"> </a></td><td>IO-Tibia-Right Proximal</td></tr><tr><td style=\"white-space:nowrap\">3913051<a name=\"cs-nemsis-medications-3913051\"> </a></td><td>Lower Extremity-Left</td></tr><tr><td style=\"white-space:nowrap\">3913053<a name=\"cs-nemsis-medications-3913053\"> </a></td><td>Lower Extremity-Right</td></tr><tr><td style=\"white-space:nowrap\">3913055<a name=\"cs-nemsis-medications-3913055\"> </a></td><td>Other Peripheral</td></tr><tr><td style=\"white-space:nowrap\">3913057<a name=\"cs-nemsis-medications-3913057\"> </a></td><td>Other Central (PICC, Portacath, etc.)</td></tr><tr><td style=\"white-space:nowrap\">3913059<a name=\"cs-nemsis-medications-3913059\"> </a></td><td>Scalp</td></tr><tr><td style=\"white-space:nowrap\">3913061<a name=\"cs-nemsis-medications-3913061\"> </a></td><td>Subclavian-Left</td></tr><tr><td style=\"white-space:nowrap\">3913063<a name=\"cs-nemsis-medications-3913063\"> </a></td><td>Subclavian-Right</td></tr><tr><td style=\"white-space:nowrap\">3913065<a name=\"cs-nemsis-medications-3913065\"> </a></td><td>Umbilical</td></tr><tr><td style=\"white-space:nowrap\">3913067<a name=\"cs-nemsis-medications-3913067\"> </a></td><td>Venous Cutdown-Left Lower Extremity</td></tr><tr><td style=\"white-space:nowrap\">3913069<a name=\"cs-nemsis-medications-3913069\"> </a></td><td>Venous Cutdown-Right Lower Extremity</td></tr><tr><td style=\"white-space:nowrap\">3913071<a name=\"cs-nemsis-medications-3913071\"> </a></td><td>Upper Arm-Left</td></tr><tr><td style=\"white-space:nowrap\">3913073<a name=\"cs-nemsis-medications-3913073\"> </a></td><td>Upper Arm-Right</td></tr><tr><td style=\"white-space:nowrap\">3913075<a name=\"cs-nemsis-medications-3913075\"> </a></td><td>Radial-Left</td></tr><tr><td style=\"white-space:nowrap\">3913077<a name=\"cs-nemsis-medications-3913077\"> </a></td><td>Radial-Right</td></tr><tr><td style=\"white-space:nowrap\">3913079<a name=\"cs-nemsis-medications-3913079\"> </a></td><td>Wrist-Left</td></tr><tr><td style=\"white-space:nowrap\">3913081<a name=\"cs-nemsis-medications-3913081\"> </a></td><td>Wrist-Right</td></tr><tr><td style=\"white-space:nowrap\">3914001<a name=\"cs-nemsis-medications-3914001\"> </a></td><td>Blind Digital Technique</td></tr><tr><td style=\"white-space:nowrap\">3914003<a name=\"cs-nemsis-medications-3914003\"> </a></td><td>Cross Finger Technique</td></tr><tr><td style=\"white-space:nowrap\">3914005<a name=\"cs-nemsis-medications-3914005\"> </a></td><td>Direct Laryngoscopy</td></tr><tr><td style=\"white-space:nowrap\">3914007<a name=\"cs-nemsis-medications-3914007\"> </a></td><td>Fiberoptic Laryngoscopy</td></tr><tr><td style=\"white-space:nowrap\">3914009<a name=\"cs-nemsis-medications-3914009\"> </a></td><td>Indirect Laryngoscopy</td></tr><tr><td style=\"white-space:nowrap\">3914011<a name=\"cs-nemsis-medications-3914011\"> </a></td><td>Video Laryngoscopy</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.8" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISMedications"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS Medications and Procedures Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes for the NEMSIS eMedications and eProcedures sections. Covers administration routes, dosage units, complications, vascular access locations, airway techniques, clinical response, authorization types, caregiver levels, and Yes/No values shared across both sections. NEMSIS 3.5.1.251001CP2."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "188"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Advanced Emergency Medical Technician (AEMT)" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Technician - Intermediate" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Responder (EMR)" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency Medical Technician (EMT)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paramedic" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Healthcare Professional" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Non-Healthcare Professional" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physician" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory Therapist" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Student" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Critical Care Paramedic" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community Paramedicine" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nurse Practitioner" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physician Assistant" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Licensed Practical Nurse (LPN)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Registered Nurse" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lay Person" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Law Enforcement" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Family Member" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9905051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fire Personnel (non EMS)" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9916001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Improved" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9916003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unchanged" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9916005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Worse" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9918001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "On-Line (Remote Verbal Order)" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9918003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "On-Scene" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9918005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Protocol (Standing Order)" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9918007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Written Orders (Patient Specific)" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9923001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9923003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blow-By" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Buccal" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheal Tube (ET)" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gastrostomy Tube" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intraarterial" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intradermal" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intramuscular (IM)" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intranasal" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intraocular" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intraosseous (IO)" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Intravenous (IV)" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal Cannula" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nasogastric" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nasotracheal Tube" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Rebreather Mask" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ophthalmic" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other/miscellaneous" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Otic" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Re-breather mask" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Subcutaneous" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Topical" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tracheostomy" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927053" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927055" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urethral" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927057" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventimask" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927059" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wound" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927061" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Portacath" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927063" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auto Injector" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927065" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BVM" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927067" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CPAP" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927069" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IV Pump" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927071" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nebulizer" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927073" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Umbilical Artery Catheter" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "9927075" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Umbilical Venous Catheter" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grams (gms)" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inches (in)" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "International Units (IU)" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Keep Vein Open (kvo)" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liters (l)" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metered Dose (MDI)" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms (mcg)" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms per Kilogram per Minute (mcg/kg/min)" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milliequivalents (mEq)" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams (mg)" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams per Kilogram Per Minute (mg/kg/min)" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milliliters (ml)" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milliliters per Hour (ml/hr)" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Centimeters (cm)" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drops (gtts)" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liters Per Minute (LPM [gas])" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms per Minute (mcg/min)" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams per Kilogram (mg/kg)" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams per Minute (mg/min)" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Puffs" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units per Hour (units/hr)" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Micrograms per Kilogram (mcg/kg)" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units per Kilogram per Hour (units/kg/hr)" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706053" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Units per Kilogram (units/kg)" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3706055" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Milligrams per Hour (mg/hr)" ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Altered Mental Status" ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Apnea" ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bleeding" ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bradycardia" ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bradypnea" ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diarrhea" ]
+  ], [
+     fhir:index 101 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extravasation" ]
+  ], [
+     fhir:index 102 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypertension" ]
+  ], [
+     fhir:index 103 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hyperthermia" ]
+  ], [
+     fhir:index 104 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypotension" ]
+  ], [
+     fhir:index 105 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypothermia" ]
+  ], [
+     fhir:index 106 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypoxia" ]
+  ], [
+     fhir:index 107 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Injury" ]
+  ], [
+     fhir:index 108 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nausea" ]
+  ], [
+     fhir:index 109 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None" ]
+  ], [
+     fhir:index 110 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 111 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory Distress" ]
+  ], [
+     fhir:index 112 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tachycardia" ]
+  ], [
+     fhir:index 113 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tachypnea" ]
+  ], [
+     fhir:index 114 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vomiting" ]
+  ], [
+     fhir:index 115 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Itching" ]
+  ], [
+     fhir:index 116 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3708045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urticaria" ]
+  ], [
+     fhir:index 117 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Altered Mental Status" ]
+  ], [
+     fhir:index 118 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Apnea" ]
+  ], [
+     fhir:index 119 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bleeding" ]
+  ], [
+     fhir:index 120 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bradypnea" ]
+  ], [
+     fhir:index 121 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diarrhea" ]
+  ], [
+     fhir:index 122 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Esophageal Intubation-immediately" ]
+  ], [
+     fhir:index 123 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Esophageal Intubation-other" ]
+  ], [
+     fhir:index 124 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extravasation" ]
+  ], [
+     fhir:index 125 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypertension" ]
+  ], [
+     fhir:index 126 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hyperthermia" ]
+  ], [
+     fhir:index 127 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypotension" ]
+  ], [
+     fhir:index 128 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypothermia" ]
+  ], [
+     fhir:index 129 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypoxia" ]
+  ], [
+     fhir:index 130 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Injury" ]
+  ], [
+     fhir:index 131 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nausea" ]
+  ], [
+     fhir:index 132 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None" ]
+  ], [
+     fhir:index 133 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 134 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory Distress" ]
+  ], [
+     fhir:index 135 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tachycardia" ]
+  ], [
+     fhir:index 136 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tachypnea" ]
+  ], [
+     fhir:index 137 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vomiting" ]
+  ], [
+     fhir:index 138 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bradycardia" ]
+  ], [
+     fhir:index 139 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Itching" ]
+  ], [
+     fhir:index 140 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3907051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urticaria" ]
+  ], [
+     fhir:index 141 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antecubital-Left" ]
+  ], [
+     fhir:index 142 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antecubital-Right" ]
+  ], [
+     fhir:index 143 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "External Jugular-Left" ]
+  ], [
+     fhir:index 144 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "External Jugular-Right" ]
+  ], [
+     fhir:index 145 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Femoral-Left IV" ]
+  ], [
+     fhir:index 146 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Femoral-Right IV" ]
+  ], [
+     fhir:index 147 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Foot-Right" ]
+  ], [
+     fhir:index 148 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Foot-Left" ]
+  ], [
+     fhir:index 149 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Forearm-Left" ]
+  ], [
+     fhir:index 150 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Forearm-Right" ]
+  ], [
+     fhir:index 151 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hand-Left" ]
+  ], [
+     fhir:index 152 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hand-Right" ]
+  ], [
+     fhir:index 153 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Internal Jugular-Left" ]
+  ], [
+     fhir:index 154 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Internal Jugular-Right" ]
+  ], [
+     fhir:index 155 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Iliac Crest-Left" ]
+  ], [
+     fhir:index 156 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Iliac Crest-Right" ]
+  ], [
+     fhir:index 157 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Femoral-Left Distal" ]
+  ], [
+     fhir:index 158 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Femoral-Right Distal" ]
+  ], [
+     fhir:index 159 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Humeral-Left" ]
+  ], [
+     fhir:index 160 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Humeral-Right" ]
+  ], [
+     fhir:index 161 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Tibia-Left Distal" ]
+  ], [
+     fhir:index 162 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Sternum" ]
+  ], [
+     fhir:index 163 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Tibia-Right Distal" ]
+  ], [
+     fhir:index 164 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Tibia-Left Proximal" ]
+  ], [
+     fhir:index 165 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IO-Tibia-Right Proximal" ]
+  ], [
+     fhir:index 166 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lower Extremity-Left" ]
+  ], [
+     fhir:index 167 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913053" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lower Extremity-Right" ]
+  ], [
+     fhir:index 168 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913055" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Peripheral" ]
+  ], [
+     fhir:index 169 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913057" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Central (PICC, Portacath, etc.)" ]
+  ], [
+     fhir:index 170 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913059" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Scalp" ]
+  ], [
+     fhir:index 171 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913061" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Subclavian-Left" ]
+  ], [
+     fhir:index 172 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913063" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Subclavian-Right" ]
+  ], [
+     fhir:index 173 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913065" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Umbilical" ]
+  ], [
+     fhir:index 174 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913067" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Venous Cutdown-Left Lower Extremity" ]
+  ], [
+     fhir:index 175 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913069" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Venous Cutdown-Right Lower Extremity" ]
+  ], [
+     fhir:index 176 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913071" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Upper Arm-Left" ]
+  ], [
+     fhir:index 177 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913073" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Upper Arm-Right" ]
+  ], [
+     fhir:index 178 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913075" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Radial-Left" ]
+  ], [
+     fhir:index 179 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913077" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Radial-Right" ]
+  ], [
+     fhir:index 180 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913079" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wrist-Left" ]
+  ], [
+     fhir:index 181 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3913081" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wrist-Right" ]
+  ], [
+     fhir:index 182 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3914001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blind Digital Technique" ]
+  ], [
+     fhir:index 183 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3914003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cross Finger Technique" ]
+  ], [
+     fhir:index 184 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3914005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Direct Laryngoscopy" ]
+  ], [
+     fhir:index 185 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3914007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fiberoptic Laryngoscopy" ]
+  ], [
+     fhir:index 186 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3914009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Indirect Laryngoscopy" ]
+  ], [
+     fhir:index 187 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3914011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Video Laryngoscopy" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

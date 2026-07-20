@@ -1,0 +1,249 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremities> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-exam-extremities"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-exam-extremities</b></p><a name=\"vs-ems-exam-extremities\"> </a><a name=\"hcvs-ems-exam-extremities\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-exam.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516001\">3516001</a></td><td>Abrasion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516003\">3516003</a></td><td>Amputation-Acute</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516005\">3516005</a></td><td>Amputation-Previous</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516007\">3516007</a></td><td>Avulsion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516009\">3516009</a></td><td>Bleeding Controlled</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516011\">3516011</a></td><td>Bleeding Uncontrolled</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516013\">3516013</a></td><td>Burn-Blistering</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516015\">3516015</a></td><td>Burn-Charring</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516017\">3516017</a></td><td>Burn-Redness</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516019\">3516019</a></td><td>Burn-White/Waxy</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516021\">3516021</a></td><td>Clubbing (of fingers)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516023\">3516023</a></td><td>Crush Injury</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516025\">3516025</a></td><td>Deformity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516027\">3516027</a></td><td>Dislocation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516029\">3516029</a></td><td>Edema</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516031\">3516031</a></td><td>Foreign Body</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516033\">3516033</a></td><td>Fracture-Closed</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516035\">3516035</a></td><td>Fracture-Open</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516041\">3516041</a></td><td>Laceration</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516043\">3516043</a></td><td>Motor Function-Abnormal/Weakness</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516045\">3516045</a></td><td>Motor Function-Absent</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516047\">3516047</a></td><td>Motor Function-Normal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516049\">3516049</a></td><td>Normal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516051\">3516051</a></td><td>Not Done</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516053\">3516053</a></td><td>Pain</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516055\">3516055</a></td><td>Paralysis</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516057\">3516057</a></td><td>Pulse-Abnormal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516059\">3516059</a></td><td>Pulse-Absent</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516061\">3516061</a></td><td>Pulse-Normal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516063\">3516063</a></td><td>Puncture/Stab Wound</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516065\">3516065</a></td><td>Sensation-Abnormal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516067\">3516067</a></td><td>Sensation-Absent</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516069\">3516069</a></td><td>Sensation-Normal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516075\">3516075</a></td><td>Tenderness</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516077\">3516077</a></td><td>Gunshot Wound</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516079\">3516079</a></td><td>Swelling</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516081\">3516081</a></td><td>Contusion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516083\">3516083</a></td><td>Arm Drift</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516085\">3516085</a></td><td>Cool/Cold to Touch</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516087\">3516087</a></td><td>Cyanosis</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516089\">3516089</a></td><td>Erythema/Flushing</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516091\">3516091</a></td><td>Hot/Warm to Touch</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516093\">3516093</a></td><td>Lividity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516095\">3516095</a></td><td>Mottled</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3516097\">3516097</a></td><td>Pale</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremities"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.55" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSExamExtremitiesVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Extremities Assessment"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eExam.16 - Physical findings on extremities assessment."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abrasion" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amputation-Acute" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amputation-Previous" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Avulsion" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding Controlled" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bleeding Uncontrolled" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-Blistering" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-Charring" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-Redness" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn-White/Waxy" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clubbing (of fingers)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Crush Injury" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deformity" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dislocation" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Edema" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foreign Body" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fracture-Closed" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fracture-Open" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laceration" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Motor Function-Abnormal/Weakness" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Motor Function-Absent" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Motor Function-Normal" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Normal" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Done" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516053" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pain" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516055" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paralysis" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516057" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulse-Abnormal" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516059" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulse-Absent" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516061" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulse-Normal" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516063" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puncture/Stab Wound" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516065" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sensation-Abnormal" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516067" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sensation-Absent" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516069" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sensation-Normal" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516075" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenderness" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516077" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gunshot Wound" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516079" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Swelling" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516081" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contusion" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516083" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arm Drift" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516085" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cool/Cold to Touch" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516087" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cyanosis" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516089" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythema/Flushing" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516091" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hot/Warm to Touch" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516093" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lividity" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516095" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mottled" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3516097" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pale" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-extremities.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

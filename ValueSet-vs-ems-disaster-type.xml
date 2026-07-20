@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-disaster-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-disaster-type</b></p><a name="vs-ems-disaster-type"> </a><a name="hcvs-ems-disaster-type"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-other.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507001">4507001</a></td><td>Biologic Agent</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507003">4507003</a></td><td>Building Failure</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507005">4507005</a></td><td>Chemical Agent</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507007">4507007</a></td><td>Explosive Device</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507009">4507009</a></td><td>Fire</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507011">4507011</a></td><td>Hostage Event</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507013">4507013</a></td><td>Mass Gathering</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507015">4507015</a></td><td>Mass Illness</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507017">4507017</a></td><td>Nuclear Agent</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507019">4507019</a></td><td>Radioactive Device</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507021">4507021</a></td><td>Secondary Destructive Device</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507023">4507023</a></td><td>Shooting/Sniper</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507025">4507025</a></td><td>Vehicular</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507027">4507027</a></td><td>Weather (Other)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507029">4507029</a></td><td>Earthquake</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507031">4507031</a></td><td>Flood</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507033">4507033</a></td><td>Land Slide</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507035">4507035</a></td><td>Winter Storm</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507037">4507037</a></td><td>Tornado</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4507039">4507039</a></td><td>Hurricane</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-disaster-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.140"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSDisasterTypeVS"/>
+  <title value="EMS DisasterType VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Natural, suspected, intentional, or unintentional disaster associated with the event (eOther.07)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+      <concept>
+        <code value="4507001"/>
+        <display value="Biologic Agent"/>
+      </concept>
+      <concept>
+        <code value="4507003"/>
+        <display value="Building Failure"/>
+      </concept>
+      <concept>
+        <code value="4507005"/>
+        <display value="Chemical Agent"/>
+      </concept>
+      <concept>
+        <code value="4507007"/>
+        <display value="Explosive Device"/>
+      </concept>
+      <concept>
+        <code value="4507009"/>
+        <display value="Fire"/>
+      </concept>
+      <concept>
+        <code value="4507011"/>
+        <display value="Hostage Event"/>
+      </concept>
+      <concept>
+        <code value="4507013"/>
+        <display value="Mass Gathering"/>
+      </concept>
+      <concept>
+        <code value="4507015"/>
+        <display value="Mass Illness"/>
+      </concept>
+      <concept>
+        <code value="4507017"/>
+        <display value="Nuclear Agent"/>
+      </concept>
+      <concept>
+        <code value="4507019"/>
+        <display value="Radioactive Device"/>
+      </concept>
+      <concept>
+        <code value="4507021"/>
+        <display value="Secondary Destructive Device"/>
+      </concept>
+      <concept>
+        <code value="4507023"/>
+        <display value="Shooting/Sniper"/>
+      </concept>
+      <concept>
+        <code value="4507025"/>
+        <display value="Vehicular"/>
+      </concept>
+      <concept>
+        <code value="4507027"/>
+        <display value="Weather (Other)"/>
+      </concept>
+      <concept>
+        <code value="4507029"/>
+        <display value="Earthquake"/>
+      </concept>
+      <concept>
+        <code value="4507031"/>
+        <display value="Flood"/>
+      </concept>
+      <concept>
+        <code value="4507033"/>
+        <display value="Land Slide"/>
+      </concept>
+      <concept>
+        <code value="4507035"/>
+        <display value="Winter Storm"/>
+      </concept>
+      <concept>
+        <code value="4507037"/>
+        <display value="Tornado"/>
+      </concept>
+      <concept>
+        <code value="4507039"/>
+        <display value="Hurricane"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

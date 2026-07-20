@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EMS Response Type (ValueSet) - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.208"}
+    h3,h4,h5,h6{--heading-prefix:"17.208"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMS Response Type (ValueSet)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-response-type.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-response-type.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-vs-ems-response-type.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: EMS Response Type (ValueSet)
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-type<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-type"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-response-type|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">EMSResponseTypeVS</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.25.219926138944530828037824748808947630693.2.107
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>NEMSIS eResponse.05 - The type of EMS response.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-ext-ems-response-type.html">EMS Response Type</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="vs-ems-response-type"> </a><a name="hcvs-ems-response-type"> </a>
+<ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205001">2205001</a></td><td>Emergency Response (Primary Response Area)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205003">2205003</a></td><td>Emergency Response (Intercept)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205009">2205009</a></td><td>Emergency Response (Mutual Aid)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205005">2205005</a></td><td>Hospital-to-Hospital Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205015">2205015</a></td><td>Hospital to Non-Hospital Facility Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205017">2205017</a></td><td>Non-Hospital Facility to Non-Hospital Facility Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205019">2205019</a></td><td>Non-Hospital Facility to Hospital Transfer</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205007">2205007</a></td><td>Other Routine Medical Transport</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205011">2205011</a></td><td>Public Assistance</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205013">2205013</a></td><td>Standby</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205021">2205021</a></td><td>Support Services</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205023">2205023</a></td><td>Non-Patient Care Rescue/Extrication</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205025">2205025</a></td><td>Crew Transport Only</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205027">2205027</a></td><td>Transport of Organs or Body Parts</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205029">2205029</a></td><td>Mortuary Services</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205031">2205031</a></td><td>Mobile Integrated Health Care Encounter</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205033">2205033</a></td><td>Evaluation for Special Referral/Intake Programs</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205035">2205035</a></td><td>Administrative Operations</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-cs-nemsis-encounter.html">codesystem NEMSIS Encounter Codes v0.2.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter|0.2.0" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 18 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205001"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205001">2205001</a></td><td>Emergency Response (Primary Response Area)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205001&quot;, &quot;display&quot;: &quot;Emergency Response (Primary Response Area)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205001&quot;&gt;&lt;display value=&quot;Emergency Response (Primary Response Area)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205003"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205003">2205003</a></td><td>Emergency Response (Intercept)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205003&quot;, &quot;display&quot;: &quot;Emergency Response (Intercept)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205003&quot;&gt;&lt;display value=&quot;Emergency Response (Intercept)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205009"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205009">2205009</a></td><td>Emergency Response (Mutual Aid)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205009&quot;, &quot;display&quot;: &quot;Emergency Response (Mutual Aid)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205009&quot;&gt;&lt;display value=&quot;Emergency Response (Mutual Aid)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205005"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205005">2205005</a></td><td>Hospital-to-Hospital Transfer</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205005&quot;, &quot;display&quot;: &quot;Hospital-to-Hospital Transfer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205005&quot;&gt;&lt;display value=&quot;Hospital-to-Hospital Transfer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205015"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205015">2205015</a></td><td>Hospital to Non-Hospital Facility Transfer</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205015&quot;, &quot;display&quot;: &quot;Hospital to Non-Hospital Facility Transfer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205015&quot;&gt;&lt;display value=&quot;Hospital to Non-Hospital Facility Transfer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205017"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205017">2205017</a></td><td>Non-Hospital Facility to Non-Hospital Facility Transfer</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205017&quot;, &quot;display&quot;: &quot;Non-Hospital Facility to Non-Hospital Facility Transfer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205017&quot;&gt;&lt;display value=&quot;Non-Hospital Facility to Non-Hospital Facility Transfer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205019"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205019">2205019</a></td><td>Non-Hospital Facility to Hospital Transfer</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205019&quot;, &quot;display&quot;: &quot;Non-Hospital Facility to Hospital Transfer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205019&quot;&gt;&lt;display value=&quot;Non-Hospital Facility to Hospital Transfer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205007"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205007">2205007</a></td><td>Other Routine Medical Transport</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205007&quot;, &quot;display&quot;: &quot;Other Routine Medical Transport&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205007&quot;&gt;&lt;display value=&quot;Other Routine Medical Transport&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205011"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205011">2205011</a></td><td>Public Assistance</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205011&quot;, &quot;display&quot;: &quot;Public Assistance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205011&quot;&gt;&lt;display value=&quot;Public Assistance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205013"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205013">2205013</a></td><td>Standby</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205013&quot;, &quot;display&quot;: &quot;Standby&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205013&quot;&gt;&lt;display value=&quot;Standby&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205021"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205021">2205021</a></td><td>Support Services</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205021&quot;, &quot;display&quot;: &quot;Support Services&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205021&quot;&gt;&lt;display value=&quot;Support Services&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205023"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205023">2205023</a></td><td>Non-Patient Care Rescue/Extrication</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205023&quot;, &quot;display&quot;: &quot;Non-Patient Care Rescue/Extrication&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205023&quot;&gt;&lt;display value=&quot;Non-Patient Care Rescue/Extrication&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205025"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205025">2205025</a></td><td>Crew Transport Only</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205025&quot;, &quot;display&quot;: &quot;Crew Transport Only&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205025&quot;&gt;&lt;display value=&quot;Crew Transport Only&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205027"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205027">2205027</a></td><td>Transport of Organs or Body Parts</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205027&quot;, &quot;display&quot;: &quot;Transport of Organs or Body Parts&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205027&quot;&gt;&lt;display value=&quot;Transport of Organs or Body Parts&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205029"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205029">2205029</a></td><td>Mortuary Services</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205029&quot;, &quot;display&quot;: &quot;Mortuary Services&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205029&quot;&gt;&lt;display value=&quot;Mortuary Services&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205031"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205031">2205031</a></td><td>Mobile Integrated Health Care Encounter</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205031&quot;, &quot;display&quot;: &quot;Mobile Integrated Health Care Encounter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205031&quot;&gt;&lt;display value=&quot;Mobile Integrated Health Care Encounter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205033"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205033">2205033</a></td><td>Evaluation for Special Referral/Intake Programs</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205033&quot;, &quot;display&quot;: &quot;Evaluation for Special Referral/Intake Programs&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205033&quot;&gt;&lt;display value=&quot;Evaluation for Special Referral/Intake Programs&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter-2205035"> </a><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-2205035">2205035</a></td><td>Administrative Operations</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2205035&quot;, &quot;display&quot;: &quot;Administrative Operations&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2205035&quot;&gt;&lt;display value=&quot;Administrative Operations&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

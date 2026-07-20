@@ -1,0 +1,642 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-other"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-other</b></p><a name=\"cs-nemsis-other\"> </a><a name=\"hccs-nemsis-other\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">4502001<a name=\"cs-nemsis-other-4502001\"> </a></td><td>Airway</td></tr><tr><td style=\"white-space:nowrap\">4502003<a name=\"cs-nemsis-other-4502003\"> </a></td><td>Burn</td></tr><tr><td style=\"white-space:nowrap\">4502005<a name=\"cs-nemsis-other-4502005\"> </a></td><td>Cardiac/MI</td></tr><tr><td style=\"white-space:nowrap\">4502007<a name=\"cs-nemsis-other-4502007\"> </a></td><td>CVA/Stroke</td></tr><tr><td style=\"white-space:nowrap\">4502009<a name=\"cs-nemsis-other-4502009\"> </a></td><td>Drowning</td></tr><tr><td style=\"white-space:nowrap\">4502011<a name=\"cs-nemsis-other-4502011\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4502013<a name=\"cs-nemsis-other-4502013\"> </a></td><td>Spinal Cord Injury</td></tr><tr><td style=\"white-space:nowrap\">4502015<a name=\"cs-nemsis-other-4502015\"> </a></td><td>STEMI/Acute Cardiac</td></tr><tr><td style=\"white-space:nowrap\">4502017<a name=\"cs-nemsis-other-4502017\"> </a></td><td>Trauma</td></tr><tr><td style=\"white-space:nowrap\">4502019<a name=\"cs-nemsis-other-4502019\"> </a></td><td>Traumatic Brain Injury</td></tr><tr><td style=\"white-space:nowrap\">4503001<a name=\"cs-nemsis-other-4503001\"> </a></td><td>Eye Protection</td></tr><tr><td style=\"white-space:nowrap\">4503003<a name=\"cs-nemsis-other-4503003\"> </a></td><td>Gloves</td></tr><tr><td style=\"white-space:nowrap\">4503005<a name=\"cs-nemsis-other-4503005\"> </a></td><td>Helmet</td></tr><tr><td style=\"white-space:nowrap\">4503007<a name=\"cs-nemsis-other-4503007\"> </a></td><td>Level A Suit</td></tr><tr><td style=\"white-space:nowrap\">4503009<a name=\"cs-nemsis-other-4503009\"> </a></td><td>Level B Suit</td></tr><tr><td style=\"white-space:nowrap\">4503011<a name=\"cs-nemsis-other-4503011\"> </a></td><td>Level C Suit</td></tr><tr><td style=\"white-space:nowrap\">4503013<a name=\"cs-nemsis-other-4503013\"> </a></td><td>Level D Suit (Turn out gear)</td></tr><tr><td style=\"white-space:nowrap\">4503015<a name=\"cs-nemsis-other-4503015\"> </a></td><td>Mask-N95</td></tr><tr><td style=\"white-space:nowrap\">4503017<a name=\"cs-nemsis-other-4503017\"> </a></td><td>Mask-Surgical (Non-Fitted)</td></tr><tr><td style=\"white-space:nowrap\">4503019<a name=\"cs-nemsis-other-4503019\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4503021<a name=\"cs-nemsis-other-4503021\"> </a></td><td>PAPR</td></tr><tr><td style=\"white-space:nowrap\">4503023<a name=\"cs-nemsis-other-4503023\"> </a></td><td>Reflective Vest</td></tr><tr><td style=\"white-space:nowrap\">4506001<a name=\"cs-nemsis-other-4506001\"> </a></td><td>Death-Cardiac Arrest</td></tr><tr><td style=\"white-space:nowrap\">4506003<a name=\"cs-nemsis-other-4506003\"> </a></td><td>Death-Injury Related</td></tr><tr><td style=\"white-space:nowrap\">4506005<a name=\"cs-nemsis-other-4506005\"> </a></td><td>Death-Other</td></tr><tr><td style=\"white-space:nowrap\">4506007<a name=\"cs-nemsis-other-4506007\"> </a></td><td>Exposure-Airborne Respiratory/Biological/Aerosolized Secretions</td></tr><tr><td style=\"white-space:nowrap\">4506009<a name=\"cs-nemsis-other-4506009\"> </a></td><td>Exposure-Body Fluid Contact to Broken Skin</td></tr><tr><td style=\"white-space:nowrap\">4506011<a name=\"cs-nemsis-other-4506011\"> </a></td><td>Exposure-Body Fluid Contact with Eye</td></tr><tr><td style=\"white-space:nowrap\">4506013<a name=\"cs-nemsis-other-4506013\"> </a></td><td>Exposure-Body Fluid Contact with Intact Skin</td></tr><tr><td style=\"white-space:nowrap\">4506015<a name=\"cs-nemsis-other-4506015\"> </a></td><td>Exposure-Body Fluid Contact with Mucosal Surface</td></tr><tr><td style=\"white-space:nowrap\">4506017<a name=\"cs-nemsis-other-4506017\"> </a></td><td>Exposure-Needle Stick with Body Fluid Injection</td></tr><tr><td style=\"white-space:nowrap\">4506019<a name=\"cs-nemsis-other-4506019\"> </a></td><td>Exposure-Needle Stick without Body Fluid Injection</td></tr><tr><td style=\"white-space:nowrap\">4506021<a name=\"cs-nemsis-other-4506021\"> </a></td><td>Exposure-Toxin/Chemical/Hazmat</td></tr><tr><td style=\"white-space:nowrap\">4506023<a name=\"cs-nemsis-other-4506023\"> </a></td><td>Injury-Lifting/Back/Musculoskeletal</td></tr><tr><td style=\"white-space:nowrap\">4506025<a name=\"cs-nemsis-other-4506025\"> </a></td><td>Injury-Other</td></tr><tr><td style=\"white-space:nowrap\">4506027<a name=\"cs-nemsis-other-4506027\"> </a></td><td>None</td></tr><tr><td style=\"white-space:nowrap\">4506029<a name=\"cs-nemsis-other-4506029\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4506031<a name=\"cs-nemsis-other-4506031\"> </a></td><td>Violence-Offensive, Intimidating, or Hateful Language</td></tr><tr><td style=\"white-space:nowrap\">4506033<a name=\"cs-nemsis-other-4506033\"> </a></td><td>Violence-Physical Threat, or Threatening Behavior</td></tr><tr><td style=\"white-space:nowrap\">4506035<a name=\"cs-nemsis-other-4506035\"> </a></td><td>Violence-Physical Attack or Attempt to Attack</td></tr><tr><td style=\"white-space:nowrap\">4506037<a name=\"cs-nemsis-other-4506037\"> </a></td><td>Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures</td></tr><tr><td style=\"white-space:nowrap\">4506039<a name=\"cs-nemsis-other-4506039\"> </a></td><td>Violence-Unwanted Touching of a Sexual Nature</td></tr><tr><td style=\"white-space:nowrap\">4506041<a name=\"cs-nemsis-other-4506041\"> </a></td><td>Struck by Vehicle Along Roadway</td></tr><tr><td style=\"white-space:nowrap\">4507001<a name=\"cs-nemsis-other-4507001\"> </a></td><td>Biologic Agent</td></tr><tr><td style=\"white-space:nowrap\">4507003<a name=\"cs-nemsis-other-4507003\"> </a></td><td>Building Failure</td></tr><tr><td style=\"white-space:nowrap\">4507005<a name=\"cs-nemsis-other-4507005\"> </a></td><td>Chemical Agent</td></tr><tr><td style=\"white-space:nowrap\">4507007<a name=\"cs-nemsis-other-4507007\"> </a></td><td>Explosive Device</td></tr><tr><td style=\"white-space:nowrap\">4507009<a name=\"cs-nemsis-other-4507009\"> </a></td><td>Fire</td></tr><tr><td style=\"white-space:nowrap\">4507011<a name=\"cs-nemsis-other-4507011\"> </a></td><td>Hostage Event</td></tr><tr><td style=\"white-space:nowrap\">4507013<a name=\"cs-nemsis-other-4507013\"> </a></td><td>Mass Gathering</td></tr><tr><td style=\"white-space:nowrap\">4507015<a name=\"cs-nemsis-other-4507015\"> </a></td><td>Mass Illness</td></tr><tr><td style=\"white-space:nowrap\">4507017<a name=\"cs-nemsis-other-4507017\"> </a></td><td>Nuclear Agent</td></tr><tr><td style=\"white-space:nowrap\">4507019<a name=\"cs-nemsis-other-4507019\"> </a></td><td>Radioactive Device</td></tr><tr><td style=\"white-space:nowrap\">4507021<a name=\"cs-nemsis-other-4507021\"> </a></td><td>Secondary Destructive Device</td></tr><tr><td style=\"white-space:nowrap\">4507023<a name=\"cs-nemsis-other-4507023\"> </a></td><td>Shooting/Sniper</td></tr><tr><td style=\"white-space:nowrap\">4507025<a name=\"cs-nemsis-other-4507025\"> </a></td><td>Vehicular</td></tr><tr><td style=\"white-space:nowrap\">4507027<a name=\"cs-nemsis-other-4507027\"> </a></td><td>Weather (Other)</td></tr><tr><td style=\"white-space:nowrap\">4507029<a name=\"cs-nemsis-other-4507029\"> </a></td><td>Earthquake</td></tr><tr><td style=\"white-space:nowrap\">4507031<a name=\"cs-nemsis-other-4507031\"> </a></td><td>Flood</td></tr><tr><td style=\"white-space:nowrap\">4507033<a name=\"cs-nemsis-other-4507033\"> </a></td><td>Land Slide</td></tr><tr><td style=\"white-space:nowrap\">4507035<a name=\"cs-nemsis-other-4507035\"> </a></td><td>Winter Storm</td></tr><tr><td style=\"white-space:nowrap\">4507037<a name=\"cs-nemsis-other-4507037\"> </a></td><td>Tornado</td></tr><tr><td style=\"white-space:nowrap\">4507039<a name=\"cs-nemsis-other-4507039\"> </a></td><td>Hurricane</td></tr><tr><td style=\"white-space:nowrap\">4509001<a name=\"cs-nemsis-other-4509001\"> </a></td><td>Other Audio Recording</td></tr><tr><td style=\"white-space:nowrap\">4509003<a name=\"cs-nemsis-other-4509003\"> </a></td><td>Billing Information</td></tr><tr><td style=\"white-space:nowrap\">4509005<a name=\"cs-nemsis-other-4509005\"> </a></td><td>Diagnostic Image (CT, X-ray, US, etc.)</td></tr><tr><td style=\"white-space:nowrap\">4509006<a name=\"cs-nemsis-other-4509006\"> </a></td><td>DNR</td></tr><tr><td style=\"white-space:nowrap\">4509008<a name=\"cs-nemsis-other-4509008\"> </a></td><td>Living Will</td></tr><tr><td style=\"white-space:nowrap\">4509009<a name=\"cs-nemsis-other-4509009\"> </a></td><td>ECG/Lab Results</td></tr><tr><td style=\"white-space:nowrap\">4509011<a name=\"cs-nemsis-other-4509011\"> </a></td><td>Guardianship/Power of Attorney</td></tr><tr><td style=\"white-space:nowrap\">4509013<a name=\"cs-nemsis-other-4509013\"> </a></td><td>Other Healthcare Record</td></tr><tr><td style=\"white-space:nowrap\">4509015<a name=\"cs-nemsis-other-4509015\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4509017<a name=\"cs-nemsis-other-4509017\"> </a></td><td>Patient Identification</td></tr><tr><td style=\"white-space:nowrap\">4509019<a name=\"cs-nemsis-other-4509019\"> </a></td><td>Patient Refusal Sheet</td></tr><tr><td style=\"white-space:nowrap\">4509021<a name=\"cs-nemsis-other-4509021\"> </a></td><td>Other Picture/Graphic</td></tr><tr><td style=\"white-space:nowrap\">4509025<a name=\"cs-nemsis-other-4509025\"> </a></td><td>Other Video/Movie</td></tr><tr><td style=\"white-space:nowrap\">4509027<a name=\"cs-nemsis-other-4509027\"> </a></td><td>ePCR</td></tr><tr><td style=\"white-space:nowrap\">4512001<a name=\"cs-nemsis-other-4512001\"> </a></td><td>EMS Crew Member (Other)</td></tr><tr><td style=\"white-space:nowrap\">4512003<a name=\"cs-nemsis-other-4512003\"> </a></td><td>EMS Primary Care Provider (for this event)</td></tr><tr><td style=\"white-space:nowrap\">4512005<a name=\"cs-nemsis-other-4512005\"> </a></td><td>Healthcare Provider</td></tr><tr><td style=\"white-space:nowrap\">4512007<a name=\"cs-nemsis-other-4512007\"> </a></td><td>Medical Director</td></tr><tr><td style=\"white-space:nowrap\">4512009<a name=\"cs-nemsis-other-4512009\"> </a></td><td>Non-Healthcare Provider</td></tr><tr><td style=\"white-space:nowrap\">4512011<a name=\"cs-nemsis-other-4512011\"> </a></td><td>Online Medical Control Healthcare Practitioner</td></tr><tr><td style=\"white-space:nowrap\">4512013<a name=\"cs-nemsis-other-4512013\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4512015<a name=\"cs-nemsis-other-4512015\"> </a></td><td>Patient</td></tr><tr><td style=\"white-space:nowrap\">4512017<a name=\"cs-nemsis-other-4512017\"> </a></td><td>Patient Representative</td></tr><tr><td style=\"white-space:nowrap\">4512019<a name=\"cs-nemsis-other-4512019\"> </a></td><td>Witness</td></tr><tr><td style=\"white-space:nowrap\">4513001<a name=\"cs-nemsis-other-4513001\"> </a></td><td>HIPAA acknowledgement/Release</td></tr><tr><td style=\"white-space:nowrap\">4513003<a name=\"cs-nemsis-other-4513003\"> </a></td><td>Permission to Treat</td></tr><tr><td style=\"white-space:nowrap\">4513005<a name=\"cs-nemsis-other-4513005\"> </a></td><td>Release for Billing</td></tr><tr><td style=\"white-space:nowrap\">4513007<a name=\"cs-nemsis-other-4513007\"> </a></td><td>Transfer of Patient Care</td></tr><tr><td style=\"white-space:nowrap\">4513009<a name=\"cs-nemsis-other-4513009\"> </a></td><td>Refusal of Care</td></tr><tr><td style=\"white-space:nowrap\">4513011<a name=\"cs-nemsis-other-4513011\"> </a></td><td>Controlled Substance, Administration</td></tr><tr><td style=\"white-space:nowrap\">4513013<a name=\"cs-nemsis-other-4513013\"> </a></td><td>Controlled Substance, Waste</td></tr><tr><td style=\"white-space:nowrap\">4513015<a name=\"cs-nemsis-other-4513015\"> </a></td><td>Airway Verification</td></tr><tr><td style=\"white-space:nowrap\">4513017<a name=\"cs-nemsis-other-4513017\"> </a></td><td>Patient Belongings (Receipt)</td></tr><tr><td style=\"white-space:nowrap\">4513019<a name=\"cs-nemsis-other-4513019\"> </a></td><td>Permission to Transport</td></tr><tr><td style=\"white-space:nowrap\">4513021<a name=\"cs-nemsis-other-4513021\"> </a></td><td>Refusal of Transport</td></tr><tr><td style=\"white-space:nowrap\">4513023<a name=\"cs-nemsis-other-4513023\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4514001<a name=\"cs-nemsis-other-4514001\"> </a></td><td>Aunt</td></tr><tr><td style=\"white-space:nowrap\">4514003<a name=\"cs-nemsis-other-4514003\"> </a></td><td>Brother</td></tr><tr><td style=\"white-space:nowrap\">4514005<a name=\"cs-nemsis-other-4514005\"> </a></td><td>Daughter</td></tr><tr><td style=\"white-space:nowrap\">4514007<a name=\"cs-nemsis-other-4514007\"> </a></td><td>Discharge Planner</td></tr><tr><td style=\"white-space:nowrap\">4514009<a name=\"cs-nemsis-other-4514009\"> </a></td><td>Domestic Partner</td></tr><tr><td style=\"white-space:nowrap\">4514011<a name=\"cs-nemsis-other-4514011\"> </a></td><td>Father</td></tr><tr><td style=\"white-space:nowrap\">4514013<a name=\"cs-nemsis-other-4514013\"> </a></td><td>Friend</td></tr><tr><td style=\"white-space:nowrap\">4514015<a name=\"cs-nemsis-other-4514015\"> </a></td><td>Grandfather</td></tr><tr><td style=\"white-space:nowrap\">4514017<a name=\"cs-nemsis-other-4514017\"> </a></td><td>Grandmother</td></tr><tr><td style=\"white-space:nowrap\">4514019<a name=\"cs-nemsis-other-4514019\"> </a></td><td>Guardian</td></tr><tr><td style=\"white-space:nowrap\">4514021<a name=\"cs-nemsis-other-4514021\"> </a></td><td>Husband</td></tr><tr><td style=\"white-space:nowrap\">4514023<a name=\"cs-nemsis-other-4514023\"> </a></td><td>Law Enforcement</td></tr><tr><td style=\"white-space:nowrap\">4514025<a name=\"cs-nemsis-other-4514025\"> </a></td><td>MD/DO</td></tr><tr><td style=\"white-space:nowrap\">4514027<a name=\"cs-nemsis-other-4514027\"> </a></td><td>Mother</td></tr><tr><td style=\"white-space:nowrap\">4514029<a name=\"cs-nemsis-other-4514029\"> </a></td><td>Nurse (RN)</td></tr><tr><td style=\"white-space:nowrap\">4514031<a name=\"cs-nemsis-other-4514031\"> </a></td><td>Nurse Practitioner (NP)</td></tr><tr><td style=\"white-space:nowrap\">4514033<a name=\"cs-nemsis-other-4514033\"> </a></td><td>Other Care Provider (Home health, hospice, etc.)</td></tr><tr><td style=\"white-space:nowrap\">4514035<a name=\"cs-nemsis-other-4514035\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4514037<a name=\"cs-nemsis-other-4514037\"> </a></td><td>Physician's Assistant (PA)</td></tr><tr><td style=\"white-space:nowrap\">4514039<a name=\"cs-nemsis-other-4514039\"> </a></td><td>Power of Attorney</td></tr><tr><td style=\"white-space:nowrap\">4514041<a name=\"cs-nemsis-other-4514041\"> </a></td><td>Other Relative</td></tr><tr><td style=\"white-space:nowrap\">4514043<a name=\"cs-nemsis-other-4514043\"> </a></td><td>Self</td></tr><tr><td style=\"white-space:nowrap\">4514045<a name=\"cs-nemsis-other-4514045\"> </a></td><td>Sister</td></tr><tr><td style=\"white-space:nowrap\">4514047<a name=\"cs-nemsis-other-4514047\"> </a></td><td>Son</td></tr><tr><td style=\"white-space:nowrap\">4514049<a name=\"cs-nemsis-other-4514049\"> </a></td><td>Uncle</td></tr><tr><td style=\"white-space:nowrap\">4514051<a name=\"cs-nemsis-other-4514051\"> </a></td><td>Wife</td></tr><tr><td style=\"white-space:nowrap\">4515001<a name=\"cs-nemsis-other-4515001\"> </a></td><td>Not Signed - Crew Called out to another call</td></tr><tr><td style=\"white-space:nowrap\">4515003<a name=\"cs-nemsis-other-4515003\"> </a></td><td>Not Signed - Deceased</td></tr><tr><td style=\"white-space:nowrap\">4515005<a name=\"cs-nemsis-other-4515005\"> </a></td><td>Not Signed - Due to Distress Level</td></tr><tr><td style=\"white-space:nowrap\">4515007<a name=\"cs-nemsis-other-4515007\"> </a></td><td>Not Signed - Equipment Failure</td></tr><tr><td style=\"white-space:nowrap\">4515009<a name=\"cs-nemsis-other-4515009\"> </a></td><td>Not Signed - In Law Enforcement Custody</td></tr><tr><td style=\"white-space:nowrap\">4515011<a name=\"cs-nemsis-other-4515011\"> </a></td><td>Not Signed - Language Barrier</td></tr><tr><td style=\"white-space:nowrap\">4515013<a name=\"cs-nemsis-other-4515013\"> </a></td><td>Not Signed - Mental Status/Impaired</td></tr><tr><td style=\"white-space:nowrap\">4515015<a name=\"cs-nemsis-other-4515015\"> </a></td><td>Not Signed - Minor/Child</td></tr><tr><td style=\"white-space:nowrap\">4515017<a name=\"cs-nemsis-other-4515017\"> </a></td><td>Not Signed - Physical Impairment of Extremities</td></tr><tr><td style=\"white-space:nowrap\">4515019<a name=\"cs-nemsis-other-4515019\"> </a></td><td>Not Signed - Refused</td></tr><tr><td style=\"white-space:nowrap\">4515021<a name=\"cs-nemsis-other-4515021\"> </a></td><td>Not Signed - Transferred Care/No Access to Obtain Signature</td></tr><tr><td style=\"white-space:nowrap\">4515023<a name=\"cs-nemsis-other-4515023\"> </a></td><td>Not Signed - Unconscious</td></tr><tr><td style=\"white-space:nowrap\">4515025<a name=\"cs-nemsis-other-4515025\"> </a></td><td>Not Signed -Visually Impaired</td></tr><tr><td style=\"white-space:nowrap\">4515027<a name=\"cs-nemsis-other-4515027\"> </a></td><td>Physical Signature/Paper Copy Obtained</td></tr><tr><td style=\"white-space:nowrap\">4515031<a name=\"cs-nemsis-other-4515031\"> </a></td><td>Signed</td></tr><tr><td style=\"white-space:nowrap\">4515033<a name=\"cs-nemsis-other-4515033\"> </a></td><td>Signed-Not Patient</td></tr><tr><td style=\"white-space:nowrap\">4515035<a name=\"cs-nemsis-other-4515035\"> </a></td><td>Not Signed-Illiterate (Unable to Read)</td></tr><tr><td style=\"white-space:nowrap\">4515037<a name=\"cs-nemsis-other-4515037\"> </a></td><td>Not Signed-Restrained</td></tr><tr><td style=\"white-space:nowrap\">4515039<a name=\"cs-nemsis-other-4515039\"> </a></td><td>Not Signed-Combative or Uncooperative</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.19" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISOther"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS eOther Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS 3.5.1 eOther section covering registry candidacy, crew personal protective equipment, work-related injury/exposure types, disaster types, external document types, and signature metadata (signer type, reason, patient representative, status)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "144"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Airway" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Burn" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cardiac/MI" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CVA/Stroke" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drowning" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spinal Cord Injury" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STEMI/Acute Cardiac" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trauma" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4502019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Traumatic Brain Injury" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eye Protection" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gloves" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Helmet" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Level A Suit" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Level B Suit" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Level C Suit" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Level D Suit (Turn out gear)" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mask-N95" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mask-Surgical (Non-Fitted)" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PAPR" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4503023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reflective Vest" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Death-Cardiac Arrest" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Death-Injury Related" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Death-Other" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Airborne Respiratory/Biological/Aerosolized Secretions" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Body Fluid Contact to Broken Skin" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Body Fluid Contact with Eye" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Body Fluid Contact with Intact Skin" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Body Fluid Contact with Mucosal Surface" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Needle Stick with Body Fluid Injection" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Needle Stick without Body Fluid Injection" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exposure-Toxin/Chemical/Hazmat" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Injury-Lifting/Back/Musculoskeletal" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Injury-Other" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "None" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Violence-Offensive, Intimidating, or Hateful Language" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Violence-Physical Threat, or Threatening Behavior" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Violence-Physical Attack or Attempt to Attack" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Violence-Unwanted Touching of a Sexual Nature" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4506041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Struck by Vehicle Along Roadway" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Biologic Agent" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Building Failure" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chemical Agent" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Explosive Device" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fire" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hostage Event" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mass Gathering" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mass Illness" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nuclear Agent" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Radioactive Device" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secondary Destructive Device" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Shooting/Sniper" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vehicular" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Weather (Other)" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Earthquake" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Flood" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Land Slide" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Winter Storm" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tornado" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4507039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hurricane" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Audio Recording" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Billing Information" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diagnostic Image (CT, X-ray, US, etc.)" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DNR" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509008" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Living Will" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ECG/Lab Results" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Guardianship/Power of Attorney" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Healthcare Record" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Identification" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Refusal Sheet" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Picture/Graphic" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Video/Movie" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4509027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ePCR" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Crew Member (Other)" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Primary Care Provider (for this event)" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Healthcare Provider" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medical Director" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Healthcare Provider" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Online Medical Control Healthcare Practitioner" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient" ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Representative" ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4512019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Witness" ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HIPAA acknowledgement/Release" ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Permission to Treat" ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Release for Billing" ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transfer of Patient Care" ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Refusal of Care" ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Controlled Substance, Administration" ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Controlled Substance, Waste" ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Airway Verification" ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Belongings (Receipt)" ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Permission to Transport" ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Refusal of Transport" ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4513023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aunt" ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Brother" ]
+  ], [
+     fhir:index 101 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Daughter" ]
+  ], [
+     fhir:index 102 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Discharge Planner" ]
+  ], [
+     fhir:index 103 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Domestic Partner" ]
+  ], [
+     fhir:index 104 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Father" ]
+  ], [
+     fhir:index 105 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Friend" ]
+  ], [
+     fhir:index 106 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grandfather" ]
+  ], [
+     fhir:index 107 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grandmother" ]
+  ], [
+     fhir:index 108 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Guardian" ]
+  ], [
+     fhir:index 109 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Husband" ]
+  ], [
+     fhir:index 110 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Law Enforcement" ]
+  ], [
+     fhir:index 111 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MD/DO" ]
+  ], [
+     fhir:index 112 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mother" ]
+  ], [
+     fhir:index 113 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nurse (RN)" ]
+  ], [
+     fhir:index 114 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nurse Practitioner (NP)" ]
+  ], [
+     fhir:index 115 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Care Provider (Home health, hospice, etc.)" ]
+  ], [
+     fhir:index 116 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 117 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physician's Assistant (PA)" ]
+  ], [
+     fhir:index 118 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Power of Attorney" ]
+  ], [
+     fhir:index 119 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Relative" ]
+  ], [
+     fhir:index 120 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Self" ]
+  ], [
+     fhir:index 121 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sister" ]
+  ], [
+     fhir:index 122 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Son" ]
+  ], [
+     fhir:index 123 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Uncle" ]
+  ], [
+     fhir:index 124 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4514051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wife" ]
+  ], [
+     fhir:index 125 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Crew Called out to another call" ]
+  ], [
+     fhir:index 126 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Deceased" ]
+  ], [
+     fhir:index 127 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Due to Distress Level" ]
+  ], [
+     fhir:index 128 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Equipment Failure" ]
+  ], [
+     fhir:index 129 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - In Law Enforcement Custody" ]
+  ], [
+     fhir:index 130 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Language Barrier" ]
+  ], [
+     fhir:index 131 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Mental Status/Impaired" ]
+  ], [
+     fhir:index 132 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Minor/Child" ]
+  ], [
+     fhir:index 133 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Physical Impairment of Extremities" ]
+  ], [
+     fhir:index 134 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Refused" ]
+  ], [
+     fhir:index 135 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Transferred Care/No Access to Obtain Signature" ]
+  ], [
+     fhir:index 136 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed - Unconscious" ]
+  ], [
+     fhir:index 137 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed -Visually Impaired" ]
+  ], [
+     fhir:index 138 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physical Signature/Paper Copy Obtained" ]
+  ], [
+     fhir:index 139 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Signed" ]
+  ], [
+     fhir:index 140 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Signed-Not Patient" ]
+  ], [
+     fhir:index 141 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed-Illiterate (Unable to Read)" ]
+  ], [
+     fhir:index 142 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed-Restrained" ]
+  ], [
+     fhir:index 143 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4515039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Signed-Combative or Uncooperative" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,107 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-stroke-scale-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-stroke-scale-type</b></p><a name=\"vs-ems-stroke-scale-type\"> </a><a name=\"hcvs-ems-stroke-scale-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-vitals.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330001\">3330001</a></td><td>Cincinnati Prehospital Stroke Scale (CPSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330004\">3330004</a></td><td>Los Angeles Prehospital Stroke Screen (LAPSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330005\">3330005</a></td><td>Massachusetts Stroke Scale (MSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330007\">3330007</a></td><td>Miami Emergency Neurologic Deficit Exam (MEND)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330009\">3330009</a></td><td>NIH Stroke Scale (NIHSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330011\">3330011</a></td><td>Other Stroke Scale Type</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330013\">3330013</a></td><td>FAST</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330015\">3330015</a></td><td>Boston Stroke Scale (BOSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330017\">3330017</a></td><td>Ontario Prehospital Stroke Scale (OPSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330019\">3330019</a></td><td>Melbourne Ambulance Stroke Screen (MASS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330021\">3330021</a></td><td>Rapid Arterial oCclusion Evaluation (RACE)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330023\">3330023</a></td><td>Los Angeles Motor Score (LAMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330025\">3330025</a></td><td>Vision, Aphasia, Neglect (VAN)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330027\">3330027</a></td><td>FAST-ED</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330029\">3330029</a></td><td>BEFAST</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.117"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSStrokeScaleTypeVS",
+  "title" : "EMS Stroke Scale Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS eVitals.30 - The prehospital stroke screening tool used.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals",
+      "concept" : [{
+        "code" : "3330001",
+        "display" : "Cincinnati Prehospital Stroke Scale (CPSS)"
+      },
+      {
+        "code" : "3330004",
+        "display" : "Los Angeles Prehospital Stroke Screen (LAPSS)"
+      },
+      {
+        "code" : "3330005",
+        "display" : "Massachusetts Stroke Scale (MSS)"
+      },
+      {
+        "code" : "3330007",
+        "display" : "Miami Emergency Neurologic Deficit Exam (MEND)"
+      },
+      {
+        "code" : "3330009",
+        "display" : "NIH Stroke Scale (NIHSS)"
+      },
+      {
+        "code" : "3330011",
+        "display" : "Other Stroke Scale Type"
+      },
+      {
+        "code" : "3330013",
+        "display" : "FAST"
+      },
+      {
+        "code" : "3330015",
+        "display" : "Boston Stroke Scale (BOSS)"
+      },
+      {
+        "code" : "3330017",
+        "display" : "Ontario Prehospital Stroke Scale (OPSS)"
+      },
+      {
+        "code" : "3330019",
+        "display" : "Melbourne Ambulance Stroke Screen (MASS)"
+      },
+      {
+        "code" : "3330021",
+        "display" : "Rapid Arterial oCclusion Evaluation (RACE)"
+      },
+      {
+        "code" : "3330023",
+        "display" : "Los Angeles Motor Score (LAMS)"
+      },
+      {
+        "code" : "3330025",
+        "display" : "Vision, Aphasia, Neglect (VAN)"
+      },
+      {
+        "code" : "3330027",
+        "display" : "FAST-ED"
+      },
+      {
+        "code" : "3330029",
+        "display" : "BEFAST"
+      }]
+    }]
+  }
+}

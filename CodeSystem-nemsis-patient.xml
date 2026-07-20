@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nemsis-patient"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nemsis-patient</b></p><a name="nemsis-patient"> </a><a name="hcnemsis-patient"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">9919001<a name="nemsis-patient-9919001"> </a></td><td>Female</td><td>NEMSIS ePatient.25: Female sex as documented at the time of the EMS encounter.</td></tr><tr><td style="white-space:nowrap">9919003<a name="nemsis-patient-9919003"> </a></td><td>Male</td><td>NEMSIS ePatient.25: Male sex as documented at the time of the EMS encounter.</td></tr><tr><td style="white-space:nowrap">9919005<a name="nemsis-patient-9919005"> </a></td><td>Unknown</td><td>NEMSIS ePatient.25: Sex is unknown or unable to be determined.</td></tr><tr><td style="white-space:nowrap">2516001<a name="nemsis-patient-2516001"> </a></td><td>Days</td><td>NEMSIS ePatient.16: Patient age expressed in days.</td></tr><tr><td style="white-space:nowrap">2516003<a name="nemsis-patient-2516003"> </a></td><td>Hours</td><td>NEMSIS ePatient.16: Patient age expressed in hours.</td></tr><tr><td style="white-space:nowrap">2516005<a name="nemsis-patient-2516005"> </a></td><td>Minutes</td><td>NEMSIS ePatient.16: Patient age expressed in minutes.</td></tr><tr><td style="white-space:nowrap">2516007<a name="nemsis-patient-2516007"> </a></td><td>Months</td><td>NEMSIS ePatient.16: Patient age expressed in months.</td></tr><tr><td style="white-space:nowrap">2516009<a name="nemsis-patient-2516009"> </a></td><td>Years</td><td>NEMSIS ePatient.16: Patient age expressed in years.</td></tr><tr><td style="white-space:nowrap">2522001<a name="nemsis-patient-2522001"> </a></td><td>Homeless</td><td>NEMSIS ePatient.22: Patient's primary residence is a shelter, street, or other location without permanent housing.</td></tr><tr><td style="white-space:nowrap">2522003<a name="nemsis-patient-2522003"> </a></td><td>Migrant Worker</td><td>NEMSIS ePatient.22: Patient is a migrant worker without a fixed permanent address.</td></tr><tr><td style="white-space:nowrap">2522005<a name="nemsis-patient-2522005"> </a></td><td>Foreign Visitor</td><td>NEMSIS ePatient.22: Patient is a visitor from a foreign country without a US home address.</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.17"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISPatientCodes"/>
+  <title value="NEMSIS ePatient Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS 3.5.1.251001CP2 ePatient section.&#xA;Includes codes for Sex (ePatient.25), Age Units (ePatient.16),&#xA;and Alternate Home Residence (ePatient.22).&#xA;Race codes (ePatient.14) are mapped to OMB/CDC categories used in us-core-race."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="9919001"/>
+    <display value="Female"/>
+    <definition value="NEMSIS ePatient.25: Female sex as documented at the time of the EMS encounter."/>
+  </concept>
+  <concept>
+    <code value="9919003"/>
+    <display value="Male"/>
+    <definition value="NEMSIS ePatient.25: Male sex as documented at the time of the EMS encounter."/>
+  </concept>
+  <concept>
+    <code value="9919005"/>
+    <display value="Unknown"/>
+    <definition value="NEMSIS ePatient.25: Sex is unknown or unable to be determined."/>
+  </concept>
+  <concept>
+    <code value="2516001"/>
+    <display value="Days"/>
+    <definition value="NEMSIS ePatient.16: Patient age expressed in days."/>
+  </concept>
+  <concept>
+    <code value="2516003"/>
+    <display value="Hours"/>
+    <definition value="NEMSIS ePatient.16: Patient age expressed in hours."/>
+  </concept>
+  <concept>
+    <code value="2516005"/>
+    <display value="Minutes"/>
+    <definition value="NEMSIS ePatient.16: Patient age expressed in minutes."/>
+  </concept>
+  <concept>
+    <code value="2516007"/>
+    <display value="Months"/>
+    <definition value="NEMSIS ePatient.16: Patient age expressed in months."/>
+  </concept>
+  <concept>
+    <code value="2516009"/>
+    <display value="Years"/>
+    <definition value="NEMSIS ePatient.16: Patient age expressed in years."/>
+  </concept>
+  <concept>
+    <code value="2522001"/>
+    <display value="Homeless"/>
+    <definition value="NEMSIS ePatient.22: Patient's primary residence is a shelter, street, or other location without permanent housing."/>
+  </concept>
+  <concept>
+    <code value="2522003"/>
+    <display value="Migrant Worker"/>
+    <definition value="NEMSIS ePatient.22: Patient is a migrant worker without a fixed permanent address."/>
+  </concept>
+  <concept>
+    <code value="2522005"/>
+    <display value="Foreign Visitor"/>
+    <definition value="NEMSIS ePatient.22: Patient is a visitor from a foreign country without a US home address."/>
+  </concept>
+</CodeSystem>

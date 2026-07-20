@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-ecg-rhythm"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ex-ems-ecg-rhythm</b></p><a name="ex-ems-ecg-rhythm"> </a><a name="hcex-ems-ecg-rhythm"> </a><blockquote><p><b>EMS ECG Context</b></p><ul><li>ecgType: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 3304007}">12 Lead-Left Sided (Normal)</span></li><li>ecgMethod: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 3305001}">Computer Interpretation</span></li></ul></blockquote><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:">Cardiac Rhythm / Electrocardiography (eVitals.03)</span></p><p><b>subject</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href="Encounter-ex-ems-encounter.html">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-14 14:38:00-0800</p><p><b>performer</b>: <a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></p><p><b>value</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals 9901049}">Sinus Tachycardia</span></p></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ecg-context">
+    <extension url="ecgType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+          <code value="3304007"/>
+          <display value="12 Lead-Left Sided (Normal)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="ecgMethod">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+          <code value="3305001"/>
+          <display value="Computer Interpretation"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <text value="Cardiac Rhythm / Electrocardiography (eVitals.03)"/>
+  </code>
+  <subject>
+    <reference value="Patient/ex-ems-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ex-ems-encounter"/>
+  </encounter>
+  <effectiveDateTime value="2026-03-14T14:38:00-08:00"/>
+  <performer>
+    <reference value="Practitioner/ex-ems-practitioner"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+      <code value="9901049"/>
+      <display value="Sinus Tachycardia"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-pain-scale-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-pain-scale-type</b></p><a name=\"vs-ems-pain-scale-type\"> </a><a name=\"hcvs-ems-pain-scale-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-vitals.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3328001\">3328001</a></td><td>FLACC (Face, Legs, Activity, Cry, Consolability)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3328003\">3328003</a></td><td>Numeric (0-10)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3328005\">3328005</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3328007\">3328007</a></td><td>Wong-Baker (FACES)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-pain-scale-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.91"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSPainScaleTypeVS",
+  "title" : "EMS Pain Scale Type (ValueSet)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS eVitals.28 - The type of pain scale used to assess the patient's pain.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals",
+      "concept" : [{
+        "code" : "3328001",
+        "display" : "FLACC (Face, Legs, Activity, Cry, Consolability)"
+      },
+      {
+        "code" : "3328003",
+        "display" : "Numeric (0-10)"
+      },
+      {
+        "code" : "3328005",
+        "display" : "Other"
+      },
+      {
+        "code" : "3328007",
+        "display" : "Wong-Baker (FACES)"
+      }]
+    }]
+  }
+}

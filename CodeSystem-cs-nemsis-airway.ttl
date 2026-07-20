@@ -1,0 +1,278 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-airway"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-airway</b></p><a name=\"cs-nemsis-airway\"> </a><a name=\"hccs-nemsis-airway\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">4001001<a name=\"cs-nemsis-airway-4001001\"> </a></td><td>Adequate Airway Reflexes/Effort, Potential for Compromise</td></tr><tr><td style=\"white-space:nowrap\">4001003<a name=\"cs-nemsis-airway-4001003\"> </a></td><td>Airway Reflex Compromised</td></tr><tr><td style=\"white-space:nowrap\">4001005<a name=\"cs-nemsis-airway-4001005\"> </a></td><td>Apnea or Agonal Respirations</td></tr><tr><td style=\"white-space:nowrap\">4001007<a name=\"cs-nemsis-airway-4001007\"> </a></td><td>Illness Involving Airway</td></tr><tr><td style=\"white-space:nowrap\">4001009<a name=\"cs-nemsis-airway-4001009\"> </a></td><td>Injury Involving Airway</td></tr><tr><td style=\"white-space:nowrap\">4001011<a name=\"cs-nemsis-airway-4001011\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4001013<a name=\"cs-nemsis-airway-4001013\"> </a></td><td>Ventilatory Effort Compromised</td></tr><tr><td style=\"white-space:nowrap\">4003001<a name=\"cs-nemsis-airway-4003001\"> </a></td><td>Cricothyrotomy Tube</td></tr><tr><td style=\"white-space:nowrap\">4003003<a name=\"cs-nemsis-airway-4003003\"> </a></td><td>Endotracheal Tube</td></tr><tr><td style=\"white-space:nowrap\">4003005<a name=\"cs-nemsis-airway-4003005\"> </a></td><td>Other-Invasive Airway</td></tr><tr><td style=\"white-space:nowrap\">4003007<a name=\"cs-nemsis-airway-4003007\"> </a></td><td>SAD-Combitube</td></tr><tr><td style=\"white-space:nowrap\">4003009<a name=\"cs-nemsis-airway-4003009\"> </a></td><td>SAD-King</td></tr><tr><td style=\"white-space:nowrap\">4003011<a name=\"cs-nemsis-airway-4003011\"> </a></td><td>SAD-LMA</td></tr><tr><td style=\"white-space:nowrap\">4003013<a name=\"cs-nemsis-airway-4003013\"> </a></td><td>SAD-Other</td></tr><tr><td style=\"white-space:nowrap\">4003015<a name=\"cs-nemsis-airway-4003015\"> </a></td><td>Tracheostomy Tube</td></tr><tr><td style=\"white-space:nowrap\">4004001<a name=\"cs-nemsis-airway-4004001\"> </a></td><td>Auscultation</td></tr><tr><td style=\"white-space:nowrap\">4004003<a name=\"cs-nemsis-airway-4004003\"> </a></td><td>Bulb/Syringe Aspiration</td></tr><tr><td style=\"white-space:nowrap\">4004005<a name=\"cs-nemsis-airway-4004005\"> </a></td><td>Colorimetric ETCO2</td></tr><tr><td style=\"white-space:nowrap\">4004007<a name=\"cs-nemsis-airway-4004007\"> </a></td><td>Condensation in Tube</td></tr><tr><td style=\"white-space:nowrap\">4004009<a name=\"cs-nemsis-airway-4004009\"> </a></td><td>Digital (Numeric) ETCO2</td></tr><tr><td style=\"white-space:nowrap\">4004011<a name=\"cs-nemsis-airway-4004011\"> </a></td><td>Direct Re-Visualization of Tube in Place</td></tr><tr><td style=\"white-space:nowrap\">4004013<a name=\"cs-nemsis-airway-4004013\"> </a></td><td>Endotracheal Tube Whistle (BAAM, etc.)</td></tr><tr><td style=\"white-space:nowrap\">4004015<a name=\"cs-nemsis-airway-4004015\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4004017<a name=\"cs-nemsis-airway-4004017\"> </a></td><td>Visualization of Vocal Cords</td></tr><tr><td style=\"white-space:nowrap\">4004019<a name=\"cs-nemsis-airway-4004019\"> </a></td><td>Waveform ETCO2</td></tr><tr><td style=\"white-space:nowrap\">4004021<a name=\"cs-nemsis-airway-4004021\"> </a></td><td>Chest Rise</td></tr><tr><td style=\"white-space:nowrap\">4006001<a name=\"cs-nemsis-airway-4006001\"> </a></td><td>Another Person on the Same Crew</td></tr><tr><td style=\"white-space:nowrap\">4006003<a name=\"cs-nemsis-airway-4006003\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4006005<a name=\"cs-nemsis-airway-4006005\"> </a></td><td>Person Performing Intubation</td></tr><tr><td style=\"white-space:nowrap\">4006007<a name=\"cs-nemsis-airway-4006007\"> </a></td><td>Receiving Air Medical/EMS Crew</td></tr><tr><td style=\"white-space:nowrap\">4006009<a name=\"cs-nemsis-airway-4006009\"> </a></td><td>Receiving Hospital Team</td></tr><tr><td style=\"white-space:nowrap\">4008001<a name=\"cs-nemsis-airway-4008001\"> </a></td><td>Adverse Event from Facilitating Drugs</td></tr><tr><td style=\"white-space:nowrap\">4008003<a name=\"cs-nemsis-airway-4008003\"> </a></td><td>Bradycardia (&lt;50)</td></tr><tr><td style=\"white-space:nowrap\">4008005<a name=\"cs-nemsis-airway-4008005\"> </a></td><td>Cardiac Arrest</td></tr><tr><td style=\"white-space:nowrap\">4008007<a name=\"cs-nemsis-airway-4008007\"> </a></td><td>Esophageal Intubation-Delayed Detection (After Tube Secured)</td></tr><tr><td style=\"white-space:nowrap\">4008009<a name=\"cs-nemsis-airway-4008009\"> </a></td><td>Esophageal Intubation-Detected in Emergency Department</td></tr><tr><td style=\"white-space:nowrap\">4008011<a name=\"cs-nemsis-airway-4008011\"> </a></td><td>Failed Intubation Effort</td></tr><tr><td style=\"white-space:nowrap\">4008013<a name=\"cs-nemsis-airway-4008013\"> </a></td><td>Injury or Trauma to Patient from Airway Management Effort</td></tr><tr><td style=\"white-space:nowrap\">4008015<a name=\"cs-nemsis-airway-4008015\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4008017<a name=\"cs-nemsis-airway-4008017\"> </a></td><td>Oxygen Desaturation (&lt;90%)</td></tr><tr><td style=\"white-space:nowrap\">4008019<a name=\"cs-nemsis-airway-4008019\"> </a></td><td>Patient Vomiting/Aspiration</td></tr><tr><td style=\"white-space:nowrap\">4008021<a name=\"cs-nemsis-airway-4008021\"> </a></td><td>Tube Dislodged During Transport/Patient Care</td></tr><tr><td style=\"white-space:nowrap\">4008023<a name=\"cs-nemsis-airway-4008023\"> </a></td><td>Tube Was Not in Correct Position when EMS Crew/Team Assumed Care of the Patient</td></tr><tr><td style=\"white-space:nowrap\">4009001<a name=\"cs-nemsis-airway-4009001\"> </a></td><td>Difficult Patient Airway Anatomy</td></tr><tr><td style=\"white-space:nowrap\">4009003<a name=\"cs-nemsis-airway-4009003\"> </a></td><td>ETI Attempted, but Arrived At Destination Facility Before Accomplished</td></tr><tr><td style=\"white-space:nowrap\">4009005<a name=\"cs-nemsis-airway-4009005\"> </a></td><td>Facial or Oral Trauma</td></tr><tr><td style=\"white-space:nowrap\">4009007<a name=\"cs-nemsis-airway-4009007\"> </a></td><td>Inability to Expose Vocal Cords</td></tr><tr><td style=\"white-space:nowrap\">4009009<a name=\"cs-nemsis-airway-4009009\"> </a></td><td>Inadequate Patient Relaxation/Presence of Protective Airway Reflexes</td></tr><tr><td style=\"white-space:nowrap\">4009011<a name=\"cs-nemsis-airway-4009011\"> </a></td><td>Jaw Clenched (Trismus)</td></tr><tr><td style=\"white-space:nowrap\">4009013<a name=\"cs-nemsis-airway-4009013\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">4009015<a name=\"cs-nemsis-airway-4009015\"> </a></td><td>Poor Patient Access</td></tr><tr><td style=\"white-space:nowrap\">4009017<a name=\"cs-nemsis-airway-4009017\"> </a></td><td>Secretions/Blood/Vomit</td></tr><tr><td style=\"white-space:nowrap\">4009019<a name=\"cs-nemsis-airway-4009019\"> </a></td><td>Unable to Position or Access Patient</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.1" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISAirway"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS eAirway Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS 3.5.1 eAirway section covering airway management indications, device types, confirmation methods, confirming personnel, complications, and reasons for failed management."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "53"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4001001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adequate Airway Reflexes/Effort, Potential for Compromise" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4001003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Airway Reflex Compromised" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4001005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Apnea or Agonal Respirations" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4001007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Illness Involving Airway" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4001009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Injury Involving Airway" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4001011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4001013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilatory Effort Compromised" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cricothyrotomy Tube" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheal Tube" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other-Invasive Airway" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SAD-Combitube" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SAD-King" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SAD-LMA" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SAD-Other" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4003015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tracheostomy Tube" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auscultation" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bulb/Syringe Aspiration" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Colorimetric ETCO2" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Condensation in Tube" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Digital (Numeric) ETCO2" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Direct Re-Visualization of Tube in Place" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheal Tube Whistle (BAAM, etc.)" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Visualization of Vocal Cords" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Waveform ETCO2" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4004021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chest Rise" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4006001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Another Person on the Same Crew" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4006003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4006005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Person Performing Intubation" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4006007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Receiving Air Medical/EMS Crew" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4006009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Receiving Hospital Team" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adverse Event from Facilitating Drugs" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bradycardia (<50)" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cardiac Arrest" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Esophageal Intubation-Delayed Detection (After Tube Secured)" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Esophageal Intubation-Detected in Emergency Department" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Failed Intubation Effort" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Injury or Trauma to Patient from Airway Management Effort" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oxygen Desaturation (<90%)" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient Vomiting/Aspiration" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tube Dislodged During Transport/Patient Care" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4008023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tube Was Not in Correct Position when EMS Crew/Team Assumed Care of the Patient" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Difficult Patient Airway Anatomy" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ETI Attempted, but Arrived At Destination Facility Before Accomplished" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Facial or Oral Trauma" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inability to Expose Vocal Cords" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inadequate Patient Relaxation/Presence of Protective Airway Reflexes" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Jaw Clenched (Trismus)" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Poor Patient Access" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secretions/Blood/Vomit" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4009019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unable to Position or Access Patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

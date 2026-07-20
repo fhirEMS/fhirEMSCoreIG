@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payment-method> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-payment-method"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-payment-method</b></p><a name=\"vs-ems-payment-method\"> </a><a name=\"hcvs-ems-payment-method\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-payment.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601001\">2601001</a></td><td>Insurance</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601003\">2601003</a></td><td>Medicaid</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601005\">2601005</a></td><td>Medicare</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601007\">2601007</a></td><td>Not Billed (for any reason)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601009\">2601009</a></td><td>Other Government</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601011\">2601011</a></td><td>Self Pay</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601013\">2601013</a></td><td>Workers Compensation</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601015\">2601015</a></td><td>Payment by Facility</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601017\">2601017</a></td><td>Contracted Payment</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601019\">2601019</a></td><td>Community Network</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601021\">2601021</a></td><td>No Insurance Identified</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2601023\">2601023</a></td><td>Other Payment Option</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payment-method"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.96" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSPaymentMethodVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Primary Payment Method VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Primary method of payment for the EMS response (ePayment.01)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insurance" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicaid" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicare" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not Billed (for any reason)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Government" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Self Pay" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Workers Compensation" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Payment by Facility" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Contracted Payment" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Community Network" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No Insurance Identified" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2601023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Payment Option" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-payment-method.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

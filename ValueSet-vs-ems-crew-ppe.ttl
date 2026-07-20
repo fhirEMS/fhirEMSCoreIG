@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-ppe> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-crew-ppe"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-crew-ppe</b></p><a name=\"vs-ems-crew-ppe\"> </a><a name=\"hcvs-ems-crew-ppe\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-other.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503001\">4503001</a></td><td>Eye Protection</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503003\">4503003</a></td><td>Gloves</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503005\">4503005</a></td><td>Helmet</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503007\">4503007</a></td><td>Level A Suit</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503009\">4503009</a></td><td>Level B Suit</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503011\">4503011</a></td><td>Level C Suit</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503013\">4503013</a></td><td>Level D Suit (Turn out gear)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503015\">4503015</a></td><td>Mask-N95</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503017\">4503017</a></td><td>Mask-Surgical (Non-Fitted)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503019\">4503019</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503021\">4503021</a></td><td>PAPR</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4503023\">4503023</a></td><td>Reflective Vest</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-ppe"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.138" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSCrewPPEVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS CrewPPE VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Personal protective equipment used by the EMS crew member (eOther.03)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eye Protection" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gloves" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Helmet" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Level A Suit" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Level B Suit" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Level C Suit" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Level D Suit (Turn out gear)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mask-N95" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mask-Surgical (Non-Fitted)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PAPR" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4503023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reflective Vest" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-ppe.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

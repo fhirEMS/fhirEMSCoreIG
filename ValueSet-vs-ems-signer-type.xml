@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-signer-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-signer-type</b></p><a name="vs-ems-signer-type"> </a><a name="hcvs-ems-signer-type"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-other.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512001">4512001</a></td><td>EMS Crew Member (Other)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512003">4512003</a></td><td>EMS Primary Care Provider (for this event)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512005">4512005</a></td><td>Healthcare Provider</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512007">4512007</a></td><td>Medical Director</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512009">4512009</a></td><td>Non-Healthcare Provider</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512011">4512011</a></td><td>Online Medical Control Healthcare Practitioner</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512013">4512013</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512015">4512015</a></td><td>Patient</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512017">4512017</a></td><td>Patient Representative</td></tr><tr><td><a href="CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4512019">4512019</a></td><td>Witness</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-signer-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.142"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSSignerTypeVS"/>
+  <title value="EMS SignerType VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="The type of person signing (eOther.12)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other"/>
+      <concept>
+        <code value="4512001"/>
+        <display value="EMS Crew Member (Other)"/>
+      </concept>
+      <concept>
+        <code value="4512003"/>
+        <display value="EMS Primary Care Provider (for this event)"/>
+      </concept>
+      <concept>
+        <code value="4512005"/>
+        <display value="Healthcare Provider"/>
+      </concept>
+      <concept>
+        <code value="4512007"/>
+        <display value="Medical Director"/>
+      </concept>
+      <concept>
+        <code value="4512009"/>
+        <display value="Non-Healthcare Provider"/>
+      </concept>
+      <concept>
+        <code value="4512011"/>
+        <display value="Online Medical Control Healthcare Practitioner"/>
+      </concept>
+      <concept>
+        <code value="4512013"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="4512015"/>
+        <display value="Patient"/>
+      </concept>
+      <concept>
+        <code value="4512017"/>
+        <display value="Patient Representative"/>
+      </concept>
+      <concept>
+        <code value="4512019"/>
+        <display value="Witness"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

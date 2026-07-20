@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-airway-confirming-person"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-airway-confirming-person</b></p><a name="vs-ems-airway-confirming-person"> </a><a name="hcvs-ems-airway-confirming-person"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-airway.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-airway.html#cs-nemsis-airway-4006001">4006001</a></td><td>Another Person on the Same Crew</td></tr><tr><td><a href="CodeSystem-cs-nemsis-airway.html#cs-nemsis-airway-4006003">4006003</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-airway.html#cs-nemsis-airway-4006005">4006005</a></td><td>Person Performing Intubation</td></tr><tr><td><a href="CodeSystem-cs-nemsis-airway.html#cs-nemsis-airway-4006007">4006007</a></td><td>Receiving Air Medical/EMS Crew</td></tr><tr><td><a href="CodeSystem-cs-nemsis-airway.html#cs-nemsis-airway-4006009">4006009</a></td><td>Receiving Hospital Team</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-airway-confirming-person"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.13"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSAirwayConfirmingPersonVS"/>
+  <title value="EMS Airway Confirming Person VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Type of individual who confirmed the airway device placement (eAirway.06)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-airway"/>
+      <concept>
+        <code value="4006001"/>
+        <display value="Another Person on the Same Crew"/>
+      </concept>
+      <concept>
+        <code value="4006003"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="4006005"/>
+        <display value="Person Performing Intubation"/>
+      </concept>
+      <concept>
+        <code value="4006007"/>
+        <display value="Receiving Air Medical/EMS Crew"/>
+      </concept>
+      <concept>
+        <code value="4006009"/>
+        <display value="Receiving Hospital Team"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

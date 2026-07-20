@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-seat-row-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-seat-row-location</b></p><a name="vs-ems-seat-row-location"> </a><a name="hcvs-ems-seat-row-location"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-injury.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906001">2906001</a></td><td>Front Seat-Left Side (or motorcycle driver)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906003">2906003</a></td><td>Front Seat-Middle</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906005">2906005</a></td><td>Front Seat-Right Side</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906007">2906007</a></td><td>Passenger in other enclosed passenger or cargo area (non-trailing unit such as a bus, etc.)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906009">2906009</a></td><td>Passenger in unenclosed passenger or cargo area (non-trailing unit such as a pickup, etc.)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906011">2906011</a></td><td>Riding on Vehicle Exterior (non-trailing unit)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906013">2906013</a></td><td>Second Seat-Left Side (or motorcycle passenger)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906015">2906015</a></td><td>Second Seat-Middle</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906017">2906017</a></td><td>Second Seat-Right Side</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906019">2906019</a></td><td>Sleeper Section of Cab (truck)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906021">2906021</a></td><td>Third Row-Left Side (or motorcycle passenger)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906023">2906023</a></td><td>Third Row-Middle</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906025">2906025</a></td><td>Third Row-Right Side</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906027">2906027</a></td><td>Trailing Unit</td></tr><tr><td><a href="CodeSystem-cs-nemsis-injury.html#cs-nemsis-injury-2906029">2906029</a></td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-seat-row-location"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.113"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSSeatRowLocationVS"/>
+  <title value="EMS Seat Row Location VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="The seat row location of the patient in the vehicle at the time of the crash (eInjury.06)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-injury"/>
+      <concept>
+        <code value="2906001"/>
+        <display value="Front Seat-Left Side (or motorcycle driver)"/>
+      </concept>
+      <concept>
+        <code value="2906003"/>
+        <display value="Front Seat-Middle"/>
+      </concept>
+      <concept>
+        <code value="2906005"/>
+        <display value="Front Seat-Right Side"/>
+      </concept>
+      <concept>
+        <code value="2906007"/>
+        <display value="Passenger in other enclosed passenger or cargo area (non-trailing unit such as a bus, etc.)"/>
+      </concept>
+      <concept>
+        <code value="2906009"/>
+        <display value="Passenger in unenclosed passenger or cargo area (non-trailing unit such as a pickup, etc.)"/>
+      </concept>
+      <concept>
+        <code value="2906011"/>
+        <display value="Riding on Vehicle Exterior (non-trailing unit)"/>
+      </concept>
+      <concept>
+        <code value="2906013"/>
+        <display value="Second Seat-Left Side (or motorcycle passenger)"/>
+      </concept>
+      <concept>
+        <code value="2906015"/>
+        <display value="Second Seat-Middle"/>
+      </concept>
+      <concept>
+        <code value="2906017"/>
+        <display value="Second Seat-Right Side"/>
+      </concept>
+      <concept>
+        <code value="2906019"/>
+        <display value="Sleeper Section of Cab (truck)"/>
+      </concept>
+      <concept>
+        <code value="2906021"/>
+        <display value="Third Row-Left Side (or motorcycle passenger)"/>
+      </concept>
+      <concept>
+        <code value="2906023"/>
+        <display value="Third Row-Middle"/>
+      </concept>
+      <concept>
+        <code value="2906025"/>
+        <display value="Third Row-Right Side"/>
+      </concept>
+      <concept>
+        <code value="2906027"/>
+        <display value="Trailing Unit"/>
+      </concept>
+      <concept>
+        <code value="2906029"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

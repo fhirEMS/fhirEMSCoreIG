@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Basic/fromNarrative> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fromNarrative"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements fromNarrative</b></p><a name=\"fromNarrative\"> </a><a name=\"hcfromNarrative\"> </a><table class=\"grid\"/></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/Requirements/fromNarrative" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version" ] ;
+     fhir:Extension.valueString [ fhir:value "0.2.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name" ] ;
+     fhir:Extension.valueString [ fhir:value "FromNarrative" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Narrative Conformance Statements" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "active" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+       ]
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes" ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+         fhir:Coding.code [ fhir:value "US" ] ;
+         fhir:Coding.display [ fhir:value "United States of America" ]
+       ]
+     ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "Requirements" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Basic/fromNarrative.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

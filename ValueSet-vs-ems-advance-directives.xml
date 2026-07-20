@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-advance-directives"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-advance-directives</b></p><a name="vs-ems-advance-directives"> </a><a name="hcvs-ems-advance-directives"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-history.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3105001">3105001</a></td><td>Family/Guardian request DNR (but no documentation)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3105003">3105003</a></td><td>Living Will</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3105005">3105005</a></td><td>None</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3105007">3105007</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3105009">3105009</a></td><td>Other Healthcare Advanced Directive Form</td></tr><tr><td><a href="CodeSystem-cs-nemsis-history.html#cs-nemsis-history-3105011">3105011</a></td><td>State EMS DNR or Medical Order Form</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-advance-directives"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.130"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSAdvanceDirectivesVS"/>
+  <title value="EMS Advance Directives VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="The type of advance directive documentation present for the patient (eHistory.05)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-history"/>
+      <concept>
+        <code value="3105001"/>
+        <display value="Family/Guardian request DNR (but no documentation)"/>
+      </concept>
+      <concept>
+        <code value="3105003"/>
+        <display value="Living Will"/>
+      </concept>
+      <concept>
+        <code value="3105005"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="3105007"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="3105009"/>
+        <display value="Other Healthcare Advanced Directive Form"/>
+      </concept>
+      <concept>
+        <code value="3105011"/>
+        <display value="State EMS DNR or Medical Order Form"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

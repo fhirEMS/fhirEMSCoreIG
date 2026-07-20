@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-payment"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-payment</b></p><a name="cs-nemsis-payment"> </a><a name="hccs-nemsis-payment"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">2601001<a name="cs-nemsis-payment-2601001"> </a></td><td>Insurance</td></tr><tr><td style="white-space:nowrap">2601003<a name="cs-nemsis-payment-2601003"> </a></td><td>Medicaid</td></tr><tr><td style="white-space:nowrap">2601005<a name="cs-nemsis-payment-2601005"> </a></td><td>Medicare</td></tr><tr><td style="white-space:nowrap">2601007<a name="cs-nemsis-payment-2601007"> </a></td><td>Not Billed (for any reason)</td></tr><tr><td style="white-space:nowrap">2601009<a name="cs-nemsis-payment-2601009"> </a></td><td>Other Government</td></tr><tr><td style="white-space:nowrap">2601011<a name="cs-nemsis-payment-2601011"> </a></td><td>Self Pay</td></tr><tr><td style="white-space:nowrap">2601013<a name="cs-nemsis-payment-2601013"> </a></td><td>Workers Compensation</td></tr><tr><td style="white-space:nowrap">2601015<a name="cs-nemsis-payment-2601015"> </a></td><td>Payment by Facility</td></tr><tr><td style="white-space:nowrap">2601017<a name="cs-nemsis-payment-2601017"> </a></td><td>Contracted Payment</td></tr><tr><td style="white-space:nowrap">2601019<a name="cs-nemsis-payment-2601019"> </a></td><td>Community Network</td></tr><tr><td style="white-space:nowrap">2601021<a name="cs-nemsis-payment-2601021"> </a></td><td>No Insurance Identified</td></tr><tr><td style="white-space:nowrap">2601023<a name="cs-nemsis-payment-2601023"> </a></td><td>Other Payment Option</td></tr><tr><td style="white-space:nowrap">2611001<a name="cs-nemsis-payment-2611001"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">2611003<a name="cs-nemsis-payment-2611003"> </a></td><td>Primary</td></tr><tr><td style="white-space:nowrap">2611005<a name="cs-nemsis-payment-2611005"> </a></td><td>Secondary</td></tr><tr><td style="white-space:nowrap">2611007<a name="cs-nemsis-payment-2611007"> </a></td><td>Tertiary</td></tr><tr><td style="white-space:nowrap">2611009<a name="cs-nemsis-payment-2611009"> </a></td><td>Payer Responsibility Four</td></tr><tr><td style="white-space:nowrap">2611011<a name="cs-nemsis-payment-2611011"> </a></td><td>Payer Responsibility Five</td></tr><tr><td style="white-space:nowrap">2611013<a name="cs-nemsis-payment-2611013"> </a></td><td>Payer Responsibility Six</td></tr><tr><td style="white-space:nowrap">2611015<a name="cs-nemsis-payment-2611015"> </a></td><td>Payer Responsibility Seven</td></tr><tr><td style="white-space:nowrap">2611017<a name="cs-nemsis-payment-2611017"> </a></td><td>Payer Responsibility Eight</td></tr><tr><td style="white-space:nowrap">2611019<a name="cs-nemsis-payment-2611019"> </a></td><td>Payer Responsibility Nine</td></tr><tr><td style="white-space:nowrap">2611021<a name="cs-nemsis-payment-2611021"> </a></td><td>Payer Responsibility Ten</td></tr><tr><td style="white-space:nowrap">2611023<a name="cs-nemsis-payment-2611023"> </a></td><td>Payer Responsibility Eleven</td></tr><tr><td style="white-space:nowrap">2611025<a name="cs-nemsis-payment-2611025"> </a></td><td>Unknown</td></tr><tr><td style="white-space:nowrap">2622001<a name="cs-nemsis-payment-2622001"> </a></td><td>Self</td></tr><tr><td style="white-space:nowrap">2622003<a name="cs-nemsis-payment-2622003"> </a></td><td>Spouse</td></tr><tr><td style="white-space:nowrap">2622005<a name="cs-nemsis-payment-2622005"> </a></td><td>Child/Dependent</td></tr><tr><td style="white-space:nowrap">2622009<a name="cs-nemsis-payment-2622009"> </a></td><td>Cadaver Donor</td></tr><tr><td style="white-space:nowrap">2622011<a name="cs-nemsis-payment-2622011"> </a></td><td>Employee</td></tr><tr><td style="white-space:nowrap">2622013<a name="cs-nemsis-payment-2622013"> </a></td><td>Life/Domestic Partner</td></tr><tr><td style="white-space:nowrap">2622015<a name="cs-nemsis-payment-2622015"> </a></td><td>Organ Donor</td></tr><tr><td style="white-space:nowrap">2622017<a name="cs-nemsis-payment-2622017"> </a></td><td>Unknown</td></tr><tr><td style="white-space:nowrap">2622019<a name="cs-nemsis-payment-2622019"> </a></td><td>Other Relationship</td></tr><tr><td style="white-space:nowrap">2640001<a name="cs-nemsis-payment-2640001"> </a></td><td>Immediate</td></tr><tr><td style="white-space:nowrap">2640003<a name="cs-nemsis-payment-2640003"> </a></td><td>Non-Immediate</td></tr><tr><td style="white-space:nowrap">2641001<a name="cs-nemsis-payment-2641001"> </a></td><td>Unable to sit without assistance</td></tr><tr><td style="white-space:nowrap">2641003<a name="cs-nemsis-payment-2641003"> </a></td><td>Unable to stand without assistance</td></tr><tr><td style="white-space:nowrap">2641005<a name="cs-nemsis-payment-2641005"> </a></td><td>Unable to walk without assistance</td></tr><tr><td style="white-space:nowrap">A<a name="cs-nemsis-payment-A"> </a></td><td>Patient was transported to the nearest facility for care of symptoms, complaints, or both</td></tr><tr><td style="white-space:nowrap">B<a name="cs-nemsis-payment-B"> </a></td><td>Patient was transported for the benefit of a preferred physician</td></tr><tr><td style="white-space:nowrap">C<a name="cs-nemsis-payment-C"> </a></td><td>Patient was transported for the nearness of family members</td></tr><tr><td style="white-space:nowrap">D<a name="cs-nemsis-payment-D"> </a></td><td>Patient was transported for the care of a specialist or for availability of equipment</td></tr><tr><td style="white-space:nowrap">E<a name="cs-nemsis-payment-E"> </a></td><td>Patient was transferred to a Rehabilitation Facility</td></tr><tr><td style="white-space:nowrap">01<a name="cs-nemsis-payment-01"> </a></td><td>Patient was admitted to a hospital</td></tr><tr><td style="white-space:nowrap">04<a name="cs-nemsis-payment-04"> </a></td><td>Patient was moved by stretcher</td></tr><tr><td style="white-space:nowrap">05<a name="cs-nemsis-payment-05"> </a></td><td>Patient was unconscious or in shock</td></tr><tr><td style="white-space:nowrap">06<a name="cs-nemsis-payment-06"> </a></td><td>Patient was transported in an emergency situation</td></tr><tr><td style="white-space:nowrap">07<a name="cs-nemsis-payment-07"> </a></td><td>Patient had to be physically restrained</td></tr><tr><td style="white-space:nowrap">08<a name="cs-nemsis-payment-08"> </a></td><td>Patient had visible hemorrhaging</td></tr><tr><td style="white-space:nowrap">09<a name="cs-nemsis-payment-09"> </a></td><td>Ambulance service was medically necessary</td></tr><tr><td style="white-space:nowrap">12<a name="cs-nemsis-payment-12"> </a></td><td>Patient is confined to a bed or chair</td></tr><tr><td style="white-space:nowrap">2650001<a name="cs-nemsis-payment-2650001"> </a></td><td>ALS, Level 1</td></tr><tr><td style="white-space:nowrap">2650003<a name="cs-nemsis-payment-2650003"> </a></td><td>ALS, Level 1 Emergency</td></tr><tr><td style="white-space:nowrap">2650005<a name="cs-nemsis-payment-2650005"> </a></td><td>ALS, Level 2</td></tr><tr><td style="white-space:nowrap">2650007<a name="cs-nemsis-payment-2650007"> </a></td><td>BLS</td></tr><tr><td style="white-space:nowrap">2650009<a name="cs-nemsis-payment-2650009"> </a></td><td>BLS, Emergency</td></tr><tr><td style="white-space:nowrap">2650011<a name="cs-nemsis-payment-2650011"> </a></td><td>Fixed Wing (Airplane)</td></tr><tr><td style="white-space:nowrap">2650013<a name="cs-nemsis-payment-2650013"> </a></td><td>Paramedic Intercept</td></tr><tr><td style="white-space:nowrap">2650015<a name="cs-nemsis-payment-2650015"> </a></td><td>Specialty Care Transport</td></tr><tr><td style="white-space:nowrap">2650017<a name="cs-nemsis-payment-2650017"> </a></td><td>Rotary Wing (Helicopter)</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.11"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISPayment"/>
+  <title value="NEMSIS ePayment Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS 3.5.1 ePayment section covering primary method of payment, insurance billing priority, relationship to insured, response urgency, patient transport assessment, ambulance transport reason codes, ambulance conditions indicators, CMS service level, and payer type."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="61"/>
+  <concept>
+    <code value="2601001"/>
+    <display value="Insurance"/>
+  </concept>
+  <concept>
+    <code value="2601003"/>
+    <display value="Medicaid"/>
+  </concept>
+  <concept>
+    <code value="2601005"/>
+    <display value="Medicare"/>
+  </concept>
+  <concept>
+    <code value="2601007"/>
+    <display value="Not Billed (for any reason)"/>
+  </concept>
+  <concept>
+    <code value="2601009"/>
+    <display value="Other Government"/>
+  </concept>
+  <concept>
+    <code value="2601011"/>
+    <display value="Self Pay"/>
+  </concept>
+  <concept>
+    <code value="2601013"/>
+    <display value="Workers Compensation"/>
+  </concept>
+  <concept>
+    <code value="2601015"/>
+    <display value="Payment by Facility"/>
+  </concept>
+  <concept>
+    <code value="2601017"/>
+    <display value="Contracted Payment"/>
+  </concept>
+  <concept>
+    <code value="2601019"/>
+    <display value="Community Network"/>
+  </concept>
+  <concept>
+    <code value="2601021"/>
+    <display value="No Insurance Identified"/>
+  </concept>
+  <concept>
+    <code value="2601023"/>
+    <display value="Other Payment Option"/>
+  </concept>
+  <concept>
+    <code value="2611001"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="2611003"/>
+    <display value="Primary"/>
+  </concept>
+  <concept>
+    <code value="2611005"/>
+    <display value="Secondary"/>
+  </concept>
+  <concept>
+    <code value="2611007"/>
+    <display value="Tertiary"/>
+  </concept>
+  <concept>
+    <code value="2611009"/>
+    <display value="Payer Responsibility Four"/>
+  </concept>
+  <concept>
+    <code value="2611011"/>
+    <display value="Payer Responsibility Five"/>
+  </concept>
+  <concept>
+    <code value="2611013"/>
+    <display value="Payer Responsibility Six"/>
+  </concept>
+  <concept>
+    <code value="2611015"/>
+    <display value="Payer Responsibility Seven"/>
+  </concept>
+  <concept>
+    <code value="2611017"/>
+    <display value="Payer Responsibility Eight"/>
+  </concept>
+  <concept>
+    <code value="2611019"/>
+    <display value="Payer Responsibility Nine"/>
+  </concept>
+  <concept>
+    <code value="2611021"/>
+    <display value="Payer Responsibility Ten"/>
+  </concept>
+  <concept>
+    <code value="2611023"/>
+    <display value="Payer Responsibility Eleven"/>
+  </concept>
+  <concept>
+    <code value="2611025"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="2622001"/>
+    <display value="Self"/>
+  </concept>
+  <concept>
+    <code value="2622003"/>
+    <display value="Spouse"/>
+  </concept>
+  <concept>
+    <code value="2622005"/>
+    <display value="Child/Dependent"/>
+  </concept>
+  <concept>
+    <code value="2622009"/>
+    <display value="Cadaver Donor"/>
+  </concept>
+  <concept>
+    <code value="2622011"/>
+    <display value="Employee"/>
+  </concept>
+  <concept>
+    <code value="2622013"/>
+    <display value="Life/Domestic Partner"/>
+  </concept>
+  <concept>
+    <code value="2622015"/>
+    <display value="Organ Donor"/>
+  </concept>
+  <concept>
+    <code value="2622017"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="2622019"/>
+    <display value="Other Relationship"/>
+  </concept>
+  <concept>
+    <code value="2640001"/>
+    <display value="Immediate"/>
+  </concept>
+  <concept>
+    <code value="2640003"/>
+    <display value="Non-Immediate"/>
+  </concept>
+  <concept>
+    <code value="2641001"/>
+    <display value="Unable to sit without assistance"/>
+  </concept>
+  <concept>
+    <code value="2641003"/>
+    <display value="Unable to stand without assistance"/>
+  </concept>
+  <concept>
+    <code value="2641005"/>
+    <display value="Unable to walk without assistance"/>
+  </concept>
+  <concept>
+    <code value="A"/>
+    <display value="Patient was transported to the nearest facility for care of symptoms, complaints, or both"/>
+  </concept>
+  <concept>
+    <code value="B"/>
+    <display value="Patient was transported for the benefit of a preferred physician"/>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <display value="Patient was transported for the nearness of family members"/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="Patient was transported for the care of a specialist or for availability of equipment"/>
+  </concept>
+  <concept>
+    <code value="E"/>
+    <display value="Patient was transferred to a Rehabilitation Facility"/>
+  </concept>
+  <concept>
+    <code value="01"/>
+    <display value="Patient was admitted to a hospital"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Patient was moved by stretcher"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Patient was unconscious or in shock"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Patient was transported in an emergency situation"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="Patient had to be physically restrained"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Patient had visible hemorrhaging"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="Ambulance service was medically necessary"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Patient is confined to a bed or chair"/>
+  </concept>
+  <concept>
+    <code value="2650001"/>
+    <display value="ALS, Level 1"/>
+  </concept>
+  <concept>
+    <code value="2650003"/>
+    <display value="ALS, Level 1 Emergency"/>
+  </concept>
+  <concept>
+    <code value="2650005"/>
+    <display value="ALS, Level 2"/>
+  </concept>
+  <concept>
+    <code value="2650007"/>
+    <display value="BLS"/>
+  </concept>
+  <concept>
+    <code value="2650009"/>
+    <display value="BLS, Emergency"/>
+  </concept>
+  <concept>
+    <code value="2650011"/>
+    <display value="Fixed Wing (Airplane)"/>
+  </concept>
+  <concept>
+    <code value="2650013"/>
+    <display value="Paramedic Intercept"/>
+  </concept>
+  <concept>
+    <code value="2650015"/>
+    <display value="Specialty Care Transport"/>
+  </concept>
+  <concept>
+    <code value="2650017"/>
+    <display value="Rotary Wing (Helicopter)"/>
+  </concept>
+</CodeSystem>

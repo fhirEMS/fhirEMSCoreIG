@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-arrest-end-event"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-arrest-end-event</b></p><a name="vs-ems-arrest-end-event"> </a><a name="hcvs-ems-arrest-end-event"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-arrest.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3018001">3018001</a></td><td>Expired in ED</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3018003">3018003</a></td><td>Expired in the Field</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3018005">3018005</a></td><td>Ongoing Resuscitation in ED</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3018007">3018007</a></td><td>ROSC in the Field</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3018009">3018009</a></td><td>ROSC in the ED</td></tr><tr><td><a href="CodeSystem-cs-nemsis-arrest.html#cs-nemsis-arrest-3018011">3018011</a></td><td>Ongoing Resuscitation by Other EMS</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-arrest-end-event"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.21"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSArrestEndEventVS"/>
+  <title value="EMS End of Cardiac Arrest Event VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Disposition of the patient at the end of the EMS cardiac arrest event (eArrest.18)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+      <concept>
+        <code value="3018001"/>
+        <display value="Expired in ED"/>
+      </concept>
+      <concept>
+        <code value="3018003"/>
+        <display value="Expired in the Field"/>
+      </concept>
+      <concept>
+        <code value="3018005"/>
+        <display value="Ongoing Resuscitation in ED"/>
+      </concept>
+      <concept>
+        <code value="3018007"/>
+        <display value="ROSC in the Field"/>
+      </concept>
+      <concept>
+        <code value="3018009"/>
+        <display value="ROSC in the ED"/>
+      </concept>
+      <concept>
+        <code value="3018011"/>
+        <display value="Ongoing Resuscitation by Other EMS"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

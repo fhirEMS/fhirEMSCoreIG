@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NEMSIS Procedures/Protocols Codes - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.258"}
+    h3,h4,h5,h6{--heading-prefix:"17.258"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NEMSIS Procedures/Protocols Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-procedures.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-procedures.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cs-nemsis-procedures.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: NEMSIS Procedures/Protocols Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-07-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NEMSISProcedures</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.25.219926138944530828037824748808947630693.1.14
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Enumeration codes from the NEMSIS eProtocols section (eProtocols.01 - Protocols Used). NEMSIS 3.5.1.251001CP2.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-vs-ems-protocol-used.html">EMSProtocolUsedVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="cs-nemsis-procedures"> </a><a name="hccs-nemsis-procedures"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-procedures</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">9914001<a name="cs-nemsis-procedures-9914001"> </a></td>
+<td>Airway</td></tr>
+<tr><td style="white-space:nowrap">9914003<a name="cs-nemsis-procedures-9914003"> </a></td>
+<td>Airway-Failed</td></tr>
+<tr><td style="white-space:nowrap">9914005<a name="cs-nemsis-procedures-9914005"> </a></td>
+<td>Airway-Obstruction/Foreign Body</td></tr>
+<tr><td style="white-space:nowrap">9914007<a name="cs-nemsis-procedures-9914007"> </a></td>
+<td>Airway-Rapid Sequence Induction (RSI-Paralytic)</td></tr>
+<tr><td style="white-space:nowrap">9914009<a name="cs-nemsis-procedures-9914009"> </a></td>
+<td>Airway-Sedation Assisted (Non-Paralytic)</td></tr>
+<tr><td style="white-space:nowrap">9914011<a name="cs-nemsis-procedures-9914011"> </a></td>
+<td>Cardiac Arrest-Asystole</td></tr>
+<tr><td style="white-space:nowrap">9914013<a name="cs-nemsis-procedures-9914013"> </a></td>
+<td>Cardiac Arrest-Hypothermia-Therapeutic</td></tr>
+<tr><td style="white-space:nowrap">9914015<a name="cs-nemsis-procedures-9914015"> </a></td>
+<td>Cardiac Arrest-Pulseless Electrical Activity</td></tr>
+<tr><td style="white-space:nowrap">9914017<a name="cs-nemsis-procedures-9914017"> </a></td>
+<td>Cardiac Arrest-Ventricular Fibrillation/Pulseless Ventricular Tachycardia</td></tr>
+<tr><td style="white-space:nowrap">9914019<a name="cs-nemsis-procedures-9914019"> </a></td>
+<td>Cardiac Arrest-Post Resuscitation Care</td></tr>
+<tr><td style="white-space:nowrap">9914021<a name="cs-nemsis-procedures-9914021"> </a></td>
+<td>Environmental-Altitude Sickness</td></tr>
+<tr><td style="white-space:nowrap">9914023<a name="cs-nemsis-procedures-9914023"> </a></td>
+<td>Environmental-Cold Exposure</td></tr>
+<tr><td style="white-space:nowrap">9914025<a name="cs-nemsis-procedures-9914025"> </a></td>
+<td>Environmental-Frostbite/Cold Injury</td></tr>
+<tr><td style="white-space:nowrap">9914027<a name="cs-nemsis-procedures-9914027"> </a></td>
+<td>Environmental-Heat Exposure/Exhaustion</td></tr>
+<tr><td style="white-space:nowrap">9914029<a name="cs-nemsis-procedures-9914029"> </a></td>
+<td>Environmental-Heat Stroke/Hyperthermia</td></tr>
+<tr><td style="white-space:nowrap">9914031<a name="cs-nemsis-procedures-9914031"> </a></td>
+<td>Environmental-Hypothermia</td></tr>
+<tr><td style="white-space:nowrap">9914033<a name="cs-nemsis-procedures-9914033"> </a></td>
+<td>Exposure-Airway/Inhalation Irritants</td></tr>
+<tr><td style="white-space:nowrap">9914035<a name="cs-nemsis-procedures-9914035"> </a></td>
+<td>Exposure-Biological/Infectious</td></tr>
+<tr><td style="white-space:nowrap">9914037<a name="cs-nemsis-procedures-9914037"> </a></td>
+<td>Exposure-Blistering Agents</td></tr>
+<tr><td style="white-space:nowrap">9914041<a name="cs-nemsis-procedures-9914041"> </a></td>
+<td>Exposure-Chemicals to Eye</td></tr>
+<tr><td style="white-space:nowrap">9914043<a name="cs-nemsis-procedures-9914043"> </a></td>
+<td>Exposure-Cyanide</td></tr>
+<tr><td style="white-space:nowrap">9914045<a name="cs-nemsis-procedures-9914045"> </a></td>
+<td>Exposure-Explosive/Blast Injury</td></tr>
+<tr><td style="white-space:nowrap">9914047<a name="cs-nemsis-procedures-9914047"> </a></td>
+<td>Exposure-Nerve Agents</td></tr>
+<tr><td style="white-space:nowrap">9914049<a name="cs-nemsis-procedures-9914049"> </a></td>
+<td>Exposure-Radiologic Agents</td></tr>
+<tr><td style="white-space:nowrap">9914051<a name="cs-nemsis-procedures-9914051"> </a></td>
+<td>General-Back Pain</td></tr>
+<tr><td style="white-space:nowrap">9914053<a name="cs-nemsis-procedures-9914053"> </a></td>
+<td>General-Behavioral/Patient Restraint</td></tr>
+<tr><td style="white-space:nowrap">9914055<a name="cs-nemsis-procedures-9914055"> </a></td>
+<td>General-Cardiac Arrest</td></tr>
+<tr><td style="white-space:nowrap">9914057<a name="cs-nemsis-procedures-9914057"> </a></td>
+<td>General-Dental Problems</td></tr>
+<tr><td style="white-space:nowrap">9914059<a name="cs-nemsis-procedures-9914059"> </a></td>
+<td>General-Epistaxis</td></tr>
+<tr><td style="white-space:nowrap">9914061<a name="cs-nemsis-procedures-9914061"> </a></td>
+<td>General-Fever</td></tr>
+<tr><td style="white-space:nowrap">9914063<a name="cs-nemsis-procedures-9914063"> </a></td>
+<td>General-Individualized Patient Protocol</td></tr>
+<tr><td style="white-space:nowrap">9914065<a name="cs-nemsis-procedures-9914065"> </a></td>
+<td>General-Indwelling Medical Devices/Equipment</td></tr>
+<tr><td style="white-space:nowrap">9914067<a name="cs-nemsis-procedures-9914067"> </a></td>
+<td>General-IV Access</td></tr>
+<tr><td style="white-space:nowrap">9914069<a name="cs-nemsis-procedures-9914069"> </a></td>
+<td>General-Medical Device Malfunction</td></tr>
+<tr><td style="white-space:nowrap">9914071<a name="cs-nemsis-procedures-9914071"> </a></td>
+<td>General-Pain Control</td></tr>
+<tr><td style="white-space:nowrap">9914073<a name="cs-nemsis-procedures-9914073"> </a></td>
+<td>General-Spinal Immobilization/Clearance</td></tr>
+<tr><td style="white-space:nowrap">9914075<a name="cs-nemsis-procedures-9914075"> </a></td>
+<td>General-Universal Patient Care/Initial Patient Contact</td></tr>
+<tr><td style="white-space:nowrap">9914077<a name="cs-nemsis-procedures-9914077"> </a></td>
+<td>Injury-Amputation</td></tr>
+<tr><td style="white-space:nowrap">9914079<a name="cs-nemsis-procedures-9914079"> </a></td>
+<td>Injury-Bites and Envenomations-Land</td></tr>
+<tr><td style="white-space:nowrap">9914081<a name="cs-nemsis-procedures-9914081"> </a></td>
+<td>Injury-Bites and Envenomations-Marine</td></tr>
+<tr><td style="white-space:nowrap">9914083<a name="cs-nemsis-procedures-9914083"> </a></td>
+<td>Injury-Bleeding/Hemorrhage Control</td></tr>
+<tr><td style="white-space:nowrap">9914085<a name="cs-nemsis-procedures-9914085"> </a></td>
+<td>Injury-Burns-Thermal</td></tr>
+<tr><td style="white-space:nowrap">9914087<a name="cs-nemsis-procedures-9914087"> </a></td>
+<td>Injury-Cardiac Arrest</td></tr>
+<tr><td style="white-space:nowrap">9914089<a name="cs-nemsis-procedures-9914089"> </a></td>
+<td>Injury-Crush Syndrome</td></tr>
+<tr><td style="white-space:nowrap">9914091<a name="cs-nemsis-procedures-9914091"> </a></td>
+<td>Injury-Diving Emergencies</td></tr>
+<tr><td style="white-space:nowrap">9914093<a name="cs-nemsis-procedures-9914093"> </a></td>
+<td>Injury-Drowning/Near Drowning</td></tr>
+<tr><td style="white-space:nowrap">9914095<a name="cs-nemsis-procedures-9914095"> </a></td>
+<td>Injury-Electrical Injuries</td></tr>
+<tr><td style="white-space:nowrap">9914097<a name="cs-nemsis-procedures-9914097"> </a></td>
+<td>Injury-Extremity</td></tr>
+<tr><td style="white-space:nowrap">9914099<a name="cs-nemsis-procedures-9914099"> </a></td>
+<td>Injury-Eye</td></tr>
+<tr><td style="white-space:nowrap">9914101<a name="cs-nemsis-procedures-9914101"> </a></td>
+<td>Injury-Head</td></tr>
+<tr><td style="white-space:nowrap">9914103<a name="cs-nemsis-procedures-9914103"> </a></td>
+<td>Injury-Impaled Object</td></tr>
+<tr><td style="white-space:nowrap">9914105<a name="cs-nemsis-procedures-9914105"> </a></td>
+<td>Injury-Multisystem</td></tr>
+<tr><td style="white-space:nowrap">9914107<a name="cs-nemsis-procedures-9914107"> </a></td>
+<td>Injury-Spinal Cord</td></tr>
+<tr><td style="white-space:nowrap">9914109<a name="cs-nemsis-procedures-9914109"> </a></td>
+<td>Medical-Abdominal Pain</td></tr>
+<tr><td style="white-space:nowrap">9914111<a name="cs-nemsis-procedures-9914111"> </a></td>
+<td>Medical-Allergic Reaction/Anaphylaxis</td></tr>
+<tr><td style="white-space:nowrap">9914113<a name="cs-nemsis-procedures-9914113"> </a></td>
+<td>Medical-Altered Mental Status</td></tr>
+<tr><td style="white-space:nowrap">9914115<a name="cs-nemsis-procedures-9914115"> </a></td>
+<td>Medical-Bradycardia</td></tr>
+<tr><td style="white-space:nowrap">9914117<a name="cs-nemsis-procedures-9914117"> </a></td>
+<td>Medical-Cardiac Chest Pain</td></tr>
+<tr><td style="white-space:nowrap">9914119<a name="cs-nemsis-procedures-9914119"> </a></td>
+<td>Medical-Diarrhea</td></tr>
+<tr><td style="white-space:nowrap">9914121<a name="cs-nemsis-procedures-9914121"> </a></td>
+<td>Medical-Hyperglycemia</td></tr>
+<tr><td style="white-space:nowrap">9914123<a name="cs-nemsis-procedures-9914123"> </a></td>
+<td>Medical-Hypertension</td></tr>
+<tr><td style="white-space:nowrap">9914125<a name="cs-nemsis-procedures-9914125"> </a></td>
+<td>Medical-Hypoglycemia/Diabetic Emergency</td></tr>
+<tr><td style="white-space:nowrap">9914127<a name="cs-nemsis-procedures-9914127"> </a></td>
+<td>Medical-Hypotension/Shock (Non-Trauma)</td></tr>
+<tr><td style="white-space:nowrap">9914129<a name="cs-nemsis-procedures-9914129"> </a></td>
+<td>Medical-Influenza-Like Illness/Upper Respiratory Infection</td></tr>
+<tr><td style="white-space:nowrap">9914131<a name="cs-nemsis-procedures-9914131"> </a></td>
+<td>Medical-Nausea/Vomiting</td></tr>
+<tr><td style="white-space:nowrap">9914133<a name="cs-nemsis-procedures-9914133"> </a></td>
+<td>Medical-Newborn/Neonatal Resuscitation</td></tr>
+<tr><td style="white-space:nowrap">9914135<a name="cs-nemsis-procedures-9914135"> </a></td>
+<td>General-Overdose/Poisoning/Toxic Ingestion</td></tr>
+<tr><td style="white-space:nowrap">9914137<a name="cs-nemsis-procedures-9914137"> </a></td>
+<td>Medical-Pulmonary Edema/CHF</td></tr>
+<tr><td style="white-space:nowrap">9914139<a name="cs-nemsis-procedures-9914139"> </a></td>
+<td>Medical-Respiratory Distress/Asthma/COPD/Reactive Airway</td></tr>
+<tr><td style="white-space:nowrap">9914141<a name="cs-nemsis-procedures-9914141"> </a></td>
+<td>Medical-Seizure</td></tr>
+<tr><td style="white-space:nowrap">9914143<a name="cs-nemsis-procedures-9914143"> </a></td>
+<td>Medical-ST-Elevation Myocardial Infarction (STEMI)</td></tr>
+<tr><td style="white-space:nowrap">9914145<a name="cs-nemsis-procedures-9914145"> </a></td>
+<td>Medical-Stroke/TIA</td></tr>
+<tr><td style="white-space:nowrap">9914147<a name="cs-nemsis-procedures-9914147"> </a></td>
+<td>Medical-Supraventricular Tachycardia (Including Atrial Fibrillation)</td></tr>
+<tr><td style="white-space:nowrap">9914149<a name="cs-nemsis-procedures-9914149"> </a></td>
+<td>Medical-Syncope</td></tr>
+<tr><td style="white-space:nowrap">9914151<a name="cs-nemsis-procedures-9914151"> </a></td>
+<td>Medical-Ventricular Tachycardia (With Pulse)</td></tr>
+<tr><td style="white-space:nowrap">9914153<a name="cs-nemsis-procedures-9914153"> </a></td>
+<td>Not Done</td></tr>
+<tr><td style="white-space:nowrap">9914155<a name="cs-nemsis-procedures-9914155"> </a></td>
+<td>OB/GYN-Childbirth/Labor/Delivery</td></tr>
+<tr><td style="white-space:nowrap">9914157<a name="cs-nemsis-procedures-9914157"> </a></td>
+<td>OB/GYN-Eclampsia</td></tr>
+<tr><td style="white-space:nowrap">9914159<a name="cs-nemsis-procedures-9914159"> </a></td>
+<td>OB/GYN-Gynecologic Emergencies</td></tr>
+<tr><td style="white-space:nowrap">9914161<a name="cs-nemsis-procedures-9914161"> </a></td>
+<td>OB/GYN-Pregnancy Related Emergencies</td></tr>
+<tr><td style="white-space:nowrap">9914163<a name="cs-nemsis-procedures-9914163"> </a></td>
+<td>OB/GYN-Post-partum Hemorrhage</td></tr>
+<tr><td style="white-space:nowrap">9914165<a name="cs-nemsis-procedures-9914165"> </a></td>
+<td>Other</td></tr>
+<tr><td style="white-space:nowrap">9914167<a name="cs-nemsis-procedures-9914167"> </a></td>
+<td>Exposure-Carbon Monoxide</td></tr>
+<tr><td style="white-space:nowrap">9914169<a name="cs-nemsis-procedures-9914169"> </a></td>
+<td>Cardiac Arrest-Do Not Resuscitate</td></tr>
+<tr><td style="white-space:nowrap">9914171<a name="cs-nemsis-procedures-9914171"> </a></td>
+<td>Cardiac Arrest-Special Resuscitation Orders</td></tr>
+<tr><td style="white-space:nowrap">9914173<a name="cs-nemsis-procedures-9914173"> </a></td>
+<td>Exposure-Smoke Inhalation</td></tr>
+<tr><td style="white-space:nowrap">9914175<a name="cs-nemsis-procedures-9914175"> </a></td>
+<td>General-Community Paramedicine/Mobile Integrated Healthcare</td></tr>
+<tr><td style="white-space:nowrap">9914177<a name="cs-nemsis-procedures-9914177"> </a></td>
+<td>General-Exception Protocol</td></tr>
+<tr><td style="white-space:nowrap">9914179<a name="cs-nemsis-procedures-9914179"> </a></td>
+<td>General-Extended Care Guidelines</td></tr>
+<tr><td style="white-space:nowrap">9914181<a name="cs-nemsis-procedures-9914181"> </a></td>
+<td>General-Interfacility Transfers</td></tr>
+<tr><td style="white-space:nowrap">9914183<a name="cs-nemsis-procedures-9914183"> </a></td>
+<td>General-Law Enforcement - Blood for Legal Purposes</td></tr>
+<tr><td style="white-space:nowrap">9914185<a name="cs-nemsis-procedures-9914185"> </a></td>
+<td>General-Law Enforcement - Assist with Law Enforcement Activity</td></tr>
+<tr><td style="white-space:nowrap">9914187<a name="cs-nemsis-procedures-9914187"> </a></td>
+<td>General-Neglect or Abuse Suspected</td></tr>
+<tr><td style="white-space:nowrap">9914189<a name="cs-nemsis-procedures-9914189"> </a></td>
+<td>General-Refusal of Care</td></tr>
+<tr><td style="white-space:nowrap">9914191<a name="cs-nemsis-procedures-9914191"> </a></td>
+<td>Injury-Mass/Multiple Casualties</td></tr>
+<tr><td style="white-space:nowrap">9914193<a name="cs-nemsis-procedures-9914193"> </a></td>
+<td>Injury-Thoracic</td></tr>
+<tr><td style="white-space:nowrap">9914195<a name="cs-nemsis-procedures-9914195"> </a></td>
+<td>Medical-Adrenal Insufficiency</td></tr>
+<tr><td style="white-space:nowrap">9914197<a name="cs-nemsis-procedures-9914197"> </a></td>
+<td>Medical-Apparent Life Threatening Event (ALTE)</td></tr>
+<tr><td style="white-space:nowrap">9914199<a name="cs-nemsis-procedures-9914199"> </a></td>
+<td>Medical-Tachycardia</td></tr>
+<tr><td style="white-space:nowrap">9914201<a name="cs-nemsis-procedures-9914201"> </a></td>
+<td>Cardiac Arrest-Determination of Death/Withholding Resuscitative Efforts</td></tr>
+<tr><td style="white-space:nowrap">9914203<a name="cs-nemsis-procedures-9914203"> </a></td>
+<td>Injury-Conducted Electrical Weapon (e.g., Taser)</td></tr>
+<tr><td style="white-space:nowrap">9914205<a name="cs-nemsis-procedures-9914205"> </a></td>
+<td>Injury-Facial Trauma</td></tr>
+<tr><td style="white-space:nowrap">9914207<a name="cs-nemsis-procedures-9914207"> </a></td>
+<td>Injury-General Trauma Management</td></tr>
+<tr><td style="white-space:nowrap">9914209<a name="cs-nemsis-procedures-9914209"> </a></td>
+<td>Injury-Lightning/Lightning Strike</td></tr>
+<tr><td style="white-space:nowrap">9914211<a name="cs-nemsis-procedures-9914211"> </a></td>
+<td>Injury-SCUBA Injury/Accidents</td></tr>
+<tr><td style="white-space:nowrap">9914213<a name="cs-nemsis-procedures-9914213"> </a></td>
+<td>Injury-Topical Chemical Burn</td></tr>
+<tr><td style="white-space:nowrap">9914215<a name="cs-nemsis-procedures-9914215"> </a></td>
+<td>Medical-Beta Blocker Poisoning/Overdose</td></tr>
+<tr><td style="white-space:nowrap">9914217<a name="cs-nemsis-procedures-9914217"> </a></td>
+<td>Medical-Calcium Channel Blocker Poisoning/Overdose</td></tr>
+<tr><td style="white-space:nowrap">9914219<a name="cs-nemsis-procedures-9914219"> </a></td>
+<td>Medical-Opioid Poisoning/Overdose</td></tr>
+<tr><td style="white-space:nowrap">9914221<a name="cs-nemsis-procedures-9914221"> </a></td>
+<td>Medical-Respiratory Distress-Bronchiolitis</td></tr>
+<tr><td style="white-space:nowrap">9914223<a name="cs-nemsis-procedures-9914223"> </a></td>
+<td>Medical-Respiratory Distress-Croup</td></tr>
+<tr><td style="white-space:nowrap">9914225<a name="cs-nemsis-procedures-9914225"> </a></td>
+<td>Medical-Stimulant Poisoning/Overdose</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

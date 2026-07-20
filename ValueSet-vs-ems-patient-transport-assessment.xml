@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-patient-transport-assessment"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-patient-transport-assessment</b></p><a name="vs-ems-patient-transport-assessment"> </a><a name="hcvs-ems-patient-transport-assessment"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-payment.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2641001">2641001</a></td><td>Unable to sit without assistance</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2641003">2641003</a></td><td>Unable to stand without assistance</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2641005">2641005</a></td><td>Unable to walk without assistance</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-patient-transport-assessment"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.94"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSPatientTransportAssessmentVS"/>
+  <title value="EMS Patient Transport Assessment VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Patient's physical condition that necessitated ambulance transport (ePayment.41)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+      <concept>
+        <code value="2641001"/>
+        <display value="Unable to sit without assistance"/>
+      </concept>
+      <concept>
+        <code value="2641003"/>
+        <display value="Unable to stand without assistance"/>
+      </concept>
+      <concept>
+        <code value="2641005"/>
+        <display value="Unable to walk without assistance"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

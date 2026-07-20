@@ -1,0 +1,133 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transfer-reason> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-transfer-reason"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-transfer-reason</b></p><a name=\"vs-ems-transfer-reason\"> </a><a name=\"hcvs-ems-transfer-reason\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-codes.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820001\">2820001</a></td><td>Cardiac Specialty</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820003\">2820003</a></td><td>Convenience Transfer (Patient Request)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820005\">2820005</a></td><td>Diagnostic Testing</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820007\">2820007</a></td><td>Dialysis</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820009\">2820009</a></td><td>Drug and/or Alcohol Rehabilitation Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820011\">2820011</a></td><td>Extended Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820013\">2820013</a></td><td>Maternal/Neonatal</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820015\">2820015</a></td><td>Medical Specialty Care (Other, Not Listed)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820017\">2820017</a></td><td>Neurological Specialty Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820019\">2820019</a></td><td>Palliative/Hospice Care (Home or Facility)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820021\">2820021</a></td><td>Pediatric Specialty Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820023\">2820023</a></td><td>Psychiatric/Behavioral Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820025\">2820025</a></td><td>Physical Rehabilitation Care</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820027\">2820027</a></td><td>Return to Home/Residence</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820029\">2820029</a></td><td>Surgical Specialty Care (Other, Not Listed)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-2820031\">2820031</a></td><td>Trauma/Orthopedic Specialty Care</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transfer-reason"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.118" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSTransferReasonVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Reason for Interfacility Transfer"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eSituation.20 - The clinical reason for an interfacility transfer or transport."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac Specialty" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Convenience Transfer (Patient Request)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diagnostic Testing" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dialysis" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drug and/or Alcohol Rehabilitation Care" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extended Care" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maternal/Neonatal" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical Specialty Care (Other, Not Listed)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neurological Specialty Care" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palliative/Hospice Care (Home or Facility)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Specialty Care" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Psychiatric/Behavioral Care" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physical Rehabilitation Care" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Return to Home/Residence" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Surgical Specialty Care (Other, Not Listed)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2820031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma/Orthopedic Specialty Care" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-transfer-reason.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

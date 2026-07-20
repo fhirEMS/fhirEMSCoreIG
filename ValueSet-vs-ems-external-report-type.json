@@ -1,0 +1,99 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-external-report-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-external-report-type</b></p><a name=\"vs-ems-external-report-type\"> </a><a name=\"hcvs-ems-external-report-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-codes.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303001\">4303001</a></td><td>Disaster Tag</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303003\">4303003</a></td><td>Fire Incident Report</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303005\">4303005</a></td><td>Hospital-Receiving</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303007\">4303007</a></td><td>Hospital-Transferring</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303009\">4303009</a></td><td>Law Enforcement Report</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303011\">4303011</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303013\">4303013</a></td><td>Other Registry</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303015\">4303015</a></td><td>Other Report</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303017\">4303017</a></td><td>Patient ID</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303019\">4303019</a></td><td>Prior EMS Patient Care Report</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303021\">4303021</a></td><td>STEMI Registry</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303023\">4303023</a></td><td>Stroke Registry</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-4303025\">4303025</a></td><td>Trauma Registry</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-external-report-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.71"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSExternalReportTypeVS",
+  "title" : "EMS External Report Type VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Type of external report associated with the EMS event (eOutcome.03).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+      "concept" : [{
+        "code" : "4303001",
+        "display" : "Disaster Tag"
+      },
+      {
+        "code" : "4303003",
+        "display" : "Fire Incident Report"
+      },
+      {
+        "code" : "4303005",
+        "display" : "Hospital-Receiving"
+      },
+      {
+        "code" : "4303007",
+        "display" : "Hospital-Transferring"
+      },
+      {
+        "code" : "4303009",
+        "display" : "Law Enforcement Report"
+      },
+      {
+        "code" : "4303011",
+        "display" : "Other"
+      },
+      {
+        "code" : "4303013",
+        "display" : "Other Registry"
+      },
+      {
+        "code" : "4303015",
+        "display" : "Other Report"
+      },
+      {
+        "code" : "4303017",
+        "display" : "Patient ID"
+      },
+      {
+        "code" : "4303019",
+        "display" : "Prior EMS Patient Care Report"
+      },
+      {
+        "code" : "4303021",
+        "display" : "STEMI Registry"
+      },
+      {
+        "code" : "4303023",
+        "display" : "Stroke Registry"
+      },
+      {
+        "code" : "4303025",
+        "display" : "Trauma Registry"
+      }]
+    }]
+  }
+}

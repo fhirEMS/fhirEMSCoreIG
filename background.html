@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Background - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Background</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Background</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a>    <ul>
+      <li><a href="#emergency-medical-services-in-the-united-states" id="markdown-toc-emergency-medical-services-in-the-united-states">Emergency Medical Services in the United States</a></li>
+      <li><a href="#the-nemsis-standard" id="markdown-toc-the-nemsis-standard">The NEMSIS Standard</a>        <ul>
+          <li><a href="#nemsis-version-history" id="markdown-toc-nemsis-version-history">NEMSIS Version History</a></li>
+          <li><a href="#nemsis-data-architecture" id="markdown-toc-nemsis-data-architecture">NEMSIS Data Architecture</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-interoperability-challenge" id="markdown-toc-the-interoperability-challenge">The Interoperability Challenge</a></li>
+      <li><a href="#this-implementation-guide" id="markdown-toc-this-implementation-guide">This Implementation Guide</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="background">Background</h1>
+
+<h2 id="emergency-medical-services-in-the-united-states">Emergency Medical Services in the United States</h2>
+
+<p>Emergency Medical Services (EMS) agencies respond to approximately 40 million calls per year in the United States, providing pre-hospital emergency care and medical transport. Each response generates a <strong>Patient Care Report (PCR)</strong> — a structured clinical record documenting the patient encounter from dispatch through transfer of care.</p>
+
+<p>EMS PCR data is used for:</p>
+<ul>
+  <li><strong>Clinical care continuity</strong>: Communicating patient history and treatments to receiving emergency departments</li>
+  <li><strong>Quality improvement</strong>: Measuring response time compliance, treatment adherence, and clinical outcomes</li>
+  <li><strong>Public health surveillance</strong>: Tracking opioid overdoses, cardiac arrest rates, trauma incidence</li>
+  <li><strong>Billing and reimbursement</strong>: CMS ambulance claims (HCPCS codes A0425–A0999)</li>
+  <li><strong>Research</strong>: Outcomes studies, protocol effectiveness, system performance analysis</li>
+</ul>
+
+<h2 id="the-nemsis-standard">The NEMSIS Standard</h2>
+
+<p>The <strong>National EMS Information System (NEMSIS)</strong> is the national data standard for EMS. Managed by the <strong>NEMSIS Technical Assistance Center (TAC)</strong> at the University of Utah, NEMSIS defines the data elements, code sets, and schema that EMS agencies use to document patient care.</p>
+
+<h3 id="nemsis-version-history">NEMSIS Version History</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NEMSIS 2.x</td>
+      <td>Retired</td>
+    </tr>
+    <tr>
+      <td>NEMSIS 3.3.x</td>
+      <td>Retired</td>
+    </tr>
+    <tr>
+      <td>NEMSIS 3.4.x</td>
+      <td>Legacy</td>
+    </tr>
+    <tr>
+      <td>NEMSIS 3.5.0</td>
+      <td>Current base</td>
+    </tr>
+    <tr>
+      <td><strong>NEMSIS 3.5.1.251001CP2</strong></td>
+      <td><strong>This IG</strong> (October 2025 CP2)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="nemsis-data-architecture">NEMSIS Data Architecture</h3>
+
+<p>NEMSIS organizes data into three datasets:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Purpose</th>
+      <th>Elements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>EMSDataSet</strong></td>
+      <td>EMS Patient Care Report</td>
+      <td>453 elements across 24 sections</td>
+    </tr>
+    <tr>
+      <td><strong>DEMDataSet</strong></td>
+      <td>Agency Demographics</td>
+      <td>157 elements</td>
+    </tr>
+    <tr>
+      <td><strong>StateDataSet</strong></td>
+      <td>State Configuration</td>
+      <td>47 elements</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All 50 states collect NEMSIS-compliant PCR data. EMS agencies submit to state repositories, which submit to the <strong>National EMS Database (NEMSID)</strong> at NHTSA. As of 2024, NEMSID contains data on over 150 million EMS activations.</p>
+
+<h2 id="the-interoperability-challenge">The Interoperability Challenge</h2>
+
+<p>NEMSIS uses an <strong>XML-based schema</strong> incompatible with modern healthcare interoperability standards:</p>
+
+<ul>
+  <li><strong>FHIR-based HIE systems</strong> (CommonWell, Carequality, state HIEs)</li>
+  <li><strong>EHR APIs</strong> (USCDI, Da Vinci, SMART on FHIR)</li>
+  <li><strong>CMS interoperability rules</strong> (CMS-9115-F, Patient Access API)</li>
+  <li><strong>HL7 C-CDA</strong> documents used in transitions of care</li>
+</ul>
+
+<p>This gap means that EMS clinical data — highly relevant to emergency department care and hospital admissions — is largely siloed from the broader healthcare ecosystem.</p>
+
+<h2 id="this-implementation-guide">This Implementation Guide</h2>
+
+<p>The <strong>fhirEMSCore IG</strong> bridges NEMSIS 3.5.1 and FHIR R4, enabling:</p>
+
+<ol>
+  <li><strong>EMS PCR → FHIR</strong>: Transform NEMSIS XML PCRs into FHIR Bundles for HIE submission</li>
+  <li><strong>EMS → ED handoff</strong>: FHIR-based transfer of pre-hospital data to receiving facilities</li>
+  <li><strong>Population health</strong>: Aggregate EMS data in FHIR-compliant analytics platforms</li>
+  <li><strong>Bidirectional exchange</strong>: Future roadmap for FHIR → EMS data flows</li>
+</ol>
+
+<p>The IG is grounded in real-world EMS workflows and aligns with both the US Core 6.1.0 profiles and the normative NEMSIS 3.5.1 XSD schemas.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

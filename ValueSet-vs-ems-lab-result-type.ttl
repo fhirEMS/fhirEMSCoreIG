@@ -1,0 +1,377 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-lab-result-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-lab-result-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-lab-result-type</b></p><a name=\"vs-ems-lab-result-type\"> </a><a name=\"hcvs-ems-lab-result-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-labs.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-labs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403001\">3403001</a></td><td>Alanine Transaminase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403003\">3403003</a></td><td>Alcohol-Blood</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403005\">3403005</a></td><td>Alcohol-Breath</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403007\">3403007</a></td><td>Alkaline Phosphatase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403009\">3403009</a></td><td>Amylase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403013\">3403013</a></td><td>Aspartate Transaminase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403015\">3403015</a></td><td>B-Type Natriuretic Peptide (BNP)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403017\">3403017</a></td><td>Base Excess</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403019\">3403019</a></td><td>Bilirubin-Direct</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403021\">3403021</a></td><td>Bilirubin-Total</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403023\">3403023</a></td><td>BUN</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403025\">3403025</a></td><td>Calcium-Ionized</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403027\">3403027</a></td><td>Calcium-Serum</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403029\">3403029</a></td><td>Carbon Dioxide-Partial Pressure</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403033\">3403033</a></td><td>Chloride</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403035\">3403035</a></td><td>Creatine Kinase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403037\">3403037</a></td><td>Creatine Kinase-MB</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403039\">3403039</a></td><td>Creatinine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403041\">3403041</a></td><td>Gamma Glutamyl Transpeptidase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403043\">3403043</a></td><td>Glucose</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403045\">3403045</a></td><td>Hematocrit</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403047\">3403047</a></td><td>Hemoglobin</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403049\">3403049</a></td><td>Human Chorionic Gonadotropin-Serum</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403051\">3403051</a></td><td>Human Chorionic Gonadotropin-Urine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403053\">3403053</a></td><td>International Normalized Ratio (INR)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403055\">3403055</a></td><td>Lactate Dehydrogenase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403057\">3403057</a></td><td>Lactate-Arterial</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403059\">3403059</a></td><td>Lactate-Venous</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403061\">3403061</a></td><td>Lipase</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403063\">3403063</a></td><td>Magnesium</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403065\">3403065</a></td><td>Oxygen-Partial Pressure</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403067\">3403067</a></td><td>Partial Thromboplastin Time</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403071\">3403071</a></td><td>pH-ABG</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403073\">3403073</a></td><td>pH-Venous</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403075\">3403075</a></td><td>Platelets</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403077\">3403077</a></td><td>Potassium</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403079\">3403079</a></td><td>Prothrombin Time</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403081\">3403081</a></td><td>Red Blood Cells</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403083\">3403083</a></td><td>Sodium</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403085\">3403085</a></td><td>Troponin</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403087\">3403087</a></td><td>White Blood Cells</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403089\">3403089</a></td><td>Ammonia</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403091\">3403091</a></td><td>Bicarbonate (HCO3)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403093\">3403093</a></td><td>Carboxyhemoglobin</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403095\">3403095</a></td><td>CO2, Total (Bicarbonate)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403097\">3403097</a></td><td>CRP (C-Reactive Protein)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403099\">3403099</a></td><td>Dilantin</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403101\">3403101</a></td><td>Leukocytes</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403103\">3403103</a></td><td>Nitrates</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403105\">3403105</a></td><td>Phenobarbital</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403107\">3403107</a></td><td>Protein</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403109\">3403109</a></td><td>Salicylate</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403111\">3403111</a></td><td>Specific Gravity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403113\">3403113</a></td><td>Tylenol</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403115\">3403115</a></td><td>ACT Celite (ACTc)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403117\">3403117</a></td><td>ACT Kaolin (ACTk)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403119\">3403119</a></td><td>Bands</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403121\">3403121</a></td><td>Basophils</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403125\">3403125</a></td><td>Eosinophils</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403127\">3403127</a></td><td>Erythrocyte Count</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403129\">3403129</a></td><td>Erythrocyte Morphology</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403131\">3403131</a></td><td>Erythrocyte Sedimentation Rate</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403133\">3403133</a></td><td>High-Sensitivity C-reactive Protein (hs-CRP)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403135\">3403135</a></td><td>Lymphocytes</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403137\">3403137</a></td><td>Mean Corpuscular Hemoglobin (MCH)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403139\">3403139</a></td><td>Mean Corpuscular Hemoglobin Concentration (MCHC)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403141\">3403141</a></td><td>Mean Corpuscular Volume (MCV)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403143\">3403143</a></td><td>Monocytes</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403145\">3403145</a></td><td>Myoglobin</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403147\">3403147</a></td><td>Neutrophils</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403149\">3403149</a></td><td>Oxygen Saturation (SaO2)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403151\">3403151</a></td><td>Oxygen Volume/Content (SVO2)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403153\">3403153</a></td><td>Phosphorus (PO4)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403155\">3403155</a></td><td>Prothromblin test time (PT/INR)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403157\">3403157</a></td><td>Red Cell Distribution Width (RDW)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403159\">3403159</a></td><td>Reticulocyte Count</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-labs.html#cs-nemsis-labs-3403161\">3403161</a></td><td>Troponin T (cTnT)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-lab-result-type"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.81" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSLabResultTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Lab Result Type VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Type of lab result obtained (eLabs.03)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-labs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alanine Transaminase" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alcohol-Blood" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alcohol-Breath" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alkaline Phosphatase" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amylase" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aspartate Transaminase" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "B-Type Natriuretic Peptide (BNP)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Base Excess" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin-Direct" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bilirubin-Total" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BUN" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calcium-Ionized" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calcium-Serum" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carbon Dioxide-Partial Pressure" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chloride" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatine Kinase" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatine Kinase-MB" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Creatinine" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gamma Glutamyl Transpeptidase" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glucose" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematocrit" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hemoglobin" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human Chorionic Gonadotropin-Serum" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Human Chorionic Gonadotropin-Urine" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403053" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "International Normalized Ratio (INR)" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403055" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate Dehydrogenase" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403057" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate-Arterial" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403059" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lactate-Venous" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403061" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lipase" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403063" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Magnesium" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403065" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oxygen-Partial Pressure" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403067" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Partial Thromboplastin Time" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403071" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pH-ABG" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403073" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pH-Venous" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403075" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Platelets" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403077" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Potassium" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403079" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prothrombin Time" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403081" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Red Blood Cells" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403083" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sodium" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403085" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Troponin" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403087" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "White Blood Cells" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403089" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ammonia" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403091" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bicarbonate (HCO3)" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403093" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carboxyhemoglobin" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403095" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CO2, Total (Bicarbonate)" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403097" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP (C-Reactive Protein)" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403099" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilantin" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leukocytes" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403103" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitrates" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phenobarbital" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403107" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Protein" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403109" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Salicylate" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403111" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specific Gravity" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403113" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tylenol" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403115" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACT Celite (ACTc)" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403117" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACT Kaolin (ACTk)" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403119" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bands" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403121" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basophils" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403125" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eosinophils" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403127" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte Count" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403129" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte Morphology" ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403131" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrocyte Sedimentation Rate" ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403133" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "High-Sensitivity C-reactive Protein (hs-CRP)" ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403135" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lymphocytes" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403137" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mean Corpuscular Hemoglobin (MCH)" ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403139" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mean Corpuscular Hemoglobin Concentration (MCHC)" ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403141" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mean Corpuscular Volume (MCV)" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403143" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Monocytes" ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403145" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myoglobin" ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403147" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neutrophils" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403149" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oxygen Saturation (SaO2)" ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403151" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oxygen Volume/Content (SVO2)" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403153" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phosphorus (PO4)" ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403155" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prothromblin test time (PT/INR)" ]
+       ], [
+         fhir:index 74 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403157" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Red Cell Distribution Width (RDW)" ]
+       ], [
+         fhir:index 75 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403159" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reticulocyte Count" ]
+       ], [
+         fhir:index 76 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3403161" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Troponin T (cTnT)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-lab-result-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

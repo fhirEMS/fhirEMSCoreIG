@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-ambulance-conditions"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-ambulance-conditions</b></p><a name="vs-ems-ambulance-conditions"> </a><a name="hcvs-ems-ambulance-conditions"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-payment.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-01">01</a></td><td>Patient was admitted to a hospital</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-04">04</a></td><td>Patient was moved by stretcher</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-05">05</a></td><td>Patient was unconscious or in shock</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-06">06</a></td><td>Patient was transported in an emergency situation</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-07">07</a></td><td>Patient had to be physically restrained</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-08">08</a></td><td>Patient had visible hemorrhaging</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-09">09</a></td><td>Ambulance service was medically necessary</td></tr><tr><td><a href="CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-12">12</a></td><td>Patient is confined to a bed or chair</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-ambulance-conditions"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.19"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSAmbulanceConditionsVS"/>
+  <title value="EMS Ambulance Conditions Indicator VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="CMS ambulance conditions indicators justifying medical necessity (ePayment.47)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"/>
+      <concept>
+        <code value="01"/>
+        <display value="Patient was admitted to a hospital"/>
+      </concept>
+      <concept>
+        <code value="04"/>
+        <display value="Patient was moved by stretcher"/>
+      </concept>
+      <concept>
+        <code value="05"/>
+        <display value="Patient was unconscious or in shock"/>
+      </concept>
+      <concept>
+        <code value="06"/>
+        <display value="Patient was transported in an emergency situation"/>
+      </concept>
+      <concept>
+        <code value="07"/>
+        <display value="Patient had to be physically restrained"/>
+      </concept>
+      <concept>
+        <code value="08"/>
+        <display value="Patient had visible hemorrhaging"/>
+      </concept>
+      <concept>
+        <code value="09"/>
+        <display value="Ambulance service was medically necessary"/>
+      </concept>
+      <concept>
+        <code value="12"/>
+        <display value="Patient is confined to a bed or chair"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

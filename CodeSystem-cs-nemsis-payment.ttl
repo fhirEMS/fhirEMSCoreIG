@@ -1,0 +1,310 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-payment"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-payment</b></p><a name=\"cs-nemsis-payment\"> </a><a name=\"hccs-nemsis-payment\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">2601001<a name=\"cs-nemsis-payment-2601001\"> </a></td><td>Insurance</td></tr><tr><td style=\"white-space:nowrap\">2601003<a name=\"cs-nemsis-payment-2601003\"> </a></td><td>Medicaid</td></tr><tr><td style=\"white-space:nowrap\">2601005<a name=\"cs-nemsis-payment-2601005\"> </a></td><td>Medicare</td></tr><tr><td style=\"white-space:nowrap\">2601007<a name=\"cs-nemsis-payment-2601007\"> </a></td><td>Not Billed (for any reason)</td></tr><tr><td style=\"white-space:nowrap\">2601009<a name=\"cs-nemsis-payment-2601009\"> </a></td><td>Other Government</td></tr><tr><td style=\"white-space:nowrap\">2601011<a name=\"cs-nemsis-payment-2601011\"> </a></td><td>Self Pay</td></tr><tr><td style=\"white-space:nowrap\">2601013<a name=\"cs-nemsis-payment-2601013\"> </a></td><td>Workers Compensation</td></tr><tr><td style=\"white-space:nowrap\">2601015<a name=\"cs-nemsis-payment-2601015\"> </a></td><td>Payment by Facility</td></tr><tr><td style=\"white-space:nowrap\">2601017<a name=\"cs-nemsis-payment-2601017\"> </a></td><td>Contracted Payment</td></tr><tr><td style=\"white-space:nowrap\">2601019<a name=\"cs-nemsis-payment-2601019\"> </a></td><td>Community Network</td></tr><tr><td style=\"white-space:nowrap\">2601021<a name=\"cs-nemsis-payment-2601021\"> </a></td><td>No Insurance Identified</td></tr><tr><td style=\"white-space:nowrap\">2601023<a name=\"cs-nemsis-payment-2601023\"> </a></td><td>Other Payment Option</td></tr><tr><td style=\"white-space:nowrap\">2611001<a name=\"cs-nemsis-payment-2611001\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">2611003<a name=\"cs-nemsis-payment-2611003\"> </a></td><td>Primary</td></tr><tr><td style=\"white-space:nowrap\">2611005<a name=\"cs-nemsis-payment-2611005\"> </a></td><td>Secondary</td></tr><tr><td style=\"white-space:nowrap\">2611007<a name=\"cs-nemsis-payment-2611007\"> </a></td><td>Tertiary</td></tr><tr><td style=\"white-space:nowrap\">2611009<a name=\"cs-nemsis-payment-2611009\"> </a></td><td>Payer Responsibility Four</td></tr><tr><td style=\"white-space:nowrap\">2611011<a name=\"cs-nemsis-payment-2611011\"> </a></td><td>Payer Responsibility Five</td></tr><tr><td style=\"white-space:nowrap\">2611013<a name=\"cs-nemsis-payment-2611013\"> </a></td><td>Payer Responsibility Six</td></tr><tr><td style=\"white-space:nowrap\">2611015<a name=\"cs-nemsis-payment-2611015\"> </a></td><td>Payer Responsibility Seven</td></tr><tr><td style=\"white-space:nowrap\">2611017<a name=\"cs-nemsis-payment-2611017\"> </a></td><td>Payer Responsibility Eight</td></tr><tr><td style=\"white-space:nowrap\">2611019<a name=\"cs-nemsis-payment-2611019\"> </a></td><td>Payer Responsibility Nine</td></tr><tr><td style=\"white-space:nowrap\">2611021<a name=\"cs-nemsis-payment-2611021\"> </a></td><td>Payer Responsibility Ten</td></tr><tr><td style=\"white-space:nowrap\">2611023<a name=\"cs-nemsis-payment-2611023\"> </a></td><td>Payer Responsibility Eleven</td></tr><tr><td style=\"white-space:nowrap\">2611025<a name=\"cs-nemsis-payment-2611025\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">2622001<a name=\"cs-nemsis-payment-2622001\"> </a></td><td>Self</td></tr><tr><td style=\"white-space:nowrap\">2622003<a name=\"cs-nemsis-payment-2622003\"> </a></td><td>Spouse</td></tr><tr><td style=\"white-space:nowrap\">2622005<a name=\"cs-nemsis-payment-2622005\"> </a></td><td>Child/Dependent</td></tr><tr><td style=\"white-space:nowrap\">2622009<a name=\"cs-nemsis-payment-2622009\"> </a></td><td>Cadaver Donor</td></tr><tr><td style=\"white-space:nowrap\">2622011<a name=\"cs-nemsis-payment-2622011\"> </a></td><td>Employee</td></tr><tr><td style=\"white-space:nowrap\">2622013<a name=\"cs-nemsis-payment-2622013\"> </a></td><td>Life/Domestic Partner</td></tr><tr><td style=\"white-space:nowrap\">2622015<a name=\"cs-nemsis-payment-2622015\"> </a></td><td>Organ Donor</td></tr><tr><td style=\"white-space:nowrap\">2622017<a name=\"cs-nemsis-payment-2622017\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">2622019<a name=\"cs-nemsis-payment-2622019\"> </a></td><td>Other Relationship</td></tr><tr><td style=\"white-space:nowrap\">2640001<a name=\"cs-nemsis-payment-2640001\"> </a></td><td>Immediate</td></tr><tr><td style=\"white-space:nowrap\">2640003<a name=\"cs-nemsis-payment-2640003\"> </a></td><td>Non-Immediate</td></tr><tr><td style=\"white-space:nowrap\">2641001<a name=\"cs-nemsis-payment-2641001\"> </a></td><td>Unable to sit without assistance</td></tr><tr><td style=\"white-space:nowrap\">2641003<a name=\"cs-nemsis-payment-2641003\"> </a></td><td>Unable to stand without assistance</td></tr><tr><td style=\"white-space:nowrap\">2641005<a name=\"cs-nemsis-payment-2641005\"> </a></td><td>Unable to walk without assistance</td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"cs-nemsis-payment-A\"> </a></td><td>Patient was transported to the nearest facility for care of symptoms, complaints, or both</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"cs-nemsis-payment-B\"> </a></td><td>Patient was transported for the benefit of a preferred physician</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"cs-nemsis-payment-C\"> </a></td><td>Patient was transported for the nearness of family members</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"cs-nemsis-payment-D\"> </a></td><td>Patient was transported for the care of a specialist or for availability of equipment</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"cs-nemsis-payment-E\"> </a></td><td>Patient was transferred to a Rehabilitation Facility</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"cs-nemsis-payment-01\"> </a></td><td>Patient was admitted to a hospital</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"cs-nemsis-payment-04\"> </a></td><td>Patient was moved by stretcher</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"cs-nemsis-payment-05\"> </a></td><td>Patient was unconscious or in shock</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"cs-nemsis-payment-06\"> </a></td><td>Patient was transported in an emergency situation</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"cs-nemsis-payment-07\"> </a></td><td>Patient had to be physically restrained</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"cs-nemsis-payment-08\"> </a></td><td>Patient had visible hemorrhaging</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"cs-nemsis-payment-09\"> </a></td><td>Ambulance service was medically necessary</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-nemsis-payment-12\"> </a></td><td>Patient is confined to a bed or chair</td></tr><tr><td style=\"white-space:nowrap\">2650001<a name=\"cs-nemsis-payment-2650001\"> </a></td><td>ALS, Level 1</td></tr><tr><td style=\"white-space:nowrap\">2650003<a name=\"cs-nemsis-payment-2650003\"> </a></td><td>ALS, Level 1 Emergency</td></tr><tr><td style=\"white-space:nowrap\">2650005<a name=\"cs-nemsis-payment-2650005\"> </a></td><td>ALS, Level 2</td></tr><tr><td style=\"white-space:nowrap\">2650007<a name=\"cs-nemsis-payment-2650007\"> </a></td><td>BLS</td></tr><tr><td style=\"white-space:nowrap\">2650009<a name=\"cs-nemsis-payment-2650009\"> </a></td><td>BLS, Emergency</td></tr><tr><td style=\"white-space:nowrap\">2650011<a name=\"cs-nemsis-payment-2650011\"> </a></td><td>Fixed Wing (Airplane)</td></tr><tr><td style=\"white-space:nowrap\">2650013<a name=\"cs-nemsis-payment-2650013\"> </a></td><td>Paramedic Intercept</td></tr><tr><td style=\"white-space:nowrap\">2650015<a name=\"cs-nemsis-payment-2650015\"> </a></td><td>Specialty Care Transport</td></tr><tr><td style=\"white-space:nowrap\">2650017<a name=\"cs-nemsis-payment-2650017\"> </a></td><td>Rotary Wing (Helicopter)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.11" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISPayment"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS ePayment Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS 3.5.1 ePayment section covering primary method of payment, insurance billing priority, relationship to insured, response urgency, patient transport assessment, ambulance transport reason codes, ambulance conditions indicators, CMS service level, and payer type."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "61"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Insurance" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medicaid" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medicare" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Billed (for any reason)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Government" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Self Pay" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Workers Compensation" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payment by Facility" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Contracted Payment" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community Network" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No Insurance Identified" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2601023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Payment Option" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Primary" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secondary" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tertiary" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Four" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Five" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Six" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Seven" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Eight" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Nine" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Ten" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Payer Responsibility Eleven" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2611025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Self" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spouse" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Child/Dependent" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cadaver Donor" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Employee" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Life/Domestic Partner" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Organ Donor" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2622019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Relationship" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2640001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Immediate" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2640003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Immediate" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2641001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unable to sit without assistance" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2641003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unable to stand without assistance" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2641005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unable to walk without assistance" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was transported to the nearest facility for care of symptoms, complaints, or both" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was transported for the benefit of a preferred physician" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "C" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was transported for the nearness of family members" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "D" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was transported for the care of a specialist or for availability of equipment" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "E" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was transferred to a Rehabilitation Facility" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was admitted to a hospital" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "04" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was moved by stretcher" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "05" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was unconscious or in shock" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "06" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient was transported in an emergency situation" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "07" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient had to be physically restrained" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "08" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient had visible hemorrhaging" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "09" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ambulance service was medically necessary" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient is confined to a bed or chair" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ALS, Level 1" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ALS, Level 1 Emergency" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ALS, Level 2" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BLS" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BLS, Emergency" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fixed Wing (Airplane)" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paramedic Intercept" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Specialty Care Transport" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2650017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotary Wing (Helicopter)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

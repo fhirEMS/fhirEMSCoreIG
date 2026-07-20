@@ -1,0 +1,406 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-arrest"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-arrest</b></p><a name=\"cs-nemsis-arrest\"> </a><a name=\"hccs-nemsis-arrest\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">3001001<a name=\"cs-nemsis-arrest-3001001\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3001003<a name=\"cs-nemsis-arrest-3001003\"> </a></td><td>Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)</td></tr><tr><td style=\"white-space:nowrap\">3001005<a name=\"cs-nemsis-arrest-3001005\"> </a></td><td>Yes, After Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)</td></tr><tr><td style=\"white-space:nowrap\">3002001<a name=\"cs-nemsis-arrest-3002001\"> </a></td><td>Cardiac (Presumed)</td></tr><tr><td style=\"white-space:nowrap\">3002003<a name=\"cs-nemsis-arrest-3002003\"> </a></td><td>Drowning/Submersion</td></tr><tr><td style=\"white-space:nowrap\">3002005<a name=\"cs-nemsis-arrest-3002005\"> </a></td><td>Drug Overdose</td></tr><tr><td style=\"white-space:nowrap\">3002007<a name=\"cs-nemsis-arrest-3002007\"> </a></td><td>Electrocution</td></tr><tr><td style=\"white-space:nowrap\">3002009<a name=\"cs-nemsis-arrest-3002009\"> </a></td><td>Exsanguination-Medical (Non-Traumatic)</td></tr><tr><td style=\"white-space:nowrap\">3002011<a name=\"cs-nemsis-arrest-3002011\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">3002013<a name=\"cs-nemsis-arrest-3002013\"> </a></td><td>Respiratory/Asphyxia</td></tr><tr><td style=\"white-space:nowrap\">3002015<a name=\"cs-nemsis-arrest-3002015\"> </a></td><td>Traumatic Cause</td></tr><tr><td style=\"white-space:nowrap\">3003001<a name=\"cs-nemsis-arrest-3003001\"> </a></td><td>Attempted Defibrillation</td></tr><tr><td style=\"white-space:nowrap\">3003003<a name=\"cs-nemsis-arrest-3003003\"> </a></td><td>Attempted Ventilation</td></tr><tr><td style=\"white-space:nowrap\">3003005<a name=\"cs-nemsis-arrest-3003005\"> </a></td><td>Initiated Chest Compressions</td></tr><tr><td style=\"white-space:nowrap\">3003007<a name=\"cs-nemsis-arrest-3003007\"> </a></td><td>Not Attempted-Considered Futile</td></tr><tr><td style=\"white-space:nowrap\">3003009<a name=\"cs-nemsis-arrest-3003009\"> </a></td><td>Not Attempted-DNR Orders</td></tr><tr><td style=\"white-space:nowrap\">3003011<a name=\"cs-nemsis-arrest-3003011\"> </a></td><td>Not Attempted-Signs of Circulation</td></tr><tr><td style=\"white-space:nowrap\">3004001<a name=\"cs-nemsis-arrest-3004001\"> </a></td><td>Not Witnessed</td></tr><tr><td style=\"white-space:nowrap\">3004003<a name=\"cs-nemsis-arrest-3004003\"> </a></td><td>Witnessed by Family Member</td></tr><tr><td style=\"white-space:nowrap\">3004005<a name=\"cs-nemsis-arrest-3004005\"> </a></td><td>Witnessed by Healthcare Provider</td></tr><tr><td style=\"white-space:nowrap\">3004007<a name=\"cs-nemsis-arrest-3004007\"> </a></td><td>Witnessed by Bystander</td></tr><tr><td style=\"white-space:nowrap\">3007001<a name=\"cs-nemsis-arrest-3007001\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3007003<a name=\"cs-nemsis-arrest-3007003\"> </a></td><td>Yes, Applied without Defibrillation</td></tr><tr><td style=\"white-space:nowrap\">3007005<a name=\"cs-nemsis-arrest-3007005\"> </a></td><td>Yes, With Defibrillation</td></tr><tr><td style=\"white-space:nowrap\">3009001<a name=\"cs-nemsis-arrest-3009001\"> </a></td><td>Compressions-Manual</td></tr><tr><td style=\"white-space:nowrap\">3009003<a name=\"cs-nemsis-arrest-3009003\"> </a></td><td>Compressions-External Band Type Device</td></tr><tr><td style=\"white-space:nowrap\">3009005<a name=\"cs-nemsis-arrest-3009005\"> </a></td><td>Compressions-External Plunger Type Device</td></tr><tr><td style=\"white-space:nowrap\">3009007<a name=\"cs-nemsis-arrest-3009007\"> </a></td><td>Compressions-External Thumper Type Device</td></tr><tr><td style=\"white-space:nowrap\">3009009<a name=\"cs-nemsis-arrest-3009009\"> </a></td><td>Compressions-Intermittent with Ventilation</td></tr><tr><td style=\"white-space:nowrap\">3009011<a name=\"cs-nemsis-arrest-3009011\"> </a></td><td>Compressions-Other Device</td></tr><tr><td style=\"white-space:nowrap\">3009013<a name=\"cs-nemsis-arrest-3009013\"> </a></td><td>Ventilation-Bag Valve Mask</td></tr><tr><td style=\"white-space:nowrap\">3009015<a name=\"cs-nemsis-arrest-3009015\"> </a></td><td>Ventilation-Impedance Threshold Device</td></tr><tr><td style=\"white-space:nowrap\">3009017<a name=\"cs-nemsis-arrest-3009017\"> </a></td><td>Ventilation-Mouth to Mouth</td></tr><tr><td style=\"white-space:nowrap\">3009019<a name=\"cs-nemsis-arrest-3009019\"> </a></td><td>Ventilation-Pocket Mask</td></tr><tr><td style=\"white-space:nowrap\">3009021<a name=\"cs-nemsis-arrest-3009021\"> </a></td><td>Compressions-Hands Only CPR (DEPRECATED)</td></tr><tr><td style=\"white-space:nowrap\">3009023<a name=\"cs-nemsis-arrest-3009023\"> </a></td><td>Ventilation-with OPA/NPA</td></tr><tr><td style=\"white-space:nowrap\">3009025<a name=\"cs-nemsis-arrest-3009025\"> </a></td><td>Ventilation-Advanced Airway Device</td></tr><tr><td style=\"white-space:nowrap\">3009027<a name=\"cs-nemsis-arrest-3009027\"> </a></td><td>Ventilation-Passive Ventilation with Oxygen</td></tr><tr><td style=\"white-space:nowrap\">3011001<a name=\"cs-nemsis-arrest-3011001\"> </a></td><td>Asystole</td></tr><tr><td style=\"white-space:nowrap\">3011005<a name=\"cs-nemsis-arrest-3011005\"> </a></td><td>PEA</td></tr><tr><td style=\"white-space:nowrap\">3011007<a name=\"cs-nemsis-arrest-3011007\"> </a></td><td>Unknown AED Non-Shockable Rhythm</td></tr><tr><td style=\"white-space:nowrap\">3011009<a name=\"cs-nemsis-arrest-3011009\"> </a></td><td>Unknown AED Shockable Rhythm</td></tr><tr><td style=\"white-space:nowrap\">3011011<a name=\"cs-nemsis-arrest-3011011\"> </a></td><td>Ventricular Fibrillation</td></tr><tr><td style=\"white-space:nowrap\">3011013<a name=\"cs-nemsis-arrest-3011013\"> </a></td><td>Ventricular Tachycardia-Pulseless</td></tr><tr><td style=\"white-space:nowrap\">3012001<a name=\"cs-nemsis-arrest-3012001\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3012003<a name=\"cs-nemsis-arrest-3012003\"> </a></td><td>Yes, At Arrival at the ED</td></tr><tr><td style=\"white-space:nowrap\">3012005<a name=\"cs-nemsis-arrest-3012005\"> </a></td><td>Yes, Prior to Arrival at the ED</td></tr><tr><td style=\"white-space:nowrap\">3012007<a name=\"cs-nemsis-arrest-3012007\"> </a></td><td>Yes, Sustained for 20 consecutive minutes</td></tr><tr><td style=\"white-space:nowrap\">3013001<a name=\"cs-nemsis-arrest-3013001\"> </a></td><td>CPC 1 Good Cerebral Performance</td></tr><tr><td style=\"white-space:nowrap\">3013003<a name=\"cs-nemsis-arrest-3013003\"> </a></td><td>CPC 2 Moderate Cerebral Disability</td></tr><tr><td style=\"white-space:nowrap\">3013005<a name=\"cs-nemsis-arrest-3013005\"> </a></td><td>CPC 3 Severe Cerebral Disability</td></tr><tr><td style=\"white-space:nowrap\">3013007<a name=\"cs-nemsis-arrest-3013007\"> </a></td><td>CPC 4 Coma or Vegetative State</td></tr><tr><td style=\"white-space:nowrap\">3016001<a name=\"cs-nemsis-arrest-3016001\"> </a></td><td>DNR</td></tr><tr><td style=\"white-space:nowrap\">3016003<a name=\"cs-nemsis-arrest-3016003\"> </a></td><td>Medical Control Order</td></tr><tr><td style=\"white-space:nowrap\">3016005<a name=\"cs-nemsis-arrest-3016005\"> </a></td><td>Obvious Signs of Death</td></tr><tr><td style=\"white-space:nowrap\">3016007<a name=\"cs-nemsis-arrest-3016007\"> </a></td><td>Physically Unable to Perform</td></tr><tr><td style=\"white-space:nowrap\">3016009<a name=\"cs-nemsis-arrest-3016009\"> </a></td><td>Protocol/Policy Requirements Completed</td></tr><tr><td style=\"white-space:nowrap\">3016011<a name=\"cs-nemsis-arrest-3016011\"> </a></td><td>Return of Spontaneous Circulation (pulse or BP noted)</td></tr><tr><td style=\"white-space:nowrap\">3018001<a name=\"cs-nemsis-arrest-3018001\"> </a></td><td>Expired in ED</td></tr><tr><td style=\"white-space:nowrap\">3018003<a name=\"cs-nemsis-arrest-3018003\"> </a></td><td>Expired in the Field</td></tr><tr><td style=\"white-space:nowrap\">3018005<a name=\"cs-nemsis-arrest-3018005\"> </a></td><td>Ongoing Resuscitation in ED</td></tr><tr><td style=\"white-space:nowrap\">3018007<a name=\"cs-nemsis-arrest-3018007\"> </a></td><td>ROSC in the Field</td></tr><tr><td style=\"white-space:nowrap\">3018009<a name=\"cs-nemsis-arrest-3018009\"> </a></td><td>ROSC in the ED</td></tr><tr><td style=\"white-space:nowrap\">3018011<a name=\"cs-nemsis-arrest-3018011\"> </a></td><td>Ongoing Resuscitation by Other EMS</td></tr><tr><td style=\"white-space:nowrap\">3020001<a name=\"cs-nemsis-arrest-3020001\"> </a></td><td>Bystander</td></tr><tr><td style=\"white-space:nowrap\">3020003<a name=\"cs-nemsis-arrest-3020003\"> </a></td><td>Family Member</td></tr><tr><td style=\"white-space:nowrap\">3020005<a name=\"cs-nemsis-arrest-3020005\"> </a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td style=\"white-space:nowrap\">3020007<a name=\"cs-nemsis-arrest-3020007\"> </a></td><td>First Responder (EMS)</td></tr><tr><td style=\"white-space:nowrap\">3020009<a name=\"cs-nemsis-arrest-3020009\"> </a></td><td>First Responder (Law Enforcement)</td></tr><tr><td style=\"white-space:nowrap\">3020011<a name=\"cs-nemsis-arrest-3020011\"> </a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td style=\"white-space:nowrap\">3020013<a name=\"cs-nemsis-arrest-3020013\"> </a></td><td>EMS Responder (transport EMS)</td></tr><tr><td style=\"white-space:nowrap\">3021001<a name=\"cs-nemsis-arrest-3021001\"> </a></td><td>Bystander</td></tr><tr><td style=\"white-space:nowrap\">3021003<a name=\"cs-nemsis-arrest-3021003\"> </a></td><td>Family Member</td></tr><tr><td style=\"white-space:nowrap\">3021005<a name=\"cs-nemsis-arrest-3021005\"> </a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td style=\"white-space:nowrap\">3021007<a name=\"cs-nemsis-arrest-3021007\"> </a></td><td>First Responder (EMS)</td></tr><tr><td style=\"white-space:nowrap\">3021009<a name=\"cs-nemsis-arrest-3021009\"> </a></td><td>First Responder (Law Enforcement)</td></tr><tr><td style=\"white-space:nowrap\">3021011<a name=\"cs-nemsis-arrest-3021011\"> </a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td style=\"white-space:nowrap\">3021013<a name=\"cs-nemsis-arrest-3021013\"> </a></td><td>EMS Responder (transport EMS)</td></tr><tr><td style=\"white-space:nowrap\">3022001<a name=\"cs-nemsis-arrest-3022001\"> </a></td><td>Bystander</td></tr><tr><td style=\"white-space:nowrap\">3022003<a name=\"cs-nemsis-arrest-3022003\"> </a></td><td>Family Member</td></tr><tr><td style=\"white-space:nowrap\">3022005<a name=\"cs-nemsis-arrest-3022005\"> </a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td style=\"white-space:nowrap\">3022007<a name=\"cs-nemsis-arrest-3022007\"> </a></td><td>First Responder (EMS)</td></tr><tr><td style=\"white-space:nowrap\">3022009<a name=\"cs-nemsis-arrest-3022009\"> </a></td><td>First Responder (Law Enforcement)</td></tr><tr><td style=\"white-space:nowrap\">3022011<a name=\"cs-nemsis-arrest-3022011\"> </a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td style=\"white-space:nowrap\">3022013<a name=\"cs-nemsis-arrest-3022013\"> </a></td><td>EMS Responder (transport EMS)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.2" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISArrest"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS eArrest Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Enumeration codes from the NEMSIS 3.5.1 eArrest section covering cardiac arrest status, etiology, resuscitation attempts, CPR type, ROSC, neurological outcome, end-of-event disposition, and first-responder roles."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "85"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3001001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3001003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Prior to Any EMS Arrival (includes Transport EMS & Medical First Responders)" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3001005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, After Any EMS Arrival (includes Transport EMS & Medical First Responders)" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cardiac (Presumed)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drowning/Submersion" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drug Overdose" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Electrocution" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exsanguination-Medical (Non-Traumatic)" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory/Asphyxia" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3002015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Traumatic Cause" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3003001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Attempted Defibrillation" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3003003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Attempted Ventilation" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3003005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Initiated Chest Compressions" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3003007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Attempted-Considered Futile" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3003009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Attempted-DNR Orders" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3003011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Attempted-Signs of Circulation" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3004001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not Witnessed" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3004003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Witnessed by Family Member" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3004005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Witnessed by Healthcare Provider" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3004007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Witnessed by Bystander" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3007001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3007003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Applied without Defibrillation" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3007005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, With Defibrillation" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Compressions-Manual" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Compressions-External Band Type Device" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Compressions-External Plunger Type Device" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Compressions-External Thumper Type Device" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Compressions-Intermittent with Ventilation" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Compressions-Other Device" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilation-Bag Valve Mask" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilation-Impedance Threshold Device" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilation-Mouth to Mouth" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilation-Pocket Mask" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Compressions-Hands Only CPR (DEPRECATED)" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilation-with OPA/NPA" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilation-Advanced Airway Device" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3009027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilation-Passive Ventilation with Oxygen" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3011001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Asystole" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3011005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PEA" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3011007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown AED Non-Shockable Rhythm" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3011009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown AED Shockable Rhythm" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3011011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricular Fibrillation" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3011013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricular Tachycardia-Pulseless" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3012001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3012003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, At Arrival at the ED" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3012005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Prior to Arrival at the ED" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3012007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yes, Sustained for 20 consecutive minutes" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3013001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CPC 1 Good Cerebral Performance" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3013003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CPC 2 Moderate Cerebral Disability" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3013005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CPC 3 Severe Cerebral Disability" ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3013007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CPC 4 Coma or Vegetative State" ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3016001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DNR" ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3016003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medical Control Order" ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3016005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Obvious Signs of Death" ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3016007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physically Unable to Perform" ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3016009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Protocol/Policy Requirements Completed" ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3016011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Return of Spontaneous Circulation (pulse or BP noted)" ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3018001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Expired in ED" ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3018003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Expired in the Field" ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3018005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ongoing Resuscitation in ED" ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3018007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ROSC in the Field" ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3018009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ROSC in the ED" ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3018011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ongoing Resuscitation by Other EMS" ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3020001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bystander" ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3020003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Family Member" ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3020005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Healthcare Provider (non-911 Responder)" ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3020007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (EMS)" ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3020009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (Law Enforcement)" ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3020011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (non-EMS Fire)" ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3020013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Responder (transport EMS)" ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3021001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bystander" ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3021003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Family Member" ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3021005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Healthcare Provider (non-911 Responder)" ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3021007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (EMS)" ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3021009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (Law Enforcement)" ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3021011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (non-EMS Fire)" ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3021013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Responder (transport EMS)" ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3022001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bystander" ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3022003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Family Member" ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3022005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Healthcare Provider (non-911 Responder)" ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3022007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (EMS)" ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3022009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (Law Enforcement)" ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3022011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First Responder (non-EMS Fire)" ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3022013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EMS Responder (transport EMS)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

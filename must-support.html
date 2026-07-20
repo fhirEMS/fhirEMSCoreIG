@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Must Support Requirements - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Must Support Requirements</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Must Support Requirements</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#must-support-requirements" id="markdown-toc-must-support-requirements">Must Support Requirements</a>    <ul>
+      <li><a href="#must-support-definition" id="markdown-toc-must-support-definition">Must Support Definition</a>        <ul>
+          <li><a href="#for-sending-systems-ems-software--pcr-systems" id="markdown-toc-for-sending-systems-ems-software--pcr-systems">For Sending Systems (EMS Software / PCR Systems)</a></li>
+          <li><a href="#for-receiving-systems-ehrs-hies-public-health-systems" id="markdown-toc-for-receiving-systems-ehrs-hies-public-health-systems">For Receiving Systems (EHRs, HIEs, Public Health Systems)</a></li>
+        </ul>
+      </li>
+      <li><a href="#nemsis-usage-levels--must-support-mapping" id="markdown-toc-nemsis-usage-levels--must-support-mapping">NEMSIS Usage Levels → Must Support Mapping</a></li>
+      <li><a href="#must-support-elements-by-profile" id="markdown-toc-must-support-elements-by-profile">Must Support Elements by Profile</a>        <ul>
+          <li><a href="#emscomposition" id="markdown-toc-emscomposition">EMSComposition</a></li>
+          <li><a href="#emspatient" id="markdown-toc-emspatient">EMSPatient</a></li>
+          <li><a href="#emsencounter" id="markdown-toc-emsencounter">EMSEncounter</a></li>
+          <li><a href="#emscondition" id="markdown-toc-emscondition">EMSCondition</a></li>
+          <li><a href="#emsobservationvitalsigns" id="markdown-toc-emsobservationvitalsigns">EMSObservationVitalSigns</a></li>
+          <li><a href="#emsprocedure" id="markdown-toc-emsprocedure">EMSProcedure</a></li>
+          <li><a href="#emsmedicationadministration" id="markdown-toc-emsmedicationadministration">EMSMedicationAdministration</a></li>
+          <li><a href="#emscoverage" id="markdown-toc-emscoverage">EMSCoverage</a></li>
+          <li><a href="#emsclaim" id="markdown-toc-emsclaim">EMSClaim</a></li>
+        </ul>
+      </li>
+      <li><a href="#must-support-and-nvpn-interplay" id="markdown-toc-must-support-and-nvpn-interplay">Must Support and NV/PN Interplay</a></li>
+      <li><a href="#validation" id="markdown-toc-validation">Validation</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="must-support-requirements">Must Support Requirements</h1>
+
+<p>This page defines what "Must Support" (MS) means in fhirEMSCore and lists the Must Support obligations for each profile.</p>
+
+<hr />
+
+<h2 id="must-support-definition">Must Support Definition</h2>
+
+<p>In fhirEMSCore, a <strong>Must Support</strong> (MS) flag means:</p>
+
+<h3 id="for-sending-systems-ems-software--pcr-systems">For Sending Systems (EMS Software / PCR Systems)</h3>
+
+<p>A sending system <strong>must</strong>:</p>
+<ul>
+  <li>Populate the element if the data is known and available</li>
+  <li>Not suppress or omit the element if the underlying NEMSIS field is populated</li>
+  <li>Use the specified terminology binding when the element is coded</li>
+</ul>
+
+<p>A sending system <strong>may</strong>:</p>
+<ul>
+  <li>Omit the element if the data is unknown, not applicable, or not collected</li>
+  <li>Use a NEMSIS Not Value (NV) code (via <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> or <code class="language-plaintext highlighter-rouge">ext-ems-not-value</code>) when the element is present in NEMSIS but cannot be populated</li>
+</ul>
+
+<h3 id="for-receiving-systems-ehrs-hies-public-health-systems">For Receiving Systems (EHRs, HIEs, Public Health Systems)</h3>
+
+<p>A receiving system <strong>must</strong>:</p>
+<ul>
+  <li>Process (not reject) a resource that contains a MS element, even if the receiving system does not use that element</li>
+  <li>Display or store MS elements when received</li>
+  <li>Not return an error if a MS element is present but the system doesn't understand it</li>
+</ul>
+
+<p>A receiving system <strong>should</strong>:</p>
+<ul>
+  <li>Persist and make available MS elements for downstream exchange</li>
+</ul>
+
+<hr />
+
+<h2 id="nemsis-usage-levels--must-support-mapping">NEMSIS Usage Levels → Must Support Mapping</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Usage</th>
+      <th>NEMSIS Meaning</th>
+      <th>fhirEMSCore MS</th>
+      <th>FHIR Cardinality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mandatory (M)</td>
+      <td>Required by NEMSIS; must always be present</td>
+      <td>Yes (MS)</td>
+      <td>1..1</td>
+    </tr>
+    <tr>
+      <td>Required/National (R/N)</td>
+      <td>Required nationally; not state-optional</td>
+      <td>Yes (MS)</td>
+      <td>1..1 or 0..1 MS</td>
+    </tr>
+    <tr>
+      <td>Required/State (R/S)</td>
+      <td>Required within participating state</td>
+      <td>Yes (MS)</td>
+      <td>0..1 MS with comment</td>
+    </tr>
+    <tr>
+      <td>Recommended (Rec)</td>
+      <td>Strongly recommended; high adoption</td>
+      <td>Yes (MS)</td>
+      <td>0..1 MS with comment</td>
+    </tr>
+    <tr>
+      <td>Optional (O)</td>
+      <td>Agency discretion</td>
+      <td>No (unless operationally critical)</td>
+      <td>0..1</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="must-support-elements-by-profile">Must Support Elements by Profile</h2>
+
+<h3 id="emscomposition">EMSComposition</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>1..1 MS</td>
+      <td>eRecord status</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>1..1 MS</td>
+      <td>fixed: LOINC 67796-3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>1..1 MS</td>
+      <td>patient reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>1..1 MS</td>
+      <td>encounter reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>1..1 MS</td>
+      <td>PCR completion date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">author</code></td>
+      <td>1..* MS</td>
+      <td>eRecord.02 software</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">section[response]</code></td>
+      <td>0..1 MS</td>
+      <td>eResponse data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">section[vitals]</code></td>
+      <td>0..1 MS</td>
+      <td>eVitals data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">section[procedures]</code></td>
+      <td>0..1 MS</td>
+      <td>eProcedures data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">section[medications]</code></td>
+      <td>0..1 MS</td>
+      <td>eMedications data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">section[payment]</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment data</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emspatient">EMSPatient</h3>
+
+<p>Inherits all MS elements from <code class="language-plaintext highlighter-rouge">us-core-patient</code>. Additional MS:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[us-core-race]</code></td>
+      <td>0..1 MS</td>
+      <td>ePatient.14</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[us-core-ethnicity]</code></td>
+      <td>0..1 MS</td>
+      <td>ePatient.15</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[us-core-birthsex]</code></td>
+      <td>0..1 MS</td>
+      <td>ePatient.11</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-patient-barrier]</code></td>
+      <td>0..* MS</td>
+      <td>ePatient.21</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code></td>
+      <td>1..* MS</td>
+      <td>ePatient.03/04/05</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">gender</code></td>
+      <td>1..1 MS</td>
+      <td>ePatient.13</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">birthDate</code></td>
+      <td>0..1 MS</td>
+      <td>ePatient.17</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address</code></td>
+      <td>0..1 MS</td>
+      <td>ePatient.06</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">telecom</code></td>
+      <td>0..* MS</td>
+      <td>ePatient.18/19</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsencounter">EMSEncounter</h3>
+
+<p>Inherits all MS elements from <code class="language-plaintext highlighter-rouge">us-core-encounter</code>. Additional MS:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+      <td>1..* MS</td>
+      <td>eRecord.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">class</code></td>
+      <td>1..1 MS</td>
+      <td>eResponse.05</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>1..* MS</td>
+      <td>EMS encounter type</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">serviceProvider</code></td>
+      <td>0..1 MS</td>
+      <td>eResponse.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">period</code></td>
+      <td>0..1 MS</td>
+      <td>eTimes.03 / eTimes.12</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-times]</code></td>
+      <td>0..1 MS</td>
+      <td>eTimes.01–19</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-response-type]</code></td>
+      <td>0..1 MS</td>
+      <td>eResponse.05</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-unit-type]</code></td>
+      <td>0..1 MS</td>
+      <td>eResponse.07</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-dispatch-info]</code></td>
+      <td>0..1 MS</td>
+      <td>eDispatch</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-transport-details]</code></td>
+      <td>0..1 MS</td>
+      <td>eDisposition transport</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-response-mode]</code></td>
+      <td>0..1 MS</td>
+      <td>eResponse mode</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-disposition-codes]</code></td>
+      <td>0..1 MS</td>
+      <td>eDisposition</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emscondition">EMSCondition</h3>
+
+<p>Inherits all MS elements from <code class="language-plaintext highlighter-rouge">us-core-condition-encounter-diagnosis</code>. Additional MS:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category[us-core]</code></td>
+      <td>1..1 MS</td>
+      <td>encounter-diagnosis</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>1..1 MS</td>
+      <td>eSituation.11 primary impression</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>1..1 MS</td>
+      <td>patient reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>0..1 MS</td>
+      <td>encounter reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onsetDateTime</code></td>
+      <td>0..1 MS</td>
+      <td>eSituation.01 onset</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsobservationvitalsigns">EMSObservationVitalSigns</h3>
+
+<p>Inherits all MS elements from <code class="language-plaintext highlighter-rouge">us-core-vital-signs</code>. Additional MS:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>1..1 MS</td>
+      <td>eVitals status</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>1..1 MS</td>
+      <td>LOINC vital sign code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>1..1 MS</td>
+      <td>patient reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>0..1 MS</td>
+      <td>encounter reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">effectiveDateTime</code></td>
+      <td>1..1 MS</td>
+      <td>eVitals.01 timestamp</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">value[x]</code></td>
+      <td>0..1 MS</td>
+      <td>vital sign value</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ext-ems-vital-obtained-prior]</code></td>
+      <td>0..1 MS</td>
+      <td>eVitals.02</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsprocedure">EMSProcedure</h3>
+
+<p>Inherits all MS elements from <code class="language-plaintext highlighter-rouge">us-core-procedure</code>. Additional MS:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>1..1 MS</td>
+      <td>eProcedures.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>1..1 MS</td>
+      <td>eProcedures.03 (SNOMED)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>1..1 MS</td>
+      <td>patient reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">performedDateTime</code></td>
+      <td>0..1 MS</td>
+      <td>eProcedures.01 timestamp</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">performer</code></td>
+      <td>0..1 MS</td>
+      <td>eProcedures crew member</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsmedicationadministration">EMSMedicationAdministration</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>1..1 MS</td>
+      <td>eMedications status</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">medication[x]</code></td>
+      <td>1..1 MS</td>
+      <td>eMedications.03 (RxNorm)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>1..1 MS</td>
+      <td>patient reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">context</code></td>
+      <td>0..1 MS</td>
+      <td>encounter reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">effective[x]</code></td>
+      <td>1..1 MS</td>
+      <td>eMedications.01 timestamp</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dosage.route</code></td>
+      <td>0..1 MS</td>
+      <td>eMedications.05 route</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dosage.dose</code></td>
+      <td>0..1 MS</td>
+      <td>eMedications.06/07 dose</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emscoverage">EMSCoverage</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>1..1 MS</td>
+      <td>active</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subscriber</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.19–21 insured name</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subscriberId</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.18 policy ID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">beneficiary</code></td>
+      <td>1..1 MS</td>
+      <td>patient reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">relationship</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.22 relationship</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">payor</code></td>
+      <td>1..* MS</td>
+      <td>ePayment.09/10 insurer</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">class[group]</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.17/58 group</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">order</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.11 priority</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[payerType]</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.57 X12 code</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="emsclaim">EMSClaim</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Cardinality</th>
+      <th>NEMSIS Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>1..1 MS</td>
+      <td>claim status</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">use</code></td>
+      <td>1..1 MS</td>
+      <td>fixed: claim</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>1..1 MS</td>
+      <td>fixed: professional</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient</code></td>
+      <td>1..1 MS</td>
+      <td>patient reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">provider</code></td>
+      <td>1..1 MS</td>
+      <td>organization/practitioner</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">created</code></td>
+      <td>1..1 MS</td>
+      <td>claim creation date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">insurance</code></td>
+      <td>1..* MS</td>
+      <td>coverage reference</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">insurance.coverage</code></td>
+      <td>1..1 MS</td>
+      <td>ePayment coverage</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[primaryPaymentMethod]</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[cmsServiceLevel]</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.50</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[responseUrgency]</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.40</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[transportAssessment]</code></td>
+      <td>0..* MS</td>
+      <td>ePayment.41</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ambulanceTransportReason]</code></td>
+      <td>0..1 MS</td>
+      <td>ePayment.44</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension[ambulanceConditions]</code></td>
+      <td>0..* MS</td>
+      <td>ePayment.47</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="must-support-and-nvpn-interplay">Must Support and NV/PN Interplay</h2>
+
+<p>When a NEMSIS MS element has a Not Value (NV):</p>
+
+<ol>
+  <li><strong>If FHIR has <code class="language-plaintext highlighter-rouge">dataAbsentReason</code></strong> — omit the value element and populate <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> with the mapped code</li>
+  <li><strong>If no <code class="language-plaintext highlighter-rouge">dataAbsentReason</code></strong> — use <code class="language-plaintext highlighter-rouge">ext-ems-not-value</code> extension; element cardinality may be 0..1 even though nominally required</li>
+</ol>
+
+<p>When a NEMSIS MS element has a Pertinent Negative (PN):</p>
+
+<ol>
+  <li>Populate <code class="language-plaintext highlighter-rouge">Observation.valueCodeableConcept</code> with the absence code, <strong>and</strong></li>
+  <li>Add <code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> extension with the specific PN code</li>
+</ol>
+
+<p>Receiving systems <strong>must</strong> process resources containing NV/PN codes without error, even if they do not display them.</p>
+
+<hr />
+
+<h2 id="validation">Validation</h2>
+
+<p>To validate Must Support conformance:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Validate a specific resource against fhirEMSCore profiles</span>
+java <span class="nt">-jar</span> input-cache/validator.jar <span class="se">\</span>
+  <span class="o">[</span>resource-file.json] <span class="se">\</span>
+  <span class="nt">-version</span> 4.0.1 <span class="se">\</span>
+  <span class="nt">-ig</span> hl7.fhir.us.core#6.1.0 <span class="se">\</span>
+  <span class="nt">-ig</span> <span class="o">[</span>path-to-fhirEMSCore-package]
+
+<span class="c"># Validate all SUSHI-generated resources</span>
+java <span class="nt">-jar</span> input-cache/validator.jar <span class="se">\</span>
+  fsh-generated/resources/ <span class="se">\</span>
+  <span class="nt">-version</span> 4.0.1 <span class="se">\</span>
+  <span class="nt">-ig</span> hl7.fhir.us.core#6.1.0
+</code></pre></div></div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

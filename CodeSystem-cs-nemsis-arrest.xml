@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-nemsis-arrest"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-nemsis-arrest</b></p><a name="cs-nemsis-arrest"> </a><a name="hccs-nemsis-arrest"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">3001001<a name="cs-nemsis-arrest-3001001"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">3001003<a name="cs-nemsis-arrest-3001003"> </a></td><td>Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)</td></tr><tr><td style="white-space:nowrap">3001005<a name="cs-nemsis-arrest-3001005"> </a></td><td>Yes, After Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)</td></tr><tr><td style="white-space:nowrap">3002001<a name="cs-nemsis-arrest-3002001"> </a></td><td>Cardiac (Presumed)</td></tr><tr><td style="white-space:nowrap">3002003<a name="cs-nemsis-arrest-3002003"> </a></td><td>Drowning/Submersion</td></tr><tr><td style="white-space:nowrap">3002005<a name="cs-nemsis-arrest-3002005"> </a></td><td>Drug Overdose</td></tr><tr><td style="white-space:nowrap">3002007<a name="cs-nemsis-arrest-3002007"> </a></td><td>Electrocution</td></tr><tr><td style="white-space:nowrap">3002009<a name="cs-nemsis-arrest-3002009"> </a></td><td>Exsanguination-Medical (Non-Traumatic)</td></tr><tr><td style="white-space:nowrap">3002011<a name="cs-nemsis-arrest-3002011"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">3002013<a name="cs-nemsis-arrest-3002013"> </a></td><td>Respiratory/Asphyxia</td></tr><tr><td style="white-space:nowrap">3002015<a name="cs-nemsis-arrest-3002015"> </a></td><td>Traumatic Cause</td></tr><tr><td style="white-space:nowrap">3003001<a name="cs-nemsis-arrest-3003001"> </a></td><td>Attempted Defibrillation</td></tr><tr><td style="white-space:nowrap">3003003<a name="cs-nemsis-arrest-3003003"> </a></td><td>Attempted Ventilation</td></tr><tr><td style="white-space:nowrap">3003005<a name="cs-nemsis-arrest-3003005"> </a></td><td>Initiated Chest Compressions</td></tr><tr><td style="white-space:nowrap">3003007<a name="cs-nemsis-arrest-3003007"> </a></td><td>Not Attempted-Considered Futile</td></tr><tr><td style="white-space:nowrap">3003009<a name="cs-nemsis-arrest-3003009"> </a></td><td>Not Attempted-DNR Orders</td></tr><tr><td style="white-space:nowrap">3003011<a name="cs-nemsis-arrest-3003011"> </a></td><td>Not Attempted-Signs of Circulation</td></tr><tr><td style="white-space:nowrap">3004001<a name="cs-nemsis-arrest-3004001"> </a></td><td>Not Witnessed</td></tr><tr><td style="white-space:nowrap">3004003<a name="cs-nemsis-arrest-3004003"> </a></td><td>Witnessed by Family Member</td></tr><tr><td style="white-space:nowrap">3004005<a name="cs-nemsis-arrest-3004005"> </a></td><td>Witnessed by Healthcare Provider</td></tr><tr><td style="white-space:nowrap">3004007<a name="cs-nemsis-arrest-3004007"> </a></td><td>Witnessed by Bystander</td></tr><tr><td style="white-space:nowrap">3007001<a name="cs-nemsis-arrest-3007001"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">3007003<a name="cs-nemsis-arrest-3007003"> </a></td><td>Yes, Applied without Defibrillation</td></tr><tr><td style="white-space:nowrap">3007005<a name="cs-nemsis-arrest-3007005"> </a></td><td>Yes, With Defibrillation</td></tr><tr><td style="white-space:nowrap">3009001<a name="cs-nemsis-arrest-3009001"> </a></td><td>Compressions-Manual</td></tr><tr><td style="white-space:nowrap">3009003<a name="cs-nemsis-arrest-3009003"> </a></td><td>Compressions-External Band Type Device</td></tr><tr><td style="white-space:nowrap">3009005<a name="cs-nemsis-arrest-3009005"> </a></td><td>Compressions-External Plunger Type Device</td></tr><tr><td style="white-space:nowrap">3009007<a name="cs-nemsis-arrest-3009007"> </a></td><td>Compressions-External Thumper Type Device</td></tr><tr><td style="white-space:nowrap">3009009<a name="cs-nemsis-arrest-3009009"> </a></td><td>Compressions-Intermittent with Ventilation</td></tr><tr><td style="white-space:nowrap">3009011<a name="cs-nemsis-arrest-3009011"> </a></td><td>Compressions-Other Device</td></tr><tr><td style="white-space:nowrap">3009013<a name="cs-nemsis-arrest-3009013"> </a></td><td>Ventilation-Bag Valve Mask</td></tr><tr><td style="white-space:nowrap">3009015<a name="cs-nemsis-arrest-3009015"> </a></td><td>Ventilation-Impedance Threshold Device</td></tr><tr><td style="white-space:nowrap">3009017<a name="cs-nemsis-arrest-3009017"> </a></td><td>Ventilation-Mouth to Mouth</td></tr><tr><td style="white-space:nowrap">3009019<a name="cs-nemsis-arrest-3009019"> </a></td><td>Ventilation-Pocket Mask</td></tr><tr><td style="white-space:nowrap">3009021<a name="cs-nemsis-arrest-3009021"> </a></td><td>Compressions-Hands Only CPR (DEPRECATED)</td></tr><tr><td style="white-space:nowrap">3009023<a name="cs-nemsis-arrest-3009023"> </a></td><td>Ventilation-with OPA/NPA</td></tr><tr><td style="white-space:nowrap">3009025<a name="cs-nemsis-arrest-3009025"> </a></td><td>Ventilation-Advanced Airway Device</td></tr><tr><td style="white-space:nowrap">3009027<a name="cs-nemsis-arrest-3009027"> </a></td><td>Ventilation-Passive Ventilation with Oxygen</td></tr><tr><td style="white-space:nowrap">3011001<a name="cs-nemsis-arrest-3011001"> </a></td><td>Asystole</td></tr><tr><td style="white-space:nowrap">3011005<a name="cs-nemsis-arrest-3011005"> </a></td><td>PEA</td></tr><tr><td style="white-space:nowrap">3011007<a name="cs-nemsis-arrest-3011007"> </a></td><td>Unknown AED Non-Shockable Rhythm</td></tr><tr><td style="white-space:nowrap">3011009<a name="cs-nemsis-arrest-3011009"> </a></td><td>Unknown AED Shockable Rhythm</td></tr><tr><td style="white-space:nowrap">3011011<a name="cs-nemsis-arrest-3011011"> </a></td><td>Ventricular Fibrillation</td></tr><tr><td style="white-space:nowrap">3011013<a name="cs-nemsis-arrest-3011013"> </a></td><td>Ventricular Tachycardia-Pulseless</td></tr><tr><td style="white-space:nowrap">3012001<a name="cs-nemsis-arrest-3012001"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">3012003<a name="cs-nemsis-arrest-3012003"> </a></td><td>Yes, At Arrival at the ED</td></tr><tr><td style="white-space:nowrap">3012005<a name="cs-nemsis-arrest-3012005"> </a></td><td>Yes, Prior to Arrival at the ED</td></tr><tr><td style="white-space:nowrap">3012007<a name="cs-nemsis-arrest-3012007"> </a></td><td>Yes, Sustained for 20 consecutive minutes</td></tr><tr><td style="white-space:nowrap">3013001<a name="cs-nemsis-arrest-3013001"> </a></td><td>CPC 1 Good Cerebral Performance</td></tr><tr><td style="white-space:nowrap">3013003<a name="cs-nemsis-arrest-3013003"> </a></td><td>CPC 2 Moderate Cerebral Disability</td></tr><tr><td style="white-space:nowrap">3013005<a name="cs-nemsis-arrest-3013005"> </a></td><td>CPC 3 Severe Cerebral Disability</td></tr><tr><td style="white-space:nowrap">3013007<a name="cs-nemsis-arrest-3013007"> </a></td><td>CPC 4 Coma or Vegetative State</td></tr><tr><td style="white-space:nowrap">3016001<a name="cs-nemsis-arrest-3016001"> </a></td><td>DNR</td></tr><tr><td style="white-space:nowrap">3016003<a name="cs-nemsis-arrest-3016003"> </a></td><td>Medical Control Order</td></tr><tr><td style="white-space:nowrap">3016005<a name="cs-nemsis-arrest-3016005"> </a></td><td>Obvious Signs of Death</td></tr><tr><td style="white-space:nowrap">3016007<a name="cs-nemsis-arrest-3016007"> </a></td><td>Physically Unable to Perform</td></tr><tr><td style="white-space:nowrap">3016009<a name="cs-nemsis-arrest-3016009"> </a></td><td>Protocol/Policy Requirements Completed</td></tr><tr><td style="white-space:nowrap">3016011<a name="cs-nemsis-arrest-3016011"> </a></td><td>Return of Spontaneous Circulation (pulse or BP noted)</td></tr><tr><td style="white-space:nowrap">3018001<a name="cs-nemsis-arrest-3018001"> </a></td><td>Expired in ED</td></tr><tr><td style="white-space:nowrap">3018003<a name="cs-nemsis-arrest-3018003"> </a></td><td>Expired in the Field</td></tr><tr><td style="white-space:nowrap">3018005<a name="cs-nemsis-arrest-3018005"> </a></td><td>Ongoing Resuscitation in ED</td></tr><tr><td style="white-space:nowrap">3018007<a name="cs-nemsis-arrest-3018007"> </a></td><td>ROSC in the Field</td></tr><tr><td style="white-space:nowrap">3018009<a name="cs-nemsis-arrest-3018009"> </a></td><td>ROSC in the ED</td></tr><tr><td style="white-space:nowrap">3018011<a name="cs-nemsis-arrest-3018011"> </a></td><td>Ongoing Resuscitation by Other EMS</td></tr><tr><td style="white-space:nowrap">3020001<a name="cs-nemsis-arrest-3020001"> </a></td><td>Bystander</td></tr><tr><td style="white-space:nowrap">3020003<a name="cs-nemsis-arrest-3020003"> </a></td><td>Family Member</td></tr><tr><td style="white-space:nowrap">3020005<a name="cs-nemsis-arrest-3020005"> </a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td style="white-space:nowrap">3020007<a name="cs-nemsis-arrest-3020007"> </a></td><td>First Responder (EMS)</td></tr><tr><td style="white-space:nowrap">3020009<a name="cs-nemsis-arrest-3020009"> </a></td><td>First Responder (Law Enforcement)</td></tr><tr><td style="white-space:nowrap">3020011<a name="cs-nemsis-arrest-3020011"> </a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td style="white-space:nowrap">3020013<a name="cs-nemsis-arrest-3020013"> </a></td><td>EMS Responder (transport EMS)</td></tr><tr><td style="white-space:nowrap">3021001<a name="cs-nemsis-arrest-3021001"> </a></td><td>Bystander</td></tr><tr><td style="white-space:nowrap">3021003<a name="cs-nemsis-arrest-3021003"> </a></td><td>Family Member</td></tr><tr><td style="white-space:nowrap">3021005<a name="cs-nemsis-arrest-3021005"> </a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td style="white-space:nowrap">3021007<a name="cs-nemsis-arrest-3021007"> </a></td><td>First Responder (EMS)</td></tr><tr><td style="white-space:nowrap">3021009<a name="cs-nemsis-arrest-3021009"> </a></td><td>First Responder (Law Enforcement)</td></tr><tr><td style="white-space:nowrap">3021011<a name="cs-nemsis-arrest-3021011"> </a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td style="white-space:nowrap">3021013<a name="cs-nemsis-arrest-3021013"> </a></td><td>EMS Responder (transport EMS)</td></tr><tr><td style="white-space:nowrap">3022001<a name="cs-nemsis-arrest-3022001"> </a></td><td>Bystander</td></tr><tr><td style="white-space:nowrap">3022003<a name="cs-nemsis-arrest-3022003"> </a></td><td>Family Member</td></tr><tr><td style="white-space:nowrap">3022005<a name="cs-nemsis-arrest-3022005"> </a></td><td>Healthcare Provider (non-911 Responder)</td></tr><tr><td style="white-space:nowrap">3022007<a name="cs-nemsis-arrest-3022007"> </a></td><td>First Responder (EMS)</td></tr><tr><td style="white-space:nowrap">3022009<a name="cs-nemsis-arrest-3022009"> </a></td><td>First Responder (Law Enforcement)</td></tr><tr><td style="white-space:nowrap">3022011<a name="cs-nemsis-arrest-3022011"> </a></td><td>First Responder (non-EMS Fire)</td></tr><tr><td style="white-space:nowrap">3022013<a name="cs-nemsis-arrest-3022013"> </a></td><td>EMS Responder (transport EMS)</td></tr></table></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-arrest"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.1.2"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="NEMSISArrest"/>
+  <title value="NEMSIS eArrest Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="Enumeration codes from the NEMSIS 3.5.1 eArrest section covering cardiac arrest status, etiology, resuscitation attempts, CPR type, ROSC, neurological outcome, end-of-event disposition, and first-responder roles."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="85"/>
+  <concept>
+    <code value="3001001"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="3001003"/>
+    <display value="Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)"/>
+  </concept>
+  <concept>
+    <code value="3001005"/>
+    <display value="Yes, After Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)"/>
+  </concept>
+  <concept>
+    <code value="3002001"/>
+    <display value="Cardiac (Presumed)"/>
+  </concept>
+  <concept>
+    <code value="3002003"/>
+    <display value="Drowning/Submersion"/>
+  </concept>
+  <concept>
+    <code value="3002005"/>
+    <display value="Drug Overdose"/>
+  </concept>
+  <concept>
+    <code value="3002007"/>
+    <display value="Electrocution"/>
+  </concept>
+  <concept>
+    <code value="3002009"/>
+    <display value="Exsanguination-Medical (Non-Traumatic)"/>
+  </concept>
+  <concept>
+    <code value="3002011"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="3002013"/>
+    <display value="Respiratory/Asphyxia"/>
+  </concept>
+  <concept>
+    <code value="3002015"/>
+    <display value="Traumatic Cause"/>
+  </concept>
+  <concept>
+    <code value="3003001"/>
+    <display value="Attempted Defibrillation"/>
+  </concept>
+  <concept>
+    <code value="3003003"/>
+    <display value="Attempted Ventilation"/>
+  </concept>
+  <concept>
+    <code value="3003005"/>
+    <display value="Initiated Chest Compressions"/>
+  </concept>
+  <concept>
+    <code value="3003007"/>
+    <display value="Not Attempted-Considered Futile"/>
+  </concept>
+  <concept>
+    <code value="3003009"/>
+    <display value="Not Attempted-DNR Orders"/>
+  </concept>
+  <concept>
+    <code value="3003011"/>
+    <display value="Not Attempted-Signs of Circulation"/>
+  </concept>
+  <concept>
+    <code value="3004001"/>
+    <display value="Not Witnessed"/>
+  </concept>
+  <concept>
+    <code value="3004003"/>
+    <display value="Witnessed by Family Member"/>
+  </concept>
+  <concept>
+    <code value="3004005"/>
+    <display value="Witnessed by Healthcare Provider"/>
+  </concept>
+  <concept>
+    <code value="3004007"/>
+    <display value="Witnessed by Bystander"/>
+  </concept>
+  <concept>
+    <code value="3007001"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="3007003"/>
+    <display value="Yes, Applied without Defibrillation"/>
+  </concept>
+  <concept>
+    <code value="3007005"/>
+    <display value="Yes, With Defibrillation"/>
+  </concept>
+  <concept>
+    <code value="3009001"/>
+    <display value="Compressions-Manual"/>
+  </concept>
+  <concept>
+    <code value="3009003"/>
+    <display value="Compressions-External Band Type Device"/>
+  </concept>
+  <concept>
+    <code value="3009005"/>
+    <display value="Compressions-External Plunger Type Device"/>
+  </concept>
+  <concept>
+    <code value="3009007"/>
+    <display value="Compressions-External Thumper Type Device"/>
+  </concept>
+  <concept>
+    <code value="3009009"/>
+    <display value="Compressions-Intermittent with Ventilation"/>
+  </concept>
+  <concept>
+    <code value="3009011"/>
+    <display value="Compressions-Other Device"/>
+  </concept>
+  <concept>
+    <code value="3009013"/>
+    <display value="Ventilation-Bag Valve Mask"/>
+  </concept>
+  <concept>
+    <code value="3009015"/>
+    <display value="Ventilation-Impedance Threshold Device"/>
+  </concept>
+  <concept>
+    <code value="3009017"/>
+    <display value="Ventilation-Mouth to Mouth"/>
+  </concept>
+  <concept>
+    <code value="3009019"/>
+    <display value="Ventilation-Pocket Mask"/>
+  </concept>
+  <concept>
+    <code value="3009021"/>
+    <display value="Compressions-Hands Only CPR (DEPRECATED)"/>
+  </concept>
+  <concept>
+    <code value="3009023"/>
+    <display value="Ventilation-with OPA/NPA"/>
+  </concept>
+  <concept>
+    <code value="3009025"/>
+    <display value="Ventilation-Advanced Airway Device"/>
+  </concept>
+  <concept>
+    <code value="3009027"/>
+    <display value="Ventilation-Passive Ventilation with Oxygen"/>
+  </concept>
+  <concept>
+    <code value="3011001"/>
+    <display value="Asystole"/>
+  </concept>
+  <concept>
+    <code value="3011005"/>
+    <display value="PEA"/>
+  </concept>
+  <concept>
+    <code value="3011007"/>
+    <display value="Unknown AED Non-Shockable Rhythm"/>
+  </concept>
+  <concept>
+    <code value="3011009"/>
+    <display value="Unknown AED Shockable Rhythm"/>
+  </concept>
+  <concept>
+    <code value="3011011"/>
+    <display value="Ventricular Fibrillation"/>
+  </concept>
+  <concept>
+    <code value="3011013"/>
+    <display value="Ventricular Tachycardia-Pulseless"/>
+  </concept>
+  <concept>
+    <code value="3012001"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="3012003"/>
+    <display value="Yes, At Arrival at the ED"/>
+  </concept>
+  <concept>
+    <code value="3012005"/>
+    <display value="Yes, Prior to Arrival at the ED"/>
+  </concept>
+  <concept>
+    <code value="3012007"/>
+    <display value="Yes, Sustained for 20 consecutive minutes"/>
+  </concept>
+  <concept>
+    <code value="3013001"/>
+    <display value="CPC 1 Good Cerebral Performance"/>
+  </concept>
+  <concept>
+    <code value="3013003"/>
+    <display value="CPC 2 Moderate Cerebral Disability"/>
+  </concept>
+  <concept>
+    <code value="3013005"/>
+    <display value="CPC 3 Severe Cerebral Disability"/>
+  </concept>
+  <concept>
+    <code value="3013007"/>
+    <display value="CPC 4 Coma or Vegetative State"/>
+  </concept>
+  <concept>
+    <code value="3016001"/>
+    <display value="DNR"/>
+  </concept>
+  <concept>
+    <code value="3016003"/>
+    <display value="Medical Control Order"/>
+  </concept>
+  <concept>
+    <code value="3016005"/>
+    <display value="Obvious Signs of Death"/>
+  </concept>
+  <concept>
+    <code value="3016007"/>
+    <display value="Physically Unable to Perform"/>
+  </concept>
+  <concept>
+    <code value="3016009"/>
+    <display value="Protocol/Policy Requirements Completed"/>
+  </concept>
+  <concept>
+    <code value="3016011"/>
+    <display value="Return of Spontaneous Circulation (pulse or BP noted)"/>
+  </concept>
+  <concept>
+    <code value="3018001"/>
+    <display value="Expired in ED"/>
+  </concept>
+  <concept>
+    <code value="3018003"/>
+    <display value="Expired in the Field"/>
+  </concept>
+  <concept>
+    <code value="3018005"/>
+    <display value="Ongoing Resuscitation in ED"/>
+  </concept>
+  <concept>
+    <code value="3018007"/>
+    <display value="ROSC in the Field"/>
+  </concept>
+  <concept>
+    <code value="3018009"/>
+    <display value="ROSC in the ED"/>
+  </concept>
+  <concept>
+    <code value="3018011"/>
+    <display value="Ongoing Resuscitation by Other EMS"/>
+  </concept>
+  <concept>
+    <code value="3020001"/>
+    <display value="Bystander"/>
+  </concept>
+  <concept>
+    <code value="3020003"/>
+    <display value="Family Member"/>
+  </concept>
+  <concept>
+    <code value="3020005"/>
+    <display value="Healthcare Provider (non-911 Responder)"/>
+  </concept>
+  <concept>
+    <code value="3020007"/>
+    <display value="First Responder (EMS)"/>
+  </concept>
+  <concept>
+    <code value="3020009"/>
+    <display value="First Responder (Law Enforcement)"/>
+  </concept>
+  <concept>
+    <code value="3020011"/>
+    <display value="First Responder (non-EMS Fire)"/>
+  </concept>
+  <concept>
+    <code value="3020013"/>
+    <display value="EMS Responder (transport EMS)"/>
+  </concept>
+  <concept>
+    <code value="3021001"/>
+    <display value="Bystander"/>
+  </concept>
+  <concept>
+    <code value="3021003"/>
+    <display value="Family Member"/>
+  </concept>
+  <concept>
+    <code value="3021005"/>
+    <display value="Healthcare Provider (non-911 Responder)"/>
+  </concept>
+  <concept>
+    <code value="3021007"/>
+    <display value="First Responder (EMS)"/>
+  </concept>
+  <concept>
+    <code value="3021009"/>
+    <display value="First Responder (Law Enforcement)"/>
+  </concept>
+  <concept>
+    <code value="3021011"/>
+    <display value="First Responder (non-EMS Fire)"/>
+  </concept>
+  <concept>
+    <code value="3021013"/>
+    <display value="EMS Responder (transport EMS)"/>
+  </concept>
+  <concept>
+    <code value="3022001"/>
+    <display value="Bystander"/>
+  </concept>
+  <concept>
+    <code value="3022003"/>
+    <display value="Family Member"/>
+  </concept>
+  <concept>
+    <code value="3022005"/>
+    <display value="Healthcare Provider (non-911 Responder)"/>
+  </concept>
+  <concept>
+    <code value="3022007"/>
+    <display value="First Responder (EMS)"/>
+  </concept>
+  <concept>
+    <code value="3022009"/>
+    <display value="First Responder (Law Enforcement)"/>
+  </concept>
+  <concept>
+    <code value="3022011"/>
+    <display value="First Responder (non-EMS Fire)"/>
+  </concept>
+  <concept>
+    <code value="3022013"/>
+    <display value="EMS Responder (transport EMS)"/>
+  </concept>
+</CodeSystem>

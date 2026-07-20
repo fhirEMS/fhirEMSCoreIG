@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminology - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminology</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminology</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a>    <ul>
+      <li><a href="#terminology-strategy" id="markdown-toc-terminology-strategy">Terminology Strategy</a>        <ul>
+          <li><a href="#code-system-priority-order" id="markdown-toc-code-system-priority-order">Code System Priority Order</a></li>
+        </ul>
+      </li>
+      <li><a href="#oid-identifiers" id="markdown-toc-oid-identifiers">OID Identifiers</a></li>
+      <li><a href="#nemsis-code-systems" id="markdown-toc-nemsis-code-systems">NEMSIS Code Systems</a></li>
+      <li><a href="#value-sets" id="markdown-toc-value-sets">Value Sets</a>        <ul>
+          <li><a href="#epatient-value-sets" id="markdown-toc-epatient-value-sets">ePatient Value Sets</a></li>
+          <li><a href="#eresponse--eencounter-value-sets" id="markdown-toc-eresponse--eencounter-value-sets">eResponse / eEncounter Value Sets</a></li>
+          <li><a href="#evitals-value-sets" id="markdown-toc-evitals-value-sets">eVitals Value Sets</a></li>
+          <li><a href="#earrest-value-sets" id="markdown-toc-earrest-value-sets">eArrest Value Sets</a></li>
+          <li><a href="#eairway-value-sets" id="markdown-toc-eairway-value-sets">eAirway Value Sets</a></li>
+          <li><a href="#elabs-value-sets" id="markdown-toc-elabs-value-sets">eLabs Value Sets</a></li>
+          <li><a href="#eoutcome-value-sets" id="markdown-toc-eoutcome-value-sets">eOutcome Value Sets</a></li>
+          <li><a href="#epayment-value-sets" id="markdown-toc-epayment-value-sets">ePayment Value Sets</a></li>
+        </ul>
+      </li>
+      <li><a href="#nemsis-not-values-nv" id="markdown-toc-nemsis-not-values-nv">NEMSIS Not Values (NV)</a></li>
+      <li><a href="#nemsis-pertinent-negatives-pn" id="markdown-toc-nemsis-pertinent-negatives-pn">NEMSIS Pertinent Negatives (PN)</a></li>
+      <li><a href="#vital-signs-loinc-mapping" id="markdown-toc-vital-signs-loinc-mapping">Vital Signs LOINC Mapping</a></li>
+      <li><a href="#value-set-expansion-parameters" id="markdown-toc-value-set-expansion-parameters">Value Set Expansion Parameters</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="terminology">Terminology</h1>
+
+<p>This page documents the code systems, value sets, and terminology strategy used in fhirEMSCore.</p>
+
+<hr />
+
+<h2 id="terminology-strategy">Terminology Strategy</h2>
+
+<p>fhirEMSCore uses standard code systems wherever the NEMSIS data allows, and defines custom NEMSIS code systems only where no standard system adequately represents the coded concept.</p>
+
+<h3 id="code-system-priority-order">Code System Priority Order</h3>
+
+<ol>
+  <li><strong>SNOMED CT</strong> (<code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code>) — clinical concepts, body sites, findings, procedures</li>
+  <li><strong>LOINC</strong> (<code class="language-plaintext highlighter-rouge">http://loinc.org</code>) — observations, vital signs, lab results, document types</li>
+  <li><strong>RxNorm</strong> (<code class="language-plaintext highlighter-rouge">http://www.nlm.nih.gov/research/umls/rxnorm</code>) — medications</li>
+  <li><strong>ICD-10-CM</strong> (<code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/sid/icd-10-cm</code>) — diagnoses for claims</li>
+  <li><strong>CPT</strong> (<code class="language-plaintext highlighter-rouge">http://www.ama-assn.org/go/cpt</code>) — procedures (when SNOMED not available)</li>
+  <li><strong>UCUM</strong> (<code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code>) — units of measure (always)</li>
+  <li><strong>NUBC UB-04</strong> (<code class="language-plaintext highlighter-rouge">https://www.nubc.org/CodeSystem/PatDischargeStatus</code>) — patient discharge disposition</li>
+  <li><strong>NEMSIS CodeSystems</strong> (<code class="language-plaintext highlighter-rouge">cs-nemsis-*</code>) — EMS-specific coded elements with no standard equivalent</li>
+</ol>
+
+<hr />
+
+<h2 id="oid-identifiers">OID Identifiers</h2>
+
+<p>Every CodeSystem and ValueSet in this guide carries an OID identifier under the project's
+self-assigned ISO UUID-arc root <code class="language-plaintext highlighter-rouge">2.25.219926138944530828037824748808947630693</code>
+(sub-arc <code class="language-plaintext highlighter-rouge">.1.n</code> for CodeSystems, <code class="language-plaintext highlighter-rouge">.2.n</code> for ValueSets). These OIDs support OID-based
+terminology infrastructure (e.g., CDA, IHE profiles) and travel with the resources when
+loaded onto a terminology server.</p>
+
+<p>Note that NEMSIS itself holds the registered OID arc <code class="language-plaintext highlighter-rouge">2.16.840.1.113883.17.3</code> (with
+per-element code system OIDs under <code class="language-plaintext highlighter-rouge">.5</code>, e.g. <code class="language-plaintext highlighter-rouge">.5.71</code> for EMS condition codes, as cited by
+LOINC). Those OIDs identify NEMSIS's own constructs from the HL7 CDA EMS Run Report IG and
+are not reused here, since this guide groups NEMSIS codes by section rather than per element.</p>
+
+<h2 id="nemsis-code-systems">NEMSIS Code Systems</h2>
+
+<p>Each NEMSIS section with coded elements has a corresponding FHIR CodeSystem resource.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CodeSystem Id</th>
+      <th>URL</th>
+      <th>NEMSIS Section</th>
+      <th>Codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-codes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-codes</code></td>
+      <td>General / multi-section</td>
+      <td>~200</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-encounter</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-encounter</code></td>
+      <td>eResponse / eDisposition</td>
+      <td>~80</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-patient</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-patient</code></td>
+      <td>ePatient</td>
+      <td>~60</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-vitals</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-vitals</code></td>
+      <td>eVitals</td>
+      <td>~120</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-procedures</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-procedures</code></td>
+      <td>eProcedures</td>
+      <td>~40</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-medications</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-medications</code></td>
+      <td>eMedications</td>
+      <td>~30</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-exam</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-exam</code></td>
+      <td>eExam</td>
+      <td>~100</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-situation</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-situation</code></td>
+      <td>eSituation</td>
+      <td>~50</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-arrest</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-arrest</code></td>
+      <td>eArrest</td>
+      <td>~100</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-airway</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-airway</code></td>
+      <td>eAirway</td>
+      <td>~50</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-labs</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-labs</code></td>
+      <td>eLabs</td>
+      <td>~90</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-injury</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/cs-nemsis-injury</code></td>
+      <td>eInjury</td>
+      <td>~105</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-history</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/cs-nemsis-history</code></td>
+      <td>eHistory</td>
+      <td>~93</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-other</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/cs-nemsis-other</code></td>
+      <td>eOther</td>
+      <td>~144</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-demographics</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/cs-nemsis-demographics</code></td>
+      <td>dContact / dConfiguration / dLocation</td>
+      <td>~70</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-payment</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-payment</code></td>
+      <td>ePayment</td>
+      <td>~60</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-not-values</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-not-values</code></td>
+      <td>All NV elements</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-pertinent-negative</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-pertinent-negative</code></td>
+      <td>All PN elements</td>
+      <td>~6</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-incident-type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-incident-type</code></td>
+      <td>eSituation.07</td>
+      <td>~15</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-response-type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-response-type</code></td>
+      <td>eResponse.05</td>
+      <td>~10</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-transport-mode</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-transport-mode</code></td>
+      <td>eDisposition transport</td>
+      <td>~10</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-unit-type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-unit-type</code></td>
+      <td>eResponse.07</td>
+      <td>~15</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-personnel-level</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-personnel-level</code></td>
+      <td>eCrew.02 / dPersonnel.24</td>
+      <td>~20</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cs-nemsis-destination</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.../CodeSystem/nemsis-destination</code></td>
+      <td>eDisposition destination type</td>
+      <td>~15</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All NEMSIS CodeSystems are:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">content = #complete</code> — all codes enumerated in the resource</li>
+  <li><code class="language-plaintext highlighter-rouge">caseSensitive = true</code></li>
+  <li><code class="language-plaintext highlighter-rouge">experimental = false</code></li>
+  <li>Flat hierarchy — no hierarchy defined (no <code class="language-plaintext highlighter-rouge">concept.concept</code> nesting)</li>
+</ul>
+
+<hr />
+
+<h2 id="value-sets">Value Sets</h2>
+
+<h3 id="epatient-value-sets">ePatient Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-race</code></td>
+      <td>EMSPatient race</td>
+      <td>OMB + NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-gender</code></td>
+      <td>EMSPatient gender</td>
+      <td>NEMSIS / FHIR gender</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-patient-barrier</code></td>
+      <td>EMSPatient communication barriers</td>
+      <td>NEMSIS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="eresponse--eencounter-value-sets">eResponse / eEncounter Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-response-type</code></td>
+      <td>EMSEncounter class</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-unit-type</code></td>
+      <td>EMSEncounter unit type extension</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-transport-mode</code></td>
+      <td>EMSEncounter transport details</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-destination-type</code></td>
+      <td>EMSLocationDestination type</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-disposition-codes</code></td>
+      <td>EMSEncounter disposition</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-response-urgency</code></td>
+      <td>EMSClaim responseUrgency extension</td>
+      <td>NEMSIS ePayment.40</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="evitals-value-sets">eVitals Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-cardiac-rhythm</code></td>
+      <td>ECG observation</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-pain-scale-type</code></td>
+      <td>Pain scale type extension</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-stroke-scale</code></td>
+      <td>Stroke scale observation</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-gcs-eye</code></td>
+      <td>GCS Eye component</td>
+      <td>LOINC</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-gcs-verbal</code></td>
+      <td>GCS Verbal component</td>
+      <td>LOINC</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-gcs-motor</code></td>
+      <td>GCS Motor component</td>
+      <td>LOINC</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="earrest-value-sets">eArrest Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-cardiac-arrest</code></td>
+      <td>EMSConditionArrest status</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-arrest-etiology</code></td>
+      <td>Arrest context etiology</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-resuscitation-attempted</code></td>
+      <td>Arrest context resuscitation</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-arrest-witnessed</code></td>
+      <td>Arrest witnessed</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-aed-use</code></td>
+      <td>AED use</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-cpr-type</code></td>
+      <td>CPR type</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-first-rhythm</code></td>
+      <td>First monitored rhythm</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-rosc</code></td>
+      <td>ROSC status</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-neurological-outcome</code></td>
+      <td>CPC score</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-cpr-discontinued-reason</code></td>
+      <td>CPR discontinued reason</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-arrest-end-event</code></td>
+      <td>Arrest end event</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-arrest-first-responder</code></td>
+      <td>First responder role</td>
+      <td>NEMSIS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="eairway-value-sets">eAirway Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-airway-indications</code></td>
+      <td>Airway context indications</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-airway-device</code></td>
+      <td>Airway device type</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-airway-confirmation</code></td>
+      <td>Airway confirmation method</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-airway-confirming-person</code></td>
+      <td>Confirming person type</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-airway-complications</code></td>
+      <td>Airway complications</td>
+      <td>NEMSIS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-airway-failure-reasons</code></td>
+      <td>Airway failure reasons</td>
+      <td>NEMSIS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="elabs-value-sets">eLabs Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-lab-result-type</code></td>
+      <td>EMSObservationLabs code</td>
+      <td>NEMSIS eLabs.03</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-imaging-study-type</code></td>
+      <td>EMSObservationLabs (imaging)</td>
+      <td>NEMSIS eLabs.05</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="eoutcome-value-sets">eOutcome Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-discharge-disposition</code></td>
+      <td>Outcome panel components</td>
+      <td>NUBC UB-04</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-external-report-type</code></td>
+      <td>eOutcome.03</td>
+      <td>NEMSIS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="epayment-value-sets">ePayment Value Sets</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Bound To</th>
+      <th>Code System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-payment-method</code></td>
+      <td>EMSClaim primaryPaymentMethod</td>
+      <td>NEMSIS ePayment.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-insurance-billing-priority</code></td>
+      <td>EMSCoverage order</td>
+      <td>NEMSIS ePayment.11</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-insured-relationship</code></td>
+      <td>EMSCoverage relationship</td>
+      <td>NEMSIS ePayment.22</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-response-urgency</code></td>
+      <td>EMSClaim responseUrgency</td>
+      <td>NEMSIS ePayment.40</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-patient-transport-assessment</code></td>
+      <td>EMSClaim transportAssessment</td>
+      <td>NEMSIS ePayment.41</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-ambulance-transport-reason</code></td>
+      <td>EMSClaim ambulanceTransportReason</td>
+      <td>NEMSIS ePayment.44</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-ambulance-conditions</code></td>
+      <td>EMSClaim ambulanceConditions</td>
+      <td>NEMSIS ePayment.47</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-cms-service-level</code></td>
+      <td>EMSClaim cmsServiceLevel</td>
+      <td>NEMSIS ePayment.50</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vs-ems-payer-type</code></td>
+      <td>EMSCoverage payerType</td>
+      <td>NEMSIS ePayment.57 (X12)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="nemsis-not-values-nv">NEMSIS Not Values (NV)</h2>
+
+<p>NEMSIS permits three "Not Value" codes on 269 of 657 elements. These are represented in FHIR via <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> where available, or via the <code class="language-plaintext highlighter-rouge">ext-ems-not-value</code> extension.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS NV Code</th>
+      <th>FHIR dataAbsentReason</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotApplicable</code></td>
+      <td><code class="language-plaintext highlighter-rouge">not-applicable</code></td>
+      <td>The element is not applicable in this context</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotRecorded</code></td>
+      <td><code class="language-plaintext highlighter-rouge">not-asked</code></td>
+      <td>The data was not recorded</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NV.NotReporting</code></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown</code></td>
+      <td>The agency is not reporting this element</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>See <a href="background.html">Normalization Decision Record NDR-001</a> for full rationale.</p>
+
+<hr />
+
+<h2 id="nemsis-pertinent-negatives-pn">NEMSIS Pertinent Negatives (PN)</h2>
+
+<p>NEMSIS supports "Pertinent Negative" codes on 70 of 657 elements, representing clinically significant documented absence. These are represented as:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code> with <code class="language-plaintext highlighter-rouge">valueCodeableConcept</code> indicating absence, <strong>or</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">ext-ems-pertinent-negative</code> extension carrying the specific PN code on a relevant observation</li>
+</ul>
+
+<p>Common PN codes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PN Code</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.ExamFindingNotPresent</code></td>
+      <td>Clinical examination finding specifically absent</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.Refused</code></td>
+      <td>Patient refused assessment/treatment</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.UnableToComplete</code></td>
+      <td>Assessment could not be performed</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.DeniesSymptom</code></td>
+      <td>Patient denies the symptom</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.NotAssessed</code></td>
+      <td>Element was not assessed</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PN.ApproximatelyCorrect</code></td>
+      <td>Value is an estimate</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>See <a href="background.html">Normalization Decision Record NDR-002</a> for full rationale.</p>
+
+<hr />
+
+<h2 id="vital-signs-loinc-mapping">Vital Signs LOINC Mapping</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>Description</th>
+      <th>LOINC Code</th>
+      <th>LOINC Display</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eVitals.06</td>
+      <td>Systolic Blood Pressure</td>
+      <td>8480-6</td>
+      <td>Systolic blood pressure</td>
+    </tr>
+    <tr>
+      <td>eVitals.07</td>
+      <td>Diastolic Blood Pressure</td>
+      <td>8462-4</td>
+      <td>Diastolic blood pressure</td>
+    </tr>
+    <tr>
+      <td>eVitals.10</td>
+      <td>Heart Rate</td>
+      <td>8867-4</td>
+      <td>Heart rate</td>
+    </tr>
+    <tr>
+      <td>eVitals.12</td>
+      <td>Pulse Oximetry</td>
+      <td>59408-5</td>
+      <td>Oxygen saturation</td>
+    </tr>
+    <tr>
+      <td>eVitals.14</td>
+      <td>Respiratory Rate</td>
+      <td>9279-1</td>
+      <td>Respiratory rate</td>
+    </tr>
+    <tr>
+      <td>eVitals.18</td>
+      <td>Blood Glucose</td>
+      <td>59469-7</td>
+      <td>Glucose [Mass/volume] in Capillary blood</td>
+    </tr>
+    <tr>
+      <td>eVitals.19</td>
+      <td>GCS Eye</td>
+      <td>9267-6</td>
+      <td>Glasgow coma score eye opening</td>
+    </tr>
+    <tr>
+      <td>eVitals.20</td>
+      <td>GCS Verbal</td>
+      <td>9268-4</td>
+      <td>Glasgow coma score verbal</td>
+    </tr>
+    <tr>
+      <td>eVitals.21</td>
+      <td>GCS Motor</td>
+      <td>9266-8</td>
+      <td>Glasgow coma score motor</td>
+    </tr>
+    <tr>
+      <td>eVitals.22</td>
+      <td>GCS Total</td>
+      <td>9269-2</td>
+      <td>Glasgow coma score total</td>
+    </tr>
+    <tr>
+      <td>eVitals.24</td>
+      <td>Temperature</td>
+      <td>8310-5</td>
+      <td>Body temperature</td>
+    </tr>
+    <tr>
+      <td>eVitals.26</td>
+      <td>AVPU</td>
+      <td>67775-7</td>
+      <td>Level of responsiveness</td>
+    </tr>
+    <tr>
+      <td>eVitals.27</td>
+      <td>Pain Score</td>
+      <td>72514-3</td>
+      <td>Pain severity 0-10</td>
+    </tr>
+    <tr>
+      <td>eVitals.28</td>
+      <td>Weight</td>
+      <td>29463-7</td>
+      <td>Body weight</td>
+    </tr>
+    <tr>
+      <td>eVitals.16</td>
+      <td>ETCO2</td>
+      <td>19889-5</td>
+      <td>Carbon dioxide</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="value-set-expansion-parameters">Value Set Expansion Parameters</h2>
+
+<p>The following parameters are used when expanding the value sets in this guide:</p>
+
+<table class="grid">
+  <tr>
+    <th>Parameter</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>system-version</td>
+    <td>SNOMED CT[US]</td>
+  </tr>
+</table>
+<!--$$5$$-->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ex-ems-gcs-motor",
+  "meta" : {
+    "profile" : ["https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-observation-gcs"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ex-ems-gcs-motor</b></p><a name=\"ex-ems-gcs-motor\"> </a><a name=\"hcex-ems-gcs-motor\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-observation-gcs.html\">EMS Glasgow Coma Score (GCS) Panel</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9268-4}\">Glasgow coma score motor</span></p><p><b>subject</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href=\"Encounter-ex-ems-encounter.html\">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>effective</b>: 2026-03-14 14:37:00-0800</p><p><b>performer</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p><p><b>value</b>: 5</p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9268-4",
+      "display" : "Glasgow coma score motor"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ex-ems-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ex-ems-encounter"
+  },
+  "effectiveDateTime" : "2026-03-14T14:37:00-08:00",
+  "performer" : [{
+    "reference" : "Practitioner/ex-ems-practitioner"
+  }],
+  "valueInteger" : 5
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-crew-disposition"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-crew-disposition</b></p><a name="vs-ems-crew-disposition"> </a><a name="hcvs-ems-crew-disposition"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-encounter.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4229001">4229001</a></td><td>Initiated and Continued Primary Care</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4229003">4229003</a></td><td>Initiated Primary Care and Transferred to Another EMS Crew</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4229005">4229005</a></td><td>Provided Care Supporting Primary EMS Crew</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4229007">4229007</a></td><td>Assumed Primary Care from Another EMS Crew</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4229009">4229009</a></td><td>Incident Support Services Provided (Including Standby)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4229011">4229011</a></td><td>Back in Service, No Care/Support Services Required</td></tr><tr><td><a href="CodeSystem-cs-nemsis-encounter.html#cs-nemsis-encounter-4229013">4229013</a></td><td>Back in Service, Care/Support Services Refused</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-crew-disposition"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.37"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSCrewDispositionVS"/>
+  <title value="EMS Crew Disposition"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eDisposition.29 - What the crew did during the response."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-encounter"/>
+      <concept>
+        <code value="4229001"/>
+        <display value="Initiated and Continued Primary Care"/>
+      </concept>
+      <concept>
+        <code value="4229003"/>
+        <display value="Initiated Primary Care and Transferred to Another EMS Crew"/>
+      </concept>
+      <concept>
+        <code value="4229005"/>
+        <display value="Provided Care Supporting Primary EMS Crew"/>
+      </concept>
+      <concept>
+        <code value="4229007"/>
+        <display value="Assumed Primary Care from Another EMS Crew"/>
+      </concept>
+      <concept>
+        <code value="4229009"/>
+        <display value="Incident Support Services Provided (Including Standby)"/>
+      </concept>
+      <concept>
+        <code value="4229011"/>
+        <display value="Back in Service, No Care/Support Services Required"/>
+      </concept>
+      <concept>
+        <code value="4229013"/>
+        <display value="Back in Service, Care/Support Services Refused"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

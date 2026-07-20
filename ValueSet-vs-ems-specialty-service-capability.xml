@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-specialty-service-capability"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-specialty-service-capability</b></p><a name="vs-ems-specialty-service-capability"> </a><a name="hcvs-ems-specialty-service-capability"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-demographics.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211001">1211001</a></td><td>Air Rescue</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211003">1211003</a></td><td>CBRNE</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211005">1211005</a></td><td>Community Health Medicine</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211007">1211007</a></td><td>Disaster Medical Assistance Team (DMAT)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211009">1211009</a></td><td>Disaster Mortuary (DMORT)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211011">1211011</a></td><td>Dive Rescue</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211013">1211013</a></td><td>Farm Rescue</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211015">1211015</a></td><td>High Angle Rescue</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211017">1211017</a></td><td>Machinery Disentanglement</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211019">1211019</a></td><td>None</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211021">1211021</a></td><td>Ski / Snow Rescue</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211023">1211023</a></td><td>Tactical EMS</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211025">1211025</a></td><td>Trench / Confined Space Rescue</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211027">1211027</a></td><td>Urban Search and Rescue (USAR)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211029">1211029</a></td><td>Vehicle Extrication</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211031">1211031</a></td><td>Veterinary Medical Assistance Team (VMAT)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211033">1211033</a></td><td>Water or Ice Related Rescue (Incl Swift Water)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-demographics.html#cs-nemsis-demographics-1211035">1211035</a></td><td>Wilderness Search and Rescue</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-specialty-service-capability"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.150"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSSpecialtyServiceCapabilityVS"/>
+  <title value="EMS SpecialtyServiceCapability VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="EMS agency specialty service capabilities (dConfiguration.11)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-demographics"/>
+      <concept>
+        <code value="1211001"/>
+        <display value="Air Rescue"/>
+      </concept>
+      <concept>
+        <code value="1211003"/>
+        <display value="CBRNE"/>
+      </concept>
+      <concept>
+        <code value="1211005"/>
+        <display value="Community Health Medicine"/>
+      </concept>
+      <concept>
+        <code value="1211007"/>
+        <display value="Disaster Medical Assistance Team (DMAT)"/>
+      </concept>
+      <concept>
+        <code value="1211009"/>
+        <display value="Disaster Mortuary (DMORT)"/>
+      </concept>
+      <concept>
+        <code value="1211011"/>
+        <display value="Dive Rescue"/>
+      </concept>
+      <concept>
+        <code value="1211013"/>
+        <display value="Farm Rescue"/>
+      </concept>
+      <concept>
+        <code value="1211015"/>
+        <display value="High Angle Rescue"/>
+      </concept>
+      <concept>
+        <code value="1211017"/>
+        <display value="Machinery Disentanglement"/>
+      </concept>
+      <concept>
+        <code value="1211019"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="1211021"/>
+        <display value="Ski / Snow Rescue"/>
+      </concept>
+      <concept>
+        <code value="1211023"/>
+        <display value="Tactical EMS"/>
+      </concept>
+      <concept>
+        <code value="1211025"/>
+        <display value="Trench / Confined Space Rescue"/>
+      </concept>
+      <concept>
+        <code value="1211027"/>
+        <display value="Urban Search and Rescue (USAR)"/>
+      </concept>
+      <concept>
+        <code value="1211029"/>
+        <display value="Vehicle Extrication"/>
+      </concept>
+      <concept>
+        <code value="1211031"/>
+        <display value="Veterinary Medical Assistance Team (VMAT)"/>
+      </concept>
+      <concept>
+        <code value="1211033"/>
+        <display value="Water or Ice Related Rescue (Incl Swift Water)"/>
+      </concept>
+      <concept>
+        <code value="1211035"/>
+        <display value="Wilderness Search and Rescue"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

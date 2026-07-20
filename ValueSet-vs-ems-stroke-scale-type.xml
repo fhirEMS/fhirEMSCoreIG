@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-stroke-scale-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-stroke-scale-type</b></p><a name="vs-ems-stroke-scale-type"> </a><a name="hcvs-ems-stroke-scale-type"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-vitals.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330001">3330001</a></td><td>Cincinnati Prehospital Stroke Scale (CPSS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330004">3330004</a></td><td>Los Angeles Prehospital Stroke Screen (LAPSS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330005">3330005</a></td><td>Massachusetts Stroke Scale (MSS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330007">3330007</a></td><td>Miami Emergency Neurologic Deficit Exam (MEND)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330009">3330009</a></td><td>NIH Stroke Scale (NIHSS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330011">3330011</a></td><td>Other Stroke Scale Type</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330013">3330013</a></td><td>FAST</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330015">3330015</a></td><td>Boston Stroke Scale (BOSS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330017">3330017</a></td><td>Ontario Prehospital Stroke Scale (OPSS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330019">3330019</a></td><td>Melbourne Ambulance Stroke Screen (MASS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330021">3330021</a></td><td>Rapid Arterial oCclusion Evaluation (RACE)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330023">3330023</a></td><td>Los Angeles Motor Score (LAMS)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330025">3330025</a></td><td>Vision, Aphasia, Neglect (VAN)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330027">3330027</a></td><td>FAST-ED</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330029">3330029</a></td><td>BEFAST</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.117"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSStrokeScaleTypeVS"/>
+  <title value="EMS Stroke Scale Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eVitals.30 - The prehospital stroke screening tool used."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+      <concept>
+        <code value="3330001"/>
+        <display value="Cincinnati Prehospital Stroke Scale (CPSS)"/>
+      </concept>
+      <concept>
+        <code value="3330004"/>
+        <display value="Los Angeles Prehospital Stroke Screen (LAPSS)"/>
+      </concept>
+      <concept>
+        <code value="3330005"/>
+        <display value="Massachusetts Stroke Scale (MSS)"/>
+      </concept>
+      <concept>
+        <code value="3330007"/>
+        <display value="Miami Emergency Neurologic Deficit Exam (MEND)"/>
+      </concept>
+      <concept>
+        <code value="3330009"/>
+        <display value="NIH Stroke Scale (NIHSS)"/>
+      </concept>
+      <concept>
+        <code value="3330011"/>
+        <display value="Other Stroke Scale Type"/>
+      </concept>
+      <concept>
+        <code value="3330013"/>
+        <display value="FAST"/>
+      </concept>
+      <concept>
+        <code value="3330015"/>
+        <display value="Boston Stroke Scale (BOSS)"/>
+      </concept>
+      <concept>
+        <code value="3330017"/>
+        <display value="Ontario Prehospital Stroke Scale (OPSS)"/>
+      </concept>
+      <concept>
+        <code value="3330019"/>
+        <display value="Melbourne Ambulance Stroke Screen (MASS)"/>
+      </concept>
+      <concept>
+        <code value="3330021"/>
+        <display value="Rapid Arterial oCclusion Evaluation (RACE)"/>
+      </concept>
+      <concept>
+        <code value="3330023"/>
+        <display value="Los Angeles Motor Score (LAMS)"/>
+      </concept>
+      <concept>
+        <code value="3330025"/>
+        <display value="Vision, Aphasia, Neglect (VAN)"/>
+      </concept>
+      <concept>
+        <code value="3330027"/>
+        <display value="FAST-ED"/>
+      </concept>
+      <concept>
+        <code value="3330029"/>
+        <display value="BEFAST"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

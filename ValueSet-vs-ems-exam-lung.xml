@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-lung"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-lung</b></p><a name="vs-ems-exam-lung"> </a><a name="hcvs-ems-exam-lung"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523001">3523001</a></td><td>Breath Sounds-Absent</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523003">3523003</a></td><td>Breath Sounds-Decreased</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523005">3523005</a></td><td>Breath Sounds-Equal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523007">3523007</a></td><td>Breath Sounds-Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523009">3523009</a></td><td>Foreign Body</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523011">3523011</a></td><td>Increased Respiratory Effort</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523013">3523013</a></td><td>Normal</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523015">3523015</a></td><td>Not Done</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523017">3523017</a></td><td>Pain</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523019">3523019</a></td><td>Pain with Inspiration/Expiration</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523021">3523021</a></td><td>Rales</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523023">3523023</a></td><td>Rhonchi</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523025">3523025</a></td><td>Rhonchi/Wheezing</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523027">3523027</a></td><td>Stridor</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523029">3523029</a></td><td>Wheezing-Expiratory</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3523031">3523031</a></td><td>Wheezing-Inspiratory</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-lung"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.63"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamLungVS"/>
+  <title value="EMS Lung Assessment"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.23 - Auscultatory and respiratory findings on lung assessment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3523001"/>
+        <display value="Breath Sounds-Absent"/>
+      </concept>
+      <concept>
+        <code value="3523003"/>
+        <display value="Breath Sounds-Decreased"/>
+      </concept>
+      <concept>
+        <code value="3523005"/>
+        <display value="Breath Sounds-Equal"/>
+      </concept>
+      <concept>
+        <code value="3523007"/>
+        <display value="Breath Sounds-Normal"/>
+      </concept>
+      <concept>
+        <code value="3523009"/>
+        <display value="Foreign Body"/>
+      </concept>
+      <concept>
+        <code value="3523011"/>
+        <display value="Increased Respiratory Effort"/>
+      </concept>
+      <concept>
+        <code value="3523013"/>
+        <display value="Normal"/>
+      </concept>
+      <concept>
+        <code value="3523015"/>
+        <display value="Not Done"/>
+      </concept>
+      <concept>
+        <code value="3523017"/>
+        <display value="Pain"/>
+      </concept>
+      <concept>
+        <code value="3523019"/>
+        <display value="Pain with Inspiration/Expiration"/>
+      </concept>
+      <concept>
+        <code value="3523021"/>
+        <display value="Rales"/>
+      </concept>
+      <concept>
+        <code value="3523023"/>
+        <display value="Rhonchi"/>
+      </concept>
+      <concept>
+        <code value="3523025"/>
+        <display value="Rhonchi/Wheezing"/>
+      </concept>
+      <concept>
+        <code value="3523027"/>
+        <display value="Stridor"/>
+      </concept>
+      <concept>
+        <code value="3523029"/>
+        <display value="Wheezing-Expiratory"/>
+      </concept>
+      <concept>
+        <code value="3523031"/>
+        <display value="Wheezing-Inspiratory"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

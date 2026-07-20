@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Security and Privacy - FHIR EMS Core Implementation Guide (Unofficial Research Project) v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR EMS Core Implementation Guide (Unofficial Research Project)</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="background.html">Background <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="background.html">Background</a></li>
+      <li><a href="nemsis-overview.html">NEMSIS Overview</a></li>
+      <li><a href="uscore-alignment.html">US Core Alignment</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="profiles.html">Specification <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="mapping.html">NEMSIS Mapping</a></li>
+      <li><a href="differential.html">NEMSIS vs US Core</a></li>
+      <li><a href="must-support.html">Must Support</a></li>
+    </ul>
+  </li>
+  <li><a href="examples.html">Examples</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Change Log</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Security and Privacy</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR EMS Core Implementation Guide (Unofficial Research Project) - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhirems.github.io/fhirEMSCoreIG/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Security and Privacy</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#security-and-privacy-considerations" id="markdown-toc-security-and-privacy-considerations">Security and Privacy Considerations</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#applicable-regulations" id="markdown-toc-applicable-regulations">Applicable Regulations</a></li>
+      <li><a href="#fhir-specific-security-guidance" id="markdown-toc-fhir-specific-security-guidance">FHIR-Specific Security Guidance</a>        <ul>
+          <li><a href="#transport-security" id="markdown-toc-transport-security">Transport Security</a></li>
+          <li><a href="#authentication-and-authorization" id="markdown-toc-authentication-and-authorization">Authentication and Authorization</a></li>
+          <li><a href="#audit-logging" id="markdown-toc-audit-logging">Audit Logging</a></li>
+          <li><a href="#data-minimization" id="markdown-toc-data-minimization">Data Minimization</a></li>
+        </ul>
+      </li>
+      <li><a href="#sensitive-data-elements" id="markdown-toc-sensitive-data-elements">Sensitive Data Elements</a>        <ul>
+          <li><a href="#ssn-handling" id="markdown-toc-ssn-handling">SSN Handling</a></li>
+        </ul>
+      </li>
+      <li><a href="#data-segmentation" id="markdown-toc-data-segmentation">Data Segmentation</a></li>
+      <li><a href="#de-identification-for-research" id="markdown-toc-de-identification-for-research">De-identification for Research</a></li>
+      <li><a href="#known-security-gaps-in-this-ig-research-ig--not-production" id="markdown-toc-known-security-gaps-in-this-ig-research-ig--not-production">Known Security Gaps in This IG (Research IG — Not Production)</a></li>
+      <li><a href="#additional-references" id="markdown-toc-additional-references">Additional References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="security-and-privacy-considerations">Security and Privacy Considerations</h1>
+
+<div class="dragon">
+
+  <p>This page describes security and privacy considerations for <strong>a research IG only</strong>. This IG is not approved for production use. Any real-world implementation of EMS-FHIR data exchange must involve a qualified security architect, legal counsel, and compliance review under applicable federal and state law.</p>
+
+</div>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>EMS Patient Care Report data is among the most sensitive personal health information collected in the US healthcare system. PCR data frequently includes:</p>
+
+<ul>
+  <li>Full name, date of birth, SSN, driver's license (identity)</li>
+  <li>Home address, GPS coordinates (location)</li>
+  <li>Medical history, medications, allergies (clinical)</li>
+  <li>Substance abuse, behavioral health, sexual assault indicators (sensitive clinical)</li>
+  <li>Insurance and billing information (financial)</li>
+</ul>
+
+<p>Implementations of this IG must address security and privacy requirements at every layer of the data exchange stack.</p>
+
+<hr />
+
+<h2 id="applicable-regulations">Applicable Regulations</h2>
+
+<p>Implementers must comply with all applicable laws, which may include:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regulation</th>
+      <th>Applicability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HIPAA Privacy Rule (45 CFR Part 164)</td>
+      <td>Governs use and disclosure of PHI by covered entities and business associates</td>
+    </tr>
+    <tr>
+      <td>HIPAA Security Rule (45 CFR §164.306)</td>
+      <td>Technical safeguards for electronic PHI (ePHI)</td>
+    </tr>
+    <tr>
+      <td>42 CFR Part 2</td>
+      <td>Substance use disorder treatment records — strict confidentiality</td>
+    </tr>
+    <tr>
+      <td>HITECH Act</td>
+      <td>Breach notification and enhanced HIPAA penalties</td>
+    </tr>
+    <tr>
+      <td>State EMS Privacy Laws</td>
+      <td>Many states have additional PCR confidentiality requirements</td>
+    </tr>
+    <tr>
+      <td>CMS Interoperability Rules (CMS-9115-F)</td>
+      <td>Patient Access API requirements for payers</td>
+    </tr>
+    <tr>
+      <td>ONC Information Blocking Rule</td>
+      <td>Prohibits unreasonable information blocking</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="fhir-specific-security-guidance">FHIR-Specific Security Guidance</h2>
+
+<p>Implementers should follow the <a href="https://www.hl7.org/fhir/security.html">HL7 FHIR Security</a> and <a href="https://www.hl7.org/fhir/security-labels.html">FHIR Security Labels</a> specifications.</p>
+
+<h3 id="transport-security">Transport Security</h3>
+
+<ul>
+  <li>All FHIR endpoints <strong>SHALL</strong> use TLS 1.2 or higher (TLS 1.3 recommended)</li>
+  <li>Certificates must be from a trusted CA</li>
+  <li>HTTP (unencrypted) <strong>SHALL NOT</strong> be used for any PHI exchange</li>
+  <li>FHIR endpoints <strong>SHALL</strong> enforce mutual TLS (mTLS) or equivalent for server-to-server exchange</li>
+</ul>
+
+<h3 id="authentication-and-authorization">Authentication and Authorization</h3>
+
+<ul>
+  <li>Implementations <strong>SHALL</strong> use OAuth 2.0 with SMART on FHIR scopes for API access</li>
+  <li>Recommended scope structure:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">patient/Observation.read</code> — read vital signs for a specific patient</li>
+      <li><code class="language-plaintext highlighter-rouge">system/Composition.write</code> — write PCR bundles (agency → HIE)</li>
+      <li><code class="language-plaintext highlighter-rouge">system/*.read</code> — receiving facility full read access</li>
+    </ul>
+  </li>
+  <li>Backend service authorization (system-level) <strong>SHALL</strong> use the SMART Backend Services Authorization profile</li>
+  <li>User-facing access <strong>SHALL</strong> use SMART App Launch Framework</li>
+</ul>
+
+<h3 id="audit-logging">Audit Logging</h3>
+
+<ul>
+  <li>All read and write operations on EMS PCR resources <strong>SHALL</strong> be logged</li>
+  <li>Logs <strong>SHALL</strong> include: resource type, patient identifier (tokenized), timestamp, actor, operation type</li>
+  <li>Audit logs are themselves PHI and must be protected accordingly</li>
+  <li>Recommend FHIR AuditEvent resources for structured audit trails</li>
+</ul>
+
+<h3 id="data-minimization">Data Minimization</h3>
+
+<ul>
+  <li>Systems <strong>SHALL</strong> only request and transmit the minimum necessary data</li>
+  <li>Point-of-care access (ED physician receiving PCR): full PCR appropriate</li>
+  <li>Quality reporting: de-identified or limited data set per 45 CFR §164.514</li>
+  <li>Research: de-identified data or data use agreement required</li>
+</ul>
+
+<hr />
+
+<h2 id="sensitive-data-elements">Sensitive Data Elements</h2>
+
+<p>The following NEMSIS data elements require elevated handling:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>NEMSIS Element</th>
+      <th>FHIR Mapping</th>
+      <th>Sensitivity</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ePatient.12 (SSN)</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.identifier[ssn]</code></td>
+      <td><strong>EXTREME</strong></td>
+      <td>Must be tokenized or hashed; never transmit in plain text</td>
+    </tr>
+    <tr>
+      <td>ePatient.20/21 (Driver's License)</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.identifier[driversLicense]</code></td>
+      <td>HIGH</td>
+      <td>Identity document — restrict access</td>
+    </tr>
+    <tr>
+      <td>eScene.11 (GPS Coordinates)</td>
+      <td><code class="language-plaintext highlighter-rouge">ext-ems-scene-gps</code></td>
+      <td>HIGH</td>
+      <td>May reveal home address or sensitive locations</td>
+    </tr>
+    <tr>
+      <td>ePatient.05–10 (Home Address)</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.address</code></td>
+      <td>HIGH</td>
+      <td>Full address — restrict downstream use</td>
+    </tr>
+    <tr>
+      <td>eSituation fields</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.code</code></td>
+      <td>HIGH</td>
+      <td>Substance abuse, psychiatric, sexual assault ICD-10 codes</td>
+    </tr>
+    <tr>
+      <td>ePayment.09–22 (Insurance)</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage</code> resource</td>
+      <td>HIGH</td>
+      <td>Financial + insurance information</td>
+    </tr>
+    <tr>
+      <td>eMedications (all)</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration</code></td>
+      <td>MODERATE-HIGH</td>
+      <td>Substance use history inference possible</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ssn-handling">SSN Handling</h3>
+
+<p><strong>ePatient.12 (Social Security Number)</strong> mapped to <code class="language-plaintext highlighter-rouge">Patient.identifier[ssn]</code>:</p>
+
+<ul>
+  <li><strong>SHALL NOT</strong> be transmitted as plain text in any FHIR resource</li>
+  <li>Implementers must hash or tokenize before populating <code class="language-plaintext highlighter-rouge">identifier.value</code></li>
+  <li>Consider omitting SSN from FHIR entirely and using a patient matching service</li>
+  <li>If included, apply <code class="language-plaintext highlighter-rouge">meta.security</code> label <code class="language-plaintext highlighter-rouge">R</code> (Restricted) to the Patient resource</li>
+</ul>
+
+<hr />
+
+<h2 id="data-segmentation">Data Segmentation</h2>
+
+<p>For 42 CFR Part 2 records (substance use disorder treatment) that may appear in EMS PCRs:</p>
+
+<ul>
+  <li>Apply FHIR security label <code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v3-ActCode#ETH</code> to affected resources</li>
+  <li>Implement consent-based access controls before releasing to non-treating providers</li>
+  <li>Do not include in general-purpose query responses without consent verification</li>
+</ul>
+
+<hr />
+
+<h2 id="de-identification-for-research">De-identification for Research</h2>
+
+<p>EMS PCR data used for research must be de-identified under one of:</p>
+
+<ol>
+  <li><strong>Expert Determination</strong> (45 CFR §164.514(b)(1)) — statistical expert certifies re-identification risk &lt; 0.05</li>
+  <li><strong>Safe Harbor</strong> (45 CFR §164.514(b)(2)) — remove 18 HIPAA identifiers</li>
+</ol>
+
+<p>NEMSIS fields that are Safe Harbor identifiers:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Identifier Class</th>
+      <th>NEMSIS Element(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Names</td>
+      <td>ePatient.02/03/04</td>
+    </tr>
+    <tr>
+      <td>Geographic &lt; 3-digit ZIP</td>
+      <td>ePatient.09, eScene.19, eDisposition.07</td>
+    </tr>
+    <tr>
+      <td>Dates (except year)</td>
+      <td>eTimes.03, eTimes.12, ePatient.17, and all other timestamps</td>
+    </tr>
+    <tr>
+      <td>Phone numbers</td>
+      <td>ePatient.18</td>
+    </tr>
+    <tr>
+      <td>SSN</td>
+      <td>ePatient.12</td>
+    </tr>
+    <tr>
+      <td>Driver's license</td>
+      <td>ePatient.20/21</td>
+    </tr>
+    <tr>
+      <td>Account numbers</td>
+      <td>ePayment identifiers</td>
+    </tr>
+    <tr>
+      <td>GPS coordinates</td>
+      <td>eScene.11, eDisposition.09</td>
+    </tr>
+    <tr>
+      <td>IP addresses</td>
+      <td>Any system metadata</td>
+    </tr>
+    <tr>
+      <td>Photographs</td>
+      <td>Not in NEMSIS standard scope</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="known-security-gaps-in-this-ig-research-ig--not-production">Known Security Gaps in This IG (Research IG — Not Production)</h2>
+
+<div class="stu-note">
+
+  <p>The following security-related items are intentionally not addressed in this research IG but would be required in any production implementation:</p>
+
+  <ul>
+    <li><strong>No CapabilityStatement defined</strong> — access control scopes cannot be formally specified</li>
+    <li><strong>No consent profile</strong> — patient consent management for 42 CFR Part 2 not modeled</li>
+    <li><strong>No AuditEvent profile</strong> — audit trail not formally defined</li>
+    <li><strong>No Provenance profile</strong> — chain of custody for PCR amendments not modeled</li>
+    <li><strong>Security labels not applied</strong> to example instances</li>
+    <li><strong>SSN example not tokenized</strong> — the example instance <code class="language-plaintext highlighter-rouge">ex-ems-patient</code> uses a placeholder SSN value for illustration only</li>
+    <li><strong>No formal threat model</strong> has been produced for this IG</li>
+  </ul>
+
+</div>
+
+<hr />
+
+<h2 id="additional-references">Additional References</h2>
+
+<ul>
+  <li><a href="https://www.hl7.org/fhir/security.html">FHIR Security (HL7)</a></li>
+  <li><a href="https://smarthealthit.org">SMART on FHIR Authorization</a></li>
+  <li><a href="https://hl7.org/fhir/uv/bulkdata/authorization/index.html">SMART Backend Services</a></li>
+  <li><a href="https://www.hhs.gov/hipaa/for-professionals/security/index.html">HIPAA Security Rule Summary (HHS)</a></li>
+  <li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a></li>
+  <li><a href="https://www.healthit.gov/topic/certification-ehrs">ONC Health IT Certification</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/fhirEMS/fhirEMSCoreIG">fhirEMSCore Research Project (AI-Generated — Unofficial)</a>.  Package fhirems.emscore#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 19, 2026 20:45-0400">2026-07-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

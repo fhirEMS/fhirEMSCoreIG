@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/PractitionerRole/ex-ems-practitionerrole> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-practitionerrole"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-practitionerrole>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole ex-ems-practitionerrole</b></p><a name=\"ex-ems-practitionerrole\"> </a><a name=\"hcex-ems-practitionerrole\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-practitionerrole.html\">EMS PractitionerRole</a></p></div><p><b>EMS Certification Level</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level 9925007}\">Paramedic</span></p><p><b>identifier</b>: <code>http://example.org/ems/crew</code>/CR-2026-0042-1</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-ex-ems-practitioner.html\">Practitioner Maria J Ramirez </a></p><p><b>organization</b>: <a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></p><p><b>code</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes 2403011}\">Primary Patient Caregiver-At Scene</span></p><p><b>telecom</b>: ph: 951-555-0142(Work)</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-certification-level" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-personnel-level" ] ;
+         fhir:Coding.code [ fhir:value "9925007" ] ;
+         fhir:Coding.display [ fhir:value "Paramedic" ]
+       ]
+     ]
+  ] ;
+  fhir:PractitionerRole.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://example.org/ems/crew" ] ;
+     fhir:Identifier.value [ fhir:value "CR-2026-0042-1" ]
+  ] ;
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Practitioner/ex-ems-practitioner> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-ems-practitioner" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Organization/ex-ems-organization-agency> ;
+     fhir:Reference.reference [ fhir:value "Organization/ex-ems-organization-agency" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes" ] ;
+       fhir:Coding.code [ fhir:value "2403011" ] ;
+       fhir:Coding.display [ fhir:value "Primary Patient Caregiver-At Scene" ]
+     ]
+  ] ;
+  fhir:PractitionerRole.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "951-555-0142" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/PractitionerRole/ex-ems-practitionerrole.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

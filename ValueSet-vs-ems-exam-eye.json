@@ -1,0 +1,175 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-exam-eye",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-exam-eye</b></p><a name=\"vs-ems-exam-eye\"> </a><a name=\"hcvs-ems-exam-eye\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-exam.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518001\">3518001</a></td><td>1-mm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518003\">3518003</a></td><td>2-mm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518005\">3518005</a></td><td>3-mm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518007\">3518007</a></td><td>4-mm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518009\">3518009</a></td><td>5-mm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518011\">3518011</a></td><td>6-mm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518013\">3518013</a></td><td>7-mm</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518015\">3518015</a></td><td>8-mm or &gt;</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518017\">3518017</a></td><td>Blind</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518019\">3518019</a></td><td>Cataract Present</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518021\">3518021</a></td><td>Clouded</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518023\">3518023</a></td><td>Deformity</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518025\">3518025</a></td><td>Dysconjugate Gaze</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518027\">3518027</a></td><td>Foreign Body</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518029\">3518029</a></td><td>Glaucoma Present</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518031\">3518031</a></td><td>Hyphema</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518033\">3518033</a></td><td>Jaundiced Sclera</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518035\">3518035</a></td><td>Missing</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518037\">3518037</a></td><td>Non-Reactive</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518039\">3518039</a></td><td>Not Done</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518041\">3518041</a></td><td>Non-Reactive Prosthetic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518043\">3518043</a></td><td>Nystagmus Noted</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518045\">3518045</a></td><td>Open Globe</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518047\">3518047</a></td><td>PERRL</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518049\">3518049</a></td><td>Pupil-Irregular/Teardrop</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518051\">3518051</a></td><td>Reactive</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518053\">3518053</a></td><td>Sluggish</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518055\">3518055</a></td><td>Swelling</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518057\">3518057</a></td><td>Contusion</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518059\">3518059</a></td><td>Puncture/Stab Wound</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518061\">3518061</a></td><td>Dilated</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3518063\">3518063</a></td><td>Pin Point</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-eye",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.57"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSExamEyeVS",
+  "title" : "EMS Eye Assessment",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS eExam.18 - Physical findings on eye assessment, including pupil size and reactivity.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam",
+      "concept" : [{
+        "code" : "3518001",
+        "display" : "1-mm"
+      },
+      {
+        "code" : "3518003",
+        "display" : "2-mm"
+      },
+      {
+        "code" : "3518005",
+        "display" : "3-mm"
+      },
+      {
+        "code" : "3518007",
+        "display" : "4-mm"
+      },
+      {
+        "code" : "3518009",
+        "display" : "5-mm"
+      },
+      {
+        "code" : "3518011",
+        "display" : "6-mm"
+      },
+      {
+        "code" : "3518013",
+        "display" : "7-mm"
+      },
+      {
+        "code" : "3518015",
+        "display" : "8-mm or >"
+      },
+      {
+        "code" : "3518017",
+        "display" : "Blind"
+      },
+      {
+        "code" : "3518019",
+        "display" : "Cataract Present"
+      },
+      {
+        "code" : "3518021",
+        "display" : "Clouded"
+      },
+      {
+        "code" : "3518023",
+        "display" : "Deformity"
+      },
+      {
+        "code" : "3518025",
+        "display" : "Dysconjugate Gaze"
+      },
+      {
+        "code" : "3518027",
+        "display" : "Foreign Body"
+      },
+      {
+        "code" : "3518029",
+        "display" : "Glaucoma Present"
+      },
+      {
+        "code" : "3518031",
+        "display" : "Hyphema"
+      },
+      {
+        "code" : "3518033",
+        "display" : "Jaundiced Sclera"
+      },
+      {
+        "code" : "3518035",
+        "display" : "Missing"
+      },
+      {
+        "code" : "3518037",
+        "display" : "Non-Reactive"
+      },
+      {
+        "code" : "3518039",
+        "display" : "Not Done"
+      },
+      {
+        "code" : "3518041",
+        "display" : "Non-Reactive Prosthetic"
+      },
+      {
+        "code" : "3518043",
+        "display" : "Nystagmus Noted"
+      },
+      {
+        "code" : "3518045",
+        "display" : "Open Globe"
+      },
+      {
+        "code" : "3518047",
+        "display" : "PERRL"
+      },
+      {
+        "code" : "3518049",
+        "display" : "Pupil-Irregular/Teardrop"
+      },
+      {
+        "code" : "3518051",
+        "display" : "Reactive"
+      },
+      {
+        "code" : "3518053",
+        "display" : "Sluggish"
+      },
+      {
+        "code" : "3518055",
+        "display" : "Swelling"
+      },
+      {
+        "code" : "3518057",
+        "display" : "Contusion"
+      },
+      {
+        "code" : "3518059",
+        "display" : "Puncture/Stab Wound"
+      },
+      {
+        "code" : "3518061",
+        "display" : "Dilated"
+      },
+      {
+        "code" : "3518063",
+        "display" : "Pin Point"
+      }]
+    }]
+  }
+}

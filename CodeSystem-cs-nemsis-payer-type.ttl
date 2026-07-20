@@ -1,0 +1,158 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cs-nemsis-payer-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-nemsis-payer-type</b></p><a name=\"cs-nemsis-payer-type\"> </a><a name=\"hccs-nemsis-payer-type\"> </a><p>This case-sensitive code system <code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"cs-nemsis-payer-type-11\"> </a></td><td>Other Non-Federal Programs</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-nemsis-payer-type-12\"> </a></td><td>Preferred Provider Organization (PPO)</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"cs-nemsis-payer-type-13\"> </a></td><td>Point of Service (POS)</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"cs-nemsis-payer-type-14\"> </a></td><td>Exclusive Provider Organization (EPO)</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"cs-nemsis-payer-type-15\"> </a></td><td>Indemnity Insurance</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"cs-nemsis-payer-type-16\"> </a></td><td>Health Maintenance Organization (HMO) Medicare Risk</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"cs-nemsis-payer-type-17\"> </a></td><td>Dental Maintenance Organization</td></tr><tr><td style=\"white-space:nowrap\">AM<a name=\"cs-nemsis-payer-type-AM\"> </a></td><td>Automobile Medical</td></tr><tr><td style=\"white-space:nowrap\">BL<a name=\"cs-nemsis-payer-type-BL\"> </a></td><td>Blue Cross/Blue Shield</td></tr><tr><td style=\"white-space:nowrap\">CH<a name=\"cs-nemsis-payer-type-CH\"> </a></td><td>Champus</td></tr><tr><td style=\"white-space:nowrap\">CI<a name=\"cs-nemsis-payer-type-CI\"> </a></td><td>Commercial Insurance Co.</td></tr><tr><td style=\"white-space:nowrap\">DS<a name=\"cs-nemsis-payer-type-DS\"> </a></td><td>Disability</td></tr><tr><td style=\"white-space:nowrap\">FI<a name=\"cs-nemsis-payer-type-FI\"> </a></td><td>Federal Employees Program</td></tr><tr><td style=\"white-space:nowrap\">HM<a name=\"cs-nemsis-payer-type-HM\"> </a></td><td>Health Maintenance Organization</td></tr><tr><td style=\"white-space:nowrap\">LM<a name=\"cs-nemsis-payer-type-LM\"> </a></td><td>Liability Medical</td></tr><tr><td style=\"white-space:nowrap\">MA<a name=\"cs-nemsis-payer-type-MA\"> </a></td><td>Medicare Part A</td></tr><tr><td style=\"white-space:nowrap\">MB<a name=\"cs-nemsis-payer-type-MB\"> </a></td><td>Medicare Part B</td></tr><tr><td style=\"white-space:nowrap\">MC<a name=\"cs-nemsis-payer-type-MC\"> </a></td><td>Medicaid</td></tr><tr><td style=\"white-space:nowrap\">OF<a name=\"cs-nemsis-payer-type-OF\"> </a></td><td>Other Federal Program</td></tr><tr><td style=\"white-space:nowrap\">TV<a name=\"cs-nemsis-payer-type-TV\"> </a></td><td>Title V</td></tr><tr><td style=\"white-space:nowrap\">VA<a name=\"cs-nemsis-payer-type-VA\"> </a></td><td>Veteran Affairs Plan</td></tr><tr><td style=\"white-space:nowrap\">WC<a name=\"cs-nemsis-payer-type-WC\"> </a></td><td>Workers' Compensation Health Claim</td></tr><tr><td style=\"white-space:nowrap\">ZZ<a name=\"cs-nemsis-payer-type-ZZ\"> </a></td><td>Mutually Defined</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.1.10" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NEMSISPayerType"] ;
+  fhir:CodeSystem.title [ fhir:value "NEMSIS ePayment Payer Type Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "X12 payer type codes used in NEMSIS ePayment.57 to identify the type of insurance payer."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "23"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Non-Federal Programs" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Preferred Provider Organization (PPO)" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Point of Service (POS)" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exclusive Provider Organization (EPO)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Indemnity Insurance" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Health Maintenance Organization (HMO) Medicare Risk" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dental Maintenance Organization" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Automobile Medical" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blue Cross/Blue Shield" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Champus" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Commercial Insurance Co." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Disability" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Federal Employees Program" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Health Maintenance Organization" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liability Medical" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medicare Part A" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medicare Part B" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medicaid" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other Federal Program" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Title V" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Veteran Affairs Plan" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "WC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Workers' Compensation Health Claim" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZZ" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mutually Defined" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payer-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

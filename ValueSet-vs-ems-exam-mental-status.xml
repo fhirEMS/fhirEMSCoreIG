@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-exam-mental-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-exam-mental-status</b></p><a name="vs-ems-exam-mental-status"> </a><a name="hcvs-ems-exam-mental-status"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-exam.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519001">3519001</a></td><td>Combative</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519003">3519003</a></td><td>Confused</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519005">3519005</a></td><td>Hallucinations</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519007">3519007</a></td><td>Normal Baseline for Patient</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519009">3519009</a></td><td>Not Done</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519011">3519011</a></td><td>Oriented-Person</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519013">3519013</a></td><td>Oriented-Place</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519015">3519015</a></td><td>Oriented-Event</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519017">3519017</a></td><td>Oriented-Time</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519021">3519021</a></td><td>Unresponsive</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519023">3519023</a></td><td>Agitation</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519025">3519025</a></td><td>Somnolent</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519027">3519027</a></td><td>Stupor</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519029">3519029</a></td><td>Altered mental status, unspecified</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519031">3519031</a></td><td>Developmentally Impaired</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519033">3519033</a></td><td>Disorientation, unspecified</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519035">3519035</a></td><td>Pharmacologically Paralyzed</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519037">3519037</a></td><td>Pharmacologically Sedated</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519039">3519039</a></td><td>Psychologically Impaired</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519041">3519041</a></td><td>Slowness and poor responsiveness</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519043">3519043</a></td><td>State of emotional shock and stress, unspecified</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519045">3519045</a></td><td>Strange and inexplicable behavior</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519047">3519047</a></td><td>Uncooperative</td></tr><tr><td><a href="CodeSystem-cs-nemsis-exam.html#cs-nemsis-exam-3519049">3519049</a></td><td>Unspecified coma</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-exam-mental-status"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.65"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSExamMentalStatusVS"/>
+  <title value="EMS Mental Status Assessment"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eExam.19 - Mental status and cognitive assessment findings."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-exam"/>
+      <concept>
+        <code value="3519001"/>
+        <display value="Combative"/>
+      </concept>
+      <concept>
+        <code value="3519003"/>
+        <display value="Confused"/>
+      </concept>
+      <concept>
+        <code value="3519005"/>
+        <display value="Hallucinations"/>
+      </concept>
+      <concept>
+        <code value="3519007"/>
+        <display value="Normal Baseline for Patient"/>
+      </concept>
+      <concept>
+        <code value="3519009"/>
+        <display value="Not Done"/>
+      </concept>
+      <concept>
+        <code value="3519011"/>
+        <display value="Oriented-Person"/>
+      </concept>
+      <concept>
+        <code value="3519013"/>
+        <display value="Oriented-Place"/>
+      </concept>
+      <concept>
+        <code value="3519015"/>
+        <display value="Oriented-Event"/>
+      </concept>
+      <concept>
+        <code value="3519017"/>
+        <display value="Oriented-Time"/>
+      </concept>
+      <concept>
+        <code value="3519021"/>
+        <display value="Unresponsive"/>
+      </concept>
+      <concept>
+        <code value="3519023"/>
+        <display value="Agitation"/>
+      </concept>
+      <concept>
+        <code value="3519025"/>
+        <display value="Somnolent"/>
+      </concept>
+      <concept>
+        <code value="3519027"/>
+        <display value="Stupor"/>
+      </concept>
+      <concept>
+        <code value="3519029"/>
+        <display value="Altered mental status, unspecified"/>
+      </concept>
+      <concept>
+        <code value="3519031"/>
+        <display value="Developmentally Impaired"/>
+      </concept>
+      <concept>
+        <code value="3519033"/>
+        <display value="Disorientation, unspecified"/>
+      </concept>
+      <concept>
+        <code value="3519035"/>
+        <display value="Pharmacologically Paralyzed"/>
+      </concept>
+      <concept>
+        <code value="3519037"/>
+        <display value="Pharmacologically Sedated"/>
+      </concept>
+      <concept>
+        <code value="3519039"/>
+        <display value="Psychologically Impaired"/>
+      </concept>
+      <concept>
+        <code value="3519041"/>
+        <display value="Slowness and poor responsiveness"/>
+      </concept>
+      <concept>
+        <code value="3519043"/>
+        <display value="State of emotional shock and stress, unspecified"/>
+      </concept>
+      <concept>
+        <code value="3519045"/>
+        <display value="Strange and inexplicable behavior"/>
+      </concept>
+      <concept>
+        <code value="3519047"/>
+        <display value="Uncooperative"/>
+      </concept>
+      <concept>
+        <code value="3519049"/>
+        <display value="Unspecified coma"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

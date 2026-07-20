@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-alternate-residence",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-alternate-residence</b></p><a name=\"vs-ems-alternate-residence\"> </a><a name=\"hcvs-ems-alternate-residence\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-nemsis-patient.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2522001\">2522001</a></td><td>Homeless</td><td>NEMSIS ePatient.22: Patient's primary residence is a shelter, street, or other location without permanent housing.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2522003\">2522003</a></td><td>Migrant Worker</td><td>NEMSIS ePatient.22: Patient is a migrant worker without a fixed permanent address.</td></tr><tr><td><a href=\"CodeSystem-nemsis-patient.html#nemsis-patient-2522005\">2522005</a></td><td>Foreign Visitor</td><td>NEMSIS ePatient.22: Patient is a visitor from a foreign country without a US home address.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-alternate-residence",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.18"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSAlternateResidenceVS",
+  "title" : "EMS Alternate Home Residence",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS ePatient.22 - Codes describing a patient's alternate home residence situation when a standard home address is not applicable.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/nemsis-patient",
+      "concept" : [{
+        "code" : "2522001",
+        "display" : "Homeless"
+      },
+      {
+        "code" : "2522003",
+        "display" : "Migrant Worker"
+      },
+      {
+        "code" : "2522005",
+        "display" : "Foreign Visitor"
+      }]
+    }]
+  }
+}

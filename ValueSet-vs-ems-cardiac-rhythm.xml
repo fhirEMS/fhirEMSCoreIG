@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ems-cardiac-rhythm"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-ems-cardiac-rhythm</b></p><a name="vs-ems-cardiac-rhythm"> </a><a name="hcvs-ems-cardiac-rhythm"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-cs-nemsis-vitals.html"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901001">9901001</a></td><td>Agonal/Idioventricular</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901003">9901003</a></td><td>Asystole</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901005">9901005</a></td><td>Artifact</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901007">9901007</a></td><td>Atrial Fibrillation</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901009">9901009</a></td><td>Atrial Flutter</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901011">9901011</a></td><td>AV Block-1st Degree</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901013">9901013</a></td><td>AV Block-2nd Degree-Type 1</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901015">9901015</a></td><td>AV Block-2nd Degree-Type 2</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901017">9901017</a></td><td>AV Block-3rd Degree</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901019">9901019</a></td><td>Junctional</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901021">9901021</a></td><td>Left Bundle Branch Block</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901023">9901023</a></td><td>Non-STEMI Anterior Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901025">9901025</a></td><td>Non-STEMI Inferior Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901027">9901027</a></td><td>Non-STEMI Lateral Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901029">9901029</a></td><td>Non-STEMI Posterior Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901030">9901030</a></td><td>Non-STEMI Septal Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901031">9901031</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901033">9901033</a></td><td>Paced Rhythm</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901035">9901035</a></td><td>PEA</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901037">9901037</a></td><td>Premature Atrial Contractions</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901039">9901039</a></td><td>Premature Ventricular Contractions</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901041">9901041</a></td><td>Right Bundle Branch Block</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901043">9901043</a></td><td>Sinus Arrhythmia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901045">9901045</a></td><td>Sinus Bradycardia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901047">9901047</a></td><td>Sinus Rhythm</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901049">9901049</a></td><td>Sinus Tachycardia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901051">9901051</a></td><td>STEMI Anterior Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901053">9901053</a></td><td>STEMI Inferior Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901055">9901055</a></td><td>STEMI Lateral Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901057">9901057</a></td><td>STEMI Posterior Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901058">9901058</a></td><td>STEMI Septal Ischemia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901059">9901059</a></td><td>Supraventricular Tachycardia</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901061">9901061</a></td><td>Torsades De Points</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901063">9901063</a></td><td>Unknown AED Non-Shockable Rhythm</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901065">9901065</a></td><td>Unknown AED Shockable Rhythm</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901067">9901067</a></td><td>Ventricular Fibrillation</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901069">9901069</a></td><td>Ventricular Tachycardia (With Pulse)</td></tr><tr><td><a href="CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-9901071">9901071</a></td><td>Ventricular Tachycardia (Pulseless)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-cardiac-rhythm"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.25.219926138944530828037824748808947630693.2.30"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="EMSCardiacRhythmVS"/>
+  <title value="EMS Cardiac Rhythm"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-19T20:45:43-04:00"/>
+  <publisher value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+  <contact>
+    <name value="fhirEMSCore Research Project (AI-Generated — Unofficial)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="fhirEMSCore Research Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/fhirEMS/fhirEMSCoreIG"/>
+    </telecom>
+  </contact>
+  <description value="NEMSIS eVitals.03 - Cardiac rhythm or ECG interpretation."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals"/>
+      <concept>
+        <code value="9901001"/>
+        <display value="Agonal/Idioventricular"/>
+      </concept>
+      <concept>
+        <code value="9901003"/>
+        <display value="Asystole"/>
+      </concept>
+      <concept>
+        <code value="9901005"/>
+        <display value="Artifact"/>
+      </concept>
+      <concept>
+        <code value="9901007"/>
+        <display value="Atrial Fibrillation"/>
+      </concept>
+      <concept>
+        <code value="9901009"/>
+        <display value="Atrial Flutter"/>
+      </concept>
+      <concept>
+        <code value="9901011"/>
+        <display value="AV Block-1st Degree"/>
+      </concept>
+      <concept>
+        <code value="9901013"/>
+        <display value="AV Block-2nd Degree-Type 1"/>
+      </concept>
+      <concept>
+        <code value="9901015"/>
+        <display value="AV Block-2nd Degree-Type 2"/>
+      </concept>
+      <concept>
+        <code value="9901017"/>
+        <display value="AV Block-3rd Degree"/>
+      </concept>
+      <concept>
+        <code value="9901019"/>
+        <display value="Junctional"/>
+      </concept>
+      <concept>
+        <code value="9901021"/>
+        <display value="Left Bundle Branch Block"/>
+      </concept>
+      <concept>
+        <code value="9901023"/>
+        <display value="Non-STEMI Anterior Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901025"/>
+        <display value="Non-STEMI Inferior Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901027"/>
+        <display value="Non-STEMI Lateral Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901029"/>
+        <display value="Non-STEMI Posterior Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901030"/>
+        <display value="Non-STEMI Septal Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901031"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="9901033"/>
+        <display value="Paced Rhythm"/>
+      </concept>
+      <concept>
+        <code value="9901035"/>
+        <display value="PEA"/>
+      </concept>
+      <concept>
+        <code value="9901037"/>
+        <display value="Premature Atrial Contractions"/>
+      </concept>
+      <concept>
+        <code value="9901039"/>
+        <display value="Premature Ventricular Contractions"/>
+      </concept>
+      <concept>
+        <code value="9901041"/>
+        <display value="Right Bundle Branch Block"/>
+      </concept>
+      <concept>
+        <code value="9901043"/>
+        <display value="Sinus Arrhythmia"/>
+      </concept>
+      <concept>
+        <code value="9901045"/>
+        <display value="Sinus Bradycardia"/>
+      </concept>
+      <concept>
+        <code value="9901047"/>
+        <display value="Sinus Rhythm"/>
+      </concept>
+      <concept>
+        <code value="9901049"/>
+        <display value="Sinus Tachycardia"/>
+      </concept>
+      <concept>
+        <code value="9901051"/>
+        <display value="STEMI Anterior Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901053"/>
+        <display value="STEMI Inferior Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901055"/>
+        <display value="STEMI Lateral Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901057"/>
+        <display value="STEMI Posterior Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901058"/>
+        <display value="STEMI Septal Ischemia"/>
+      </concept>
+      <concept>
+        <code value="9901059"/>
+        <display value="Supraventricular Tachycardia"/>
+      </concept>
+      <concept>
+        <code value="9901061"/>
+        <display value="Torsades De Points"/>
+      </concept>
+      <concept>
+        <code value="9901063"/>
+        <display value="Unknown AED Non-Shockable Rhythm"/>
+      </concept>
+      <concept>
+        <code value="9901065"/>
+        <display value="Unknown AED Shockable Rhythm"/>
+      </concept>
+      <concept>
+        <code value="9901067"/>
+        <display value="Ventricular Fibrillation"/>
+      </concept>
+      <concept>
+        <code value="9901069"/>
+        <display value="Ventricular Tachycardia (With Pulse)"/>
+      </concept>
+      <concept>
+        <code value="9901071"/>
+        <display value="Ventricular Tachycardia (Pulseless)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

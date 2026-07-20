@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ex-ems-procedure"/>
+  <meta>
+    <profile value="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-procedure"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure ex-ems-procedure</b></p><a name="ex-ems-procedure"> </a><a name="hcex-ems-procedure"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ems-procedure.html">EMS Procedure</a></p></div><blockquote><p><b>EMS Procedure Context</b></p><ul><li>priorEMSCare: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}">No</span></li><li>numberOfAttempts: 1</li><li>response: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications 9916001}">Improved</span></li><li>authorization: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications 9918005}">Protocol (Standing Order)</span></li></ul></blockquote><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 392230005}">Catheterization of vein (procedure)</span></p><p><b>subject</b>: <a href="Patient-ex-ems-patient.html">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>encounter</b>: <a href="Encounter-ex-ems-encounter.html">Encounter: extension = Emergency Response (Primary Response Area),Ground Transport (ALS Equipped),Emergent (Immediate Response),Lights and Sirens,,,Motor vehicle accident,,,,,,Injury-Head,Head,Transport by This EMS Unit (This Crew Only),,; identifier = Visit number: 2026-03-14-0042,Resource identifier: 2026-031400042-1; status = finished; class = emergency (ActCode#EMER); type = Emergency medical services; period = 2026-03-14 14:22:00-0800 --&gt; 2026-03-14 15:08:00-0800</a></p><p><b>performed</b>: 2026-03-14 14:40:00-0800</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications 9905007}">Paramedic</span></td><td><a href="Practitioner-ex-ems-practitioner.html">Practitioner Maria J Ramirez </a></td></tr></table><p><b>bodySite</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications 3913001}">Antecubital-Left</span></p><p><b>outcome</b>: <span title="Codes:{http://snomed.info/sct 385669000}">Successful</span></p><p><b>complication</b>: <span title="Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications 3907033}">None</span></p></div>
+  </text>
+  <extension url="https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-procedure-context">
+    <extension url="priorEMSCare">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+          <code value="N"/>
+          <display value="No"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="numberOfAttempts">
+      <valueInteger value="1"/>
+    </extension>
+    <extension url="response">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+          <code value="9916001"/>
+          <display value="Improved"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="authorization">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+          <code value="9918005"/>
+          <display value="Protocol (Standing Order)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="392230005"/>
+      <display value="Catheterization of vein (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-ems-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ex-ems-encounter"/>
+  </encounter>
+  <performedDateTime value="2026-03-14T14:40:00-08:00"/>
+  <performer>
+    <function>
+      <coding>
+        <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+        <code value="9905007"/>
+        <display value="Paramedic"/>
+      </coding>
+    </function>
+    <actor>
+      <reference value="Practitioner/ex-ems-practitioner"/>
+    </actor>
+  </performer>
+  <bodySite>
+    <coding>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+      <code value="3913001"/>
+      <display value="Antecubital-Left"/>
+    </coding>
+  </bodySite>
+  <outcome>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385669000"/>
+      <display value="Successful"/>
+    </coding>
+  </outcome>
+  <complication>
+    <coding>
+      <system value="https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-medications"/>
+      <code value="3907033"/>
+      <display value="None"/>
+    </coding>
+  </complication>
+</Procedure>

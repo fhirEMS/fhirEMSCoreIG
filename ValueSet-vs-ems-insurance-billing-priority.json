@@ -1,0 +1,99 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-insurance-billing-priority",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-insurance-billing-priority</b></p><a name=\"vs-ems-insurance-billing-priority\"> </a><a name=\"hcvs-ems-insurance-billing-priority\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-payment.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611001\">2611001</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611003\">2611003</a></td><td>Primary</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611005\">2611005</a></td><td>Secondary</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611007\">2611007</a></td><td>Tertiary</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611009\">2611009</a></td><td>Payer Responsibility Four</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611011\">2611011</a></td><td>Payer Responsibility Five</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611013\">2611013</a></td><td>Payer Responsibility Six</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611015\">2611015</a></td><td>Payer Responsibility Seven</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611017\">2611017</a></td><td>Payer Responsibility Eight</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611019\">2611019</a></td><td>Payer Responsibility Nine</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611021\">2611021</a></td><td>Payer Responsibility Ten</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611023\">2611023</a></td><td>Payer Responsibility Eleven</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-payment.html#cs-nemsis-payment-2611025\">2611025</a></td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-insurance-billing-priority",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.79"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSInsuranceBillingPriorityVS",
+  "title" : "EMS Insurance Billing Priority VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "Insurance company billing priority (ePayment.11).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment",
+      "concept" : [{
+        "code" : "2611001",
+        "display" : "Other"
+      },
+      {
+        "code" : "2611003",
+        "display" : "Primary"
+      },
+      {
+        "code" : "2611005",
+        "display" : "Secondary"
+      },
+      {
+        "code" : "2611007",
+        "display" : "Tertiary"
+      },
+      {
+        "code" : "2611009",
+        "display" : "Payer Responsibility Four"
+      },
+      {
+        "code" : "2611011",
+        "display" : "Payer Responsibility Five"
+      },
+      {
+        "code" : "2611013",
+        "display" : "Payer Responsibility Six"
+      },
+      {
+        "code" : "2611015",
+        "display" : "Payer Responsibility Seven"
+      },
+      {
+        "code" : "2611017",
+        "display" : "Payer Responsibility Eight"
+      },
+      {
+        "code" : "2611019",
+        "display" : "Payer Responsibility Nine"
+      },
+      {
+        "code" : "2611021",
+        "display" : "Payer Responsibility Ten"
+      },
+      {
+        "code" : "2611023",
+        "display" : "Payer Responsibility Eleven"
+      },
+      {
+        "code" : "2611025",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

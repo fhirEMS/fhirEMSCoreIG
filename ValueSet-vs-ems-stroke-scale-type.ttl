@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-stroke-scale-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-stroke-scale-type</b></p><a name=\"vs-ems-stroke-scale-type\"> </a><a name=\"hcvs-ems-stroke-scale-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-vitals.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330001\">3330001</a></td><td>Cincinnati Prehospital Stroke Scale (CPSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330004\">3330004</a></td><td>Los Angeles Prehospital Stroke Screen (LAPSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330005\">3330005</a></td><td>Massachusetts Stroke Scale (MSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330007\">3330007</a></td><td>Miami Emergency Neurologic Deficit Exam (MEND)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330009\">3330009</a></td><td>NIH Stroke Scale (NIHSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330011\">3330011</a></td><td>Other Stroke Scale Type</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330013\">3330013</a></td><td>FAST</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330015\">3330015</a></td><td>Boston Stroke Scale (BOSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330017\">3330017</a></td><td>Ontario Prehospital Stroke Scale (OPSS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330019\">3330019</a></td><td>Melbourne Ambulance Stroke Screen (MASS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330021\">3330021</a></td><td>Rapid Arterial oCclusion Evaluation (RACE)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330023\">3330023</a></td><td>Los Angeles Motor Score (LAMS)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330025\">3330025</a></td><td>Vision, Aphasia, Neglect (VAN)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330027\">3330027</a></td><td>FAST-ED</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-vitals.html#cs-nemsis-vitals-3330029\">3330029</a></td><td>BEFAST</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-type"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.117" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSStrokeScaleTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS Stroke Scale Type"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "NEMSIS eVitals.30 - The prehospital stroke screening tool used."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-vitals" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cincinnati Prehospital Stroke Scale (CPSS)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Angeles Prehospital Stroke Screen (LAPSS)" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Massachusetts Stroke Scale (MSS)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Miami Emergency Neurologic Deficit Exam (MEND)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "NIH Stroke Scale (NIHSS)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Stroke Scale Type" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "FAST" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Boston Stroke Scale (BOSS)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ontario Prehospital Stroke Scale (OPSS)" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Melbourne Ambulance Stroke Screen (MASS)" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rapid Arterial oCclusion Evaluation (RACE)" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Los Angeles Motor Score (LAMS)" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vision, Aphasia, Neglect (VAN)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "FAST-ED" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3330029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "BEFAST" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-stroke-scale-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

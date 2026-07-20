@@ -1,0 +1,99 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ems-vehicle-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-vehicle-type</b></p><a name=\"vs-ems-vehicle-type\"> </a><a name=\"hcvs-ems-vehicle-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-codes.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404001\">1404001</a></td><td>Ambulance</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404003\">1404003</a></td><td>ATV</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404005\">1404005</a></td><td>Bicycle</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404007\">1404007</a></td><td>Fire Apparatus</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404009\">1404009</a></td><td>Fixed Wing</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404011\">1404011</a></td><td>Motorcycle</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404013\">1404013</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404015\">1404015</a></td><td>Personal Vehicle</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404017\">1404017</a></td><td>Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404019\">1404019</a></td><td>Rescue</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404021\">1404021</a></td><td>Rotor Craft</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404023\">1404023</a></td><td>Snow Vehicle</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-codes.html#cs-nemsis-codes-1404025\">1404025</a></td><td>Watercraft</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-vehicle-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.25.219926138944530828037824748808947630693.2.129"
+  }],
+  "version" : "0.2.0",
+  "name" : "EMSVehicleTypeVS",
+  "title" : "EMS Vehicle Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-19T20:45:43-04:00",
+  "publisher" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+  "contact" : [{
+    "name" : "fhirEMSCore Research Project (AI-Generated — Unofficial)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  },
+  {
+    "name" : "fhirEMSCore Research Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/fhirEMS/fhirEMSCoreIG"
+    }]
+  }],
+  "description" : "NEMSIS dVehicle.04 - The type of EMS vehicle.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-codes",
+      "concept" : [{
+        "code" : "1404001",
+        "display" : "Ambulance"
+      },
+      {
+        "code" : "1404003",
+        "display" : "ATV"
+      },
+      {
+        "code" : "1404005",
+        "display" : "Bicycle"
+      },
+      {
+        "code" : "1404007",
+        "display" : "Fire Apparatus"
+      },
+      {
+        "code" : "1404009",
+        "display" : "Fixed Wing"
+      },
+      {
+        "code" : "1404011",
+        "display" : "Motorcycle"
+      },
+      {
+        "code" : "1404013",
+        "display" : "Other"
+      },
+      {
+        "code" : "1404015",
+        "display" : "Personal Vehicle"
+      },
+      {
+        "code" : "1404017",
+        "display" : "Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)"
+      },
+      {
+        "code" : "1404019",
+        "display" : "Rescue"
+      },
+      {
+        "code" : "1404021",
+        "display" : "Rotor Craft"
+      },
+      {
+        "code" : "1404023",
+        "display" : "Snow Vehicle"
+      },
+      {
+        "code" : "1404025",
+        "display" : "Watercraft"
+      }]
+    }]
+  }
+}

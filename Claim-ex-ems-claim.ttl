@@ -1,0 +1,224 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Claim/ex-ems-claim> a fhir:Claim ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-ems-claim"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim" ;
+       fhir:index 0 ;
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ems-claim>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Claim ex-ems-claim</b></p><a name=\"ex-ems-claim\"> </a><a name=\"hcex-ems-claim\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ems-claim.html\">EMS Ambulance Claim</a></p></div><p><b>EMS Primary Payment Method</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2601005}\">Medicare</span></p><p><b>EMS CMS Service Level</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2650003}\">ALS, Level 1 Emergency</span></p><p><b>EMS Response Urgency</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2640001}\">Immediate</span></p><p><b>EMS Patient Transport Assessment</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2641003}\">Unable to stand without assistance</span></p><p><b>EMS Patient Transport Assessment</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 2641005}\">Unable to walk without assistance</span></p><p><b>EMS Ambulance Transport Reason</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment A}\">Patient was transported to the nearest facility for care of symptoms, complaints, or both</span></p><p><b>EMS Ambulance Conditions Indicator</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 05}\">Patient was unconscious or in shock</span></p><p><b>EMS Ambulance Conditions Indicator</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 06}\">Patient was transported in an emergency situation</span></p><p><b>EMS Ambulance Conditions Indicator</b>: <span title=\"Codes:{https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment 09}\">Ambulance service was medically necessary</span></p><p><b>EMS ALS Assessment Performed and Warranted</b>: true</p><p><b>EMS Mileage to Closest Hospital</b>: 8.4 miles</p><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}\">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-ex-ems-patient.html\">Robert M Johnson  Male, DoB: 1979-03-22 ( http://example.org/ems/patients#PAT-2026-0042)</a></p><p><b>created</b>: 2026-03-14</p><p><b>provider</b>: <a href=\"Organization-ex-ems-organization-agency.html\">Organization Riverside County EMS Agency</a></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><h3>SupportingInfos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claiminformationcategory attachment}\">Attachment</span></td><td>false</td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm I46.9}\">Cardiac arrest, cause unspecified</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>true</td><td><a href=\"Coverage-ex-ems-coverage.html\">Coverage: extension = Medicare Part B; status = active; subscriberId = 1EG4-TE5-MK72; relationship = Self; order = 1</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title=\"Codes:{https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets A0427}\">Ambulance service, advanced life support, emergency transport, level 1 (ALS 1 - Emergency)</span></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>productOrService</b>: <span title=\"Codes:{https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets A0425}\">Ground mileage, per statute mile</span></p><p><b>quantity</b>: 8.4</p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-primary-payment-method" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "2601005" ] ;
+         fhir:Coding.display [ fhir:value "Medicare" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-cms-service-level" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "2650003" ] ;
+         fhir:Coding.display [ fhir:value "ALS, Level 1 Emergency" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-response-urgency" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "2640001" ] ;
+         fhir:Coding.display [ fhir:value "Immediate" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "2641003" ] ;
+         fhir:Coding.display [ fhir:value "Unable to stand without assistance" ]
+       ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-transport-assessment" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "2641005" ] ;
+         fhir:Coding.display [ fhir:value "Unable to walk without assistance" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-transport-reason" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "A" ] ;
+         fhir:Coding.display [ fhir:value "Patient was transported to the nearest facility for care of symptoms, complaints, or both" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "05" ] ;
+         fhir:Coding.display [ fhir:value "Patient was unconscious or in shock" ]
+       ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "06" ] ;
+         fhir:Coding.display [ fhir:value "Patient was transported in an emergency situation" ]
+       ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-ambulance-conditions" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-payment" ] ;
+         fhir:Coding.code [ fhir:value "09" ] ;
+         fhir:Coding.display [ fhir:value "Ambulance service was medically necessary" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-als-assessment" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/StructureDefinition/ext-ems-mileage-to-closest" ] ;
+     fhir:Extension.valueQuantity [
+       fhir:Quantity.value [ fhir:value "8.4"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "miles" ]
+     ]
+  ] ;
+  fhir:Claim.status [ fhir:value "active"] ;
+  fhir:Claim.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ] ;
+       fhir:Coding.code [ fhir:value "professional" ]
+     ]
+  ] ;
+  fhir:Claim.use [ fhir:value "claim"] ;
+  fhir:Claim.patient [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Patient/ex-ems-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-ems-patient" ]
+  ] ;
+  fhir:Claim.created [ fhir:value "2026-03-14"^^xsd:date] ;
+  fhir:Claim.provider [
+     fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Organization/ex-ems-organization-agency> ;
+     fhir:Reference.reference [ fhir:value "Organization/ex-ems-organization-agency" ]
+  ] ;
+  fhir:Claim.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/processpriority" ] ;
+       fhir:Coding.code [ fhir:value "normal" ]
+     ]
+  ] ;
+  fhir:Claim.supportingInfo [
+     fhir:index 0 ;
+     fhir:Claim.supportingInfo.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ] ;
+         fhir:Coding.code [ fhir:value "attachment" ]
+       ]
+     ] ;
+     fhir:Claim.supportingInfo.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ] ;
+  fhir:Claim.diagnosis [
+     fhir:index 0 ;
+     fhir:Claim.diagnosis.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.diagnosis.diagnosisCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+         fhir:Coding.code [ fhir:value "I46.9" ] ;
+         fhir:Coding.display [ fhir:value "Cardiac arrest, cause unspecified" ]
+       ]
+     ]
+  ] ;
+  fhir:Claim.insurance [
+     fhir:index 0 ;
+     fhir:Claim.insurance.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.insurance.focal [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Claim.insurance.coverage [
+       fhir:link <https://fhirems.github.io/fhirEMSCoreIG/Coverage/ex-ems-coverage> ;
+       fhir:Reference.reference [ fhir:value "Coverage/ex-ems-coverage" ]
+     ]
+  ] ;
+  fhir:Claim.item [
+     fhir:index 0 ;
+     fhir:Claim.item.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets" ] ;
+         fhir:Coding.code [ fhir:value "A0427" ] ;
+         fhir:Coding.display [ fhir:value "Ambulance service, advanced life support, emergency transport, level 1 (ALS 1 - Emergency)" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Claim.item.sequence [ fhir:value "2"^^xsd:positiveInteger ] ;
+     fhir:Claim.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets" ] ;
+         fhir:Coding.code [ fhir:value "A0425" ] ;
+         fhir:Coding.display [ fhir:value "Ground mileage, per statute mile" ]
+       ]
+     ] ;
+     fhir:Claim.item.quantity [
+       fhir:Quantity.value [ fhir:value "8.4"^^xsd:decimal ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/Claim/ex-ems-claim.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-external-document-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "vs-ems-external-document-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-ems-external-document-type</b></p><a name=\"vs-ems-external-document-type\"> </a><a name=\"hcvs-ems-external-document-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-cs-nemsis-other.html\"><code>https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509001\">4509001</a></td><td>Other Audio Recording</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509003\">4509003</a></td><td>Billing Information</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509005\">4509005</a></td><td>Diagnostic Image (CT, X-ray, US, etc.)</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509006\">4509006</a></td><td>DNR</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509008\">4509008</a></td><td>Living Will</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509009\">4509009</a></td><td>ECG/Lab Results</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509011\">4509011</a></td><td>Guardianship/Power of Attorney</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509013\">4509013</a></td><td>Other Healthcare Record</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509015\">4509015</a></td><td>Other</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509017\">4509017</a></td><td>Patient Identification</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509019\">4509019</a></td><td>Patient Refusal Sheet</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509021\">4509021</a></td><td>Other Picture/Graphic</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509025\">4509025</a></td><td>Other Video/Movie</td></tr><tr><td><a href=\"CodeSystem-cs-nemsis-other.html#cs-nemsis-other-4509027\">4509027</a></td><td>ePCR</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-external-document-type"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.25.219926138944530828037824748808947630693.2.141" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "EMSExternalDocumentTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "EMS ExternalDocumentType VS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-19T20:45:43-04:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project (AI-Generated — Unofficial)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "fhirEMSCore Research Project" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/fhirEMS/fhirEMSCoreIG" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Type of external electronic document associated with the PCR (eOther.09)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "US" ] ;
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhirems.github.io/fhirEMSCoreIG/CodeSystem/cs-nemsis-other" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Audio Recording" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Billing Information" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diagnostic Image (CT, X-ray, US, etc.)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DNR" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Living Will" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ECG/Lab Results" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Guardianship/Power of Attorney" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Healthcare Record" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient Identification" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient Refusal Sheet" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Picture/Graphic" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Video/Movie" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4509027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ePCR" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhirems.github.io/fhirEMSCoreIG/ValueSet/vs-ems-external-document-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
